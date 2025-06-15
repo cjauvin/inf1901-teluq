@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on INF 1901 - Introduction à l'intelligence artificielle</title><link>https://cjauvin.github.io/inf1091-teluq/docs/</link><description>Recent content in Docs on INF 1901 - Introduction à l'intelligence artificielle</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1091-teluq/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Le professeur</title><link>https://cjauvin.github.io/inf1091-teluq/docs/credits/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1091-teluq/docs/credits/</guid><description>&lt;!-- Ajoutez ici le contenu HTML des crédits -->
+&lt;p>Daniel Lemire est professeur d&amp;rsquo;informatique à l&amp;rsquo;Université du Québec (TELUQ). Il est classé dans les 2 % des meilleurs scientifiques (classement Stanford University/Elsevier, 2024). Il fait partie des 1000 programmeurs les plus suivis au monde sur GitHub; GitHub compte plus de 100 millions de développeurs. Il a publié plus de 85 articles de recherche évalués par des pairs. Ses travaux se retrouvent dans de nombreuses bibliothèques standard (.NET, Rust, GCC/glibc++, LLVM/libc, Go, Node.js, etc.) et dans les principaux navigateurs web (Safari, Chrome, etc.). Il est rédacteur de la revue Software : Practice and Experience (Wiley, créée en 1971). En 2020, il a reçu le Prix d&amp;rsquo;excellence 2020 de l&amp;rsquo;Université du Québec pour ses travaux sur l&amp;rsquo;accélération de l&amp;rsquo;analyse JSON. Ses recherches portent notamment sur la programmation haute performance. Il est &lt;a href="https://x.com/lemire">@lemire sur X&lt;/a> et tient un blog hebdomadaire à l&amp;rsquo;adresse &lt;a href="https://lemire.me/blog">https://lemire.me/blog&lt;/a>. &lt;a href="https://github.com/lemire">On peut aussi le trouver sur GitHub&lt;/a>.&lt;/p></description></item><item><title>Vous avez trouvé une erreur?</title><link>https://cjauvin.github.io/inf1091-teluq/docs/erreurs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1091-teluq/docs/erreurs/</guid><description>&lt;h1>Amélioration continue du cours&lt;/h1>
+&lt;p>Le site web de ce cours est continuellement mis à jour avec de nouveaux exemples, de nouvelles explications, de nouvelles références. Le manuel est aussi mis à jour quand 
+nous trouvons des erreurs.&lt;/p>
+&lt;p>&lt;a href="https://docs.google.com/forms/d/e/1FAIpQLSe8pU6ypxDsx-cZjcMURa6o2LRG8NODa3qYIcWLNGU2RcvaWQ/viewform">Vous pouvez, de manière anonyme, nous faire parvenir vos corrections lorsque vous trouvez des erreurs sur le site&lt;/a>. Nous apprécions toujours vos commentaires constructifs.&lt;/p>
+&lt;p>Note: plusieurs étudiants partagent avec nous des suggestions de sites ou de vidéos en anglais. Bien que le cours fait quelques liens vers des sites en anglais, nous évitons l'anglais autant que possible. Si vous avez des suggestions, essayez de rester en français.&lt;/p></description></item><item><title>Feuille de route</title><link>https://cjauvin.github.io/inf1091-teluq/docs/feuille-de-route/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1091-teluq/docs/feuille-de-route/</guid><description>&lt;!-- Ajoutez ici le contenu HTML de la feuille de route -->
+&lt;!-- Ajoutez ici le contenu HTML de l'évaluation -->
+&lt;h1>Feuille de route&lt;/h1>
+&lt;p>Prévoyez environ 9 heures de travail pendant quinze semaines. Il n'est pas possible, pour la plupart des étudiants, de réussir ce cours en ne prenant qu'une poignée d'heures par semaine. &lt;/p>
+&lt;p>Chaque étudiant a sa propre date de départ et date de fin de cours personnalisée. La date à laquelle l'étudiant doit passer son examen est déterminé par l'Université: celle-ci vous fera parvenir les détails en temps opportun. Le professeur ne peut pas changer vos dates de départ, de fin ou d'examen: vous devez joindre l'Université si vous souhaitez les modifier. &lt;/p></description></item><item><title>Ressources</title><link>https://cjauvin.github.io/inf1091-teluq/docs/ressources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1091-teluq/docs/ressources/</guid><description>&lt;h1 id="ressources-pour-apprendre-java">
+ Ressources pour apprendre Java
+ &lt;a class="anchor" href="#ressources-pour-apprendre-java">#&lt;/a>
+&lt;/h1>
+&lt;p>Ce document regroupe des ressources variées pour apprendre Java, des livres aux tutoriels en ligne, en passant par des vidéos et des conseils pratiques. Il s’adresse aux débutants comme aux apprenants intermédiaires souhaitant approfondir leurs compétences en programmation.&lt;/p>
+&lt;h2 id="ouvrages-de-référence">
+ Ouvrages de référence
+ &lt;a class="anchor" href="#ouvrages-de-r%c3%a9f%c3%a9rence">#&lt;/a>
+&lt;/h2>
+&lt;p>Les livres suivants offrent une introduction ou un approfondissement en Java, adaptés à différents niveaux :&lt;/p>
+&lt;ul>
+&lt;li>Claude Delannoy, &lt;em>Programmer en Java&lt;/em>, Eyrolles : un ouvrage complet pour les débutants et intermédiaires.&lt;/li>
+&lt;li>Barry Burd, &lt;em>Java pour les nuls&lt;/em>, 4e édition (environ 25 $) : une approche conviviale, idéale pour les novices.&lt;/li>
+&lt;li>Cyrille Herby, &lt;em>Apprenez à programmer en Java&lt;/em> (environ 11 $) : un manuel axé sur la programmation professionnelle.&lt;/li>
+&lt;/ul>
+&lt;h2 id="documentation-officielle">
+ Documentation officielle
+ &lt;a class="anchor" href="#documentation-officielle">#&lt;/a>
+&lt;/h2>
+&lt;p>La documentation d’Oracle est une référence incontournable pour comprendre les bases et explorer les fonctionnalités avancées :&lt;/p></description></item><item><title>Évaluation</title><link>https://cjauvin.github.io/inf1091-teluq/docs/evaluation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1091-teluq/docs/evaluation/</guid><description>&lt;h1>Évaluation&lt;/h1>
+&lt;p>Ce cours compte 5 travaux notés à remettre au cours des 15 semaines et d'un examen final à réaliser à la fin du cours. Voici la grille de pondération des travaux :&lt;/p>
+&lt;style type="text/css">
+.tg {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+&lt;/style>
+&lt;table class="tg">
+ &lt;tr>
+ &lt;th class="tg-031e">Évaluations&lt;/th>
+ &lt;th class="tg-031e">Sujets&lt;/th>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td class="tg-031e">Travail Noté #1&lt;/td>
+ &lt;td class="tg-031e">Les algorithmes&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td class="tg-031e">Travail Noté #2&lt;/td>
+ &lt;td class="tg-031e">Types, opérateurs et méthodes&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td class="tg-031e">Travail Noté #3&lt;/td>
+ &lt;td class="tg-031e">Structures de contrôle, itérations et données&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td class="tg-031e">Travail Noté #4&lt;/td>
+ &lt;td class="tg-031e">Les flux d'entrée et de sortie&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td class="tg-031e">Travail Noté #5&lt;/td>
+ &lt;td class="tg-031e">Héritage et polymorphismes&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td class="tg-031e">Examen&lt;/td>
+ &lt;td class="tg-031e">L'ensemble du cours&lt;/td>
+ &lt;/tr>
+&lt;/table>
+&lt;p>Avant de faire les travaux, il faut avoir fait les lectures et les exercices de préparation. Essayez d'aller directement aux travaux notés est une stratégie perdante pour la plupart des étudiants. Prenez le temps d'étudier la matière! &lt;/p></description></item><item><title>FAQ</title><link>https://cjauvin.github.io/inf1091-teluq/docs/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1091-teluq/docs/faq/</guid><description>&lt;h3 id="question-quest-ce-que-java-et-pourquoi-est-il-utilisé-">
+ Question: Qu&amp;rsquo;est-ce que Java et pourquoi est-il utilisé ?
+ &lt;a class="anchor" href="#question-quest-ce-que-java-et-pourquoi-est-il-utilis%c3%a9-">#&lt;/a>
+&lt;/h3>
+&lt;p>Réponse: Java est un langage de programmation orienté objet, populaire pour sa portabilité et sa robustesse. Il est utilisé pour développer des applications web, mobiles (comme Android), des logiciels d&amp;rsquo;entreprise et des jeux, car il fonctionne sur de nombreuses plateformes grâce à la machine virtuelle Java (JVM).&lt;/p>
+&lt;h3 id="question-comment-installer-java-sur-mon-ordinateur-">
+ Question: Comment installer Java sur mon ordinateur ?
+ &lt;a class="anchor" href="#question-comment-installer-java-sur-mon-ordinateur-">#&lt;/a>
+&lt;/h3>
+&lt;p>Réponse: Pour installer Java, téléchargez le JDK (Java Development Kit) depuis le site officiel d&amp;rsquo;Oracle ou adoptez une version open-source comme OpenJDK. Suivez les instructions d&amp;rsquo;installation pour votre système (Windows, macOS ou Linux). Vérifiez l&amp;rsquo;installation en tapant &lt;code>java -version&lt;/code> dans une invite de commande.&lt;/p></description></item><item><title>Rappel mathématique</title><link>https://cjauvin.github.io/inf1091-teluq/docs/math/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1091-teluq/docs/math/</guid><description>&lt;div style="margin-left: 10px;">
+&lt;h1 id="h1sect1">1. Les propositions, les ensembles, les relations et les
+nombres.&lt;/h1>
+&lt;p>Avant de commencer, il est conseillé, pour se familariser avec certaines
+notations, de jeter un coup d'oeil sur le &lt;a href="#tabannex">tableau des
+symboles et abréviations usuels.&lt;/a> &lt;/p>
+&lt;p>&lt;/p>
+&lt;h2>1.1. Les propositions&lt;/h2>
+&lt;p>Une proposition mathématique est un énoncé dont on peut dire sans ambiguïté
+si elle est vraie ou si elle fausse. Le processus qui consiste à déterminer si
+une proposition mathématique est vraie ou fausse est l&amp;#x2019;objet du calcul
+propositionnel ou calcul des propositions et fait partie de la logique
+mathématique. Le résultat d&amp;#x2019;un calcul propositionnel est donc
+l&amp;#x2019;attribution d&amp;#x2019;une valeur de vérité à une proposition.&lt;/p></description></item><item><title>Intelligence artificielle</title><link>https://cjauvin.github.io/inf1091-teluq/docs/ia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1091-teluq/docs/ia/</guid><description>&lt;!-- Ajoutez ici le contenu HTML de la présentation -->
+&lt;p>Dans ce cours, l'utilisation de l'intelligence artificielle (Claude, ChatGPT, Copilot, Grok, etc.) est permise (mais optionnelle). Cependant, vous devez l'utiliser de manière responsable&amp;nbsp;:&lt;/p>
+&lt;ul>
+&lt;li>Décrivez votre utilisation de l'IA. Une utilisation de l'IA sans déclaration peut être considérée comme une forme de faute. Contrairement à ce que vous pourriez croire, déclarer votre utilisation de l'IA vous protège.&lt;/li>
+&lt;li>Expliquez votre démarche. Qu'est-ce que vous avez fait avec l'IA&amp;nbsp;? Nous vous encourageons à inclure des copies des résultats de vos interactions avec l'IA.&lt;/li> 
+&lt;li>Assurez-vous de bien expliquer vos résultats, en vos propres mots.&lt;/li>
+&lt;/ul></description></item><item><title>Petit guide d’usage du courriel efficace</title><link>https://cjauvin.github.io/inf1091-teluq/docs/courriel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1091-teluq/docs/courriel/</guid><description>&lt;p>Lors de l&amp;rsquo;écriture d&amp;rsquo;un courriel, être bref est important. Omettez les formules de salutation, les signatures surfaites,
+etc.&lt;/p>
+&lt;p>Attention aux émotions : Il est facile quand on reçoit ou transmet un courriel de s&amp;rsquo;emporter ou de lire dans les
+messages reçus des sentiments. Dans un contexte professionnel, évitez d&amp;rsquo;écrire un courriel alors que vous êtes énervé.&lt;/p>
+&lt;p>Choisissez les destinataires de votre courriel avec soin. Il est pratiquement toujours mal avisé de transmettre un
+courriel à un grand groupe, à moins que le courriel soit une communication formelle. Dans le doute, écrivez un courriel
+à un seul destinataire.&lt;/p></description></item></channel></rss>
