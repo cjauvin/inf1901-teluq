@@ -1,0 +1,18 @@
+baseURL = 'https://example.org/'
+languageCode = 'fr'
+defaultContentLanguage = 'fr'
+
+title = "INF 1901 - Introduction à l'intelligence artificielle"
+theme = 'hugo-book'
+
+# --- Paramètres du thème hugo-book ---
+[params]
+BookMenuBundle = "book"
+BookToC = true
+BookSearch = true
+javaRunnerEndpoint = "http://localhost:5123/run"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
