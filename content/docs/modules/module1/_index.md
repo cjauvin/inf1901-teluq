@@ -1,6 +1,7 @@
 ---
 title: "Module 1"
 weight: 1
+bookCollapseSection: true
 ---
 
 # Module 1

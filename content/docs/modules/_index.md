@@ -1,5 +1,6 @@
 ---
 title: "Modules"
+bookCollapseSection: true
 ---
 
 # Modules

@@ -1,6 +1,7 @@
 ---
 title: "Module 2: Introduction à l'apprentissage machine"
 weight: 2
+bookCollapseSection: true
 ---
 
 ##  Qu'est-ce que l'apprentissage machine?
