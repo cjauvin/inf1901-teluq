@@ -5,6 +5,18 @@ weight: 1
 
 # Module 1
 
-Un algorithme est une méthode structurée composée d'une série d'instructions précises destinées à résoudre un problème ou à réaliser une tâche. À l’image d’une recette de cuisine, il repose sur des étapes ordonnées de manière logique pour aboutir à un résultat attendu, comme un plat préparé. Dans ce module, nous explorerons la conception d’algorithmes simples et leur transcription en pseudocode, un langage clair et accessible qui permet de décrire ces étapes sans recourir à la syntaxe d’un langage de programmation spécifique.
+Ce premier module propose une exploration des enjeux cruciaux de l'intelligence artificielle et de son impact sur la société d'aujourd'hui tout en jettant un regard sur l'évolution de l'intelligence artificielle du test de Turing (1950) qui marque le premier pas vers l'intelligence artificielle à l'émergence des grands modèles de langages (LLM) comme GPT-4, d'autre part.
 
-L’objectif de ce module est de vous familiariser avec les fondamentaux des algorithmes et leur importance en informatique. Vous apprendrez à reconnaître leurs composants essentiels, tels que les entrées, les sorties et les instructions, tout en développant la capacité à rédiger des algorithmes simples en pseudocode en français. À travers des exemples concrets tirés du quotidien, vous serez en mesure d’appliquer ces concepts pour résoudre des problèmes pratiques de manière efficace.
+## Objectifs
+À la fin de ce module, vous devriez être en mesure de :
+
+* Nommer les grandes phases de l'évolution historique de l'IA et d'y rattacher les grands noms qui y ont contribué;
+* Énumérer des perspectives prometteuses offertes par l'IA à diverses catégories d'entreprises québécoises et canadiennes;
+* Dresser un état des lieux des avancées technologiques actuelles et des débats éthiques qu'elles encourent;
+* Décrire les risques et les menaces potentiels associés à l'IA
+
+## Durée (à préciser)
+2 à 3 semaines, soit de 18 à 27 heures de travail.
+
+## Travail noté
+Le travail noté 1 comptant pour 10 % de l'évaluation finale consiste à représenter une ligne de temps documentée, marquant l'évolution de l'intelligence artificielle depuis ses fondations (Turing, 1950) jusqu'à aujourd'hui. Cette ligne de temps doit indiquer votre sélection de cinq grandes étapes de l'histoire de l'intelligence artificielle en y associant le ou les principaux scientifiques ainsi qu'une description des innovations ou travaux qui s'y rattachent.
