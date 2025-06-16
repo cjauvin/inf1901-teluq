@@ -1,14 +1,14 @@
 {
   "name": "INF 1901 - Introduction à l'intelligence artificielle",
   "short_name": "INF 1901 - Introduction à l'intelligence artificielle",
-  "start_url": "/./",
-  "scope": "/./",
+  "start_url": "/inf1091-teluq/",
+  "scope": "/inf1091-teluq/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/./favicon.svg",
+      "src": "/inf1091-teluq/favicon.svg",
       "sizes": "512x512"
     }
   ]
