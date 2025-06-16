@@ -1,5 +1,5 @@
 ---
-title: "Accueil"
+title: "Introduction à l'intelligence artificielle"
 ---
 
 # Introduction à l'intelligence artificielle
