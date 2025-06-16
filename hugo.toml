@@ -1,8 +1,6 @@
-baseURL = 'https://cjauvin.github.io/inf1091-teluq/'
+baseURL = 'https://cjauvin.github.io/inf1901-teluq/'
 languageCode = 'fr'
 defaultContentLanguage = 'fr'
-# relativeURLs = true
-# canonifyURLs = true
 
 title = "INF 1901 - Introduction à l'intelligence artificielle"
 theme = 'hugo-book'
