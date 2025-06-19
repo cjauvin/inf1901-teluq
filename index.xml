@@ -7,7 +7,7 @@
  &lt;a class="anchor" href="#pr%c3%a9sentation">#&lt;/a>
 &lt;/h3>
 &lt;p>Ce premier module situe l&amp;rsquo;intelligence artificielle dans une perspective historique d&amp;rsquo;Allan Turing (1912-1954) à aujourd&amp;rsquo;hui. Il est animé de deux intentions générales : Offrir une compréhension d&amp;rsquo;ensemble de l&amp;rsquo;intelligence artificielle d&amp;rsquo;aujourd&amp;rsquo;hui au Québec et au Canada et parcourir les grands jalons de l&amp;rsquo;évolution de l&amp;rsquo;intelligence artificielle dans le temps et l&amp;rsquo;espace tout en soulignant les apports des principaux acteurs et de leurs travaux.&lt;/p></description></item><item><title>Le professeur</title><link>https://cjauvin.github.io/inf1901-teluq/docs/credits/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/credits/</guid><description>&lt;!-- Ajoutez ici le contenu HTML des crédits -->
-&lt;p>Daniel Lemire est professeur d&amp;rsquo;informatique à l&amp;rsquo;Université du Québec (TELUQ). Il est classé dans les 2 % des meilleurs scientifiques (classement Stanford University/Elsevier, 2024). Il fait partie des 1000 programmeurs les plus suivis au monde sur GitHub; GitHub compte plus de 100 millions de développeurs. Il a publié plus de 85 articles de recherche évalués par des pairs. Ses travaux se retrouvent dans de nombreuses bibliothèques standard (.NET, Rust, GCC/glibc++, LLVM/libc, Go, Node.js, etc.) et dans les principaux navigateurs web (Safari, Chrome, etc.). Il est rédacteur de la revue Software : Practice and Experience (Wiley, créée en 1971). En 2020, il a reçu le Prix d&amp;rsquo;excellence 2020 de l&amp;rsquo;Université du Québec pour ses travaux sur l&amp;rsquo;accélération de l&amp;rsquo;analyse JSON. Ses recherches portent notamment sur la programmation haute performance. Il est &lt;a href="https://x.com/lemire">@lemire sur X&lt;/a> et tient un blog hebdomadaire à l&amp;rsquo;adresse &lt;a href="https://lemire.me/blog">https://lemire.me/blog&lt;/a>. &lt;a href="https://github.com/lemire">On peut aussi le trouver sur GitHub&lt;/a>.&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/travail-not%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/travail-not%C3%A9/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
+&lt;p>Daniel Lemire est professeur d&amp;rsquo;informatique à l&amp;rsquo;Université du Québec (TELUQ). Il est classé dans les 2 % des meilleurs scientifiques (classement Stanford University/Elsevier, 2024). Il fait partie des 1000 programmeurs les plus suivis au monde sur GitHub; GitHub compte plus de 100 millions de développeurs. Il a publié plus de 85 articles de recherche évalués par des pairs. Ses travaux se retrouvent dans de nombreuses bibliothèques standard (.NET, Rust, GCC/glibc++, LLVM/libc, Go, Node.js, etc.) et dans les principaux navigateurs web (Safari, Chrome, etc.). Il est rédacteur de la revue Software : Practice and Experience (Wiley, créée en 1971). En 2020, il a reçu le Prix d&amp;rsquo;excellence 2020 de l&amp;rsquo;Université du Québec pour ses travaux sur l&amp;rsquo;accélération de l&amp;rsquo;analyse JSON. Ses recherches portent notamment sur la programmation haute performance. Il est &lt;a href="https://x.com/lemire">@lemire sur X&lt;/a> et tient un blog hebdomadaire à l&amp;rsquo;adresse &lt;a href="https://lemire.me/blog">https://lemire.me/blog&lt;/a>. &lt;a href="https://github.com/lemire">On peut aussi le trouver sur GitHub&lt;/a>.&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
  Classification naïve bayésienne pour détecter les pourriels
  &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels">#&lt;/a>
 &lt;/h1>
@@ -17,7 +17,27 @@ classique qui peut être traité avec cet algorithme est la
 classification de courriels. On peut tenter d&amp;rsquo;estimer la probabilité
 qu&amp;rsquo;un courriel soit en fait un pourriel en prenant en compte les mots
 particuliers qu&amp;rsquo;il contient, l&amp;rsquo;idée étant que certains mots auront
-tendance à être plus souvent utilisés dans des pourriels.&lt;/p></description></item><item><title>S'informer</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/2-s-informer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/2-s-informer/</guid><description>&lt;h2 id="sinformer">
+tendance à être plus souvent utilisés dans des pourriels.&lt;/p></description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones">
+ Apprivoisez un réseau de neurones
+ &lt;a class="anchor" href="#apprivoisez-un-r%c3%a9seau-de-neurones">#&lt;/a>
+&lt;/h1>
+&lt;ol>
+&lt;li>
+&lt;p>En vous assurant tout d&amp;rsquo;abord que le &amp;ldquo;type de problème&amp;rdquo; (menu
+déroulant à droite) est la &amp;ldquo;classification&amp;rdquo;, considérez les 4
+problèmes proposés.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Expliquez tout d&amp;rsquo;abord ce que veut dire &amp;ldquo;résoudre&amp;rdquo; ces problèmes.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Quel problème vous apparait ensuite le plus facile à résoudre, pour
+un algorithme d&amp;rsquo;apprentissage machine (pas seulement un réseau de
+neurones)? Expliquez pourquoi.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Considérez maintenant le problème avec lequel deux petits groupes
+de points sont disposés en diagonale, l&amp;rsquo;un par rapport à l&amp;rsquo;autre.&lt;/p></description></item><item><title>S'informer</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/2-s-informer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/2-s-informer/</guid><description>&lt;h2 id="sinformer">
  S&amp;rsquo;informer
  &lt;a class="anchor" href="#sinformer">#&lt;/a>
 &lt;/h2>
