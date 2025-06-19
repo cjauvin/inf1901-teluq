@@ -1,6 +1,6 @@
 ---
 title: "Modules"
-bookCollapseSection: true
+bookCollapseSection: false
 ---
 
 # Modules

@@ -1,5 +1,5 @@
 ---
-title: "Module 2: Introduction à l'apprentissage machine"
+title: "Module 2: l'apprentissage machine"
 weight: 2
 bookCollapseSection: true
 ---
