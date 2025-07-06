@@ -1,4 +1,4 @@
-baseURL = 'https://cjauvin.github.io/inf1901-teluq/'
+baseURL = 'https://cjauvin.github.io/inf1901-teluq-hugo/'
 languageCode = 'fr'
 defaultContentLanguage = 'fr'
 canonifyURLs = true
