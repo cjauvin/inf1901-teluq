@@ -7,17 +7,7 @@
  &lt;a class="anchor" href="#pr%c3%a9sentation">#&lt;/a>
 &lt;/h3>
 &lt;p>Ce premier module situe l&amp;rsquo;intelligence artificielle dans une perspective historique d&amp;rsquo;Allan Turing (1912-1954) à aujourd&amp;rsquo;hui. Il est animé de deux intentions générales : Offrir une compréhension d&amp;rsquo;ensemble de l&amp;rsquo;intelligence artificielle d&amp;rsquo;aujourd&amp;rsquo;hui au Québec et au Canada et parcourir les grands jalons de l&amp;rsquo;évolution de l&amp;rsquo;intelligence artificielle dans le temps et l&amp;rsquo;espace tout en soulignant les apports des principaux acteurs et de leurs travaux.&lt;/p></description></item><item><title>Le professeur</title><link>https://cjauvin.github.io/inf1901-teluq/docs/credits/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/credits/</guid><description>&lt;!-- Ajoutez ici le contenu HTML des crédits -->
-&lt;p>Daniel Lemire est professeur d&amp;rsquo;informatique à l&amp;rsquo;Université du Québec (TELUQ). Il est classé dans les 2 % des meilleurs scientifiques (classement Stanford University/Elsevier, 2024). Il fait partie des 1000 programmeurs les plus suivis au monde sur GitHub; GitHub compte plus de 100 millions de développeurs. Il a publié plus de 85 articles de recherche évalués par des pairs. Ses travaux se retrouvent dans de nombreuses bibliothèques standard (.NET, Rust, GCC/glibc++, LLVM/libc, Go, Node.js, etc.) et dans les principaux navigateurs web (Safari, Chrome, etc.). Il est rédacteur de la revue Software : Practice and Experience (Wiley, créée en 1971). En 2020, il a reçu le Prix d&amp;rsquo;excellence 2020 de l&amp;rsquo;Université du Québec pour ses travaux sur l&amp;rsquo;accélération de l&amp;rsquo;analyse JSON. Ses recherches portent notamment sur la programmation haute performance. Il est &lt;a href="https://x.com/lemire">@lemire sur X&lt;/a> et tient un blog hebdomadaire à l&amp;rsquo;adresse &lt;a href="https://lemire.me/blog">https://lemire.me/blog&lt;/a>. &lt;a href="https://github.com/lemire">On peut aussi le trouver sur GitHub&lt;/a>.&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
- Classification naïve bayésienne pour détecter les pourriels
- &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels">#&lt;/a>
-&lt;/h1>
-&lt;p>La classification naïve bayésienne est un algorithme d&amp;rsquo;apprentissage
-supervisé qui fonctionne avec les probabilités. Un problème
-classique qui peut être traité avec cet algorithme est la
-classification de courriels. On peut tenter d&amp;rsquo;estimer la probabilité
-qu&amp;rsquo;un courriel soit en fait un pourriel en prenant en compte les mots
-particuliers qu&amp;rsquo;il contient, l&amp;rsquo;idée étant que certains mots auront
-tendance à être plus souvent utilisés dans des pourriels.&lt;/p></description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones">
+&lt;p>Daniel Lemire est professeur d&amp;rsquo;informatique à l&amp;rsquo;Université du Québec (TELUQ). Il est classé dans les 2 % des meilleurs scientifiques (classement Stanford University/Elsevier, 2024). Il fait partie des 1000 programmeurs les plus suivis au monde sur GitHub; GitHub compte plus de 100 millions de développeurs. Il a publié plus de 85 articles de recherche évalués par des pairs. Ses travaux se retrouvent dans de nombreuses bibliothèques standard (.NET, Rust, GCC/glibc++, LLVM/libc, Go, Node.js, etc.) et dans les principaux navigateurs web (Safari, Chrome, etc.). Il est rédacteur de la revue Software : Practice and Experience (Wiley, créée en 1971). En 2020, il a reçu le Prix d&amp;rsquo;excellence 2020 de l&amp;rsquo;Université du Québec pour ses travaux sur l&amp;rsquo;accélération de l&amp;rsquo;analyse JSON. Ses recherches portent notamment sur la programmation haute performance. Il est &lt;a href="https://x.com/lemire">@lemire sur X&lt;/a> et tient un blog hebdomadaire à l&amp;rsquo;adresse &lt;a href="https://lemire.me/blog">https://lemire.me/blog&lt;/a>. &lt;a href="https://github.com/lemire">On peut aussi le trouver sur GitHub&lt;/a>.&lt;/p></description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones">
  Apprivoisez un réseau de neurones
  &lt;a class="anchor" href="#apprivoisez-un-r%c3%a9seau-de-neurones">#&lt;/a>
 &lt;/h1>
@@ -37,7 +27,52 @@ neurones)? Expliquez pourquoi.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Considérez maintenant le problème avec lequel deux petits groupes
-de points sont disposés en diagonale, l&amp;rsquo;un par rapport à l&amp;rsquo;autre.&lt;/p></description></item><item><title>S'informer</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/2-s-informer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/2-s-informer/</guid><description>&lt;h2 id="sinformer">
+de points sont disposés en diagonale, l&amp;rsquo;un par rapport à l&amp;rsquo;autre.&lt;/p></description></item><item><title>Un scénario imaginaire mais réaliste</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/01-sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/01-sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h2 id="un-scénario-imaginaire-mais-réaliste">
+ Un scénario imaginaire mais réaliste
+ &lt;a class="anchor" href="#un-sc%c3%a9nario-imaginaire-mais-r%c3%a9aliste">#&lt;/a>
+&lt;/h2>
+&lt;p>Imaginez une compagnie où il y a une chaîne de montage avec laquelle
+on assemble des téléviseurs.&lt;/p>
+&lt;p>&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module2/tv_assembly_line.png" alt="" />&lt;/p>
+&lt;h3 id="le-problème">
+ Le problème
+ &lt;a class="anchor" href="#le-probl%c3%a8me">#&lt;/a>
+&lt;/h3>
+&lt;p>Supposons que dans un endroit particulièrement délicat de la chaîne de
+montage, un problème avec un appareil d&amp;rsquo;assemblage particulier
+survienne parfois, que l&amp;rsquo;on aimerait détecter le plus rapidement
+possible.&lt;/p>
+&lt;h3 id="une-solution-possible">
+ Une solution possible
+ &lt;a class="anchor" href="#une-solution-possible">#&lt;/a>
+&lt;/h3>
+&lt;p>On pourrait imaginer placer une caméra vidéo dont le but serait de
+visionner en permanence le flot des appareils en cours d&amp;rsquo;assemblage,
+pour tenter de détecter les problèmes. Pour ce faire, la caméra
+pourrait transmettre, à intervalles réguliers, les pixels de ce
+qu&amp;rsquo;elle capte, en tant que données à un modèle d&amp;rsquo;apprentissage automatique
+qui roulerait (en tant que programme) sur un serveur, pas très
+éloigné. Ce modèle convertirait les pixels de la caméra en tant que
+données numériques (les entrées, &amp;ldquo;inputs&amp;rdquo;), et effectuerait un calcul
+complexe sur ces valeurs, en vue de produire une valeur de sortie
+simple (&amp;ldquo;outputs&amp;rdquo;) : &amp;ldquo;oui, il y a un problème avec cette image&amp;rdquo;, ou
+&amp;ldquo;non, il n&amp;rsquo;y a pas de problème avec cette image&amp;rdquo; (ou encore, ce qui
+serait équivalent mais plus simple : &amp;ldquo;ok&amp;rdquo; ou &amp;ldquo;problème&amp;rdquo;). Cette valeur
+est binaire, dans le sens qu&amp;rsquo;elle a seulement deux valeurs possibles
+(peu importe lesquelles, en autant qu&amp;rsquo;il y en ait seulement deux). Sur
+la base de cette valeur binaire de sortie, on pourrait agir et envoyer
+un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/02-diff%C3%A9rence-avec-la-prog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/02-diff%C3%A9rence-avec-la-prog/</guid><description>&lt;h2 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnelle">
+ En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnelle?
+ &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnelle">#&lt;/a>
+&lt;/h2>
+&lt;p>Bien que l&amp;rsquo;apprentissage automatique requiert de la programmation, il
+s&amp;rsquo;agit d&amp;rsquo;un paradigme entièrement différent de celui de la
+programmation.&lt;/p>
+&lt;p>Un programme traditionnel spécifie une série d&amp;rsquo;instructions que
+l&amp;rsquo;ordinateur exécute pour résoudre un problème. Normalement, ce
+programme fait son travail en relation avec des données fournies par
+l&amp;rsquo;utilisateur. Le programme dans ce cas est une série d&amp;rsquo;instructions
+symboliques dans un langage de programmation.&lt;/p></description></item><item><title>S'informer</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/2-s-informer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/2-s-informer/</guid><description>&lt;h2 id="sinformer">
  S&amp;rsquo;informer
  &lt;a class="anchor" href="#sinformer">#&lt;/a>
 &lt;/h2>
@@ -49,7 +84,22 @@ de points sont disposés en diagonale, l&amp;rsquo;un par rapport à l&amp;rsquo
 &lt;p>Le site web de ce cours est continuellement mis à jour avec de nouveaux exemples, de nouvelles explications, de nouvelles références. Le manuel est aussi mis à jour quand 
 nous trouvons des erreurs.&lt;/p>
 &lt;p>&lt;a href="https://docs.google.com/forms/d/e/1FAIpQLSe8pU6ypxDsx-cZjcMURa6o2LRG8NODa3qYIcWLNGU2RcvaWQ/viewform">Vous pouvez, de manière anonyme, nous faire parvenir vos corrections lorsque vous trouvez des erreurs sur le site&lt;/a>. Nous apprécions toujours vos commentaires constructifs.&lt;/p>
-&lt;p>Note: plusieurs étudiants partagent avec nous des suggestions de sites ou de vidéos en anglais. Bien que le cours fait quelques liens vers des sites en anglais, nous évitons l'anglais autant que possible. Si vous avez des suggestions, essayez de rester en français.&lt;/p></description></item><item><title>Consolider ses connaissances</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/3-consolider-ses-connaissances/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/3-consolider-ses-connaissances/</guid><description>&lt;h2 id="consolider-ses-connaissances">
+&lt;p>Note: plusieurs étudiants partagent avec nous des suggestions de sites ou de vidéos en anglais. Bien que le cours fait quelques liens vers des sites en anglais, nous évitons l'anglais autant que possible. Si vous avez des suggestions, essayez de rester en français.&lt;/p></description></item><item><title>AA versus IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/03-diff%C3%A9rence-avec-lia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/03-diff%C3%A9rence-avec-lia/</guid><description>&lt;h2 id="en-quoi-laa-diffère-de-lia">
+ En quoi l&amp;rsquo;AA diffère de l&amp;rsquo;IA?
+ &lt;a class="anchor" href="#en-quoi-laa-diff%c3%a8re-de-lia">#&lt;/a>
+&lt;/h2>
+&lt;p>L&amp;rsquo;intelligence artificielle est le domaine plus vaste, qui englobe
+l&amp;rsquo;apprentissage automatique et l&amp;rsquo;intelligence artificielle classique (plus
+ancienne) et dite symbolique (en anglais on utilise parfois le terme
+GOFAI, &amp;ldquo;good old fashioned artificial intelligence&amp;rdquo;). Il est important
+de comprendre que ces deux disciplines sont distinctes et ont des
+méthodes profondément différentes, et l&amp;rsquo;histoire de leur développement
+est entièrement différente. Dans un certain sens, l&amp;rsquo;AA est une forme
+plus spécialisée et un peu plus récente d&amp;rsquo;IA, plus mathématique, moins
+symbolique, et clairement celle qui domine la période actuelle. Les
+mathématiques qui sont le plus souvent associées à l&amp;rsquo;apprentissage
+machine sont l&amp;rsquo;algèbre linéaire et les probabilités, qui elles-mêmes
+entretiennent des liens étroits.&lt;/p></description></item><item><title>Consolider ses connaissances</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/3-consolider-ses-connaissances/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/3-consolider-ses-connaissances/</guid><description>&lt;h2 id="consolider-ses-connaissances">
  Consolider ses connaissances
  &lt;a class="anchor" href="#consolider-ses-connaissances">#&lt;/a>
 &lt;/h2>
@@ -69,7 +119,25 @@ nous trouvons des erreurs.&lt;/p>
  Présentation
  &lt;a class="anchor" href="#pr%c3%a9sentation">#&lt;/a>
 &lt;/h3>
-&lt;p>Cette activité 4 du module 1 vise, d&amp;rsquo;une part, à vous instruire sur les principaux enjeux et défis éthiques pour rendre l&amp;rsquo;IA responsable et, d&amp;rsquo;autre part, pour vous sensibiliser à deux questions spécifiques sur l&amp;rsquo;IA que sont les nouveautés de Google et d&amp;rsquo;Open AI et les bulletins de nouvelles générés par l&amp;rsquo;IA où il est difficile de différencier le vrai du faux.&lt;/p></description></item><item><title>Analyser et relier innovations et acteurs de l'IA dans le temps</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/5-innovations-et-acteurs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/5-innovations-et-acteurs/</guid><description>&lt;h2 id="analyser-et-relier-innovations-et-acteurs-de-lia-dans-le-temps">
+&lt;p>Cette activité 4 du module 1 vise, d&amp;rsquo;une part, à vous instruire sur les principaux enjeux et défis éthiques pour rendre l&amp;rsquo;IA responsable et, d&amp;rsquo;autre part, pour vous sensibiliser à deux questions spécifiques sur l&amp;rsquo;IA que sont les nouveautés de Google et d&amp;rsquo;Open AI et les bulletins de nouvelles générés par l&amp;rsquo;IA où il est difficile de différencier le vrai du faux.&lt;/p></description></item><item><title>Représentation des données</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/04-repr%C3%A9sentation-des-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/04-repr%C3%A9sentation-des-donn%C3%A9es/</guid><description>&lt;h2 id="comment-représenter-les-données">
+ Comment représenter les données?
+ &lt;a class="anchor" href="#comment-repr%c3%a9senter-les-donn%c3%a9es">#&lt;/a>
+&lt;/h2>
+&lt;p>Un problème crucial qui se pose en AA est comment adéquatement
+représenter les données, pour qu&amp;rsquo;elles soient traitables et
+compréhensibles à la fois par l&amp;rsquo;ordinateur ainsi que le modèle (ou
+algorithme) d&amp;rsquo;apprentissage qu&amp;rsquo;on veut utiliser. Il existe de
+nombreuses manières de faire cela, mais un thème récurrent est
+l&amp;rsquo;utilisation d&amp;rsquo;espaces vectoriels pour représenter les données, ce
+qui est très étroitement relié au fait que la plupart des techniques
+d&amp;rsquo;AA touchent de près ou de loin l&amp;rsquo;algèbre linéaire. Une image, par
+exemple, sera un point dans un espace vectoriel à très haute dimension
+(autant de dimensions qu&amp;rsquo;il y a de pixels!), et un mot pourrait être
+un point dans un espace vectoriel extrêmement épars (&amp;ldquo;sparse&amp;rdquo;) pour
+représenter la présence ou l&amp;rsquo;absence d&amp;rsquo;un mot. Il est également
+possible de représenter le sens des mots à l&amp;rsquo;aide d&amp;rsquo;un espace
+vectoriel, dont les grands modèles de langage (GML) font usage, comme
+nous le verrons au module 4.&lt;/p></description></item><item><title>Analyser et relier innovations et acteurs de l'IA dans le temps</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/5-innovations-et-acteurs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/5-innovations-et-acteurs/</guid><description>&lt;h2 id="analyser-et-relier-innovations-et-acteurs-de-lia-dans-le-temps">
  Analyser et relier innovations et acteurs de l&amp;rsquo;IA dans le temps
  &lt;a class="anchor" href="#analyser-et-relier-innovations-et-acteurs-de-lia-dans-le-temps">#&lt;/a>
 &lt;/h2>
@@ -96,7 +164,7 @@ nous trouvons des erreurs.&lt;/p>
  Documentation officielle
  &lt;a class="anchor" href="#documentation-officielle">#&lt;/a>
 &lt;/h2>
-&lt;p>La documentation d’Oracle est une référence incontournable pour comprendre les bases et explorer les fonctionnalités avancées :&lt;/p></description></item><item><title>Examen</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/examen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/examen/</guid><description>&lt;!-- Ajoutez ici le contenu HTML de l'examen --></description></item><item><title>Test sur l'intelligence artificielle décodée</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/6-test-sur-l-ia-decodee/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/6-test-sur-l-ia-decodee/</guid><description>&lt;h2 id="test-sur-lintelligence-artificielle-décodée">
+&lt;p>La documentation d’Oracle est une référence incontournable pour comprendre les bases et explorer les fonctionnalités avancées :&lt;/p></description></item><item><title>Test sur l'intelligence artificielle décodée</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/6-test-sur-l-ia-decodee/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/6-test-sur-l-ia-decodee/</guid><description>&lt;h2 id="test-sur-lintelligence-artificielle-décodée">
  Test sur l&amp;rsquo;intelligence artificielle décodée
  &lt;a class="anchor" href="#test-sur-lintelligence-artificielle-d%c3%a9cod%c3%a9e">#&lt;/a>
 &lt;/h2>
@@ -137,29 +205,7 @@ nous trouvons des erreurs.&lt;/p>
  &lt;td class="tg-031e">L'ensemble du cours&lt;/td>
  &lt;/tr>
 &lt;/table>
-&lt;p>Avant de faire les travaux, il faut avoir fait les lectures et les exercices de préparation. Essayez d'aller directement aux travaux notés est une stratégie perdante pour la plupart des étudiants. Prenez le temps d'étudier la matière! &lt;/p></description></item><item><title>FAQ</title><link>https://cjauvin.github.io/inf1901-teluq/docs/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/faq/</guid><description>&lt;h3 id="question-quest-ce-que-java-et-pourquoi-est-il-utilisé-">
- Question: Qu&amp;rsquo;est-ce que Java et pourquoi est-il utilisé ?
- &lt;a class="anchor" href="#question-quest-ce-que-java-et-pourquoi-est-il-utilis%c3%a9-">#&lt;/a>
-&lt;/h3>
-&lt;p>Réponse: Java est un langage de programmation orienté objet, populaire pour sa portabilité et sa robustesse. Il est utilisé pour développer des applications web, mobiles (comme Android), des logiciels d&amp;rsquo;entreprise et des jeux, car il fonctionne sur de nombreuses plateformes grâce à la machine virtuelle Java (JVM).&lt;/p>
-&lt;h3 id="question-comment-installer-java-sur-mon-ordinateur-">
- Question: Comment installer Java sur mon ordinateur ?
- &lt;a class="anchor" href="#question-comment-installer-java-sur-mon-ordinateur-">#&lt;/a>
-&lt;/h3>
-&lt;p>Réponse: Pour installer Java, téléchargez le JDK (Java Development Kit) depuis le site officiel d&amp;rsquo;Oracle ou adoptez une version open-source comme OpenJDK. Suivez les instructions d&amp;rsquo;installation pour votre système (Windows, macOS ou Linux). Vérifiez l&amp;rsquo;installation en tapant &lt;code>java -version&lt;/code> dans une invite de commande.&lt;/p></description></item><item><title>Rappel mathématique</title><link>https://cjauvin.github.io/inf1901-teluq/docs/math/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/math/</guid><description>&lt;div style="margin-left: 10px;">
-&lt;h1 id="h1sect1">1. Les propositions, les ensembles, les relations et les
-nombres.&lt;/h1>
-&lt;p>Avant de commencer, il est conseillé, pour se familariser avec certaines
-notations, de jeter un coup d'oeil sur le &lt;a href="#tabannex">tableau des
-symboles et abréviations usuels.&lt;/a> &lt;/p>
-&lt;p>&lt;/p>
-&lt;h2>1.1. Les propositions&lt;/h2>
-&lt;p>Une proposition mathématique est un énoncé dont on peut dire sans ambiguïté
-si elle est vraie ou si elle fausse. Le processus qui consiste à déterminer si
-une proposition mathématique est vraie ou fausse est l&amp;#x2019;objet du calcul
-propositionnel ou calcul des propositions et fait partie de la logique
-mathématique. Le résultat d&amp;#x2019;un calcul propositionnel est donc
-l&amp;#x2019;attribution d&amp;#x2019;une valeur de vérité à une proposition.&lt;/p></description></item><item><title>Intelligence artificielle</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ia/</guid><description>&lt;!-- Ajoutez ici le contenu HTML de la présentation -->
+&lt;p>Avant de faire les travaux, il faut avoir fait les lectures et les exercices de préparation. Essayez d'aller directement aux travaux notés est une stratégie perdante pour la plupart des étudiants. Prenez le temps d'étudier la matière! &lt;/p></description></item><item><title>Intelligence artificielle</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ia/</guid><description>&lt;!-- Ajoutez ici le contenu HTML de la présentation -->
 &lt;p>Dans ce cours, l'utilisation de l'intelligence artificielle (Claude, ChatGPT, Copilot, Grok, etc.) est permise (mais optionnelle). Cependant, vous devez l'utiliser de manière responsable&amp;nbsp;:&lt;/p>
 &lt;ul>
 &lt;li>Décrivez votre utilisation de l'IA. Une utilisation de l'IA sans déclaration peut être considérée comme une forme de faute. Contrairement à ce que vous pourriez croire, déclarer votre utilisation de l'IA vous protège.&lt;/li>
@@ -171,4 +217,14 @@ etc.&lt;/p>
 messages reçus des sentiments. Dans un contexte professionnel, évitez d&amp;rsquo;écrire un courriel alors que vous êtes énervé.&lt;/p>
 &lt;p>Choisissez les destinataires de votre courriel avec soin. Il est pratiquement toujours mal avisé de transmettre un
 courriel à un grand groupe, à moins que le courriel soit une communication formelle. Dans le doute, écrivez un courriel
-à un seul destinataire.&lt;/p></description></item></channel></rss>
+à un seul destinataire.&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
+ Classification naïve bayésienne pour détecter les pourriels
+ &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels">#&lt;/a>
+&lt;/h1>
+&lt;p>La classification naïve bayésienne est un algorithme d&amp;rsquo;apprentissage
+supervisé qui fonctionne avec les probabilités. Un problème
+classique qui peut être traité avec cet algorithme est la
+classification de courriels. On peut tenter d&amp;rsquo;estimer la probabilité
+qu&amp;rsquo;un courriel soit en fait un pourriel en prenant en compte les mots
+particuliers qu&amp;rsquo;il contient, l&amp;rsquo;idée étant que certains mots auront
+tendance à être plus souvent utilisés dans des pourriels.&lt;/p></description></item></channel></rss>

@@ -63,29 +63,7 @@ nous trouvons des erreurs.&lt;/p>
  &lt;td class="tg-031e">L'ensemble du cours&lt;/td>
  &lt;/tr>
 &lt;/table>
-&lt;p>Avant de faire les travaux, il faut avoir fait les lectures et les exercices de préparation. Essayez d'aller directement aux travaux notés est une stratégie perdante pour la plupart des étudiants. Prenez le temps d'étudier la matière! &lt;/p></description></item><item><title>FAQ</title><link>https://cjauvin.github.io/inf1901-teluq/docs/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/faq/</guid><description>&lt;h3 id="question-quest-ce-que-java-et-pourquoi-est-il-utilisé-">
- Question: Qu&amp;rsquo;est-ce que Java et pourquoi est-il utilisé ?
- &lt;a class="anchor" href="#question-quest-ce-que-java-et-pourquoi-est-il-utilis%c3%a9-">#&lt;/a>
-&lt;/h3>
-&lt;p>Réponse: Java est un langage de programmation orienté objet, populaire pour sa portabilité et sa robustesse. Il est utilisé pour développer des applications web, mobiles (comme Android), des logiciels d&amp;rsquo;entreprise et des jeux, car il fonctionne sur de nombreuses plateformes grâce à la machine virtuelle Java (JVM).&lt;/p>
-&lt;h3 id="question-comment-installer-java-sur-mon-ordinateur-">
- Question: Comment installer Java sur mon ordinateur ?
- &lt;a class="anchor" href="#question-comment-installer-java-sur-mon-ordinateur-">#&lt;/a>
-&lt;/h3>
-&lt;p>Réponse: Pour installer Java, téléchargez le JDK (Java Development Kit) depuis le site officiel d&amp;rsquo;Oracle ou adoptez une version open-source comme OpenJDK. Suivez les instructions d&amp;rsquo;installation pour votre système (Windows, macOS ou Linux). Vérifiez l&amp;rsquo;installation en tapant &lt;code>java -version&lt;/code> dans une invite de commande.&lt;/p></description></item><item><title>Rappel mathématique</title><link>https://cjauvin.github.io/inf1901-teluq/docs/math/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/math/</guid><description>&lt;div style="margin-left: 10px;">
-&lt;h1 id="h1sect1">1. Les propositions, les ensembles, les relations et les
-nombres.&lt;/h1>
-&lt;p>Avant de commencer, il est conseillé, pour se familariser avec certaines
-notations, de jeter un coup d'oeil sur le &lt;a href="#tabannex">tableau des
-symboles et abréviations usuels.&lt;/a> &lt;/p>
-&lt;p>&lt;/p>
-&lt;h2>1.1. Les propositions&lt;/h2>
-&lt;p>Une proposition mathématique est un énoncé dont on peut dire sans ambiguïté
-si elle est vraie ou si elle fausse. Le processus qui consiste à déterminer si
-une proposition mathématique est vraie ou fausse est l&amp;#x2019;objet du calcul
-propositionnel ou calcul des propositions et fait partie de la logique
-mathématique. Le résultat d&amp;#x2019;un calcul propositionnel est donc
-l&amp;#x2019;attribution d&amp;#x2019;une valeur de vérité à une proposition.&lt;/p></description></item><item><title>Intelligence artificielle</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ia/</guid><description>&lt;!-- Ajoutez ici le contenu HTML de la présentation -->
+&lt;p>Avant de faire les travaux, il faut avoir fait les lectures et les exercices de préparation. Essayez d'aller directement aux travaux notés est une stratégie perdante pour la plupart des étudiants. Prenez le temps d'étudier la matière! &lt;/p></description></item><item><title>Intelligence artificielle</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ia/</guid><description>&lt;!-- Ajoutez ici le contenu HTML de la présentation -->
 &lt;p>Dans ce cours, l'utilisation de l'intelligence artificielle (Claude, ChatGPT, Copilot, Grok, etc.) est permise (mais optionnelle). Cependant, vous devez l'utiliser de manière responsable&amp;nbsp;:&lt;/p>
 &lt;ul>
 &lt;li>Décrivez votre utilisation de l'IA. Une utilisation de l'IA sans déclaration peut être considérée comme une forme de faute. Contrairement à ce que vous pourriez croire, déclarer votre utilisation de l'IA vous protège.&lt;/li>
