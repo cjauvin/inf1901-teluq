@@ -2,9 +2,8 @@
 ---
 title: "Petit guide d’usage du courriel efficace"
 weight: 12
+draft: true
 ---
-
-
 
 Lors de l'écriture d'un courriel, être bref est important. Omettez les formules de salutation, les signatures surfaites,
 etc.

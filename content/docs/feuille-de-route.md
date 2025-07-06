@@ -1,6 +1,7 @@
 ---
 title: "Feuille de route"
 weight: 4
+draft: true
 ---
 
 <!-- Ajoutez ici le contenu HTML de la feuille de route -->
@@ -15,12 +16,12 @@ weight: 4
 
 
 <table>
-<tr><th>Activité</th><th>semaine de remise</th></tr>	
-<tr><td>Travail noté 1</td><td>2</td></tr>				  	
-<tr><td>Travail noté 2</td><td>5</td></tr>				  	
-<tr><td>Travail noté 3</td><td>8	</td></tr>			  	
-<tr><td>Travail noté 4</td><td>10		</td></tr>		  	
-<tr><td>Travail noté 5</td><td>14			</td></tr>	  	
+<tr><th>Activité</th><th>semaine de remise</th></tr>
+<tr><td>Travail noté 1</td><td>2</td></tr>
+<tr><td>Travail noté 2</td><td>5</td></tr>
+<tr><td>Travail noté 3</td><td>8	</td></tr>
+<tr><td>Travail noté 4</td><td>10		</td></tr>
+<tr><td>Travail noté 5</td><td>14			</td></tr>
 <tr><td>Examen sous surveillance</td><td>15 ou plus</td></tr>
 </table>
 <p>Il est parfaitement normal de consacrer des dizaines d'heures à compléter un travail noté et les activités préparatoires. Il est de votre responsabilité de trouver le temps nécessaire.</p>

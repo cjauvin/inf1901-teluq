@@ -1,6 +1,7 @@
 ---
 title: "Le professeur"
 weight: 1
+draft: true
 ---
 
 <!-- Ajoutez ici le contenu HTML des crédits -->

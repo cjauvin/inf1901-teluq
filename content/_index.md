@@ -2,6 +2,8 @@
 title: "Introduction à l'intelligence artificielle"
 ---
 
+![Header Image](/images/entete-IA-richard.jpeg)
+
 # Introduction à l'intelligence artificielle
 
 ## Présentation du cours

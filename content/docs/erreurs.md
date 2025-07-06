@@ -2,6 +2,7 @@
 ---
 title: "Vous avez trouvé une erreur?"
 weight: 2
+draft: true
 ---
 
 
@@ -9,7 +10,7 @@ weight: 2
 <h1>Amélioration continue du cours</h1>
 
 
-<p>Le site web de ce cours est continuellement mis à jour avec de nouveaux exemples, de nouvelles explications, de nouvelles références. Le manuel est aussi mis à jour quand 
+<p>Le site web de ce cours est continuellement mis à jour avec de nouveaux exemples, de nouvelles explications, de nouvelles références. Le manuel est aussi mis à jour quand
 nous trouvons des erreurs.</p>
 
 
