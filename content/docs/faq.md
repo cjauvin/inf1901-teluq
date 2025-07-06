@@ -1,6 +1,7 @@
 ---
 title: "FAQ"
 weight: 8
+draft: true
 ---
 
 ### Question: Qu'est-ce que Java et pourquoi est-il utilisé ?

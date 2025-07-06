@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article class="markdown">
+  <h1>{{ .Params.doc_title | default .Title }}</h1>
+
+  <!-- Get the parent section (module) -->
+  {{ $moduleSection := .Parent }}
+  {{ if $moduleSection }}
+    <!-- Module Index -->
+    <div class="module-section">
+      {{ $moduleSection.Content }}
+    </div>
+
+    <!-- All numbered sections (XX-*) in order -->
+    {{ range $moduleSection.Pages.ByWeight }}
+      {{ if findRE "^\\d{2}-.*" .File.BaseFileName }}
+        <div class="module-section">
+          {{ .Content }}
+        </div>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</article>
+{{ end }}

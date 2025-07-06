@@ -1,6 +1,6 @@
 ---
 title: "Module 2: l'apprentissage machine"
-weight: 2
+weight: 1
 bookCollapseSection: true
 ---
 

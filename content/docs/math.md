@@ -1,6 +1,7 @@
 ---
 title: "Rappel mathématique"
 weight: 10
+draft: true
 ---
 
 <div style="margin-left: 10px;">

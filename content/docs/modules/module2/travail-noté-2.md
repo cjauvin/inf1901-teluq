@@ -1,6 +1,6 @@
 ---
 title: "Travail noté 2"
-weight: 1
+weight: 100
 ---
 
 # Classification naïve bayésienne pour détecter les pourriels
