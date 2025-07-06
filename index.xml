@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction à l'intelligence artificielle on INF 1901 - Introduction à l'intelligence artificielle</title><link>https://cjauvin.github.io/inf1901-teluq/</link><description>Recent content in Introduction à l'intelligence artificielle on INF 1901 - Introduction à l'intelligence artificielle</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/index.xml" rel="self" type="application/rss+xml"/><item><title>Amorcer sa réflexion</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/1-amorcer-sa-reflexion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/1-amorcer-sa-reflexion/</guid><description>&lt;h2 id="amorcer-sa-réflexion">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction à l'intelligence artificielle on INF 1901 - Intro à l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/</link><description>Recent content in Introduction à l'intelligence artificielle on INF 1901 - Intro à l'IA</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/index.xml" rel="self" type="application/rss+xml"/><item><title>Amorcer sa réflexion</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/1-amorcer-sa-reflexion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/1-amorcer-sa-reflexion/</guid><description>&lt;h2 id="amorcer-sa-réflexion">
  Amorcer sa réflexion
  &lt;a class="anchor" href="#amorcer-sa-r%c3%a9flexion">#&lt;/a>
 &lt;/h2>
@@ -6,8 +6,7 @@
  Présentation
  &lt;a class="anchor" href="#pr%c3%a9sentation">#&lt;/a>
 &lt;/h3>
-&lt;p>Ce premier module situe l&amp;rsquo;intelligence artificielle dans une perspective historique d&amp;rsquo;Allan Turing (1912-1954) à aujourd&amp;rsquo;hui. Il est animé de deux intentions générales : Offrir une compréhension d&amp;rsquo;ensemble de l&amp;rsquo;intelligence artificielle d&amp;rsquo;aujourd&amp;rsquo;hui au Québec et au Canada et parcourir les grands jalons de l&amp;rsquo;évolution de l&amp;rsquo;intelligence artificielle dans le temps et l&amp;rsquo;espace tout en soulignant les apports des principaux acteurs et de leurs travaux.&lt;/p></description></item><item><title>Le professeur</title><link>https://cjauvin.github.io/inf1901-teluq/docs/credits/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/credits/</guid><description>&lt;!-- Ajoutez ici le contenu HTML des crédits -->
-&lt;p>Daniel Lemire est professeur d&amp;rsquo;informatique à l&amp;rsquo;Université du Québec (TELUQ). Il est classé dans les 2 % des meilleurs scientifiques (classement Stanford University/Elsevier, 2024). Il fait partie des 1000 programmeurs les plus suivis au monde sur GitHub; GitHub compte plus de 100 millions de développeurs. Il a publié plus de 85 articles de recherche évalués par des pairs. Ses travaux se retrouvent dans de nombreuses bibliothèques standard (.NET, Rust, GCC/glibc++, LLVM/libc, Go, Node.js, etc.) et dans les principaux navigateurs web (Safari, Chrome, etc.). Il est rédacteur de la revue Software : Practice and Experience (Wiley, créée en 1971). En 2020, il a reçu le Prix d&amp;rsquo;excellence 2020 de l&amp;rsquo;Université du Québec pour ses travaux sur l&amp;rsquo;accélération de l&amp;rsquo;analyse JSON. Ses recherches portent notamment sur la programmation haute performance. Il est &lt;a href="https://x.com/lemire">@lemire sur X&lt;/a> et tient un blog hebdomadaire à l&amp;rsquo;adresse &lt;a href="https://lemire.me/blog">https://lemire.me/blog&lt;/a>. &lt;a href="https://github.com/lemire">On peut aussi le trouver sur GitHub&lt;/a>.&lt;/p></description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones">
+&lt;p>Ce premier module situe l&amp;rsquo;intelligence artificielle dans une perspective historique d&amp;rsquo;Allan Turing (1912-1954) à aujourd&amp;rsquo;hui. Il est animé de deux intentions générales : Offrir une compréhension d&amp;rsquo;ensemble de l&amp;rsquo;intelligence artificielle d&amp;rsquo;aujourd&amp;rsquo;hui au Québec et au Canada et parcourir les grands jalons de l&amp;rsquo;évolution de l&amp;rsquo;intelligence artificielle dans le temps et l&amp;rsquo;espace tout en soulignant les apports des principaux acteurs et de leurs travaux.&lt;/p></description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones">
  Apprivoisez un réseau de neurones
  &lt;a class="anchor" href="#apprivoisez-un-r%c3%a9seau-de-neurones">#&lt;/a>
 &lt;/h1>
@@ -80,11 +79,7 @@ symboliques dans un langage de programmation.&lt;/p></description></item><item><
  Présentation
  &lt;a class="anchor" href="#pr%c3%a9sentation">#&lt;/a>
 &lt;/h3>
-&lt;p>Au cours de cette activité, vous êtes invité à lire des textes. Par l’étude de ces documents, vous découvrirai l&amp;rsquo;histoire de l&amp;rsquo;IA à travers les diverses phases qui ont marqué son évolution et les scientifiques qui ont apporté leur contribution à ce difficile passage entre l&amp;rsquo;intelligence cognitive, en particulier des processus cognitifs comme la perception, l&amp;rsquo;attention, la mémoire, le langage, le raisonnement, l&amp;rsquo;apprentissage, et l&amp;rsquo;intelligence artificielle telle que nous l&amp;rsquo;a livré le documentaire L&amp;rsquo;Intelligence artificielle décodée[Lien menant à un site externe qui pourrait ne pas répondre aux normes d’accessibilité web.] (5 décembre 2023) de Radio Canada.&lt;/p></description></item><item><title>Vous avez trouvé une erreur?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/erreurs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/erreurs/</guid><description>&lt;h1>Amélioration continue du cours&lt;/h1>
-&lt;p>Le site web de ce cours est continuellement mis à jour avec de nouveaux exemples, de nouvelles explications, de nouvelles références. Le manuel est aussi mis à jour quand 
-nous trouvons des erreurs.&lt;/p>
-&lt;p>&lt;a href="https://docs.google.com/forms/d/e/1FAIpQLSe8pU6ypxDsx-cZjcMURa6o2LRG8NODa3qYIcWLNGU2RcvaWQ/viewform">Vous pouvez, de manière anonyme, nous faire parvenir vos corrections lorsque vous trouvez des erreurs sur le site&lt;/a>. Nous apprécions toujours vos commentaires constructifs.&lt;/p>
-&lt;p>Note: plusieurs étudiants partagent avec nous des suggestions de sites ou de vidéos en anglais. Bien que le cours fait quelques liens vers des sites en anglais, nous évitons l'anglais autant que possible. Si vous avez des suggestions, essayez de rester en français.&lt;/p></description></item><item><title>AA versus IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/03-diff%C3%A9rence-avec-lia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/03-diff%C3%A9rence-avec-lia/</guid><description>&lt;h2 id="en-quoi-laa-diffère-de-lia">
+&lt;p>Au cours de cette activité, vous êtes invité à lire des textes. Par l’étude de ces documents, vous découvrirai l&amp;rsquo;histoire de l&amp;rsquo;IA à travers les diverses phases qui ont marqué son évolution et les scientifiques qui ont apporté leur contribution à ce difficile passage entre l&amp;rsquo;intelligence cognitive, en particulier des processus cognitifs comme la perception, l&amp;rsquo;attention, la mémoire, le langage, le raisonnement, l&amp;rsquo;apprentissage, et l&amp;rsquo;intelligence artificielle telle que nous l&amp;rsquo;a livré le documentaire L&amp;rsquo;Intelligence artificielle décodée[Lien menant à un site externe qui pourrait ne pas répondre aux normes d’accessibilité web.] (5 décembre 2023) de Radio Canada.&lt;/p></description></item><item><title>AA versus IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/03-diff%C3%A9rence-avec-lia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/03-diff%C3%A9rence-avec-lia/</guid><description>&lt;h2 id="en-quoi-laa-diffère-de-lia">
  En quoi l&amp;rsquo;AA diffère de l&amp;rsquo;IA?
  &lt;a class="anchor" href="#en-quoi-laa-diff%c3%a8re-de-lia">#&lt;/a>
 &lt;/h2>
@@ -107,11 +102,7 @@ entretiennent des liens étroits.&lt;/p></description></item><item><title>Consol
  Présentation
  &lt;a class="anchor" href="#pr%c3%a9sentation">#&lt;/a>
 &lt;/h3>
-&lt;p>Dans cette activité, nous vous proposons une série de questions qui porteront spécifiquement sur le contenu du documentaire L&amp;rsquo;intelligence artificielle décodée[Lien menant à un site externe qui pourrait ne pas répondre aux normes d’accessibilité web.] de Radio Canada (7 décembre 2023). Ce questionnaire vous permettra de consolider vos connaissances sur les progrès de l&amp;rsquo;IA, bien que ce domaine soit toujours en évolution, sur diverses applications dont en médecine, sur les défis éthiques et sociaux qu&amp;rsquo;elle soulève et l&amp;rsquo;impact positifs ou négatifs de l&amp;rsquo;IA sur la société.&lt;/p></description></item><item><title>Feuille de route</title><link>https://cjauvin.github.io/inf1901-teluq/docs/feuille-de-route/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/feuille-de-route/</guid><description>&lt;!-- Ajoutez ici le contenu HTML de la feuille de route -->
-&lt;!-- Ajoutez ici le contenu HTML de l'évaluation -->
-&lt;h1>Feuille de route&lt;/h1>
-&lt;p>Prévoyez environ 9 heures de travail pendant quinze semaines. Il n'est pas possible, pour la plupart des étudiants, de réussir ce cours en ne prenant qu'une poignée d'heures par semaine. &lt;/p>
-&lt;p>Chaque étudiant a sa propre date de départ et date de fin de cours personnalisée. La date à laquelle l'étudiant doit passer son examen est déterminé par l'Université: celle-ci vous fera parvenir les détails en temps opportun. Le professeur ne peut pas changer vos dates de départ, de fin ou d'examen: vous devez joindre l'Université si vous souhaitez les modifier. &lt;/p></description></item><item><title>Initier sa réflexion sur les enjeux éthiques de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/4-enjeux-ethiques/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/4-enjeux-ethiques/</guid><description>&lt;h2 id="initier-sa-réflexion-sur-les-enjeux-éthiques-de-lia">
+&lt;p>Dans cette activité, nous vous proposons une série de questions qui porteront spécifiquement sur le contenu du documentaire L&amp;rsquo;intelligence artificielle décodée[Lien menant à un site externe qui pourrait ne pas répondre aux normes d’accessibilité web.] de Radio Canada (7 décembre 2023). Ce questionnaire vous permettra de consolider vos connaissances sur les progrès de l&amp;rsquo;IA, bien que ce domaine soit toujours en évolution, sur diverses applications dont en médecine, sur les défis éthiques et sociaux qu&amp;rsquo;elle soulève et l&amp;rsquo;impact positifs ou négatifs de l&amp;rsquo;IA sur la société.&lt;/p></description></item><item><title>Initier sa réflexion sur les enjeux éthiques de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/4-enjeux-ethiques/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/4-enjeux-ethiques/</guid><description>&lt;h2 id="initier-sa-réflexion-sur-les-enjeux-éthiques-de-lia">
  Initier sa réflexion sur les enjeux éthiques de l&amp;rsquo;IA
  &lt;a class="anchor" href="#initier-sa-r%c3%a9flexion-sur-les-enjeux-%c3%a9thiques-de-lia">#&lt;/a>
 &lt;/h2>
@@ -145,79 +136,11 @@ nous le verrons au module 4.&lt;/p></description></item><item><title>Analyser et
  Présentation
  &lt;a class="anchor" href="#pr%c3%a9sentation">#&lt;/a>
 &lt;/h3>
-&lt;p>Cette activité vise à vous habiliter à sélectionner, justifier et structurer des événements. Elle consiste à concevoir une ligne de temps commentée et, si possible interactive, qui croise phases, innovations et acteurs; le tout étant enrichi de commentaires sur ces items. Une ligne de temps interactive est une représentation visuelle dynamique dans le temps que l&amp;rsquo;on peut explorer, manipuler et enrichir contrairement à une ligne de temps statique.&lt;/p></description></item><item><title>Ressources</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ressources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ressources/</guid><description>&lt;h1 id="ressources-pour-apprendre-java">
- Ressources pour apprendre Java
- &lt;a class="anchor" href="#ressources-pour-apprendre-java">#&lt;/a>
-&lt;/h1>
-&lt;p>Ce document regroupe des ressources variées pour apprendre Java, des livres aux tutoriels en ligne, en passant par des vidéos et des conseils pratiques. Il s’adresse aux débutants comme aux apprenants intermédiaires souhaitant approfondir leurs compétences en programmation.&lt;/p>
-&lt;h2 id="ouvrages-de-référence">
- Ouvrages de référence
- &lt;a class="anchor" href="#ouvrages-de-r%c3%a9f%c3%a9rence">#&lt;/a>
-&lt;/h2>
-&lt;p>Les livres suivants offrent une introduction ou un approfondissement en Java, adaptés à différents niveaux :&lt;/p>
-&lt;ul>
-&lt;li>Claude Delannoy, &lt;em>Programmer en Java&lt;/em>, Eyrolles : un ouvrage complet pour les débutants et intermédiaires.&lt;/li>
-&lt;li>Barry Burd, &lt;em>Java pour les nuls&lt;/em>, 4e édition (environ 25 $) : une approche conviviale, idéale pour les novices.&lt;/li>
-&lt;li>Cyrille Herby, &lt;em>Apprenez à programmer en Java&lt;/em> (environ 11 $) : un manuel axé sur la programmation professionnelle.&lt;/li>
-&lt;/ul>
-&lt;h2 id="documentation-officielle">
- Documentation officielle
- &lt;a class="anchor" href="#documentation-officielle">#&lt;/a>
-&lt;/h2>
-&lt;p>La documentation d’Oracle est une référence incontournable pour comprendre les bases et explorer les fonctionnalités avancées :&lt;/p></description></item><item><title>Test sur l'intelligence artificielle décodée</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/6-test-sur-l-ia-decodee/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/6-test-sur-l-ia-decodee/</guid><description>&lt;h2 id="test-sur-lintelligence-artificielle-décodée">
+&lt;p>Cette activité vise à vous habiliter à sélectionner, justifier et structurer des événements. Elle consiste à concevoir une ligne de temps commentée et, si possible interactive, qui croise phases, innovations et acteurs; le tout étant enrichi de commentaires sur ces items. Une ligne de temps interactive est une représentation visuelle dynamique dans le temps que l&amp;rsquo;on peut explorer, manipuler et enrichir contrairement à une ligne de temps statique.&lt;/p></description></item><item><title>Test sur l'intelligence artificielle décodée</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/6-test-sur-l-ia-decodee/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module1/6-test-sur-l-ia-decodee/</guid><description>&lt;h2 id="test-sur-lintelligence-artificielle-décodée">
  Test sur l&amp;rsquo;intelligence artificielle décodée
  &lt;a class="anchor" href="#test-sur-lintelligence-artificielle-d%c3%a9cod%c3%a9e">#&lt;/a>
 &lt;/h2>
-&lt;p>Ce test vise à évaluer votre compréhension des grands enjeux liés à l&amp;rsquo;IA abordés dans le documentaire L&amp;rsquo;intelligence artificielle décodée que vous avez visionné à l&amp;rsquo;activité 1 du module 1. Il permet de revenir sur les acteurs engagés dans le domaine, sur leur point de vue sur les aspects de l&amp;rsquo;IA traité dans le documentaire et et sur les enjeux éthique de l&amp;rsquo;IA tels qu&amp;rsquo;ils se posent aujourd&amp;rsquo;hui.&lt;/p></description></item><item><title>Évaluation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/evaluation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/evaluation/</guid><description>&lt;h1>Évaluation&lt;/h1>
-&lt;p>Ce cours compte 5 travaux notés à remettre au cours des 15 semaines et d'un examen final à réaliser à la fin du cours. Voici la grille de pondération des travaux :&lt;/p>
-&lt;style type="text/css">
-.tg {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-&lt;/style>
-&lt;table class="tg">
- &lt;tr>
- &lt;th class="tg-031e">Évaluations&lt;/th>
- &lt;th class="tg-031e">Sujets&lt;/th>
- &lt;/tr>
- &lt;tr>
- &lt;td class="tg-031e">Travail Noté #1&lt;/td>
- &lt;td class="tg-031e">Les algorithmes&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td class="tg-031e">Travail Noté #2&lt;/td>
- &lt;td class="tg-031e">Types, opérateurs et méthodes&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td class="tg-031e">Travail Noté #3&lt;/td>
- &lt;td class="tg-031e">Structures de contrôle, itérations et données&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td class="tg-031e">Travail Noté #4&lt;/td>
- &lt;td class="tg-031e">Les flux d'entrée et de sortie&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td class="tg-031e">Travail Noté #5&lt;/td>
- &lt;td class="tg-031e">Héritage et polymorphismes&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td class="tg-031e">Examen&lt;/td>
- &lt;td class="tg-031e">L'ensemble du cours&lt;/td>
- &lt;/tr>
-&lt;/table>
-&lt;p>Avant de faire les travaux, il faut avoir fait les lectures et les exercices de préparation. Essayez d'aller directement aux travaux notés est une stratégie perdante pour la plupart des étudiants. Prenez le temps d'étudier la matière! &lt;/p></description></item><item><title>Intelligence artificielle</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ia/</guid><description>&lt;!-- Ajoutez ici le contenu HTML de la présentation -->
-&lt;p>Dans ce cours, l'utilisation de l'intelligence artificielle (Claude, ChatGPT, Copilot, Grok, etc.) est permise (mais optionnelle). Cependant, vous devez l'utiliser de manière responsable&amp;nbsp;:&lt;/p>
-&lt;ul>
-&lt;li>Décrivez votre utilisation de l'IA. Une utilisation de l'IA sans déclaration peut être considérée comme une forme de faute. Contrairement à ce que vous pourriez croire, déclarer votre utilisation de l'IA vous protège.&lt;/li>
-&lt;li>Expliquez votre démarche. Qu'est-ce que vous avez fait avec l'IA&amp;nbsp;? Nous vous encourageons à inclure des copies des résultats de vos interactions avec l'IA.&lt;/li> 
-&lt;li>Assurez-vous de bien expliquer vos résultats, en vos propres mots.&lt;/li>
-&lt;/ul></description></item><item><title>Petit guide d’usage du courriel efficace</title><link>https://cjauvin.github.io/inf1901-teluq/docs/courriel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/courriel/</guid><description>&lt;p>Lors de l&amp;rsquo;écriture d&amp;rsquo;un courriel, être bref est important. Omettez les formules de salutation, les signatures surfaites,
-etc.&lt;/p>
-&lt;p>Attention aux émotions : Il est facile quand on reçoit ou transmet un courriel de s&amp;rsquo;emporter ou de lire dans les
-messages reçus des sentiments. Dans un contexte professionnel, évitez d&amp;rsquo;écrire un courriel alors que vous êtes énervé.&lt;/p>
-&lt;p>Choisissez les destinataires de votre courriel avec soin. Il est pratiquement toujours mal avisé de transmettre un
-courriel à un grand groupe, à moins que le courriel soit une communication formelle. Dans le doute, écrivez un courriel
-à un seul destinataire.&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
+&lt;p>Ce test vise à évaluer votre compréhension des grands enjeux liés à l&amp;rsquo;IA abordés dans le documentaire L&amp;rsquo;intelligence artificielle décodée que vous avez visionné à l&amp;rsquo;activité 1 du module 1. Il permet de revenir sur les acteurs engagés dans le domaine, sur leur point de vue sur les aspects de l&amp;rsquo;IA traité dans le documentaire et et sur les enjeux éthique de l&amp;rsquo;IA tels qu&amp;rsquo;ils se posent aujourd&amp;rsquo;hui.&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/modules/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
  Classification naïve bayésienne pour détecter les pourriels
  &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels">#&lt;/a>
 &lt;/h1>
