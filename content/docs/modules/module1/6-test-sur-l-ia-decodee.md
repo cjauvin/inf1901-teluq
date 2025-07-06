@@ -48,19 +48,19 @@ const questionsData = [
     {
         question: "Quelles expertes ou quels experts en intelligence artificielle ont participé à l'émission ?",
         answers: [
-            "Mark zuckerberg et Jeff BezoZ",
-            "Tim Cook et Satya Nadella.",
-            "Joëlle Pineau, Yosua Bengio, Yann LeCun, Valérie Pisano.",
-            "Elon Musk et Sundar Pichai."
+            "Mark Zuckerberg et Jeff Bezos",
+            "Tim Cook et Satya Nadella",
+            "Joëlle Pineau, Yosua Bengio, Yann LeCun, Valérie Pisano",
+            "Elon Musk et Sundar Pichai"
         ],
         correct: 2
     },
     {
         question: "Quelles sont les applications médicales de l'IA, discutées le documentaire ?",
         answers: [
-            "L'IA remplaçant entièrement le personnel médical.",
-            "Diagnostic assisté, médecine personnalisée et le suivi à distance.",
-            "L'IA supprimant le besoin de laboratoires médicaux.",
+            "L'IA remplaçant entièrement le personnel médical",
+            "Diagnostic assisté, médecine personnalisée et le suivi à distance",
+            "L'IA supprimant le besoin de laboratoires médicaux",
             "L'IA rendant obsolète les hôpitaux traditionnels"
         ],
         correct: 1
@@ -68,50 +68,50 @@ const questionsData = [
     {
         question: "Quelle divergence de point de vue a été mise en évidence entre Yoshua Bewngio et Yann LeCun lors de l'émission.",
         answers: [
-            "Leur conflit sur la propriété intellectuelle des algorithmes d'IA.",
-            "Leur opposition concernant les applications militaires de l'IAA",
+            "Leur conflit sur la propriété intellectuelle des algorithmes d'IA",
+            "Leur opposition concernant les applications militaires de l'IA",
             "Leur divergence sur les risques et les bénéfices futurs de l'IA",
-            "Leur désaccord sur l'existence de l'intelligence artificielle."
+            "Leur désaccord sur l'existence de l'intelligence artificielle"
         ],
         correct: 2
     },
     {
         question: "Quel rôle l'intelligence artificielle a-t-elle joué dans la production de l'émission ?",
         answers: [
-            "Elle a été utilisée pour créer certains éléments de design et de contenu.",
+            "Elle a été utilisée pour créer certains éléments de design et de contenu",
             "Elle a servi de présentatrice virtuelle de l'émission",
-            "Elle a généré, en temps réel, les réponses des expertes ou experts invités.",
-            "Elle a entièrement remplacé l'équipe de production humaine."
+            "Elle a généré, en temps réel, les réponses des expertes ou experts invités",
+            "Elle a entièrement remplacé l'équipe de production humaine"
         ],
         correct: 0
     },
     {
         question: "Quel est l'un des grands défis soulevés par les experts concernant l'utilisation de l'IA dans la société ?",
         answers: [
-            "L'absence totale d'impact sur l'emploi.",
-            "Le risque de biais et d'injustices dans les décisions automatisées.",
-            "L'interdiction complète de l'IA par les gouvernements.",
-            "Le remplacement des ordinateurs par des machines à vapeur."
+            "L'absence totale d'impact sur l'emploi",
+            "Le risque de biais et d'injustices dans les décisions automatisées",
+            "L'interdiction complète de l'IA par les gouvernements",
+            "Le remplacement des ordinateurs par des machines à vapeur"
         ],
         correct: 1
     },
     {
         question: "Selon les discussions de l'émission, quel est un des avantages potentiels de l'IA en éducation ?",
         answers: [
-            "Supprimer tous les enseignements humains.",
-            "Personnaliser les parcours d'apprentissage au profil de chaque apprenante et apprenante.",
-            "Remplacer les écoles physiques par des centres commerciaux.",
-            "Uniformiser l'enseignement sans prendre en compte les besoins individuels."
+            "Supprimer tous les enseignements humains",
+            "Personnaliser les parcours d'apprentissage au profil de chaque apprenante et apprenante",
+            "Remplacer les écoles physiques par des centres commerciaux",
+            "Uniformiser l'enseignement sans prendre en compte les besoins individuels"
         ],
         correct: 1
     },
     {
-        question: "Quelles inquiétudes concernant l'A a été exprimée par Yoshua Bengio lors de l'émission ?",
+        question: "Quelle inquiétude concernant l'A a été exprimée par Yoshua Bengio lors de l'émission ?",
         answers: [
-            "La lenteur de l'innovation technologique.",
-            "L'impossibilité d'utiliser l'IA dans les pays du Sud.",
+            "La lenteur de l'innovation technologique",
+            "L'impossibilité d'utiliser l'IA dans les pays du Sud",
             "L'absence de garde-fous suffisants pour encadrer le développement de l'IA",
-            "Le coût trop élevé des applications d'IA dans l'industrie musicale."
+            "Le coût trop élevé des applications d'IA dans l'industrie musicale"
         ],
         correct: 2
     }
