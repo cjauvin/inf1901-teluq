@@ -1,9 +1,9 @@
 ---
 title: "Représentation des données"
-weight: 4
+weight: 5
 ---
 
-## Comment représenter les données?
+# Comment représenter les données?
 
 Un problème crucial qui se pose en AA est comment adéquatement
 représenter les données, pour qu'elles soient traitables et

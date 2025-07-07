@@ -1,23 +1,23 @@
 ---
-title: "Un scénario imaginaire mais réaliste"
+title: "Un scénario imaginé"
 weight: 1
 ---
 
-## Un scénario imaginaire mais réaliste
+# Un scénario imaginaire, mais réaliste !
 
 Imaginez une compagnie où il y a une chaîne de montage avec laquelle
 on assemble des téléviseurs.
 
 ![](/images/module2/tv_assembly_line.png)
 
-### Le problème
+## Le problème
 
 Supposons que dans un endroit particulièrement délicat de la chaîne de
 montage, un problème avec un appareil d'assemblage particulier
 survienne parfois, que l'on aimerait détecter le plus rapidement
 possible.
 
-### Une solution possible
+## Une solution possible
 
 On pourrait imaginer placer une caméra vidéo dont le but serait de
 visionner en permanence le flot des appareils en cours d'assemblage,
@@ -38,7 +38,7 @@ un technicien, en cas de besoin, pour régler le problème.
 
 ![](/images/module2/tv_assembly_line_with_camera.png)
 
-### Comment transformer une image en nombres?
+## Comment transformer une image en nombres?
 
 Transformer une image en une série de nombres n'est pas très
 compliqué. Il s'agit simplement de considérer la valeur des pixels
@@ -49,7 +49,7 @@ transformée en une série de nombres réels.
 
 ![](/images/module2/tv_pixel_grid.png)
 
-### Quelle est la nature de ce modèle?
+## Quelle est la nature de ce modèle?
 
 On parle ici d'un modèle au sens statistique du terme : une série de
 paramètres (des nombres, essentiellement) déterminant une fonction
@@ -78,7 +78,7 @@ interaction constituera le modèle, en action.
 
 ![](/images/module2/model_parameters.png)
 
-### Qu'est-ce que l'entraînement (ou l'apprentissage)?
+## Qu'est-ce que l'entraînement (ou l'apprentissage)?
 
 Notre but est maintenant de trouver une manière de calculer la valeur
 exacte de ces paramètres (nombres) pour notre modèle. Pour commencer,
@@ -94,7 +94,7 @@ performant, qu'il donne donc plus souvent une bonne réponse. C'est ce
 qu'on appelle l'apprentissage, et c'est dans ce sens que le modèle
 apprend.
 
-### Qu'est-ce qu'un ensemble de données d'entraînement?
+## Qu'est-ce qu'un ensemble de données d'entraînement?
 
 Nous avons tout d'abord besoin d'un ensemble de données
 d'entraînement, qui est constitué d'une série d'images, prises au
@@ -125,7 +125,7 @@ possiblement très subtiles.
 
 ![](/images/module2/training_set.png)
 
-### Comment le modèle produit une réponse à partir d'une image?
+## Comment le modèle produit une réponse à partir d'une image?
 
 Le modèle produit une réponse en faisant essentiellement une opération
 mathématique (possiblement complexe) qui associe les nombres d'une
@@ -137,7 +137,7 @@ $$\text{modèle(image, paramètres)} = \text{"ok" ou "problème"}.$$
 Notez ici que "image" est au singulier, car il s'agit d'une seule
 image, qui correspond par contre à plusieurs nombres, oui.
 
-### Qu'est-ce que la fonction d'erreur?
+## Qu'est-ce que la fonction d'erreur?
 
 La fonction d'erreur détermine l'erreur moyenne qu'une version donnée
 du modèle (avec des valeurs précises pour les paramètres) entraine. On
@@ -160,7 +160,7 @@ Notez ici que "images" est au pluriel, car il s'agit de toutes les
 images de l'ensemble d'entraînement. La fonction d'erreur calcule une
 moyenne sur l'ensemble des images de l'ensemble d'entraînement.
 
-### Qu'est-ce que l'entraînement (ou l'optimisation de la fonction d'erreur)?
+## Qu'est-ce que l'entraînement (ou l'optimisation de la fonction d'erreur)?
 
 La partie cruciale est ici : on aimerait une procédure qui va changer
 la valeur des paramètres (qui au départ sont des valeurs aléatoires)
@@ -171,7 +171,7 @@ progressivement. La valeur de la fonction d'erreur va donc diminuer
 graduellement, à mesure que nous allons modifier les paramètres, la
 fonction d'erreur va donc être "optimisée".
 
-### Qu'est-ce que l'inférence (ou l'utilisation du modèle dans la réalité)?
+## Qu'est-ce que l'inférence (ou l'utilisation du modèle dans la réalité)?
 
 Une fois les bonnes valeurs pour les paramètres trouvées, la tâche est
 accomplie, le modèle est enfin prêt à être utilisé dans une opération

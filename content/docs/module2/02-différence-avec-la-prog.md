@@ -3,7 +3,7 @@ title: "AA versus programmation"
 weight: 2
 ---
 
-## En quoi l'apprentissage automatique diffère de la programmation au sens traditionnelle?
+# En quoi l'apprentissage automatique diffère de la programmation au sens traditionnelle?
 
 Bien que l'apprentissage automatique requiert de la programmation, il
 s'agit d'un paradigme entièrement différent de celui de la

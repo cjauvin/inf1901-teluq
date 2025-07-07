@@ -3,7 +3,7 @@ title: "AA versus IA"
 weight: 3
 ---
 
-## En quoi l'AA diffère de l'IA?
+# En quoi l'apprentissage automatique diffère de l'IA?
 
 L'intelligence artificielle est le domaine plus vaste, qui englobe
 l'apprentissage automatique et l'intelligence artificielle classique (plus
