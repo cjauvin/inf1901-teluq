@@ -1,21 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction à l'intelligence artificielle on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/</link><description>Recent content in Introduction à l'intelligence artificielle on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/index.xml" rel="self" type="application/rss+xml"/><item><title>Amorcer sa réflexion</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/1-amorcer-sa-reflexion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/1-amorcer-sa-reflexion/</guid><description>&lt;h2 id="amorcer-sa-réflexion">
- Amorcer sa réflexion
- &lt;a class="anchor" href="#amorcer-sa-r%c3%a9flexion">#&lt;/a>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction à l'intelligence artificielle on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/</link><description>Recent content in Introduction à l'intelligence artificielle on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/index.xml" rel="self" type="application/rss+xml"/><item><title>Activités</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/activit%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/activit%C3%A9s/</guid><description>&lt;h2 id="une-entrevue">
+ Une entrevue
+ &lt;a class="anchor" href="#une-entrevue">#&lt;/a>
 &lt;/h2>
-&lt;h3 id="présentation">
- Présentation
- &lt;a class="anchor" href="#pr%c3%a9sentation">#&lt;/a>
-&lt;/h3>
-&lt;p>Ce premier module situe l&amp;rsquo;intelligence artificielle dans une perspective historique d&amp;rsquo;Allan Turing (1912-1954) à aujourd&amp;rsquo;hui. Il est animé de deux intentions générales : Offrir une compréhension d&amp;rsquo;ensemble de l&amp;rsquo;intelligence artificielle d&amp;rsquo;aujourd&amp;rsquo;hui au Québec et au Canada et parcourir les grands jalons de l&amp;rsquo;évolution de l&amp;rsquo;intelligence artificielle dans le temps et l&amp;rsquo;espace tout en soulignant les apports des principaux acteurs et de leurs travaux.&lt;/p></description></item><item><title>Découvrir l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/01-d%C3%A9couvrir-lia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/01-d%C3%A9couvrir-lia/</guid><description>&lt;p>Commencez votre exploration de l&amp;rsquo;IA en visionnant cette entrevue donnée par Yann Lecun.&lt;/p>
+&lt;p>Commencez votre exploration de l&amp;rsquo;IA en visionnant cette entrevue donnée par Yann Le Cun.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qTGust2Ur0o?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
-&lt;p>Nous vous proposons ensuite quelques lectures :&lt;/p></description></item><item><title>Présentation du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</guid><description>&lt;h1 id="introduction-à-lintelligence-artificielle">
- Introduction à l&amp;rsquo;intelligence artificielle
- &lt;a class="anchor" href="#introduction-%c3%a0-lintelligence-artificielle">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="présentation-du-cours">
+&lt;h2 id="quelques-lectures">
+ Quelques lectures
+ &lt;a class="anchor" href="#quelques-lectures">#&lt;/a>
+&lt;/h2>
+&lt;p>Poursuivez votre réflexion avec ces lectures :&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Le prologue du livre &lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence">La plus belle histoire de l&amp;rsquo;intelligence&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ce texte en ligne sur &lt;a href="https://www.ibm.com/fr-fr/think/topics/history-of-artificial-intelligence">l&amp;rsquo;histoire de l&amp;rsquo;IA&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ce texte en ligne sur &lt;a href="https://www.thecanadianencyclopedia.ca/fr/article/intelligence-artificielle">l&amp;rsquo;IA dans une perspective canadienne&lt;/a>&lt;/p></description></item><item><title>Présentation du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</guid><description>&lt;h2 id="présentation-du-cours">
  Présentation du cours
  &lt;a class="anchor" href="#pr%c3%a9sentation-du-cours">#&lt;/a>
 &lt;/h2>
@@ -84,30 +89,25 @@ programmation.&lt;/p>
 l&amp;rsquo;ordinateur exécute pour résoudre un problème. Normalement, ce
 programme fait son travail en relation avec des données fournies par
 l&amp;rsquo;utilisateur. Le programme dans ce cas est une série d&amp;rsquo;instructions
-symboliques dans un langage de programmation.&lt;/p></description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h2 id="les-livres-du-cours">
+symboliques dans un langage de programmation.&lt;/p></description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h1 id="les-livres-du-cours">
  Les livres du cours
  &lt;a class="anchor" href="#les-livres-du-cours">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="la-plus-belle-histoire-de-l">
+ &lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence">La plus belle histoire de l&amp;rsquo;intelligence&lt;/a>
+ &lt;a class="anchor" href="#la-plus-belle-histoire-de-l">#&lt;/a>
 &lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence">La plus belle histoire de l&amp;rsquo;intelligence&lt;/a>,
-de Stanislas Dehaene, Yann Le Cun et Jacques Girardon (2018)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://www.goodreads.com/book/show/48497641-quand-la-machine-apprend">Quand la machine apprend: la révolution des neurones artificiels et de l&amp;rsquo;apprentissage profond&lt;/a>, de Yann Le Cun (2019)&lt;/p>
-&lt;/li>
-&lt;/ul></description></item><item><title>S'informer</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/2-s-informer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/2-s-informer/</guid><description>&lt;h2 id="sinformer">
- S&amp;rsquo;informer
- &lt;a class="anchor" href="#sinformer">#&lt;/a>
+&lt;p>Stanislas Dehaene, Yann Le Cun et Jacques Girardon (2018)&lt;/p>
+&lt;p>&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/livre_la_plus_belle_histoire_de_lintelligence.jpg" alt="" />&lt;/p>
+&lt;h2 id="quand-la-machine-apprend-la-révolution-des-neurones-artificiels-et-de-l">
+ &lt;a href="https://www.goodreads.com/book/show/48497641-quand-la-machine-apprend">Quand la machine apprend: la révolution des neurones artificiels et de l&amp;rsquo;apprentissage profond&lt;/a>
+ &lt;a class="anchor" href="#quand-la-machine-apprend-la-r%c3%a9volution-des-neurones-artificiels-et-de-l">#&lt;/a>
 &lt;/h2>
-&lt;h3 id="présentation">
- Présentation
- &lt;a class="anchor" href="#pr%c3%a9sentation">#&lt;/a>
-&lt;/h3>
-&lt;p>Au cours de cette activité, vous êtes invité à lire des textes. Par l’étude de ces documents, vous découvrirai l&amp;rsquo;histoire de l&amp;rsquo;IA à travers les diverses phases qui ont marqué son évolution et les scientifiques qui ont apporté leur contribution à ce difficile passage entre l&amp;rsquo;intelligence cognitive, en particulier des processus cognitifs comme la perception, l&amp;rsquo;attention, la mémoire, le langage, le raisonnement, l&amp;rsquo;apprentissage, et l&amp;rsquo;intelligence artificielle telle que nous l&amp;rsquo;a livré le documentaire L&amp;rsquo;Intelligence artificielle décodée[Lien menant à un site externe qui pourrait ne pas répondre aux normes d’accessibilité web.] (5 décembre 2023) de Radio Canada.&lt;/p></description></item><item><title>Travaux notés</title><link>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</guid><description>&lt;h2 id="travaux-notés">
+&lt;p>Yann Le Cun (2019)&lt;/p>
+&lt;p>&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/livre_quand_la_machine_apprend.jpg" alt="" />&lt;/p></description></item><item><title>Travaux notés</title><link>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</guid><description>&lt;h1 id="travaux-notés">
  Travaux notés
  &lt;a class="anchor" href="#travaux-not%c3%a9s">#&lt;/a>
-&lt;/h2>
+&lt;/h1>
 &lt;ol>
 &lt;li>
 &lt;p>Module 1 : ligne du temps&lt;/p>
@@ -139,23 +139,7 @@ plus spécialisée et un peu plus récente d&amp;rsquo;IA, plus mathématique, m
 symbolique, et clairement celle qui domine la période actuelle. Les
 mathématiques qui sont le plus souvent associées à l&amp;rsquo;apprentissage
 machine sont l&amp;rsquo;algèbre linéaire et les probabilités, qui elles-mêmes
-entretiennent des liens étroits.&lt;/p></description></item><item><title>Consolider ses connaissances</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/3-consolider-ses-connaissances/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/3-consolider-ses-connaissances/</guid><description>&lt;h2 id="consolider-ses-connaissances">
- Consolider ses connaissances
- &lt;a class="anchor" href="#consolider-ses-connaissances">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="présentation">
- Présentation
- &lt;a class="anchor" href="#pr%c3%a9sentation">#&lt;/a>
-&lt;/h3>
-&lt;p>Dans cette activité, nous vous proposons une série de questions qui porteront spécifiquement sur le contenu du documentaire L&amp;rsquo;intelligence artificielle décodée[Lien menant à un site externe qui pourrait ne pas répondre aux normes d’accessibilité web.] de Radio Canada (7 décembre 2023). Ce questionnaire vous permettra de consolider vos connaissances sur les progrès de l&amp;rsquo;IA, bien que ce domaine soit toujours en évolution, sur diverses applications dont en médecine, sur les défis éthiques et sociaux qu&amp;rsquo;elle soulève et l&amp;rsquo;impact positifs ou négatifs de l&amp;rsquo;IA sur la société.&lt;/p></description></item><item><title>Initier sa réflexion sur les enjeux éthiques de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/4-enjeux-ethiques/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/4-enjeux-ethiques/</guid><description>&lt;h2 id="initier-sa-réflexion-sur-les-enjeux-éthiques-de-lia">
- Initier sa réflexion sur les enjeux éthiques de l&amp;rsquo;IA
- &lt;a class="anchor" href="#initier-sa-r%c3%a9flexion-sur-les-enjeux-%c3%a9thiques-de-lia">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="présentation">
- Présentation
- &lt;a class="anchor" href="#pr%c3%a9sentation">#&lt;/a>
-&lt;/h3>
-&lt;p>Cette activité 4 du module 1 vise, d&amp;rsquo;une part, à vous instruire sur les principaux enjeux et défis éthiques pour rendre l&amp;rsquo;IA responsable et, d&amp;rsquo;autre part, pour vous sensibiliser à deux questions spécifiques sur l&amp;rsquo;IA que sont les nouveautés de Google et d&amp;rsquo;Open AI et les bulletins de nouvelles générés par l&amp;rsquo;IA où il est difficile de différencier le vrai du faux.&lt;/p></description></item><item><title>Représentation des données</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-repr%C3%A9sentation-des-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-repr%C3%A9sentation-des-donn%C3%A9es/</guid><description>&lt;h2 id="comment-représenter-les-données">
+entretiennent des liens étroits.&lt;/p></description></item><item><title>Représentation des données</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-repr%C3%A9sentation-des-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-repr%C3%A9sentation-des-donn%C3%A9es/</guid><description>&lt;h2 id="comment-représenter-les-données">
  Comment représenter les données?
  &lt;a class="anchor" href="#comment-repr%c3%a9senter-les-donn%c3%a9es">#&lt;/a>
 &lt;/h2>
@@ -173,19 +157,11 @@ un point dans un espace vectoriel extrêmement épars (&amp;ldquo;sparse&amp;rdq
 représenter la présence ou l&amp;rsquo;absence d&amp;rsquo;un mot. Il est également
 possible de représenter le sens des mots à l&amp;rsquo;aide d&amp;rsquo;un espace
 vectoriel, dont les grands modèles de langage (GML) font usage, comme
-nous le verrons au module 4.&lt;/p></description></item><item><title>Analyser et relier innovations et acteurs de l'IA dans le temps</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/5-innovations-et-acteurs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/5-innovations-et-acteurs/</guid><description>&lt;h2 id="analyser-et-relier-innovations-et-acteurs-de-lia-dans-le-temps">
- Analyser et relier innovations et acteurs de l&amp;rsquo;IA dans le temps
- &lt;a class="anchor" href="#analyser-et-relier-innovations-et-acteurs-de-lia-dans-le-temps">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="présentation">
- Présentation
- &lt;a class="anchor" href="#pr%c3%a9sentation">#&lt;/a>
-&lt;/h3>
-&lt;p>Cette activité vise à vous habiliter à sélectionner, justifier et structurer des événements. Elle consiste à concevoir une ligne de temps commentée et, si possible interactive, qui croise phases, innovations et acteurs; le tout étant enrichi de commentaires sur ces items. Une ligne de temps interactive est une représentation visuelle dynamique dans le temps que l&amp;rsquo;on peut explorer, manipuler et enrichir contrairement à une ligne de temps statique.&lt;/p></description></item><item><title>Test sur l'intelligence artificielle décodée</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/6-test-sur-l-ia-decodee/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/6-test-sur-l-ia-decodee/</guid><description>&lt;h2 id="test-sur-lintelligence-artificielle-décodée">
- Test sur l&amp;rsquo;intelligence artificielle décodée
- &lt;a class="anchor" href="#test-sur-lintelligence-artificielle-d%c3%a9cod%c3%a9e">#&lt;/a>
-&lt;/h2>
-&lt;p>Ce test vise à évaluer votre compréhension des grands enjeux liés à l&amp;rsquo;IA abordés dans le documentaire L&amp;rsquo;intelligence artificielle décodée que vous avez visionné à l&amp;rsquo;activité 1 du module 1. Il permet de revenir sur les acteurs engagés dans le domaine, sur leur point de vue sur les aspects de l&amp;rsquo;IA traité dans le documentaire et et sur les enjeux éthique de l&amp;rsquo;IA tels qu&amp;rsquo;ils se posent aujourd&amp;rsquo;hui.&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
+nous le verrons au module 4.&lt;/p></description></item><item><title>Travail noté 1</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9/</guid><description>&lt;h1 id="travail-noté-1--création-dune-visualisation-annotée">
+ Travail noté #1 : création d&amp;rsquo;une visualisation annotée
+ &lt;a class="anchor" href="#travail-not%c3%a9-1--cr%c3%a9ation-dune-visualisation-annot%c3%a9e">#&lt;/a>
+&lt;/h1>
+&lt;p>Dans le cadre de ce travail noté, vous êtes invité à réaliser une visualisation annotée. La visualisation est une représentation visuelle enrichie d&amp;rsquo;explications qui mettent en lumière des informations clés, des liens logiques ou des évolutions dans un domaine donné. Ici, la visualisation annotée vise à illustrer les principaux concepts historiques et logiques de l&amp;rsquo;intelligence artificielle, en lien avec les scientifiques qui ont marqué son évolution.&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
  Classification naïve bayésienne pour détecter les pourriels
  &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels">#&lt;/a>
 &lt;/h1>
