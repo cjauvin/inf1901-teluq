@@ -1,10 +1,10 @@
 ---
-title: "Module 2: l'apprentissage machine"
-weight: 1
+title: "Module 2 - Apprentissage automatique"
+weight: 12
 bookCollapseSection: true
 ---
 
-##  Qu'est-ce que l'apprentissage machine?
+##  Qu'est-ce que l'apprentissage automatique?
 
 L'apprentissage machine (AM) est un ensemble de techniques
 mathématiques qui permettent de résoudre des problèmes ardus en
