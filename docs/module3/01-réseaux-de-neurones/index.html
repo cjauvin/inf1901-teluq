@@ -1,0 +1,117 @@
+<!doctype html><html lang=fr dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+  Qu&rsquo;est-ce qu&rsquo;un réseau de neurones?
+  #
+
+Un réseau de neurones artificiel est un système inspiré du cerveau
+humain, composé d&rsquo;unités appelées neurones organisées en couches.
+Chaque neurone réalise une opération mathématique simple, et
+l&rsquo;ensemble du réseau transforme des données d&rsquo;entrée en une prédiction
+ou une décision.
+
+  Les données
+  #
+
+Les données sont la matière première. Elles peuvent être des images,
+du texte, du son ou des tableaux de nombres. Chaque exemple de données
+est représenté sous forme numérique, souvent sous forme de vecteurs ou
+de matrices. C&rsquo;est à partir de ces données que le réseau apprend à
+reconnaître des motifs."><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/"><meta property="og:site_name" content="INF1901 - Initiation à l'IA : concepts et réflexions"><meta property="og:title" content="Les réseaux de neurones"><meta property="og:description" content="Qu’est-ce qu’un réseau de neurones? # Un réseau de neurones artificiel est un système inspiré du cerveau humain, composé d’unités appelées neurones organisées en couches. Chaque neurone réalise une opération mathématique simple, et l’ensemble du réseau transforme des données d’entrée en une prédiction ou une décision.
+Les données # Les données sont la matière première. Elles peuvent être des images, du texte, du son ou des tableaux de nombres. Chaque exemple de données est représenté sous forme numérique, souvent sous forme de vecteurs ou de matrices. C’est à partir de ces données que le réseau apprend à reconnaître des motifs."><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Les réseaux de neurones | INF1901 - Initiation à l'IA : concepts et réflexions</title><link rel=icon href=https://cjauvin.github.io/inf1901-teluq/favicon.png><link rel=manifest href=https://cjauvin.github.io/inf1901-teluq/manifest.json><link rel=canonical href=https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/><link rel=stylesheet href=https://cjauvin.github.io/inf1901-teluq/book.min.c2a3a3930cc3c92484d4c7886a609454c1ccc7fbe839b6904dde85b081e514b4.css integrity="sha256-wqOjkwzDySSE1MeIamCUVMHMx/voObaQTd6FsIHlFLQ=" crossorigin=anonymous><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=https://cjauvin.github.io/inf1901-teluq/><span>INF1901 - Initiation à l'IA : concepts et réflexions</span></a></h2><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/>Présentation du cours</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/livres/>Les livres</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/>Travaux notés</a></li><li><input type=checkbox id=section-8907ef67e4ecdf3db52171242f091373 class=toggle>
+<label for=section-8907ef67e4ecdf3db52171242f091373 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/ class=flex-auto>Module 1 - Intelligence artificielle</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/activit%C3%A9s/>Activités</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9/>Travail noté 1</a></li></ul></li><li><input type=checkbox id=section-0e47afea11237f1612150a31e7123755 class=toggle>
+<label for=section-0e47afea11237f1612150a31e7123755 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/ class=flex-auto>Module 2 - Apprentissage automatique</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/>Un scénario imaginé</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/>AA versus programmation</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/03-diff%C3%A9rence-avec-lia/>AA versus IA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/>AA versus statistiques</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/>Représentation des données</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/>Les différents paradigmes de l'AA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/>Les applications de l'AA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/08-programmation/>L'AA et la programmation</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/>Travail noté 2</a></li></ul></li><li><input type=checkbox id=section-9cc60359ac12343378e5fa944b3863f7 class=toggle checked>
+<label for=section-9cc60359ac12343378e5fa944b3863f7 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/ class=flex-auto>Module 3 - Réseaux de neurones et apprentissage profond</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/ class=active>Les réseaux de neurones</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/>3Blue1Brown</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/>Travail noté 3</a></li></ul></li><li><input type=checkbox id=section-d23b9c643b16319dcdaeed5376bcec9c class=toggle>
+<label for=section-d23b9c643b16319dcdaeed5376bcec9c class=flex><a role=button class=flex-auto>Module 4 - IA générative et grands modèles de langage</a></label><ul></ul></li><li><input type=checkbox id=section-b90ca6a3362bb22be66d4f5e1f8ab16c class=toggle>
+<label for=section-b90ca6a3362bb22be66d4f5e1f8ab16c class=flex><a role=button class=flex-auto>Module 5 - Enjeux éthiques et philosophiques</a></label><ul></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=https://cjauvin.github.io/inf1901-teluq/svg/menu.svg class=book-icon alt=Menu></label><h3>Les réseaux de neurones</h3><label for=toc-control><img src=https://cjauvin.github.io/inf1901-teluq/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#les-données>Les données</a></li><li><a href=#la-couche-de-poids>La couche de poids</a></li><li><a href=#les-noeuds>Les noeuds</a></li><li><a href=#la-fonction-derreur>La fonction d&rsquo;erreur</a></li><li><a href=#le-gradient-de-la-fonction-derreur>Le gradient de la fonction d&rsquo;erreur</a></li><li><a href=#la-backpropagation>La backpropagation</a></li><li><a href=#linférence>L&rsquo;inférence</a></li><li><a href=#quels-sont-les-problèmes-avec-les-réseaux-de-neurones-classiques>Quels sont les problèmes avec les réseaux de neurones classiques?</a></li><li><a href=#la-relation-entre-le-feature-engineering-classique-et-lapprentissage-profond>La relation entre le feature engineering classique et l&rsquo;apprentissage profond</a></li><li><a href=#réseaux-de-neurones-profonds-plus-de-couches>Réseaux de neurones profonds (plus de couches)</a></li><li><a href=#la-hiérarchie-de-la-représentation-et-des-concepts>La hiérarchie de la représentation et des concepts</a></li><li><a href=#quest-ce-que-la-topologie-dun-réseau-de-neurones>Qu&rsquo;est-ce que la topologie d&rsquo;un réseau de neurones?</a></li><li><a href=#explosition-de-créativité-dans-les-types-de-topologies>Explosition de créativité dans les types de topologies</a></li><li><a href=#quest-ce-quun-gpu>Qu&rsquo;est-ce qu&rsquo;un GPU?</a></li><li><a href=#quest-ce-quun-framework-de-calcul-pour-lapprentissage-profond>Qu&rsquo;est-ce qu&rsquo;un framework de calcul pour l&rsquo;apprentissage profond?</a></li><li><a href=#quest-ce-quune-neural-turing-machine>Qu&rsquo;est-ce qu&rsquo;une Neural Turing Machine?</a></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=quest-ce-quun-réseau-de-neurones>Qu&rsquo;est-ce qu&rsquo;un réseau de neurones?
+<a class=anchor href=#quest-ce-quun-r%c3%a9seau-de-neurones>#</a></h1><p>Un réseau de neurones artificiel est un système inspiré du cerveau
+humain, composé d&rsquo;unités appelées <em>neurones</em> organisées en couches.
+Chaque neurone réalise une opération mathématique simple, et
+l&rsquo;ensemble du réseau transforme des données d&rsquo;entrée en une prédiction
+ou une décision.</p><h2 id=les-données>Les données
+<a class=anchor href=#les-donn%c3%a9es>#</a></h2><p>Les données sont la matière première. Elles peuvent être des images,
+du texte, du son ou des tableaux de nombres. Chaque exemple de données
+est représenté sous forme numérique, souvent sous forme de vecteurs ou
+de matrices. C&rsquo;est à partir de ces données que le réseau apprend à
+reconnaître des motifs.</p><h2 id=la-couche-de-poids>La couche de poids
+<a class=anchor href=#la-couche-de-poids>#</a></h2><p>Une couche de poids est un ensemble de connexions entre les neurones.
+Chaque connexion possède un <em>poids</em>, un nombre qui détermine
+l&rsquo;importance de la donnée transmise. Lorsqu&rsquo;une entrée passe dans une
+couche, elle est multipliée par ces poids. Les poids sont les
+paramètres que l&rsquo;apprentissage va ajuster.</p><h2 id=les-noeuds>Les noeuds
+<a class=anchor href=#les-noeuds>#</a></h2><p>Un noeud (ou neurone) reçoit des entrées pondérées et applique une
+fonction dite <em>d&rsquo;activation</em> (comme ReLU ou sigmoïde) qui introduit de
+la non-linéarité. C&rsquo;est cette étape qui permet au réseau de modéliser
+des relations complexes et non simplement des relations linéaires.</p><h2 id=la-fonction-derreur>La fonction d&rsquo;erreur
+<a class=anchor href=#la-fonction-derreur>#</a></h2><p>La fonction d&rsquo;erreur (ou fonction de perte) mesure à quel point les
+prédictions du réseau s&rsquo;écartent de la vérité connue (l&rsquo;étiquette
+attendue). Plus l&rsquo;erreur est grande, plus le modèle est mauvais.
+Exemples de fonctions d&rsquo;erreur : l&rsquo;erreur quadratique moyenne,
+l&rsquo;entropie croisée.</p><h2 id=le-gradient-de-la-fonction-derreur>Le gradient de la fonction d&rsquo;erreur
+<a class=anchor href=#le-gradient-de-la-fonction-derreur>#</a></h2><p>Le gradient indique comment modifier les poids pour réduire l&rsquo;erreur.
+C&rsquo;est une mesure de la pente locale de la fonction d&rsquo;erreur par
+rapport à chaque poids. Le calcul de ces gradients est essentiel pour
+apprendre.</p><h2 id=la-backpropagation>La backpropagation
+<a class=anchor href=#la-backpropagation>#</a></h2><p>La backpropagation est l&rsquo;algorithme qui calcule efficacement les
+gradients pour tous les poids du réseau en partant de la sortie et en
+&ldquo;remontant&rdquo; couche par couche. C&rsquo;est grâce à cet algorithme que
+l&rsquo;entraînement des réseaux de neurones est devenu possible à grande
+échelle.</p><h2 id=linférence>L&rsquo;inférence
+<a class=anchor href=#linf%c3%a9rence>#</a></h2><p>L&rsquo;inférence correspond à l&rsquo;utilisation d&rsquo;un réseau déjà entraîné pour
+faire une prédiction sur de nouvelles données. À ce stade, les poids
+sont fixés, et le réseau applique simplement ses transformations pour
+produire un résultat.</p><h2 id=quels-sont-les-problèmes-avec-les-réseaux-de-neurones-classiques>Quels sont les problèmes avec les réseaux de neurones classiques?
+<a class=anchor href=#quels-sont-les-probl%c3%a8mes-avec-les-r%c3%a9seaux-de-neurones-classiques>#</a></h2><p>Les premiers réseaux de neurones avaient souvent seulement une ou deux
+couches cachées et souffraient de plusieurs limitations :</p><ul><li>Difficulté à capturer des relations complexes.</li><li>Problèmes d&rsquo;optimisation, comme le gradient qui disparaît quand on
+ajoute trop de couches.</li><li>Manque de puissance de calcul pour entraîner des modèles plus
+profonds sur de gros ensembles de données.
+Ces obstacles expliquent pourquoi, malgré leur ancienneté, les réseaux
+de neurones profonds n&rsquo;ont été largement utilisés que récemment.</li></ul><h2 id=la-relation-entre-le-feature-engineering-classique-et-lapprentissage-profond>La relation entre le feature engineering classique et l&rsquo;apprentissage profond
+<a class=anchor href=#la-relation-entre-le-feature-engineering-classique-et-lapprentissage-profond>#</a></h2><p>Dans l&rsquo;apprentissage machine classique, il fallait définir
+manuellement des <em>features</em>, c&rsquo;est-à-dire des représentations
+pertinentes des données. Cela demandait une expertise importante et
+beaucoup d&rsquo;essais. L&rsquo;apprentissage profond a permis d&rsquo;apprendre
+automatiquement ces représentations hiérarchiques, rendant inutile,
+dans de nombreux cas, le feature engineering manuel.</p><h2 id=réseaux-de-neurones-profonds-plus-de-couches>Réseaux de neurones profonds (plus de couches)
+<a class=anchor href=#r%c3%a9seaux-de-neurones-profonds-plus-de-couches>#</a></h2><p>Un réseau profond comporte plusieurs couches cachées (parfois des
+dizaines, voire des centaines). Chaque couche apprend une
+transformation de plus en plus abstraite des données. Par exemple,
+pour une image, les premières couches apprennent à détecter des bords,
+puis des formes simples, puis des objets.</p><h2 id=la-hiérarchie-de-la-représentation-et-des-concepts>La hiérarchie de la représentation et des concepts
+<a class=anchor href=#la-hi%c3%a9rarchie-de-la-repr%c3%a9sentation-et-des-concepts>#</a></h2><p>Dans un réseau profond, les couches successives construisent une
+hiérarchie de représentations. Cela signifie que le réseau apprend à
+recomposer des concepts simples en concepts plus complexes. Cette
+hiérarchie est l&rsquo;une des raisons principales des performances élevées
+de l&rsquo;apprentissage profond.</p><h2 id=quest-ce-que-la-topologie-dun-réseau-de-neurones>Qu&rsquo;est-ce que la topologie d&rsquo;un réseau de neurones?
+<a class=anchor href=#quest-ce-que-la-topologie-dun-r%c3%a9seau-de-neurones>#</a></h2><p>La topologie désigne la manière dont les neurones sont connectés entre
+eux. Cela inclut :</p><ul><li>Le nombre de couches.</li><li>Le nombre de neurones par couche.</li><li>Les types de connexions (par exemple convolutionnelles, récurrentes, résiduelles).
+La topologie influence fortement les capacités d&rsquo;un réseau à apprendre.</li></ul><h2 id=explosition-de-créativité-dans-les-types-de-topologies>Explosition de créativité dans les types de topologies
+<a class=anchor href=#explosition-de-cr%c3%a9ativit%c3%a9-dans-les-types-de-topologies>#</a></h2><p>Au cours des années 2010, on a assisté à une explosion d&rsquo;innovations :</p><ul><li>Les réseaux convolutifs (CNN) pour l&rsquo;image.</li><li>Les réseaux récurrents (RNN, LSTM) pour le texte et les séries temporelles.</li><li>Les réseaux résiduels (ResNet) qui permettent d&rsquo;entraîner des centaines de couches.</li><li>Les architectures de type Transformer pour le langage naturel.
+Ces topologies ont permis des progrès spectaculaires dans de nombreux domaines.</li></ul><h2 id=quest-ce-quun-gpu>Qu&rsquo;est-ce qu&rsquo;un GPU?
+<a class=anchor href=#quest-ce-quun-gpu>#</a></h2><p>Un GPU (processeur graphique) est initialement conçu pour traiter les
+images et les graphismes en parallèle. Il peut exécuter des milliers
+d&rsquo;opérations simultanément. Comme l&rsquo;entraînement d&rsquo;un réseau de
+neurones consiste à faire beaucoup de calculs en parallèle (produits
+matriciels), les GPU se sont révélés idéaux pour accélérer
+l&rsquo;apprentissage profond.</p><h2 id=quest-ce-quun-framework-de-calcul-pour-lapprentissage-profond>Qu&rsquo;est-ce qu&rsquo;un framework de calcul pour l&rsquo;apprentissage profond?
+<a class=anchor href=#quest-ce-quun-framework-de-calcul-pour-lapprentissage-profond>#</a></h2><p>Les frameworks comme Theano, TensorFlow ou PyTorch sont des
+bibliothèques logicielles qui facilitent :</p><ul><li>La définition des réseaux (topologie).</li><li>Le calcul automatique des gradients (différentiation automatique).</li><li>L&rsquo;exécution efficace sur GPU.
+Historiquement, Theano a été l&rsquo;un des premiers à proposer cette
+approche, suivi par TensorFlow (Google) et PyTorch (Facebook). Ces
+outils ont permis à la fois la démocratisation et l&rsquo;accélération des
+recherches en apprentissage profond.</li></ul><h2 id=quest-ce-quune-neural-turing-machine>Qu&rsquo;est-ce qu&rsquo;une Neural Turing Machine?
+<a class=anchor href=#quest-ce-quune-neural-turing-machine>#</a></h2><p>Une Neural Turing Machine (NTM) est un modèle avancé qui combine un
+réseau de neurones avec un système de mémoire externe que le réseau
+peut apprendre à lire et à écrire.</p><p>L&rsquo;idée est inspirée de la notion de machine de Turing, un modèle
+théorique de calcul qui dispose d&rsquo;une mémoire illimitée et qui peut
+exécuter n&rsquo;importe quel algorithme en lisant et en modifiant cette
+mémoire.</p><p>Les NTMs cherchent à reproduire cette capacité en permettant au réseau
+de neurones de manipuler des informations de manière plus flexible et
+plus structurée qu&rsquo;un réseau classique. Concrètement, une NTM comprend
+deux grandes parties :</p><ul><li><strong>Un contrôleur</strong> : généralement un réseau de neurones récurrent qui décide quoi faire.</li><li><strong>Une mémoire externe</strong> : une sorte de tableau que le contrôleur peut interroger ou modifier via des mécanismes d&rsquo;attention différentiables.</li></ul><p>Grâce à cette combinaison, une NTM peut apprendre des tâches complexes
+qui nécessitent de stocker et rappeler des séquences d&rsquo;informations,
+comme copier des chaînes, trier des données ou exécuter des procédures
+étape par étape.</p><p>Les NTMs sont un exemple de l&rsquo;évolution des réseaux de neurones vers
+des systèmes de plus en plus généraux et puissants, capables de
+simuler des formes de calcul proches de celles des ordinateurs
+traditionnels, mais en restant entraînables de bout en bout par
+gradient.</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#les-données>Les données</a></li><li><a href=#la-couche-de-poids>La couche de poids</a></li><li><a href=#les-noeuds>Les noeuds</a></li><li><a href=#la-fonction-derreur>La fonction d&rsquo;erreur</a></li><li><a href=#le-gradient-de-la-fonction-derreur>Le gradient de la fonction d&rsquo;erreur</a></li><li><a href=#la-backpropagation>La backpropagation</a></li><li><a href=#linférence>L&rsquo;inférence</a></li><li><a href=#quels-sont-les-problèmes-avec-les-réseaux-de-neurones-classiques>Quels sont les problèmes avec les réseaux de neurones classiques?</a></li><li><a href=#la-relation-entre-le-feature-engineering-classique-et-lapprentissage-profond>La relation entre le feature engineering classique et l&rsquo;apprentissage profond</a></li><li><a href=#réseaux-de-neurones-profonds-plus-de-couches>Réseaux de neurones profonds (plus de couches)</a></li><li><a href=#la-hiérarchie-de-la-représentation-et-des-concepts>La hiérarchie de la représentation et des concepts</a></li><li><a href=#quest-ce-que-la-topologie-dun-réseau-de-neurones>Qu&rsquo;est-ce que la topologie d&rsquo;un réseau de neurones?</a></li><li><a href=#explosition-de-créativité-dans-les-types-de-topologies>Explosition de créativité dans les types de topologies</a></li><li><a href=#quest-ce-quun-gpu>Qu&rsquo;est-ce qu&rsquo;un GPU?</a></li><li><a href=#quest-ce-quun-framework-de-calcul-pour-lapprentissage-profond>Qu&rsquo;est-ce qu&rsquo;un framework de calcul pour l&rsquo;apprentissage profond?</a></li><li><a href=#quest-ce-quune-neural-turing-machine>Qu&rsquo;est-ce qu&rsquo;une Neural Turing Machine?</a></li></ul></nav></div></aside></main></body></html>

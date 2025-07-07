@@ -20,31 +20,28 @@
 &lt;p>Ce texte en ligne sur &lt;a href="https://www.ibm.com/fr-fr/think/topics/history-of-artificial-intelligence">l&amp;rsquo;histoire de l&amp;rsquo;IA&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Ce texte en ligne sur &lt;a href="https://www.thecanadianencyclopedia.ca/fr/article/intelligence-artificielle">l&amp;rsquo;IA dans une perspective canadienne&lt;/a>&lt;/p></description></item><item><title>Présentation du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</guid><description>&lt;h2 id="présentation-du-cours">
+&lt;p>Ce texte en ligne sur &lt;a href="https://www.thecanadianencyclopedia.ca/fr/article/intelligence-artificielle">l&amp;rsquo;IA dans une perspective canadienne&lt;/a>&lt;/p></description></item><item><title>Les réseaux de neurones</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</guid><description>&lt;h1 id="quest-ce-quun-réseau-de-neurones">
+ Qu&amp;rsquo;est-ce qu&amp;rsquo;un réseau de neurones?
+ &lt;a class="anchor" href="#quest-ce-quun-r%c3%a9seau-de-neurones">#&lt;/a>
+&lt;/h1>
+&lt;p>Un réseau de neurones artificiel est un système inspiré du cerveau
+humain, composé d&amp;rsquo;unités appelées &lt;em>neurones&lt;/em> organisées en couches.
+Chaque neurone réalise une opération mathématique simple, et
+l&amp;rsquo;ensemble du réseau transforme des données d&amp;rsquo;entrée en une prédiction
+ou une décision.&lt;/p>
+&lt;h2 id="les-données">
+ Les données
+ &lt;a class="anchor" href="#les-donn%c3%a9es">#&lt;/a>
+&lt;/h2>
+&lt;p>Les données sont la matière première. Elles peuvent être des images,
+du texte, du son ou des tableaux de nombres. Chaque exemple de données
+est représenté sous forme numérique, souvent sous forme de vecteurs ou
+de matrices. C&amp;rsquo;est à partir de ces données que le réseau apprend à
+reconnaître des motifs.&lt;/p></description></item><item><title>Présentation du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</guid><description>&lt;h2 id="présentation-du-cours">
  Présentation du cours
  &lt;a class="anchor" href="#pr%c3%a9sentation-du-cours">#&lt;/a>
 &lt;/h2>
-&lt;p>L’intelligence artificielle (IA) constitue aujourd’hui un champ de recherches et d’applications essentiel dont l’influence s’étend à de multiples domaines, de la science et la médecine aux industries créatives et à l’éducation. Conséquemment, les entreprises de divers secteurs sont confrontées à cette transformation numérique sans précédent, si bien que l’intégration de l’IA dans les modèles d’affaires n’est plus un luxe, mais une nécessité pour demeurer compétitif dans un marché mondial en constante évolution. L’émergence de modèles de langage avancés tels que ChatGPT, DeepSeek et Llama 3 illustre cette transformation, en ouvrant de nouvelles perspectives tant scientifiques que sociétales.&lt;/p></description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones">
- Apprivoisez un réseau de neurones
- &lt;a class="anchor" href="#apprivoisez-un-r%c3%a9seau-de-neurones">#&lt;/a>
-&lt;/h1>
-&lt;ol>
-&lt;li>
-&lt;p>En vous assurant tout d&amp;rsquo;abord que le &amp;ldquo;type de problème&amp;rdquo; (menu
-déroulant à droite) est la &amp;ldquo;classification&amp;rdquo;, considérez les 4
-problèmes proposés.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Expliquez tout d&amp;rsquo;abord ce que veut dire &amp;ldquo;résoudre&amp;rdquo; ces problèmes.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Quel problème vous apparait ensuite le plus facile à résoudre, pour
-un algorithme d&amp;rsquo;apprentissage machine (pas seulement un réseau de
-neurones)? Expliquez pourquoi.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Considérez maintenant le problème avec lequel deux petits groupes
-de points sont disposés en diagonale, l&amp;rsquo;un par rapport à l&amp;rsquo;autre.&lt;/p></description></item><item><title>Un scénario imaginé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h1 id="un-scénario-imaginaire-mais-réaliste-">
+&lt;p>L’intelligence artificielle (IA) constitue aujourd’hui un champ de recherches et d’applications essentiel dont l’influence s’étend à de multiples domaines, de la science et la médecine aux industries créatives et à l’éducation. Conséquemment, les entreprises de divers secteurs sont confrontées à cette transformation numérique sans précédent, si bien que l’intégration de l’IA dans les modèles d’affaires n’est plus un luxe, mais une nécessité pour demeurer compétitif dans un marché mondial en constante évolution. L’émergence de modèles de langage avancés tels que ChatGPT, DeepSeek et Llama 3 illustre cette transformation, en ouvrant de nouvelles perspectives tant scientifiques que sociétales.&lt;/p></description></item><item><title>Un scénario imaginé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h1 id="un-scénario-imaginaire-mais-réaliste-">
  Un scénario imaginaire, mais réaliste !
  &lt;a class="anchor" href="#un-sc%c3%a9nario-imaginaire-mais-r%c3%a9aliste-">#&lt;/a>
 &lt;/h1>
@@ -78,7 +75,20 @@ serait équivalent mais plus simple : &amp;ldquo;ok&amp;rdquo; ou &amp;ldquo;pro
 est binaire, dans le sens qu&amp;rsquo;elle a seulement deux valeurs possibles
 (peu importe lesquelles, en autant qu&amp;rsquo;il y en ait seulement deux). Sur
 la base de cette valeur binaire de sortie, on pourrait agir et envoyer
-un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnelle">
+un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</guid><description>&lt;h1 id="vidéo-de-3blue1brown">
+ Vidéo de 3Blue1Brown
+ &lt;a class="anchor" href="#vid%c3%a9o-de-3blue1brown">#&lt;/a>
+&lt;/h1>
+&lt;p>Visionnez cette vidéo d&amp;rsquo;introduction aux réseaux de neurones, créée par 3Blue1Brown. Notez qu&amp;rsquo;il est possible d&amp;rsquo;avoir le contenu audio et les sous-titres en français, via les réglages du lecteur YouTube.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aircAruvnKk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="qui-est-3blue1brown">
+ Qui est 3Blue1Brown?
+ &lt;a class="anchor" href="#qui-est-3blue1brown">#&lt;/a>
+&lt;/h2>
+&lt;p>Grant Sanderson, connu sous le pseudonyme 3Blue1Brown, est un vulgarisateur scientifique et créateur de vidéos éducatives sur YouTube. Il s’est fait remarquer grâce à son style visuel unique qui combine des animations claires et élégantes avec des explications intuitives de concepts mathématiques parfois complexes, comme l’algèbre linéaire, le calcul différentiel, les probabilités ou encore l’intelligence artificielle. Son approche met l’accent sur la compréhension en profondeur plutôt que sur la simple application de formules, et a permis à des millions de personnes dans le monde de découvrir la beauté et la logique des mathématiques.&lt;/p></description></item><item><title>AA versus programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnelle">
  En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnelle?
  &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnelle">#&lt;/a>
 &lt;/h1>
@@ -213,4 +223,28 @@ classique qui peut être traité avec cet algorithme est la
 classification de courriels. On peut tenter d&amp;rsquo;estimer la probabilité
 qu&amp;rsquo;un courriel soit en fait un pourriel en prenant en compte les mots
 particuliers qu&amp;rsquo;il contient, l&amp;rsquo;idée étant que certains mots auront
-tendance à être plus souvent utilisés dans des pourriels.&lt;/p></description></item></channel></rss>
+tendance à être plus souvent utilisés dans des pourriels.&lt;/p></description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones">
+ Apprivoisez un réseau de neurones
+ &lt;a class="anchor" href="#apprivoisez-un-r%c3%a9seau-de-neurones">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="instructions-et-questions">
+ Instructions et questions
+ &lt;a class="anchor" href="#instructions-et-questions">#&lt;/a>
+&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>En vous assurant tout d&amp;rsquo;abord que le &amp;ldquo;type de problème&amp;rdquo; (menu
+déroulant à droite) est la &amp;ldquo;classification&amp;rdquo;, considérez les 4
+problèmes proposés.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Expliquez tout d&amp;rsquo;abord ce que veut dire &amp;ldquo;résoudre&amp;rdquo; ces problèmes.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Quel problème vous apparait ensuite le plus facile à résoudre, pour
+un algorithme d&amp;rsquo;apprentissage machine (pas seulement un réseau de
+neurones)? Expliquez pourquoi.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Considérez maintenant le problème avec lequel deux petits groupes
+de points sont disposés en diagonale, l&amp;rsquo;un par rapport à l&amp;rsquo;autre.&lt;/p></description></item></channel></rss>
