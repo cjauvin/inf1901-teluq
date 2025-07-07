@@ -1,0 +1,96 @@
+<!doctype html><html lang=fr dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+  Les différents paradigmes de l&rsquo;apprentissage automatique
+  #
+
+Il existe plusieurs manières de catégoriser les algorithmes
+d&rsquo;apprentissage automatique, selon leur structure même, mais aussi selon
+la nature et la structure des problèmes qu&rsquo;ils tentent de résoudre.
+Nous allons considérer deux schémas de classement fondamentaux :
+
+L&rsquo;apprentissage supervisé versus non-supervisé
+L&rsquo;apprentissage paramétrique versus non-paramétrique
+
+
+  Apprentissage supervisé (classification, regression)
+  #
+
+L&rsquo;apprentissage supervisé fonctionne à partir de données pour
+lesquelles la &ldquo;bonne réponse&rdquo; (i.e. celle qu&rsquo;on aimerait que
+l&rsquo;algorithme fournisse systématiquement, une fois entrainé) est
+fournie, en tant que donnée d&rsquo;entrainement."><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/"><meta property="og:site_name" content="INF1901 - Initiation à l'IA : concepts et réflexions"><meta property="og:title" content="Les différents paradigmes de l'AA"><meta property="og:description" content="Les différents paradigmes de l’apprentissage automatique # Il existe plusieurs manières de catégoriser les algorithmes d’apprentissage automatique, selon leur structure même, mais aussi selon la nature et la structure des problèmes qu’ils tentent de résoudre. Nous allons considérer deux schémas de classement fondamentaux :
+L’apprentissage supervisé versus non-supervisé L’apprentissage paramétrique versus non-paramétrique Apprentissage supervisé (classification, regression) # L’apprentissage supervisé fonctionne à partir de données pour lesquelles la “bonne réponse” (i.e. celle qu’on aimerait que l’algorithme fournisse systématiquement, une fois entrainé) est fournie, en tant que donnée d’entrainement."><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Les différents paradigmes de l'AA | INF1901 - Initiation à l'IA : concepts et réflexions</title><link rel=icon href=https://cjauvin.github.io/inf1901-teluq/favicon.png><link rel=manifest href=https://cjauvin.github.io/inf1901-teluq/manifest.json><link rel=canonical href=https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/><link rel=stylesheet href=https://cjauvin.github.io/inf1901-teluq/book.min.c2a3a3930cc3c92484d4c7886a609454c1ccc7fbe839b6904dde85b081e514b4.css integrity="sha256-wqOjkwzDySSE1MeIamCUVMHMx/voObaQTd6FsIHlFLQ=" crossorigin=anonymous><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=https://cjauvin.github.io/inf1901-teluq/><span>INF1901 - Initiation à l'IA : concepts et réflexions</span></a></h2><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/>Présentation du cours</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/livres/>Les livres</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/>Travaux notés</a></li><li><input type=checkbox id=section-8907ef67e4ecdf3db52171242f091373 class=toggle>
+<label for=section-8907ef67e4ecdf3db52171242f091373 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/ class=flex-auto>Module 1 - Intelligence artificielle</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/activit%C3%A9s/>Activités</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9/>Travail noté 1</a></li></ul></li><li><input type=checkbox id=section-0e47afea11237f1612150a31e7123755 class=toggle checked>
+<label for=section-0e47afea11237f1612150a31e7123755 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/ class=flex-auto>Module 2 - Apprentissage automatique</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/>Un scénario imaginé</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/>AA versus programmation</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/03-diff%C3%A9rence-avec-lia/>AA versus IA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/>AA versus statistiques</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/>Représentation des données</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/ class=active>Les différents paradigmes de l'AA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/>Les applications de l'AA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/08-programmation/>L'AA et la programmation</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/>Travail noté 2</a></li></ul></li><li><input type=checkbox id=section-9cc60359ac12343378e5fa944b3863f7 class=toggle>
+<label for=section-9cc60359ac12343378e5fa944b3863f7 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/ class=flex-auto>Module 3 - Réseaux de neurones et apprentissage profond</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/>Travail noté 3</a></li></ul></li><li><input type=checkbox id=section-d23b9c643b16319dcdaeed5376bcec9c class=toggle>
+<label for=section-d23b9c643b16319dcdaeed5376bcec9c class=flex><a role=button class=flex-auto>Module 4 - IA générative et grands modèles de langage</a></label><ul></ul></li><li><input type=checkbox id=section-b90ca6a3362bb22be66d4f5e1f8ab16c class=toggle>
+<label for=section-b90ca6a3362bb22be66d4f5e1f8ab16c class=flex><a role=button class=flex-auto>Module 5 - Enjeux éthiques et philosophiques</a></label><ul></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=https://cjauvin.github.io/inf1901-teluq/svg/menu.svg class=book-icon alt=Menu></label><h3>Les différents paradigmes de l'AA</h3><label for=toc-control><img src=https://cjauvin.github.io/inf1901-teluq/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#apprentissage-supervisé-classification-regression>Apprentissage supervisé (classification, regression)</a><ul><li><a href=#régression>Régression</a></li><li><a href=#classification>Classification</a></li></ul></li><li><a href=#apprentissage-non-supervisé>Apprentissage non-supervisé</a><ul><li><a href=#partitionnement-clustering>Partitionnement (clustering)</a></li></ul></li><li><a href=#apprentissage-paramétrique-versus-non-paramétrique>Apprentissage paramétrique versus non-paramétrique</a></li><li><a href=#apprentissage-inductif-versus-transductif>Apprentissage inductif versus transductif</a></li><li><a href=#apprentissage-par-renforcement-rl>Apprentissage par renforcement (RL)</a></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=les-différents-paradigmes-de-lapprentissage-automatique>Les différents paradigmes de l&rsquo;apprentissage automatique
+<a class=anchor href=#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique>#</a></h1><p>Il existe plusieurs manières de catégoriser les algorithmes
+d&rsquo;apprentissage automatique, selon leur structure même, mais aussi selon
+la nature et la structure des problèmes qu&rsquo;ils tentent de résoudre.
+Nous allons considérer deux schémas de classement fondamentaux :</p><ul><li>L&rsquo;apprentissage supervisé versus non-supervisé</li><li>L&rsquo;apprentissage paramétrique versus non-paramétrique</li></ul><h2 id=apprentissage-supervisé-classification-regression>Apprentissage supervisé (classification, regression)
+<a class=anchor href=#apprentissage-supervis%c3%a9-classification-regression>#</a></h2><p>L&rsquo;apprentissage supervisé fonctionne à partir de données pour
+lesquelles la &ldquo;bonne réponse&rdquo; (i.e. celle qu&rsquo;on aimerait que
+l&rsquo;algorithme fournisse systématiquement, une fois entrainé) est
+fournie, en tant que donnée d&rsquo;entrainement.</p><h3 id=régression>Régression
+<a class=anchor href=#r%c3%a9gression>#</a></h3><p>Une régression est une famille d&rsquo;algorithmes d&rsquo;apprentissage supervisé
+(ou plus classiquement, de modélisation statistique) dont le but est
+de découvrir une fonction numérique continue, au sens classique
+mathématique (dans sa forme la plus simple, une fonction associe une
+valeur numérique du domaine X vers l&rsquo;image Y).</p><ul><li>Régression linéaire (ex. à partir du nombre de pièces et l&rsquo;année de construction, on aimerait prédire le prix d&rsquo;une maison)</li><li>Réseau de neurones</li></ul><h3 id=classification>Classification
+<a class=anchor href=#classification>#</a></h3><p>Une autre famille d&rsquo;algorithmes d&rsquo;apprentissage supervisé tente plutôt
+de découvrir une fonction de classification, qui associe une série de
+caractéristiques à une catégorie particulière (dont le nombre est fini
+et connu d&rsquo;avance).</p><ul><li>Régression logistique (ex1: à partir du nombre d&rsquo;heures étudiées et du nombre de cours, prédire si un étudiant a gradué ou non, ex2: à partir des caractéristques des passagers du Titanic, prédire s&rsquo;ils ont survévu ou non)</li><li>k-NN</li><li>Arbres de décision</li><li>Naive Bayes</li><li>Réseau de neurones</li></ul><h2 id=apprentissage-non-supervisé>Apprentissage non-supervisé
+<a class=anchor href=#apprentissage-non-supervis%c3%a9>#</a></h2><p>Nous avons vu qu&rsquo;une caractéristique essentielle de l&rsquo;apprentissage
+supervisé est que la &ldquo;bonne réponse&rdquo; (qu&rsquo;il s&rsquo;agisse du prix réel
+d&rsquo;une maison, ou la variable binaire oui/non correspondant au fait
+qu&rsquo;un étudiant ait échoué ou non) est fournie avec les données
+d&rsquo;entrainement. Un algorithme d&rsquo;apprentissage supervisé (nous avons vu
+qu&rsquo;il y en avait plusieurs) utilise cette &ldquo;bonne réponse&rdquo; comme une
+cible cruciale qu&rsquo;il doit s&rsquo;efforcer d&rsquo;atteindre, de modéliser donc.
+En contraste, un algorithme non-supervisé n&rsquo;a pas cette &ldquo;bonne
+réponse&rdquo;, il n&rsquo;a que des données non-étiquettées. Les algorithmes de
+cette famille ont donc une tâche entièrement différente que celle de
+l&rsquo;apprentissage supervisé. Il doivent découvrir la structure inhérente
+aux données, de manière autonome, tout en étant guidé possible par des
+hypothèses. Par exemple, si les données sont des mesures décrivant un
+ensemble de fleurs de différentes espèces, il est possible que je
+sache à priori combien d&rsquo;espèces l&rsquo;ensemble d&rsquo;entrainement contient.
+Dans ce cas, supposons que je sache qu&rsquo;il y a trois espèces, alors
+l&rsquo;algorithme n&rsquo;aura qu&rsquo;à découvrir ces trois groupes, et associer
+chaque exemple à un groupe en particulier. Il pourrait être également
+possible que le nombre d&rsquo;espèces soit à priori inconnu, ce qui rendrait
+la tâche de l&rsquo;algorithme de classification encore plus difficile.</p><h3 id=partitionnement-clustering>Partitionnement (clustering)
+<a class=anchor href=#partitionnement-clustering>#</a></h3><p>Avec un algorithme de partitionnement, on peut découvrir des
+&ldquo;agrégats&rdquo;, ou des groupes naturels dans les données.</p><ul><li><p>k-Means</p></li><li><p>DBScan</p></li><li><p>Hierarchical clustering
+*** Réduction de la dimensionnalité
+En tentant de réduire la dimensionnalité des données, on peut
+découvrir sa structure inhérente, ce qui est souvent utile en
+visualisation (par exemple, une donnée exprimée en très haute
+dimension peut être plus facile à comprendre ou visualiser en 2d ou
+3d).</p></li><li><p>PCA</p></li></ul><h2 id=apprentissage-paramétrique-versus-non-paramétrique>Apprentissage paramétrique versus non-paramétrique
+<a class=anchor href=#apprentissage-param%c3%a9trique-versus-non-param%c3%a9trique>#</a></h2><p>Il existe une autre manière, complètement différente, de classifier
+les algorithmes d&rsquo;apprentissage : si l&rsquo;algorithme est implémenté à
+l&rsquo;aide d&rsquo;une fonction mathématique essentiellement définie par des
+paramètres, qui sont indépendants des données qui seront traitées par
+l&rsquo;algorithme, on parle d&rsquo;apprentissage paramétrique. Avec l&rsquo;apprentissage non-paramétrique, en contraste, la fonction de décision est définie à partir des données d&rsquo;entraînement. Les données elles-mêmes constituent l&rsquo;algorithme.</p><p>Exemples d&rsquo;algorithmes paramétriques :</p><ul><li>Régression linéaire (apprentissage supervisé)</li><li>Régression logistique (supervisé)</li><li>Réseau de neurones</li></ul><p>Exemples d&rsquo;algorithmes non-paramétriques :</p><ul><li>Arbres de décision</li><li>k-NN</li></ul><p>Pour certains algorithmes, la frontière entre ces deux classes est un peu plus floue.</p><h2 id=apprentissage-inductif-versus-transductif>Apprentissage inductif versus transductif
+<a class=anchor href=#apprentissage-inductif-versus-transductif>#</a></h2><p>TODO</p><h2 id=apprentissage-par-renforcement-rl>Apprentissage par renforcement (RL)
+<a class=anchor href=#apprentissage-par-renforcement-rl>#</a></h2><p>L&rsquo;apprentissage par renforcement (APR) est un autre paradigme
+d&rsquo;apprentissage automatique, très différent des précédents dont nous avons
+parlés. On peut généraliser les apprentissages supervisé et
+non-supervisé en considérant qu&rsquo;ils sont une forme de &ldquo;reconnaissance
+de motifs&rdquo; (en anglais &ldquo;pattern recognition&rdquo;). Les mécanismes de ce
+genre sont souvent associés aux fonctions cognitives de la perception,
+chez les humains. Par exemple, mes yeux perçoivent une information
+visuelle qu&rsquo;on m&rsquo;a appris à classifier en tant que &ldquo;balle&rdquo;, alors
+quand je vois une balle, la classification appropriée est effectuée
+par mon esprit (exemple d&rsquo;apprentissage supervisé). D&rsquo;une manière
+apparentée mais un peu différente, il se peut que mes yeux détectent,
+lors d&rsquo;une promenade en forêt, une forme ou des couleurs
+particulières, que je ne parviens pas à identifier, mais qui vont tout
+de même attirer mon attention (exemple d&rsquo;apprentissage non-supervisé).
+En contraste de cette reconnaissance de motifs, l&rsquo;apprentissage par
+renforcement est plutôt une modélisation du comportement, plutôt que
+de la perception (quelle action devrait être posée dans ce contexte
+particulier). L&rsquo;APR est souvent utilisé dans les jeux et la robotique.</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#apprentissage-supervisé-classification-regression>Apprentissage supervisé (classification, regression)</a><ul><li><a href=#régression>Régression</a></li><li><a href=#classification>Classification</a></li></ul></li><li><a href=#apprentissage-non-supervisé>Apprentissage non-supervisé</a><ul><li><a href=#partitionnement-clustering>Partitionnement (clustering)</a></li></ul></li><li><a href=#apprentissage-paramétrique-versus-non-paramétrique>Apprentissage paramétrique versus non-paramétrique</a></li><li><a href=#apprentissage-inductif-versus-transductif>Apprentissage inductif versus transductif</a></li><li><a href=#apprentissage-par-renforcement-rl>Apprentissage par renforcement (RL)</a></li></ul></nav></div></aside></main></body></html>

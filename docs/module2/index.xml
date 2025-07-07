@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module 2 - Apprentissage automatique on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/</link><description>Recent content in Module 2 - Apprentissage automatique on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/module2/index.xml" rel="self" type="application/rss+xml"/><item><title>Un scénario imaginaire mais réaliste</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h2 id="un-scénario-imaginaire-mais-réaliste">
- Un scénario imaginaire mais réaliste
- &lt;a class="anchor" href="#un-sc%c3%a9nario-imaginaire-mais-r%c3%a9aliste">#&lt;/a>
-&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module 2 - Apprentissage automatique on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/</link><description>Recent content in Module 2 - Apprentissage automatique on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/module2/index.xml" rel="self" type="application/rss+xml"/><item><title>Un scénario imaginé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h1 id="un-scénario-imaginaire-mais-réaliste-">
+ Un scénario imaginaire, mais réaliste !
+ &lt;a class="anchor" href="#un-sc%c3%a9nario-imaginaire-mais-r%c3%a9aliste-">#&lt;/a>
+&lt;/h1>
 &lt;p>Imaginez une compagnie où il y a une chaîne de montage avec laquelle
 on assemble des téléviseurs.&lt;/p>
 &lt;p>&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module2/tv_assembly_line.png" alt="" />&lt;/p>
-&lt;h3 id="le-problème">
+&lt;h2 id="le-problème">
  Le problème
  &lt;a class="anchor" href="#le-probl%c3%a8me">#&lt;/a>
-&lt;/h3>
+&lt;/h2>
 &lt;p>Supposons que dans un endroit particulièrement délicat de la chaîne de
 montage, un problème avec un appareil d&amp;rsquo;assemblage particulier
 survienne parfois, que l&amp;rsquo;on aimerait détecter le plus rapidement
 possible.&lt;/p>
-&lt;h3 id="une-solution-possible">
+&lt;h2 id="une-solution-possible">
  Une solution possible
  &lt;a class="anchor" href="#une-solution-possible">#&lt;/a>
-&lt;/h3>
+&lt;/h2>
 &lt;p>On pourrait imaginer placer une caméra vidéo dont le but serait de
 visionner en permanence le flot des appareils en cours d&amp;rsquo;assemblage,
 pour tenter de détecter les problèmes. Pour ce faire, la caméra
@@ -32,10 +32,10 @@ serait équivalent mais plus simple : &amp;ldquo;ok&amp;rdquo; ou &amp;ldquo;pro
 est binaire, dans le sens qu&amp;rsquo;elle a seulement deux valeurs possibles
 (peu importe lesquelles, en autant qu&amp;rsquo;il y en ait seulement deux). Sur
 la base de cette valeur binaire de sortie, on pourrait agir et envoyer
-un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</guid><description>&lt;h2 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnelle">
+un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnelle">
  En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnelle?
  &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnelle">#&lt;/a>
-&lt;/h2>
+&lt;/h1>
 &lt;p>Bien que l&amp;rsquo;apprentissage automatique requiert de la programmation, il
 s&amp;rsquo;agit d&amp;rsquo;un paradigme entièrement différent de celui de la
 programmation.&lt;/p>
@@ -43,10 +43,10 @@ programmation.&lt;/p>
 l&amp;rsquo;ordinateur exécute pour résoudre un problème. Normalement, ce
 programme fait son travail en relation avec des données fournies par
 l&amp;rsquo;utilisateur. Le programme dans ce cas est une série d&amp;rsquo;instructions
-symboliques dans un langage de programmation.&lt;/p></description></item><item><title>AA versus IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/03-diff%C3%A9rence-avec-lia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/03-diff%C3%A9rence-avec-lia/</guid><description>&lt;h2 id="en-quoi-laa-diffère-de-lia">
- En quoi l&amp;rsquo;AA diffère de l&amp;rsquo;IA?
- &lt;a class="anchor" href="#en-quoi-laa-diff%c3%a8re-de-lia">#&lt;/a>
-&lt;/h2>
+symboliques dans un langage de programmation.&lt;/p></description></item><item><title>AA versus IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/03-diff%C3%A9rence-avec-lia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/03-diff%C3%A9rence-avec-lia/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-de-lia">
+ En quoi l&amp;rsquo;apprentissage automatique diffère de l&amp;rsquo;IA?
+ &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-lia">#&lt;/a>
+&lt;/h1>
 &lt;p>L&amp;rsquo;intelligence artificielle est le domaine plus vaste, qui englobe
 l&amp;rsquo;apprentissage automatique et l&amp;rsquo;intelligence artificielle classique (plus
 ancienne) et dite symbolique (en anglais on utilise parfois le terme
@@ -58,10 +58,25 @@ plus spécialisée et un peu plus récente d&amp;rsquo;IA, plus mathématique, m
 symbolique, et clairement celle qui domine la période actuelle. Les
 mathématiques qui sont le plus souvent associées à l&amp;rsquo;apprentissage
 machine sont l&amp;rsquo;algèbre linéaire et les probabilités, qui elles-mêmes
-entretiennent des liens étroits.&lt;/p></description></item><item><title>Représentation des données</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-repr%C3%A9sentation-des-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-repr%C3%A9sentation-des-donn%C3%A9es/</guid><description>&lt;h2 id="comment-représenter-les-données">
+entretiennent des liens étroits.&lt;/p></description></item><item><title>AA versus statistiques</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-des-statistiques">
+ En quoi l&amp;rsquo;apprentissage automatique diffère des statistiques?
+ &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-des-statistiques">#&lt;/a>
+&lt;/h1>
+&lt;p>L&amp;rsquo;apprentissage automatique, conceptuellement, est pratiquement un
+synonyme de statistiques. Les deux domaines entretiennent des
+relations très étroites, et la distinction est parfois assez
+difficile. Dans les deux cas on parle de modèles, d&amp;rsquo;entraînement (ou
+recherche des paramètres), d&amp;rsquo;inférence, etc. Toutefois l&amp;rsquo;AA est plus
+axée sur les problèmes dont la modélisation se fait en très haute
+dimension, comme l&amp;rsquo;analyse d&amp;rsquo;images ou le traitement du langage. De
+plus, l&amp;rsquo;accent en AA est davantage mis sur les aspects
+computationnels, par opposition aux mathématiques (bien que l&amp;rsquo;AA
+demeure très mathématique en substance). En résumé, les statistiques
+ont une saveur mathématique et scientifique, tandis que l&amp;rsquo;AA a une
+saveur plus mathématique et informatique (ou computationnelle).&lt;/p></description></item><item><title>Représentation des données</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</guid><description>&lt;h1 id="comment-représenter-les-données">
  Comment représenter les données?
  &lt;a class="anchor" href="#comment-repr%c3%a9senter-les-donn%c3%a9es">#&lt;/a>
-&lt;/h2>
+&lt;/h1>
 &lt;p>Un problème crucial qui se pose en AA est comment adéquatement
 représenter les données, pour qu&amp;rsquo;elles soient traitables et
 compréhensibles à la fois par l&amp;rsquo;ordinateur ainsi que le modèle (ou
@@ -76,7 +91,34 @@ un point dans un espace vectoriel extrêmement épars (&amp;ldquo;sparse&amp;rdq
 représenter la présence ou l&amp;rsquo;absence d&amp;rsquo;un mot. Il est également
 possible de représenter le sens des mots à l&amp;rsquo;aide d&amp;rsquo;un espace
 vectoriel, dont les grands modèles de langage (GML) font usage, comme
-nous le verrons au module 4.&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
+nous le verrons au module 4.&lt;/p></description></item><item><title>Les différents paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
+ Les différents paradigmes de l&amp;rsquo;apprentissage automatique
+ &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique">#&lt;/a>
+&lt;/h1>
+&lt;p>Il existe plusieurs manières de catégoriser les algorithmes
+d&amp;rsquo;apprentissage automatique, selon leur structure même, mais aussi selon
+la nature et la structure des problèmes qu&amp;rsquo;ils tentent de résoudre.
+Nous allons considérer deux schémas de classement fondamentaux :&lt;/p>
+&lt;ul>
+&lt;li>L&amp;rsquo;apprentissage supervisé versus non-supervisé&lt;/li>
+&lt;li>L&amp;rsquo;apprentissage paramétrique versus non-paramétrique&lt;/li>
+&lt;/ul>
+&lt;h2 id="apprentissage-supervisé-classification-regression">
+ Apprentissage supervisé (classification, regression)
+ &lt;a class="anchor" href="#apprentissage-supervis%c3%a9-classification-regression">#&lt;/a>
+&lt;/h2>
+&lt;p>L&amp;rsquo;apprentissage supervisé fonctionne à partir de données pour
+lesquelles la &amp;ldquo;bonne réponse&amp;rdquo; (i.e. celle qu&amp;rsquo;on aimerait que
+l&amp;rsquo;algorithme fournisse systématiquement, une fois entrainé) est
+fournie, en tant que donnée d&amp;rsquo;entrainement.&lt;/p></description></item><item><title>Les applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
+ Les différentes applications de l&amp;rsquo;apprentissage automatique
+ &lt;a class="anchor" href="#les-diff%c3%a9rentes-applications-de-lapprentissage-automatique">#&lt;/a>
+&lt;/h1>
+&lt;p>TODO&lt;/p></description></item><item><title>L'AA et la programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/08-programmation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/08-programmation/</guid><description>&lt;h1 id="lapprentissage-automatique-et-la-programmation">
+ L&amp;rsquo;apprentissage automatique et la programmation
+ &lt;a class="anchor" href="#lapprentissage-automatique-et-la-programmation">#&lt;/a>
+&lt;/h1>
+&lt;p>TODO&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
  Classification naïve bayésienne pour détecter les pourriels
  &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels">#&lt;/a>
 &lt;/h1>
