@@ -1,0 +1,117 @@
+<!doctype html><html lang=fr dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+  Classification naïve bayésienne pour détecter les pourriels
+  #
+
+La classification naïve bayésienne est un algorithme d&rsquo;apprentissage
+supervisé qui fonctionne avec les probabilités. Un problème
+classique qui peut être traité avec cet algorithme est la
+classification de courriels. On peut tenter d&rsquo;estimer la probabilité
+qu&rsquo;un courriel soit en fait un pourriel en prenant en compte les mots
+particuliers qu&rsquo;il contient, l&rsquo;idée étant que certains mots auront
+tendance à être plus souvent utilisés dans des pourriels."><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/"><meta property="og:site_name" content="INF1901 - Initiation à l'IA : concepts et réflexions"><meta property="og:title" content="Travail noté 2"><meta property="og:description" content="Classification naïve bayésienne pour détecter les pourriels # La classification naïve bayésienne est un algorithme d’apprentissage supervisé qui fonctionne avec les probabilités. Un problème classique qui peut être traité avec cet algorithme est la classification de courriels. On peut tenter d’estimer la probabilité qu’un courriel soit en fait un pourriel en prenant en compte les mots particuliers qu’il contient, l’idée étant que certains mots auront tendance à être plus souvent utilisés dans des pourriels."><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Travail noté 2 | INF1901 - Initiation à l'IA : concepts et réflexions</title><link rel=icon href=https://cjauvin.github.io/inf1901-teluq/favicon.png><link rel=manifest href=https://cjauvin.github.io/inf1901-teluq/manifest.json><link rel=canonical href=https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/><link rel=stylesheet href=https://cjauvin.github.io/inf1901-teluq/book.min.c2a3a3930cc3c92484d4c7886a609454c1ccc7fbe839b6904dde85b081e514b4.css integrity="sha256-wqOjkwzDySSE1MeIamCUVMHMx/voObaQTd6FsIHlFLQ=" crossorigin=anonymous><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=https://cjauvin.github.io/inf1901-teluq/><span>INF1901 - Initiation à l'IA : concepts et réflexions</span></a></h2><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/>Présentation du cours</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/livres/>Les livres</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/>Travaux notés</a></li><li><input type=checkbox id=section-8907ef67e4ecdf3db52171242f091373 class=toggle>
+<label for=section-8907ef67e4ecdf3db52171242f091373 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/ class=flex-auto>Module 1 - Intelligence artificielle</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/1-amorcer-sa-reflexion/>Amorcer sa réflexion</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/01-d%C3%A9couvrir-lia/>Découvrir l'IA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/2-s-informer/>S'informer</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/3-consolider-ses-connaissances/>Consolider ses connaissances</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/4-enjeux-ethiques/>Initier sa réflexion sur les enjeux éthiques de l'IA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/5-innovations-et-acteurs/>Analyser et relier innovations et acteurs de l'IA dans le temps</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/6-test-sur-l-ia-decodee/>Test sur l'intelligence artificielle décodée</a></li></ul></li><li><input type=checkbox id=section-0e47afea11237f1612150a31e7123755 class=toggle checked>
+<label for=section-0e47afea11237f1612150a31e7123755 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/ class=flex-auto>Module 2 - Apprentissage automatique</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/>Un scénario imaginaire mais réaliste</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/>AA versus programmation</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/03-diff%C3%A9rence-avec-lia/>AA versus IA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/04-repr%C3%A9sentation-des-donn%C3%A9es/>Représentation des données</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/ class=active>Travail noté 2</a></li></ul></li><li><input type=checkbox id=section-9cc60359ac12343378e5fa944b3863f7 class=toggle>
+<label for=section-9cc60359ac12343378e5fa944b3863f7 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/ class=flex-auto>Module 3 - Réseaux de neurones et apprentissage profond</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/>Travail noté 3</a></li></ul></li><li><input type=checkbox id=section-d23b9c643b16319dcdaeed5376bcec9c class=toggle>
+<label for=section-d23b9c643b16319dcdaeed5376bcec9c class=flex><a role=button class=flex-auto>Module 4 - IA générative et grands modèles de langage</a></label><ul></ul></li><li><input type=checkbox id=section-b90ca6a3362bb22be66d4f5e1f8ab16c class=toggle>
+<label for=section-b90ca6a3362bb22be66d4f5e1f8ab16c class=flex><a role=button class=flex-auto>Module 5 - Enjeux éthiques et philosophiques</a></label><ul></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=https://cjauvin.github.io/inf1901-teluq/svg/menu.svg class=book-icon alt=Menu></label><h3>Travail noté 2</h3><label for=toc-control><img src=https://cjauvin.github.io/inf1901-teluq/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#entraînement-du-modèle>Entraînement du modèle</a></li><li><a href=#utilisation-du-modèle-inférence>Utilisation du modèle (inférence)</a></li><li><a href=#questions>Questions</a></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=classification-naïve-bayésienne-pour-détecter-les-pourriels>Classification naïve bayésienne pour détecter les pourriels
+<a class=anchor href=#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels>#</a></h1><p>La classification naïve bayésienne est un algorithme d&rsquo;apprentissage
+supervisé qui fonctionne avec les probabilités. Un problème
+classique qui peut être traité avec cet algorithme est la
+classification de courriels. On peut tenter d&rsquo;estimer la probabilité
+qu&rsquo;un courriel soit en fait un pourriel en prenant en compte les mots
+particuliers qu&rsquo;il contient, l&rsquo;idée étant que certains mots auront
+tendance à être plus souvent utilisés dans des pourriels.</p><p>La probabilité qui nous intéresse est en fait une probabilité
+conditionnelle, celle du fait qu&rsquo;un courriel particulier soit ou non
+un pourriel, étant donné les mots particuliers qui le composent. Un
+courriel sera classifié en tant que pourriel si :</p>$$\text{Prob(oui c'est un pourriel | mots)} > \text{Prob(non ce n'est pas un | mots)}$$<h2 id=entraînement-du-modèle>Entraînement du modèle
+<a class=anchor href=#entra%c3%aenement-du-mod%c3%a8le>#</a></h2><p>Voyons comment il est possible de calculer ces probabilités en
+entraînant un modèle de classification sur une série de courriels
+particuliers.</p><p>Nous allons utiliser le tableur <a href=https://sheets.google.com>Google Sheets</a> au lieu de Excel, car
+Google Sheets est plus accessible, et le langage de ses formules est
+plus facile à gérer (celui d&rsquo;Excel dépend de la langue et des
+paramètres régionaux de votre système d&rsquo;exploitation). Pour éviter la
+confusion dans le contexte de ce travail, nous devons tout d&rsquo;abord
+nous assurer que la langue des fonctions et des paramètres régionaux
+est l&rsquo;anglais :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/tn2/sheets_params_langue.png alt></p><p>Assurez-vous ensuite que la &ldquo;barre de formules&rdquo; soit visible :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/tn2/sheets_visu_barre_formule.png alt></p><p>Copiez tout d&rsquo;abord ces 10 courriels dans la colonne A d&rsquo;une nouvelle
+&ldquo;feuille&rdquo; Google Sheets, un courriel par rangée :</p><pre tabindex=0><code>voici le colis est arrivé
+bonjour voici le lien
+offre spéciale colis gratuit
+merci pour votre colis
+colis livré demain matin
+voici votre carte gratuite
+réunion demain à midi
+voici le code pour carte
+livraison spéciale pour vous
+merci encore pour votre carte
+</code></pre><p>Pour avoir un aperçu de la tâche d&rsquo;étiquettage des données (qui dans
+un scénario réel peut s&rsquo;avérer très coûteuse et laborieuse), vous êtes
+invités à tenter tout d&rsquo;abord de catégoriser les courriels dans la
+colonne B, en utilisant la valeur &ldquo;oui&rdquo; si vous considérez qu&rsquo;il
+s&rsquo;agit d&rsquo;un pourriel, ou &ldquo;non&rdquo; (ce n&rsquo;est pas un pourriel) sinon.</p><p>Si vous n&rsquo;avez pas envie de vous soumettre à cet exercice à ce stade,
+vous pouvez toujours copier ces valeurs (dans la colonne B) :</p><pre tabindex=0><code>non
+non
+oui
+non
+non
+oui
+non
+non
+oui
+non
+</code></pre><p>À ce stade, votre feuille devrait ressembler à ceci :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/tn2/sheets_cols_a_et_b.png alt></p><p>Calculons tout d&rsquo;abord dans la colonne C la probabilité à priori qu&rsquo;un
+courriel quelconque soit un pourriel ou non (sans prendre en
+considérations les mots donc, pour le moment) :</p><pre tabindex=0><code>=MAP(UNIQUE(B1:B10), LAMBDA(x, COUNTIF(B1:B10, x) / COUNTA(B1:B10)))
+</code></pre><p>Ces probabilités à priori nous serviront plus loin. Définissez ensuite
+la colonne D avec cette formule :</p><pre tabindex=0><code>=UNIQUE(TRANSPOSE(SPLIT(TEXTJOIN(&#34; &#34;, TRUE, A:A), &#34; &#34;)))
+</code></pre><p>La colonne D devrait maintenant contenir le vocabulaire des courriels :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/tn2/sheets_col_d_voc.png alt></p><p>La colonne E devrait ensuite correspondre au nombre de fois où les
+mots de la colonne D apparaissent dans les courriels valides (qui donc
+&ldquo;non&rdquo;, ne sont pas des pourriels) :</p><pre tabindex=0><code>=SUMPRODUCT((B$1:B$10=&#34;non&#34;) * ISNUMBER(SEARCH(D1, A$1:A$10)))
+</code></pre><p>et de manière similaire pour la colonne F et la fréquence des mots qui
+apparaissent dans les courriels qui &ldquo;oui&rdquo;, sont des pourriels :</p><pre tabindex=0><code>=SUMPRODUCT((B$1:B$10=&#34;oui&#34;) * ISNUMBER(SEARCH(D1, A$1:A$10)))
+</code></pre><p>Notez que les colonnes E et F doivent avoir le même nombre d&rsquo;éléments
+que la colonne D (il faut donc utiliser la fonction de remplissage
+automatique, pour laquelle le plus simple est de soit glisser (drag)
+la première cellule vers le bas, une fois qu&rsquo;elle a été calculée, ou
+encore de double-cliquer sur le petit &ldquo;+&rdquo; noir qui apparait en bas à
+droite de la première cellule).</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/tn2/sheets_col_e_drag.png alt></p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/tn2/sheets_cols_e_et_f.png alt></p><p>À partir de ces fréquences de mots pour chaque classe (&ldquo;oui&rdquo; ou
+&ldquo;non&rdquo;), on peut maintenant calculer la probabilité conditionnelle de
+chaque mot du vocabulaire, étant donné le fait qu&rsquo;un courriel soit
+&ldquo;oui&rdquo; ou &ldquo;non&rdquo; un pourriel. Donc la colonne G correspond à la
+probabilité des mots étant donné que &ldquo;non&rdquo; il ne s&rsquo;agit pas d&rsquo;un
+pourriel :</p><pre tabindex=0><code>=(E1 + 1) / (SUM(E:E) + COUNTA(D:D))
+</code></pre><p>et de manière similaire la colonne H est la probabilité des mots quand
+on sait que &ldquo;oui&rdquo; il s&rsquo;agit d&rsquo;un pourriel :</p><pre tabindex=0><code>=(F1 + 1) / (SUM(F:F) + COUNTA(D:D))
+</code></pre><p>Encore une fois les colonnes G et H doivent avoir la même taille que
+celle du vocabulaire (colonne D), il faut donc s&rsquo;assurer d&rsquo;utiliser le
+mécanisme du remplissage automatique décrit précédemment.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/tn2/sheets_cols_g_et_h.png alt></p><p>Notre modèle est maintenant entièrement entraîné, et il est donc prêt
+pour son utilisation!</p><h2 id=utilisation-du-modèle-inférence>Utilisation du modèle (inférence)
+<a class=anchor href=#utilisation-du-mod%c3%a8le-inf%c3%a9rence>#</a></h2><p>Nous allons maintenant utiliser le modèle pour déterminer si un
+nouveau courriel (qui n&rsquo;a pas servi à l&rsquo;entraînement) est un pourriel
+ou non. Dans la colonne I entrez un courriel à tester :</p><pre tabindex=0><code>voici votre carte spéciale
+</code></pre><p>Faites l&rsquo;extraction des mots du courriel dans la colonne J :</p><pre tabindex=0><code>=TRANSPOSE(SPLIT(I1, &#34; &#34;))
+</code></pre><p>Nous avons maintenant besoin, dans la colonne K, de la probabilité des
+mots de ce courriel de test dans l&rsquo;hypothèse où &ldquo;non&rdquo;, ça ne serait
+pas un pourriel :</p><pre tabindex=0><code>=IFERROR(XLOOKUP(J1, D:D, G:G), 1E-5)
+</code></pre><p>et de manière similaire pour la colonne L, avec la probabilité des
+mots du courriel dans l&rsquo;hypothèse où &ldquo;oui&rdquo; il s&rsquo;agit d&rsquo;un pourriel :</p><pre tabindex=0><code>=IFERROR(XLOOKUP(J1, D:D, H:H), 1E-5)
+</code></pre><p>Les colonnes K et L doivent avoir la même taille que la colonne J,
+donc assurez-vous d&rsquo;utiliser le remplissage automatique. Calculons
+dans la colonne M la probabilité que &ldquo;non&rdquo; le courriel n&rsquo;est pas un
+pourriel :</p><pre tabindex=0><code>=PRODUCT(K:K) * C1
+</code></pre><p>Et dans la colonne N la probabilité que &ldquo;oui&rdquo; le courriel est un
+pourriel :</p><pre tabindex=0><code>=PRODUCT(L:L) * C2
+</code></pre><p>Notre classification finale sera dans la colonne O :</p><pre tabindex=0><code>=IF(M1 &gt; N1; &#34;non&#34;; &#34;oui&#34;)
+</code></pre><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/tn2/sheets_toutes_les_cols.png alt></p><h2 id=questions>Questions
+<a class=anchor href=#questions>#</a></h2><ol><li><p>Que se passe-t-il si vous changez le mot &ldquo;spéciale&rdquo; par le mot
+&ldquo;livrée&rdquo; dans le courriel de test de la cellule I1?</p></li><li><p>Expliquez en vos mots ce qui se passe avec les probabilités
+conditionnelles du mot &ldquo;livrée&rdquo;, aux cellules K4 et L4. Pourquoi
+a-t-on besoin de faire en sorte que ça fonctionne ainsi?</p></li><li><p>Est-ce que ce modèle est paramétrique ou non? Expliquez pourquoi.</p></li><li><p>S&rsquo;il s&rsquo;agit d&rsquo;un modèle paramétrique, quels sont les paramètres du
+modèle exactement?</p></li><li><p>Quelle est la signification des nombres dans les cellules G11 et
+H11, comment peut-on les interpréter?</p></li><li><p>Quelles sont les différentes probabilités conditionnelles de ce
+modèles?</p></li><li><p>Quelles sont les probabilités non-conditionnelles (à priori)?</p></li><li><p>Est-ce qu&rsquo;il serait possible d&rsquo;utiliser seulement ces probabilités
+non-conditionnelles pour faire un modèle? Quelles conséquences ça
+entrainerait?</p></li><li><p>De quelle manière peut-ton dire que ce modèle généralise?</p></li><li><p>Est-ce que l&rsquo;ordre des mots joue un rôle dans les décisions de ce
+modèle? Expliquez pourquoi c&rsquo;est ainsi</p></li><li><p>Si l&rsquo;ordre des mots ne joue pas de rôle, comment pourrait-on
+modifier le modèle de manière à ce qu&rsquo;il en joue un?</p></li><li><p>Est-ce que certains mots aident particulièrement le modèle? Si oui
+pourquoi?</p></li><li><p>Est-ce que certains mots sont moins utiles? Si oui pourquoi?</p></li></ol></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#entraînement-du-modèle>Entraînement du modèle</a></li><li><a href=#utilisation-du-modèle-inférence>Utilisation du modèle (inférence)</a></li><li><a href=#questions>Questions</a></li></ul></nav></div></aside></main></body></html>

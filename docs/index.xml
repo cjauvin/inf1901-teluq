@@ -1,1 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on INF 1901 - Intro à l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/</link><description>Recent content in Docs on INF 1901 - Intro à l'IA</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/docs/</link><description>Recent content in Docs on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Présentation du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</guid><description>&lt;h1 id="introduction-à-lintelligence-artificielle">
+ Introduction à l&amp;rsquo;intelligence artificielle
+ &lt;a class="anchor" href="#introduction-%c3%a0-lintelligence-artificielle">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="présentation-du-cours">
+ Présentation du cours
+ &lt;a class="anchor" href="#pr%c3%a9sentation-du-cours">#&lt;/a>
+&lt;/h2>
+&lt;p>L’intelligence artificielle (IA) constitue aujourd’hui un champ de recherches et d’applications essentiel dont l’influence s’étend à de multiples domaines, de la science et la médecine aux industries créatives et à l’éducation. Conséquemment, les entreprises de divers secteurs sont confrontées à cette transformation numérique sans précédent, si bien que l’intégration de l’IA dans les modèles d’affaires n’est plus un luxe, mais une nécessité pour demeurer compétitif dans un marché mondial en constante évolution. L’émergence de modèles de langage avancés tels que ChatGPT, DeepSeek et Llama 3 illustre cette transformation, en ouvrant de nouvelles perspectives tant scientifiques que sociétales.&lt;/p></description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h2 id="les-livres-du-cours">
+ Les livres du cours
+ &lt;a class="anchor" href="#les-livres-du-cours">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence">La plus belle histoire de l&amp;rsquo;intelligence&lt;/a>,
+de Stanislas Dehaene, Yann Le Cun et Jacques Girardon (2018)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.goodreads.com/book/show/48497641-quand-la-machine-apprend">Quand la machine apprend: la révolution des neurones artificiels et de l&amp;rsquo;apprentissage profond&lt;/a>, de Yann Le Cun (2019)&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Travaux notés</title><link>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</guid><description>&lt;h2 id="travaux-notés">
+ Travaux notés
+ &lt;a class="anchor" href="#travaux-not%c3%a9s">#&lt;/a>
+&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Module 1 : ligne du temps&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Module 2 : bla bla&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Module 3&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Module 4&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Module 5&lt;/p>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>
