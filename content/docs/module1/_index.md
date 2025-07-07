@@ -4,9 +4,9 @@ weight: 11
 bookCollapseSection: true
 ---
 
-Ce premier module vise à vous habiliter à saisir le sens même de l'évolution de l,IA dans le temps et dans l'espace. La démarche pédagogique retenue, basée sur trois activités : Visionner une entrevue de Yann Le Cun, effectuer un ensemble de lectures et consolider vos connaissances par un test, vous prépare à réaliser un exercice noté de visualisation annotée et interactive de l'évolution de l'IA; ce qui est, certes, un excellent exercice pour bien intégrer non seulement l'histoire de l'IA, mais de commencer à utiliser quelques outils du domaine pour la réalisation de votre travail noté.
+# Module 1 - Intelligence artificielle
 
-# Module 1
+Ce premier module vise à vous habiliter à saisir le sens même de l'évolution de l,IA dans le temps et dans l'espace. La démarche pédagogique retenue, basée sur trois activités : Visionner une entrevue de Yann Le Cun, effectuer un ensemble de lectures et consolider vos connaissances par un test, vous prépare à réaliser un exercice noté de visualisation annotée et interactive de l'évolution de l'IA; ce qui est, certes, un excellent exercice pour bien intégrer non seulement l'histoire de l'IA, mais de commencer à utiliser quelques outils du domaine pour la réalisation de votre travail noté.
 
 Ce premier module propose une exploration des enjeux cruciaux de l'intelligence artificielle et de son impact sur la société d'aujourd'hui tout en jettant un regard sur l'évolution de l'intelligence artificielle du test de Turing (1950) qui marque le premier pas vers l'intelligence artificielle à l'émergence des grands modèles de langages (LLM) comme GPT-4, d'autre part.
 

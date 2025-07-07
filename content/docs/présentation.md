@@ -3,8 +3,6 @@ title: "Présentation du cours"
 weight: 1
 ---
 
-# Introduction à l'intelligence artificielle
-
 ## Présentation du cours
 L’intelligence artificielle (IA) constitue aujourd’hui un champ de recherches et d’applications essentiel dont l’influence s’étend à de multiples domaines, de la science et la médecine aux industries créatives et à l’éducation. Conséquemment, les entreprises de divers secteurs sont confrontées à cette transformation numérique sans précédent, si bien que l’intégration de l’IA dans les modèles d’affaires n’est plus un luxe, mais une nécessité pour demeurer compétitif dans un marché mondial en constante évolution. L’émergence de modèles de langage avancés tels que ChatGPT, DeepSeek et Llama 3 illustre cette transformation, en ouvrant de nouvelles perspectives tant scientifiques que sociétales.
 

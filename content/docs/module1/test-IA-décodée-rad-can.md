@@ -1,6 +1,7 @@
 ---
 title: "Test sur l'intelligence artificielle décodée"
 weight: 6
+draft: true
 ---
 
 ## Test sur l'intelligence artificielle décodée
