@@ -154,7 +154,7 @@ cette fonction est simplement le ratio entre le nombre d'erreurs
 produites avec ces données et ces paramètres particuliers (le
 numérateur) et la taille des données (le dénominateur) :
 
-$$\text{erreur(images, paramètres)} = \frac{\text{nombre d'erreurs}}{\text{taille(images)}}.$$
+$$\text{erreur(images, paramètres)} = \frac{\text{nombre d'erreurs avec ces paramètres}}{\text{nombres d'images}}.$$
 
 Notez ici que "images" est au pluriel, car il s'agit de toutes les
 images de l'ensemble d'entraînement. La fonction d'erreur calcule une

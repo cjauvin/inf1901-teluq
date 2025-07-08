@@ -5,34 +5,31 @@ weight: 100
 
 # Classification naïve bayésienne pour détecter les pourriels
 
-La classification naïve bayésienne est un algorithme d'apprentissage
-supervisé qui fonctionne avec les probabilités. Un problème
-classique qui peut être traité avec cet algorithme est la
-classification de courriels. On peut tenter d'estimer la probabilité
-qu'un courriel soit en fait un pourriel en prenant en compte les mots
-particuliers qu'il contient, l'idée étant que certains mots auront
-tendance à être plus souvent utilisés dans des pourriels.
+La classification naïve bayésienne est un algorithme d'apprentissage supervisé
+qui fonctionne avec les probabilités. Un problème classique qui peut être traité
+avec cet algorithme est la classification de courriels. On peut tenter d'estimer
+la probabilité qu'un courriel soit en fait un pourriel en prenant en compte les
+mots particuliers qu'il contient, l'idée étant que certains mots auront tendance
+à être plus souvent utilisés dans des pourriels.
 
-La probabilité qui nous intéresse est en fait une probabilité
-conditionnelle, celle du fait qu'un courriel particulier soit ou non
-un pourriel, étant donné les mots particuliers qui le composent. Un
-courriel sera classifié en tant que pourriel si :
+La probabilité qui nous intéresse est en fait une probabilité conditionnelle,
+celle du fait qu'un courriel particulier soit ou non un pourriel, étant donné
+les mots particuliers qui le composent. Un courriel sera classifié en tant que
+pourriel si :
 
 $$\text{Prob(oui c'est un pourriel | mots)} > \text{Prob(non ce n'est pas un | mots)}$$
 
 ## Entraînement du modèle
 
-Voyons comment il est possible de calculer ces probabilités en
-entraînant un modèle de classification sur une série de courriels
-particuliers.
+Voyons comment il est possible de calculer ces probabilités en entraînant un
+modèle de classification sur une série de courriels particuliers.
 
-Nous allons utiliser le tableur [Google Sheets](https://sheets.google.com) au lieu de Excel, car
-Google Sheets est plus accessible, et le langage de ses formules est
-plus facile à gérer (celui d'Excel dépend de la langue et des
-paramètres régionaux de votre système d'exploitation). Pour éviter la
-confusion dans le contexte de ce travail, nous devons tout d'abord
-nous assurer que la langue des fonctions et des paramètres régionaux
-est l'anglais :
+Nous allons utiliser le tableur [Google Sheets](https://sheets.google.com) au
+lieu de Excel, car Google Sheets est plus accessible, et le langage de ses
+formules est plus facile à gérer (celui d'Excel dépend de la langue et des
+paramètres régionaux de votre système d'exploitation). Pour éviter la confusion
+dans le contexte de ce travail, nous devons tout d'abord nous assurer que la
+langue des fonctions et des paramètres régionaux est l'anglais :
 
 ![](/images/module2/tn2/sheets_params_langue.png)
 
@@ -40,8 +37,8 @@ Assurez-vous ensuite que la "barre de formules" soit visible :
 
 ![](/images/module2/tn2/sheets_visu_barre_formule.png)
 
-Copiez tout d'abord ces 10 courriels dans la colonne A d'une nouvelle
-"feuille" Google Sheets, un courriel par rangée :
+Copiez tout d'abord ces 10 courriels dans la colonne A d'une nouvelle "feuille"
+Google Sheets, un courriel par rangée :
 
 ```
 voici le colis est arrivé
@@ -56,11 +53,11 @@ livraison spéciale pour vous
 merci encore pour votre carte
 ```
 
-Pour avoir un aperçu de la tâche d'étiquettage des données (qui dans
-un scénario réel peut s'avérer très coûteuse et laborieuse), vous êtes
-invités à tenter tout d'abord de catégoriser les courriels dans la
-colonne B, en utilisant la valeur "oui" si vous considérez qu'il
-s'agit d'un pourriel, ou "non" (ce n'est pas un pourriel) sinon.
+Pour avoir un aperçu de la tâche d'étiquettage des données (qui dans un scénario
+réel peut s'avérer très coûteuse et laborieuse), vous êtes invités à tenter tout
+d'abord de catégoriser les courriels dans la colonne B, en utilisant la valeur
+"oui" si vous considérez qu'il s'agit d'un pourriel, ou "non" (ce n'est pas un
+pourriel) sinon.
 
 Si vous n'avez pas envie de vous soumettre à cet exercice à ce stade,
 vous pouvez toujours copier ces valeurs (dans la colonne B) :
