@@ -32,18 +32,16 @@ serait équivalent mais plus simple : &amp;ldquo;ok&amp;rdquo; ou &amp;ldquo;pro
 est binaire, dans le sens qu&amp;rsquo;elle a seulement deux valeurs possibles
 (peu importe lesquelles, en autant qu&amp;rsquo;il y en ait seulement deux). Sur
 la base de cette valeur binaire de sortie, on pourrait agir et envoyer
-un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnelle">
- En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnelle?
- &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnelle">#&lt;/a>
+un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel">
+ En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnel?
+ &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnel">#&lt;/a>
 &lt;/h1>
-&lt;p>Bien que l&amp;rsquo;apprentissage automatique requiert de la programmation, il
-s&amp;rsquo;agit d&amp;rsquo;un paradigme entièrement différent de celui de la
-programmation.&lt;/p>
-&lt;p>Un programme traditionnel spécifie une série d&amp;rsquo;instructions que
-l&amp;rsquo;ordinateur exécute pour résoudre un problème. Normalement, ce
-programme fait son travail en relation avec des données fournies par
-l&amp;rsquo;utilisateur. Le programme dans ce cas est une série d&amp;rsquo;instructions
-symboliques dans un langage de programmation.&lt;/p></description></item><item><title>AA versus IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/03-diff%C3%A9rence-avec-lia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/03-diff%C3%A9rence-avec-lia/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-de-lia">
+&lt;p>Bien que l&amp;rsquo;apprentissage automatique requiert de la programmation, il s&amp;rsquo;agit
+d&amp;rsquo;un paradigme entièrement différent de celui de la programmation.&lt;/p>
+&lt;p>Un programme traditionnel spécifie une série d&amp;rsquo;instructions que l&amp;rsquo;ordinateur
+exécute pour résoudre un problème. Normalement, ce programme fait son travail en
+relation avec des données fournies par l&amp;rsquo;utilisateur. Le programme dans ce cas
+est une série d&amp;rsquo;instructions symboliques dans un langage de programmation.&lt;/p></description></item><item><title>AA versus IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/03-diff%C3%A9rence-avec-lia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/03-diff%C3%A9rence-avec-lia/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-de-lia">
  En quoi l&amp;rsquo;apprentissage automatique diffère de l&amp;rsquo;IA?
  &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-lia">#&lt;/a>
 &lt;/h1>
@@ -122,10 +120,9 @@ fournie, en tant que donnée d&amp;rsquo;entrainement.&lt;/p></description></ite
  Classification naïve bayésienne pour détecter les pourriels
  &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels">#&lt;/a>
 &lt;/h1>
-&lt;p>La classification naïve bayésienne est un algorithme d&amp;rsquo;apprentissage
-supervisé qui fonctionne avec les probabilités. Un problème
-classique qui peut être traité avec cet algorithme est la
-classification de courriels. On peut tenter d&amp;rsquo;estimer la probabilité
-qu&amp;rsquo;un courriel soit en fait un pourriel en prenant en compte les mots
-particuliers qu&amp;rsquo;il contient, l&amp;rsquo;idée étant que certains mots auront
-tendance à être plus souvent utilisés dans des pourriels.&lt;/p></description></item></channel></rss>
+&lt;p>La classification naïve bayésienne est un algorithme d&amp;rsquo;apprentissage supervisé
+qui fonctionne avec les probabilités. Un problème classique qui peut être traité
+avec cet algorithme est la classification de courriels. On peut tenter d&amp;rsquo;estimer
+la probabilité qu&amp;rsquo;un courriel soit en fait un pourriel en prenant en compte les
+mots particuliers qu&amp;rsquo;il contient, l&amp;rsquo;idée étant que certains mots auront tendance
+à être plus souvent utilisés dans des pourriels.&lt;/p></description></item></channel></rss>
