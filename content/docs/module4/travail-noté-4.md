@@ -37,19 +37,9 @@ répondre à une question, ou de composer un poème.
 Voyons maintenant comment il est possible de calculer ces probabilités en
 entraînant un modèle bigramme génératif sur un texte très simple.
 
-Nous allons encore une fois utiliser le tableur
-[[https://sheets.google.com][Google Sheets]] au lieu de Excel, car Google Sheets
-est plus accessible, et le langage de ses formules est plus facile à gérer
-(celui d'Excel dépend de la langue et des paramètres régionaux de votre système
-d'exploitation). Pour éviter la confusion dans le contexte de ce travail, nous
-devons tout d'abord nous assurer que la langue des fonctions et des paramètres
-régionaux est l'anglais :
-
-![](/images/module4/tn4/sheets_params_langue.png)
-
-Assurez-vous ensuite que la "barre de formules" soit bien visible :
-
-![](/images/module4/tn4/sheets_visu_barre_formule.png)
+Ètant donné que nous allons encore une fois utiliser la tableur en ligne [Google
+Sheets]({{< relref "docs/google-sheets.md" >}}), assurez-vous que votre version
+est correctement configurée.
 
 Copiez tout d'abord les mots de ce texte dans la colonne `A` d'une nouvelle
 "feuille" Google Sheets, un mot par rangée :

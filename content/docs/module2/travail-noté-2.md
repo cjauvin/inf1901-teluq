@@ -24,18 +24,9 @@ $$\text{Prob(oui c'est un pourriel | mots)} > \text{Prob(non ce n'est pas un | m
 Voyons comment il est possible de calculer ces probabilités en entraînant un
 modèle de classification sur une série de courriels particuliers.
 
-Nous allons utiliser le tableur [Google Sheets](https://sheets.google.com) au
-lieu de Excel, car Google Sheets est plus accessible, et le langage de ses
-formules est plus facile à gérer (celui d'Excel dépend de la langue et des
-paramètres régionaux de votre système d'exploitation). Pour éviter la confusion
-dans le contexte de ce travail, nous devons tout d'abord nous assurer que la
-langue des fonctions et des paramètres régionaux est l'anglais :
-
-![](/images/module2/tn2/sheets_params_langue.png)
-
-Assurez-vous ensuite que la "barre de formules" soit visible :
-
-![](/images/module2/tn2/sheets_visu_barre_formule.png)
+Ètant donné que nous allons encore une fois utiliser la tableur en ligne [Google
+Sheets]({{< relref "docs/google-sheets.md" >}}), assurez-vous que votre version
+est correctement configurée.
 
 Copiez tout d'abord ces 10 courriels dans la colonne A d'une nouvelle "feuille"
 Google Sheets, un courriel par rangée :
