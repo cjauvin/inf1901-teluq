@@ -161,7 +161,17 @@ plus spécialisée et un peu plus récente d&amp;rsquo;IA, plus mathématique, m
 symbolique, et clairement celle qui domine la période actuelle. Les
 mathématiques qui sont le plus souvent associées à l&amp;rsquo;apprentissage
 machine sont l&amp;rsquo;algèbre linéaire et les probabilités, qui elles-mêmes
-entretiennent des liens étroits.&lt;/p></description></item><item><title>AA versus statistiques</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-des-statistiques">
+entretiennent des liens étroits.&lt;/p></description></item><item><title>Google Sheets</title><link>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</guid><description>&lt;h1 id="google-sheets">
+ Google Sheets
+ &lt;a class="anchor" href="#google-sheets">#&lt;/a>
+&lt;/h1>
+&lt;p>Pour les travaux notés 2 et 4, Nous allons utiliser le tableur en ligne &lt;a href="https://workspace.google.com/intl/en_ca/products/sheets/">Google
+Sheets&lt;/a> au lieu de
+Excel, car Google Sheets est plus accessible, et le langage de ses formules est
+plus facile à gérer (celui d&amp;rsquo;Excel dépend de la langue et des paramètres
+régionaux de votre système d&amp;rsquo;exploitation). Pour éviter la confusion dans le
+contexte de ce travail, nous devons tout d&amp;rsquo;abord nous assurer que la langue des
+fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p></description></item><item><title>AA versus statistiques</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-des-statistiques">
  En quoi l&amp;rsquo;apprentissage automatique diffère des statistiques?
  &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-des-statistiques">#&lt;/a>
 &lt;/h1>
