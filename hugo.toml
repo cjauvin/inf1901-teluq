@@ -4,7 +4,7 @@ defaultContentLanguage = 'fr'
 canonifyURLs = true
 
 title = "INF1901 - Initiation à l'IA : concepts et réflexions"
-theme = 'hugo-book'
+theme = 'hugo-book-teluq'
 
 # --- Paramètres du thème hugo-book ---
 [params]
@@ -12,6 +12,7 @@ BookMenuBundle = "book"
 BookTheme = "auto"
 BookToC = true
 BookSearch = false
+BookNav = true
 javaRunnerEndpoint = "http://localhost:5123/run"
 
 [markup]

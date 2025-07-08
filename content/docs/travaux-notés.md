@@ -15,3 +15,6 @@ draft: false
 4. Module 4
 
 5. Module 5
+
+## Utilisation de l'IA
+
