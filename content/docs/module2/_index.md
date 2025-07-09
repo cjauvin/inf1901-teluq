@@ -4,6 +4,10 @@ weight: 12
 bookCollapseSection: true
 ---
 
+# Module 2 - Apprentissage automatique
+
+![](/images/machine-learning.webp)
+
 ##  Qu'est-ce que l'apprentissage automatique?
 
 L'apprentissage machine (AM) est un ensemble de techniques

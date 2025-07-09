@@ -4,4 +4,6 @@ weight: 14
 bookCollapseSection: true
 ---
 
-# L'IA générative et les grands modèles de langage
+![](/images/llm.png)
+
+# Module 4 - IA générative et grands modèles de langage

@@ -4,6 +4,8 @@ weight: 11
 bookCollapseSection: true
 ---
 
+![](/images/gofai.webp)
+
 # Module 1 - Intelligence artificielle
 
 Ce premier module vise à vous habiliter à saisir le sens même de l'évolution de l,IA dans le temps et dans l'espace. La démarche pédagogique retenue, basée sur trois activités : Visionner une entrevue de Yann Le Cun, effectuer un ensemble de lectures et consolider vos connaissances par un test, vous prépare à réaliser un exercice noté de visualisation annotée et interactive de l'évolution de l'IA; ce qui est, certes, un excellent exercice pour bien intégrer non seulement l'histoire de l'IA, mais de commencer à utiliser quelques outils du domaine pour la réalisation de votre travail noté.

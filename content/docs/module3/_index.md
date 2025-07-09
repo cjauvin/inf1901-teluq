@@ -4,7 +4,9 @@ weight: 13
 bookCollapseSection: true
 ---
 
-#  Les réseaux de neurones et l'apprentissage profond
+![](/images/neural-network.jpg)
+
+#  Module 3 - Réseaux de neurones et apprentissage profond
 
 Ce module explore l’univers fascinant des réseaux de neurones
 artificiels, moteurs de la révolution moderne de l’intelligence
