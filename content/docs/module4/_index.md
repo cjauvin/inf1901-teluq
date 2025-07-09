@@ -4,4 +4,4 @@ weight: 14
 bookCollapseSection: true
 ---
 
-
+# L'IA générative et les grands modèles de langage
