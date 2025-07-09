@@ -51,4 +51,19 @@ Excel, car Google Sheets est plus accessible, et le langage de ses formules est
 plus facile à gérer (celui d&amp;rsquo;Excel dépend de la langue et des paramètres
 régionaux de votre système d&amp;rsquo;exploitation). Pour éviter la confusion dans le
 contexte de ce travail, nous devons tout d&amp;rsquo;abord nous assurer que la langue des
-fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p></description></item></channel></rss>
+fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p></description></item><item><title>Assistants intelligents</title><link>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</guid><description>&lt;h1 id="lusage-dassistants-intelligents">
+ L&amp;rsquo;usage d&amp;rsquo;assistants intelligents
+ &lt;a class="anchor" href="#lusage-dassistants-intelligents">#&lt;/a>
+&lt;/h1>
+&lt;p>Étant donné qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un cours sur l&amp;rsquo;intelligence artificielle, l&amp;rsquo;usage
+d&amp;rsquo;assistants intelligents (ChatGPT, Claude, Gemini, etc) est évidemment
+encouragée ! Ceci s&amp;rsquo;applique autant aux travaux notés qu&amp;rsquo;au reste du contenu du
+cours.&lt;/p>
+&lt;p>Par contre si vous utilisez un tel outil, nous vous conseillons de vous assurer
+d&amp;rsquo;avoir une compréhension viscérale des réponses qu&amp;rsquo;il fournira, et de ne
+hésiter à engager un dialogue avec l&amp;rsquo;agent, dans le but de clarifier des aspects
+du problème qui pourraient rester obscurs pour vous. N&amp;rsquo;oubliez pas que le but de
+ce cours est la construction de bons modèles mentaux pour penser à des problèmes
+de modélisation. L&amp;rsquo;agent possède déjà ces modèles mentaux, si vous avez
+développé les vôtres à la fin de cet exercice, le but aura clairement été
+atteint !&lt;/p></description></item></channel></rss>
