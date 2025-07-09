@@ -11,7 +11,7 @@ weight: 2
 
 Stanislas Dehaene, Yann Le Cun et Jacques Girardon (2018)
 
-![](/images/livre_la_plus_belle_histoire_de_lintelligence.jpg)
+[![](/images/livre_la_plus_belle_histoire_de_lintelligence.jpg)](https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence)
 
 <--->
 
@@ -19,6 +19,6 @@ Stanislas Dehaene, Yann Le Cun et Jacques Girardon (2018)
 
 Yann Le Cun (2019)
 
-![](/images/livre_quand_la_machine_apprend.jpg)
+[![](/images/livre_quand_la_machine_apprend.jpg)](https://www.goodreads.com/book/show/48497641-quand-la-machine-apprend)
 
 {{% /columns %}}
