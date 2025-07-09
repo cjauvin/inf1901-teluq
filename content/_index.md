@@ -1,4 +1,5 @@
 ---
+title: "Accueil"
 ---
 
 ![Header Image](/images/entete-IA-richard.jpeg)
@@ -31,4 +32,5 @@ route et la liste des activités prévues. Si vous avez des questions d’ici l�
 n’hésitez pas à nous contacter. Nous sommes impatients de collaborer avec vous à
 cette aventure et de voir les solutions innovantes que vous développerez !
 
-Au plaisir de vous guider dans cette initiation à l'intelligence artificielle : concepts et réflexions. Nous vous souhaitons du succès dans vos apprentissage.
+Au plaisir de vous guider dans cette initiation à l'intelligence artificielle :
+concepts et réflexions. Nous vous souhaitons du succès dans vos apprentissage.
