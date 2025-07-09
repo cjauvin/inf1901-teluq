@@ -223,7 +223,22 @@ Excel, car Google Sheets est plus accessible, et le langage de ses formules est
 plus facile à gérer (celui d&amp;rsquo;Excel dépend de la langue et des paramètres
 régionaux de votre système d&amp;rsquo;exploitation). Pour éviter la confusion dans le
 contexte de ce travail, nous devons tout d&amp;rsquo;abord nous assurer que la langue des
-fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p></description></item><item><title>AA versus statistiques</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-des-statistiques">
+fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p></description></item><item><title>Travail noté 5</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</guid><description>&lt;h1 id="travail-noté-5">
+ Travail noté 5
+ &lt;a class="anchor" href="#travail-not%c3%a9-5">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="objectif-du-travail">
+ Objectif du travail
+ &lt;a class="anchor" href="#objectif-du-travail">#&lt;/a>
+&lt;/h2>
+&lt;p>Ce travail vise à développer votre capacité à analyser de manière critique une
+question philosophique ou éthique liée à l’intelligence artificielle (IA). Vous
+explorerez les débats entourant l’IA, en vous appuyant sur une vidéo discutant
+des perspectives des &amp;ldquo;doomers&amp;rdquo; (ceux qui craignent des conséquences
+catastrophiques de l’IA) et des &amp;ldquo;accélérationistes&amp;rdquo; (ceux qui prônent un
+développement rapide de l’IA). Vous utiliserez également un outil d’IA pour vous
+assister dans la rédaction, tout en réfléchissant à son impact sur votre
+processus.&lt;/p></description></item><item><title>AA versus statistiques</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-des-statistiques">
  En quoi l&amp;rsquo;apprentissage automatique diffère des statistiques?
  &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-des-statistiques">#&lt;/a>
 &lt;/h1>
@@ -271,7 +286,22 @@ un point dans un espace vectoriel extrêmement épars (&amp;ldquo;sparse&amp;rdq
 représenter la présence ou l&amp;rsquo;absence d&amp;rsquo;un mot. Il est également
 possible de représenter le sens des mots à l&amp;rsquo;aide d&amp;rsquo;un espace
 vectoriel, dont les grands modèles de langage (GML) font usage, comme
-nous le verrons au module 4.&lt;/p></description></item><item><title>Les différents paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
+nous le verrons au module 4.&lt;/p></description></item><item><title>Ressources supplémentaires</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</guid><description>&lt;h1 id="pour-aller-plus-loin">
+ Pour aller plus loin
+ &lt;a class="anchor" href="#pour-aller-plus-loin">#&lt;/a>
+&lt;/h1>
+&lt;p>Cette présentation (en anglais seulement) fait un excellent survol des liens
+profonds entre les mathématiques, la philosophie et l&amp;rsquo;intelligence artificielle
+:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Lqt7TgYk8rU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;p>En gros, on y présente 4 paradigmes mathématiques et leur correspondance dans le monde
+de l&amp;rsquo;intelligence artificielle :&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>L&amp;rsquo;algèbre booléenne et l&amp;rsquo;intelligence &amp;ldquo;classique&amp;rdquo; (GOFAI)&lt;/p></description></item><item><title>Les différents paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
  Les différents paradigmes de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
@@ -348,4 +378,8 @@ prédiction de la température pour la ville de Montréal est différent d&amp;r
 pour la ville de Québec, un modèle de langage créé par exemple à partir des
 données de 100 livres écrits au 19ième siècle, et un autre à partir de 100
 livres écrits au 20ième siècles, seront deux modèles distincts, et auront des
-propriétés statistiques très différentes.&lt;/p></description></item></channel></rss>
+propriétés statistiques très différentes.&lt;/p></description></item><item><title>Conclusion</title><link>https://cjauvin.github.io/inf1901-teluq/docs/conclusion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/conclusion/</guid><description>&lt;h1 id="en-conclusion">
+ En conclusion..
+ &lt;a class="anchor" href="#en-conclusion">#&lt;/a>
+&lt;/h1>
+&lt;p>Merci d&amp;rsquo;avoir participé à ce cours d&amp;rsquo;initiation à l&amp;rsquo;IA !&lt;/p></description></item></channel></rss>
