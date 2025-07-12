@@ -2,37 +2,34 @@
  Un scénario imaginaire, mais réaliste !
  &lt;a class="anchor" href="#un-sc%c3%a9nario-imaginaire-mais-r%c3%a9aliste-">#&lt;/a>
 &lt;/h1>
-&lt;p>Imaginez une compagnie où il y a une chaîne de montage avec laquelle
-on assemble des téléviseurs.&lt;/p>
+&lt;p>Imaginez une compagnie où il y a une chaîne de montage avec laquelle on assemble
+des téléviseurs.&lt;/p>
 &lt;p>&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module2/tv_assembly_line.png" alt="" />&lt;/p>
 &lt;h2 id="le-problème">
  Le problème
  &lt;a class="anchor" href="#le-probl%c3%a8me">#&lt;/a>
 &lt;/h2>
-&lt;p>Supposons que dans un endroit particulièrement délicat de la chaîne de
-montage, un problème avec un appareil d&amp;rsquo;assemblage particulier
-survienne parfois, que l&amp;rsquo;on aimerait détecter le plus rapidement
-possible.&lt;/p>
+&lt;p>Supposons que dans un endroit particulièrement délicat de la chaîne de montage,
+un problème avec un appareil d&amp;rsquo;assemblage particulier survienne parfois, que
+l&amp;rsquo;on aimerait détecter le plus rapidement possible.&lt;/p>
 &lt;h2 id="une-solution-possible">
  Une solution possible
  &lt;a class="anchor" href="#une-solution-possible">#&lt;/a>
 &lt;/h2>
-&lt;p>On pourrait imaginer placer une caméra vidéo dont le but serait de
-visionner en permanence le flot des appareils en cours d&amp;rsquo;assemblage,
-pour tenter de détecter les problèmes. Pour ce faire, la caméra
-pourrait transmettre, à intervalles réguliers, les pixels de ce
-qu&amp;rsquo;elle capte, en tant que données à un modèle d&amp;rsquo;apprentissage automatique
-qui roulerait (en tant que programme) sur un serveur, pas très
-éloigné. Ce modèle convertirait les pixels de la caméra en tant que
-données numériques (les entrées, &amp;ldquo;inputs&amp;rdquo;), et effectuerait un calcul
-complexe sur ces valeurs, en vue de produire une valeur de sortie
-simple (&amp;ldquo;outputs&amp;rdquo;) : &amp;ldquo;oui, il y a un problème avec cette image&amp;rdquo;, ou
-&amp;ldquo;non, il n&amp;rsquo;y a pas de problème avec cette image&amp;rdquo; (ou encore, ce qui
-serait équivalent mais plus simple : &amp;ldquo;ok&amp;rdquo; ou &amp;ldquo;problème&amp;rdquo;). Cette valeur
-est binaire, dans le sens qu&amp;rsquo;elle a seulement deux valeurs possibles
-(peu importe lesquelles, en autant qu&amp;rsquo;il y en ait seulement deux). Sur
-la base de cette valeur binaire de sortie, on pourrait agir et envoyer
-un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel">
+&lt;p>On pourrait imaginer placer une caméra vidéo dont le but serait de visionner en
+permanence le flot des appareils en cours d&amp;rsquo;assemblage, pour tenter de détecter
+les problèmes. Pour ce faire, la caméra pourrait transmettre, à intervalles
+réguliers, les pixels de ce qu&amp;rsquo;elle capte, en tant que données à un modèle
+d&amp;rsquo;apprentissage automatique qui roulerait (en tant que programme) sur un
+serveur, pas très éloigné. Ce modèle convertirait les pixels de la caméra en
+tant que données numériques (les entrées, &amp;ldquo;inputs&amp;rdquo;), et effectuerait un calcul
+complexe sur ces valeurs, en vue de produire une valeur de sortie simple
+(&amp;ldquo;outputs&amp;rdquo;) : &amp;ldquo;oui, il y a un problème avec cette image&amp;rdquo;, ou &amp;ldquo;non, il n&amp;rsquo;y a pas
+de problème avec cette image&amp;rdquo; (ou encore, ce qui serait équivalent mais plus
+simple : &amp;ldquo;ok&amp;rdquo; ou &amp;ldquo;problème&amp;rdquo;). Cette valeur est binaire, dans le sens qu&amp;rsquo;elle a
+seulement deux valeurs possibles (peu importe lesquelles, en autant qu&amp;rsquo;il y en
+ait seulement deux). Sur la base de cette valeur binaire de sortie, on pourrait
+agir et envoyer un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel">
  En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnel?
  &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnel">#&lt;/a>
 &lt;/h1>
@@ -89,7 +86,7 @@ un point dans un espace vectoriel extrêmement épars (&amp;ldquo;sparse&amp;rdq
 représenter la présence ou l&amp;rsquo;absence d&amp;rsquo;un mot. Il est également
 possible de représenter le sens des mots à l&amp;rsquo;aide d&amp;rsquo;un espace
 vectoriel, dont les grands modèles de langage (GML) font usage, comme
-nous le verrons au module 4.&lt;/p></description></item><item><title>Les différents paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
+nous le verrons au module 4.&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
  Les différents paradigmes de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
@@ -108,11 +105,11 @@ Nous allons considérer deux schémas de classement fondamentaux :&lt;/p>
 &lt;p>L&amp;rsquo;apprentissage supervisé fonctionne à partir de données pour
 lesquelles la &amp;ldquo;bonne réponse&amp;rdquo; (i.e. celle qu&amp;rsquo;on aimerait que
 l&amp;rsquo;algorithme fournisse systématiquement, une fois entrainé) est
-fournie, en tant que donnée d&amp;rsquo;entrainement.&lt;/p></description></item><item><title>Les applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
+fournie, en tant que donnée d&amp;rsquo;entrainement.&lt;/p></description></item><item><title>Applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
  Les différentes applications de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rentes-applications-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
-&lt;p>TODO&lt;/p></description></item><item><title>L'AA et la programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/08-programmation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/08-programmation/</guid><description>&lt;h1 id="lapprentissage-automatique-et-la-programmation">
+&lt;p>TODO&lt;/p></description></item><item><title>AA et programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/08-programmation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/08-programmation/</guid><description>&lt;h1 id="lapprentissage-automatique-et-la-programmation">
  L&amp;rsquo;apprentissage automatique et la programmation
  &lt;a class="anchor" href="#lapprentissage-automatique-et-la-programmation">#&lt;/a>
 &lt;/h1>
