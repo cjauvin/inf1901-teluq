@@ -1,5 +1,5 @@
 ---
-title: "Les différents paradigmes de l'AA"
+title: "Paradigmes de l'AA"
 weight: 6
 ---
 

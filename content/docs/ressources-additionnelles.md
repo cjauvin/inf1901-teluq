@@ -11,6 +11,9 @@ profonds entre les mathématiques, la philosophie et l'intelligence artificielle
 
 {{< youtube id="Lqt7TgYk8rU" >}}
 
+{{% details "Transcription traduite en français" %}}
+{{% /details %}}
+
 En gros, on y présente 4 paradigmes mathématiques et leur correspondance dans le monde
 de l'intelligence artificielle :
 

@@ -1,5 +1,5 @@
 ---
-title: "L'AA et la programmation"
+title: "AA et programmation"
 weight: 8
 ---
 

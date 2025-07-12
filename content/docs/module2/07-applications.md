@@ -1,5 +1,5 @@
 ---
-title: "Les applications de l'AA"
+title: "Applications de l'AA"
 weight: 7
 ---
 

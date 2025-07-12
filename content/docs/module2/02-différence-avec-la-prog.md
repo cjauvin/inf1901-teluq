@@ -21,3 +21,5 @@ symboliques) qui sont effectuées sur les données, pour les transformer en
 réponse. Il est important de comprendre que même si un modèle d'AA est avant
 tout un objet mathématique (un modèle avec ses paramètres), son implémentation
 concrète se fait quand même toujours avec un langage de programmation.
+
+![](/images/module2/abeille.png)
