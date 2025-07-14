@@ -69,46 +69,47 @@ informatique au sens classique. Par analogie avec une fonction de base qu&rsquo;
 apprend au secondaire :</p>$$f(x) = mx + b$$<p>où $m$ et $b$ (les valeurs particulières qu&rsquo;on leur donne) sont les paramètres
 qui déterminent cette fonction particulière. Dans un modèle d&rsquo;apprentissage
 automatique, il y a beaucoup plus de paramètres, mais c&rsquo;est essentiellement la
-même idée. Les paramètres d&rsquo;un modèle sont donc essentiellement une sérine de
+même idée. Les paramètres d&rsquo;un modèle sont donc essentiellement une série de
 nombres, rien de plus. Il est important à ce stade de bien comprendre la
 distinction entre ces deux séries de nombres dont nous parlons depuis le début :</p><ul><li>La série de nombres qui constituent les paramètres du modèle (aléatoires pour
 le moment)</li><li>La série de nombres qui proviennent des images que nous allons vouloir
-soumettre au modèle (correspondant à la couleur des pixels)</li></ul><p>Nous allons faire en sorte qu&rsquo;il y ait une interaction entre ces deux
-séries de nombres (en vue de produire une réponse binaire), et cette
-interaction constituera le modèle, en action.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/model_parameters.png alt></p><h2 id=quest-ce-que-lentraînement-ou-lapprentissage>Qu&rsquo;est-ce que l&rsquo;entraînement (ou l&rsquo;apprentissage)?
+soumettre au modèle (correspondant à la couleur des pixels)</li></ul><p>Nous allons faire en sorte qu&rsquo;il y ait une interaction entre ces deux séries de
+nombres (en vue de produire une réponse binaire, soit seulement deux réponses
+possibles), et cette interaction constituera le modèle, en action.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/model_parameters.png alt></p><h2 id=quest-ce-que-lentraînement-ou-lapprentissage>Qu&rsquo;est-ce que l&rsquo;entraînement (ou l&rsquo;apprentissage)?
 <a class=anchor href=#quest-ce-que-lentra%c3%aenement-ou-lapprentissage>#</a></h2><p>Notre but est maintenant de trouver une manière de calculer la valeur exacte de
 ces paramètres (nombres) pour notre modèle. Pour commencer, notre modèle a des
-valeurs aléatoires pour ses paramètres. Il est pratiquement impossible, à ce
-stade, que le modèle soit &ldquo;bon&rdquo;, dans le sens qu&rsquo;il puisse fournir les bonnes
-réponses dans un grand nombre de cas. Sa performance, est aléatoire, et est donc
+valeurs aléatoires pour ses paramètres. Il est donc pratiquement impossible, à ce
+stade, que le modèle soit &ldquo;bon&rdquo;, dans le sens qu&rsquo;il puisse fournir les <em>bonnes</em>
+réponses dans un grand nombre de cas. Sa performance est aléatoire, et est donc
 équivalente à un médecin qui tenterait de déterminer si un patient est malade en
 comptant seulement sur la chance, en tirant un dé par exemple, ou en consultant
 les astres. Pour que le modèle devienne bon, il faut trouver une manière de
 changer ses paramètres pour qu&rsquo;il devienne plus performant, qu&rsquo;il donne donc
 plus souvent une bonne réponse. C&rsquo;est ce qu&rsquo;on appelle l&rsquo;apprentissage, et c&rsquo;est
-dans ce sens que le modèle apprend.</p><h2 id=quest-ce-quun-ensemble-de-données-dentraînement>Qu&rsquo;est-ce qu&rsquo;un ensemble de données d&rsquo;entraînement?
+dans ce sens que le modèle <em>apprend</em>.</p><h2 id=quest-ce-quun-ensemble-de-données-dentraînement>Qu&rsquo;est-ce qu&rsquo;un ensemble de données d&rsquo;entraînement?
 <a class=anchor href=#quest-ce-quun-ensemble-de-donn%c3%a9es-dentra%c3%aenement>#</a></h2><p>Nous avons tout d&rsquo;abord besoin d&rsquo;un ensemble de données d&rsquo;entraînement, qui est
 constitué d&rsquo;une série d&rsquo;images, prises au hasard, et accompagnées chacune d&rsquo;une
-étiquette binaire (&ldquo;oui c&rsquo;est un problème&rdquo;, ou &ldquo;non ce n&rsquo;est pas un problème&rdquo;).
-Il est important de comprendre que la création d&rsquo;un tel ensemble est souvent la
-partie difficile et coûteuse d&rsquo;un projet d&rsquo;apprentissage automatique, en vertu
-du fait que l&rsquo;étiquette attachée à une image n&rsquo;est pas donnée à priori. Il faut
-l&rsquo;établir, ce qui constitue souvent un travail fastidieux et répétitif. Il est
-également nécessaire que cet ensemble d&rsquo;entrainment soit représentatif de la
-réalité. Si les problèmes réels sont extrêmement rares, ils pourront être
-représentés comme tels dans l&rsquo;ensemble d&rsquo;entraînement, mais il est également
-possible de faire en sorte que la distribution des problèmes soit mieux
-balancée. Si on veut par exemple constituer un ensemble de 1000 images, il
-pourrait être composé de 500 cas problématiques, et 500 cas non-problématiques.
-De cette manière, même si les problèmes réels sont très rares (disons 1% des
-cas), la tâche du modèle sera plus facile car il aura de nombreux exemples de
-problèmes à analyser. Il sera plus à même de &ldquo;comprendre&rdquo; la nature des
-problèmes, car il en aura vu plus d&rsquo;exemples lors de son entraînement. Il doit
-également être clair que toutes ces images seront très semblables, étant donné
-la très grande régularité du processus de la chaîne de montage. Mais il est
-raisonnable de supposer que les images de téléviseurs présentant un problèmes
-auront certaines différences visuelles. Le but sera de tenter la détection de
-problèmes en se basant sur ces différences, possiblement très subtiles.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/training_set.png alt></p><h2 id=comment-le-modèle-produit-une-réponse-à-partir-dune-image>Comment le modèle produit une réponse à partir d&rsquo;une image?
+étiquette binaire (deux valeurs possibles : &ldquo;oui c&rsquo;est un problème&rdquo;, ou &ldquo;non ce
+n&rsquo;est pas un problème&rdquo;). Il est important de comprendre que la création d&rsquo;un tel
+ensemble est souvent la partie difficile et coûteuse d&rsquo;un projet d&rsquo;apprentissage
+automatique, en vertu du fait que l&rsquo;étiquette attachée à une image n&rsquo;est pas
+donnée à priori. Il faut l&rsquo;établir, ce qui constitue souvent un travail
+fastidieux et répétitif. Il est également nécessaire que cet ensemble
+d&rsquo;entrainment soit représentatif de la réalité. Si les problèmes réels sont
+extrêmement rares, ils pourront être représentés comme tels dans l&rsquo;ensemble
+d&rsquo;entraînement, mais il est également possible de faire en sorte que la
+distribution des problèmes soit mieux balancée. Si on veut par exemple
+constituer un ensemble de 1000 images, il pourrait être composé de 500 cas
+problématiques, et 500 cas non-problématiques. De cette manière, même si les
+problèmes réels sont très rares (disons 1% des cas), la tâche du modèle sera
+plus facile car il aura de nombreux exemples de problèmes à analyser. Il sera
+plus à même de &ldquo;comprendre&rdquo; la nature des problèmes, car il en aura vu plus
+d&rsquo;exemples lors de son entraînement. Il doit également être clair que toutes ces
+images seront très semblables, étant donné la très grande régularité du
+processus de la chaîne de montage. Mais il est raisonnable de supposer que les
+images de téléviseurs présentant un problèmes auront certaines différences
+visuelles. Le but sera de tenter la détection de problèmes en se basant sur ces
+différences, possiblement très subtiles.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/training_set.png alt></p><h2 id=comment-le-modèle-produit-une-réponse-à-partir-dune-image>Comment le modèle produit une réponse à partir d&rsquo;une image?
 <a class=anchor href=#comment-le-mod%c3%a8le-produit-une-r%c3%a9ponse-%c3%a0-partir-dune-image>#</a></h2><p>Le modèle produit une réponse en faisant essentiellement une opération
 mathématique (possiblement complexe) qui associe les nombres d&rsquo;une image aux
 paramètres, en vue de produire un nombre binaire (la réponse). De manière
