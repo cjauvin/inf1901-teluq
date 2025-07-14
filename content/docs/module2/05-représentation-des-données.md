@@ -26,7 +26,7 @@ qui sont les valeurs souvent numériques, mais pas toujours, qui
 décrivent les instances (donc des "objets") que l'on tente de traiter.
 Classiquement, on fait de "l'ingénierie de caractéristiques" sur les
 données, pour tenter de les transformer de manière à améliorer les
-performances d'un algorithme. Le AA très moderne qui utilise les
+ppperformances d'un algorithme. Le AA très moderne qui utilise les
 réseaux de neurones profonds tend à faire en sorte qu'on a moins
 besoin de ce genre de techniques, car les transformations sont faites
 automatiquement, par le réseau de neurones lui-même, comme nous le

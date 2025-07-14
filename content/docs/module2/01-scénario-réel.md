@@ -58,7 +58,7 @@ $$f(x) = mx + b$$
 où $m$ et $b$ (les valeurs particulières qu'on leur donne) sont les paramètres
 qui déterminent cette fonction particulière. Dans un modèle d'apprentissage
 automatique, il y a beaucoup plus de paramètres, mais c'est essentiellement la
-même idée. Les paramètres d'un modèle sont donc essentiellement une sérine de
+même idée. Les paramètres d'un modèle sont donc essentiellement une série de
 nombres, rien de plus. Il est important à ce stade de bien comprendre la
 distinction entre ces deux séries de nombres dont nous parlons depuis le début :
 
@@ -67,9 +67,9 @@ distinction entre ces deux séries de nombres dont nous parlons depuis le début
 - La série de nombres qui proviennent des images que nous allons vouloir
   soumettre au modèle (correspondant à la couleur des pixels)
 
-Nous allons faire en sorte qu'il y ait une interaction entre ces deux
-séries de nombres (en vue de produire une réponse binaire), et cette
-interaction constituera le modèle, en action.
+Nous allons faire en sorte qu'il y ait une interaction entre ces deux séries de
+nombres (en vue de produire une réponse binaire, soit seulement deux réponses
+possibles), et cette interaction constituera le modèle, en action.
 
 ![](/images/module2/model_parameters.png)
 
@@ -77,40 +77,41 @@ interaction constituera le modèle, en action.
 
 Notre but est maintenant de trouver une manière de calculer la valeur exacte de
 ces paramètres (nombres) pour notre modèle. Pour commencer, notre modèle a des
-valeurs aléatoires pour ses paramètres. Il est pratiquement impossible, à ce
-stade, que le modèle soit "bon", dans le sens qu'il puisse fournir les bonnes
-réponses dans un grand nombre de cas. Sa performance, est aléatoire, et est donc
+valeurs aléatoires pour ses paramètres. Il est donc pratiquement impossible, à ce
+stade, que le modèle soit "bon", dans le sens qu'il puisse fournir les *bonnes*
+réponses dans un grand nombre de cas. Sa performance est aléatoire, et est donc
 équivalente à un médecin qui tenterait de déterminer si un patient est malade en
 comptant seulement sur la chance, en tirant un dé par exemple, ou en consultant
 les astres. Pour que le modèle devienne bon, il faut trouver une manière de
 changer ses paramètres pour qu'il devienne plus performant, qu'il donne donc
 plus souvent une bonne réponse. C'est ce qu'on appelle l'apprentissage, et c'est
-dans ce sens que le modèle apprend.
+dans ce sens que le modèle *apprend*.
 
 ## Qu'est-ce qu'un ensemble de données d'entraînement?
 
 Nous avons tout d'abord besoin d'un ensemble de données d'entraînement, qui est
 constitué d'une série d'images, prises au hasard, et accompagnées chacune d'une
-étiquette binaire ("oui c'est un problème", ou "non ce n'est pas un problème").
-Il est important de comprendre que la création d'un tel ensemble est souvent la
-partie difficile et coûteuse d'un projet d'apprentissage automatique, en vertu
-du fait que l'étiquette attachée à une image n'est pas donnée à priori. Il faut
-l'établir, ce qui constitue souvent un travail fastidieux et répétitif. Il est
-également nécessaire que cet ensemble d'entrainment soit représentatif de la
-réalité. Si les problèmes réels sont extrêmement rares, ils pourront être
-représentés comme tels dans l'ensemble d'entraînement, mais il est également
-possible de faire en sorte que la distribution des problèmes soit mieux
-balancée. Si on veut par exemple constituer un ensemble de 1000 images, il
-pourrait être composé de 500 cas problématiques, et 500 cas non-problématiques.
-De cette manière, même si les problèmes réels sont très rares (disons 1% des
-cas), la tâche du modèle sera plus facile car il aura de nombreux exemples de
-problèmes à analyser. Il sera plus à même de "comprendre" la nature des
-problèmes, car il en aura vu plus d'exemples lors de son entraînement. Il doit
-également être clair que toutes ces images seront très semblables, étant donné
-la très grande régularité du processus de la chaîne de montage. Mais il est
-raisonnable de supposer que les images de téléviseurs présentant un problèmes
-auront certaines différences visuelles. Le but sera de tenter la détection de
-problèmes en se basant sur ces différences, possiblement très subtiles.
+étiquette binaire (deux valeurs possibles : "oui c'est un problème", ou "non ce
+n'est pas un problème"). Il est important de comprendre que la création d'un tel
+ensemble est souvent la partie difficile et coûteuse d'un projet d'apprentissage
+automatique, en vertu du fait que l'étiquette attachée à une image n'est pas
+donnée à priori. Il faut l'établir, ce qui constitue souvent un travail
+fastidieux et répétitif. Il est également nécessaire que cet ensemble
+d'entrainment soit représentatif de la réalité. Si les problèmes réels sont
+extrêmement rares, ils pourront être représentés comme tels dans l'ensemble
+d'entraînement, mais il est également possible de faire en sorte que la
+distribution des problèmes soit mieux balancée. Si on veut par exemple
+constituer un ensemble de 1000 images, il pourrait être composé de 500 cas
+problématiques, et 500 cas non-problématiques. De cette manière, même si les
+problèmes réels sont très rares (disons 1% des cas), la tâche du modèle sera
+plus facile car il aura de nombreux exemples de problèmes à analyser. Il sera
+plus à même de "comprendre" la nature des problèmes, car il en aura vu plus
+d'exemples lors de son entraînement. Il doit également être clair que toutes ces
+images seront très semblables, étant donné la très grande régularité du
+processus de la chaîne de montage. Mais il est raisonnable de supposer que les
+images de téléviseurs présentant un problèmes auront certaines différences
+visuelles. Le but sera de tenter la détection de problèmes en se basant sur ces
+différences, possiblement très subtiles.
 
 ![](/images/module2/training_set.png)
 
