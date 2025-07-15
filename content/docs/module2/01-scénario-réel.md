@@ -122,10 +122,13 @@ mathématique (possiblement complexe) qui associe les nombres d'une image aux
 paramètres, en vue de produire un nombre binaire (la réponse). De manière
 pseudo-mathématique nous avons :
 
-$$\text{modèle(image, paramètres)} = \text{"ok" ou "problème"}.$$
+$$F_{modèle}\text{(image, paramètres)} = \text{"ok" ou "problème"}.$$
 
-Notez ici que "image" est au singulier, car il s'agit d'une seule
-image, qui correspond par contre à plusieurs nombres, oui.
+Notez ici que "image" est au singulier, car il s'agit d'une seule image, qui
+correspond par contre à plusieurs nombres, oui. La notation $F$ veut simplement
+signaler le fait qu'il s'agit d'une *fonction* au sens mathématique, soit un
+mécanisme qui fait l'association entre une ou plusieurs valeurs d'entrée, et une
+valeur de sortie.
 
 ## Qu'est-ce que la fonction d'erreur?
 

@@ -3,6 +3,29 @@ title: "Paradigmes de l'AA"
 weight: 6
 ---
 
+<style>
+body_ {
+    font-family: sans-serif;
+    background: #f0f0f0;
+    padding: 20px;
+}
+canvas {
+    display: block;
+    margin: auto;
+   /*  background: #f0f0f0; */
+}
+.graph-area {
+    background: white;
+    border: 1px solid #aaa;
+}
+h2, #info {
+    text-align: center;
+}
+#info {
+    margin-top: 20px;
+}
+</style>
+
 # Les différents paradigmes de l'apprentissage automatique
 
 Il existe plusieurs manières de catégoriser les algorithmes
@@ -43,6 +66,19 @@ et connu d'avance).
 - Arbres de décision
 - Naive Bayes
 - Réseau de neurones
+
+#### Régression logistique
+
+Vous pouvez développer une meilleure intuition du mécanisme de la régression
+logistique à l'aide de cette petite application interactive :
+
+<div style="text-align: center; margin-bottom: 10px;">
+  <label for="pointSlider">Nombre de points : </label>
+  <input type="range" id="pointSlider" min="2" max="50" value="12" style="width: 200px;">
+  <span id="pointCount">12</span>
+</div>
+<canvas id="canvas" width="780" height="500"></canvas>
+<div id="info">y = mx + b</div>
 
 ## Apprentissage non-supervisé
 
@@ -129,3 +165,371 @@ En contraste de cette reconnaissance de motifs, l'apprentissage par
 renforcement est plutôt une modélisation du comportement, plutôt que
 de la perception (quelle action devrait être posée dans ce contexte
 particulier). L'APR est souvent utilisé dans les jeux et la robotique.
+
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+const info = document.getElementById("info");
+const pointSlider = document.getElementById("pointSlider");
+const pointCount = document.getElementById("pointCount");
+const width = canvas.width;
+const height = canvas.height;
+
+let points = [];
+
+function generateRandomPoints(numPoints) {
+  points = [];
+  for (let i = 0; i < numPoints; i++) {
+    const label = i < Math.floor(numPoints / 2) ? 0 : 1;
+    const x = Math.random() * 500 + 50; // Keep within 600px graph width
+    const y = Math.random() * 400 + 50; // Keep within graph height
+    points.push({ x, y, label });
+  }
+}
+
+// Initialize with 12 points
+generateRandomPoints(12);
+
+let anchor = { x: 300, y: 200 };
+let angle = Math.PI / 4;
+
+const anchorRadius = 10;
+const innerRadius = 7;
+const outerRadius = 11;
+let dragging = false;
+let dragMode = null;
+let draggedPointIndex = -1;
+let mouseDownPos = null;
+let hasMoved = false;
+
+function drawGrid(spacing = 25, offsetX = 0) {
+  ctx.strokeStyle = "#eee";
+  ctx.lineWidth = 1;
+  for (let x = 0; x <= 600; x += spacing) {
+    ctx.beginPath();
+    ctx.moveTo(offsetX + x, 0);
+    ctx.lineTo(offsetX + x, height);
+    ctx.stroke();
+  }
+  for (let y = 0; y <= height; y += spacing) {
+    ctx.beginPath();
+    ctx.moveTo(offsetX, y);
+    ctx.lineTo(offsetX + 600, y);
+    ctx.stroke();
+  }
+}
+
+function draw() {
+  ctx.clearRect(0, 0, width, height);
+
+  const graphWidth = 600;
+  const graphX = (width - graphWidth) / 2 - 40; // Center with slight left offset for error bar
+
+  // Draw white background for graph area
+  ctx.fillStyle = 'white';
+  ctx.fillRect(graphX, 0, graphWidth, height);
+
+  // Draw border around graph area
+  ctx.strokeStyle = '#aaa';
+  ctx.lineWidth = 1;
+  ctx.strokeRect(graphX, 0, graphWidth, height);
+
+  drawGrid(25, graphX);
+
+  const dx = Math.cos(angle);
+  const dy = Math.sin(angle);
+  const lineLength = 1000;
+  const x1 = anchor.x - dx * lineLength;
+  const y1 = anchor.y - dy * lineLength;
+  const x2 = anchor.x + dx * lineLength;
+  const y2 = anchor.y + dy * lineLength;
+
+  // Draw decision line (clipped to graph area)
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(graphX, 0, graphWidth, height);
+  ctx.clip();
+
+  ctx.beginPath();
+  ctx.moveTo(x1 + graphX, y1);
+  ctx.lineTo(x2 + graphX, y2);
+  ctx.strokeStyle = 'black';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  ctx.restore();
+
+  // Draw anchor
+  ctx.beginPath();
+  ctx.arc(anchor.x + graphX, anchor.y, anchorRadius, 0, Math.PI * 2);
+  ctx.fillStyle = 'black';
+  ctx.fill();
+
+  // Update slope/intercept
+  let m = (x2 - x1) === 0 ? Infinity : (y2 - y1) / (x2 - x1);
+  let b = anchor.y - m * anchor.x;
+  const mText = isFinite(m) ? m.toFixed(2) : '∞';
+  const bText = isFinite(b) ? b.toFixed(2) : '∞';
+  info.textContent = `f(x) <= ${mText}x + ${bText}`;
+
+  // Calculate classification error
+  let errorCount = 0;
+  let classifications = [];
+
+  // First pass: calculate all classifications
+  for (let p of points) {
+    const dxp = p.x - anchor.x;
+    const dyp = p.y - anchor.y;
+    const cross = dx * dyp - dy * dxp;
+    let predicted = cross > 0 ? 1 : 0;
+    const correct = predicted === p.label;
+
+    classifications.push({ predicted, correct });
+    if (!correct) errorCount++;
+  }
+
+  // If error > 50%, flip all classifications
+  const shouldFlip = errorCount > points.length / 2;
+  if (shouldFlip) {
+    errorCount = points.length - errorCount;
+    classifications = classifications.map(c => ({
+      predicted: 1 - c.predicted,
+      correct: !c.correct
+    }));
+  }
+
+  // Draw all points
+  for (let i = 0; i < points.length; i++) {
+    const p = points[i];
+    const correct = classifications[i].correct;
+
+    const trueColor = p.label === 0 ? 'red' : 'blue';
+
+    // Draw point in true color
+    ctx.beginPath();
+    ctx.arc(p.x + graphX, p.y, outerRadius, 0, Math.PI * 2);
+    ctx.fillStyle = trueColor;
+    ctx.fill();
+
+    // ❌ Draw X if wrong
+    if (!correct) {
+      ctx.strokeStyle = 'grey';
+      ctx.lineWidth = 2;
+      const size = outerRadius + 2;
+      ctx.beginPath();
+      ctx.moveTo(p.x + graphX - size, p.y - size);
+      ctx.lineTo(p.x + graphX + size, p.y + size);
+      ctx.moveTo(p.x + graphX + size, p.y - size);
+      ctx.lineTo(p.x + graphX - size, p.y + size);
+      ctx.stroke();
+    }
+  }
+
+  // Draw error bar
+  const errorPercentage = points.length > 0 ? (errorCount / points.length) * 100 : 0;
+  const barX = graphX + graphWidth + 30; // 30px space from graph
+  const barY = 50;
+  const barHeight = height - 100;
+  const barWidth = 20;
+
+  // Draw bar background
+  ctx.fillStyle = '#f0f0f0';
+  ctx.fillRect(barX, barY, barWidth, barHeight);
+  ctx.strokeStyle = '#aaa';
+  ctx.lineWidth = 1;
+  ctx.strokeRect(barX, barY, barWidth, barHeight);
+
+  // Draw error level
+  const errorHeight = (errorPercentage / 100) * barHeight;
+  ctx.fillStyle = '#ff6b6b';
+  ctx.fillRect(barX, barY + barHeight - errorHeight, barWidth, errorHeight);
+
+  // Draw labels
+  ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--body-font-color') || '#333';
+  ctx.font = '12px sans-serif';
+  ctx.textAlign = 'left';
+  ctx.fillText('100%', barX + barWidth + 5, barY + 5);
+  ctx.fillText('0%', barX + barWidth + 5, barY + barHeight + 5);
+  ctx.fillText(`${errorPercentage.toFixed(1)}%`, barX + barWidth + 5, barY + barHeight - errorHeight + 5);
+
+  // Draw "Error" label
+  ctx.font = '14px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('Erreur', barX + barWidth / 2, barY - 10);
+}
+
+function distance(p1, p2) {
+  return Math.hypot(p1.x - p2.x, p1.y - p2.y);
+}
+
+canvas.addEventListener('mousedown', (e) => {
+  e.preventDefault(); // Prevent context menu on right click
+  const rect = canvas.getBoundingClientRect();
+  const mouse = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+  const graphWidth = 600;
+  const graphX = (width - graphWidth) / 2 - 40;
+
+  // Store initial mouse position and reset movement flag
+  mouseDownPos = { x: mouse.x, y: mouse.y };
+  hasMoved = false;
+
+  // Check if mouse is within graph area
+  if (mouse.x < graphX || mouse.x > graphX + graphWidth) return;
+
+  // Adjust mouse coordinates to graph space
+  const graphMouse = { x: mouse.x - graphX, y: mouse.y };
+
+  // Only handle dragging on left click
+  if (e.button === 0) {
+    if (distance(graphMouse, anchor) <= anchorRadius) {
+      dragging = true;
+      dragMode = 'translate';
+      return;
+    }
+
+    const dx = Math.cos(angle);
+    const dy = Math.sin(angle);
+    const px = graphMouse.x - anchor.x;
+    const py = graphMouse.y - anchor.y;
+    const distToLine = Math.abs(dy * px - dx * py);
+    if (distToLine < 10) {
+      dragging = true;
+      dragMode = 'rotate';
+      return;
+    }
+  }
+
+  // Check for point interaction
+  for (let i = 0; i < points.length; i++) {
+    if (distance(graphMouse, points[i]) < outerRadius) {
+      if (e.button === 0) {
+        // Left click: prepare for potential drag
+        dragging = true;
+        dragMode = 'point';
+        draggedPointIndex = i;
+        return;
+      } else if (e.button === 2) {
+        // Right click: delete the point immediately
+        points.splice(i, 1);
+        draw();
+        return;
+      }
+    }
+  }
+
+  // Add new points based on click type
+  const constrainedX = Math.max(15, Math.min(585, graphMouse.x));
+  const constrainedY = Math.max(15, Math.min(height - 15, graphMouse.y));
+
+  if (e.button === 0) {
+    // Left click: add red point (label 0)
+    points.push({ x: constrainedX, y: constrainedY, label: 0 });
+  } else if (e.button === 2) {
+    // Right click: add blue point (label 1)
+    points.push({ x: constrainedX, y: constrainedY, label: 1 });
+  }
+
+  draw();
+});
+
+canvas.addEventListener('mousemove', (e) => {
+  const rect = canvas.getBoundingClientRect();
+  const mouse = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+  const graphWidth = 600;
+  const graphX = (width - graphWidth) / 2 - 40;
+  const graphMouse = { x: mouse.x - graphX, y: mouse.y };
+
+  // Check if mouse has moved significantly
+  if (mouseDownPos && distance(mouse, mouseDownPos) > 3) {
+    hasMoved = true;
+  }
+
+  if (dragging) {
+    if (dragMode === 'translate') {
+      // Constrain anchor to graph boundaries
+      anchor.x = Math.max(15, Math.min(585, graphMouse.x));
+      anchor.y = Math.max(15, Math.min(height - 15, graphMouse.y));
+    } else if (dragMode === 'rotate') {
+      const dx = graphMouse.x - anchor.x;
+      const dy = graphMouse.y - anchor.y;
+      angle = Math.atan2(dy, dx);
+    } else if (dragMode === 'point' && draggedPointIndex >= 0) {
+      // Constrain point to graph boundaries
+      points[draggedPointIndex].x = Math.max(15, Math.min(585, graphMouse.x));
+      points[draggedPointIndex].y = Math.max(15, Math.min(height - 15, graphMouse.y));
+    }
+    draw();
+  } else {
+    // Update cursor based on what's under the mouse
+    if (mouse.x < graphX || mouse.x > graphX + graphWidth) {
+      canvas.style.cursor = 'default';
+      return;
+    }
+
+    // Check if over anchor point
+    if (distance(graphMouse, anchor) <= anchorRadius) {
+      canvas.style.cursor = 'grab';
+      return;
+    }
+
+    // Check if over decision line
+    const dx = Math.cos(angle);
+    const dy = Math.sin(angle);
+    const px = graphMouse.x - anchor.x;
+    const py = graphMouse.y - anchor.y;
+    const distToLine = Math.abs(dy * px - dx * py);
+    if (distToLine < 10) {
+      canvas.style.cursor = 'grab';
+      return;
+    }
+
+    // Check if over a point
+    for (let p of points) {
+      if (distance(graphMouse, p) < outerRadius) {
+        canvas.style.cursor = 'grab';
+        return;
+      }
+    }
+
+    // Default cursor
+    canvas.style.cursor = 'default';
+  }
+});
+
+canvas.addEventListener('mouseup', () => {
+  // If we were dragging a point but didn't move, delete it
+  if (dragMode === 'point' && draggedPointIndex >= 0 && !hasMoved) {
+    points.splice(draggedPointIndex, 1);
+    draw();
+  }
+
+  dragging = false;
+  dragMode = null;
+  draggedPointIndex = -1;
+  mouseDownPos = null;
+  hasMoved = false;
+});
+
+canvas.addEventListener('mouseleave', () => {
+  dragging = false;
+  dragMode = null;
+  draggedPointIndex = -1;
+  mouseDownPos = null;
+  hasMoved = false;
+});
+
+// Disable context menu on canvas
+canvas.addEventListener('contextmenu', (e) => {
+  e.preventDefault();
+});
+
+// Handle slider input
+pointSlider.addEventListener('input', (e) => {
+  const numPoints = parseInt(e.target.value);
+  pointCount.textContent = numPoints;
+  generateRandomPoints(numPoints);
+  draw();
+});
+
+draw();
+</script>
