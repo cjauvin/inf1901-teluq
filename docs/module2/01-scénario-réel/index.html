@@ -113,8 +113,11 @@ différences, possiblement très subtiles.</p><p><img src=https://cjauvin.github
 <a class=anchor href=#comment-le-mod%c3%a8le-produit-une-r%c3%a9ponse-%c3%a0-partir-dune-image>#</a></h2><p>Le modèle produit une réponse en faisant essentiellement une opération
 mathématique (possiblement complexe) qui associe les nombres d&rsquo;une image aux
 paramètres, en vue de produire un nombre binaire (la réponse). De manière
-pseudo-mathématique nous avons :</p>$$\text{modèle(image, paramètres)} = \text{"ok" ou "problème"}.$$<p>Notez ici que &ldquo;image&rdquo; est au singulier, car il s&rsquo;agit d&rsquo;une seule
-image, qui correspond par contre à plusieurs nombres, oui.</p><h2 id=quest-ce-que-la-fonction-derreur>Qu&rsquo;est-ce que la fonction d&rsquo;erreur?
+pseudo-mathématique nous avons :</p>$$F_{modèle}\text{(image, paramètres)} = \text{"ok" ou "problème"}.$$<p>Notez ici que &ldquo;image&rdquo; est au singulier, car il s&rsquo;agit d&rsquo;une seule image, qui
+correspond par contre à plusieurs nombres, oui. La notation $F$ veut simplement
+signaler le fait qu&rsquo;il s&rsquo;agit d&rsquo;une <em>fonction</em> au sens mathématique, soit un
+mécanisme qui fait l&rsquo;association entre une ou plusieurs valeurs d&rsquo;entrée, et une
+valeur de sortie.</p><h2 id=quest-ce-que-la-fonction-derreur>Qu&rsquo;est-ce que la fonction d&rsquo;erreur?
 <a class=anchor href=#quest-ce-que-la-fonction-derreur>#</a></h2><p>La fonction d&rsquo;erreur détermine l&rsquo;erreur moyenne qu&rsquo;une version donnée
 du modèle (avec des valeurs précises pour les paramètres) entraine. On
 ne doit pas confondre cette fonction avec le modèle lui-même, il
