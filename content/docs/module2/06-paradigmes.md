@@ -169,7 +169,7 @@ const pointSlider = document.getElementById("pointSlider");
 const pointCount = document.getElementById("pointCount");
 
 // Set canvas dimensions based on parent element
-let width, height, graphWidth;
+let width, height, graphWidth, graphOffsetX;
 window.addEventListener('load', () => {
   const parentWidth = canvas.parentElement.getBoundingClientRect().width;
   width = parentWidth;
@@ -179,7 +179,10 @@ window.addEventListener('load', () => {
   canvas.height = height;
 
   // Calculate graph width as percentage of canvas width, leaving space for error bar
-  graphWidth = Math.min(width - 100, width * 0.75); // Reserve 100px for error bar or use 75% of width
+  graphWidth = Math.min(width - 80, width * 0.85); // Reserve 80px for error bar or use 85% of width
+  
+  // Set graph offset for positioning
+  graphOffsetX = 35; // Left offset for error bar positioning
 
   // Update anchor position to be within graph area
   anchor = { x: graphWidth / 2, y: height / 2 };
@@ -237,7 +240,7 @@ function drawGrid(spacing = 25, offsetX = 0) {
 function draw() {
   ctx.clearRect(0, 0, width, height);
 
-  const graphX = (width - graphWidth) / 2 - 40; // Center with slight left offset for error bar
+  const graphX = (width - graphWidth) / 2 - graphOffsetX; // Center with slight left offset for error bar
 
   // Draw white background for graph area
   ctx.fillStyle = 'white';
@@ -343,7 +346,7 @@ function draw() {
 
   // Draw error bar
   const errorPercentage = points.length > 0 ? (errorCount / points.length) * 100 : 0;
-  const barX = graphX + graphWidth + 30; // 30px space from graph
+  const barX = graphX + graphWidth + 20; // 20px space from graph
   const barY = 50;
   const barHeight = height - 100;
   const barWidth = 20;
@@ -382,7 +385,7 @@ canvas.addEventListener('mousedown', (e) => {
   e.preventDefault(); // Prevent context menu on right click
   const rect = canvas.getBoundingClientRect();
   const mouse = { x: e.clientX - rect.left, y: e.clientY - rect.top };
-  const graphX = (width - graphWidth) / 2 - 40;
+  const graphX = (width - graphWidth) / 2 - graphOffsetX;
 
   // Store initial mouse position and reset movement flag
   mouseDownPos = { x: mouse.x, y: mouse.y };
@@ -450,7 +453,7 @@ canvas.addEventListener('mousedown', (e) => {
 canvas.addEventListener('mousemove', (e) => {
   const rect = canvas.getBoundingClientRect();
   const mouse = { x: e.clientX - rect.left, y: e.clientY - rect.top };
-  const graphX = (width - graphWidth) / 2 - 40;
+  const graphX = (width - graphWidth) / 2 - graphOffsetX;
   const graphMouse = { x: mouse.x - graphX, y: mouse.y };
 
   // Check if mouse has moved significantly
@@ -552,7 +555,7 @@ let touchHoldTriggered = false;
 canvas.addEventListener('touchstart', (e) => {
   e.preventDefault();
   const touch = getTouchCoordinates(e);
-  const graphX = (width - graphWidth) / 2 - 40;
+  const graphX = (width - graphWidth) / 2 - graphOffsetX;
 
   touchStartTime = Date.now();
   touchHoldTriggered = false;
@@ -620,7 +623,7 @@ canvas.addEventListener('touchstart', (e) => {
 canvas.addEventListener('touchmove', (e) => {
   e.preventDefault();
   const touch = getTouchCoordinates(e);
-  const graphX = (width - graphWidth) / 2 - 40;
+  const graphX = (width - graphWidth) / 2 - graphOffsetX;
   const graphTouch = { x: touch.x - graphX, y: touch.y };
 
   // Clear touch hold timer on movement
@@ -674,7 +677,7 @@ canvas.addEventListener('touchend', (e) => {
   // Handle tap (short touch without movement)
   if (!hasMoved && Date.now() - touchStartTime < 300) {
     const touch = getTouchCoordinates(e);
-    const graphX = (width - graphWidth) / 2 - 40;
+    const graphX = (width - graphWidth) / 2 - graphOffsetX;
 
     if (touch.x >= graphX && touch.x <= graphX + graphWidth) {
       const graphTouch = { x: touch.x - graphX, y: touch.y };
