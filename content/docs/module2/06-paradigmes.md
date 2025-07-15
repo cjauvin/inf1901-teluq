@@ -4,11 +4,6 @@ weight: 6
 ---
 
 <style>
-body_ {
-    font-family: sans-serif;
-    background: #f0f0f0;
-    padding: 20px;
-}
 canvas {
     display: block;
     margin: auto;
@@ -75,9 +70,9 @@ logistique à l'aide de cette petite application interactive :
 <div style="text-align: center; margin-bottom: 10px;">
   <label for="pointSlider">Nombre de points : </label>
   <input type="range" id="pointSlider" min="2" max="50" value="12" style="width: 200px;">
-  <span id="pointCount">12</span>
+  <span id="pointCount">10</span>
 </div>
-<canvas id="canvas" width="780" height="500"></canvas>
+<canvas id="canvas"></canvas>
 <div id="info">y = mx + b</div>
 
 ## Apprentissage non-supervisé
@@ -172,25 +167,45 @@ const ctx = canvas.getContext("2d");
 const info = document.getElementById("info");
 const pointSlider = document.getElementById("pointSlider");
 const pointCount = document.getElementById("pointCount");
-const width = canvas.width;
-const height = canvas.height;
+
+// Set canvas dimensions based on parent element
+let width, height, graphWidth;
+window.addEventListener('load', () => {
+  const parentWidth = canvas.parentElement.getBoundingClientRect().width;
+  width = parentWidth;
+  height = Math.round(parentWidth * (500 / 780)); // Maintain proportional ratio
+
+  canvas.width = width;
+  canvas.height = height;
+
+  // Calculate graph width as percentage of canvas width, leaving space for error bar
+  graphWidth = Math.min(width - 100, width * 0.75); // Reserve 100px for error bar or use 75% of width
+
+  // Update anchor position to be within graph area
+  anchor = { x: graphWidth / 2, y: height / 2 };
+
+  // Initialize after sizing
+  generateRandomPoints(12);
+  draw();
+});
 
 let points = [];
 
 function generateRandomPoints(numPoints) {
   points = [];
+  const margin = 20; // Small margin from graph edges
+
   for (let i = 0; i < numPoints; i++) {
     const label = i < Math.floor(numPoints / 2) ? 0 : 1;
-    const x = Math.random() * 500 + 50; // Keep within 600px graph width
-    const y = Math.random() * 400 + 50; // Keep within graph height
+    const x = Math.random() * (graphWidth - 2 * margin) + margin; // Keep within dynamic graph width
+    const y = Math.random() * (height - 2 * margin) + margin; // Keep within graph height
     points.push({ x, y, label });
   }
 }
 
-// Initialize with 12 points
-generateRandomPoints(12);
+// Initialization moved to load event handler
 
-let anchor = { x: 300, y: 200 };
+let anchor = { x: 300, y: 200 }; // Will be updated in load handler
 let angle = Math.PI / 4;
 
 const anchorRadius = 10;
@@ -205,7 +220,7 @@ let hasMoved = false;
 function drawGrid(spacing = 25, offsetX = 0) {
   ctx.strokeStyle = "#eee";
   ctx.lineWidth = 1;
-  for (let x = 0; x <= 600; x += spacing) {
+  for (let x = 0; x <= graphWidth; x += spacing) {
     ctx.beginPath();
     ctx.moveTo(offsetX + x, 0);
     ctx.lineTo(offsetX + x, height);
@@ -214,7 +229,7 @@ function drawGrid(spacing = 25, offsetX = 0) {
   for (let y = 0; y <= height; y += spacing) {
     ctx.beginPath();
     ctx.moveTo(offsetX, y);
-    ctx.lineTo(offsetX + 600, y);
+    ctx.lineTo(offsetX + graphWidth, y);
     ctx.stroke();
   }
 }
@@ -222,7 +237,6 @@ function drawGrid(spacing = 25, offsetX = 0) {
 function draw() {
   ctx.clearRect(0, 0, width, height);
 
-  const graphWidth = 600;
   const graphX = (width - graphWidth) / 2 - 40; // Center with slight left offset for error bar
 
   // Draw white background for graph area
@@ -368,7 +382,6 @@ canvas.addEventListener('mousedown', (e) => {
   e.preventDefault(); // Prevent context menu on right click
   const rect = canvas.getBoundingClientRect();
   const mouse = { x: e.clientX - rect.left, y: e.clientY - rect.top };
-  const graphWidth = 600;
   const graphX = (width - graphWidth) / 2 - 40;
 
   // Store initial mouse position and reset movement flag
@@ -420,7 +433,7 @@ canvas.addEventListener('mousedown', (e) => {
   }
 
   // Add new points based on click type
-  const constrainedX = Math.max(15, Math.min(585, graphMouse.x));
+  const constrainedX = Math.max(15, Math.min(graphWidth - 15, graphMouse.x));
   const constrainedY = Math.max(15, Math.min(height - 15, graphMouse.y));
 
   if (e.button === 0) {
@@ -437,7 +450,6 @@ canvas.addEventListener('mousedown', (e) => {
 canvas.addEventListener('mousemove', (e) => {
   const rect = canvas.getBoundingClientRect();
   const mouse = { x: e.clientX - rect.left, y: e.clientY - rect.top };
-  const graphWidth = 600;
   const graphX = (width - graphWidth) / 2 - 40;
   const graphMouse = { x: mouse.x - graphX, y: mouse.y };
 
@@ -540,12 +552,11 @@ let touchHoldTriggered = false;
 canvas.addEventListener('touchstart', (e) => {
   e.preventDefault();
   const touch = getTouchCoordinates(e);
-  const graphWidth = 600;
   const graphX = (width - graphWidth) / 2 - 40;
 
   touchStartTime = Date.now();
   touchHoldTriggered = false;
-  
+
   // Store initial touch position and reset movement flag
   mouseDownPos = { x: touch.x, y: touch.y };
   hasMoved = false;
@@ -569,7 +580,7 @@ canvas.addEventListener('touchstart', (e) => {
       }
     }
     // Add blue point (label 1) if not over existing point
-    const constrainedX = Math.max(15, Math.min(585, graphTouch.x));
+    const constrainedX = Math.max(15, Math.min(graphWidth - 15, graphTouch.x));
     const constrainedY = Math.max(15, Math.min(height - 15, graphTouch.y));
     points.push({ x: constrainedX, y: constrainedY, label: 1 });
     draw();
@@ -609,7 +620,6 @@ canvas.addEventListener('touchstart', (e) => {
 canvas.addEventListener('touchmove', (e) => {
   e.preventDefault();
   const touch = getTouchCoordinates(e);
-  const graphWidth = 600;
   const graphX = (width - graphWidth) / 2 - 40;
   const graphTouch = { x: touch.x - graphX, y: touch.y };
 
@@ -635,7 +645,7 @@ canvas.addEventListener('touchmove', (e) => {
       angle = Math.atan2(dy, dx);
     } else if (dragMode === 'point' && draggedPointIndex >= 0) {
       // Constrain point to graph boundaries
-      points[draggedPointIndex].x = Math.max(15, Math.min(585, graphTouch.x));
+      points[draggedPointIndex].x = Math.max(15, Math.min(graphWidth - 15, graphTouch.x));
       points[draggedPointIndex].y = Math.max(15, Math.min(height - 15, graphTouch.y));
     }
     draw();
@@ -644,7 +654,7 @@ canvas.addEventListener('touchmove', (e) => {
 
 canvas.addEventListener('touchend', (e) => {
   e.preventDefault();
-  
+
   // Clear touch hold timer
   if (touchHoldTimer) {
     clearTimeout(touchHoldTimer);
@@ -664,12 +674,11 @@ canvas.addEventListener('touchend', (e) => {
   // Handle tap (short touch without movement)
   if (!hasMoved && Date.now() - touchStartTime < 300) {
     const touch = getTouchCoordinates(e);
-    const graphWidth = 600;
     const graphX = (width - graphWidth) / 2 - 40;
-    
+
     if (touch.x >= graphX && touch.x <= graphX + graphWidth) {
       const graphTouch = { x: touch.x - graphX, y: touch.y };
-      
+
       // Check if tapping existing point to delete it
       for (let i = 0; i < points.length; i++) {
         if (distance(graphTouch, points[i]) < outerRadius) {
@@ -683,9 +692,9 @@ canvas.addEventListener('touchend', (e) => {
           return;
         }
       }
-      
+
       // Add red point (label 0) if not over existing point
-      const constrainedX = Math.max(15, Math.min(585, graphTouch.x));
+      const constrainedX = Math.max(15, Math.min(graphWidth - 15, graphTouch.x));
       const constrainedY = Math.max(15, Math.min(height - 15, graphTouch.y));
       points.push({ x: constrainedX, y: constrainedY, label: 0 });
       draw();
@@ -702,13 +711,13 @@ canvas.addEventListener('touchend', (e) => {
 
 canvas.addEventListener('touchcancel', (e) => {
   e.preventDefault();
-  
+
   // Clear touch hold timer
   if (touchHoldTimer) {
     clearTimeout(touchHoldTimer);
     touchHoldTimer = null;
   }
-  
+
   // Reset all touch state
   dragging = false;
   dragMode = null;
@@ -726,5 +735,5 @@ pointSlider.addEventListener('input', (e) => {
   draw();
 });
 
-draw();
+// Initial draw call moved to load event handler
 </script>
