@@ -309,10 +309,10 @@ canvas {
  background: white;
  border: 1px solid #aaa;
 }
-h2, #info {
+h2, #info, #info2 {
  text-align: center;
 }
-#info {
+#info, #info2 {
  margin-top: 20px;
 }
 &lt;/style>
