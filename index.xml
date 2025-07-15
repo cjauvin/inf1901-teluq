@@ -300,11 +300,6 @@ profonds entre les mathématiques, la philosophie et l&amp;rsquo;intelligence ar
 &lt;/details>
 &lt;p>En gros, on y présente 4 paradigmes mathématiques et leur correspondance dans le monde
 de l&amp;rsquo;intelligence artificielle :&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;style>
-body_ {
- font-family: sans-serif;
- background: #f0f0f0;
- padding: 20px;
-}
 canvas {
  display: block;
  margin: auto;

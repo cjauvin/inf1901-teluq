@@ -87,11 +87,6 @@ représenter la présence ou l&amp;rsquo;absence d&amp;rsquo;un mot. Il est éga
 possible de représenter le sens des mots à l&amp;rsquo;aide d&amp;rsquo;un espace
 vectoriel, dont les grands modèles de langage (GML) font usage, comme
 nous le verrons au module 4.&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;style>
-body_ {
- font-family: sans-serif;
- background: #f0f0f0;
- padding: 20px;
-}
 canvas {
  display: block;
  margin: auto;
