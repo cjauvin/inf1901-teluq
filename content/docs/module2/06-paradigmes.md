@@ -255,7 +255,9 @@ function draw() {
   ctx.lineTo(x2 + graphX, y2);
   ctx.strokeStyle = 'black';
   ctx.lineWidth = 2;
+  ctx.setLineDash([5, 5]);
   ctx.stroke();
+  ctx.setLineDash([]);
 
   ctx.restore();
 
@@ -521,6 +523,199 @@ canvas.addEventListener('mouseleave', () => {
 // Disable context menu on canvas
 canvas.addEventListener('contextmenu', (e) => {
   e.preventDefault();
+});
+
+// Helper function to get touch coordinates
+function getTouchCoordinates(e) {
+  const rect = canvas.getBoundingClientRect();
+  const touch = e.touches[0] || e.changedTouches[0];
+  return { x: touch.clientX - rect.left, y: touch.clientY - rect.top };
+}
+
+// Touch event handlers
+let touchStartTime = 0;
+let touchHoldTimer = null;
+let touchHoldTriggered = false;
+
+canvas.addEventListener('touchstart', (e) => {
+  e.preventDefault();
+  const touch = getTouchCoordinates(e);
+  const graphWidth = 600;
+  const graphX = (width - graphWidth) / 2 - 40;
+
+  touchStartTime = Date.now();
+  touchHoldTriggered = false;
+  
+  // Store initial touch position and reset movement flag
+  mouseDownPos = { x: touch.x, y: touch.y };
+  hasMoved = false;
+
+  // Check if touch is within graph area
+  if (touch.x < graphX || touch.x > graphX + graphWidth) return;
+
+  // Adjust touch coordinates to graph space
+  const graphTouch = { x: touch.x - graphX, y: touch.y };
+
+  // Set up touch hold timer for right-click equivalent (500ms)
+  touchHoldTimer = setTimeout(() => {
+    touchHoldTriggered = true;
+    // Handle touch hold as right-click
+    for (let i = 0; i < points.length; i++) {
+      if (distance(graphTouch, points[i]) < outerRadius) {
+        // Delete the point
+        points.splice(i, 1);
+        draw();
+        return;
+      }
+    }
+    // Add blue point (label 1) if not over existing point
+    const constrainedX = Math.max(15, Math.min(585, graphTouch.x));
+    const constrainedY = Math.max(15, Math.min(height - 15, graphTouch.y));
+    points.push({ x: constrainedX, y: constrainedY, label: 1 });
+    draw();
+  }, 500);
+
+  // Handle anchor dragging
+  if (distance(graphTouch, anchor) <= anchorRadius) {
+    dragging = true;
+    dragMode = 'translate';
+    return;
+  }
+
+  // Handle line rotation
+  const dx = Math.cos(angle);
+  const dy = Math.sin(angle);
+  const px = graphTouch.x - anchor.x;
+  const py = graphTouch.y - anchor.y;
+  const distToLine = Math.abs(dy * px - dx * py);
+  if (distToLine < 10) {
+    dragging = true;
+    dragMode = 'rotate';
+    return;
+  }
+
+  // Check for point interaction
+  for (let i = 0; i < points.length; i++) {
+    if (distance(graphTouch, points[i]) < outerRadius) {
+      // Prepare for potential drag
+      dragging = true;
+      dragMode = 'point';
+      draggedPointIndex = i;
+      return;
+    }
+  }
+});
+
+canvas.addEventListener('touchmove', (e) => {
+  e.preventDefault();
+  const touch = getTouchCoordinates(e);
+  const graphWidth = 600;
+  const graphX = (width - graphWidth) / 2 - 40;
+  const graphTouch = { x: touch.x - graphX, y: touch.y };
+
+  // Clear touch hold timer on movement
+  if (touchHoldTimer) {
+    clearTimeout(touchHoldTimer);
+    touchHoldTimer = null;
+  }
+
+  // Check if touch has moved significantly
+  if (mouseDownPos && distance(touch, mouseDownPos) > 3) {
+    hasMoved = true;
+  }
+
+  if (dragging && !touchHoldTriggered) {
+    if (dragMode === 'translate') {
+      // Constrain anchor to graph boundaries
+      anchor.x = Math.max(15, Math.min(585, graphTouch.x));
+      anchor.y = Math.max(15, Math.min(height - 15, graphTouch.y));
+    } else if (dragMode === 'rotate') {
+      const dx = graphTouch.x - anchor.x;
+      const dy = graphTouch.y - anchor.y;
+      angle = Math.atan2(dy, dx);
+    } else if (dragMode === 'point' && draggedPointIndex >= 0) {
+      // Constrain point to graph boundaries
+      points[draggedPointIndex].x = Math.max(15, Math.min(585, graphTouch.x));
+      points[draggedPointIndex].y = Math.max(15, Math.min(height - 15, graphTouch.y));
+    }
+    draw();
+  }
+});
+
+canvas.addEventListener('touchend', (e) => {
+  e.preventDefault();
+  
+  // Clear touch hold timer
+  if (touchHoldTimer) {
+    clearTimeout(touchHoldTimer);
+    touchHoldTimer = null;
+  }
+
+  // If touch hold was triggered, don't process as normal touch end
+  if (touchHoldTriggered) {
+    dragging = false;
+    dragMode = null;
+    draggedPointIndex = -1;
+    mouseDownPos = null;
+    hasMoved = false;
+    return;
+  }
+
+  // Handle tap (short touch without movement)
+  if (!hasMoved && Date.now() - touchStartTime < 300) {
+    const touch = getTouchCoordinates(e);
+    const graphWidth = 600;
+    const graphX = (width - graphWidth) / 2 - 40;
+    
+    if (touch.x >= graphX && touch.x <= graphX + graphWidth) {
+      const graphTouch = { x: touch.x - graphX, y: touch.y };
+      
+      // Check if tapping existing point to delete it
+      for (let i = 0; i < points.length; i++) {
+        if (distance(graphTouch, points[i]) < outerRadius) {
+          points.splice(i, 1);
+          draw();
+          dragging = false;
+          dragMode = null;
+          draggedPointIndex = -1;
+          mouseDownPos = null;
+          hasMoved = false;
+          return;
+        }
+      }
+      
+      // Add red point (label 0) if not over existing point
+      const constrainedX = Math.max(15, Math.min(585, graphTouch.x));
+      const constrainedY = Math.max(15, Math.min(height - 15, graphTouch.y));
+      points.push({ x: constrainedX, y: constrainedY, label: 0 });
+      draw();
+    }
+  }
+
+  // Reset dragging state
+  dragging = false;
+  dragMode = null;
+  draggedPointIndex = -1;
+  mouseDownPos = null;
+  hasMoved = false;
+});
+
+canvas.addEventListener('touchcancel', (e) => {
+  e.preventDefault();
+  
+  // Clear touch hold timer
+  if (touchHoldTimer) {
+    clearTimeout(touchHoldTimer);
+    touchHoldTimer = null;
+  }
+  
+  // Reset all touch state
+  dragging = false;
+  dragMode = null;
+  draggedPointIndex = -1;
+  mouseDownPos = null;
+  hasMoved = false;
+  touchHoldTriggered = false;
 });
 
 // Handle slider input
