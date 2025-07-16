@@ -5,20 +5,77 @@ weight: 6
 
 # Les différents paradigmes de l'apprentissage automatique
 
-Il existe plusieurs manières de catégoriser les algorithmes
-d'apprentissage automatique, selon leur structure même, mais aussi selon
-la nature et la structure des problèmes qu'ils tentent de résoudre.
-Nous allons considérer deux schémas de classement fondamentaux :
+Il existe plusieurs manières de catégoriser les algorithmes d'apprentissage
+automatique, selon leur nature et la structure des problèmes qu'ils tentent de
+résoudre. Nous allons considérer deux schémas de classement fondamentaux :
 
 - L'apprentissage supervisé versus non-supervisé
 - L'apprentissage paramétrique versus non-paramétrique
 
 ## Apprentissage supervisé (classification, regression)
 
-L'apprentissage supervisé fonctionne à partir de données pour
-lesquelles la "bonne réponse" (i.e. celle qu'on aimerait que
-l'algorithme fournisse systématiquement, une fois entrainé) est
-fournie, en tant que donnée d'entrainement.
+L'apprentissage supervisé fonctionne à partir de données pour lesquelles la
+"bonne réponse" (i.e. celle qu'on aimerait que l'algorithme fournisse
+systématiquement, une fois entrainé) est fournie, en tant que donnée
+d'entrainement. L'apprentissage supervisé correspond à la notion intuitive qu'on
+a de l'enseignement et de l'apprentissage : un enseignant qui pose une question
+à un étudiant  est en mesure de le corriger en lui indiquant si sa réponse est
+correcte ou non (car l'enseignant connaît, à priori, la "bonne réponse" à sa
+propre question).
+
+### Classification
+
+La famille d'algorithmes d'apprentissage supervisé la plus facile à comprendre
+est celle des modèles de classification. Un algorithme de classification est une
+fonction mathématique qui associe des "objets" (donc des points dans un espaces
+[lien]) vers une série prédéfinie d'étiquettes, des "classes".
+
+Considérons tout d'abord un petit exemple interactif où vous jouerez vous-même
+le rôle d'un modèle de classification particulier : la **régression
+logistique**. Les données d'entraînement ont deux classes possibles : `bleue` ou
+`rouge`, ainsi que deux valeurs (nombres) pour les décrire : $x$ et $y$ (puisqu'il
+s'agit d'un graphe en deux dimensions). La ligne pointillée constitue la
+"fonction de décision" du modèle, et comme il s'agit d'une fonction en deux
+dimensions, on peut la représenter par la formule simple :
+
+$$f(x) \le mx + b$$
+
+où $m$ représente la pente et $b$ l'ordonnée à l'origine. Remarquez un détail
+important : il s'agit d'une fonction d'inégalité, et non d'égalité, ce qui veut
+dire que la valeur de la fonction est *binaire* (deux valeurs possibles) :
+`rouge` si $f(x) \le mx + b$ et `bleue` si $f(x) \gt mx + b$ (ou vice versa,
+arbitrairement). Quand vous déplacez cette ligne de décision vous-même (en
+utilisant la souris), vous modifiez les paramètres $m$ et $b$ dynamiquement. Ces
+paramètres constituent le **modèle**. La situation idéale est quand cette ligne
+de décision sépare parfaitement les points rouges des points bleus, ce qui
+correspond à une valeur de 0% pour la fonction d'erreur (elle-même représentée
+par la barre à droite, et distincte de la fonction de décision). Ce n'est pas
+toujours possible ! Notez qu'il est possible d'ajouter ou d'enlever des points,
+et de les déplacer, en utilisant la souris.
+
+<div style="text-align: center; margin-bottom: 10px;">
+  <label for="pointSlider">Nombre de points : </label>
+  <input type="range" id="pointSlider" min="2" max="50" value="12" style="width: 200px;">
+  <span id="pointCount">10</span>
+</div>
+<canvas id="canvas"></canvas>
+<div id="info" style="text-align: center; margin-top: 20px" >f(x) <=> mx + b</div>
+
+La tâche de l'algorithme de régression logistique est de trouver les "meilleures"
+valeurs pour les paramètres pour la fonction de décision (donc $m$ et $b$),
+celles qui font en sorte que la valeur de la fonction d'erreur est la plus
+petite possible (zéro idéalement).
+
+{{% hint info %}}
+Matière à réflexion : pourquoi ce n'est pas toujours possible de séparer parfaitement les points? Dans quelles conditions est-ce le cas? Qu'est-ce qui permettrait
+de faire en sorte que ça devienne possible?
+{{% /hint %}}
+
+Une fois que les idées de base de ce petit exemple interactif sont bien claires
+pour vous, on peut généraliser le concept de la régression logistique pour en
+faire un modèle plus puissant et complexe :
+
+- Considérer ..
 
 ### Régression
 
@@ -49,17 +106,11 @@ et connu d'avance).
 Vous pouvez développer une meilleure intuition du mécanisme de la régression
 logistique à l'aide de cette petite application interactive :
 
-<div style="text-align: center; margin-bottom: 10px;">
-  <label for="pointSlider">Nombre de points : </label>
-  <input type="range" id="pointSlider" min="2" max="50" value="12" style="width: 200px;">
-  <span id="pointCount">10</span>
-</div>
-<canvas id="canvas"></canvas>
-<div id="info" style="text-align: center; margin-top: 20px" >f(x) <=> mx + b</div>
-
 #### Régression linéaire
 
-Voici un autre exemple interactif pour explorer la régression linéaire. Les points bleus suivent une droite cachée avec du bruit, et vous pouvez ajuster votre ligne pour minimiser l'erreur quadratique moyenne :
+Voici un autre exemple interactif pour explorer la régression linéaire. Les
+points bleus suivent une droite cachée avec du bruit, et vous pouvez ajuster
+votre ligne pour minimiser l'erreur quadratique moyenne :
 
 <div style="text-align: center; margin-bottom: 10px;">
   <label for="pointSlider2">Nombre de points : </label>

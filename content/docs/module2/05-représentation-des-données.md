@@ -21,6 +21,10 @@ possible de représenter le sens des mots à l'aide d'un espace
 vectoriel, dont les grands modèles de langage (GML) font usage, comme
 nous le verrons au module 4.
 
+TODO
+* Idée d'un objet en tant que "point dans un espace"
+* notion de manifold
+
 On parle souvent de "caractéristiques" ("features" en anglais) en AA,
 qui sont les valeurs souvent numériques, mais pas toujours, qui
 décrivent les instances (donc des "objets") que l'on tente de traiter.
