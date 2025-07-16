@@ -3,22 +3,6 @@ title: "Paradigmes de l'AA"
 weight: 6
 ---
 
-<style>
-canvas {
-    display: block;
-    margin: auto;
-   /*  background: #f0f0f0; */
-}
-.graph-area {
-    background: white;
-    border: 1px solid #aaa;
-}
-#info, #info2 {
-    margin-top: 20px;
-    text-align: center;
-}
-</style>
-
 # Les différents paradigmes de l'apprentissage automatique
 
 Il existe plusieurs manières de catégoriser les algorithmes
@@ -71,7 +55,7 @@ logistique à l'aide de cette petite application interactive :
   <span id="pointCount">10</span>
 </div>
 <canvas id="canvas"></canvas>
-<div id="info">y = mx + b</div>
+<div id="info" style="text-align: center; margin-top: 20px" >f(x) <=> mx + b</div>
 
 #### Régression linéaire
 
@@ -83,7 +67,7 @@ Voici un autre exemple interactif pour explorer la régression linéaire. Les po
   <span id="pointCount2">25</span>
 </div>
 <canvas id="canvas2"></canvas>
-<div id="info2">Erreur quadratique moyenne</div>
+<div id="info2" style="text-align: center; margin-top: 20px" >f(x) = mx + b</div>
 
 ## Apprentissage non-supervisé
 
@@ -274,34 +258,6 @@ function draw() {
   const x2 = anchor.x + dx * lineLength;
   const y2 = anchor.y + dy * lineLength;
 
-  // Draw decision line (clipped to graph area)
-  ctx.save();
-  ctx.beginPath();
-  ctx.rect(graphX, 0, graphWidth, height);
-  ctx.clip();
-
-  ctx.beginPath();
-  ctx.moveTo(x1 + graphX, y1);
-  ctx.lineTo(x2 + graphX, y2);
-  ctx.strokeStyle = 'black';
-  ctx.lineWidth = 2;
-  ctx.setLineDash([5, 5]);
-  ctx.stroke();
-  ctx.setLineDash([]);
-
-  ctx.restore();
-
-  // Draw anchor
-  ctx.fillStyle = '#000';
-  ctx.beginPath();
-  ctx.arc(anchor.x + graphX, anchor.y, anchorRadius, 0, Math.PI * 2);
-  ctx.fill();
-
-  ctx.fillStyle = '#fff';
-  ctx.beginPath();
-  ctx.arc(anchor.x + graphX, anchor.y, innerRadius, 0, Math.PI * 2);
-  ctx.fill();
-
   // Update slope/intercept
   let m = -Math.tan(angle);
   let b = -(anchor.y - m * anchor.x);
@@ -393,6 +349,34 @@ function draw() {
   ctx.font = '14px sans-serif';
   ctx.textAlign = 'center';
   ctx.fillText('Erreur', barX + barWidth / 2, barY - 10);
+
+  // Draw decision line on top of points (clipped to graph area)
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(graphX, 0, graphWidth, height);
+  ctx.clip();
+
+  ctx.beginPath();
+  ctx.moveTo(x1 + graphX, y1);
+  ctx.lineTo(x2 + graphX, y2);
+  ctx.strokeStyle = 'black';
+  ctx.lineWidth = 2;
+  ctx.setLineDash([5, 5]);
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  ctx.restore();
+
+  // Draw anchor (on top of everything)
+  ctx.fillStyle = '#000';
+  ctx.beginPath();
+  ctx.arc(anchor.x + graphX, anchor.y, anchorRadius, 0, Math.PI * 2);
+  ctx.fill();
+
+  ctx.fillStyle = '#fff';
+  ctx.beginPath();
+  ctx.arc(anchor.x + graphX, anchor.y, innerRadius, 0, Math.PI * 2);
+  ctx.fill();
 }
 
 function distance(p1, p2) {
@@ -889,7 +873,7 @@ function draw2() {
 
   drawGrid2(25, graphX2);
 
-  // Draw user's line (dashed)
+  // Calculate line coordinates for later drawing
   const dx = Math.cos(angle2);
   const dy = Math.sin(angle2);
   const lineLength = Math.max(width2, height2);
@@ -897,21 +881,6 @@ function draw2() {
   const y1 = anchor2.y - dy * lineLength;
   const x2 = anchor2.x + dx * lineLength;
   const y2 = anchor2.y + dy * lineLength;
-
-  ctx2.save();
-  ctx2.rect(graphX2, 0, graphWidth2, height2);
-  ctx2.clip();
-
-  ctx2.strokeStyle = '#000';
-  ctx2.lineWidth = 2;
-  ctx2.setLineDash([5, 5]);
-  ctx2.beginPath();
-  ctx2.moveTo(x1 + graphX2, y1);
-  ctx2.lineTo(x2 + graphX2, y2);
-  ctx2.stroke();
-  ctx2.setLineDash([]);
-
-  ctx2.restore();
 
   // Draw points (all blue)
   points2.forEach(point => {
@@ -936,6 +905,22 @@ function draw2() {
   ctx2.beginPath();
   ctx2.arc(anchor2.x + graphX2, anchor2.y, innerRadius2, 0, 2 * Math.PI);
   ctx2.fill();
+
+  // Draw user's line on top of points and anchor (dashed)
+  ctx2.save();
+  ctx2.rect(graphX2, 0, graphWidth2, height2);
+  ctx2.clip();
+
+  ctx2.strokeStyle = '#000';
+  ctx2.lineWidth = 2;
+  ctx2.setLineDash([5, 5]);
+  ctx2.beginPath();
+  ctx2.moveTo(x1 + graphX2, y1);
+  ctx2.lineTo(x2 + graphX2, y2);
+  ctx2.stroke();
+  ctx2.setLineDash([]);
+
+  ctx2.restore();
 
   // Calculate and draw mean squared error
   let totalError = 0;
