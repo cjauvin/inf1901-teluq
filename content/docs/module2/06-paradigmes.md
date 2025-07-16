@@ -198,7 +198,7 @@ window.addEventListener('load', () => {
   graphOffsetX = 35; // Left offset for error bar positioning
 
   // Update anchor position to be within graph area
-  anchor = { x: graphWidth / 2, y: height / 2 };
+  anchor = { x: (graphWidth / 2) + 20, y: height / 2 };
 
   // Initialize after sizing
   generateRandomPoints(12);
@@ -222,7 +222,7 @@ function generateRandomPoints(numPoints) {
 // Initialization moved to load event handler
 
 let anchor = { x: 300, y: 200 }; // Will be updated in load handler
-let angle = Math.PI / 4;
+let angle = -Math.PI / 4;
 
 const anchorRadius = 12;
 const innerRadius = 11;
@@ -303,8 +303,8 @@ function draw() {
   ctx.fill();
 
   // Update slope/intercept
-  let m = Math.tan(angle);
-  let b = anchor.y - m * anchor.x;
+  let m = -Math.tan(angle);
+  let b = -(anchor.y - m * anchor.x);
   const mText = isFinite(m) ? m.toFixed(2) : '∞';
   const bText = isFinite(b) ? b.toFixed(2) : '∞';
   info.textContent = `f(x) <= ${mText}x + ${bText}`;
@@ -773,7 +773,7 @@ const pointCount2 = document.getElementById("pointCount2");
 let width2, height2, graphWidth2, graphOffsetX2;
 let points2 = [];
 let anchor2 = { x: 300, y: 200 };
-let angle2 = 0;
+let angle2 = -Math.PI / 4;
 let hiddenSlope, hiddenIntercept; // Hidden line parameters
 
 // Second widget drag state
@@ -809,7 +809,7 @@ window.addEventListener('load', () => {
   hiddenSlope = (Math.random() - 0.5) * 1.5; // Random slope between -0.75 and 0.75
   hiddenIntercept = height2 * 0.3 + Math.random() * height2 * 0.4; // Random intercept in middle range
 
-  anchor2 = { x: graphWidth2 / 2, y: height2 / 2 };
+  anchor2 = { x: (graphWidth2 / 2) + 20, y: height2 / 2 };
 
   generateRandomPoints2(25);
   draw2();
@@ -985,8 +985,8 @@ function draw2() {
   ctx2.fillText('Erreur', barX2 + barWidth2 / 2, barY2 - 10);
 
   // Update info display
-  const slope = Math.tan(angle2);
-  const intercept = anchor2.y - slope * anchor2.x;
+  const slope = -Math.tan(angle2);
+  const intercept = -(anchor2.y - slope * anchor2.x);
   const mText = isFinite(slope) ? slope.toFixed(2) : '∞';
   const bText = isFinite(intercept) ? intercept.toFixed(2) : '∞';
   info2.textContent = `f(x) = ${mText}x + ${bText}`;
