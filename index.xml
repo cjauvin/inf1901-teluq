@@ -299,29 +299,26 @@ profonds entre les mathématiques, la philosophie et l&amp;rsquo;intelligence ar
  &lt;/div>
 &lt;/details>
 &lt;p>En gros, on y présente 4 paradigmes mathématiques et leur correspondance dans le monde
-de l&amp;rsquo;intelligence artificielle :&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;style>
-canvas {
- display: block;
- margin: auto;
- /* background: #f0f0f0; */
-}
-.graph-area {
- background: white;
- border: 1px solid #aaa;
-}
-#info, #info2 {
- margin-top: 20px;
- text-align: center;
-}
-&lt;/style>
-&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
+de l&amp;rsquo;intelligence artificielle :&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
  Les différents paradigmes de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
 &lt;p>Il existe plusieurs manières de catégoriser les algorithmes
 d&amp;rsquo;apprentissage automatique, selon leur structure même, mais aussi selon
 la nature et la structure des problèmes qu&amp;rsquo;ils tentent de résoudre.
-Nous allons considérer deux schémas de classement fondamentaux :&lt;/p></description></item><item><title>Applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
+Nous allons considérer deux schémas de classement fondamentaux :&lt;/p>
+&lt;ul>
+&lt;li>L&amp;rsquo;apprentissage supervisé versus non-supervisé&lt;/li>
+&lt;li>L&amp;rsquo;apprentissage paramétrique versus non-paramétrique&lt;/li>
+&lt;/ul>
+&lt;h2 id="apprentissage-supervisé-classification-regression">
+ Apprentissage supervisé (classification, regression)
+ &lt;a class="anchor" href="#apprentissage-supervis%c3%a9-classification-regression">#&lt;/a>
+&lt;/h2>
+&lt;p>L&amp;rsquo;apprentissage supervisé fonctionne à partir de données pour
+lesquelles la &amp;ldquo;bonne réponse&amp;rdquo; (i.e. celle qu&amp;rsquo;on aimerait que
+l&amp;rsquo;algorithme fournisse systématiquement, une fois entrainé) est
+fournie, en tant que donnée d&amp;rsquo;entrainement.&lt;/p></description></item><item><title>Applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
  Les différentes applications de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rentes-applications-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
