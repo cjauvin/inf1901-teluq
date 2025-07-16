@@ -13,11 +13,9 @@ canvas {
     background: white;
     border: 1px solid #aaa;
 }
-h2, #info, #info2 {
-    text-align: center;
-}
 #info, #info2 {
     margin-top: 20px;
+    text-align: center;
 }
 </style>
 
@@ -174,6 +172,9 @@ de la perception (quelle action devrait être posée dans ce contexte
 particulier). L'APR est souvent utilisé dans les jeux et la robotique.
 
 <script>
+const BLUE = '#4285F4';
+const RED = '#EA4335';
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 const info = document.getElementById("info");
@@ -192,7 +193,7 @@ window.addEventListener('load', () => {
 
   // Calculate graph width as percentage of canvas width, leaving space for error bar
   graphWidth = Math.min(width - 80, width * 0.85); // Reserve 80px for error bar or use 85% of width
-  
+
   // Set graph offset for positioning
   graphOffsetX = 35; // Left offset for error bar positioning
 
@@ -223,9 +224,9 @@ function generateRandomPoints(numPoints) {
 let anchor = { x: 300, y: 200 }; // Will be updated in load handler
 let angle = Math.PI / 4;
 
-const anchorRadius = 10;
-const innerRadius = 7;
-const outerRadius = 11;
+const anchorRadius = 12;
+const innerRadius = 11;
+const outerRadius = 12;
 let dragging = false;
 let dragMode = null;
 let draggedPointIndex = -1;
@@ -295,14 +296,14 @@ function draw() {
   ctx.beginPath();
   ctx.arc(anchor.x + graphX, anchor.y, anchorRadius, 0, Math.PI * 2);
   ctx.fill();
-  
+
   ctx.fillStyle = '#fff';
   ctx.beginPath();
   ctx.arc(anchor.x + graphX, anchor.y, innerRadius, 0, Math.PI * 2);
   ctx.fill();
 
   // Update slope/intercept
-  let m = (x2 - x1) === 0 ? Infinity : (y2 - y1) / (x2 - x1);
+  let m = Math.tan(angle);
   let b = anchor.y - m * anchor.x;
   const mText = isFinite(m) ? m.toFixed(2) : '∞';
   const bText = isFinite(b) ? b.toFixed(2) : '∞';
@@ -339,7 +340,7 @@ function draw() {
     const p = points[i];
     const correct = classifications[i].correct;
 
-    const trueColor = p.label === 0 ? 'red' : 'blue';
+    const trueColor = p.label === 0 ? RED : BLUE;
 
     // Draw point in true color
     ctx.beginPath();
@@ -788,28 +789,28 @@ let touchHoldTimer2 = null;
 let touchHoldTriggered2 = false;
 
 // Constants for second widget
-const anchorRadius2 = 10;
-const innerRadius2 = 7;
-const outerRadius2 = 11;
+const anchorRadius2 = 12;
+const innerRadius2 = 11;
+const outerRadius2 = 12;
 
 // Initialize second widget
 window.addEventListener('load', () => {
   const parentWidth2 = canvas2.parentElement.getBoundingClientRect().width;
   width2 = parentWidth2;
   height2 = Math.round(parentWidth2 * (500 / 780));
-  
+
   canvas2.width = width2;
   canvas2.height = height2;
-  
+
   graphWidth2 = Math.min(width2 - 80, width2 * 0.85);
   graphOffsetX2 = 35;
-  
+
   // Generate hidden line parameters
   hiddenSlope = (Math.random() - 0.5) * 1.5; // Random slope between -0.75 and 0.75
   hiddenIntercept = height2 * 0.3 + Math.random() * height2 * 0.4; // Random intercept in middle range
-  
+
   anchor2 = { x: graphWidth2 / 2, y: height2 / 2 };
-  
+
   generateRandomPoints2(25);
   draw2();
 });
@@ -818,39 +819,39 @@ function generateRandomPoints2(numPoints) {
   points2 = [];
   const margin = 20;
   const noiseAmount = 80; // Noise level
-  
+
   // Calculate safe bounds for the hidden line to ensure all points stay within graph
   const xMin = margin;
   const xMax = graphWidth2 - margin;
   const yMin = margin + noiseAmount / 2;
   const yMax = height2 - margin - noiseAmount / 2;
-  
+
   // Generate hidden line parameters that ensure points stay within bounds
   // Calculate slope limits based on the safe y range
   const maxSlope = (yMax - yMin) / (xMax - xMin);
   const minSlope = -(yMax - yMin) / (xMax - xMin);
-  
+
   hiddenSlope = minSlope + Math.random() * (maxSlope - minSlope);
-  
+
   // Calculate intercept range that works with this slope
   const interceptAtXMin = yMin - hiddenSlope * xMin;
   const interceptAtXMax = yMax - hiddenSlope * xMax;
   const minIntercept = Math.max(interceptAtXMin, interceptAtXMax);
   const maxIntercept = Math.min(yMax - hiddenSlope * xMin, yMin - hiddenSlope * xMax);
-  
+
   hiddenIntercept = minIntercept + Math.random() * (maxIntercept - minIntercept);
-  
+
   for (let i = 0; i < numPoints; i++) {
     // Sample x uniformly across the graph width
     const x = Math.random() * (graphWidth2 - 2 * margin) + margin;
-    
+
     // Calculate ideal y based on hidden line: y = slope * x + intercept
     const idealY = hiddenSlope * x + hiddenIntercept;
-    
+
     // Add noise that keeps points within bounds
     const noise = (Math.random() - 0.5) * noiseAmount;
     const y = idealY + noise;
-    
+
     points2.push({ x, y, label: 1 }); // All points are blue (label 1)
   }
 }
@@ -874,20 +875,20 @@ function drawGrid2(spacing = 25, offsetX = 0) {
 
 function draw2() {
   ctx2.clearRect(0, 0, width2, height2);
-  
+
   const graphX2 = (width2 - graphWidth2) / 2 - graphOffsetX2;
-  
+
   // Draw white background for graph area
   ctx2.fillStyle = 'white';
   ctx2.fillRect(graphX2, 0, graphWidth2, height2);
-  
+
   // Draw border around graph area
   ctx2.strokeStyle = '#aaa';
   ctx2.lineWidth = 1;
   ctx2.strokeRect(graphX2, 0, graphWidth2, height2);
-  
+
   drawGrid2(25, graphX2);
-  
+
   // Draw user's line (dashed)
   const dx = Math.cos(angle2);
   const dy = Math.sin(angle2);
@@ -896,11 +897,11 @@ function draw2() {
   const y1 = anchor2.y - dy * lineLength;
   const x2 = anchor2.x + dx * lineLength;
   const y2 = anchor2.y + dy * lineLength;
-  
+
   ctx2.save();
   ctx2.rect(graphX2, 0, graphWidth2, height2);
   ctx2.clip();
-  
+
   ctx2.strokeStyle = '#000';
   ctx2.lineWidth = 2;
   ctx2.setLineDash([5, 5]);
@@ -909,33 +910,33 @@ function draw2() {
   ctx2.lineTo(x2 + graphX2, y2);
   ctx2.stroke();
   ctx2.setLineDash([]);
-  
+
   ctx2.restore();
-  
+
   // Draw points (all blue)
   points2.forEach(point => {
-    ctx2.fillStyle = '#4285f4'; // Blue color
+    ctx2.fillStyle = BLUE; // '#4285f4'; // Blue color
     ctx2.beginPath();
     ctx2.arc(point.x + graphX2, point.y, outerRadius2, 0, 2 * Math.PI);
     ctx2.fill();
-    
+
     // Draw border
     ctx2.strokeStyle = '#333';
     ctx2.lineWidth = 1;
     ctx2.stroke();
   });
-  
+
   // Draw anchor point
   ctx2.fillStyle = '#000';
   ctx2.beginPath();
   ctx2.arc(anchor2.x + graphX2, anchor2.y, anchorRadius2, 0, 2 * Math.PI);
   ctx2.fill();
-  
+
   ctx2.fillStyle = '#fff';
   ctx2.beginPath();
   ctx2.arc(anchor2.x + graphX2, anchor2.y, innerRadius2, 0, 2 * Math.PI);
   ctx2.fill();
-  
+
   // Calculate and draw mean squared error
   let totalError = 0;
   points2.forEach(point => {
@@ -943,46 +944,46 @@ function draw2() {
     const error = Math.pow(point.y - lineY, 2);
     totalError += error;
   });
-  
+
   const mse = points2.length > 0 ? totalError / points2.length : 0;
   const maxError = 10000; // Reasonable maximum for visualization
   const errorPercentage = Math.min(100, (mse / maxError) * 100);
-  
+
   // Draw error bar
   const barX2 = graphX2 + graphWidth2 + 20;
   const barY2 = 50;
   const barHeight2 = height2 - 100;
   const barWidth2 = 20;
-  
+
   ctx2.fillStyle = '#f0f0f0';
   ctx2.fillRect(barX2, barY2, barWidth2, barHeight2);
   ctx2.strokeStyle = '#666';
   ctx2.lineWidth = 1;
   ctx2.strokeRect(barX2, barY2, barWidth2, barHeight2);
-  
+
   // Draw error level
   const errorHeight2 = (errorPercentage / 100) * barHeight2;
   ctx2.fillStyle = '#ff6b6b';
   ctx2.fillRect(barX2, barY2 + barHeight2 - errorHeight2, barWidth2, errorHeight2);
-  
+
   // Draw labels
   ctx2.fillStyle = getComputedStyle(document.body).getPropertyValue('--body-font-color') || '#333';
   ctx2.font = '12px sans-serif';
   ctx2.textAlign = 'left';
   ctx2.fillText('Max', barX2 + barWidth2 + 5, barY2 + 5);
   ctx2.fillText('0', barX2 + barWidth2 + 5, barY2 + barHeight2 + 5);
-  
+
   // Position MSE value to avoid overlap with "Max" label
   const mseY = barY2 + barHeight2 - errorHeight2 + 5;
   const minMseY = barY2 + 20; // Minimum position to avoid overlap with "Max"
   const finalMseY = Math.max(mseY, minMseY);
   ctx2.fillText(`${mse.toFixed(1)}`, barX2 + barWidth2 + 5, finalMseY);
-  
+
   // Draw "Erreur" label
   ctx2.font = '14px sans-serif';
   ctx2.textAlign = 'center';
   ctx2.fillText('Erreur', barX2 + barWidth2 / 2, barY2 - 10);
-  
+
   // Update info display
   const slope = Math.tan(angle2);
   const intercept = anchor2.y - slope * anchor2.x;
@@ -1010,21 +1011,21 @@ canvas2.addEventListener('mousedown', (e) => {
   const rect = canvas2.getBoundingClientRect();
   const mouse = { x: e.clientX - rect.left, y: e.clientY - rect.top };
   const graphX2 = (width2 - graphWidth2) / 2 - graphOffsetX2;
-  
+
   mouseDownPos2 = { x: mouse.x, y: mouse.y };
   hasMoved2 = false;
-  
+
   if (mouse.x < graphX2 || mouse.x > graphX2 + graphWidth2) return;
-  
+
   const graphMouse = { x: mouse.x - graphX2, y: mouse.y };
-  
+
   if (e.button === 0) {
     if (distance2(graphMouse, anchor2) <= anchorRadius2) {
       dragging2 = true;
       dragMode2 = 'translate';
       return;
     }
-    
+
     // Check if clicking on the line for rotation
     const dx = Math.cos(angle2);
     const dy = Math.sin(angle2);
@@ -1036,7 +1037,7 @@ canvas2.addEventListener('mousedown', (e) => {
       dragMode2 = 'rotate';
       return;
     }
-    
+
     // Check if clicking on existing point
     for (let i = 0; i < points2.length; i++) {
       if (distance2(graphMouse, points2[i]) < outerRadius2) {
@@ -1047,7 +1048,7 @@ canvas2.addEventListener('mousedown', (e) => {
         return;
       }
     }
-    
+
     // Add new blue point
     const constrainedX = Math.max(15, Math.min(graphWidth2 - 15, graphMouse.x));
     const constrainedY = Math.max(15, Math.min(height2 - 15, graphMouse.y));
@@ -1058,7 +1059,7 @@ canvas2.addEventListener('mousedown', (e) => {
     const constrainedY = Math.max(15, Math.min(height2 - 15, graphMouse.y));
     points2.push({ x: constrainedX, y: constrainedY, label: 1 });
   }
-  
+
   draw2();
 });
 
@@ -1067,11 +1068,11 @@ canvas2.addEventListener('mousemove', (e) => {
   const mouse = { x: e.clientX - rect.left, y: e.clientY - rect.top };
   const graphX2 = (width2 - graphWidth2) / 2 - graphOffsetX2;
   const graphMouse = { x: mouse.x - graphX2, y: mouse.y };
-  
+
   if (mouseDownPos2 && distance2(mouse, mouseDownPos2) > 3) {
     hasMoved2 = true;
   }
-  
+
   if (dragging2) {
     if (dragMode2 === 'translate') {
       // Constrain anchor to graph boundaries
@@ -1092,13 +1093,13 @@ canvas2.addEventListener('mousemove', (e) => {
       canvas2.style.cursor = 'default';
       return;
     }
-    
+
     // Check if over anchor point
     if (distance2(graphMouse, anchor2) <= anchorRadius2) {
       canvas2.style.cursor = 'grab';
       return;
     }
-    
+
     // Check if over decision line
     const dx = Math.cos(angle2);
     const dy = Math.sin(angle2);
@@ -1109,7 +1110,7 @@ canvas2.addEventListener('mousemove', (e) => {
       canvas2.style.cursor = 'grab';
       return;
     }
-    
+
     // Check if over a point
     for (let p of points2) {
       if (distance2(graphMouse, p) < outerRadius2) {
@@ -1117,7 +1118,7 @@ canvas2.addEventListener('mousemove', (e) => {
         return;
       }
     }
-    
+
     // Default cursor for empty space
     canvas2.style.cursor = 'default';
   }
@@ -1129,7 +1130,7 @@ canvas2.addEventListener('mouseup', (e) => {
     points2.splice(draggedPointIndex2, 1);
     draw2();
   }
-  
+
   dragging2 = false;
   dragMode2 = null;
   draggedPointIndex2 = -1;
@@ -1152,17 +1153,17 @@ canvas2.addEventListener('touchstart', (e) => {
   e.preventDefault();
   const touch = getTouchCoordinates2(e);
   const graphX2 = (width2 - graphWidth2) / 2 - graphOffsetX2;
-  
+
   touchStartTime2 = Date.now();
   touchHoldTriggered2 = false;
-  
+
   mouseDownPos2 = { x: touch.x, y: touch.y };
   hasMoved2 = false;
-  
+
   if (touch.x < graphX2 || touch.x > graphX2 + graphWidth2) return;
-  
+
   const graphTouch = { x: touch.x - graphX2, y: touch.y };
-  
+
   touchHoldTimer2 = setTimeout(() => {
     touchHoldTriggered2 = true;
     for (let i = 0; i < points2.length; i++) {
@@ -1177,13 +1178,13 @@ canvas2.addEventListener('touchstart', (e) => {
     points2.push({ x: constrainedX, y: constrainedY, label: 1 });
     draw2();
   }, 500);
-  
+
   if (distance2(graphTouch, anchor2) <= anchorRadius2) {
     dragging2 = true;
     dragMode2 = 'translate';
     return;
   }
-  
+
   // Check if touching on the line for rotation
   const dx = Math.cos(angle2);
   const dy = Math.sin(angle2);
@@ -1195,7 +1196,7 @@ canvas2.addEventListener('touchstart', (e) => {
     dragMode2 = 'rotate';
     return;
   }
-  
+
   for (let i = 0; i < points2.length; i++) {
     if (distance2(graphTouch, points2[i]) < outerRadius2) {
       dragging2 = true;
@@ -1211,16 +1212,16 @@ canvas2.addEventListener('touchmove', (e) => {
   const touch = getTouchCoordinates2(e);
   const graphX2 = (width2 - graphWidth2) / 2 - graphOffsetX2;
   const graphTouch = { x: touch.x - graphX2, y: touch.y };
-  
+
   if (touchHoldTimer2) {
     clearTimeout(touchHoldTimer2);
     touchHoldTimer2 = null;
   }
-  
+
   if (mouseDownPos2 && distance2(touch, mouseDownPos2) > 3) {
     hasMoved2 = true;
   }
-  
+
   if (dragging2) {
     if (dragMode2 === 'translate') {
       // Constrain anchor to graph boundaries
@@ -1240,12 +1241,12 @@ canvas2.addEventListener('touchmove', (e) => {
 
 canvas2.addEventListener('touchend', (e) => {
   e.preventDefault();
-  
+
   if (touchHoldTimer2) {
     clearTimeout(touchHoldTimer2);
     touchHoldTimer2 = null;
   }
-  
+
   if (touchHoldTriggered2) {
     dragging2 = false;
     dragMode2 = null;
@@ -1254,14 +1255,14 @@ canvas2.addEventListener('touchend', (e) => {
     hasMoved2 = false;
     return;
   }
-  
+
   if (!hasMoved2 && Date.now() - touchStartTime2 < 300) {
     const touch = getTouchCoordinates2(e);
     const graphX2 = (width2 - graphWidth2) / 2 - graphOffsetX2;
-    
+
     if (touch.x >= graphX2 && touch.x <= graphX2 + graphWidth2) {
       const graphTouch = { x: touch.x - graphX2, y: touch.y };
-      
+
       for (let i = 0; i < points2.length; i++) {
         if (distance2(graphTouch, points2[i]) < outerRadius2) {
           points2.splice(i, 1);
@@ -1274,14 +1275,14 @@ canvas2.addEventListener('touchend', (e) => {
           return;
         }
       }
-      
+
       const constrainedX = Math.max(15, Math.min(graphWidth2 - 15, graphTouch.x));
       const constrainedY = Math.max(15, Math.min(height2 - 15, graphTouch.y));
       points2.push({ x: constrainedX, y: constrainedY, label: 1 });
       draw2();
     }
   }
-  
+
   dragging2 = false;
   dragMode2 = null;
   draggedPointIndex2 = -1;
