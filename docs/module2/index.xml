@@ -90,10 +90,9 @@ nous le verrons au module 4.&lt;/p></description></item><item><title>Paradigmes 
  Les différents paradigmes de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
-&lt;p>Il existe plusieurs manières de catégoriser les algorithmes
-d&amp;rsquo;apprentissage automatique, selon leur structure même, mais aussi selon
-la nature et la structure des problèmes qu&amp;rsquo;ils tentent de résoudre.
-Nous allons considérer deux schémas de classement fondamentaux :&lt;/p>
+&lt;p>Il existe plusieurs manières de catégoriser les algorithmes d&amp;rsquo;apprentissage
+automatique, selon leur nature et la structure des problèmes qu&amp;rsquo;ils tentent de
+résoudre. Nous allons considérer deux schémas de classement fondamentaux :&lt;/p>
 &lt;ul>
 &lt;li>L&amp;rsquo;apprentissage supervisé versus non-supervisé&lt;/li>
 &lt;li>L&amp;rsquo;apprentissage paramétrique versus non-paramétrique&lt;/li>
@@ -102,10 +101,14 @@ Nous allons considérer deux schémas de classement fondamentaux :&lt;/p>
  Apprentissage supervisé (classification, regression)
  &lt;a class="anchor" href="#apprentissage-supervis%c3%a9-classification-regression">#&lt;/a>
 &lt;/h2>
-&lt;p>L&amp;rsquo;apprentissage supervisé fonctionne à partir de données pour
-lesquelles la &amp;ldquo;bonne réponse&amp;rdquo; (i.e. celle qu&amp;rsquo;on aimerait que
-l&amp;rsquo;algorithme fournisse systématiquement, une fois entrainé) est
-fournie, en tant que donnée d&amp;rsquo;entrainement.&lt;/p></description></item><item><title>Applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
+&lt;p>L&amp;rsquo;apprentissage supervisé fonctionne à partir de données pour lesquelles la
+&amp;ldquo;bonne réponse&amp;rdquo; (i.e. celle qu&amp;rsquo;on aimerait que l&amp;rsquo;algorithme fournisse
+systématiquement, une fois entrainé) est fournie, en tant que donnée
+d&amp;rsquo;entrainement. L&amp;rsquo;apprentissage supervisé correspond à la notion intuitive qu&amp;rsquo;on
+a de l&amp;rsquo;enseignement et de l&amp;rsquo;apprentissage : un enseignant qui pose une question
+à un étudiant est en mesure de le corriger en lui indiquant si sa réponse est
+correcte ou non (car l&amp;rsquo;enseignant connaît, à priori, la &amp;ldquo;bonne réponse&amp;rdquo; à sa
+propre question).&lt;/p></description></item><item><title>Applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
  Les différentes applications de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rentes-applications-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
