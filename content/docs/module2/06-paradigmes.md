@@ -30,6 +30,8 @@ est celle des modèles de classification. Un algorithme de classification est un
 fonction mathématique qui associe des "objets" (donc des points dans un espaces
 [lien]) vers une série prédéfinie d'étiquettes, des "classes".
 
+#### La régression logistique
+
 Considérons tout d'abord un petit exemple interactif où vous jouerez vous-même
 le rôle d'un modèle de classification particulier : la **régression
 logistique**. Les données d'entraînement ont deux classes possibles : `bleue` ou

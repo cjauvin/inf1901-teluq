@@ -40,16 +40,16 @@ L'apprentissage automatique est aussi profondément computationnel, et évidemme
 la programmation y joue un grand rôle. Le substrat de l'intelligence articielle
 est l'ordinateur, et celui-ci n'a jamais cessé, depuis sa création, d'être basé
 sur l'architecture de Von Neumann, ce qui implique que son fonctionnement
-requiert nécessairement de la programmation au sens traditionnel. Il serait
-probablement possible d'enseigner les fondements de l'AA entièrement de cette
-perspective, étant donné qu'il est possible d'exprimer toutes les idées
-mathématiques à l'aide de programmes. Nous allons toutefois nous contenter de
-faire cela seulement à quelques endroits, qui resteront optionnels. Il est à
-noter que deux des travaux notés utilisent Google Sheets, la version en ligne de
-Excel, qui est un environnement de calcul qui se rapproche beaucoup de la
-programmation, de par sa nature même. Nous pensons que ceci fera en sorte
-d'offrir au moins une idée approximative du développement en AA, même pour les
-gens qui ne maîtrisent pas la programmation.
+requiert nécessairement de la programmation au sens traditionnel (l'AA n'y
+échappe pas). Il serait probablement possible d'enseigner les fondements de l'AA
+entièrement de cette perspective, étant donné qu'il est possible d'exprimer
+toutes les idées mathématiques à l'aide de programmes. Nous allons toutefois
+nous contenter de faire cela seulement à quelques endroits, qui resteront
+optionnels. Il est à noter que deux des travaux notés utilisent Google Sheets,
+la version en ligne de Excel, qui est un environnement de calcul qui se
+rapproche beaucoup de la programmation, de par sa nature même. Nous pensons que
+ceci fera en sorte d'offrir au moins une idée approximative du développement en
+AA, même pour les gens qui ne maîtrisent pas la programmation.
 
 Finalement, il est impossible d'ignorer le fait que l'apprentissage automatique,
 tout comme certaines autres innovations technologiques récentes (comme les
