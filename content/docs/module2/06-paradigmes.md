@@ -70,8 +70,9 @@ petite possible (zéro idéalement).
 
 {{% hint info %}}
 
-Matière à réflexion : pourquoi ce n'est pas toujours possible de séparer parfaitement les points? Dans quelles conditions est-ce le cas? Qu'est-ce qui permettrait
-de faire en sorte que ça devienne possible?
+Matière à réflexion : pourquoi ce n'est pas toujours possible de séparer
+parfaitement les points? Dans quelles conditions est-ce le cas? Qu'est-ce qui
+permettrait de faire en sorte que ça devienne possible?
 
 {{% /hint %}}
 
@@ -144,16 +145,30 @@ $$\hat{y} = \frac{1}{1 + e^{-z}}$$
 
 avec laquelle il est bien important de comprendre que $\hat{y}$ représente une
 probabilité (donc que $\hat{y} \in [0, 1]$), tandis que $y$ représente une vraie
-classe (donc que $y \in \{0, 1\}$).
+classe (donc que $y \in \{0, 1\}$). La régression logistique transforme donc la
+distance entre un point et la ligne de décision, en une mesure de probabilité.
 
-Notre mission est maintenant de trouver les valeurs optimales pour les paramètres
+Notre but est maintenant de trouver les valeurs optimales pour les paramètres
 $\mathbf{w}$ (donc deux nombres précis, $w_1$ et $w_2$), celles qui vont faire en
 sorte de minimiser l'erreur de classification. Nous avons donc besoin de définir
-tout d'abord cette erreur en tant que fonction :
+tout d'abord cette erreur en tant que fonction précise :
 
-$$E(\hat{y}, y) = -[y \log(\hat{y}) + (1 - y)\log(1 - \hat{y})]$$
+$$E(y, \hat{y}) = -[y \log(\hat{y}) + (1 - y)\log(1 - \hat{y})]$$
 
-Dans le cas d'une
+Pour bien comprendre le fonctionnement de cette équation, examinons les différents
+cas de figure :
+
+1. Un point est en réalité `bleu` (donc $y = 1$) et la confiance du modèle en ce fait est élevée ($\hat{y} = 0.9$) : $E(y, \hat{y}) = -\log(0.9) \approx 0.1$ (l'erreur est basse).
+2. Un point est en réalité `bleu` (donc $y = 1$) mais la confiance du modèle en ce fait est basse ($\hat{y} = 0.1$) : $E(y, \hat{y}) = -\log(0.1) \approx 2.3$ (l'erreur est élevée).
+3. Un point est en réalité `rouge` (donc $y = 0$) et la confiance du modèle en ce fait est élevée ($\hat{y} = 0.1$) : $E(y, \hat{y}) = -\log(0.9) \approx 0.1$ (l'erreur est basse).
+4. Un point est en réalité `rouge` (donc $y = 0$) mais la confiance du modèle en ce fait est basse ($\hat{y} = 0.9$) : $E(y, \hat{y}) = -\log(0.1) \approx 2.3$ (l'erreur est élevée).
+
+La fonction d'erreur que nous avons s'applique à un seul point. Nous avons
+besoin de la généraliser à l'ensemble des $n$ points que nous avons, en en
+faisant simplement la somme :
+
+$$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} E(y^{(i)}, \hat{y}^{(i)})$$
+$$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} \left[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \right]$$
 
 {{% /details %}}
 
