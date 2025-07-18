@@ -1,6 +1,6 @@
 ---
 title: "Module 2 - Apprentissage automatique"
-weight: 12
+weight: 200
 bookCollapseSection: true
 ---
 

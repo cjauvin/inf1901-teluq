@@ -1,6 +1,6 @@
 ---
 title: "Module 3 - Réseaux de neurones et apprentissage profond"
-weight: 13
+weight: 300
 bookCollapseSection: true
 ---
 

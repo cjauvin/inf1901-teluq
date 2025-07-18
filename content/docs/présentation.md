@@ -1,6 +1,6 @@
 ---
 title: "Présentation du cours"
-weight: 1
+weight: 10
 ---
 
 ## Présentation du cours

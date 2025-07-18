@@ -1,6 +1,6 @@
 ---
 title: "Module 5 - Enjeux éthiques et philosophiques"
-weight: 15
+weight: 500
 bookCollapseSection: true
 ---
 

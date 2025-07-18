@@ -1,6 +1,6 @@
 ---
-title: "Assistants intelligents"
-weight: 4
+title: "Usage de l'IA"
+weight: 60
 ---
 
 # L'usage d'assistants intelligents

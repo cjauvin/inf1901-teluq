@@ -1,6 +1,6 @@
 ---
 title: "Module 1 - Intelligence artificielle"
-weight: 11
+weight: 100
 bookCollapseSection: true
 ---
 
