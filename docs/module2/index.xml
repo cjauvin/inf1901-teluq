@@ -68,25 +68,23 @@ plus, l&amp;rsquo;accent en AA est davantage mis sur les aspects
 computationnels, par opposition aux mathématiques (bien que l&amp;rsquo;AA
 demeure très mathématique en substance). En résumé, les statistiques
 ont une saveur mathématique et scientifique, tandis que l&amp;rsquo;AA a une
-saveur plus mathématique et informatique (ou computationnelle).&lt;/p></description></item><item><title>Représentation des données</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</guid><description>&lt;h1 id="comment-représenter-les-données">
- Comment représenter les données?
- &lt;a class="anchor" href="#comment-repr%c3%a9senter-les-donn%c3%a9es">#&lt;/a>
+saveur plus mathématique et informatique (ou computationnelle).&lt;/p></description></item><item><title>Représentation des données</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</guid><description>&lt;h1 id="que-sont-les-données-et-comment-les-représenter">
+ Que sont les données, et comment les représenter?
+ &lt;a class="anchor" href="#que-sont-les-donn%c3%a9es-et-comment-les-repr%c3%a9senter">#&lt;/a>
 &lt;/h1>
-&lt;p>Un problème crucial qui se pose en AA est comment adéquatement
-représenter les données, pour qu&amp;rsquo;elles soient traitables et
-compréhensibles à la fois par l&amp;rsquo;ordinateur ainsi que le modèle (ou
-algorithme) d&amp;rsquo;apprentissage qu&amp;rsquo;on veut utiliser. Il existe de
-nombreuses manières de faire cela, mais un thème récurrent est
-l&amp;rsquo;utilisation d&amp;rsquo;espaces vectoriels pour représenter les données, ce
-qui est très étroitement relié au fait que la plupart des techniques
-d&amp;rsquo;AA touchent de près ou de loin l&amp;rsquo;algèbre linéaire. Une image, par
-exemple, sera un point dans un espace vectoriel à très haute dimension
-(autant de dimensions qu&amp;rsquo;il y a de pixels!), et un mot pourrait être
-un point dans un espace vectoriel extrêmement épars (&amp;ldquo;sparse&amp;rdquo;) pour
-représenter la présence ou l&amp;rsquo;absence d&amp;rsquo;un mot. Il est également
-possible de représenter le sens des mots à l&amp;rsquo;aide d&amp;rsquo;un espace
-vectoriel, dont les grands modèles de langage (GML) font usage, comme
-nous le verrons au module 4.&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
+&lt;p>Un problème crucial qui se pose en AA est comment adéquatement représenter les
+données, pour qu&amp;rsquo;elles soient traitables et compréhensibles à la fois par
+l&amp;rsquo;ordinateur ainsi que le modèle (ou algorithme) d&amp;rsquo;apprentissage qu&amp;rsquo;on veut
+utiliser. Il existe de nombreuses manières de faire cela, mais un thème
+récurrent est l&amp;rsquo;utilisation d&amp;rsquo;espaces vectoriels pour représenter les données,
+ce qui est très étroitement relié au fait que la plupart des techniques d&amp;rsquo;AA
+touchent de près ou de loin l&amp;rsquo;algèbre linéaire. Une image, par exemple, sera un
+point dans un espace vectoriel à très haute dimension (autant de dimensions
+qu&amp;rsquo;il y a de pixels!), et un mot pourrait être un point dans un espace vectoriel
+extrêmement épars (&amp;ldquo;sparse&amp;rdquo;) pour représenter la présence ou l&amp;rsquo;absence d&amp;rsquo;un mot.
+Il est également possible de représenter le sens des mots à l&amp;rsquo;aide d&amp;rsquo;un espace
+vectoriel, dont les grands modèles de langage (GML) font usage, comme nous le
+verrons au module 4.&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
  Les différents paradigmes de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
