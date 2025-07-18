@@ -33,25 +33,27 @@ fonction mathématique qui associe des "objets" (donc des points dans un espaces
 Considérons tout d'abord un petit exemple interactif où vous jouerez vous-même
 le rôle d'un modèle de classification particulier : la **régression
 logistique**. Les données d'entraînement ont deux classes possibles : `bleue` ou
-`rouge`, ainsi que deux valeurs (nombres) pour les décrire : $x$ et $y$ (puisqu'il
-s'agit d'un graphe en deux dimensions). La ligne pointillée constitue la
-"fonction de décision" du modèle, et comme il s'agit d'une fonction en deux
-dimensions, on peut la représenter par la formule simple :
+`rouge`, ainsi que deux valeurs (nombres) pour les décrire : $x$ et $y$
+(puisqu'il s'agit d'un graphe en deux dimensions). La tâche du modèle est de
+séparer (classifier) les deux groupes. La ligne pointillée constitue la
+"fonction de décision" du modèle : les deux classes se situent de part et
+d'autre de la ligne. Comme il s'agit d'une fonction en deux dimensions, on peut
+la représenter par la formule simple :
 
 $$f(x) \le mx + b$$
 
 où $m$ représente la pente et $b$ l'ordonnée à l'origine. Remarquez un détail
-important : il s'agit d'une fonction d'inégalité, et non d'égalité, ce qui veut
-dire que la valeur de la fonction est *binaire* (deux valeurs possibles) :
-`rouge` si $f(x) \le mx + b$ et `bleue` si $f(x) \gt mx + b$ (ou vice versa,
-arbitrairement). Quand vous déplacez cette ligne de décision vous-même (en
-utilisant la souris), vous modifiez les paramètres $m$ et $b$ dynamiquement. Ces
-paramètres constituent le **modèle**. La situation idéale est quand cette ligne
-de décision sépare parfaitement les points rouges des points bleus, ce qui
-correspond à une valeur de 0% pour la fonction d'erreur (elle-même représentée
-par la barre à droite, et distincte de la fonction de décision). Ce n'est pas
-toujours possible ! Notez qu'il est possible d'ajouter ou d'enlever des points,
-et de les déplacer, en utilisant la souris.
+important : il s'agit d'une fonction d'inégalité (inéquation), et non d'égalité,
+ce qui veut dire qu'on peut l'interpréter en tant que *fonction binaire* (deux
+valeurs possibles) : `rouge` si $f(x) \le mx + b$ et `bleue` si $f(x) \gt mx +
+b$ (ou vice versa, arbitrairement). Quand vous déplacez cette ligne de décision
+vous-même (en utilisant la souris), vous modifiez les paramètres $m$ et $b$
+dynamiquement. Ces paramètres constituent le **modèle**. La situation idéale est
+quand cette ligne de décision sépare parfaitement les points rouges des points
+bleus, ce qui correspond à une valeur de 0% pour la fonction d'erreur (elle-même
+représentée par la barre à droite, et distincte de la fonction de décision). Ce
+n'est pas toujours possible ! Notez qu'il est possible d'ajouter ou d'enlever
+des points, et de les déplacer, en utilisant la souris.
 
 <div style="text-align: center; margin-bottom: 10px;">
   <label for="pointSlider">Nombre de points : </label>
@@ -67,9 +69,98 @@ celles qui font en sorte que la valeur de la fonction d'erreur est la plus
 petite possible (zéro idéalement).
 
 {{% hint info %}}
+
 Matière à réflexion : pourquoi ce n'est pas toujours possible de séparer parfaitement les points? Dans quelles conditions est-ce le cas? Qu'est-ce qui permettrait
 de faire en sorte que ça devienne possible?
+
 {{% /hint %}}
+
+{{% details "Les mathématiques de la régression logistique" open %}}
+
+La régression logistique est en fait une fonction probabiliste : un point est
+considéré `bleu` si le modèle calcule que la probabilité qu'il le soit est $\ge
+50\\%$ (et évidemment vice versa pour `rouge`). Une probabilité est une valeur
+nécessairement entre 0 et 1. Pour transformer une fonction arbitraire en une
+fonction de probabilité, on peut utiliser la fonction sigmoide (aussi appelée
+fonction logistique), qui force une valeur à être dans la plage 0 et 1 :
+
+![](/images/module2/Logistic-curve-02.png)
+
+Nous allons à partir d'ici changer un peu la notation que nous avons utilisée jusqu'ici,
+pour la rendre plus générale :
+
+$$\mathbf{x} = [x_1, x_2]$$
+$$y \in \{0, 1\}$$
+
+Cette notation classique en apprentissage automatique utilise donc $\mathbf{x}$
+pour dénoter les points en 2D sous forme vectorielle ($x_1$ et $x_2$
+correspondent aux $x$ et $y$ de la représentation 2D classique). $y$ est utilisé
+pour dénoter la *vraie* classe d'un point (0 ou 1, correspondant arbitrairement
+à `bleu` ou `rouge`). Les paramètres seront représentés par le vecteur
+$\mathbf{w} = [w_1, w2]$. Il est maintenant possible de réécrire notre fonction
+de décision à l'aide de cette nouvelle notation vectorielle :
+
+$$z = \mathbf{w}^\top \mathbf{x} + b.$$
+
+($\mathbf{w}^\top \mathbf{x}$ est le produit vectoriel de $\mathbf{w}$ et
+$\mathbf{x}$). Notons tout d'abord qu'il y maintenant 3 paramètres ($w1$, $w2$
+et $b$), alors que dans l'exemple ci-haut seulement 2 sont mentionnés : $m$ et
+$b$. On introduit aussi une nouvelle variable $z$ : que veut-elle dire? Pour
+comprendre cela, on doit faire un peu d'algèbre. Il suffit de noter que notre
+équation de départ :
+
+$$y = mx + b$$
+
+est en fait équivalente à :
+
+$$x_2 = mx_1 + b$$
+
+ce qu'on peut réécrire aisément :
+
+$$mx_1 - x_2 + b = 0.$$
+
+En choisissant ensuite $m = -w_1/w_2$ et $b = -b/w_2$, on peut réécrire :
+
+$$\frac{-w_1 x_1}{w_2} - x_2 - \frac{b}{w_2} = 0$$
+
+En multipliant les deux membres de l'équation par $-w_2$, on arrive à :
+
+$$w_1 x_1 + w_2 x_2 + b = 0$$
+
+ce qui constitue la forme générale d'une équation en 2D. Étant donné que ce qui
+nous intéresse se passe de part et d'autre de la ligne de décision (car il
+s'agit comme nous l'avons vu d'une inéquation), on introduit le score $z$, pour
+quantifier la distance à laquelle un point se trouve, de cette ligne de
+séparation :
+
+$$z = w_1 x_1 + w_2 x_2 + b$$
+
+En utilisant la fonction logistique que nous avons introduite ci-haut pour
+transformer ce score (une valeur arbitraire) en une probabilité (donc une valeur
+contrainte entre 0 et 1), on peut maintenant introduire l'équation de la
+régression logistique :
+
+$$\hat{y} = \frac{1}{1 + e^{-z}}$$
+
+avec laquelle il est bien important de comprendre que $\hat{y}$ représente une
+probabilité (donc que $\hat{y} \in [0, 1]$), tandis que $y$ représente une vraie
+classe (donc que $y \in \{0, 1\}$).
+
+Notre mission est maintenant de trouver les valeurs optimales pour les paramètres
+$\mathbf{w}$ (donc deux nombres précis, $w_1$ et $w_2$), celles qui vont faire en
+sorte de minimiser l'erreur de classification. Nous avons donc besoin de définir
+tout d'abord cette erreur en tant que fonction :
+
+$$E(\hat{y}, y) = -[y \log(\hat{y}) + (1 - y)\log(1 - \hat{y})]$$
+
+Dans le cas d'une
+
+{{% /details %}}
+
+{{% details "La programmation de la régression logistique" open %}}
+
+
+{{% /details %}}
 
 Une fois que les idées de base de ce petit exemple interactif sont bien claires
 pour vous, on peut généraliser le concept de la régression logistique pour en
