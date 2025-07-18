@@ -65,8 +65,9 @@ des points, et de les déplacer, en utilisant la souris.</p><div style=text-alig
 <span id=pointCount>10</span></div><canvas id=canvas></canvas><div id=info style=text-align:center;margin-top:20px>f(x) <=> mx + b</div><p>La tâche de l&rsquo;algorithme de régression logistique est de trouver les &ldquo;meilleures&rdquo;
 valeurs pour les paramètres pour la fonction de décision (donc $m$ et $b$),
 celles qui font en sorte que la valeur de la fonction d&rsquo;erreur est la plus
-petite possible (zéro idéalement).</p><blockquote class="book-hint info"><p>Matière à réflexion : pourquoi ce n&rsquo;est pas toujours possible de séparer parfaitement les points? Dans quelles conditions est-ce le cas? Qu&rsquo;est-ce qui permettrait
-de faire en sorte que ça devienne possible?</p></blockquote><details open><summary>Les mathématiques de la régression logistique</summary><div class=markdown-inner><p>La régression logistique est en fait une fonction probabiliste : un point est
+petite possible (zéro idéalement).</p><blockquote class="book-hint info"><p>Matière à réflexion : pourquoi ce n&rsquo;est pas toujours possible de séparer
+parfaitement les points? Dans quelles conditions est-ce le cas? Qu&rsquo;est-ce qui
+permettrait de faire en sorte que ça devienne possible?</p></blockquote><details open><summary>Les mathématiques de la régression logistique</summary><div class=markdown-inner><p>La régression logistique est en fait une fonction probabiliste : un point est
 considéré <code>bleu</code> si le modèle calcule que la probabilité qu&rsquo;il le soit est $\ge
 50\%$ (et évidemment vice versa pour <code>rouge</code>). Une probabilité est une valeur
 nécessairement entre 0 et 1. Pour transformer une fonction arbitraire en une
@@ -92,10 +93,14 @@ transformer ce score (une valeur arbitraire) en une probabilité (donc une valeu
 contrainte entre 0 et 1), on peut maintenant introduire l&rsquo;équation de la
 régression logistique :</p>$$\hat{y} = \frac{1}{1 + e^{-z}}$$<p>avec laquelle il est bien important de comprendre que $\hat{y}$ représente une
 probabilité (donc que $\hat{y} \in [0, 1]$), tandis que $y$ représente une vraie
-classe (donc que $y \in {0, 1}$).</p><p>Notre mission est maintenant de trouver les valeurs optimales pour les paramètres
+classe (donc que $y \in {0, 1}$). La régression logistique transforme donc la
+distance entre un point et la ligne de décision, en une mesure de probabilité.</p><p>Notre but est maintenant de trouver les valeurs optimales pour les paramètres
 $\mathbf{w}$ (donc deux nombres précis, $w_1$ et $w_2$), celles qui vont faire en
 sorte de minimiser l&rsquo;erreur de classification. Nous avons donc besoin de définir
-tout d&rsquo;abord cette erreur en tant que fonction :</p>$$E(\hat{y}, y) = -[y \log(\hat{y}) + (1 - y)\log(1 - \hat{y})]$$<p>Dans le cas d&rsquo;une</p></div></details><details open><summary>La programmation de la régression logistique</summary><div class=markdown-inner></div></details><p>Une fois que les idées de base de ce petit exemple interactif sont bien claires
+tout d&rsquo;abord cette erreur en tant que fonction précise :</p>$$E(y, \hat{y}) = -[y \log(\hat{y}) + (1 - y)\log(1 - \hat{y})]$$<p>Pour bien comprendre le fonctionnement de cette équation, examinons les différents
+cas de figure :</p><ol><li>Un point est en réalité <code>bleu</code> (donc $y = 1$) et la confiance du modèle en ce fait est élevée ($\hat{y} = 0.9$) : $E(y, \hat{y}) = -\log(0.9) \approx 0.1$ (l&rsquo;erreur est basse).</li><li>Un point est en réalité <code>bleu</code> (donc $y = 1$) mais la confiance du modèle en ce fait est basse ($\hat{y} = 0.1$) : $E(y, \hat{y}) = -\log(0.1) \approx 2.3$ (l&rsquo;erreur est élevée).</li><li>Un point est en réalité <code>rouge</code> (donc $y = 0$) et la confiance du modèle en ce fait est élevée ($\hat{y} = 0.1$) : $E(y, \hat{y}) = -\log(0.9) \approx 0.1$ (l&rsquo;erreur est basse).</li><li>Un point est en réalité <code>rouge</code> (donc $y = 0$) mais la confiance du modèle en ce fait est basse ($\hat{y} = 0.9$) : $E(y, \hat{y}) = -\log(0.1) \approx 2.3$ (l&rsquo;erreur est élevée).</li></ol><p>La fonction d&rsquo;erreur que nous avons s&rsquo;applique à un seul point. Nous avons
+besoin de la généraliser à l&rsquo;ensemble des $n$ points que nous avons, en en
+faisant simplement la somme :</p>$$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} E(y^{(i)}, \hat{y}^{(i)})$$<p></p>$$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} \left[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \right]$$</div></details><details open><summary>La programmation de la régression logistique</summary><div class=markdown-inner></div></details><p>Une fois que les idées de base de ce petit exemple interactif sont bien claires
 pour vous, on peut généraliser le concept de la régression logistique pour en
 faire un modèle plus puissant et complexe :</p><ul><li>Considérer ..</li></ul><h3 id=régression>Régression
 <a class=anchor href=#r%c3%a9gression>#</a></h3><p>Une régression est une famille d&rsquo;algorithmes d&rsquo;apprentissage supervisé
