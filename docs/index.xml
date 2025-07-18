@@ -2,7 +2,30 @@
  Présentation du cours
  &lt;a class="anchor" href="#pr%c3%a9sentation-du-cours">#&lt;/a>
 &lt;/h2>
-&lt;p>L’intelligence artificielle (IA) constitue aujourd’hui un champ de recherches et d’applications essentiel dont l’influence s’étend à de multiples domaines, de la science et la médecine aux industries créatives et à l’éducation. Conséquemment, les entreprises de divers secteurs sont confrontées à cette transformation numérique sans précédent, si bien que l’intégration de l’IA dans les modèles d’affaires n’est plus un luxe, mais une nécessité pour demeurer compétitif dans un marché mondial en constante évolution. L’émergence de modèles de langage avancés tels que ChatGPT, DeepSeek et Llama 3 illustre cette transformation, en ouvrant de nouvelles perspectives tant scientifiques que sociétales.&lt;/p></description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h1 id="les-livres-du-cours">
+&lt;p>L’intelligence artificielle (IA) constitue aujourd’hui un champ de recherches et d’applications essentiel dont l’influence s’étend à de multiples domaines, de la science et la médecine aux industries créatives et à l’éducation. Conséquemment, les entreprises de divers secteurs sont confrontées à cette transformation numérique sans précédent, si bien que l’intégration de l’IA dans les modèles d’affaires n’est plus un luxe, mais une nécessité pour demeurer compétitif dans un marché mondial en constante évolution. L’émergence de modèles de langage avancés tels que ChatGPT, DeepSeek et Llama 3 illustre cette transformation, en ouvrant de nouvelles perspectives tant scientifiques que sociétales.&lt;/p></description></item><item><title>Philosophie du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/philosophie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/philosophie/</guid><description>&lt;h2 id="la-philosophie-du-cours">
+ La philosophie du cours
+ &lt;a class="anchor" href="#la-philosophie-du-cours">#&lt;/a>
+&lt;/h2>
+&lt;p>L&amp;rsquo;apprentissage automatique (AA) est un sujet complexe et fortement dynamique,
+au confluent de plusieurs disciplines : mathématiques, informatique, sciences
+cognitives. Les fondements de la discipline sont résolument mathématiques,
+principalement avec l&amp;rsquo;algèbre linéaire et les probabilités (qui entretiennent
+elles-mêmes des liens très étroits).&lt;/p>
+&lt;p>La plupart des cours d&amp;rsquo;apprentissage automatique de format classique sont avant
+tout très mathématiques, avec beaucoup d&amp;rsquo;équations et de théorèmes, parfois des
+preuves. Un cours d&amp;rsquo;AA entièrement composé d&amp;rsquo;équations (et rien d&amp;rsquo;autre) est en
+général perçu comme étant &lt;em>très difficile&lt;/em>. Il serait aussi très difficile de ne
+pas parler de mathématique du tout dans un cours d&amp;rsquo;initiation à l&amp;rsquo;apprentissage
+automatique, mais nous allons tout de même tenter d&amp;rsquo;offrir plusieurs angles sur
+le sujet. Étant donné les fondations en algèbre linéaire, les problèmes traités
+par l&amp;rsquo;AA ont souvent la possibilité d&amp;rsquo;être compris de manière très visuelle et
+intuitive. Nous allons tenter d&amp;rsquo;exploiter cela, en mettant le plus possible
+l&amp;rsquo;emphase sur la visualisation et les explications claires en mots, plutôt que
+les équations (bien que ces dernières seront présentes mais optionnelles, car
+elles constituent tout de même les fondations théoriques, qui permettent de
+réduire l&amp;rsquo;ambiguité conceptuelle au minimum, et souvent de faire des liens
+profonds et subtils entre des idées mathématiques qui ne semblent pas à priori
+si proches).&lt;/p></description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h1 id="les-livres-du-cours">
  Les livres du cours
  &lt;a class="anchor" href="#les-livres-du-cours">#&lt;/a>
 &lt;/h1>
@@ -51,7 +74,7 @@ Excel, car Google Sheets est plus accessible, et le langage de ses formules est
 plus facile à gérer (celui d&amp;rsquo;Excel dépend de la langue et des paramètres
 régionaux de votre système d&amp;rsquo;exploitation). Pour éviter la confusion dans le
 contexte de ce travail, nous devons tout d&amp;rsquo;abord nous assurer que la langue des
-fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p></description></item><item><title>Assistants intelligents</title><link>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</guid><description>&lt;h1 id="lusage-dassistants-intelligents">
+fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p></description></item><item><title>Usage de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</guid><description>&lt;h1 id="lusage-dassistants-intelligents">
  L&amp;rsquo;usage d&amp;rsquo;assistants intelligents
  &lt;a class="anchor" href="#lusage-dassistants-intelligents">#&lt;/a>
 &lt;/h1>

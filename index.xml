@@ -40,11 +40,7 @@ ou une décision.&lt;/p>
 du texte, du son ou des tableaux de nombres. Chaque exemple de données
 est représenté sous forme numérique, souvent sous forme de vecteurs ou
 de matrices. C&amp;rsquo;est à partir de ces données que le réseau apprend à
-reconnaître des motifs.&lt;/p></description></item><item><title>Présentation du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</guid><description>&lt;h2 id="présentation-du-cours">
- Présentation du cours
- &lt;a class="anchor" href="#pr%c3%a9sentation-du-cours">#&lt;/a>
-&lt;/h2>
-&lt;p>L’intelligence artificielle (IA) constitue aujourd’hui un champ de recherches et d’applications essentiel dont l’influence s’étend à de multiples domaines, de la science et la médecine aux industries créatives et à l’éducation. Conséquemment, les entreprises de divers secteurs sont confrontées à cette transformation numérique sans précédent, si bien que l’intégration de l’IA dans les modèles d’affaires n’est plus un luxe, mais une nécessité pour demeurer compétitif dans un marché mondial en constante évolution. L’émergence de modèles de langage avancés tels que ChatGPT, DeepSeek et Llama 3 illustre cette transformation, en ouvrant de nouvelles perspectives tant scientifiques que sociétales.&lt;/p></description></item><item><title>Un scénario imaginé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h1 id="un-scénario-imaginaire-mais-réaliste-">
+reconnaître des motifs.&lt;/p></description></item><item><title>Un scénario imaginé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h1 id="un-scénario-imaginaire-mais-réaliste-">
  Un scénario imaginaire, mais réaliste !
  &lt;a class="anchor" href="#un-sc%c3%a9nario-imaginaire-mais-r%c3%a9aliste-">#&lt;/a>
 &lt;/h1>
@@ -122,46 +118,7 @@ conversations complexes avec les machines.&lt;/p>
 &lt;p>Un &lt;em>modèle de langage&lt;/em> est un système qui attribue une probabilité à une
 séquence de mots. Son objectif principal est de prévoir le mot suivant dans un
 texte, ce qui est essentiel pour des applications comme la reconnaissance
-vocale, la traduction automatique ou la recherche d’information.&lt;/p></description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h1 id="les-livres-du-cours">
- Les livres du cours
- &lt;a class="anchor" href="#les-livres-du-cours">#&lt;/a>
-&lt;/h1>
-&lt;div class="book-columns flex flex-wrap">
-&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
-&lt;p>&lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence">La plus belle histoire de l&amp;rsquo;intelligence&lt;/a>&lt;/p>
-&lt;p>Stanislas Dehaene, Yann Le Cun et Jacques Girardon (2018)&lt;/p>
-&lt;p>&lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence">&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/livre_la_plus_belle_histoire_de_lintelligence.jpg" alt="" />&lt;/a>&lt;/p>
- &lt;/div>
-&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
-&lt;p>&lt;a href="https://www.goodreads.com/book/show/48497641-quand-la-machine-apprend">Quand la machine apprend: la révolution des neurones artificiels et de l&amp;rsquo;apprentissage profond&lt;/a>&lt;/p>
-&lt;p>Yann Le Cun (2019)&lt;/p>
-&lt;p>&lt;a href="https://www.goodreads.com/book/show/48497641-quand-la-machine-apprend">&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/livre_quand_la_machine_apprend.jpg" alt="" />&lt;/a>&lt;/p>
- &lt;/div>
-&lt;/div></description></item><item><title>Travaux notés</title><link>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</guid><description>&lt;h1 id="travaux-notés">
- Travaux notés
- &lt;a class="anchor" href="#travaux-not%c3%a9s">#&lt;/a>
-&lt;/h1>
-&lt;ol>
-&lt;li>
-&lt;p>Module 1 : ligne du temps&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Module 2 : bla bla&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Module 3&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Module 4&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Module 5&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="utilisation-de-lia">
- Utilisation de l&amp;rsquo;IA
- &lt;a class="anchor" href="#utilisation-de-lia">#&lt;/a>
-&lt;/h2></description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/03-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/03-3blue1brown/</guid><description>&lt;h1 id="vidéos-de-3blue1brown">
+vocale, la traduction automatique ou la recherche d’information.&lt;/p></description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/03-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/03-3blue1brown/</guid><description>&lt;h1 id="vidéos-de-3blue1brown">
  Vidéos de 3Blue1Brown
  &lt;a class="anchor" href="#vid%c3%a9os-de-3blue1brown">#&lt;/a>
 &lt;/h1>
@@ -210,17 +167,7 @@ plus spécialisée et un peu plus récente d&amp;rsquo;IA, plus mathématique, m
 symbolique, et clairement celle qui domine la période actuelle. Les
 mathématiques qui sont le plus souvent associées à l&amp;rsquo;apprentissage
 machine sont l&amp;rsquo;algèbre linéaire et les probabilités, qui elles-mêmes
-entretiennent des liens étroits.&lt;/p></description></item><item><title>Google Sheets</title><link>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</guid><description>&lt;h1 id="google-sheets">
- Google Sheets
- &lt;a class="anchor" href="#google-sheets">#&lt;/a>
-&lt;/h1>
-&lt;p>Pour les travaux notés 2 et 4, Nous allons utiliser le tableur en ligne &lt;a href="https://workspace.google.com/intl/en_ca/products/sheets/">Google
-Sheets&lt;/a> au lieu de
-Excel, car Google Sheets est plus accessible, et le langage de ses formules est
-plus facile à gérer (celui d&amp;rsquo;Excel dépend de la langue et des paramètres
-régionaux de votre système d&amp;rsquo;exploitation). Pour éviter la confusion dans le
-contexte de ce travail, nous devons tout d&amp;rsquo;abord nous assurer que la langue des
-fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p></description></item><item><title>Travail noté 5</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</guid><description>&lt;h1 id="travail-noté-5">
+entretiennent des liens étroits.&lt;/p></description></item><item><title>Travail noté 5</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</guid><description>&lt;h1 id="travail-noté-5">
  Travail noté 5
  &lt;a class="anchor" href="#travail-not%c3%a9-5">#&lt;/a>
 &lt;/h1>
@@ -250,22 +197,7 @@ plus, l&amp;rsquo;accent en AA est davantage mis sur les aspects
 computationnels, par opposition aux mathématiques (bien que l&amp;rsquo;AA
 demeure très mathématique en substance). En résumé, les statistiques
 ont une saveur mathématique et scientifique, tandis que l&amp;rsquo;AA a une
-saveur plus mathématique et informatique (ou computationnelle).&lt;/p></description></item><item><title>Assistants intelligents</title><link>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</guid><description>&lt;h1 id="lusage-dassistants-intelligents">
- L&amp;rsquo;usage d&amp;rsquo;assistants intelligents
- &lt;a class="anchor" href="#lusage-dassistants-intelligents">#&lt;/a>
-&lt;/h1>
-&lt;p>Étant donné qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un cours sur l&amp;rsquo;intelligence artificielle, l&amp;rsquo;usage
-d&amp;rsquo;assistants intelligents (ChatGPT, Claude, Gemini, etc) est évidemment
-encouragée ! Ceci s&amp;rsquo;applique autant aux travaux notés qu&amp;rsquo;au reste du contenu du
-cours.&lt;/p>
-&lt;p>Par contre si vous utilisez un tel outil, nous vous conseillons de vous assurer
-d&amp;rsquo;avoir une compréhension viscérale des réponses qu&amp;rsquo;il fournira, et de ne
-hésiter à engager un dialogue avec l&amp;rsquo;agent, dans le but de clarifier des aspects
-du problème qui pourraient rester obscurs pour vous. N&amp;rsquo;oubliez pas que le but de
-ce cours est la construction de bons modèles mentaux pour penser à des problèmes
-de modélisation. L&amp;rsquo;agent possède déjà ces modèles mentaux, si vous avez
-développé les vôtres à la fin de cet exercice, le but aura clairement été
-atteint !&lt;/p></description></item><item><title>Représentation des données</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</guid><description>&lt;h1 id="comment-représenter-les-données">
+saveur plus mathématique et informatique (ou computationnelle).&lt;/p></description></item><item><title>Représentation des données</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</guid><description>&lt;h1 id="comment-représenter-les-données">
  Comment représenter les données?
  &lt;a class="anchor" href="#comment-repr%c3%a9senter-les-donn%c3%a9es">#&lt;/a>
 &lt;/h1>
@@ -283,23 +215,7 @@ un point dans un espace vectoriel extrêmement épars (&amp;ldquo;sparse&amp;rdq
 représenter la présence ou l&amp;rsquo;absence d&amp;rsquo;un mot. Il est également
 possible de représenter le sens des mots à l&amp;rsquo;aide d&amp;rsquo;un espace
 vectoriel, dont les grands modèles de langage (GML) font usage, comme
-nous le verrons au module 4.&lt;/p></description></item><item><title>Ressources supplémentaires</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</guid><description>&lt;h1 id="pour-aller-plus-loin">
- Pour aller plus loin
- &lt;a class="anchor" href="#pour-aller-plus-loin">#&lt;/a>
-&lt;/h1>
-&lt;p>Cette présentation (en anglais seulement) fait un excellent survol des liens
-profonds entre les mathématiques, la philosophie et l&amp;rsquo;intelligence artificielle
-:&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Lqt7TgYk8rU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
-
-&lt;details >&lt;summary>Transcription traduite en français&lt;/summary>
- &lt;div class="markdown-inner">
- &lt;/div>
-&lt;/details>
-&lt;p>En gros, on y présente 4 paradigmes mathématiques et leur correspondance dans le monde
-de l&amp;rsquo;intelligence artificielle :&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
+nous le verrons au module 4.&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
  Les différents paradigmes de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
@@ -329,7 +245,114 @@ propre question).&lt;/p></description></item><item><title>Applications de l'AA</
  L&amp;rsquo;apprentissage automatique et la programmation
  &lt;a class="anchor" href="#lapprentissage-automatique-et-la-programmation">#&lt;/a>
 &lt;/h1>
-&lt;p>TODO&lt;/p></description></item><item><title>Travail noté 1</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9/</guid><description>&lt;h1 id="travail-noté-1--création-dune-visualisation-annotée">
+&lt;p>TODO&lt;/p></description></item><item><title>Présentation du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</guid><description>&lt;h2 id="présentation-du-cours">
+ Présentation du cours
+ &lt;a class="anchor" href="#pr%c3%a9sentation-du-cours">#&lt;/a>
+&lt;/h2>
+&lt;p>L’intelligence artificielle (IA) constitue aujourd’hui un champ de recherches et d’applications essentiel dont l’influence s’étend à de multiples domaines, de la science et la médecine aux industries créatives et à l’éducation. Conséquemment, les entreprises de divers secteurs sont confrontées à cette transformation numérique sans précédent, si bien que l’intégration de l’IA dans les modèles d’affaires n’est plus un luxe, mais une nécessité pour demeurer compétitif dans un marché mondial en constante évolution. L’émergence de modèles de langage avancés tels que ChatGPT, DeepSeek et Llama 3 illustre cette transformation, en ouvrant de nouvelles perspectives tant scientifiques que sociétales.&lt;/p></description></item><item><title>Philosophie du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/philosophie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/philosophie/</guid><description>&lt;h2 id="la-philosophie-du-cours">
+ La philosophie du cours
+ &lt;a class="anchor" href="#la-philosophie-du-cours">#&lt;/a>
+&lt;/h2>
+&lt;p>L&amp;rsquo;apprentissage automatique (AA) est un sujet complexe et fortement dynamique,
+au confluent de plusieurs disciplines : mathématiques, informatique, sciences
+cognitives. Les fondements de la discipline sont résolument mathématiques,
+principalement avec l&amp;rsquo;algèbre linéaire et les probabilités (qui entretiennent
+elles-mêmes des liens très étroits).&lt;/p>
+&lt;p>La plupart des cours d&amp;rsquo;apprentissage automatique de format classique sont avant
+tout très mathématiques, avec beaucoup d&amp;rsquo;équations et de théorèmes, parfois des
+preuves. Un cours d&amp;rsquo;AA entièrement composé d&amp;rsquo;équations (et rien d&amp;rsquo;autre) est en
+général perçu comme étant &lt;em>très difficile&lt;/em>. Il serait aussi très difficile de ne
+pas parler de mathématique du tout dans un cours d&amp;rsquo;initiation à l&amp;rsquo;apprentissage
+automatique, mais nous allons tout de même tenter d&amp;rsquo;offrir plusieurs angles sur
+le sujet. Étant donné les fondations en algèbre linéaire, les problèmes traités
+par l&amp;rsquo;AA ont souvent la possibilité d&amp;rsquo;être compris de manière très visuelle et
+intuitive. Nous allons tenter d&amp;rsquo;exploiter cela, en mettant le plus possible
+l&amp;rsquo;emphase sur la visualisation et les explications claires en mots, plutôt que
+les équations (bien que ces dernières seront présentes mais optionnelles, car
+elles constituent tout de même les fondations théoriques, qui permettent de
+réduire l&amp;rsquo;ambiguité conceptuelle au minimum, et souvent de faire des liens
+profonds et subtils entre des idées mathématiques qui ne semblent pas à priori
+si proches).&lt;/p></description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h1 id="les-livres-du-cours">
+ Les livres du cours
+ &lt;a class="anchor" href="#les-livres-du-cours">#&lt;/a>
+&lt;/h1>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+&lt;p>&lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence">La plus belle histoire de l&amp;rsquo;intelligence&lt;/a>&lt;/p>
+&lt;p>Stanislas Dehaene, Yann Le Cun et Jacques Girardon (2018)&lt;/p>
+&lt;p>&lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence">&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/livre_la_plus_belle_histoire_de_lintelligence.jpg" alt="" />&lt;/a>&lt;/p>
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+&lt;p>&lt;a href="https://www.goodreads.com/book/show/48497641-quand-la-machine-apprend">Quand la machine apprend: la révolution des neurones artificiels et de l&amp;rsquo;apprentissage profond&lt;/a>&lt;/p>
+&lt;p>Yann Le Cun (2019)&lt;/p>
+&lt;p>&lt;a href="https://www.goodreads.com/book/show/48497641-quand-la-machine-apprend">&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/livre_quand_la_machine_apprend.jpg" alt="" />&lt;/a>&lt;/p>
+ &lt;/div>
+&lt;/div></description></item><item><title>Travaux notés</title><link>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</guid><description>&lt;h1 id="travaux-notés">
+ Travaux notés
+ &lt;a class="anchor" href="#travaux-not%c3%a9s">#&lt;/a>
+&lt;/h1>
+&lt;ol>
+&lt;li>
+&lt;p>Module 1 : ligne du temps&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Module 2 : bla bla&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Module 3&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Module 4&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Module 5&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="utilisation-de-lia">
+ Utilisation de l&amp;rsquo;IA
+ &lt;a class="anchor" href="#utilisation-de-lia">#&lt;/a>
+&lt;/h2></description></item><item><title>Google Sheets</title><link>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</guid><description>&lt;h1 id="google-sheets">
+ Google Sheets
+ &lt;a class="anchor" href="#google-sheets">#&lt;/a>
+&lt;/h1>
+&lt;p>Pour les travaux notés 2 et 4, Nous allons utiliser le tableur en ligne &lt;a href="https://workspace.google.com/intl/en_ca/products/sheets/">Google
+Sheets&lt;/a> au lieu de
+Excel, car Google Sheets est plus accessible, et le langage de ses formules est
+plus facile à gérer (celui d&amp;rsquo;Excel dépend de la langue et des paramètres
+régionaux de votre système d&amp;rsquo;exploitation). Pour éviter la confusion dans le
+contexte de ce travail, nous devons tout d&amp;rsquo;abord nous assurer que la langue des
+fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p></description></item><item><title>Usage de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</guid><description>&lt;h1 id="lusage-dassistants-intelligents">
+ L&amp;rsquo;usage d&amp;rsquo;assistants intelligents
+ &lt;a class="anchor" href="#lusage-dassistants-intelligents">#&lt;/a>
+&lt;/h1>
+&lt;p>Étant donné qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un cours sur l&amp;rsquo;intelligence artificielle, l&amp;rsquo;usage
+d&amp;rsquo;assistants intelligents (ChatGPT, Claude, Gemini, etc) est évidemment
+encouragée ! Ceci s&amp;rsquo;applique autant aux travaux notés qu&amp;rsquo;au reste du contenu du
+cours.&lt;/p>
+&lt;p>Par contre si vous utilisez un tel outil, nous vous conseillons de vous assurer
+d&amp;rsquo;avoir une compréhension viscérale des réponses qu&amp;rsquo;il fournira, et de ne
+hésiter à engager un dialogue avec l&amp;rsquo;agent, dans le but de clarifier des aspects
+du problème qui pourraient rester obscurs pour vous. N&amp;rsquo;oubliez pas que le but de
+ce cours est la construction de bons modèles mentaux pour penser à des problèmes
+de modélisation. L&amp;rsquo;agent possède déjà ces modèles mentaux, si vous avez
+développé les vôtres à la fin de cet exercice, le but aura clairement été
+atteint !&lt;/p></description></item><item><title>Ressources supplémentaires</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</guid><description>&lt;h1 id="pour-aller-plus-loin">
+ Pour aller plus loin
+ &lt;a class="anchor" href="#pour-aller-plus-loin">#&lt;/a>
+&lt;/h1>
+&lt;p>Cette présentation (en anglais seulement) fait un excellent survol des liens
+profonds entre les mathématiques, la philosophie et l&amp;rsquo;intelligence artificielle
+:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Lqt7TgYk8rU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;details >&lt;summary>Transcription traduite en français&lt;/summary>
+ &lt;div class="markdown-inner">
+ &lt;/div>
+&lt;/details>
+&lt;p>En gros, on y présente 4 paradigmes mathématiques et leur correspondance dans le monde
+de l&amp;rsquo;intelligence artificielle :&lt;/p></description></item><item><title>Travail noté 1</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9/</guid><description>&lt;h1 id="travail-noté-1--création-dune-visualisation-annotée">
  Travail noté #1 : création d&amp;rsquo;une visualisation annotée
  &lt;a class="anchor" href="#travail-not%c3%a9-1--cr%c3%a9ation-dune-visualisation-annot%c3%a9e">#&lt;/a>
 &lt;/h1>
