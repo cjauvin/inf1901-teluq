@@ -165,12 +165,18 @@ cas de figure :
 3. Un point est en réalité `rouge` (donc $y = 0$) et la confiance du modèle en ce fait est élevée ($\hat{y} = 0.1$) : $E(y, \hat{y}) = -\log(0.9) \approx 0.1$ (l'erreur est basse).
 4. Un point est en réalité `rouge` (donc $y = 0$) mais la confiance du modèle en ce fait est basse ($\hat{y} = 0.9$) : $E(y, \hat{y}) = -\log(0.1) \approx 2.3$ (l'erreur est élevée).
 
-La fonction d'erreur que nous avons s'applique à un seul point. Nous avons
+La fonction d'erreur $E$ que nous avons s'applique à un seul point. Nous avons
 besoin de la généraliser à l'ensemble des $n$ points que nous avons, en en
-faisant simplement la somme :
+faisant simplement la somme. Ceci est une nouvelle fonction nommée $J$ :
 
 $$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} E(y^{(i)}, \hat{y}^{(i)})$$
 $$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} \left[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \right]$$
+
+Vous pouvez remarquer qu'on spécifie cette fois les paramètres $\mathbf{w}$ et
+$b$ pour la fonction $J$ : la raison est que nous voulons maintenant *optimiser*
+la fonction $J$, c'est-à-dire trouver les valeurs de ses paramètres
+($\mathbf{w}$ et $b$) qui vont faire en sorte de la minimiser. Cette opération
+d'optimisation est l'essence même de l'apprentissage automatique.
 
 {{% /details %}}
 
@@ -180,9 +186,12 @@ $$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} \left[ y^{(i)} \log(\hat{y}^{(i)
 
 {{% hint info %}}
 
-Une question qu'il peut être intéressant de considérer, une fois qu'on a fait 
-l'effort de mieux comprendre le fonctionnement d'un algorithme relativement simple comme la 
-régression logistique (simple mais très représentatif de l'AA, si vous le comprenez bien, vous avez déjà une excellente compréhension de l'AA au sens plus général) : en quoi est-ce que ceci constitue de l'intelligence, *artificielle* ou non? ...
+Une question qu'il peut être intéressant de considérer, une fois qu'on a fait
+l'effort de mieux comprendre le fonctionnement d'un algorithme relativement
+simple comme la régression logistique (simple mais très représentatif, si vous
+le comprenez bien, vous avez déjà une excellente compréhension de l'AA au sens
+plus général) : en quoi est-ce que ceci constitue de l'intelligence,
+*artificielle* ou non? ...
 
 {{% /hint %}}
 
