@@ -172,13 +172,19 @@ faisant simplement la somme :
 $$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} E(y^{(i)}, \hat{y}^{(i)})$$
 $$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} \left[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \right]$$
 
-hello !
-
 {{% /details %}}
 
 {{% details "La programmation de la régression logistique" open %}}
 
 {{% /details %}}
+
+{{% hint info %}}
+
+Une question qu'il peut être intéressant de considérer, une fois qu'on comprend 
+mieux le fonctionnement précis un algorithme relativement simple comme la 
+régression logistique (simple mais très représentatif de l'AA, si vous le comprenez bien, vous avez déjà une excellente compréhension de l'AA au sens plus général) : en quoi est-ce que ceci constitue de l'intelligence, *artificielle* ou non? ...
+
+{{% /hint %}}
 
 Une fois que les idées de base de ce petit exemple interactif sont bien claires
 pour vous, on peut généraliser le concept de la régression logistique pour en
