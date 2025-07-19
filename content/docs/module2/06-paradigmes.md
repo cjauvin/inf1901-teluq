@@ -172,10 +172,11 @@ faisant simplement la somme :
 $$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} E(y^{(i)}, \hat{y}^{(i)})$$
 $$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} \left[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \right]$$
 
+hello !
+
 {{% /details %}}
 
 {{% details "La programmation de la régression logistique" open %}}
-
 
 {{% /details %}}
 
