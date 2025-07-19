@@ -180,8 +180,8 @@ $$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} \left[ y^{(i)} \log(\hat{y}^{(i)
 
 {{% hint info %}}
 
-Une question qu'il peut être intéressant de considérer, une fois qu'on comprend 
-mieux le fonctionnement précis un algorithme relativement simple comme la 
+Une question qu'il peut être intéressant de considérer, une fois qu'on a fait 
+l'effort de mieux comprendre le fonctionnement d'un algorithme relativement simple comme la 
 régression logistique (simple mais très représentatif de l'AA, si vous le comprenez bien, vous avez déjà une excellente compréhension de l'AA au sens plus général) : en quoi est-ce que ceci constitue de l'intelligence, *artificielle* ou non? ...
 
 {{% /hint %}}
