@@ -68,13 +68,14 @@ valeurs pour les paramètres pour la fonction de décision (donc $m$ et $b$),
 celles qui font en sorte que la valeur de la fonction d&rsquo;erreur est la plus
 petite possible (zéro idéalement).</p><blockquote class="book-hint info"><p>Matière à réflexion : pourquoi ce n&rsquo;est pas toujours possible de séparer
 parfaitement les points? Dans quelles conditions est-ce le cas? Qu&rsquo;est-ce qui
-permettrait de faire en sorte que ça devienne possible?</p></blockquote><details open><summary>Les mathématiques de la régression logistique</summary><div class=markdown-inner><p>La régression logistique est en fait une fonction probabiliste : un point est
+permettrait de faire en sorte que ça devienne possible?</p></blockquote><details open><summary>Les mathématiques de la régression logistique</summary><div class=markdown-inner><p>Bien que nous en ayons parlé en termes purement géométriques jusqu&rsquo;ici, la
+régression logistique est en fait une méthod probabiliste : un point est
 considéré <code>bleu</code> si le modèle calcule que la probabilité qu&rsquo;il le soit est $\ge
 50\%$ (et évidemment vice versa pour <code>rouge</code>). Une probabilité est une valeur
 nécessairement entre 0 et 1. Pour transformer une fonction arbitraire en une
 fonction de probabilité, on peut utiliser la fonction sigmoide (aussi appelée
-fonction logistique), qui force une valeur à être dans la plage 0 et 1 :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/Logistic-curve-02.png alt></p><p>Nous allons à partir d&rsquo;ici changer un peu la notation que nous avons utilisée jusqu&rsquo;ici,
-pour la rendre plus générale :</p>$$\mathbf{x} = [x_1, x_2]$$<p></p>$$y \in \{0, 1\}$$<p>Cette notation classique en apprentissage automatique utilise donc $\mathbf{x}$
+fonction logistique), qui force une valeur à être dans la plage 0 et 1 :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/Logistic-curve-02.png alt></p><p>Nous allons à partir d&rsquo;ici changer un peu la notation que nous avons utilisée
+jusqu&rsquo;ici, pour la rendre plus générale :</p>$$\mathbf{x} = [x_1, x_2]$$<p></p>$$y \in \{0, 1\}$$<p>Cette notation classique en apprentissage automatique utilise donc $\mathbf{x}$
 pour dénoter les points en 2D sous forme vectorielle ($x_1$ et $x_2$
 correspondent aux $x$ et $y$ de la représentation 2D classique). $y$ est utilisé
 pour dénoter la <em>vraie</em> classe d&rsquo;un point (0 ou 1, correspondant arbitrairement

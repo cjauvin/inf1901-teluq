@@ -6,26 +6,15 @@
  La philosophie du cours
  &lt;a class="anchor" href="#la-philosophie-du-cours">#&lt;/a>
 &lt;/h2>
+&lt;blockquote class="book-hint info">
+&lt;p>&lt;em>« Le vrai problème de l’humanité est le suivant : nous avons des émotions paléolithiques, des institutions médiévales, et une technologie digne des dieux. »&lt;/em>&lt;/p>
+&lt;p>E.O. Wilson&lt;/p>
+&lt;/blockquote>
 &lt;p>L&amp;rsquo;apprentissage automatique (AA) est un sujet complexe et fortement dynamique,
 au confluent de plusieurs disciplines : mathématiques, informatique, sciences
 cognitives. Les fondements de la discipline sont résolument mathématiques,
 principalement avec l&amp;rsquo;algèbre linéaire et les probabilités (qui entretiennent
-elles-mêmes des liens très étroits).&lt;/p>
-&lt;p>La plupart des cours d&amp;rsquo;apprentissage automatique de format classique sont avant
-tout très mathématiques, avec beaucoup d&amp;rsquo;équations et de théorèmes, parfois des
-preuves. Un cours d&amp;rsquo;AA entièrement composé d&amp;rsquo;équations (et rien d&amp;rsquo;autre) est en
-général perçu comme étant &lt;em>très difficile&lt;/em>. Il serait aussi très difficile de ne
-pas parler de mathématique du tout dans un cours d&amp;rsquo;initiation à l&amp;rsquo;apprentissage
-automatique, mais nous allons tout de même tenter d&amp;rsquo;offrir plusieurs angles sur
-le sujet. Étant donné les fondations en algèbre linéaire, les problèmes traités
-par l&amp;rsquo;AA ont souvent la possibilité d&amp;rsquo;être compris de manière très visuelle et
-intuitive. Nous allons tenter d&amp;rsquo;exploiter cela, en mettant le plus possible
-l&amp;rsquo;emphase sur la visualisation et les explications claires en mots, plutôt que
-les équations (bien que ces dernières seront présentes mais optionnelles, car
-elles constituent tout de même les fondations théoriques, qui permettent de
-réduire l&amp;rsquo;ambiguité conceptuelle au minimum, et souvent de faire des liens
-profonds et subtils entre des idées mathématiques qui ne semblent pas à priori
-si proches).&lt;/p></description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h1 id="les-livres-du-cours">
+elles-mêmes des liens très étroits).&lt;/p></description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h1 id="les-livres-du-cours">
  Les livres du cours
  &lt;a class="anchor" href="#les-livres-du-cours">#&lt;/a>
 &lt;/h1>
