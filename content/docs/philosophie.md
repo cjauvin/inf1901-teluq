@@ -5,6 +5,14 @@ weight: 20
 
 ## La philosophie du cours
 
+{{% hint info %}}
+
+*« Le vrai problème de l’humanité est le suivant : nous avons des émotions paléolithiques, des institutions médiévales, et une technologie digne des dieux. »*
+
+E.O. Wilson
+
+{{% /hint %}}
+
 L'apprentissage automatique (AA) est un sujet complexe et fortement dynamique,
 au confluent de plusieurs disciplines : mathématiques, informatique, sciences
 cognitives. Les fondements de la discipline sont résolument mathématiques,

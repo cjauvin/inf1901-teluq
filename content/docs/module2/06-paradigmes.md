@@ -80,7 +80,8 @@ permettrait de faire en sorte que ça devienne possible?
 
 {{% details "Les mathématiques de la régression logistique" open %}}
 
-La régression logistique est en fait une fonction probabiliste : un point est
+Bien que nous en ayons parlé en termes purement géométriques jusqu'ici, la
+régression logistique est en fait une méthod probabiliste : un point est
 considéré `bleu` si le modèle calcule que la probabilité qu'il le soit est $\ge
 50\\%$ (et évidemment vice versa pour `rouge`). Une probabilité est une valeur
 nécessairement entre 0 et 1. Pour transformer une fonction arbitraire en une
@@ -89,8 +90,8 @@ fonction logistique), qui force une valeur à être dans la plage 0 et 1 :
 
 ![](/images/module2/Logistic-curve-02.png)
 
-Nous allons à partir d'ici changer un peu la notation que nous avons utilisée jusqu'ici,
-pour la rendre plus générale :
+Nous allons à partir d'ici changer un peu la notation que nous avons utilisée
+jusqu'ici, pour la rendre plus générale :
 
 $$\mathbf{x} = [x_1, x_2]$$
 $$y \in \{0, 1\}$$
