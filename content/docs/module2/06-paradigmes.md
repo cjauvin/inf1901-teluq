@@ -16,8 +16,8 @@ résoudre. Nous allons considérer deux schémas de classement fondamentaux :
 
 L'apprentissage supervisé fonctionne à partir de données pour lesquelles la
 "bonne réponse" (i.e. celle qu'on aimerait que l'algorithme fournisse
-systématiquement, une fois entrainé) est fournie, en tant que donnée
-d'entrainement. L'apprentissage supervisé correspond à la notion intuitive qu'on
+systématiquement, une fois entraîné) est fournie, en tant que donnée
+d’entraînement. L'apprentissage supervisé correspond à la notion intuitive qu'on
 a de l'enseignement et de l'apprentissage : un enseignant qui pose une question
 à un étudiant  est en mesure de le corriger en lui indiquant si sa réponse est
 correcte ou non (car l'enseignant connaît, à priori, la "bonne réponse" à sa

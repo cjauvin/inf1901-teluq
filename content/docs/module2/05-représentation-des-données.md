@@ -73,23 +73,46 @@ computationnelles plus complexes, d'une manière plus naturelle et expressive. C
 langage de "plus haut niveau" (plus abstrait) doit encore une fois traiter avec
 des instructions et des valeurs (toujours, ultimement, représentées en termes de
 bits), mais cette fois on voit apparaître des représentations plus complexes,
-pouvant encoder des structures plus diverses : des nombres, des chaînes de
-caractères (strings), mais aussi des listes de nombres, des listes de mots, des
-images, et même des sons et des vidéos.
+pouvant encoder des structures plus diverses :
 
-## Niveau de l'apprentissage automatique et de l'IA
+- des nombres entiers
+- des nombres réels (beaucoup plus complexe à représenter!)
+- des chaînes de caractères (strings)
+- des listes de nombres
+- des listes de mots
+- des images
+- des sons
+- etc!
+
+## Niveau de l'apprentissage automatique et des mathématiques
 
 L'aspect "algorithmique" d'un algorithme d'apprentissage automatique réfère au
 fait qu'on effectue en général une procédure, une séquence d'opérations (ou de
 transformations) sur des données qui sont essentiellement de nature numérique.
 Cette procédure est généralement écrite dans un langage du niveau précédent, par
-exemple Python. La nature fortement mathématique des algorithmes d'apprentissage
+exemple Python. L'aspect mathématique des algorithmes d'apprentissage
 automatique exige des structures des données et des représentations plus
 sophistiquées et performante. L'outil conceptuel le plus souvent utilisé pour
-les données d'AA est l'espace vectoriel, souvent de très hautes dimensionnalité
+les données d'AA est l'espace vectoriel, souvent de très haute dimensionnalité
 (bien au-delà des trois dimensions dans lesquelles nous vivons quotidiennement).
-Prenons l'exemple d'une image d'une maison. On pourrait imaginer qu'étant qu'il
-s'agit d'un objet existant dans un espace tridimensionnelle,
+Prenons l'exemple de l'image d'une maison. On pourrait imaginer qu'étant donné
+qu'il s'agit d'un objet existant dans un espace tridimensionnel, sa
+représentation devrait l'être aussi. Si cette maison était un objet dans un jeu
+vidéo, sa représentation pourrait être 3D, mais étant donné qu'il s'agit d'une
+image, sa représentation se fait dans un espace à dimensionnalité beaucoup plus
+élevée : un espace où il y a autant de dimensions que de pixels. S'il agit d'une
+image de 1000 X 2000 pixels par exemple, il s'agira donc d'un espace à 6,000,000
+dimensions (1000 x 2000 x trois couleurs de base pour chaque pixel : rouge, bleu
+et vert). Il s'agit d'un espace absolument énorme, qu'il n'est pas possible de
+se représenter visuellement. Un "point" dans cet espace représente une image
+entière et particulière, correspondant aux valeurs de sa position relative aux
+6,000,000 dimensions. Si on modifie qu'un seul pixel de cette image, il s'agira
+d'un autre point, proche, mais tout de même différent du premier. Les images ne
+sont utilisées qu'avec certains types d'algorithmes d'apprentissage, mais l'idée
+générale de l'espace vectoriel à plusieurs dimensions, pour représenter des
+"objets", est très importante et répandue. Les
+
+![](/images/module2/schema_repr_donnees.png)
 
 ---------------------
 
