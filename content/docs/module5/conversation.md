@@ -81,6 +81,14 @@ Searle imagine un homme dans une pièce qui manipule des symboles chinois selon 
 
 {{% /details %}}
 
+Q: Quelles sont les idées fondamentales de Chomsky sur le langage?
+
+{{% details "Réponse de ChatGPT" %}}
+
+Chomsky défend l’idée que le langage est une capacité innée, universelle, propre à l’espèce humaine. Il introduit la "grammaire générative", une structure mentale profonde qui permet de produire et comprendre une infinité de phrases. Il s’oppose aux approches purement statistiques, estimant que le langage repose sur des règles abstraites et non sur l’apprentissage inductif seul.
+
+{{% /details %}}
+
 Q: Qu'est-ce qu'un zombie philosophique, et est-ce que une IA en serait un? Est-ce que les qualias existent?
 
 {{% details "Réponse de ChatGPT" %}}
@@ -317,6 +325,22 @@ Q: Est-ce qu'une IA peut être douée d'intentionnalité?
 {{% details "Réponse de ChatGPT" %}}
 
 Si on entend par là l’**agency** — la capacité d’un agent à agir selon des buts — une IA peut sembler intentionnelle si elle prend des décisions, poursuit des objectifs, planifie. Mais ces "intentions" sont programmées ou émergent de l'entraînement, sans conscience ni volonté propre. Elle a donc une intentionnalité fonctionnelle, mais pas une intentionnalité au sens fort, phénoménal ou moral.
+
+{{% /details %}}
+
+Q: Quelle est la position de Chomsky sur les LLMs?
+
+{{% details "Réponse de ChatGPT" %}}
+
+Chomsky est très critique envers les LLMs. Il considère qu’ils n’ont aucune compréhension réelle du langage, car ils reposent sur des corrélations statistiques sans connaissance des règles syntaxiques profondes ni de la structure conceptuelle du monde. Pour lui, les LLMs ne peuvent ni raisonner, ni expliquer, ni générer de sens véritable.
+
+{{% /details %}}
+
+Q: Qu'est-ce qu'un "perroquet stochastique"?
+
+{{% details "Réponse de ChatGPT" %}}
+
+C’est une expression critique popularisée par un article de 2021 pour désigner les grands modèles de langage comme les LLMs. Elle suggère que ces modèles répètent des schémas linguistiques appris dans leurs données d’entraînement, sans compréhension ni intention, comme un perroquet qui imite. Le terme met en doute leur capacité à produire du sens ou à raisonner.
 
 {{% /details %}}
 
