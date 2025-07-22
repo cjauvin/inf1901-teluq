@@ -150,6 +150,18 @@ avec laquelle il est bien important de comprendre que $\hat{y}$ représente une
 probabilité (donc que $\hat{y} \in [0, 1]$), tandis que $y$ représente une vraie
 classe (donc que $y \in \{0, 1\}$). La régression logistique transforme donc la
 distance entre un point et la ligne de décision, en une mesure de probabilité.
+L'algorithme de classification utilisera donc la probabilité calculée pour chaque
+point de la manière suivante :
+
+$$
+\text{classification}(x1, x2) =
+\left\{
+\begin{array}{ll}
+\mathtt{bleu} \text{ si } \hat{y} \ge 0.5 & \\
+\mathtt{rouge} \text{ si } \hat{y} < 0.5 & \\
+\end{array}
+\right.
+$$
 
 Notre but est maintenant de trouver les valeurs optimales pour les paramètres
 $\mathbf{w}$ (donc deux nombres précis, $w_1$ et $w_2$), celles qui vont faire en
