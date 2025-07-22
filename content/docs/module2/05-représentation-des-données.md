@@ -1,9 +1,73 @@
 ---
-title: "Représentation des données"
+title: "Que sont les données?"
 weight: 5
 ---
 
 # Que sont les données, et comment les représenter?
+
+Il y a une tension fondamentale en informatique entre les différentes manières
+de représenter les données, et ce qu'elles veulent signifier. Quand on ajoute
+l'apprentissage automatique, la situation devient encore plus complexe. Tentons
+de clarifier le tout.
+
+## Niveau des bits, physiques et mathématiques
+
+Au niveau le plus fondamental, l'ordinateur, physiquement et logiquement, ne
+peut traiter qu'un seul type de donnée : le bit, qui est à la fois un concept
+mathématique (un symbole dont la valeur ne peut être que 0 ou 1 généralement, ou
+*vrai* ou *faux* plus spécifiquement en logique) et physique, au niveau de
+l'implémentation, soit en terme électrique (mémoire RAM, CPU, disque SSD), de
+magnétisme (disque dur) ou de caractéristiques optiques (CD).
+
+## Niveau de l'ordinateur et de son langage
+
+Au niveau suivant, on trouve l'ordinateur lui-même, dont le mécanisme central
+est le microprocesseur (CPU). Un CPU traite les bits sous leur forme physique,
+et il interprète des "paquets" de bits de taille déterminée (souvent 32, 64 ou
+128 bits) de deux manière fondamentalement différentes :
+
+1. En tant que *nombre* (ou plus généralement *valeur*)
+2. En tant qu'*instruction*
+
+Le flot de bits auquel est exposé le CPU (soit via sa mémoire physique, ou via
+un autre médium physique comme un disque) constitue un *programme*, et le CPU
+*exécute* ce programme, de manière séquentielle. Un programme en "langage
+machine" (le langage du CPU) pourrait être par exemple :
+
+```
+MOV 1000
+ADD 0001
+STR 2000
+```
+
+Les symboles `MOV`, `ADD` et `STR` sont des instructions, qui correspondent en fait
+elles-mêmes à des nombres (donc des séries de bits). La signification de ce programme
+pourrait être la suivante :
+
+```
+- Prendre la valeur à l'adresse mémoire 1000 et la mettre dans un registre spécial
+- Ajouter 1 à cette valeur dans le registre
+- Prendre le contenu du registre et l'enregistrer à l'adresse mémoire 2000
+```
+
+Comment le CPU peut-il distinguer entre les instructions et les valeurs? Une
+manière simple serait de simplement respecter la convention selon laquelle les
+"paquets de bits" (de taille fixe) aux positions paires (dans la séquence du
+programme) sont des instructions, tandis que ceux aux positions impaires sont
+des valeurs (dans la réalité c'est un peu plux complexe que cela, mais l'idée
+est semblable, il s'agit de conventions préétablies).
+
+# Niveau de la programmation symbolique
+
+Le prochain niveau est implémenté en terme du langage du niveau précédent : tout
+comme il est possible d'écrire un jeu, ou un système d'exploitation dans le
+langage brut du CPU (langage machine) il est également possible d'écrire.. un
+autre langage ! Cet autre langage sera en général plus *abstrait* (plus éloigné
+donc de la réalité physique de l'ordinateur), ce qui permettra au programmeur
+d'exprimer des idées computationnelles plus complexes, d'une manière plus
+naturelle et expressive.
+
+---------------------
 
 Un problème crucial qui se pose en AA est comment adéquatement représenter les
 données, pour qu'elles soient traitables et compréhensibles à la fois par
