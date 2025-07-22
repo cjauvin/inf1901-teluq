@@ -20,7 +20,18 @@
 &lt;p>Ce texte en ligne sur &lt;a href="https://www.ibm.com/fr-fr/think/topics/history-of-artificial-intelligence">l&amp;rsquo;histoire de l&amp;rsquo;IA&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Ce texte en ligne sur &lt;a href="https://www.thecanadianencyclopedia.ca/fr/article/intelligence-artificielle">l&amp;rsquo;IA dans une perspective canadienne&lt;/a>&lt;/p></description></item><item><title>IA générative</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/</guid><description>&lt;h1 id="lia-générative">
+&lt;p>Ce texte en ligne sur &lt;a href="https://www.thecanadianencyclopedia.ca/fr/article/intelligence-artificielle">l&amp;rsquo;IA dans une perspective canadienne&lt;/a>&lt;/p></description></item><item><title>Conversation autour de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</guid><description>&lt;h1 id="conversation-autour-de-lia">
+ Conversation autour de l&amp;rsquo;IA
+ &lt;a class="anchor" href="#conversation-autour-de-lia">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="1-ia-versus-informatique">
+ 1. IA versus informatique
+ &lt;a class="anchor" href="#1-ia-versus-informatique">#&lt;/a>
+&lt;/h2>
+&lt;p>Q: Pourquoi l&amp;rsquo;IA semble être un sujet distinct de l&amp;rsquo;informatique, une discipline à part? Pourquoi on ne considère pas que rendre les ordinateurs le plus intelligent possible ne constitue pas la mission unique de l&amp;rsquo;informatique, tout simplement?&lt;/p>
+&lt;details >&lt;summary>Réponse de ChatGPT&lt;/summary>
+ &lt;div class="markdown-inner">
+&lt;p>L&amp;rsquo;intelligence artificielle (IA) est née comme un sous-domaine de l’informatique, mais elle s’est distinguée parce qu’elle mobilise des approches, des objectifs et des difficultés bien spécifiques. Alors que l’informatique générale vise à automatiser le traitement de l’information, l’IA vise à reproduire ou simuler des comportements que l’on associe à l’intelligence humaine : perception, raisonnement, apprentissage, planification. La complexité de ces objectifs, leur ancrage dans la cognition, la philosophie et les neurosciences, a poussé à en faire un domaine interdisciplinaire à part entière.&lt;/p></description></item><item><title>IA générative</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/</guid><description>&lt;h1 id="lia-générative">
  L&amp;rsquo;IA générative
  &lt;a class="anchor" href="#lia-g%c3%a9n%c3%a9rative">#&lt;/a>
 &lt;/h1></description></item><item><title>Les réseaux de neurones</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</guid><description>&lt;h1 id="quest-ce-quun-réseau-de-neurones">
