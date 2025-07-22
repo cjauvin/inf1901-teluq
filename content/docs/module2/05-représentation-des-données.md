@@ -54,18 +54,42 @@ Comment le CPU peut-il distinguer entre les instructions et les valeurs? Une
 manière simple serait de simplement respecter la convention selon laquelle les
 "paquets de bits" (de taille fixe) aux positions paires (dans la séquence du
 programme) sont des instructions, tandis que ceux aux positions impaires sont
-des valeurs (dans la réalité c'est un peu plux complexe que cela, mais l'idée
-est semblable, il s'agit de conventions préétablies).
+des valeurs (dans la réalité c'est un peu plus complexe que cela, mais l'idée
+est semblable, il s'agit de conventions préétablies). Qu'est-ce que le CPU doit
+"faire" pour exécuter une instruction particulière? Il s'agit en fait d'un
+mini-programme (pour cette instruction particulière) qui est implémenté
+directement dans les circuits du CPU. C'est l'endroit où la logique et la
+matière se touchent.
 
-# Niveau de la programmation symbolique
+## Niveau de la programmation symbolique
 
 Le prochain niveau est implémenté en terme du langage du niveau précédent : tout
-comme il est possible d'écrire un jeu, ou un système d'exploitation dans le
-langage brut du CPU (langage machine) il est également possible d'écrire.. un
-autre langage ! Cet autre langage sera en général plus *abstrait* (plus éloigné
-donc de la réalité physique de l'ordinateur), ce qui permettra au programmeur
-d'exprimer des idées computationnelles plus complexes, d'une manière plus
-naturelle et expressive.
+comme il est possible d'écrire un jeu, ou un système d'exploitation ou tout
+autre type de programme dans le langage natif du CPU (le langage machine), il
+est également possible d'écrire.. un autre langage ! Cet autre langage sera en
+général plus *abstrait* (plus éloigné donc de la réalité physique de
+l'ordinateur), ce qui permettra au programmeur d'exprimer des idées
+computationnelles plus complexes, d'une manière plus naturelle et expressive. Ce
+langage de "plus haut niveau" (plus abstrait) doit encore une fois traiter avec
+des instructions et des valeurs (toujours, ultimement, représentées en termes de
+bits), mais cette fois on voit apparaître des représentations plus complexes,
+pouvant encoder des structures plus diverses : des nombres, des chaînes de
+caractères (strings), mais aussi des listes de nombres, des listes de mots, des
+images, et même des sons et des vidéos.
+
+## Niveau de l'apprentissage automatique et de l'IA
+
+L'aspect "algorithmique" d'un algorithme d'apprentissage automatique réfère au
+fait qu'on effectue en général une procédure, une séquence d'opérations (ou de
+transformations) sur des données qui sont essentiellement de nature numérique.
+Cette procédure est généralement écrite dans un langage du niveau précédent, par
+exemple Python. La nature fortement mathématique des algorithmes d'apprentissage
+automatique exige des structures des données et des représentations plus
+sophistiquées et performante. L'outil conceptuel le plus souvent utilisé pour
+les données d'AA est l'espace vectoriel, souvent de très hautes dimensionnalité
+(bien au-delà des trois dimensions dans lesquelles nous vivons quotidiennement).
+Prenons l'exemple d'une image d'une maison. On pourrait imaginer qu'étant qu'il
+s'agit d'un objet existant dans un espace tridimensionnelle,
 
 ---------------------
 
