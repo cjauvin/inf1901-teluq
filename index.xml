@@ -213,7 +213,7 @@ saveur plus mathématique et informatique (ou computationnelle).&lt;/p></descrip
  &lt;a class="anchor" href="#que-sont-les-donn%c3%a9es-et-comment-les-repr%c3%a9senter">#&lt;/a>
 &lt;/h1>
 &lt;p>Il y a une tension fondamentale en informatique entre les différentes manières
-de représenter les données, et ce qu&amp;rsquo;elles veulent signifier. Quand on ajoute
+de représenter les données, et ce qu&amp;rsquo;elles peuvent signifier. Quand on ajoute
 l&amp;rsquo;apprentissage automatique, la situation devient encore plus complexe. Tentons
 de clarifier le tout.&lt;/p>
 &lt;h2 id="niveau-des-bits-physiques-et-mathématiques">
@@ -225,7 +225,8 @@ peut traiter qu&amp;rsquo;un seul type de donnée : le bit, qui est à la fois u
 mathématique (un symbole dont la valeur ne peut être que 0 ou 1 généralement, ou
 &lt;em>vrai&lt;/em> ou &lt;em>faux&lt;/em> plus spécifiquement en logique) et physique, au niveau de
 l&amp;rsquo;implémentation, soit en terme électrique (mémoire RAM, CPU, disque SSD), de
-magnétisme (disque dur) ou de caractéristiques optiques (CD).&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
+magnétisme (disque dur) ou de caractéristiques optiques (CD). Les bits
+&lt;em>représentent&lt;/em> les nombres via la convention de l&amp;rsquo;encodage binaire.&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
  Les différents paradigmes de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
