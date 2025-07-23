@@ -30,35 +30,41 @@ l&rsquo;apprentissage automatique, la situation devient encore plus complexe. Te
 de clarifier le tout.</p><h2 id=niveau-des-bits-physiques-et-mathématiques>Niveau des bits, physiques et mathématiques
 <a class=anchor href=#niveau-des-bits-physiques-et-math%c3%a9matiques>#</a></h2><p>Au niveau le plus fondamental, l&rsquo;ordinateur, physiquement et logiquement, ne
 peut traiter qu&rsquo;un seul type de donnée : le bit, qui est à la fois un concept
-mathématique (un symbole dont la valeur ne peut être que 0 ou 1 généralement, ou
-<em>vrai</em> ou <em>faux</em> plus spécifiquement en logique) et physique, au niveau de
+mathématique (un symbole dont la valeur ne peut être que <code>0</code> ou <code>1</code> généralement, ou
+<code>vrai</code> ou <code>faux</code> plus spécifiquement en logique) et physique, au niveau de
 l&rsquo;implémentation, soit en terme électrique (mémoire RAM, CPU, disque SSD), de
 magnétisme (disque dur) ou de caractéristiques optiques (CD). Les bits
-<em>représentent</em> les nombres via la convention de l&rsquo;encodage binaire.</p><h2 id=niveau-de-lordinateur-et-de-son-langage>Niveau de l&rsquo;ordinateur et de son langage
+<em>représentent</em> les nombres via la convention de l&rsquo;encodage binaire.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/binary_enc.png alt></p><h2 id=niveau-de-lordinateur-et-de-son-langage>Niveau de l&rsquo;ordinateur et de son langage
 <a class=anchor href=#niveau-de-lordinateur-et-de-son-langage>#</a></h2><p>Au niveau suivant, on trouve l&rsquo;ordinateur lui-même, dont le mécanisme central
 est le microprocesseur (CPU). Un CPU traite les bits sous leur forme physique,
 et il interprète des &ldquo;paquets&rdquo; (ou <em>mots</em>) de bits de taille déterminée (souvent
 32, 64 ou 128 bits) de deux manière fondamentalement différentes :</p><ol><li>En tant que <em>nombre</em> (ou plus généralement <em>valeur</em>)</li><li>En tant qu&rsquo;<em>instruction</em></li></ol><p>Le flot de bits auquel est exposé le CPU (soit via sa mémoire physique, ou via
 un autre médium physique comme un disque) constitue un <em>programme</em>, et le CPU
-<em>exécute</em> ce programme, de manière séquentielle. Un programme en &ldquo;langage
-machine&rdquo; (le langage du CPU) pourrait être par exemple :</p><pre tabindex=0><code>MOV 1000
+<em>exécute</em> ce programme, de manière séquentielle et dynamique. Un programme dans
+un &ldquo;langage machine&rdquo; (le langage du CPU) fictif pourrait être par exemple :</p><pre tabindex=0><code>MOV 1000
 ADD 0001
 STR 2000
 </code></pre><p>Les symboles <code>MOV</code>, <code>ADD</code> et <code>STR</code> sont des instructions, qui correspondent en fait
-elles-mêmes à des nombres (donc des séries de bits). La signification de ce programme
-pourrait être la suivante :</p><pre tabindex=0><code>- Prendre la valeur à l&#39;adresse mémoire 1000 et la mettre dans un registre spécial
+elles-mêmes à des nombres (donc des séries de bits). En réalité, le CPU verrait peut-être
+la séquence suivante :</p><pre tabindex=0><code>1000 1000
+1001 0001
+1002 2000
+</code></pre><p>si <code>MOV</code>, <code>ADD</code> et <code>STR</code> correspondaient par convention aux valeurs 1000, 1001
+et 1002. La signification de ce programme pourrait être la suivante :</p><pre tabindex=0><code>- Prendre la valeur à l&#39;adresse mémoire 1000 et la mettre dans un registre
 - Ajouter 1 à cette valeur dans le registre
 - Prendre le contenu du registre et l&#39;enregistrer à l&#39;adresse mémoire 2000
-</code></pre><p>Comment le CPU peut-il distinguer entre les instructions et les valeurs? Une
-manière simple serait de simplement respecter la convention selon laquelle les
-&ldquo;paquets de bits&rdquo; (de taille fixe) aux positions paires (dans la séquence du
-programme) sont des instructions, tandis que ceux aux positions impaires sont
-des valeurs (dans la réalité c&rsquo;est un peu plus complexe que cela, mais l&rsquo;idée
-est semblable, il s&rsquo;agit de conventions préétablies). Qu&rsquo;est-ce que le CPU doit
-&ldquo;faire&rdquo; pour exécuter une instruction particulière? Il s&rsquo;agit en fait d&rsquo;un
-mini-programme (pour cette instruction particulière) qui est implémenté
-directement dans les circuits du CPU. C&rsquo;est l&rsquo;endroit où la logique et la
-matière se touchent.</p><h2 id=niveau-de-la-programmation-symbolique>Niveau de la programmation symbolique
+</code></pre><p>Comment le CPU peut-il distinguer entre 1000 en tant qu&rsquo;instruction <code>MOV</code>, ou
+1000 en tant que valeur? Une manière simple serait de simplement respecter la
+convention selon laquelle les &ldquo;paquets de bits&rdquo; (de taille fixe) aux positions
+paires (dans la séquence du programme) sont des instructions, tandis que ceux
+aux positions impaires sont des valeurs (dans la réalité c&rsquo;est un peu plus
+complexe, mais l&rsquo;idée est semblable, il s&rsquo;agit de conventions préétablies). Et
+qu&rsquo;est-ce que le CPU doit &ldquo;faire&rdquo; pour exécuter une instruction particulière? Il
+s&rsquo;agit en fait d&rsquo;un mini-programme (pour cette instruction particulière) qui est
+implémenté directement dans les circuits du CPU. C&rsquo;est l&rsquo;endroit où la logique
+et la matière se touchent !</p><p>Vous pouvez exécuter vous-même pas à pas une version interactive de ce
+mini-programme :</p><style>ul.instructions{list-style:none;padding:0;margin-bottom:1rem}ul.instructions li{padding:.3rem .6rem;border:1px solid #ccc;border-radius:4px;margin-bottom:.3rem}ul.instructions li.current{background-color:rgba(33,150,243,.2);border-color:#2196f3;color:inherit}.row{display:flex;align-items:center;margin-bottom:.5rem}.row label{width:130px;font-weight:700}.row span{display:inline-block;width:90px;text-align:right;padding:.3rem .5rem;border:1px solid #888;border-radius:4px}.buttons{margin-top:1rem}button{padding:.5rem 1.2rem;margin-right:.5rem}button:disabled{opacity:.5;cursor:not-allowed}</style><ul class=instructions><li data-op=MOV data-arg=1000>MOV 1000</li><li data-op=ADD data-arg=1>ADD 0001</li><li data-op=STR data-arg=2000>STR 2000</li></ul><div class=row><label>Registre&nbsp;:</label><span id=reg></span></div><div class=row><label>Adresse 1000&nbsp;:</label><span id=mem1000></span></div><div class=row><label>Adresse 2000&nbsp;:</label><span id=mem2000></span></div><div class=buttons><button id=execBtn>Exécuter</button>
+<button id=resetBtn>Réinitialiser</button></div><script>(function(){const n=[...document.querySelectorAll(".instructions li")],s=document.getElementById("mem1000"),o=document.getElementById("mem2000"),t=document.getElementById("reg"),i=document.getElementById("execBtn"),l=document.getElementById("resetBtn");let e=0;function a(){n.forEach((t,n)=>t.classList.toggle("current",n===e))}function r(){i.disabled=e>=n.length}function c(){s.textContent=Math.floor(Math.random()*256),t.textContent="_",o.textContent="_",e=0,a(),r()}function d(){if(e>=n.length)return;const i=n[e],c=i.dataset.op,l=parseInt(i.dataset.arg,10);switch(c){case"MOV":t.textContent=s.textContent||"0";break;case"ADD":t.textContent=parseInt(t.textContent||"0",10)+l;break;case"STR":o.textContent=t.textContent;break}e++,a(),r()}i.addEventListener("click",d),l.addEventListener("click",c),c()})()</script><h2 id=niveau-de-la-programmation-symbolique>Niveau de la programmation symbolique
 <a class=anchor href=#niveau-de-la-programmation-symbolique>#</a></h2><p>Le prochain niveau est implémenté en terme du langage du niveau précédent : tout
 comme il est possible d&rsquo;écrire un jeu, un système d&rsquo;exploitation ou tout autre
 type de programme dans le langage natif du CPU (le langage machine), il est
@@ -68,19 +74,19 @@ l&rsquo;ordinateur), ce qui permettra au programmeur d&rsquo;exprimer des idées
 computationnelles plus complexes, d&rsquo;une manière plus naturelle et expressive
 (C++, Python ou JavaScript sont des exemples de langage de cette catégorie).
 Pour mieux comprendre la notion d&rsquo;un langage en tant que <em>programme</em>, on peut
-imaginer qu&rsquo;il s&rsquo;agit d&rsquo;un &ldquo;ordinateur virtuel&rdquo;, implémenté en terme d&rsquo;un
-langage moins abstrait. Ce langage de &ldquo;plus haut niveau&rdquo; (plus abstrait) doit
-encore une fois traiter avec des instructions et des valeurs (toujours,
-ultimement, représentées en termes de bits), mais cette fois on voit apparaître
-des représentations plus complexes, pouvant encoder des structures plus diverses
-:</p><ul><li>des nombres entiers</li><li>des nombres réels (beaucoup plus complexe à représenter!)</li><li>des chaînes de caractères (strings)</li><li>des listes de nombres</li><li>des listes de mots</li><li>des listes de listes de mots</li><li>des images</li><li>des sons</li><li>etc!</li></ul><h2 id=niveau-de-lapprentissage-automatique-et-des-mathématiques>Niveau de l&rsquo;apprentissage automatique et des mathématiques
+imaginer qu&rsquo;il s&rsquo;agit d&rsquo;une sorte &ldquo;d&rsquo;ordinateur virtuel&rdquo;, implémenté en terme
+d&rsquo;un langage moins abstrait (le langage machine). Ce langage de &ldquo;plus haut
+niveau&rdquo; (plus abstrait) doit encore une fois traiter avec des instructions et
+des valeurs (toujours, ultimement, représentées en termes de bits), mais cette
+fois on voit apparaître des représentations plus complexes, pouvant encoder des
+structures plus riches et diverses :</p><ul><li>des nombres entiers</li><li>des nombres réels (beaucoup plus complexe à représenter!)</li><li>des chaînes de caractères (strings)</li><li>des listes de nombres</li><li>des listes de mots</li><li>des listes de listes de mots</li><li>des images</li><li>des sons</li><li>etc!</li></ul><h2 id=niveau-de-lapprentissage-automatique-et-des-mathématiques>Niveau de l&rsquo;apprentissage automatique et des mathématiques
 <a class=anchor href=#niveau-de-lapprentissage-automatique-et-des-math%c3%a9matiques>#</a></h2><p>L&rsquo;aspect &ldquo;algorithmique&rdquo; d&rsquo;un algorithme d&rsquo;apprentissage automatique réfère au
 fait qu&rsquo;on effectue en général une procédure, une séquence d&rsquo;opérations (ou de
 transformations) sur des données qui sont essentiellement de nature numérique.
 Cette procédure est généralement écrite dans un langage du niveau précédent, par
 exemple Python. L&rsquo;aspect mathématique des algorithmes d&rsquo;apprentissage
 automatique exige des structures des données et des représentations plus
-sophistiquées et performante. L&rsquo;outil conceptuel le plus souvent utilisé pour
+sophistiquées et performantes. L&rsquo;outil conceptuel le plus souvent utilisé pour
 les données d&rsquo;AA est l&rsquo;espace vectoriel, souvent de très haute dimensionnalité
 (bien au-delà des trois dimensions dans lesquelles nous vivons quotidiennement).
 Prenons l&rsquo;exemple de l&rsquo;image d&rsquo;une maison. On pourrait imaginer qu&rsquo;étant donné
@@ -90,20 +96,21 @@ vidéo, sa représentation pourrait être 3D, mais étant donné qu&rsquo;il s&r
 image, sa représentation se fait dans un espace à dimensionnalité beaucoup plus
 élevée : un espace où il y a autant de dimensions que de pixels. S&rsquo;il agit d&rsquo;une
 image de 1000 X 2000 pixels par exemple, il s&rsquo;agira donc d&rsquo;un espace à 6,000,000
-dimensions (1000 x 2000 x trois couleurs de base pour chaque pixel : rouge, bleu
-et vert). Il s&rsquo;agit d&rsquo;un espace absolument énorme, qu&rsquo;il n&rsquo;est pas possible de
-se représenter visuellement. Un &ldquo;point&rdquo; dans cet espace représente une image
-entière et particulière, correspondant aux valeurs de sa position relative aux
-6,000,000 dimensions. Si on modifie qu&rsquo;un seul pixel de cette image, il s&rsquo;agira
-d&rsquo;un autre point, proche, mais tout de même différent du premier. Les images ne
-sont utilisées qu&rsquo;avec certains types d&rsquo;algorithmes d&rsquo;apprentissage, mais l&rsquo;idée
-générale de l&rsquo;espace vectoriel à plusieurs dimensions, pour représenter des
-objets ou des concepts, est très importante et répandue.</p><h3 id=les-gpus>Les GPUs
+dimensions (1000 x 2000 x 3 couleurs de base pour chaque pixel : rouge, bleu et
+vert). Il s&rsquo;agit d&rsquo;un espace absolument énorme, qu&rsquo;il n&rsquo;est pas possible de se
+représenter visuellement. Un &ldquo;point&rdquo; dans cet espace représente une image
+entière et particulière, correspondant aux valeurs de sa position relative à
+chacune des 6,000,000 dimensions. Si on modifie qu&rsquo;un seul pixel de cette image,
+il s&rsquo;agira d&rsquo;un autre point (donc une autre image), proche, mais tout de même
+différent du premier. Les images ne sont utilisées qu&rsquo;avec certains types
+d&rsquo;algorithmes d&rsquo;apprentissage, mais l&rsquo;idée générale de l&rsquo;espace vectoriel à
+plusieurs dimensions, pour représenter des objets ou des concepts, est très
+importante et répandue.</p><h3 id=les-gpus>Les GPUs
 <a class=anchor href=#les-gpus>#</a></h3><p>Il serait possible d&rsquo;implémenter un espace vectoriel entièrement avec les
 primitives offertes au niveau précédent (langage de programmation symbolique)
 mais il est maintenant établi que l&rsquo;utilisation de GPUs est plus performante.
 Les GPUs sont des puces spéciales qui sont spécialisées dans le calcul numérique
-parallèle. Cette technologie a été introduite tout d&rsquo;abort dans le contexte des
+parallèle. Cette technologie a été introduite tout d&rsquo;abord dans le contexte des
 jeux vidéos, pour le calcul 3D, mais a trouvé rapidement un usage dans les
 applications numériques d&rsquo;apprentissage automatique. Les environnements de
 programmation spécialisés en AA (PyTorch et TensorFlow en sont de bons exemples)
@@ -112,20 +119,20 @@ de communiquer directement avec ce matériel spécialisé. Le même calcul,
 implémenté sur un CPU au lieu d&rsquo;un GPU, serait beaucoup moins performant.</p><h3 id=retour-vers-les-symboles>Retour vers les symboles
 <a class=anchor href=#retour-vers-les-symboles>#</a></h3><p>On comprend mieux maintenant la distinction mentionnée souvent entre l&rsquo;IA au
 sens classique, qui manipule des symboles, et l&rsquo;apprentissage automatique, qui
-manipule plutôt des valeurs numériques. Dans un certain sens les deux manipulent
-des données qui sont ultimement des valeurs numériques (et même au final des
-entités physiques, les bits), mais il y a tout de même un sens clair à
-distinguer les deux types de mathématiques sur lesquels sont fondés l&rsquo;IA
-classique et l&rsquo;AA.</p><p>Il se trouve que la distinction peut apparaître moins claire, selon le type
+manipule plutôt des valeurs numériques, et dont on dit parfois qu&rsquo;il est
+sub-symbolique. Dans un certain sens les deux manipulent des données qui sont
+ultimement des valeurs numériques (et même au final des entités physiques, les
+bits), mais il y a tout de même un sens clair à distinguer les deux types de
+mathématiques sur lesquels sont fondés l&rsquo;IA classique et l&rsquo;AA.</p><p>Il se trouve que la distinction peut apparaître moins claire, selon le type
 d&rsquo;algorithme d&rsquo;apprentissage dont on parle. Avec les grands modèles de langage
 (GML), les données de base sont les mots (ou souvent des morceaux de mots, les
 &ldquo;tokens&rdquo;) qui sont au départ des données de nature résolument symbolique (un mot
 est un symbole par excellence, après tout). Un GML fonctionne pourtant en fait à
 partir d&rsquo;une représentation vectorielle des mots. Chaque mot est associé à un
-vecteur arbitraire dans un espace de grande dimensionnalité (par exemple 512),
-et ce sont ces vecteurs qui sont manipulés, transformés et <em>appris</em>, à
-l&rsquo;interne, par un GML. Il n&rsquo;est pas nécessairement clair à priori ce que
-représente chaque dimension de cet espace particulier. Mais il se trouve
+vecteur arbitraire dans un espace de grande dimensionnalité (par exemple 512
+dimensions), et ce sont ces vecteurs qui sont manipulés, transformés et
+<em>appris</em>, à l&rsquo;interne, par un GML. Il n&rsquo;est pas nécessairement clair à priori ce
+que représente chaque dimension de cet espace particulier. Mais il se trouve
 qu&rsquo;après la phase d&rsquo;apprentissage d&rsquo;un GML, les mots se trouvant près les uns
 des autres, dans cet espace, auront tendance à être sémantiquement rapprochés.
 Les mots &ldquo;chien&rdquo; et &ldquo;chat&rdquo; seront donc probablement relativement proches (en

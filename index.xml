@@ -222,8 +222,8 @@ de clarifier le tout.&lt;/p>
 &lt;/h2>
 &lt;p>Au niveau le plus fondamental, l&amp;rsquo;ordinateur, physiquement et logiquement, ne
 peut traiter qu&amp;rsquo;un seul type de donnée : le bit, qui est à la fois un concept
-mathématique (un symbole dont la valeur ne peut être que 0 ou 1 généralement, ou
-&lt;em>vrai&lt;/em> ou &lt;em>faux&lt;/em> plus spécifiquement en logique) et physique, au niveau de
+mathématique (un symbole dont la valeur ne peut être que &lt;code>0&lt;/code> ou &lt;code>1&lt;/code> généralement, ou
+&lt;code>vrai&lt;/code> ou &lt;code>faux&lt;/code> plus spécifiquement en logique) et physique, au niveau de
 l&amp;rsquo;implémentation, soit en terme électrique (mémoire RAM, CPU, disque SSD), de
 magnétisme (disque dur) ou de caractéristiques optiques (CD). Les bits
 &lt;em>représentent&lt;/em> les nombres via la convention de l&amp;rsquo;encodage binaire.&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
