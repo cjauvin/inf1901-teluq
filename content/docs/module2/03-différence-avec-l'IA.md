@@ -1,6 +1,7 @@
 ---
 title: "AA versus IA"
 weight: 3
+draft: true
 ---
 
 # En quoi l'apprentissage automatique diffère de l'IA?

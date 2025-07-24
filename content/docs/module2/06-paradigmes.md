@@ -214,6 +214,14 @@ faire un modèle plus puissant et complexe :
 
 - Considérer ..
 
+#### Autres algorithmes de classification
+
+- Régression logistique (ex1: à partir du nombre d'heures étudiées et du nombre de cours, prédire si un étudiant a gradué ou non, ex2: à partir des caractéristiques des passagers du Titanic, prédire s'ils ont survécu ou non)
+- k-NN
+- Arbres de décision
+- Naive Bayes
+- Réseau de neurones
+
 ### Régression
 
 Une régression est une famille d'algorithmes d'apprentissage supervisé
@@ -224,24 +232,6 @@ valeur numérique du domaine X vers l'image Y).
 
 - Régression linéaire (ex. à partir du nombre de pièces et l'année de construction, on aimerait prédire le prix d'une maison)
 - Réseau de neurones
-
-### Classification
-
-Une autre famille d'algorithmes d'apprentissage supervisé tente plutôt
-de découvrir une fonction de classification, qui associe une série de
-caractéristiques à une catégorie particulière (dont le nombre est fini
-et connu d'avance).
-
-- Régression logistique (ex1: à partir du nombre d'heures étudiées et du nombre de cours, prédire si un étudiant a gradué ou non, ex2: à partir des caractéristques des passagers du Titanic, prédire s'ils ont survévu ou non)
-- k-NN
-- Arbres de décision
-- Naive Bayes
-- Réseau de neurones
-
-#### Régression logistique
-
-Vous pouvez développer une meilleure intuition du mécanisme de la régression
-logistique à l'aide de cette petite application interactive :
 
 #### Régression linéaire
 
@@ -263,17 +253,17 @@ Nous avons vu qu'une caractéristique essentielle de l'apprentissage
 supervisé est que la "bonne réponse" (qu'il s'agisse du prix réel
 d'une maison, ou la variable binaire oui/non correspondant au fait
 qu'un étudiant ait échoué ou non) est fournie avec les données
-d'entrainement. Un algorithme d'apprentissage supervisé (nous avons vu
+d’entraînement. Un algorithme d'apprentissage supervisé (nous avons vu
 qu'il y en avait plusieurs) utilise cette "bonne réponse" comme une
 cible cruciale qu'il doit s'efforcer d'atteindre, de modéliser donc.
 En contraste, un algorithme non-supervisé n'a pas cette "bonne
-réponse", il n'a que des données non-étiquettées. Les algorithmes de
+réponse", il n'a que des données non-étiquetées. Les algorithmes de
 cette famille ont donc une tâche entièrement différente que celle de
 l'apprentissage supervisé. Il doivent découvrir la structure inhérente
 aux données, de manière autonome, tout en étant guidé possible par des
 hypothèses. Par exemple, si les données sont des mesures décrivant un
 ensemble de fleurs de différentes espèces, il est possible que je
-sache à priori combien d'espèces l'ensemble d'entrainement contient.
+sache à priori combien d'espèces l'ensemble d’entraînement contient.
 Dans ce cas, supposons que je sache qu'il y a trois espèces, alors
 l'algorithme n'aura qu'à découvrir ces trois groupes, et associer
 chaque exemple à un groupe en particulier. Il pourrait être également
@@ -299,11 +289,13 @@ dimension peut être plus facile à comprendre ou visualiser en 2d ou
 
 ## Apprentissage paramétrique versus non-paramétrique
 
-Il existe une autre manière, complètement différente, de classifier
-les algorithmes d'apprentissage : si l'algorithme est implémenté à
-l'aide d'une fonction mathématique essentiellement définie par des
-paramètres, qui sont indépendants des données qui seront traitées par
-l'algorithme, on parle d'apprentissage paramétrique. Avec l'apprentissage non-paramétrique, en contraste, la fonction de décision est définie à partir des données d'entraînement. Les données elles-mêmes constituent l'algorithme.
+Il existe une autre manière, complètement différente, de classifier les
+algorithmes d'apprentissage : si l'algorithme est implémenté à l'aide d'une
+fonction mathématique essentiellement définie par des paramètres, qui sont
+indépendants des données qui seront traitées par l'algorithme, on parle
+d'apprentissage paramétrique. Avec l'apprentissage non-paramétrique, en
+contraste, la fonction de décision est définie à partir des données
+d'entraînement. Les données elles-mêmes constituent l'algorithme.
 
 Exemples d'algorithmes paramétriques :
 
@@ -316,7 +308,8 @@ Exemples d'algorithmes non-paramétriques :
 - Arbres de décision
 - k-NN
 
-Pour certains algorithmes, la frontière entre ces deux classes est un peu plus floue.
+Pour certains algorithmes, la frontière entre ces deux classes est un peu plus
+floue.
 
 ## Apprentissage inductif versus transductif
 

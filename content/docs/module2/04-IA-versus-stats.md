@@ -1,7 +1,7 @@
 ---
 title: "AA versus statistiques"
 weight: 4
-draft: false
+draft: true
 ---
 
 # En quoi l'apprentissage automatique diffère des statistiques?
