@@ -29,46 +29,16 @@ de problème avec cette image&amp;rdquo; (ou encore, ce qui serait équivalent m
 simple : &amp;ldquo;ok&amp;rdquo; ou &amp;ldquo;problème&amp;rdquo;). Cette valeur est binaire, dans le sens qu&amp;rsquo;elle a
 seulement deux valeurs possibles (peu importe lesquelles, en autant qu&amp;rsquo;il y en
 ait seulement deux). Sur la base de cette valeur binaire de sortie, on pourrait
-agir et envoyer un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel">
+agir et envoyer un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus X</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</guid><description>&lt;h2 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel">
  En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnel?
  &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnel">#&lt;/a>
-&lt;/h1>
+&lt;/h2>
 &lt;p>Bien que l&amp;rsquo;apprentissage automatique requiert de la programmation, il s&amp;rsquo;agit
 d&amp;rsquo;un paradigme entièrement différent de celui de la programmation.&lt;/p>
 &lt;p>Un programme traditionnel spécifie une série d&amp;rsquo;instructions que l&amp;rsquo;ordinateur
 exécute pour résoudre un problème. Normalement, ce programme fait son travail en
 relation avec des données fournies par l&amp;rsquo;utilisateur. Le programme dans ce cas
-est une série d&amp;rsquo;instructions symboliques dans un langage de programmation.&lt;/p></description></item><item><title>AA versus IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/03-diff%C3%A9rence-avec-lia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/03-diff%C3%A9rence-avec-lia/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-de-lia">
- En quoi l&amp;rsquo;apprentissage automatique diffère de l&amp;rsquo;IA?
- &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-lia">#&lt;/a>
-&lt;/h1>
-&lt;p>L&amp;rsquo;intelligence artificielle est le domaine plus vaste, qui englobe
-l&amp;rsquo;apprentissage automatique et l&amp;rsquo;intelligence artificielle classique (plus
-ancienne) et dite symbolique (en anglais on utilise parfois le terme
-GOFAI, &amp;ldquo;good old fashioned artificial intelligence&amp;rdquo;). Il est important
-de comprendre que ces deux disciplines sont distinctes et ont des
-méthodes profondément différentes, et l&amp;rsquo;histoire de leur développement
-est entièrement différente. Dans un certain sens, l&amp;rsquo;AA est une forme
-plus spécialisée et un peu plus récente d&amp;rsquo;IA, plus mathématique, moins
-symbolique, et clairement celle qui domine la période actuelle. Les
-mathématiques qui sont le plus souvent associées à l&amp;rsquo;apprentissage
-machine sont l&amp;rsquo;algèbre linéaire et les probabilités, qui elles-mêmes
-entretiennent des liens étroits.&lt;/p></description></item><item><title>AA versus statistiques</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/04-ia-versus-stats/</guid><description>&lt;h1 id="en-quoi-lapprentissage-automatique-diffère-des-statistiques">
- En quoi l&amp;rsquo;apprentissage automatique diffère des statistiques?
- &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-des-statistiques">#&lt;/a>
-&lt;/h1>
-&lt;p>L&amp;rsquo;apprentissage automatique, conceptuellement, est pratiquement un
-synonyme de statistiques. Les deux domaines entretiennent des
-relations très étroites, et la distinction est parfois assez
-difficile. Dans les deux cas on parle de modèles, d&amp;rsquo;entraînement (ou
-recherche des paramètres), d&amp;rsquo;inférence, etc. Toutefois l&amp;rsquo;AA est plus
-axée sur les problèmes dont la modélisation se fait en très haute
-dimension, comme l&amp;rsquo;analyse d&amp;rsquo;images ou le traitement du langage. De
-plus, l&amp;rsquo;accent en AA est davantage mis sur les aspects
-computationnels, par opposition aux mathématiques (bien que l&amp;rsquo;AA
-demeure très mathématique en substance). En résumé, les statistiques
-ont une saveur mathématique et scientifique, tandis que l&amp;rsquo;AA a une
-saveur plus mathématique et informatique (ou computationnelle).&lt;/p></description></item><item><title>Que sont les données?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</guid><description>&lt;h1 id="que-sont-les-données-et-comment-les-représenter">
+est une série d&amp;rsquo;instructions symboliques dans un langage de programmation.&lt;/p></description></item><item><title>Que sont les données?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</guid><description>&lt;h1 id="que-sont-les-données-et-comment-les-représenter">
  Que sont les données, et comment les représenter?
  &lt;a class="anchor" href="#que-sont-les-donn%c3%a9es-et-comment-les-repr%c3%a9senter">#&lt;/a>
 &lt;/h1>
