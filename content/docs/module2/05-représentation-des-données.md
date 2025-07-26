@@ -222,23 +222,40 @@ automatique exige des structures des données et des représentations plus
 sophistiquées et performantes. L'outil conceptuel le plus souvent utilisé pour
 les données d'AA est l'espace vectoriel, souvent de très haute dimensionnalité
 (bien au-delà des trois dimensions dans lesquelles nous vivons quotidiennement).
-Prenons l'exemple de l'image d'une maison. On pourrait imaginer qu'étant donné
-qu'il s'agit d'un objet existant dans un espace tridimensionnel, sa
-représentation devrait l'être aussi. Si cette maison était un objet dans un jeu
-vidéo, sa représentation pourrait être 3D, mais étant donné qu'il s'agit d'une
-image, sa représentation se fait dans un espace à dimensionnalité beaucoup plus
-élevée : un espace où il y a autant de dimensions que de pixels. S'il agit d'une
-image de 1000 X 2000 pixels par exemple, il s'agira donc d'un espace à 6,000,000
-dimensions (1000 x 2000 x 3 couleurs de base pour chaque pixel : rouge, bleu et
-vert). Il s'agit d'un espace absolument énorme, qu'il n'est pas possible de se
-représenter visuellement. Un "point" dans cet espace représente une image
-entière et particulière, correspondant aux valeurs de sa position relative à
-chacune des 6,000,000 dimensions. Si on modifie qu'un seul pixel de cette image,
-il s'agira d'un autre point (donc une autre image), proche, mais tout de même
-différent du premier. Les images ne sont utilisées qu'avec certains types
-d'algorithmes d'apprentissage, mais l'idée générale de l'espace vectoriel à
-plusieurs dimensions, pour représenter des objets ou des concepts, est très
-importante et répandue.
+
+Prenons l'exemple de l'image d'une maison. Il est raisonnable à priori de considérer
+qu'une image est représentée dans un espace à deux dimensions :
+
+![](/images/module2/2d_house.png)
+
+Pourtant, s'il s'agissait d'une maison dans un jeu vidéo, elle pourrait être
+représentée en trois dimensions (pour modéliser adéquatement notre réalité
+tridimensionnelle) :
+
+![](/images/module2/3d_house.png)
+
+Mais nous allons en fait considérer un espace beaucoup plus difficile à imaginer
+et représenter, un espace multi-dimensionnel avec lequel il y a autant de
+dimensions que de pixels :
+
+![](/images/module2/nd_house.png)
+
+Si notre image a 1000 X 2000 pixels par exemple, il s'agira donc d'un espace à
+6,000,000 dimensions (1000 x 2000 x 3 couleurs de base pour chaque pixel :
+rouge, bleu et vert). Il s'agit d'un espace absolument énorme, qu'il n'est pas
+possible de se représenter visuellement. Un "point" dans cet espace représente
+une image entière et particulière, correspondant aux valeurs de sa position
+relative à chacune des 6,000,000 dimensions. Si on ne modifie qu'un seul pixel
+de cette image, il s'agira en fait d'un autre point (donc une autre image),
+proche, mais tout de même différent du premier.
+
+Les images ne sont utilisées qu'avec certains types d'algorithmes
+d'apprentissage, mais l'idée générale de l'espace vectoriel à plusieurs
+dimensions, pour représenter des objets ou des concepts, est très importante et
+répandue. On pourrait utiliser un tel espace pour représenter les
+caractéristiques quantitatives (features) d'une maison :
+
+![](/images/module2/nf_house.png)
 
 ### Les GPUs
 
