@@ -223,20 +223,24 @@ sophistiquées et performantes. L'outil conceptuel le plus souvent utilisé pour
 les données d'AA est l'espace vectoriel, souvent de très haute dimensionnalité
 (bien au-delà des trois dimensions dans lesquelles nous vivons quotidiennement).
 
-Prenons l'exemple de l'image d'une maison. Il est raisonnable à priori de considérer
-qu'une image est représentée dans un espace à deux dimensions :
+Prenons l'exemple de l'image d'une maison. Il est raisonnable à priori de
+considérer qu'une image est représentée dans un espace à deux dimensions, la
+grille 2D de ses pixels :
 
 ![](/images/module2/2d_house.png)
 
 Pourtant, s'il s'agissait d'une maison dans un jeu vidéo, elle pourrait être
-représentée en trois dimensions (pour modéliser adéquatement notre réalité
-tridimensionnelle) :
+représentée par un modèle vectoriel en trois dimensions (ce qui permettrait de
+rendre l'environnement dynamique, avec une caméra, à l'aide d'algèbre linéaire)
+:
+
 
 ![](/images/module2/3d_house.png)
 
-Mais nous allons en fait considérer un espace beaucoup plus difficile à imaginer
-et représenter, un espace multi-dimensionnel avec lequel il y a autant de
-dimensions que de pixels :
+Mais dans le contexte de l'apprentissage automatique, nous allons en fait
+considérer un espace beaucoup plus difficile à imaginer et représenter, un
+espace multi-dimensionnel avec lequel il y a autant de dimensions que de pixels
+:
 
 ![](/images/module2/nd_house.png)
 
