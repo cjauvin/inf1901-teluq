@@ -234,7 +234,6 @@ représentée par un modèle vectoriel en trois dimensions (ce qui permettrait d
 rendre l'environnement dynamique, avec une caméra, à l'aide d'algèbre linéaire)
 :
 
-
 ![](/images/module2/3d_house.png)
 
 Mais dans le contexte de l'apprentissage automatique, nous allons en fait
