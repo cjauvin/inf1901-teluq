@@ -88,24 +88,23 @@ exemple Python. L&rsquo;aspect mathématique des algorithmes d&rsquo;apprentissa
 automatique exige des structures des données et des représentations plus
 sophistiquées et performantes. L&rsquo;outil conceptuel le plus souvent utilisé pour
 les données d&rsquo;AA est l&rsquo;espace vectoriel, souvent de très haute dimensionnalité
-(bien au-delà des trois dimensions dans lesquelles nous vivons quotidiennement).
-Prenons l&rsquo;exemple de l&rsquo;image d&rsquo;une maison. On pourrait imaginer qu&rsquo;étant donné
-qu&rsquo;il s&rsquo;agit d&rsquo;un objet existant dans un espace tridimensionnel, sa
-représentation devrait l&rsquo;être aussi. Si cette maison était un objet dans un jeu
-vidéo, sa représentation pourrait être 3D, mais étant donné qu&rsquo;il s&rsquo;agit d&rsquo;une
-image, sa représentation se fait dans un espace à dimensionnalité beaucoup plus
-élevée : un espace où il y a autant de dimensions que de pixels. S&rsquo;il agit d&rsquo;une
-image de 1000 X 2000 pixels par exemple, il s&rsquo;agira donc d&rsquo;un espace à 6,000,000
-dimensions (1000 x 2000 x 3 couleurs de base pour chaque pixel : rouge, bleu et
-vert). Il s&rsquo;agit d&rsquo;un espace absolument énorme, qu&rsquo;il n&rsquo;est pas possible de se
-représenter visuellement. Un &ldquo;point&rdquo; dans cet espace représente une image
-entière et particulière, correspondant aux valeurs de sa position relative à
-chacune des 6,000,000 dimensions. Si on modifie qu&rsquo;un seul pixel de cette image,
-il s&rsquo;agira d&rsquo;un autre point (donc une autre image), proche, mais tout de même
-différent du premier. Les images ne sont utilisées qu&rsquo;avec certains types
-d&rsquo;algorithmes d&rsquo;apprentissage, mais l&rsquo;idée générale de l&rsquo;espace vectoriel à
-plusieurs dimensions, pour représenter des objets ou des concepts, est très
-importante et répandue.</p><h3 id=les-gpus>Les GPUs
+(bien au-delà des trois dimensions dans lesquelles nous vivons quotidiennement).</p><p>Prenons l&rsquo;exemple de l&rsquo;image d&rsquo;une maison. Il est raisonnable à priori de considérer
+qu&rsquo;une image est représentée dans un espace à deux dimensions :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/2d_house.png alt></p><p>Pourtant, s&rsquo;il s&rsquo;agissait d&rsquo;une maison dans un jeu vidéo, elle pourrait être
+représentée en trois dimensions (pour modéliser adéquatement notre réalité
+tridimensionnelle) :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/3d_house.png alt></p><p>Mais nous allons en fait considérer un espace beaucoup plus difficile à imaginer
+et représenter, un espace multi-dimensionnel avec lequel il y a autant de
+dimensions que de pixels :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nd_house.png alt></p><p>Si notre image a 1000 X 2000 pixels par exemple, il s&rsquo;agira donc d&rsquo;un espace à
+6,000,000 dimensions (1000 x 2000 x 3 couleurs de base pour chaque pixel :
+rouge, bleu et vert). Il s&rsquo;agit d&rsquo;un espace absolument énorme, qu&rsquo;il n&rsquo;est pas
+possible de se représenter visuellement. Un &ldquo;point&rdquo; dans cet espace représente
+une image entière et particulière, correspondant aux valeurs de sa position
+relative à chacune des 6,000,000 dimensions. Si on ne modifie qu&rsquo;un seul pixel
+de cette image, il s&rsquo;agira en fait d&rsquo;un autre point (donc une autre image),
+proche, mais tout de même différent du premier.</p><p>Les images ne sont utilisées qu&rsquo;avec certains types d&rsquo;algorithmes
+d&rsquo;apprentissage, mais l&rsquo;idée générale de l&rsquo;espace vectoriel à plusieurs
+dimensions, pour représenter des objets ou des concepts, est très importante et
+répandue. On pourrait utiliser un tel espace pour représenter les
+caractéristiques quantitatives (features) d&rsquo;une maison :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nf_house.png alt></p><h3 id=les-gpus>Les GPUs
 <a class=anchor href=#les-gpus>#</a></h3><p>Il serait possible d&rsquo;implémenter un espace vectoriel entièrement avec les
 primitives offertes au niveau précédent (langage de programmation symbolique)
 mais il est maintenant établi que l&rsquo;utilisation de GPUs est plus performante.
