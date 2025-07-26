@@ -88,12 +88,15 @@ exemple Python. L&rsquo;aspect mathématique des algorithmes d&rsquo;apprentissa
 automatique exige des structures des données et des représentations plus
 sophistiquées et performantes. L&rsquo;outil conceptuel le plus souvent utilisé pour
 les données d&rsquo;AA est l&rsquo;espace vectoriel, souvent de très haute dimensionnalité
-(bien au-delà des trois dimensions dans lesquelles nous vivons quotidiennement).</p><p>Prenons l&rsquo;exemple de l&rsquo;image d&rsquo;une maison. Il est raisonnable à priori de considérer
-qu&rsquo;une image est représentée dans un espace à deux dimensions :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/2d_house.png alt></p><p>Pourtant, s&rsquo;il s&rsquo;agissait d&rsquo;une maison dans un jeu vidéo, elle pourrait être
-représentée en trois dimensions (pour modéliser adéquatement notre réalité
-tridimensionnelle) :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/3d_house.png alt></p><p>Mais nous allons en fait considérer un espace beaucoup plus difficile à imaginer
-et représenter, un espace multi-dimensionnel avec lequel il y a autant de
-dimensions que de pixels :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nd_house.png alt></p><p>Si notre image a 1000 X 2000 pixels par exemple, il s&rsquo;agira donc d&rsquo;un espace à
+(bien au-delà des trois dimensions dans lesquelles nous vivons quotidiennement).</p><p>Prenons l&rsquo;exemple de l&rsquo;image d&rsquo;une maison. Il est raisonnable à priori de
+considérer qu&rsquo;une image est représentée dans un espace à deux dimensions, la
+grille 2D de ses pixels :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/2d_house.png alt></p><p>Pourtant, s&rsquo;il s&rsquo;agissait d&rsquo;une maison dans un jeu vidéo, elle pourrait être
+représentée par un modèle vectoriel en trois dimensions (ce qui permettrait de
+rendre l&rsquo;environnement dynamique, avec une caméra, à l&rsquo;aide d&rsquo;algèbre linéaire)
+:</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/3d_house.png alt></p><p>Mais dans le contexte de l&rsquo;apprentissage automatique, nous allons en fait
+considérer un espace beaucoup plus difficile à imaginer et représenter, un
+espace multi-dimensionnel avec lequel il y a autant de dimensions que de pixels
+:</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nd_house.png alt></p><p>Si notre image a 1000 X 2000 pixels par exemple, il s&rsquo;agira donc d&rsquo;un espace à
 6,000,000 dimensions (1000 x 2000 x 3 couleurs de base pour chaque pixel :
 rouge, bleu et vert). Il s&rsquo;agit d&rsquo;un espace absolument énorme, qu&rsquo;il n&rsquo;est pas
 possible de se représenter visuellement. Un &ldquo;point&rdquo; dans cet espace représente
