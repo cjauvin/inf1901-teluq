@@ -27,17 +27,19 @@ propre question).
 
 La famille d'algorithmes d'apprentissage supervisé la plus facile à comprendre
 est celle des modèles de classification. Un algorithme de classification est une
-fonction mathématique qui associe des "objets" (donc des points dans un espaces
-[lien]) vers une série prédéfinie d'étiquettes, des "classes".
+fonction mathématique qui associe des "objets" (donc des points dans un
+[espace vectoriel]({{< relref
+"docs/module2/05-représentation-des-données/#niveau-de-lapprentissage-automatique-et-des-mathématiques"
+>}})) vers une série prédéfinie d'étiquettes, qu'on appelle souvent des "classes".
 
 #### La régression logistique
 
 Considérons tout d'abord un petit exemple interactif où vous jouerez vous-même
 le rôle d'un modèle de classification particulier : la **régression
 logistique**. Les données d'entraînement ont deux classes possibles : `bleue` ou
-`rouge`, ainsi que deux valeurs (nombres) pour les décrire : $x$ et $y$
-(puisqu'il s'agit d'un graphe en deux dimensions). La tâche du modèle est de
-séparer (classifier) les deux groupes. La ligne pointillée constitue la
+`rouge`, ainsi que deux valeurs (nombres, ou *paramètres*) pour les décrire :
+$x$ et $y$ (puisqu'il s'agit d'un graphe en deux dimensions). La tâche du modèle
+est de séparer (c-à-d classifier) les deux groupes. La ligne pointillée constitue la
 "fonction de décision" du modèle : les deux classes se situent de part et
 d'autre de la ligne. Comme il s'agit d'une fonction en deux dimensions, on peut
 la représenter par la formule simple :
@@ -64,6 +66,16 @@ des points, et de les déplacer, en utilisant la souris.
 </div>
 <canvas id="canvas"></canvas>
 <div id="info" style="text-align: center; margin-top: 20px" >f(x) <=> mx + b</div>
+
+Remarquez un détail important : quoiqu'on fasse, l'erreur ne peut jamais
+dépasser 50%. Quand on y pense, c'est logique, car même si on place la ligne de
+décision à un endroit extrême, qui fait en sorte que TOUS les points se trouvent
+d'un côté, il reste que 50% de ceux-ci sont tout de même correctement
+classifiés. Et si on place la ligne dans une configuration plus pathologique,
+qui ferait en sorte par exemple que 75% des points seraient incorrectement
+classifiés, la chose logique à faire (ce que l'applet interactive fait en fait)
+est d'inverser le schéma de classification (les points `bleus` deviennent
+`rouges`, et vice versa), ce qui fait en sorte que l'erreur est réduite à 25%.
 
 La tâche de l'algorithme de régression logistique est de trouver les "meilleures"
 valeurs pour les paramètres pour la fonction de décision (donc $m$ et $b$),
