@@ -93,12 +93,12 @@ permettrait de faire en sorte que ça devienne possible?
 {{% details "Les mathématiques de la régression logistique" open %}}
 
 Bien que nous en ayons parlé en termes purement géométriques jusqu'ici, la
-régression logistique est en fait une méthod probabiliste : un point est
+régression logistique est en fait une méthode probabiliste : un point est
 considéré `bleu` si le modèle calcule que la probabilité qu'il le soit est $\ge
 50\\%$ (et évidemment vice versa pour `rouge`). Une probabilité est une valeur
 nécessairement entre 0 et 1. Pour transformer une fonction arbitraire en une
-fonction de probabilité, on peut utiliser la fonction sigmoide (aussi appelée
-fonction logistique), qui force une valeur à être dans la plage 0 et 1 :
+fonction de probabilité, on peut utiliser la fonction sigmoïde (aussi appelée
+fonction logistique), qui "force" une valeur à être dans la plage 0 et 1 :
 
 ![](/images/module2/Logistic-curve-02.png)
 
@@ -110,11 +110,14 @@ $$y \in \{0, 1\}$$
 
 Cette notation classique en apprentissage automatique utilise donc $\mathbf{x}$
 pour dénoter les points en 2D sous forme vectorielle ($x_1$ et $x_2$
-correspondent aux $x$ et $y$ de la représentation 2D classique). $y$ est utilisé
-pour dénoter la *vraie* classe d'un point (0 ou 1, correspondant arbitrairement
-à `bleu` ou `rouge`). Les paramètres seront représentés par le vecteur
-$\mathbf{w} = [w_1, w2]$. Il est maintenant possible de réécrire notre fonction
-de décision à l'aide de cette nouvelle notation vectorielle :
+correspondent aux $x$ et $y$ de la représentation 2D classique, et $\mathbf{x}$
+est donc un *vecteur*, dont les 2 valeurs correspondent aux "caractéristiques"
+d'un point, sa description numérique). La variable scalaire (donc une valeur
+numérique simple, par opposition à un vecteur) $y$ est utilisée pour dénoter la
+*vraie* classe d'un point (0 ou 1, correspondant arbitrairement à `bleu` ou
+`rouge`). Les paramètres seront représentés par le vecteur $\mathbf{w} = [w_1,
+w2]$. Il est maintenant possible de réécrire notre fonction de décision à l'aide
+de cette nouvelle notation vectorielle :
 
 $$z = \mathbf{w}^\top \mathbf{x} + b.$$
 
@@ -192,7 +195,9 @@ cas de figure :
 
 La fonction d'erreur $E$ que nous avons s'applique à un seul point. Nous avons
 besoin de la généraliser à l'ensemble des $n$ points que nous avons, en en
-faisant simplement la somme. Ceci est une nouvelle fonction nommée $J$ :
+faisant simplement la somme. Ceci est une nouvelle fonction nommée $J$, qui
+utilise des indices $(i)$ pour dénoter les valeurs associées aux points
+particuliers de notre ensemble d’entraînement :
 
 $$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} E(y^{(i)}, \hat{y}^{(i)})$$
 $$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} \left[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \right]$$
@@ -200,8 +205,50 @@ $$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} \left[ y^{(i)} \log(\hat{y}^{(i)
 Vous pouvez remarquer qu'on spécifie cette fois les paramètres $\mathbf{w}$ et
 $b$ pour la fonction $J$ : la raison est que nous voulons maintenant *optimiser*
 la fonction $J$, c'est-à-dire trouver les valeurs de ses paramètres
-($\mathbf{w}$ et $b$) qui vont faire en sorte de la minimiser. Cette opération
-d'optimisation est l'essence même de l'apprentissage automatique.
+($\mathbf{w}$ et $b$) qui vont faire en sorte de la minimiser (c-à-d que sa
+valeur soit la plus petite possible, quand on considère l'ensemble de toutes ses
+valeurs possibles, donc indirectement via l'ensemble de toutes les valeurs
+possibles pour ses paramètres $\mathbf{w}$ et $b$). Cette opération
+d'optimisation est l'essence même de l'apprentissage automatique. Apprendre,
+c'est optimiser une fonction d'erreur, de manière à la rendre la plus petite
+possible. On fait cela à l'aide de la technique de la **descente de gradient**,
+qui consiste à déterminer tout d'abord la "direction" (c-à-d le vecteur) dans
+laquelle la valeur de la fonction change le plus, à un point donné. Si on
+utilise la métaphore d'un terrain montagneux pour représenter une fonction
+d'erreur en 3 dimensions, l'altitude d'un point à un endroit particulier
+représente la valeur de la fonction, tant que les coordonnées géographiques du
+point (`x` et `y`, ou lat/lon si on utilise un GPS), représentent les
+paramètres. Le gradient, dans cette métaphore, représente la direction dans
+laquelle le changement d'altitude sera le plus abrupt.
+
+![](/images/module2/mountain_gradient.jpg)
+
+$$\frac{\partial J}{\partial \mathbf{w}} = \frac{1}{n} \sum_{i=1}^n (\hat{y}^{(i)} - y^{(i)}) \mathbf{x}^{(i)}$$
+$$\frac{\partial J}{\partial b} = \frac{1}{n} \sum_{i=1}^n (\hat{y}^{(i)} - y^{(i)})$$
+
+Le symbole $\partial$ peut faire un peu peur à priori, mais sa signification
+devient claire quand on le traduit en mots : le gradient de la fonction $J$ par
+rapport au paramètre $w$ (ou $b$). Et son calcul, dans le cas de la régression
+logistique, est très simple : pour chaque point, on considère :
+
+1. La différence entre la probabilité produite par le modèle et la vraie étiquette : $\hat{y}^{(i)} - y^{(i)}$
+2. Le produit de cette différence et du vecteur d'entrée : $(\hat{y}^{(i)} - y^{(i)}) \mathbf{x}^{(i)}$ (rappelons que $\mathbf{x} = [x_1, x_2]$ est un vecteur
+à deux dimensions, donc ce produit sera également bi-dimensionnel, tout comme l'est également $\mathbf{w}$)
+3. On veut la moyenne de ces produits (donc la somme et une division)
+
+Nos règles de mise à jour pour les paramètres sont donc :
+
+$$\mathbf{w} \leftarrow \mathbf{w} - \alpha \cdot \frac{\partial J}{\partial \mathbf{w}}, \quad b \leftarrow b - \alpha \cdot \frac{\partial J}{\partial b}$$
+
+L'algorithme d'optimisation (apprentissage) de la régression logistique consiste
+donc en l'application itérative (répétée) de ces règles de mise à jour des
+paramètres, qui feront en sorte de changer graduellement les valeurs de
+$\mathbf{w}$ et $\mathbf{b}$, tout en diminuant également progressivement la
+valeur de l'erreur cumulée, c'est-à-dire la valeur de la fonction $J$. $\alpha$
+est le *taux d'apprentissage* (une simple valeur numérique), qui fait en sorte
+de limiter la taille des "pas" qu'on prend dans la direction du gradient, à
+chaque itération. Pour le distinguer des paramètres ($\mathbf{w}$ et
+$\mathbf{b}$), on appelle $\alpha$ un *hyper-paramètre*.
 
 {{% /details %}}
 

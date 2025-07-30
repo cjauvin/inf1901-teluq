@@ -24,7 +24,7 @@ $$\text{Prob(oui c'est un pourriel | mots)} > \text{Prob(non ce n'est pas un | m
 Voyons comment il est possible de calculer ces probabilités en entraînant un
 modèle de classification sur une série de courriels particuliers.
 
-Ètant donné que nous allons encore une fois utiliser la tableur en ligne [Google
+Étant donné que nous allons encore une fois utiliser la tableur en ligne [Google
 Sheets]({{< relref "docs/google-sheets.md" >}}), assurez-vous que votre version
 est correctement configurée.
 
@@ -44,7 +44,7 @@ livraison spéciale pour vous
 merci encore pour votre carte
 ```
 
-Pour avoir un aperçu de la tâche d'étiquettage des données (qui dans un scénario
+Pour avoir un aperçu de la tâche d’étiquetage des données (qui dans un scénario
 réel peut s'avérer très coûteuse et laborieuse), vous êtes invités à tenter tout
 d'abord de catégoriser les courriels dans la colonne B, en utilisant la valeur
 "oui" si vous considérez qu'il s'agit d'un pourriel, ou "non" (ce n'est pas un
