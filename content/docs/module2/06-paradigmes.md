@@ -236,7 +236,9 @@ logistique, est très simple : pour chaque point, on considère :
 à deux dimensions, donc ce produit sera également bi-dimensionnel, tout comme l'est également $\mathbf{w}$)
 3. On veut la moyenne de ces produits (donc la somme et une division)
 
-Nos règles de mise à jour pour les paramètres sont donc :
+Nos règles de mise à jour (la mise à jour, qui est un concept généralement plus
+associé à la programmation qu'aux mathématiques, est représentée ici par le
+symbole $\leftarrow$) pour les paramètres sont donc :
 
 $$\mathbf{w} \leftarrow \mathbf{w} - \alpha \cdot \frac{\partial J}{\partial \mathbf{w}}, \quad b \leftarrow b - \alpha \cdot \frac{\partial J}{\partial b}$$
 
