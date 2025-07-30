@@ -24,7 +24,7 @@ celle du fait qu&rsquo;un courriel particulier soit ou non un pourriel, étant d
 les mots particuliers qui le composent. Un courriel sera classifié en tant que
 pourriel si :</p>$$\text{Prob(oui c'est un pourriel | mots)} > \text{Prob(non ce n'est pas un | mots)}$$<h2 id=entraînement-du-modèle>Entraînement du modèle
 <a class=anchor href=#entra%c3%aenement-du-mod%c3%a8le>#</a></h2><p>Voyons comment il est possible de calculer ces probabilités en entraînant un
-modèle de classification sur une série de courriels particuliers.</p><p>Ètant donné que nous allons encore une fois utiliser la tableur en ligne <a href=https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/>Google
+modèle de classification sur une série de courriels particuliers.</p><p>Étant donné que nous allons encore une fois utiliser la tableur en ligne <a href=https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/>Google
 Sheets</a>, assurez-vous que votre version
 est correctement configurée.</p><p>Copiez tout d&rsquo;abord ces 10 courriels dans la colonne A d&rsquo;une nouvelle &ldquo;feuille&rdquo;
 Google Sheets, un courriel par rangée :</p><pre tabindex=0><code>voici le colis est arrivé
@@ -37,7 +37,7 @@ réunion demain à midi
 voici le code pour carte
 livraison spéciale pour vous
 merci encore pour votre carte
-</code></pre><p>Pour avoir un aperçu de la tâche d&rsquo;étiquettage des données (qui dans un scénario
+</code></pre><p>Pour avoir un aperçu de la tâche d’étiquetage des données (qui dans un scénario
 réel peut s&rsquo;avérer très coûteuse et laborieuse), vous êtes invités à tenter tout
 d&rsquo;abord de catégoriser les courriels dans la colonne B, en utilisant la valeur
 &ldquo;oui&rdquo; si vous considérez qu&rsquo;il s&rsquo;agit d&rsquo;un pourriel, ou &ldquo;non&rdquo; (ce n&rsquo;est pas un

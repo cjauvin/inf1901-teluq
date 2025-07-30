@@ -77,19 +77,22 @@ celles qui font en sorte que la valeur de la fonction d&rsquo;erreur est la plus
 petite possible (zéro idéalement).</p><blockquote class="book-hint info"><p>Matière à réflexion : pourquoi ce n&rsquo;est pas toujours possible de séparer
 parfaitement les points? Dans quelles conditions est-ce le cas? Qu&rsquo;est-ce qui
 permettrait de faire en sorte que ça devienne possible?</p></blockquote><details open><summary>Les mathématiques de la régression logistique</summary><div class=markdown-inner><p>Bien que nous en ayons parlé en termes purement géométriques jusqu&rsquo;ici, la
-régression logistique est en fait une méthod probabiliste : un point est
+régression logistique est en fait une méthode probabiliste : un point est
 considéré <code>bleu</code> si le modèle calcule que la probabilité qu&rsquo;il le soit est $\ge
 50\%$ (et évidemment vice versa pour <code>rouge</code>). Une probabilité est une valeur
 nécessairement entre 0 et 1. Pour transformer une fonction arbitraire en une
-fonction de probabilité, on peut utiliser la fonction sigmoide (aussi appelée
-fonction logistique), qui force une valeur à être dans la plage 0 et 1 :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/Logistic-curve-02.png alt></p><p>Nous allons à partir d&rsquo;ici changer un peu la notation que nous avons utilisée
+fonction de probabilité, on peut utiliser la fonction sigmoïde (aussi appelée
+fonction logistique), qui &ldquo;force&rdquo; une valeur à être dans la plage 0 et 1 :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/Logistic-curve-02.png alt></p><p>Nous allons à partir d&rsquo;ici changer un peu la notation que nous avons utilisée
 jusqu&rsquo;ici, pour la rendre plus générale :</p>$$\mathbf{x} = [x_1, x_2]$$<p></p>$$y \in \{0, 1\}$$<p>Cette notation classique en apprentissage automatique utilise donc $\mathbf{x}$
 pour dénoter les points en 2D sous forme vectorielle ($x_1$ et $x_2$
-correspondent aux $x$ et $y$ de la représentation 2D classique). $y$ est utilisé
-pour dénoter la <em>vraie</em> classe d&rsquo;un point (0 ou 1, correspondant arbitrairement
-à <code>bleu</code> ou <code>rouge</code>). Les paramètres seront représentés par le vecteur
-$\mathbf{w} = [w_1, w2]$. Il est maintenant possible de réécrire notre fonction
-de décision à l&rsquo;aide de cette nouvelle notation vectorielle :</p>$$z = \mathbf{w}^\top \mathbf{x} + b.$$<p>($\mathbf{w}^\top \mathbf{x}$ est le produit vectoriel de $\mathbf{w}$ et
+correspondent aux $x$ et $y$ de la représentation 2D classique, et $\mathbf{x}$
+est donc un <em>vecteur</em>, dont les 2 valeurs correspondent aux &ldquo;caractéristiques&rdquo;
+d&rsquo;un point, sa description numérique). La variable scalaire (donc une valeur
+numérique simple, par opposition à un vecteur) $y$ est utilisée pour dénoter la
+<em>vraie</em> classe d&rsquo;un point (0 ou 1, correspondant arbitrairement à <code>bleu</code> ou
+<code>rouge</code>). Les paramètres seront représentés par le vecteur $\mathbf{w} = [w_1,
+w2]$. Il est maintenant possible de réécrire notre fonction de décision à l&rsquo;aide
+de cette nouvelle notation vectorielle :</p>$$z = \mathbf{w}^\top \mathbf{x} + b.$$<p>($\mathbf{w}^\top \mathbf{x}$ est le produit vectoriel de $\mathbf{w}$ et
 $\mathbf{x}$). Notons tout d&rsquo;abord qu&rsquo;il y maintenant 3 paramètres ($w1$, $w2$
 et $b$), alors que dans l&rsquo;exemple ci-haut seulement 2 sont mentionnés : $m$ et
 $b$. On introduit aussi une nouvelle variable $z$ : que veut-elle dire? Pour
@@ -120,11 +123,38 @@ sorte de minimiser l&rsquo;erreur de classification. Nous avons donc besoin de d
 tout d&rsquo;abord cette erreur en tant que fonction précise :</p>$$E(y, \hat{y}) = -[y \log(\hat{y}) + (1 - y)\log(1 - \hat{y})]$$<p>Pour bien comprendre le fonctionnement de cette équation, examinons les différents
 cas de figure :</p><ol><li>Un point est en réalité <code>bleu</code> (donc $y = 1$) et la confiance du modèle en ce fait est élevée ($\hat{y} = 0.9$) : $E(y, \hat{y}) = -\log(0.9) \approx 0.1$ (l&rsquo;erreur est basse).</li><li>Un point est en réalité <code>bleu</code> (donc $y = 1$) mais la confiance du modèle en ce fait est basse ($\hat{y} = 0.1$) : $E(y, \hat{y}) = -\log(0.1) \approx 2.3$ (l&rsquo;erreur est élevée).</li><li>Un point est en réalité <code>rouge</code> (donc $y = 0$) et la confiance du modèle en ce fait est élevée ($\hat{y} = 0.1$) : $E(y, \hat{y}) = -\log(0.9) \approx 0.1$ (l&rsquo;erreur est basse).</li><li>Un point est en réalité <code>rouge</code> (donc $y = 0$) mais la confiance du modèle en ce fait est basse ($\hat{y} = 0.9$) : $E(y, \hat{y}) = -\log(0.1) \approx 2.3$ (l&rsquo;erreur est élevée).</li></ol><p>La fonction d&rsquo;erreur $E$ que nous avons s&rsquo;applique à un seul point. Nous avons
 besoin de la généraliser à l&rsquo;ensemble des $n$ points que nous avons, en en
-faisant simplement la somme. Ceci est une nouvelle fonction nommée $J$ :</p>$$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} E(y^{(i)}, \hat{y}^{(i)})$$<p></p>$$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} \left[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \right]$$<p>Vous pouvez remarquer qu&rsquo;on spécifie cette fois les paramètres $\mathbf{w}$ et
+faisant simplement la somme. Ceci est une nouvelle fonction nommée $J$, qui
+utilise des indices $(i)$ pour dénoter les valeurs associées aux points
+particuliers de notre ensemble d’entraînement :</p>$$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} E(y^{(i)}, \hat{y}^{(i)})$$<p></p>$$J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} \left[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \right]$$<p>Vous pouvez remarquer qu&rsquo;on spécifie cette fois les paramètres $\mathbf{w}$ et
 $b$ pour la fonction $J$ : la raison est que nous voulons maintenant <em>optimiser</em>
 la fonction $J$, c&rsquo;est-à-dire trouver les valeurs de ses paramètres
-($\mathbf{w}$ et $b$) qui vont faire en sorte de la minimiser. Cette opération
-d&rsquo;optimisation est l&rsquo;essence même de l&rsquo;apprentissage automatique.</p></div></details><details open><summary>La programmation de la régression logistique</summary><div class=markdown-inner></div></details><blockquote class="book-hint info"><p>Une question qu&rsquo;il peut être intéressant de considérer, une fois qu&rsquo;on a fait
+($\mathbf{w}$ et $b$) qui vont faire en sorte de la minimiser (c-à-d que sa
+valeur soit la plus petite possible, quand on considère l&rsquo;ensemble de toutes ses
+valeurs possibles, donc indirectement via l&rsquo;ensemble de toutes les valeurs
+possibles pour ses paramètres $\mathbf{w}$ et $b$). Cette opération
+d&rsquo;optimisation est l&rsquo;essence même de l&rsquo;apprentissage automatique. Apprendre,
+c&rsquo;est optimiser une fonction d&rsquo;erreur, de manière à la rendre la plus petite
+possible. On fait cela à l&rsquo;aide de la technique de la <strong>descente de gradient</strong>,
+qui consiste à déterminer tout d&rsquo;abord la &ldquo;direction&rdquo; (c-à-d le vecteur) dans
+laquelle la valeur de la fonction change le plus, à un point donné. Si on
+utilise la métaphore d&rsquo;un terrain montagneux pour représenter une fonction
+d&rsquo;erreur en 3 dimensions, l&rsquo;altitude d&rsquo;un point à un endroit particulier
+représente la valeur de la fonction, tant que les coordonnées géographiques du
+point (<code>x</code> et <code>y</code>, ou lat/lon si on utilise un GPS), représentent les
+paramètres. Le gradient, dans cette métaphore, représente la direction dans
+laquelle le changement d&rsquo;altitude sera le plus abrupt.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/mountain_gradient.jpg alt></p>$$\frac{\partial J}{\partial \mathbf{w}} = \frac{1}{n} \sum_{i=1}^n (\hat{y}^{(i)} - y^{(i)}) \mathbf{x}^{(i)}$$<p></p>$$\frac{\partial J}{\partial b} = \frac{1}{n} \sum_{i=1}^n (\hat{y}^{(i)} - y^{(i)})$$<p>Le symbole $\partial$ peut faire un peu peur à priori, mais sa signification
+devient claire quand on le traduit en mots : le gradient de la fonction $J$ par
+rapport au paramètre $w$ (ou $b$). Et son calcul, dans le cas de la régression
+logistique, est très simple : pour chaque point, on considère :</p><ol><li>La différence entre la probabilité produite par le modèle et la vraie étiquette : $\hat{y}^{(i)} - y^{(i)}$</li><li>Le produit de cette différence et du vecteur d&rsquo;entrée : $(\hat{y}^{(i)} - y^{(i)}) \mathbf{x}^{(i)}$ (rappelons que $\mathbf{x} = [x_1, x_2]$ est un vecteur
+à deux dimensions, donc ce produit sera également bi-dimensionnel, tout comme l&rsquo;est également $\mathbf{w}$)</li><li>On veut la moyenne de ces produits (donc la somme et une division)</li></ol><p>Nos règles de mise à jour pour les paramètres sont donc :</p>$$\mathbf{w} \leftarrow \mathbf{w} - \alpha \cdot \frac{\partial J}{\partial \mathbf{w}}, \quad b \leftarrow b - \alpha \cdot \frac{\partial J}{\partial b}$$<p>L&rsquo;algorithme d&rsquo;optimisation (apprentissage) de la régression logistique consiste
+donc en l&rsquo;application itérative (répétée) de ces règles de mise à jour des
+paramètres, qui feront en sorte de changer graduellement les valeurs de
+$\mathbf{w}$ et $\mathbf{b}$, tout en diminuant également progressivement la
+valeur de l&rsquo;erreur cumulée, c&rsquo;est-à-dire la valeur de la fonction $J$. $\alpha$
+est le <em>taux d&rsquo;apprentissage</em> (une simple valeur numérique), qui fait en sorte
+de limiter la taille des &ldquo;pas&rdquo; qu&rsquo;on prend dans la direction du gradient, à
+chaque itération. Pour le distinguer des paramètres ($\mathbf{w}$ et
+$\mathbf{b}$), on appelle $\alpha$ un <em>hyper-paramètre</em>.</p></div></details><details open><summary>La programmation de la régression logistique</summary><div class=markdown-inner></div></details><blockquote class="book-hint info"><p>Une question qu&rsquo;il peut être intéressant de considérer, une fois qu&rsquo;on a fait
 l&rsquo;effort de mieux comprendre le fonctionnement d&rsquo;un algorithme relativement
 simple comme la régression logistique (simple mais très représentatif, si vous
 le comprenez bien, vous avez déjà une excellente compréhension de l&rsquo;AA au sens
