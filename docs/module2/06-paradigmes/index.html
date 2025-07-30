@@ -146,7 +146,9 @@ laquelle le changement d&rsquo;altitude sera le plus abrupt.</p><p><img src=http
 devient claire quand on le traduit en mots : le gradient de la fonction $J$ par
 rapport au paramètre $w$ (ou $b$). Et son calcul, dans le cas de la régression
 logistique, est très simple : pour chaque point, on considère :</p><ol><li>La différence entre la probabilité produite par le modèle et la vraie étiquette : $\hat{y}^{(i)} - y^{(i)}$</li><li>Le produit de cette différence et du vecteur d&rsquo;entrée : $(\hat{y}^{(i)} - y^{(i)}) \mathbf{x}^{(i)}$ (rappelons que $\mathbf{x} = [x_1, x_2]$ est un vecteur
-à deux dimensions, donc ce produit sera également bi-dimensionnel, tout comme l&rsquo;est également $\mathbf{w}$)</li><li>On veut la moyenne de ces produits (donc la somme et une division)</li></ol><p>Nos règles de mise à jour pour les paramètres sont donc :</p>$$\mathbf{w} \leftarrow \mathbf{w} - \alpha \cdot \frac{\partial J}{\partial \mathbf{w}}, \quad b \leftarrow b - \alpha \cdot \frac{\partial J}{\partial b}$$<p>L&rsquo;algorithme d&rsquo;optimisation (apprentissage) de la régression logistique consiste
+à deux dimensions, donc ce produit sera également bi-dimensionnel, tout comme l&rsquo;est également $\mathbf{w}$)</li><li>On veut la moyenne de ces produits (donc la somme et une division)</li></ol><p>Nos règles de mise à jour (la mise à jour, qui est un concept généralement plus
+associé à la programmation qu&rsquo;aux mathématiques, est représentée ici par le
+symbole $\leftarrow$) pour les paramètres sont donc :</p>$$\mathbf{w} \leftarrow \mathbf{w} - \alpha \cdot \frac{\partial J}{\partial \mathbf{w}}, \quad b \leftarrow b - \alpha \cdot \frac{\partial J}{\partial b}$$<p>L&rsquo;algorithme d&rsquo;optimisation (apprentissage) de la régression logistique consiste
 donc en l&rsquo;application itérative (répétée) de ces règles de mise à jour des
 paramètres, qui feront en sorte de changer graduellement les valeurs de
 $\mathbf{w}$ et $\mathbf{b}$, tout en diminuant également progressivement la
