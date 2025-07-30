@@ -41,14 +41,14 @@ correcte ou non (car l&rsquo;enseignant connaît, à priori, la &ldquo;bonne ré
 propre question).</p><h3 id=classification>Classification
 <a class=anchor href=#classification>#</a></h3><p>La famille d&rsquo;algorithmes d&rsquo;apprentissage supervisé la plus facile à comprendre
 est celle des modèles de classification. Un algorithme de classification est une
-fonction mathématique qui associe des &ldquo;objets&rdquo; (donc des points dans un espaces
-[lien]) vers une série prédéfinie d&rsquo;étiquettes, des &ldquo;classes&rdquo;.</p><h4 id=la-régression-logistique>La régression logistique
+fonction mathématique qui associe des &ldquo;objets&rdquo; (donc des points dans un
+<a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/#niveau-de-lapprentissage-automatique-et-des-mathématiques>espace vectoriel</a>) vers une série prédéfinie d&rsquo;étiquettes, qu&rsquo;on appelle souvent des &ldquo;classes&rdquo;.</p><h4 id=la-régression-logistique>La régression logistique
 <a class=anchor href=#la-r%c3%a9gression-logistique>#</a></h4><p>Considérons tout d&rsquo;abord un petit exemple interactif où vous jouerez vous-même
 le rôle d&rsquo;un modèle de classification particulier : la <strong>régression
 logistique</strong>. Les données d&rsquo;entraînement ont deux classes possibles : <code>bleue</code> ou
-<code>rouge</code>, ainsi que deux valeurs (nombres) pour les décrire : $x$ et $y$
-(puisqu&rsquo;il s&rsquo;agit d&rsquo;un graphe en deux dimensions). La tâche du modèle est de
-séparer (classifier) les deux groupes. La ligne pointillée constitue la
+<code>rouge</code>, ainsi que deux valeurs (nombres, ou <em>paramètres</em>) pour les décrire :
+$x$ et $y$ (puisqu&rsquo;il s&rsquo;agit d&rsquo;un graphe en deux dimensions). La tâche du modèle
+est de séparer (c-à-d classifier) les deux groupes. La ligne pointillée constitue la
 &ldquo;fonction de décision&rdquo; du modèle : les deux classes se situent de part et
 d&rsquo;autre de la ligne. Comme il s&rsquo;agit d&rsquo;une fonction en deux dimensions, on peut
 la représenter par la formule simple :</p>$$f(x) \le mx + b$$<p>où $m$ représente la pente et $b$ l&rsquo;ordonnée à l&rsquo;origine. Remarquez un détail
@@ -63,7 +63,15 @@ bleus, ce qui correspond à une valeur de 0% pour la fonction d&rsquo;erreur (el
 représentée par la barre à droite, et distincte de la fonction de décision). Ce
 n&rsquo;est pas toujours possible ! Notez qu&rsquo;il est possible d&rsquo;ajouter ou d&rsquo;enlever
 des points, et de les déplacer, en utilisant la souris.</p><div style=text-align:center;margin-bottom:10px><label for=pointSlider>Nombre de points : </label><input type=range id=pointSlider min=2 max=50 value=12 style=width:200px>
-<span id=pointCount>10</span></div><canvas id=canvas></canvas><div id=info style=text-align:center;margin-top:20px>f(x) <=> mx + b</div><p>La tâche de l&rsquo;algorithme de régression logistique est de trouver les &ldquo;meilleures&rdquo;
+<span id=pointCount>10</span></div><canvas id=canvas></canvas><div id=info style=text-align:center;margin-top:20px>f(x) <=> mx + b</div><p>Remarquez un détail important : quoiqu&rsquo;on fasse, l&rsquo;erreur ne peut jamais
+dépasser 50%. Quand on y pense, c&rsquo;est logique, car même si on place la ligne de
+décision à un endroit extrême, qui fait en sorte que TOUS les points se trouvent
+d&rsquo;un côté, il reste que 50% de ceux-ci sont tout de même correctement
+classifiés. Et si on place la ligne dans une configuration plus pathologique,
+qui ferait en sorte par exemple que 75% des points seraient incorrectement
+classifiés, la chose logique à faire (ce que l&rsquo;applet interactive fait en fait)
+est d&rsquo;inverser le schéma de classification (les points <code>bleus</code> deviennent
+<code>rouges</code>, et vice versa), ce qui fait en sorte que l&rsquo;erreur est réduite à 25%.</p><p>La tâche de l&rsquo;algorithme de régression logistique est de trouver les &ldquo;meilleures&rdquo;
 valeurs pour les paramètres pour la fonction de décision (donc $m$ et $b$),
 celles qui font en sorte que la valeur de la fonction d&rsquo;erreur est la plus
 petite possible (zéro idéalement).</p><blockquote class="book-hint info"><p>Matière à réflexion : pourquoi ce n&rsquo;est pas toujours possible de séparer
