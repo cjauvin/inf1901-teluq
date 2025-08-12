@@ -1,11 +1,46 @@
 ---
-title: "Conversation autour de l'IA"
+title: "Conversation synoptique autour de l'IA"
 weight: 1
 ---
 
-# Conversation autour de l'IA
+# Conversation synoptique autour de l'IA
 
-## 1. IA versus informatique
+À l'été 2025, les professeurs Daniel Lemire et Christian Jauvin ont eu une discussion par rapport à
+certains thèmes touchant de près ou de loin l'IA, animée par Dolorès Grossemy.
+
+{{< youtube id="R8sqq_gJbUI" >}}
+
+* [00:00](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=0s) Le paradoxe de Moravec
+* [06:00](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=360s) La vision originale de l'IA classique (GOFAI)
+* [09:00](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=540s) Les objectifs dynamiques (moving goalpost)
+* [11:54](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=714s) Est-ce que Google Maps est de l'IA?
+* [17:16](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=1036s) L'IA générale
+* [23:46](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=1426s) Le test de Turing
+* [28:15](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=1695s) La philosophie de l'esprit
+* [29:45](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=1785s) Les qualias et les zombies philosophiques
+* [36:38](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=2198s) Est-ce que l'IA est un zombie?
+* [45:05](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=2705s) Penrose
+* [46:37](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=2797s) Chomsky
+* [50:50](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=3050s) Wittgenstein
+* [55:09](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=3309s) La science-fiction
+* [56:28](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=3388s) 2001 Odyssée de l'espace
+* [1:00:25](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=3625s) Blade Runner
+* [1:03:51](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=3831s) La guerre et la menace nucléaire
+* [1:09:52](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=4192s) Wargames
+* [1:11:57](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=4317s) Les rationnalistes
+* [1:16:22](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=4582s) Eliezer Yudkowsky
+* [1:20:50](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=4850s) La singularité
+* [1:26:34](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=5194s) L'alignement
+* [1:30:05](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=5405s) Les limites de l'IA
+* [1:42:04](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=6124s) Yoshua Bengio
+* [1:48:00](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=6480s) Element AI et le Québec
+* [1:55:06](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=6906s) L'audace de OpenAI et Ozzy Osbourne
+
+## Les thèmes de la discussion
+
+En guise de préparation à la discussion, les questions suivantes avaient été choisies.
+
+### 1. IA versus informatique
 
 Q: Pourquoi l'IA semble être un sujet distinct de l'informatique, une discipline à part? Pourquoi on ne considère pas que rendre les ordinateurs le plus intelligent possible ne constitue pas la mission unique de l'informatique, tout simplement?
 
@@ -39,7 +74,7 @@ C’est le phénomène par lequel, à chaque avancée de l’IA, on redéfinit c
 
 {{% /details %}}
 
-## 2. IA et philo
+### 2. IA et philo
 
 Q: Quels sont les liens entre la philosophie analytique (mathématiques, langage, esprit) et l'IA?
 
@@ -97,7 +132,7 @@ Un zombie philosophique est un être identique à un humain en tous points, sauf
 
 {{% /details %}}
 
-## 3. IA et science-fiction
+### 3. IA et science-fiction
 
 Q: Quels sont les liens entre l'IA et la science-fiction?
 
@@ -128,7 +163,7 @@ La singularité, ou FOOM, est l’idée qu’une IA assez intelligente pourra s�
 
 {{% /details %}}
 
-## 4. IA classique (GOFAI) versus AA (ML)
+### 4. IA classique (GOFAI) versus AA (ML)
 
 Q: Quelles sont les différences entre l'IA au sens classique et l'apprentissage automatique?
 
@@ -162,7 +197,7 @@ Parce qu’il fonctionne. Les approches basées sur les données ont permis des 
 
 {{% /details %}}
 
-## 5. L'IA en ligne
+### 5. L'IA en ligne
 
 Q: Qui est Eliezer Yudkowsky, et pourquoi il est un personnage intéressant?
 
@@ -238,7 +273,7 @@ Le "altruisme efficace" est un mouvement qui cherche à utiliser la raison et le
 
 {{% /details %}}
 
-## 6. La révolution de l'apprentissage profond et des LLMs
+### 6. La révolution de l'apprentissage profond et des LLMs
 
 Q: Qu'est-ce que l'apprentissage profond, et en quoi ça constitue le fondement des LLMs?
 
@@ -376,7 +411,7 @@ Les modèles nécessitent des quantités massives de données et d’énergie. I
 
 {{% /details %}}
 
-## 7. La peur
+### 7. La peur
 
 Q: De quoi peut-on avoir peur exactement, avec l'IA?
 
@@ -426,7 +461,7 @@ P(Doom) est une notation humoristique pour désigner la probabilité subjective 
 
 {{% /details %}}
 
-## 8. L'enthousiasme
+### 8. L'enthousiasme
 
 Q: Quels problèmes l'IA pourrait-elle permettre de résoudre éventuellement?
 
@@ -452,7 +487,7 @@ Parce que les LLMs et outils IA augmentent leur productivité, permettent de cr�
 
 {{% /details %}}
 
-## 9. L'IA et Montréal
+### 9. L'IA et Montréal
 
 Q: Quel est le rôle de Yoshua Bengio dans l'essor de l'IA moderne?
 
@@ -485,3 +520,4 @@ Q: Est-ce que Montréal peut contribuer davantage à l'IA, et compétionner avec
 Oui, grâce à ses talents, ses universités, et sa culture de recherche ouverte. Mais cela demande des investissements soutenus, des passerelles industrie-recherche plus efficaces, et une vision stratégique face à la concurrence des géants comme Google ou Microsoft.
 
 {{% /details %}}
+
