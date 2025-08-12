@@ -20,18 +20,48 @@
 &lt;p>Ce texte en ligne sur &lt;a href="https://www.ibm.com/fr-fr/think/topics/history-of-artificial-intelligence">l&amp;rsquo;histoire de l&amp;rsquo;IA&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Ce texte en ligne sur &lt;a href="https://www.thecanadianencyclopedia.ca/fr/article/intelligence-artificielle">l&amp;rsquo;IA dans une perspective canadienne&lt;/a>&lt;/p></description></item><item><title>Conversation autour de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</guid><description>&lt;h1 id="conversation-autour-de-lia">
- Conversation autour de l&amp;rsquo;IA
- &lt;a class="anchor" href="#conversation-autour-de-lia">#&lt;/a>
+&lt;p>Ce texte en ligne sur &lt;a href="https://www.thecanadianencyclopedia.ca/fr/article/intelligence-artificielle">l&amp;rsquo;IA dans une perspective canadienne&lt;/a>&lt;/p></description></item><item><title>Conversation synoptique autour de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</guid><description>&lt;h1 id="conversation-synoptique-autour-de-lia">
+ Conversation synoptique autour de l&amp;rsquo;IA
+ &lt;a class="anchor" href="#conversation-synoptique-autour-de-lia">#&lt;/a>
 &lt;/h1>
-&lt;h2 id="1-ia-versus-informatique">
- 1. IA versus informatique
- &lt;a class="anchor" href="#1-ia-versus-informatique">#&lt;/a>
+&lt;p>À l&amp;rsquo;été 2025, les professeurs Daniel Lemire et Christian Jauvin ont eu une discussion par rapport à
+certains thèmes touchant de près ou de loin l&amp;rsquo;IA, animée par Dolorès Grossemy.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/R8sqq_gJbUI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=0s">00:00&lt;/a> Le paradoxe de Moravec&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=360s">06:00&lt;/a> La vision originale de l&amp;rsquo;IA classique (GOFAI)&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=540s">09:00&lt;/a> Les objectifs dynamiques (moving goalpost)&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=714s">11:54&lt;/a> Est-ce que Google Maps est de l&amp;rsquo;IA?&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=1036s">17:16&lt;/a> L&amp;rsquo;IA générale&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=1426s">23:46&lt;/a> Le test de Turing&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=1695s">28:15&lt;/a> La philosophie de l&amp;rsquo;esprit&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=1785s">29:45&lt;/a> Les qualias et les zombies philosophiques&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=2198s">36:38&lt;/a> Est-ce que l&amp;rsquo;IA est un zombie?&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=2705s">45:05&lt;/a> Penrose&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=2797s">46:37&lt;/a> Chomsky&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=3050s">50:50&lt;/a> Wittgenstein&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=3309s">55:09&lt;/a> La science-fiction&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=3388s">56:28&lt;/a> 2001 Odyssée de l&amp;rsquo;espace&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=3625s">1:00:25&lt;/a> Blade Runner&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=3831s">1:03:51&lt;/a> La guerre et la menace nucléaire&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=4192s">1:09:52&lt;/a> Wargames&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=4317s">1:11:57&lt;/a> Les rationnalistes&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=4582s">1:16:22&lt;/a> Eliezer Yudkowsky&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=4850s">1:20:50&lt;/a> La singularité&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=5194s">1:26:34&lt;/a> L&amp;rsquo;alignement&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=5405s">1:30:05&lt;/a> Les limites de l&amp;rsquo;IA&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=6124s">1:42:04&lt;/a> Yoshua Bengio&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=6480s">1:48:00&lt;/a> Element AI et le Québec&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=6906s">1:55:06&lt;/a> L&amp;rsquo;audace de OpenAI et Ozzy Osbourne&lt;/li>
+&lt;/ul>
+&lt;h2 id="les-thèmes-de-la-discussion">
+ Les thèmes de la discussion
+ &lt;a class="anchor" href="#les-th%c3%a8mes-de-la-discussion">#&lt;/a>
 &lt;/h2>
-&lt;p>Q: Pourquoi l&amp;rsquo;IA semble être un sujet distinct de l&amp;rsquo;informatique, une discipline à part? Pourquoi on ne considère pas que rendre les ordinateurs le plus intelligent possible ne constitue pas la mission unique de l&amp;rsquo;informatique, tout simplement?&lt;/p>
-&lt;details >&lt;summary>Réponse de ChatGPT&lt;/summary>
- &lt;div class="markdown-inner">
-&lt;p>L&amp;rsquo;intelligence artificielle (IA) est née comme un sous-domaine de l’informatique, mais elle s’est distinguée parce qu’elle mobilise des approches, des objectifs et des difficultés bien spécifiques. Alors que l’informatique générale vise à automatiser le traitement de l’information, l’IA vise à reproduire ou simuler des comportements que l’on associe à l’intelligence humaine : perception, raisonnement, apprentissage, planification. La complexité de ces objectifs, leur ancrage dans la cognition, la philosophie et les neurosciences, a poussé à en faire un domaine interdisciplinaire à part entière.&lt;/p></description></item><item><title>IA générative</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/</guid><description>&lt;h1 id="lia-générative">
+&lt;p>En guise de préparation à la discussion, les questions suivantes avaient été choisies.&lt;/p></description></item><item><title>IA générative</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/</guid><description>&lt;h1 id="lia-générative">
  L&amp;rsquo;IA générative
  &lt;a class="anchor" href="#lia-g%c3%a9n%c3%a9rative">#&lt;/a>
 &lt;/h1></description></item><item><title>Les réseaux de neurones</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</guid><description>&lt;h1 id="quest-ce-quun-réseau-de-neurones">
