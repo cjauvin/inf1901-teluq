@@ -513,7 +513,7 @@ Element AI, cofondée par Bengio, visait à appliquer l’IA à l’entreprise. 
 
 {{% /details %}}
 
-Q: Est-ce que Montréal peut contribuer davantage à l'IA, et compétionner avec les gros joueurs internationaux?
+Q: Est-ce que Montréal peut contribuer davantage à l'IA, et compétitionner avec les gros joueurs internationaux?
 
 {{% details "Réponse de ChatGPT" %}}
 

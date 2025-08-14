@@ -159,7 +159,7 @@ transformer ce score (une valeur arbitraire) en une probabilité (donc une valeu
 contrainte entre 0 et 1), on peut maintenant introduire l'équation de la
 régression logistique :
 
-$$\hat{y} = \frac{1}{1 + e^{-z}}$$
+$$P(y) = \hat{y} = \frac{1}{1 + e^{-z}}$$
 
 avec laquelle il est bien important de comprendre que $\hat{y}$ représente une
 probabilité (donc que $\hat{y} \in [0, 1]$), tandis que $y$ représente une vraie
@@ -169,7 +169,7 @@ L'algorithme de classification utilisera donc la probabilité calculée pour cha
 point de la manière suivante :
 
 $$
-\text{classification}(x1, x2) =
+\text{classification}(x_1, x_2) =
 \left\{
 \begin{array}{ll}
 \mathtt{bleu} \text{ si } \hat{y} \ge 0.5 & \\
@@ -276,6 +276,24 @@ pour vous, on peut généraliser le concept de la régression logistique pour en
 faire un modèle plus puissant et complexe :
 
 - Considérer ..
+
+#### Classification bayésienne naive
+
+Examinons maintenant un autre algorithme de classification que nous pourrions
+utiliser sur nos données en deux dimensions.
+
+La régression logistique est un algorithme d'apprentissage **discriminatif** :
+elle tente de modéliser la probabilité qu'un exemple appartienne directement à
+une classe (`bleue` ou `rouge`) directement à partir des caractéristiques de cet
+exemples ($x_1$ et $x_2$). En contraste, la classification naive bayésienne est
+un algorithme **génératif**, qui tente tout d'abord de modéliser la distribution
+des classes, avant d'utiliser ces modèles (un modèle pour la classe `bleue` et
+un pour la classe `rouge`) pour déterminer si un point particulier a plus de
+chance d'avoir été *généré* par un modèle particulier (disons `rouge`) plutôt
+qu'un autre.
+
+Chaque couple dimension / classe sera modélisé par une gaussienne à une
+dimension (donc 4 modèles en tout).
 
 #### Autres algorithmes de classification
 
