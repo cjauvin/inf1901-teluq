@@ -27,7 +27,7 @@ certains thèmes touchant de près ou de loin l'IA, animée par Dolorès Grossem
 * [1:00:25](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=3625s) Blade Runner
 * [1:03:51](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=3831s) La guerre et la menace nucléaire
 * [1:09:52](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=4192s) Wargames
-* [1:11:57](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=4317s) Les rationnalistes
+* [1:11:57](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=4317s) Les rationalistes
 * [1:16:22](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=4582s) Eliezer Yudkowsky
 * [1:20:50](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=4850s) La singularité
 * [1:26:34](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=5194s) L'alignement
