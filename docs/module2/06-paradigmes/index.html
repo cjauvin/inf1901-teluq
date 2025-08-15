@@ -174,10 +174,11 @@ des classes, avant d&rsquo;utiliser ces modèles (un modèle pour la classe <cod
 un pour la classe <code>rouge</code>) pour déterminer si un point particulier a plus de
 chance d&rsquo;avoir été <em>généré</em> par un modèle particulier (disons <code>rouge</code>) plutôt
 qu&rsquo;un autre.</p><p>Chaque couple dimension / classe sera modélisé par une gaussienne à une
-dimension (donc 4 modèles en tout). Une gaussienne (aussi appelée distribution
-normale) est la fameuse &ldquo;courbe en cloche&rdquo;, qui détermine comment la &ldquo;masse de
-probabilité&rdquo; est répartie autour d&rsquo;une valeur centrale (qu&rsquo;on appelle la
-moyenne) :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/gaussian.png alt></p><p>La gaussienne est une fonction continue 1D car elle n&rsquo;a qu&rsquo;une seule valeur
+dimension (donc 4 modèles en tout : un pour la classe <code>rouge</code> sur la dimension
+$x$, un pour la classe <code>bleue</code> aussi sur $x_1$, et la même chose pour la
+dimension $x_2$). Une gaussienne (aussi appelée distribution normale) est la
+fameuse &ldquo;courbe en cloche&rdquo;, qui détermine comment la &ldquo;masse de probabilité&rdquo; est
+répartie autour d&rsquo;une valeur centrale (qu&rsquo;on appelle la moyenne) :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/gaussian.png alt></p><p>La gaussienne est une fonction continue 1D car elle n&rsquo;a qu&rsquo;une seule valeur
 dépendante (l&rsquo;axe horizontal). L&rsquo;axe vertical, la valeur de la fonction,
 correspond à la masse de la probabilité. Remarquez un aspect important : la
 valeur de la fonction à un point précis donné sur l&rsquo;axe horizontal (par exemple
@@ -188,7 +189,35 @@ l&rsquo;intégrale de la fonction entre deux points donnés. Étant donné que l
 de la masse (l&rsquo;aire sous la courbe) est 1, on peut dire que la probabilité qu&rsquo;un
 événement soit plus petit que la moyenne (ou plus grand) est de 50% (c-à-d que
 l&rsquo;aire sous la courbe, ou l&rsquo;intégrale, de la partie à droite ou à gauche de la
-barre verticale de la moyenne totalise 0.5).</p><h4 id=autres-algorithmes-de-classification>Autres algorithmes de classification
+barre verticale de la moyenne totalise 0.5).</p><p>Mais donc que veut-on dire par la modélisation par une gaussienne?</p><p>La première étape consiste à projeter les points sur l&rsquo;axe $x_1$, ce qui les
+rend uni-dimensionnels.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nb_x1_proj.png alt></p><p>Une fois les points projetés, on peut modéliser (c-à-d décrire) les classes de
+points à l&rsquo;aide de gaussiennes, dont l&rsquo;épaisseur correspondra à la densité (ou
+quantité) de points sur l&rsquo;axe, pour chaque classe.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nb_x1_gauss.png alt></p><p>On répète la procédure pour les deux classes, sur l&rsquo;axe $x_2$.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nb_x2_proj.png alt></p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nb_x2_gauss.png alt></p><p>À ce stade, nous avons donc quatre modèles :</p>$$p(x_1 \mid \text{rouge}) = \mathcal{N}(x_1; \mu_{1,\text{rouge}}, \sigma_{1,\text{rouge}}^2)$$<p></p>$$p(x_2 \mid \text{rouge}) = \mathcal{N}(x_2; \mu_{2,\text{rouge}}, \sigma_{2,\text{rouge}}^2)$$<p></p>$$p(x_1 \mid \text{bleue}) = \mathcal{N}(x_1; \mu_{1,\text{bleue}}, \sigma_{1,\text{bleue}}^2)$$<p></p>$$p(x_2 \mid \text{bleue}) = \mathcal{N}(x_2; \mu_{2,\text{bleue}}, \sigma_{2,\text{bleue}}^2)$$<p>où $\mathcal{N}$ représente la gaussienne, et $\mu$ et $\sigma$ représentent ses
+paramètres (qui déterminent sa forme particulière). L&rsquo;apprentissage d&rsquo;un modèle
+de classification naive bayésienne constitue donc le calcul des valeurs
+optimales pour ces différents paramètres (que nous n&rsquo;allons pas couvrir ici).</p><p>On peut combiner les modèles :</p>$$p(x_1, x_2 \mid \text{rouge}) \;=\; p(x_1 \mid \text{rouge}) \cdot p(x_2 \mid \text{rouge})$$<p></p>$$p(x_1, x_2 \mid \text{bleue}) \;=\; p(x_1 \mid \text{bleue}) \cdot p(x_2 \mid \text{bleue})$$<p>ou encore, pour simplifier :</p>$$P(\mathbf{x} \mid y)$$<p>Ce modèle est <em>génératif</em>, car il génère un point $\mathbf{x}$ (donc ses coordonnées
+$x_1$ et $x_2$), à partir d&rsquo;une classe donnée $y$ (<code>rouge</code> ou <code>bleue</code>). On dit
+aussi que ce que ce modèle est la probabilité de $X$ <em>conditionnelle</em> à $Y$.</p><p>Mais ce qui nous intéresse, dans un contexte de classification, est l&rsquo;équivalent
+de ce que nous avons calculé pour le modèle de régression logistique, soit :</p>$$P(y \mid \mathbf{x})$$<p>Il semble donc que notre modèle génératif soit le contraire de ce qu&rsquo;on l&rsquo;on
+veut. Est-il possible de &ldquo;l&rsquo;inverser&rdquo;, pour obtenir le modèle que l&rsquo;on souhaite,
+soit la probabilité d&rsquo;une classe étant donné un point?</p><p>Il est possible de faire cela à l&rsquo;aide du <a href=https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes>théorème de
+Bayes</a> (ce qui
+explique donc le nom de l&rsquo;algorithme), qui stipule que :</p>$$P(y \mid \mathbf{x}) \;=\; \frac{P(\mathbf{x} \mid y) \, P(y)}{P(\mathbf{x})}$$<p>Nous connaissons déjà évidemment $P(\mathbf{x} \mid y)$, que nous avons calculé
+ci-haut, et $P(Y)$ est simple à calculer : il s&rsquo;agit simplement de la
+probabilité à priori (sans aucune autre connaissance) que les points soient
+<code>rouges</code> ou <code>bleus</code> (ce qui est possiblement 50%, équiprobable, si notre
+ensemble d’entraînement est balancé, moitié <code>rouge</code> moitié <code>bleu</code>).
+$P(\mathbf{x})$ est moins clair (la probabilité à priori des données?), mais
+étant donné que cette valeur ne dépend pas de $y$, on peut simplement l&rsquo;ignorer
+pour obtenir un algorithme de classification final :</p>$$
+\text{classification}(\mathbf{x}) =
+\left\{
+\begin{array}{ll}
+\mathtt{rouge} \text{ si } P(\mathbf{x} \mid \text{rouge}) P(\text{rouge}) \ge P(\mathbf{x} \mid \text{bleu}) P(\text{bleu}) & \\
+\mathtt{bleu} \text{ sinon } & \\
+\end{array}
+\right.
+$$<h4 id=autres-algorithmes-de-classification>Autres algorithmes de classification
 <a class=anchor href=#autres-algorithmes-de-classification>#</a></h4><ul><li>Régression logistique (ex1: à partir du nombre d&rsquo;heures étudiées et du nombre de cours, prédire si un étudiant a gradué ou non, ex2: à partir des caractéristiques des passagers du Titanic, prédire s&rsquo;ils ont survécu ou non)</li><li>k-NN</li><li>Arbres de décision</li><li>Naive Bayes</li><li>Réseau de neurones</li></ul><h3 id=régression>Régression
 <a class=anchor href=#r%c3%a9gression>#</a></h3><p>Une régression est une famille d&rsquo;algorithmes d&rsquo;apprentissage supervisé
 (ou plus classiquement, de modélisation statistique) dont le but est
