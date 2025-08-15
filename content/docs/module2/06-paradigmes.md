@@ -293,10 +293,11 @@ chance d'avoir été *généré* par un modèle particulier (disons `rouge`) plu
 qu'un autre.
 
 Chaque couple dimension / classe sera modélisé par une gaussienne à une
-dimension (donc 4 modèles en tout). Une gaussienne (aussi appelée distribution
-normale) est la fameuse "courbe en cloche", qui détermine comment la "masse de
-probabilité" est répartie autour d'une valeur centrale (qu'on appelle la
-moyenne) :
+dimension (donc 4 modèles en tout : un pour la classe `rouge` sur la dimension
+$x$, un pour la classe `bleue` aussi sur $x_1$, et la même chose pour la
+dimension $x_2$). Une gaussienne (aussi appelée distribution normale) est la
+fameuse "courbe en cloche", qui détermine comment la "masse de probabilité" est
+répartie autour d'une valeur centrale (qu'on appelle la moyenne) :
 
 ![](/images/module2/gaussian.png)
 
@@ -312,6 +313,84 @@ de la masse (l'aire sous la courbe) est 1, on peut dire que la probabilité qu'u
 événement soit plus petit que la moyenne (ou plus grand) est de 50% (c-à-d que
 l'aire sous la courbe, ou l'intégrale, de la partie à droite ou à gauche de la
 barre verticale de la moyenne totalise 0.5).
+
+Mais donc que veut-on dire par la modélisation par une gaussienne?
+
+La première étape consiste à projeter les points sur l'axe $x_1$, ce qui les
+rend uni-dimensionnels.
+
+![](/images/module2/nb_x1_proj.png)
+
+Une fois les points projetés, on peut modéliser (c-à-d décrire) les classes de
+points à l'aide de gaussiennes, dont l'épaisseur correspondra à la densité (ou
+quantité) de points sur l'axe, pour chaque classe.
+
+![](/images/module2/nb_x1_gauss.png)
+
+On répète la procédure pour les deux classes, sur l'axe $x_2$.
+
+![](/images/module2/nb_x2_proj.png)
+
+![](/images/module2/nb_x2_gauss.png)
+
+À ce stade, nous avons donc quatre modèles :
+
+$$p(x_1 \mid \text{rouge}) = \mathcal{N}(x_1; \mu_{1,\text{rouge}}, \sigma_{1,\text{rouge}}^2)$$
+$$p(x_2 \mid \text{rouge}) = \mathcal{N}(x_2; \mu_{2,\text{rouge}}, \sigma_{2,\text{rouge}}^2)$$
+$$p(x_1 \mid \text{bleue}) = \mathcal{N}(x_1; \mu_{1,\text{bleue}}, \sigma_{1,\text{bleue}}^2)$$
+$$p(x_2 \mid \text{bleue}) = \mathcal{N}(x_2; \mu_{2,\text{bleue}}, \sigma_{2,\text{bleue}}^2)$$
+
+où $\mathcal{N}$ représente la gaussienne, et $\mu$ et $\sigma$ représentent ses
+paramètres (qui déterminent sa forme particulière). L'apprentissage d'un modèle
+de classification naive bayésienne constitue donc le calcul des valeurs
+optimales pour ces différents paramètres (que nous n'allons pas couvrir ici).
+
+On peut combiner les modèles :
+
+$$p(x_1, x_2 \mid \text{rouge}) \;=\; p(x_1 \mid \text{rouge}) \cdot p(x_2 \mid \text{rouge})$$
+$$p(x_1, x_2 \mid \text{bleue}) \;=\; p(x_1 \mid \text{bleue}) \cdot p(x_2 \mid \text{bleue})$$
+
+ou encore, pour simplifier :
+
+$$P(\mathbf{x} \mid y)$$
+
+Ce modèle est *génératif*, car il génère un point $\mathbf{x}$ (donc ses coordonnées
+$x_1$ et $x_2$), à partir d'une classe donnée $y$ (`rouge` ou `bleue`). On dit
+aussi que ce que ce modèle est la probabilité de $X$ *conditionnelle* à $Y$.
+
+Mais ce qui nous intéresse, dans un contexte de classification, est l'équivalent
+de ce que nous avons calculé pour le modèle de régression logistique, soit :
+
+$$P(y \mid \mathbf{x})$$
+
+Il semble donc que notre modèle génératif soit le contraire de ce qu'on l'on
+veut. Est-il possible de "l'inverser", pour obtenir le modèle que l'on souhaite,
+soit la probabilité d'une classe étant donné un point?
+
+Il est possible de faire cela à l'aide du [théorème de
+Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes) (ce qui
+explique donc le nom de l'algorithme), qui stipule que :
+
+$$P(y \mid \mathbf{x}) \;=\; \frac{P(\mathbf{x} \mid y) \, P(y)}{P(\mathbf{x})}$$
+
+Nous connaissons déjà évidemment $P(\mathbf{x} \mid y)$, que nous avons calculé
+ci-haut, et $P(Y)$ est simple à calculer : il s'agit simplement de la
+probabilité à priori (sans aucune autre connaissance) que les points soient
+`rouges` ou `bleus` (ce qui est possiblement 50%, équiprobable, si notre
+ensemble d’entraînement est balancé, moitié `rouge` moitié `bleu`).
+$P(\mathbf{x})$ est moins clair (la probabilité à priori des données?), mais
+étant donné que cette valeur ne dépend pas de $y$, on peut simplement l'ignorer
+pour obtenir un algorithme de classification final :
+
+$$
+\text{classification}(\mathbf{x}) =
+\left\{
+\begin{array}{ll}
+\mathtt{rouge} \text{ si } P(\mathbf{x} \mid \text{rouge}) P(\text{rouge}) \ge P(\mathbf{x} \mid \text{bleu}) P(\text{bleu}) & \\
+\mathtt{bleu} \text{ sinon } & \\
+\end{array}
+\right.
+$$
 
 #### Autres algorithmes de classification
 
