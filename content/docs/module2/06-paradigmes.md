@@ -293,7 +293,25 @@ chance d'avoir été *généré* par un modèle particulier (disons `rouge`) plu
 qu'un autre.
 
 Chaque couple dimension / classe sera modélisé par une gaussienne à une
-dimension (donc 4 modèles en tout).
+dimension (donc 4 modèles en tout). Une gaussienne (aussi appelée distribution
+normale) est la fameuse "courbe en cloche", qui détermine comment la "masse de
+probabilité" est répartie autour d'une valeur centrale (qu'on appelle la
+moyenne) :
+
+![](/images/module2/gaussian.png)
+
+La gaussienne est une fonction continue 1D car elle n'a qu'une seule valeur
+dépendante (l'axe horizontal). L'axe vertical, la valeur de la fonction,
+correspond à la masse de la probabilité. Remarquez un aspect important : la
+valeur de la fonction à un point précis donné sur l'axe horizontal (par exemple
+la moyenne) ne correspond PAS à la probabilité de ce point, malgré ce que
+l'intuition voudrait croire. Étant donné que la masse de probabilité est une
+fonction continue, pour calculer une probabilité donnée il faut calculer
+l'intégrale de la fonction entre deux points donnés. Étant donné que la totalité
+de la masse (l'aire sous la courbe) est 1, on peut dire que la probabilité qu'un
+événement soit plus petit que la moyenne (ou plus grand) est de 50% (c-à-d que
+l'aire sous la courbe, ou l'intégrale, de la partie à droite ou à gauche de la
+barre verticale de la moyenne totalise 0.5).
 
 #### Autres algorithmes de classification
 
