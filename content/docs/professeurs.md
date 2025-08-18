@@ -9,8 +9,6 @@ Ce cours a été co-créé par trois professeurs de la TÉLUQ.
 
 ## Richard Hotte
 
-https://www.teluq.ca/siteweb/univ/rhotte.html?p_nue=true
-
 [Richard Hotte](https://www.teluq.ca/siteweb/univ/rhotte.html?p_nue=true) est
 titulaire de la chaire UNESCO en système intelligent d'apprentissage repensé
 pour tous (UNESCO Chair for Global Smart Disruptive Learning (GSDL)). Cette
