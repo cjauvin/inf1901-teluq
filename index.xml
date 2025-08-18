@@ -285,7 +285,6 @@ elles-mêmes des liens très étroits).&lt;/p></description></item><item><title>
  Richard Hotte
  &lt;a class="anchor" href="#richard-hotte">#&lt;/a>
 &lt;/h2>
-&lt;p>&lt;a href="https://www.teluq.ca/siteweb/univ/rhotte.html?p_nue=true">https://www.teluq.ca/siteweb/univ/rhotte.html?p_nue=true&lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://www.teluq.ca/siteweb/univ/rhotte.html?p_nue=true">Richard Hotte&lt;/a> est
 titulaire de la chaire UNESCO en système intelligent d&amp;rsquo;apprentissage repensé
 pour tous (UNESCO Chair for Global Smart Disruptive Learning (GSDL)). Cette
@@ -314,27 +313,30 @@ Europe, en Afrique et dans d&amp;rsquo;autres régions du monde.&lt;/p></descrip
  Travaux notés
  &lt;a class="anchor" href="#travaux-not%c3%a9s">#&lt;/a>
 &lt;/h1>
-&lt;ol>
-&lt;li>
-&lt;p>Module 1 : ligne du temps&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Module 2 : bla bla&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Module 3&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Module 4&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Module 5&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="utilisation-de-lia">
- Utilisation de l&amp;rsquo;IA
- &lt;a class="anchor" href="#utilisation-de-lia">#&lt;/a>
-&lt;/h2></description></item><item><title>Google Sheets</title><link>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</guid><description>&lt;h1 id="google-sheets">
+&lt;h2 id="module-1">
+ Module 1
+ &lt;a class="anchor" href="#module-1">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%c3%a9-1">Visualisation annotée&lt;/a> illustrant des concepts
+historiques et logiques ainsi que des acteur. &lt;em>Pondération : 15% de la note
+finale.&lt;/em>&lt;/p>
+&lt;h2 id="module-2">
+ Module 2
+ &lt;a class="anchor" href="#module-2">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%c3%a9-2">Construction guidée&lt;/a> d’un algorithme de classification des courriels. &lt;em>Pondération : 20% de la note finale.&lt;/em>&lt;/p>
+&lt;h2 id="module-3">
+ Module 3
+ &lt;a class="anchor" href="#module-3">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%c3%a9-3">Exercices interactifs&lt;/a> suivis de questions interprétatives sur l’apprentissage
+profond. &lt;em>Pondération : 20% de la note finale.&lt;/em>&lt;/p>
+&lt;h2 id="module-4">
+ Module 4
+ &lt;a class="anchor" href="#module-4">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%c3%a9-4">Construction guidée&lt;/a> d&amp;rsquo;un modèle de langage bigramme. &lt;em>Pondération : 20% de la
+note finale.&lt;/em>&lt;/p></description></item><item><title>Google Sheets</title><link>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</guid><description>&lt;h1 id="google-sheets">
  Google Sheets
  &lt;a class="anchor" href="#google-sheets">#&lt;/a>
 &lt;/h1>
@@ -374,7 +376,7 @@ profonds entre les mathématiques, la philosophie et l&amp;rsquo;intelligence ar
  &lt;/div>
 &lt;/details>
 &lt;p>En gros, on y présente 4 paradigmes mathématiques et leur correspondance dans le monde
-de l&amp;rsquo;intelligence artificielle :&lt;/p></description></item><item><title>Travail noté 1</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9/</guid><description>&lt;h1 id="travail-noté-1--création-dune-visualisation-annotée">
+de l&amp;rsquo;intelligence artificielle :&lt;/p></description></item><item><title>Travail noté 1</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</guid><description>&lt;h1 id="travail-noté-1--création-dune-visualisation-annotée">
  Travail noté #1 : création d&amp;rsquo;une visualisation annotée
  &lt;a class="anchor" href="#travail-not%c3%a9-1--cr%c3%a9ation-dune-visualisation-annot%c3%a9e">#&lt;/a>
 &lt;/h1>
