@@ -30,5 +30,3 @@ note finale.*
 
 [Rapport critique](/docs/module5/travail-noté-5) sur une question philosophique ou éthique reliée à l’IA.
 *Pondération : 25% de la note finale.*
-
-

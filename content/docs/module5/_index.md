@@ -1,35 +1,35 @@
 ---
-title: "Module 5 - Enjeux éthiques et philosophiques"
+title: "Module 5 - Autour de l'IA"
 weight: 500
 bookCollapseSection: true
 ---
 
 ![](/images/paperclip2.jpg)
 
-# Des enjeux éthiques et philosophiques
+# Module 5 - Autour de l'IA
 
-Ce module explore les enjeux philosophiques et éthiques soulevés par le
-développement rapide de l’intelligence artificielle (IA). À travers deux
-activités principales, vous serez amenés à analyser les tensions entre les
-visions optimistes et pessimistes de l’IA, à réfléchir aux implications de ces
-technologies pour notre société et à développer une argumentation critique.
+L'intelligence artificielle ne se limite pas à des algorithmes et des
+données : elle est aussi le reflet des visions, des valeurs et des choix des
+société que nous projetons sur elle.
 
-La première activité consiste à visionner une vidéo qui présente deux
-perspectives contrastées : celle des doomers, qui mettent en garde contre les
-dangers potentiels de l’IA, et celle des accélérationistes, qui prônent un
-développement accéléré pour maximiser les bénéfices de l’IA. Cette vidéo vous
-fournira un cadre pour comprendre les débats actuels et alimentera votre
-réflexion.
+Dans ce module, vous découvrirez quatre grandes attitudes contemporaines de l'IA
+que sont la vision libérale, la vision défaitiste ("doomers"), la vision
+optimistes (accélérationnistes) et la vision transhumaniste.
 
-La seconde activité est un travail noté (pondération : 30 %), un rapport
-critique où vous analyserez une question philosophique ou éthique liée à l’IA.
-Vous serez encouragés à utiliser un outil d’IA pour assister votre rédaction,
-tout en réfléchissant aux implications éthiques de cet usage. Ce rapport, à
-remettre à la semaine 15, vous permettra de synthétiser vos idées et de prendre
-position sur une problématique complexe.
+## But et objectifs
 
-Ce module vise à aiguiser votre esprit critique, à approfondir votre
-compréhension des dilemmes éthiques liés à l’IA et à vous préparer à naviguer
-dans un monde où ces technologies jouent un rôle croissant. Prenez le temps de
-vous engager pleinement dans les activités proposées, car elles constituent une
-occasion unique de relier théorie, analyse et réflexion personnelle.
+Le but est de vous amener à bien saisir les enjeux philosophiques et éthiques de
+l'intelligence artificielle en formulant des arguments critiques.
+
+Plus spécifiquement, ce module vous permettra de :
+
+* Explorer quatre attitudes contemporaines de l'IA et leurs impacts sur l'avenir de la société;
+* Explorer des thèmes scientifiques et philosophiques autour de l'IA avec une conversation entre deux professeurs du cours
+
+## Évaluation
+
+L'évaluation pour ce module portera sur un travail de réflexion à caractère
+éthique de l'IA soutenu par une exploration des diverses visions qui ont cours
+aujourd'hui dans notre société. Bien évidemment, un questionnement éthique ne se
+limite pas à un résumé, mais requiert un positionnement personnel argumenté de
+votre part. La durée de ce module est d'environ 30 heures.

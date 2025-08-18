@@ -8,6 +8,43 @@ weight: 1
 À l'été 2025, les professeurs Daniel Lemire et Christian Jauvin ont eu une discussion par rapport à
 certains thèmes touchant de près ou de loin l'IA, animée par Dolorès Grossemy.
 
+Cet entretien vidéo avec les professeurs Christian Jauvin et Daniel Lemire, du
+département science et technologie de l'Université TÉLUQ, offre une exploration
+approfondie des enjeux philosophiques, scientifiques et sociétaux liés à
+l'intelligence artificielle. À travers une discussion dynamique, les professeurs
+abordent des concepts comme le paradoxe de Moravec, l'évolution des définitions
+de l'intelligence (y compris le phénomène des objectifs changeants), la
+distinction entre intelligence étroite et générale, le test de Turing, les
+zombies philosophiques, l'alignement de l'IA, ainsi que les influences
+culturelles et les risques existentiels. Ces éléments enrichissent directement
+l'étude des quatre visions contemporaines de l'IA – libérale, défaitiste,
+optimiste/accélérationniste et transhumaniste – en invitant à une réflexion sur
+les tensions entre progrès technologique, éthique et humanité.
+
+Pour tirer le meilleur parti de cette vidéo, visionnez-la attentivement en
+activant les sous-titres si nécessaire, et prenez des notes sur les idées
+principales, les exemples concrets (comme les références à Deep Blue ou ChatGPT)
+et les liens avec les visions de l'IA présentées dans l'activité. Accordez une
+attention particulière aux passages philosophiques, car ils soulèvent des
+questions éthiques qui pourront nourrir votre travail noté sur la réflexion
+critique. Après le visionnement, relisez vos notes et comparez-les au tableau
+comparatif des quatre visions pour identifier les convergences ou les
+oppositions.
+
+En préparation à votre écoute, consultez les liens suivants.
+
+* [Transhumanisme](https://fr.wikipedia.org/wiki/Transhumanisme)
+* [Qualia](https://fr.wikipedia.org/wiki/Qualia)
+* [Eliezer Yudkowsky](https://fr.wikipedia.org/wiki/Eliezer_Yudkowsky)
+* [2001, l'Odyssée de l'espace](https://fr.wikipedia.org/wiki/2001,_l%27Odyss%C3%A9e_de_l%27espace)
+* [Wargames](https://fr.wikipedia.org/wiki/Wargames_(film))
+* [Blade Runner](https://fr.wikipedia.org/wiki/Blade_Runner_(film))
+* [Yoshua Bengio](https://fr.wikipedia.org/wiki/Yoshua_Bengio)
+* [Le transhumanisme est-il un humanisme?](https://questions-constitutionnelles.fr/le-transhumanisme-est-il-un-humanisme/)
+* [Transhumanisme et effondrement entre utopie et idéologie](https://revues-msh.uca.fr/kairos/index.php?id=578)
+
+## La conversation
+
 {{< youtube id="R8sqq_gJbUI" >}}
 
 * [00:00](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=0s) Le paradoxe de Moravec
@@ -35,6 +72,29 @@ certains thèmes touchant de près ou de loin l'IA, animée par Dolorès Grossem
 * [1:42:04](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=6124s) Yoshua Bengio
 * [1:48:00](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=6480s) Element AI et le Québec
 * [1:55:06](https://www.youtube.com/watch?v=R8sqq_gJbUI&t=6906s) L'audace de OpenAI et Ozzy Osbourne
+
+## Questions
+
+Après votre visionnement, essayez de répondre aux dix questions suivantes.
+
+1. Comment le paradoxe de Moravec illustre-t-il les limites actuelles de l'IA dans les tâches quotidiennes, et en quoi cela questionne-t-il la vision optimiste qui prône une accélération technologique sans limites ?
+
+2. Le phénomène des objectifs changeants (moving goalposts) montre-t-il que notre définition de l'intelligence évolue avec les avancées technologiques ?
+
+3. L'IA étroite, comme celle de Deep Blue aux échecs, diffère-t-elle fondamentalement d'une IA générale, et cela justifie-t-il les craintes de la vision défaitiste face à une potentielle superintelligence ?
+
+4. Le test de Turing, maintenant dépassé par des modèles comme ChatGPT, prouve-t-il que l'IA peut simuler l'intelligence humaine, et comment cela interroge-t-il la vision transhumaniste sur la fusion homme-machine ?
+
+5. Les zombies philosophiques représentent-ils une critique valable de l'IA, en suggérant qu'elle pourrait manquer de conscience réelle, et cela aligne-t-il avec les préoccupations éthiques de la vision libérale ?
+
+6. L'alignement de l'IA avec les valeurs humaines est-il réalisable sans régulation stricte, et en quoi cela contredit-il la vision accélérationniste qui défend une croissance technologique illimitée ?
+
+7. Les influences culturelles, comme les films de science-fiction (2001 : l'odyssée de l'espace ou Terminator), façonnent-elles nos peurs existentielles, et cela amplifie-t-il la vision défaitiste des doomers ?
+
+8. La philosophie de l'esprit, avec des concepts comme les qualia, suggère-t-elle que l'IA ne pourra jamais égaler l'expérience humaine, et cela remet-il en cause la vision transhumaniste du dépassement biologique ?
+9. Les rationalistes, comme Eliezer Yudkowsky, prônent-ils une approche trop alarmiste pour éviter les risques, et cela s'harmonise-t-il avec la vision libérale qui équilibre innovation et contrôle démocratique ?
+
+10. Les critiques actuelles sur l'opacité des algorithmes et le manque de régulation sont-elles justifiées face aux avancées des grands modèles de langage, et comment cela influence-t-il une réflexion éthique sur les quatre visions de l'IA ?
 
 ## Les thèmes de la discussion
 
