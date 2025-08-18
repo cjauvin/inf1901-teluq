@@ -5,21 +5,21 @@ weight: 1
 
 # Conversation synoptique autour de l'IA
 
-À l'été 2025, les professeurs Daniel Lemire et Christian Jauvin ont eu une discussion par rapport à
-certains thèmes touchant de près ou de loin l'IA, animée par Dolorès Grossemy.
+À l'été 2025, les professeurs Daniel Lemire et Christian Jauvin, du département
+science et technologie de l'Université TÉLUQ, ont eu une discussion par rapport
+à certains thèmes touchant de près ou de loin l'IA, animée par Dolorès Grossemy.
 
-Cet entretien vidéo avec les professeurs Christian Jauvin et Daniel Lemire, du
-département science et technologie de l'Université TÉLUQ, offre une exploration
-approfondie des enjeux philosophiques, scientifiques et sociétaux liés à
-l'intelligence artificielle. À travers une discussion dynamique, les professeurs
-abordent des concepts comme le paradoxe de Moravec, l'évolution des définitions
-de l'intelligence (y compris le phénomène des objectifs changeants), la
-distinction entre intelligence étroite et générale, le test de Turing, les
-zombies philosophiques, l'alignement de l'IA, ainsi que les influences
-culturelles et les risques existentiels. Ces éléments enrichissent directement
-l'étude des quatre visions contemporaines de l'IA – libérale, défaitiste,
-optimiste/accélérationniste et transhumaniste – en invitant à une réflexion sur
-les tensions entre progrès technologique, éthique et humanité.
+Cet entretien vidéo offre une exploration approfondie des enjeux philosophiques,
+scientifiques et sociétaux liés à l'intelligence artificielle. À travers une
+discussion dynamique, les professeurs abordent des concepts comme le paradoxe de
+Moravec, l'évolution des définitions de l'intelligence (y compris le phénomène
+des objectifs changeants), la distinction entre intelligence étroite et
+générale, le test de Turing, les zombies philosophiques, l'alignement de l'IA,
+ainsi que les influences culturelles et les risques existentiels. Ces éléments
+enrichissent directement l'étude des quatre visions contemporaines de l'IA –
+libérale, défaitiste, optimiste/accélérationniste et transhumaniste – en
+invitant à une réflexion sur les tensions entre progrès technologique, éthique
+et humanité.
 
 Pour tirer le meilleur parti de cette vidéo, visionnez-la attentivement en
 activant les sous-titres si nécessaire, et prenez des notes sur les idées
