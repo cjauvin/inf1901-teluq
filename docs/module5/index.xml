@@ -1,45 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module 5 - Enjeux éthiques et philosophiques on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/</link><description>Recent content in Module 5 - Enjeux éthiques et philosophiques on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/module5/index.xml" rel="self" type="application/rss+xml"/><item><title>Conversation synoptique autour de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</guid><description>&lt;h1 id="conversation-synoptique-autour-de-lia">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module 5 - Autour de l'IA on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/</link><description>Recent content in Module 5 - Autour de l'IA on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/module5/index.xml" rel="self" type="application/rss+xml"/><item><title>Attitudes par rapport à l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/attitudes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/attitudes/</guid><description>&lt;h1 id="les-grandes-attitudes-contemporaines-par-rapport-à-lia">
+ Les grandes attitudes contemporaines par rapport à l&amp;rsquo;IA
+ &lt;a class="anchor" href="#les-grandes-attitudes-contemporaines-par-rapport-%c3%a0-lia">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="libérale">
+ Libérale
+ &lt;a class="anchor" href="#lib%c3%a9rale">#&lt;/a>
+&lt;/h2>
+&lt;p>La vision libérale conçoit l&amp;rsquo;intelligence artificielle comme un outil de progrès
+techniques et économie au service de l&amp;rsquo;individu et du marché. Elle s&amp;rsquo;appuie sur
+des valeurs héritées du libéralisme classique (liberté individuelle, innovation,
+responsabilité) et du néolibéralisme (primauté du marché, dérégulation,
+entrepreneuriat). Cette vision est incarnée par les grandes entreprises
+technologiques (Big Tech) telles Google, Amazon, Microsoft ou OpenAI qui
+promeuvent l&amp;rsquo;IA comme un moyen de générer de nouveaux marchés. Cette vision
+libérale est présentée dans le documentaire L&amp;rsquo;intelligence artificielle décodée
+(Radio-Canada, 2023), qui insiste sur la régulation et l&amp;rsquo;équilibre entre
+innovation et contrôle. Ce documentaire est relativement long (2 heures), mais
+il est divisé en sections. Deux sections couvrent davantage les aspects
+critiques et éthiques. Ce sont Défis éthiques et sociaux qui abordent des
+questions liées à la vie privée, à la sécurité et aux inégalités (1 : 00 : 40)
+ainsi que Furturs possibles qui discute des scénarios optimistes et pessimistes
+concernant l&amp;rsquo;impact de l&amp;rsquo;IA sur la société (1 : 23 ; 01).&lt;/p></description></item><item><title>Conversation synoptique autour de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</guid><description>&lt;h1 id="conversation-synoptique-autour-de-lia">
  Conversation synoptique autour de l&amp;rsquo;IA
  &lt;a class="anchor" href="#conversation-synoptique-autour-de-lia">#&lt;/a>
 &lt;/h1>
 &lt;p>À l&amp;rsquo;été 2025, les professeurs Daniel Lemire et Christian Jauvin ont eu une discussion par rapport à
 certains thèmes touchant de près ou de loin l&amp;rsquo;IA, animée par Dolorès Grossemy.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/R8sqq_gJbUI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
-
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=0s">00:00&lt;/a> Le paradoxe de Moravec&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=360s">06:00&lt;/a> La vision originale de l&amp;rsquo;IA classique (GOFAI)&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=540s">09:00&lt;/a> Les objectifs dynamiques (moving goalpost)&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=714s">11:54&lt;/a> Est-ce que Google Maps est de l&amp;rsquo;IA?&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=1036s">17:16&lt;/a> L&amp;rsquo;IA générale&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=1426s">23:46&lt;/a> Le test de Turing&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=1695s">28:15&lt;/a> La philosophie de l&amp;rsquo;esprit&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=1785s">29:45&lt;/a> Les qualias et les zombies philosophiques&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=2198s">36:38&lt;/a> Est-ce que l&amp;rsquo;IA est un zombie?&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=2705s">45:05&lt;/a> Penrose&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=2797s">46:37&lt;/a> Chomsky&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=3050s">50:50&lt;/a> Wittgenstein&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=3309s">55:09&lt;/a> La science-fiction&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=3388s">56:28&lt;/a> 2001 Odyssée de l&amp;rsquo;espace&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=3625s">1:00:25&lt;/a> Blade Runner&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=3831s">1:03:51&lt;/a> La guerre et la menace nucléaire&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=4192s">1:09:52&lt;/a> Wargames&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=4317s">1:11:57&lt;/a> Les rationalistes&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=4582s">1:16:22&lt;/a> Eliezer Yudkowsky&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=4850s">1:20:50&lt;/a> La singularité&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=5194s">1:26:34&lt;/a> L&amp;rsquo;alignement&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=5405s">1:30:05&lt;/a> Les limites de l&amp;rsquo;IA&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=6124s">1:42:04&lt;/a> Yoshua Bengio&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=6480s">1:48:00&lt;/a> Element AI et le Québec&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=R8sqq_gJbUI&amp;amp;t=6906s">1:55:06&lt;/a> L&amp;rsquo;audace de OpenAI et Ozzy Osbourne&lt;/li>
-&lt;/ul>
-&lt;h2 id="les-thèmes-de-la-discussion">
- Les thèmes de la discussion
- &lt;a class="anchor" href="#les-th%c3%a8mes-de-la-discussion">#&lt;/a>
-&lt;/h2>
-&lt;p>En guise de préparation à la discussion, les questions suivantes avaient été choisies.&lt;/p></description></item><item><title>Travail noté 5</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</guid><description>&lt;h1 id="travail-noté-5">
+&lt;p>Cet entretien vidéo avec les professeurs Christian Jauvin et Daniel Lemire, du
+département science et technologie de l&amp;rsquo;Université TÉLUQ, offre une exploration
+approfondie des enjeux philosophiques, scientifiques et sociétaux liés à
+l&amp;rsquo;intelligence artificielle. À travers une discussion dynamique, les professeurs
+abordent des concepts comme le paradoxe de Moravec, l&amp;rsquo;évolution des définitions
+de l&amp;rsquo;intelligence (y compris le phénomène des objectifs changeants), la
+distinction entre intelligence étroite et générale, le test de Turing, les
+zombies philosophiques, l&amp;rsquo;alignement de l&amp;rsquo;IA, ainsi que les influences
+culturelles et les risques existentiels. Ces éléments enrichissent directement
+l&amp;rsquo;étude des quatre visions contemporaines de l&amp;rsquo;IA – libérale, défaitiste,
+optimiste/accélérationniste et transhumaniste – en invitant à une réflexion sur
+les tensions entre progrès technologique, éthique et humanité.&lt;/p></description></item><item><title>Travail noté 5</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</guid><description>&lt;h1 id="travail-noté-5">
  Travail noté 5
  &lt;a class="anchor" href="#travail-not%c3%a9-5">#&lt;/a>
 &lt;/h1>
