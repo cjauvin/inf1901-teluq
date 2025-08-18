@@ -277,7 +277,7 @@ faire un modèle plus puissant et complexe :
 
 - Considérer ..
 
-#### Classification bayésienne naive
+#### Classification bayésienne naive (gaussienne)
 
 Examinons maintenant un autre algorithme de classification que nous pourrions
 utiliser sur nos données en deux dimensions.
@@ -356,7 +356,7 @@ $$P(\mathbf{x} \mid y)$$
 
 Ce modèle est *génératif*, car il génère un point $\mathbf{x}$ (donc ses coordonnées
 $x_1$ et $x_2$), à partir d'une classe donnée $y$ (`rouge` ou `bleue`). On dit
-aussi que ce que ce modèle est la probabilité de $X$ *conditionnelle* à $Y$.
+aussi que ce que ce modèle est la probabilité de $\mathbf{x}$ *conditionnelle* à $y$.
 
 Mais ce qui nous intéresse, dans un contexte de classification, est l'équivalent
 de ce que nous avons calculé pour le modèle de régression logistique, soit :
@@ -374,7 +374,7 @@ explique donc le nom de l'algorithme), qui stipule que :
 $$P(y \mid \mathbf{x}) \;=\; \frac{P(\mathbf{x} \mid y) \, P(y)}{P(\mathbf{x})}$$
 
 Nous connaissons déjà évidemment $P(\mathbf{x} \mid y)$, que nous avons calculé
-ci-haut, et $P(Y)$ est simple à calculer : il s'agit simplement de la
+ci-haut, et $P(y)$ est simple à calculer : il s'agit simplement de la
 probabilité à priori (sans aucune autre connaissance) que les points soient
 `rouges` ou `bleus` (ce qui est possiblement 50%, équiprobable, si notre
 ensemble d’entraînement est balancé, moitié `rouge` moitié `bleu`).
@@ -391,6 +391,14 @@ $$
 \end{array}
 \right.
 $$
+
+Tout comme la régression logistique que nous avons étudiée, cet algorithme
+produit une décision linéaire, pour des raisons mathématiques que nous n'allons
+pas explorer plus à fond.
+
+#### Classification bayésienne naive (multinomiale)
+
+
 
 #### Autres algorithmes de classification
 
