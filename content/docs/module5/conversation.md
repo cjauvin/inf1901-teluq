@@ -96,9 +96,11 @@ Après votre visionnement, essayez de répondre aux dix questions suivantes.
 
 10. Les critiques actuelles sur l'opacité des algorithmes et le manque de régulation sont-elles justifiées face aux avancées des grands modèles de langage, et comment cela influence-t-il une réflexion éthique sur les quatre visions de l'IA ?
 
-## Les thèmes de la discussion
+## Les thèmes préalables de la discussion
 
-En guise de préparation à la discussion, les questions suivantes avaient été choisies.
+En guise de préparation à la discussion, les questions suivantes avaient été
+choisies. Tous les thèmes n'ont pas été abordés, mais nous avons demandé à
+ChatGPT de répondre à toutes les questions de manière brève.
 
 ### 1. IA versus informatique
 

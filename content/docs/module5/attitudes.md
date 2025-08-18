@@ -1,9 +1,9 @@
 ---
-title: "Attitudes par rapport à l'IA"
+title: "Attitudes à l'égard de l'IA"
 weight: 1
 ---
 
-# Les grandes attitudes contemporaines par rapport à l'IA
+# Les grandes attitudes contemporaines à l'égard de l'IA
 
 ## L'attitude libérale
 
