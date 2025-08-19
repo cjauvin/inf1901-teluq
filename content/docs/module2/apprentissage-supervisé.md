@@ -3,16 +3,7 @@ title: "Apprentissage supervisé"
 weight: 60
 ---
 
-# Les différents paradigmes de l'apprentissage automatique
-
-Il existe plusieurs manières de catégoriser les algorithmes d'apprentissage
-automatique, selon leur nature et la structure des problèmes qu'ils tentent de
-résoudre. Nous allons considérer deux schémas de classement fondamentaux :
-
-- L'apprentissage supervisé versus non-supervisé
-- L'apprentissage paramétrique versus non-paramétrique
-
-## Apprentissage supervisé (classification, regression)
+# Apprentissage supervisé
 
 L'apprentissage supervisé fonctionne à partir de données pour lesquelles la
 "bonne réponse" (i.e. celle qu'on aimerait que l'algorithme fournisse
@@ -23,7 +14,7 @@ a de l'enseignement et de l'apprentissage : un enseignant qui pose une question
 correcte ou non (car l'enseignant connaît, à priori, la "bonne réponse" à sa
 propre question).
 
-### Classification
+## Classification
 
 La famille d'algorithmes d'apprentissage supervisé la plus facile à comprendre
 est celle des modèles de classification. Un algorithme de classification est une
@@ -32,7 +23,7 @@ fonction mathématique qui associe des "objets" (donc des points dans un
 "docs/module2/les-données/#niveau-de-lapprentissage-automatique-et-des-mathématiques"
 >}})) vers une série prédéfinie d'étiquettes, qu'on appelle souvent des "classes".
 
-#### La régression logistique
+### La régression logistique
 
 Considérons tout d'abord un petit exemple interactif où vous jouerez vous-même
 le rôle d'un modèle de classification particulier : la **régression
@@ -277,7 +268,7 @@ faire un modèle plus puissant et complexe :
 
 - Considérer ..
 
-#### Classification bayésienne naive (gaussienne)
+### Classification bayésienne naive (gaussienne)
 
 Examinons maintenant un autre algorithme de classification que nous pourrions
 utiliser sur nos données en deux dimensions.
@@ -411,11 +402,12 @@ Tout comme la régression logistique que nous avons étudiée, cet algorithme
 produit une décision linéaire, pour des raisons mathématiques que nous n'allons
 pas explorer plus à fond.
 
-#### Classification bayésienne naive (multinomiale)
+### Classification bayésienne naive (multinomiale)
+
+TODO
 
 
-
-#### Autres algorithmes de classification
+### Autres algorithmes de classification
 
 - Régression logistique (ex1: à partir du nombre d'heures étudiées et du nombre de cours, prédire si un étudiant a gradué ou non, ex2: à partir des caractéristiques des passagers du Titanic, prédire s'ils ont survécu ou non)
 - k-NN
@@ -423,7 +415,7 @@ pas explorer plus à fond.
 - Naive Bayes
 - Réseau de neurones
 
-### Régression
+## Régression
 
 Une régression est une famille d'algorithmes d'apprentissage supervisé
 (ou plus classiquement, de modélisation statistique) dont le but est
@@ -434,7 +426,7 @@ valeur numérique du domaine X vers l'image Y).
 - Régression linéaire (ex. à partir du nombre de pièces et l'année de construction, on aimerait prédire le prix d'une maison)
 - Réseau de neurones
 
-#### Régression linéaire
+### Régression linéaire
 
 Voici un autre exemple interactif pour explorer la régression linéaire. Les
 points bleus suivent une droite cachée avec du bruit, et vous pouvez ajuster
@@ -448,94 +440,6 @@ votre ligne pour minimiser l'erreur quadratique moyenne :
 <canvas id="canvas2"></canvas>
 <div id="info2" style="text-align: center; margin-top: 20px" >f(x) = mx + b</div>
 
-## Apprentissage non-supervisé
-
-Nous avons vu qu'une caractéristique essentielle de l'apprentissage
-supervisé est que la "bonne réponse" (qu'il s'agisse du prix réel
-d'une maison, ou la variable binaire oui/non correspondant au fait
-qu'un étudiant ait échoué ou non) est fournie avec les données
-d’entraînement. Un algorithme d'apprentissage supervisé (nous avons vu
-qu'il y en avait plusieurs) utilise cette "bonne réponse" comme une
-cible cruciale qu'il doit s'efforcer d'atteindre, de modéliser donc.
-En contraste, un algorithme non-supervisé n'a pas cette "bonne
-réponse", il n'a que des données non-étiquetées. Les algorithmes de
-cette famille ont donc une tâche entièrement différente que celle de
-l'apprentissage supervisé. Il doivent découvrir la structure inhérente
-aux données, de manière autonome, tout en étant guidé possible par des
-hypothèses. Par exemple, si les données sont des mesures décrivant un
-ensemble de fleurs de différentes espèces, il est possible que je
-sache à priori combien d'espèces l'ensemble d’entraînement contient.
-Dans ce cas, supposons que je sache qu'il y a trois espèces, alors
-l'algorithme n'aura qu'à découvrir ces trois groupes, et associer
-chaque exemple à un groupe en particulier. Il pourrait être également
-possible que le nombre d'espèces soit à priori inconnu, ce qui rendrait
-la tâche de l'algorithme de classification encore plus difficile.
-
-### Partitionnement (clustering)
-
-Avec un algorithme de partitionnement, on peut découvrir des
-"agrégats", ou des groupes naturels dans les données.
-
-- k-Means
-- DBScan
-- Hierarchical clustering
-*** Réduction de la dimensionnalité
-En tentant de réduire la dimensionnalité des données, on peut
-découvrir sa structure inhérente, ce qui est souvent utile en
-visualisation (par exemple, une donnée exprimée en très haute
-dimension peut être plus facile à comprendre ou visualiser en 2d ou
-3d).
-
-- PCA
-
-## Apprentissage paramétrique versus non-paramétrique
-
-Il existe une autre manière, complètement différente, de classifier les
-algorithmes d'apprentissage : si l'algorithme est implémenté à l'aide d'une
-fonction mathématique essentiellement définie par des paramètres, qui sont
-indépendants des données qui seront traitées par l'algorithme, on parle
-d'apprentissage paramétrique. Avec l'apprentissage non-paramétrique, en
-contraste, la fonction de décision est définie à partir des données
-d'entraînement. Les données elles-mêmes constituent l'algorithme.
-
-Exemples d'algorithmes paramétriques :
-
-- Régression linéaire (apprentissage supervisé)
-- Régression logistique (supervisé)
-- Réseau de neurones
-
-Exemples d'algorithmes non-paramétriques :
-
-- Arbres de décision
-- k-NN
-
-Pour certains algorithmes, la frontière entre ces deux classes est un peu plus
-floue.
-
-## Apprentissage inductif versus transductif
-
-TODO
-
-## Apprentissage par renforcement (RL)
-
-L'apprentissage par renforcement (APR) est un autre paradigme
-d'apprentissage automatique, très différent des précédents dont nous avons
-parlés. On peut généraliser les apprentissages supervisé et
-non-supervisé en considérant qu'ils sont une forme de "reconnaissance
-de motifs" (en anglais "pattern recognition"). Les mécanismes de ce
-genre sont souvent associés aux fonctions cognitives de la perception,
-chez les humains. Par exemple, mes yeux perçoivent une information
-visuelle qu'on m'a appris à classifier en tant que "balle", alors
-quand je vois une balle, la classification appropriée est effectuée
-par mon esprit (exemple d'apprentissage supervisé). D'une manière
-apparentée mais un peu différente, il se peut que mes yeux détectent,
-lors d'une promenade en forêt, une forme ou des couleurs
-particulières, que je ne parviens pas à identifier, mais qui vont tout
-de même attirer mon attention (exemple d'apprentissage non-supervisé).
-En contraste de cette reconnaissance de motifs, l'apprentissage par
-renforcement est plutôt une modélisation du comportement, plutôt que
-de la perception (quelle action devrait être posée dans ce contexte
-particulier). L'APR est souvent utilisé dans les jeux et la robotique.
 
 <script>
 const BLUE = '#4285F4';
