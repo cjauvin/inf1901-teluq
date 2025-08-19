@@ -6,9 +6,10 @@ title: "Accueil"
 
 # Bienvenue !
 
-Bienvenue dans le cours INF 1901 Initiation à l'intelligence artificielle :
-concepts et réflexions. Ce cours vous offre une occasion unique de vous initier
-au domaine de l’intelligence artificielle (IA) dans un contexte professionnel.
+Bienvenue dans le cours **INF 1901 Initiation à l'intelligence artificielle :
+concepts et réflexions**. Ce cours vous offre une occasion unique de vous
+initier au domaine de l’intelligence artificielle (IA) dans un contexte
+professionnel.
 
 Ce cours explore l'évolution de l'intelligence artificielle, des systèmes
 symboliques à l'apprentissage machine.  Il examine les fondements de
