@@ -1,6 +1,6 @@
 ---
-title: "Paradigmes de l'AA"
-weight: 6
+title: "Apprentissage supervisé"
+weight: 60
 ---
 
 # Les différents paradigmes de l'apprentissage automatique
@@ -29,7 +29,7 @@ La famille d'algorithmes d'apprentissage supervisé la plus facile à comprendre
 est celle des modèles de classification. Un algorithme de classification est une
 fonction mathématique qui associe des "objets" (donc des points dans un
 [espace vectoriel]({{< relref
-"docs/module2/05-représentation-des-données/#niveau-de-lapprentissage-automatique-et-des-mathématiques"
+"docs/module2/les-données/#niveau-de-lapprentissage-automatique-et-des-mathématiques"
 >}})) vers une série prédéfinie d'étiquettes, qu'on appelle souvent des "classes".
 
 #### La régression logistique

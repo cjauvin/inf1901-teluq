@@ -1,6 +1,6 @@
 ---
 title: "Que sont les données?"
-weight: 5
+weight: 30
 ---
 
 # Que sont les données, et comment les représenter?

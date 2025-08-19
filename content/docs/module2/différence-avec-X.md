@@ -1,6 +1,6 @@
 ---
 title: "AA versus X"
-weight: 2
+weight: 20
 ---
 
 ## En quoi l'apprentissage automatique diffère de la programmation au sens traditionnel?
