@@ -170,10 +170,10 @@ elle tente de modéliser la probabilité qu&rsquo;un exemple appartienne directe
 une classe (<code>bleue</code> ou <code>rouge</code>) directement à partir des caractéristiques de cet
 exemples ($x_1$ et $x_2$). En contraste, la classification naive bayésienne est
 un algorithme <strong>génératif</strong>, qui tente tout d&rsquo;abord de modéliser la distribution
-des classes, avant d&rsquo;utiliser ces modèles (un modèle pour la classe <code>bleue</code> et
-un pour la classe <code>rouge</code>) pour déterminer si un point particulier a plus de
-chance d&rsquo;avoir été <em>généré</em> par un modèle particulier (disons <code>rouge</code>) plutôt
-qu&rsquo;un autre.</p><p>Chaque couple dimension / classe sera modélisé par une gaussienne à une
+statistiques des classes, avant d&rsquo;utiliser ces modèles (un modèle pour la classe
+<code>bleue</code> et un pour la classe <code>rouge</code>) pour déterminer si un point particulier a
+plus de chance d&rsquo;avoir été <em>généré</em> par un modèle particulier (disons <code>rouge</code>)
+plutôt qu&rsquo;un autre.</p><p>Chaque couple <strong>dimension + classe</strong> sera modélisé par une gaussienne à une
 dimension (donc 4 modèles en tout : un pour la classe <code>rouge</code> sur la dimension
 $x$, un pour la classe <code>bleue</code> aussi sur $x_1$, et la même chose pour la
 dimension $x_2$). Une gaussienne (aussi appelée distribution normale) est la
@@ -184,20 +184,26 @@ correspond à la masse de la probabilité. Remarquez un aspect important : la
 valeur de la fonction à un point précis donné sur l&rsquo;axe horizontal (par exemple
 la moyenne) ne correspond PAS à la probabilité de ce point, malgré ce que
 l&rsquo;intuition voudrait croire. Étant donné que la masse de probabilité est une
-fonction continue, pour calculer une probabilité donnée il faut calculer
+fonction continue, pour obtenir une probabilité donnée il faut calculer
 l&rsquo;intégrale de la fonction entre deux points donnés. Étant donné que la totalité
 de la masse (l&rsquo;aire sous la courbe) est 1, on peut dire que la probabilité qu&rsquo;un
 événement soit plus petit que la moyenne (ou plus grand) est de 50% (c-à-d que
 l&rsquo;aire sous la courbe, ou l&rsquo;intégrale, de la partie à droite ou à gauche de la
 barre verticale de la moyenne totalise 0.5).</p><p>Mais donc que veut-on dire par la modélisation par une gaussienne?</p><p>La première étape consiste à projeter les points sur l&rsquo;axe $x_1$, ce qui les
-rend uni-dimensionnels.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nb_x1_proj.png alt></p><p>Une fois les points projetés, on peut modéliser (c-à-d décrire) les classes de
-points à l&rsquo;aide de gaussiennes, dont l&rsquo;épaisseur correspondra à la densité (ou
-quantité) de points sur l&rsquo;axe, pour chaque classe.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nb_x1_gauss.png alt></p><p>On répète la procédure pour les deux classes, sur l&rsquo;axe $x_2$.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nb_x2_proj.png alt></p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nb_x2_gauss.png alt></p><p>À ce stade, nous avons donc quatre modèles :</p>$$p(x_1 \mid \text{rouge}) = \mathcal{N}(x_1; \mu_{1,\text{rouge}}, \sigma_{1,\text{rouge}}^2)$$<p></p>$$p(x_2 \mid \text{rouge}) = \mathcal{N}(x_2; \mu_{2,\text{rouge}}, \sigma_{2,\text{rouge}}^2)$$<p></p>$$p(x_1 \mid \text{bleue}) = \mathcal{N}(x_1; \mu_{1,\text{bleue}}, \sigma_{1,\text{bleue}}^2)$$<p></p>$$p(x_2 \mid \text{bleue}) = \mathcal{N}(x_2; \mu_{2,\text{bleue}}, \sigma_{2,\text{bleue}}^2)$$<p>où $\mathcal{N}$ représente la gaussienne, et $\mu$ et $\sigma$ représentent ses
+rend uni-dimensionnels.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nb_x1_proj.png alt></p><p>Une fois les points projetés, on peut modéliser (c-à-d <em>décrire
+mathématiquement</em>) les classes de points à l&rsquo;aide de gaussiennes, dont
+l&rsquo;épaisseur correspondra à la densité (ou quantité) de points projetés sur
+l&rsquo;axe, pour chaque classe.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nb_x1_gauss.png alt></p><p>On répète la procédure pour les deux classes, sur l&rsquo;axe $x_2$.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nb_x2_proj.png alt></p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/nb_x2_gauss.png alt></p><p>À ce stade, nous avons donc quatre modèles :</p>$$p(x_1 \mid \text{rouge}) = \mathcal{N}(x_1; \mu_{1,\text{rouge}}, \sigma_{1,\text{rouge}}^2)$$<p></p>$$p(x_2 \mid \text{rouge}) = \mathcal{N}(x_2; \mu_{2,\text{rouge}}, \sigma_{2,\text{rouge}}^2)$$<p></p>$$p(x_1 \mid \text{bleue}) = \mathcal{N}(x_1; \mu_{1,\text{bleue}}, \sigma_{1,\text{bleue}}^2)$$<p></p>$$p(x_2 \mid \text{bleue}) = \mathcal{N}(x_2; \mu_{2,\text{bleue}}, \sigma_{2,\text{bleue}}^2)$$<p>où $\mathcal{N}$ représente la gaussienne, et $\mu$ et $\sigma$ représentent ses
 paramètres (qui déterminent sa forme particulière). L&rsquo;apprentissage d&rsquo;un modèle
 de classification naive bayésienne constitue donc le calcul des valeurs
-optimales pour ces différents paramètres (que nous n&rsquo;allons pas couvrir ici).</p><p>On peut combiner les modèles :</p>$$p(x_1, x_2 \mid \text{rouge}) \;=\; p(x_1 \mid \text{rouge}) \cdot p(x_2 \mid \text{rouge})$$<p></p>$$p(x_1, x_2 \mid \text{bleue}) \;=\; p(x_1 \mid \text{bleue}) \cdot p(x_2 \mid \text{bleue})$$<p>ou encore, pour simplifier :</p>$$P(\mathbf{x} \mid y)$$<p>Ce modèle est <em>génératif</em>, car il génère un point $\mathbf{x}$ (donc ses coordonnées
-$x_1$ et $x_2$), à partir d&rsquo;une classe donnée $y$ (<code>rouge</code> ou <code>bleue</code>). On dit
-aussi que ce que ce modèle est la probabilité de $\mathbf{x}$ <em>conditionnelle</em> à $y$.</p><p>Mais ce qui nous intéresse, dans un contexte de classification, est l&rsquo;équivalent
+optimales pour ces différents paramètres, que l&rsquo;on peut faire directement dans
+ce contexte (en contraste de la méthode itérative que nous avons utilisée pour
+l&rsquo;apprentissage des paramètres de la régression logistique) :</p>$$\hat\mu_{1,\text{rouge}}=\frac{1}{N_{\text{rouge}}}\sum_{i\in I_{\text{rouge}}} x_{i1},\quad$$<p></p>$$\hat\mu_{2,\text{rouge}}=\frac{1}{N_{\text{rouge}}}\sum_{i\in I_{\text{rouge}}} x_{i2},$$<p></p>$$\hat\mu_{1,\text{bleue}}=\frac{1}{N_{\text{bleue}}}\sum_{i\in I_{\text{bleue}}} x_{i1},\quad$$<p></p>$$\hat\mu_{2,\text{bleue}}=\frac{1}{N_{\text{bleue}}}\sum_{i\in I_{\text{bleue}}} x_{i2},$$<p></p>$$\hat\sigma^2_{1,\text{rouge}}=\frac{1}{N_{\text{rouge}}}\sum_{i\in I_{\text{rouge}}}(x_{i1}-\hat\mu_{1,\text{rouge}})^2,\quad$$<p></p>$$\hat\sigma^2_{2,\text{rouge}}=\frac{1}{N_{\text{rouge}}}\sum_{i\in I_{\text{rouge}}}(x_{i2}-\hat\mu_{2,\text{rouge}})^2,$$<p></p>$$\hat\sigma^2_{1,\text{bleue}}=\frac{1}{N_{\text{bleue}}}\sum_{i\in I_{\text{bleue}}}(x_{i1}-\hat\mu_{1,\text{bleue}})^2,\quad$$<p></p>$$\hat\sigma^2_{2,\text{bleue}}=\frac{1}{N_{\text{bleue}}}\sum_{i\in I_{\text{bleue}}}(x_{i2}-\hat\mu_{2,\text{bleue}})^2.$$<p>On peut combiner les modèles :</p>$$p(x_1, x_2 \mid \text{rouge}) \;=\; p(x_1 \mid \text{rouge}) \cdot p(x_2 \mid \text{rouge})$$<p></p>$$p(x_1, x_2 \mid \text{bleue}) \;=\; p(x_1 \mid \text{bleue}) \cdot p(x_2 \mid \text{bleue})$$<p>ou encore, pour simplifier :</p>$$P(\mathbf{x} \mid y)$$<p>Notez qu&rsquo;on change ici la notation de $p$ à $P$, pour mettre l&rsquo;emphase sur le
+fait que nous passons d&rsquo;une fonction de densité à une fonction de probabilité.
+Ce modèle est <em>génératif</em>, car il génère un point $\mathbf{x}$ (donc ses
+coordonnées $x_1$ et $x_2$), à partir d&rsquo;une classe donnée $y$ (<code>rouge</code> ou
+<code>bleue</code>). On dit aussi que ce que ce modèle est la probabilité de $\mathbf{x}$
+<em>conditionnelle</em> à $y$.</p><p>Mais ce qui nous intéresse, dans un contexte de classification, est l&rsquo;équivalent
 de ce que nous avons calculé pour le modèle de régression logistique, soit :</p>$$P(y \mid \mathbf{x})$$<p>Il semble donc que notre modèle génératif soit le contraire de ce qu&rsquo;on l&rsquo;on
 veut. Est-il possible de &ldquo;l&rsquo;inverser&rdquo;, pour obtenir le modèle que l&rsquo;on souhaite,
 soit la probabilité d&rsquo;une classe étant donné un point?</p><p>Il est possible de faire cela à l&rsquo;aide du <a href=https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes>théorème de
