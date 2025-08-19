@@ -287,12 +287,12 @@ elle tente de modéliser la probabilité qu'un exemple appartienne directement �
 une classe (`bleue` ou `rouge`) directement à partir des caractéristiques de cet
 exemples ($x_1$ et $x_2$). En contraste, la classification naive bayésienne est
 un algorithme **génératif**, qui tente tout d'abord de modéliser la distribution
-des classes, avant d'utiliser ces modèles (un modèle pour la classe `bleue` et
-un pour la classe `rouge`) pour déterminer si un point particulier a plus de
-chance d'avoir été *généré* par un modèle particulier (disons `rouge`) plutôt
-qu'un autre.
+statistiques des classes, avant d'utiliser ces modèles (un modèle pour la classe
+`bleue` et un pour la classe `rouge`) pour déterminer si un point particulier a
+plus de chance d'avoir été *généré* par un modèle particulier (disons `rouge`)
+plutôt qu'un autre.
 
-Chaque couple dimension / classe sera modélisé par une gaussienne à une
+Chaque couple **dimension + classe** sera modélisé par une gaussienne à une
 dimension (donc 4 modèles en tout : un pour la classe `rouge` sur la dimension
 $x$, un pour la classe `bleue` aussi sur $x_1$, et la même chose pour la
 dimension $x_2$). Une gaussienne (aussi appelée distribution normale) est la
@@ -307,7 +307,7 @@ correspond à la masse de la probabilité. Remarquez un aspect important : la
 valeur de la fonction à un point précis donné sur l'axe horizontal (par exemple
 la moyenne) ne correspond PAS à la probabilité de ce point, malgré ce que
 l'intuition voudrait croire. Étant donné que la masse de probabilité est une
-fonction continue, pour calculer une probabilité donnée il faut calculer
+fonction continue, pour obtenir une probabilité donnée il faut calculer
 l'intégrale de la fonction entre deux points donnés. Étant donné que la totalité
 de la masse (l'aire sous la courbe) est 1, on peut dire que la probabilité qu'un
 événement soit plus petit que la moyenne (ou plus grand) est de 50% (c-à-d que
@@ -321,9 +321,10 @@ rend uni-dimensionnels.
 
 ![](/images/module2/nb_x1_proj.png)
 
-Une fois les points projetés, on peut modéliser (c-à-d décrire) les classes de
-points à l'aide de gaussiennes, dont l'épaisseur correspondra à la densité (ou
-quantité) de points sur l'axe, pour chaque classe.
+Une fois les points projetés, on peut modéliser (c-à-d *décrire
+mathématiquement*) les classes de points à l'aide de gaussiennes, dont
+l'épaisseur correspondra à la densité (ou quantité) de points projetés sur
+l'axe, pour chaque classe.
 
 ![](/images/module2/nb_x1_gauss.png)
 
@@ -343,7 +344,18 @@ $$p(x_2 \mid \text{bleue}) = \mathcal{N}(x_2; \mu_{2,\text{bleue}}, \sigma_{2,\t
 où $\mathcal{N}$ représente la gaussienne, et $\mu$ et $\sigma$ représentent ses
 paramètres (qui déterminent sa forme particulière). L'apprentissage d'un modèle
 de classification naive bayésienne constitue donc le calcul des valeurs
-optimales pour ces différents paramètres (que nous n'allons pas couvrir ici).
+optimales pour ces différents paramètres, que l'on peut faire directement dans
+ce contexte (en contraste de la méthode itérative que nous avons utilisée pour
+l'apprentissage des paramètres de la régression logistique) :
+
+$$\hat\mu_{1,\text{rouge}}=\frac{1}{N_{\text{rouge}}}\sum_{i\in I_{\text{rouge}}} x_{i1},\quad$$
+$$\hat\mu_{2,\text{rouge}}=\frac{1}{N_{\text{rouge}}}\sum_{i\in I_{\text{rouge}}} x_{i2},$$
+$$\hat\mu_{1,\text{bleue}}=\frac{1}{N_{\text{bleue}}}\sum_{i\in I_{\text{bleue}}} x_{i1},\quad$$
+$$\hat\mu_{2,\text{bleue}}=\frac{1}{N_{\text{bleue}}}\sum_{i\in I_{\text{bleue}}} x_{i2},$$
+$$\hat\sigma^2_{1,\text{rouge}}=\frac{1}{N_{\text{rouge}}}\sum_{i\in I_{\text{rouge}}}(x_{i1}-\hat\mu_{1,\text{rouge}})^2,\quad$$
+$$\hat\sigma^2_{2,\text{rouge}}=\frac{1}{N_{\text{rouge}}}\sum_{i\in I_{\text{rouge}}}(x_{i2}-\hat\mu_{2,\text{rouge}})^2,$$
+$$\hat\sigma^2_{1,\text{bleue}}=\frac{1}{N_{\text{bleue}}}\sum_{i\in I_{\text{bleue}}}(x_{i1}-\hat\mu_{1,\text{bleue}})^2,\quad$$
+$$\hat\sigma^2_{2,\text{bleue}}=\frac{1}{N_{\text{bleue}}}\sum_{i\in I_{\text{bleue}}}(x_{i2}-\hat\mu_{2,\text{bleue}})^2.$$
 
 On peut combiner les modèles :
 
@@ -354,9 +366,12 @@ ou encore, pour simplifier :
 
 $$P(\mathbf{x} \mid y)$$
 
-Ce modèle est *génératif*, car il génère un point $\mathbf{x}$ (donc ses coordonnées
-$x_1$ et $x_2$), à partir d'une classe donnée $y$ (`rouge` ou `bleue`). On dit
-aussi que ce que ce modèle est la probabilité de $\mathbf{x}$ *conditionnelle* à $y$.
+Notez qu'on change ici la notation de $p$ à $P$, pour mettre l'emphase sur le
+fait que nous passons d'une fonction de densité à une fonction de probabilité.
+Ce modèle est *génératif*, car il génère un point $\mathbf{x}$ (donc ses
+coordonnées $x_1$ et $x_2$), à partir d'une classe donnée $y$ (`rouge` ou
+`bleue`). On dit aussi que ce que ce modèle est la probabilité de $\mathbf{x}$
+*conditionnelle* à $y$.
 
 Mais ce qui nous intéresse, dans un contexte de classification, est l'équivalent
 de ce que nous avons calculé pour le modèle de régression logistique, soit :
