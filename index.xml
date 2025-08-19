@@ -79,38 +79,7 @@ ou une décision.&lt;/p>
 du texte, du son ou des tableaux de nombres. Chaque exemple de données
 est représenté sous forme numérique, souvent sous forme de vecteurs ou
 de matrices. C&amp;rsquo;est à partir de ces données que le réseau apprend à
-reconnaître des motifs.&lt;/p></description></item><item><title>Un scénario imaginé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h1 id="un-scénario-imaginaire-mais-réaliste-">
- Un scénario imaginaire, mais réaliste !
- &lt;a class="anchor" href="#un-sc%c3%a9nario-imaginaire-mais-r%c3%a9aliste-">#&lt;/a>
-&lt;/h1>
-&lt;p>Imaginez une compagnie où il y a une chaîne de montage avec laquelle on assemble
-des téléviseurs.&lt;/p>
-&lt;p>&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module2/tv_assembly_line.png" alt="" />&lt;/p>
-&lt;h2 id="le-problème">
- Le problème
- &lt;a class="anchor" href="#le-probl%c3%a8me">#&lt;/a>
-&lt;/h2>
-&lt;p>Supposons que dans un endroit particulièrement délicat de la chaîne de montage,
-un problème avec un appareil d&amp;rsquo;assemblage particulier survienne parfois, que
-l&amp;rsquo;on aimerait détecter le plus rapidement possible.&lt;/p>
-&lt;h2 id="une-solution-possible">
- Une solution possible
- &lt;a class="anchor" href="#une-solution-possible">#&lt;/a>
-&lt;/h2>
-&lt;p>On pourrait imaginer placer une caméra vidéo dont le but serait de visionner en
-permanence le flot des appareils en cours d&amp;rsquo;assemblage, pour tenter de détecter
-les problèmes. Pour ce faire, la caméra pourrait transmettre, à intervalles
-réguliers, les pixels de ce qu&amp;rsquo;elle capte, en tant que données à un modèle
-d&amp;rsquo;apprentissage automatique qui roulerait (en tant que programme) sur un
-serveur, pas très éloigné. Ce modèle convertirait les pixels de la caméra en
-tant que données numériques (les entrées, &amp;ldquo;inputs&amp;rdquo;), et effectuerait un calcul
-complexe sur ces valeurs, en vue de produire une valeur de sortie simple
-(&amp;ldquo;outputs&amp;rdquo;) : &amp;ldquo;oui, il y a un problème avec cette image&amp;rdquo;, ou &amp;ldquo;non, il n&amp;rsquo;y a pas
-de problème avec cette image&amp;rdquo; (ou encore, ce qui serait équivalent mais plus
-simple : &amp;ldquo;ok&amp;rdquo; ou &amp;ldquo;problème&amp;rdquo;). Cette valeur est binaire, dans le sens qu&amp;rsquo;elle a
-seulement deux valeurs possibles (peu importe lesquelles, en autant qu&amp;rsquo;il y en
-ait seulement deux). Sur la base de cette valeur binaire de sortie, on pourrait
-agir et envoyer un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</guid><description>&lt;h1 id="vidéo-de-3blue1brown">
+reconnaître des motifs.&lt;/p></description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</guid><description>&lt;h1 id="vidéo-de-3blue1brown">
  Vidéo de 3Blue1Brown
  &lt;a class="anchor" href="#vid%c3%a9o-de-3blue1brown">#&lt;/a>
 &lt;/h1>
@@ -133,16 +102,7 @@ complexes, comme l’algèbre linéaire, le calcul différentiel, les probabilit
 encore l’intelligence artificielle. Son approche met l’accent sur la
 compréhension en profondeur plutôt que sur la simple application de formules, et
 a permis à des millions de personnes dans le monde de découvrir la beauté et la
-logique des mathématiques.&lt;/p></description></item><item><title>AA versus X</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</guid><description>&lt;h2 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel">
- En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnel?
- &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnel">#&lt;/a>
-&lt;/h2>
-&lt;p>Bien que l&amp;rsquo;apprentissage automatique requiert de la programmation, il s&amp;rsquo;agit
-d&amp;rsquo;un paradigme entièrement différent de celui de la programmation.&lt;/p>
-&lt;p>Un programme traditionnel spécifie une série d&amp;rsquo;instructions que l&amp;rsquo;ordinateur
-exécute pour résoudre un problème. Normalement, ce programme fait son travail en
-relation avec des données fournies par l&amp;rsquo;utilisateur. Le programme dans ce cas
-est une série d&amp;rsquo;instructions symboliques dans un langage de programmation.&lt;/p></description></item><item><title>Grands modèles de langage</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/</guid><description>&lt;h1 id="les-modèles-de-langage-petits-et-grands">
+logique des mathématiques.&lt;/p></description></item><item><title>Grands modèles de langage</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/</guid><description>&lt;h1 id="les-modèles-de-langage-petits-et-grands">
  Les modèles de langage (petits et grands)
  &lt;a class="anchor" href="#les-mod%c3%a8les-de-langage-petits-et-grands">#&lt;/a>
 &lt;/h1>
@@ -206,55 +166,7 @@ des perspectives des &amp;ldquo;doomers&amp;rdquo; (ceux qui craignent des cons�
 catastrophiques de l’IA) et des &amp;ldquo;accélérationistes&amp;rdquo; (ceux qui prônent un
 développement rapide de l’IA). Vous utiliserez également un outil d’IA pour vous
 assister dans la rédaction, tout en réfléchissant à son impact sur votre
-processus.&lt;/p></description></item><item><title>Que sont les données?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</guid><description>&lt;h1 id="que-sont-les-données-et-comment-les-représenter">
- Que sont les données, et comment les représenter?
- &lt;a class="anchor" href="#que-sont-les-donn%c3%a9es-et-comment-les-repr%c3%a9senter">#&lt;/a>
-&lt;/h1>
-&lt;p>Il y a une tension fondamentale en informatique entre les différentes manières
-de représenter les données, et ce qu&amp;rsquo;elles peuvent signifier. Quand on ajoute
-l&amp;rsquo;apprentissage automatique, la situation devient encore plus complexe. Tentons
-de clarifier le tout.&lt;/p>
-&lt;h2 id="niveau-des-bits-physiques-et-mathématiques">
- Niveau des bits, physiques et mathématiques
- &lt;a class="anchor" href="#niveau-des-bits-physiques-et-math%c3%a9matiques">#&lt;/a>
-&lt;/h2>
-&lt;p>Au niveau le plus fondamental, l&amp;rsquo;ordinateur, physiquement et logiquement, ne
-peut traiter qu&amp;rsquo;un seul type de donnée : le bit, qui est à la fois un concept
-mathématique (un symbole dont la valeur ne peut être que &lt;code>0&lt;/code> ou &lt;code>1&lt;/code> généralement, ou
-&lt;code>vrai&lt;/code> ou &lt;code>faux&lt;/code> plus spécifiquement en logique) et physique, au niveau de
-l&amp;rsquo;implémentation, soit en terme électrique (mémoire RAM, CPU, disque SSD), de
-magnétisme (disque dur) ou de caractéristiques optiques (CD). Les bits
-&lt;em>représentent&lt;/em> les nombres via la convention de l&amp;rsquo;encodage binaire.&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
- Les différents paradigmes de l&amp;rsquo;apprentissage automatique
- &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique">#&lt;/a>
-&lt;/h1>
-&lt;p>Il existe plusieurs manières de catégoriser les algorithmes d&amp;rsquo;apprentissage
-automatique, selon leur nature et la structure des problèmes qu&amp;rsquo;ils tentent de
-résoudre. Nous allons considérer deux schémas de classement fondamentaux :&lt;/p>
-&lt;ul>
-&lt;li>L&amp;rsquo;apprentissage supervisé versus non-supervisé&lt;/li>
-&lt;li>L&amp;rsquo;apprentissage paramétrique versus non-paramétrique&lt;/li>
-&lt;/ul>
-&lt;h2 id="apprentissage-supervisé-classification-regression">
- Apprentissage supervisé (classification, regression)
- &lt;a class="anchor" href="#apprentissage-supervis%c3%a9-classification-regression">#&lt;/a>
-&lt;/h2>
-&lt;p>L&amp;rsquo;apprentissage supervisé fonctionne à partir de données pour lesquelles la
-&amp;ldquo;bonne réponse&amp;rdquo; (i.e. celle qu&amp;rsquo;on aimerait que l&amp;rsquo;algorithme fournisse
-systématiquement, une fois entraîné) est fournie, en tant que donnée
-d’entraînement. L&amp;rsquo;apprentissage supervisé correspond à la notion intuitive qu&amp;rsquo;on
-a de l&amp;rsquo;enseignement et de l&amp;rsquo;apprentissage : un enseignant qui pose une question
-à un étudiant est en mesure de le corriger en lui indiquant si sa réponse est
-correcte ou non (car l&amp;rsquo;enseignant connaît, à priori, la &amp;ldquo;bonne réponse&amp;rdquo; à sa
-propre question).&lt;/p></description></item><item><title>Applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
- Les différentes applications de l&amp;rsquo;apprentissage automatique
- &lt;a class="anchor" href="#les-diff%c3%a9rentes-applications-de-lapprentissage-automatique">#&lt;/a>
-&lt;/h1>
-&lt;p>TODO&lt;/p></description></item><item><title>AA et programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/08-programmation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/08-programmation/</guid><description>&lt;h1 id="lapprentissage-automatique-et-la-programmation">
- L&amp;rsquo;apprentissage automatique et la programmation
- &lt;a class="anchor" href="#lapprentissage-automatique-et-la-programmation">#&lt;/a>
-&lt;/h1>
-&lt;p>TODO&lt;/p></description></item><item><title>Présentation du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</guid><description>&lt;blockquote class="book-hint info">
+processus.&lt;/p></description></item><item><title>Présentation du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</guid><description>&lt;blockquote class="book-hint info">
 &lt;p>&lt;em>« Toute technologie suffisamment avancée est indiscernable de la magie. »&lt;/em>&lt;/p>
 &lt;p>Arthur C. Clarke&lt;/p>
 &lt;/blockquote>
@@ -262,7 +174,47 @@ propre question).&lt;/p></description></item><item><title>Applications de l'AA</
  Présentation du cours
  &lt;a class="anchor" href="#pr%c3%a9sentation-du-cours">#&lt;/a>
 &lt;/h2>
-&lt;p>L’intelligence artificielle (IA) constitue aujourd’hui un champ de recherches et d’applications essentiel dont l’influence s’étend à de multiples domaines, de la science et la médecine aux industries créatives et à l’éducation. Conséquemment, les entreprises de divers secteurs sont confrontées à cette transformation numérique sans précédent, si bien que l’intégration de l’IA dans les modèles d’affaires n’est plus un luxe, mais une nécessité pour demeurer compétitif dans un marché mondial en constante évolution. L’émergence de modèles de langage avancés tels que ChatGPT, DeepSeek et Llama 3 illustre cette transformation, en ouvrant de nouvelles perspectives tant scientifiques que sociétales.&lt;/p></description></item><item><title>Philosophie du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/philosophie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/philosophie/</guid><description>&lt;h2 id="la-philosophie-du-cours">
+&lt;p>L’intelligence artificielle (IA) constitue aujourd’hui un champ de recherches et d’applications essentiel dont l’influence s’étend à de multiples domaines, de la science et la médecine aux industries créatives et à l’éducation. Conséquemment, les entreprises de divers secteurs sont confrontées à cette transformation numérique sans précédent, si bien que l’intégration de l’IA dans les modèles d’affaires n’est plus un luxe, mais une nécessité pour demeurer compétitif dans un marché mondial en constante évolution. L’émergence de modèles de langage avancés tels que ChatGPT, DeepSeek et Llama 3 illustre cette transformation, en ouvrant de nouvelles perspectives tant scientifiques que sociétales.&lt;/p></description></item><item><title>Un scénario réaliste</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h1 id="un-scénario-imaginaire-mais-réaliste-">
+ Un scénario imaginaire, mais réaliste !
+ &lt;a class="anchor" href="#un-sc%c3%a9nario-imaginaire-mais-r%c3%a9aliste-">#&lt;/a>
+&lt;/h1>
+&lt;p>Imaginez une compagnie où il y a une chaîne de montage avec laquelle on assemble
+des téléviseurs.&lt;/p>
+&lt;p>&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module2/tv_assembly_line.png" alt="" />&lt;/p>
+&lt;h2 id="le-problème">
+ Le problème
+ &lt;a class="anchor" href="#le-probl%c3%a8me">#&lt;/a>
+&lt;/h2>
+&lt;p>Supposons que dans un endroit particulièrement délicat de la chaîne de montage,
+un problème avec un appareil d&amp;rsquo;assemblage particulier survienne parfois, que
+l&amp;rsquo;on aimerait détecter le plus rapidement possible.&lt;/p>
+&lt;h2 id="une-solution-possible">
+ Une solution possible
+ &lt;a class="anchor" href="#une-solution-possible">#&lt;/a>
+&lt;/h2>
+&lt;p>On pourrait imaginer placer une caméra vidéo dont le but serait de visionner en
+permanence le flot des appareils en cours d&amp;rsquo;assemblage, pour tenter de détecter
+les problèmes. Pour ce faire, la caméra pourrait transmettre, à intervalles
+réguliers, les pixels de ce qu&amp;rsquo;elle capte, en tant que données à un modèle
+d&amp;rsquo;apprentissage automatique qui roulerait (en tant que programme) sur un
+serveur, pas très éloigné. Ce modèle convertirait les pixels de la caméra en
+tant que données numériques (les entrées, &amp;ldquo;inputs&amp;rdquo;), et effectuerait un calcul
+complexe sur ces valeurs, en vue de produire une valeur de sortie simple
+(&amp;ldquo;outputs&amp;rdquo;) : &amp;ldquo;oui, il y a un problème avec cette image&amp;rdquo;, ou &amp;ldquo;non, il n&amp;rsquo;y a pas
+de problème avec cette image&amp;rdquo; (ou encore, ce qui serait équivalent mais plus
+simple : &amp;ldquo;ok&amp;rdquo; ou &amp;ldquo;problème&amp;rdquo;). Cette valeur est binaire, dans le sens qu&amp;rsquo;elle a
+seulement deux valeurs possibles (peu importe lesquelles, en autant qu&amp;rsquo;il y en
+ait seulement deux). Sur la base de cette valeur binaire de sortie, on pourrait
+agir et envoyer un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus X</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</guid><description>&lt;h2 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel">
+ En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnel?
+ &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnel">#&lt;/a>
+&lt;/h2>
+&lt;p>Bien que l&amp;rsquo;apprentissage automatique requiert de la programmation, il s&amp;rsquo;agit
+d&amp;rsquo;un paradigme entièrement différent de celui de la programmation.&lt;/p>
+&lt;p>Un programme traditionnel spécifie une série d&amp;rsquo;instructions que l&amp;rsquo;ordinateur
+exécute pour résoudre un problème. Normalement, ce programme fait son travail en
+relation avec des données fournies par l&amp;rsquo;utilisateur. Le programme dans ce cas
+est une série d&amp;rsquo;instructions symboliques dans un langage de programmation.&lt;/p></description></item><item><title>Philosophie du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/philosophie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/philosophie/</guid><description>&lt;h2 id="la-philosophie-du-cours">
  La philosophie du cours
  &lt;a class="anchor" href="#la-philosophie-du-cours">#&lt;/a>
 &lt;/h2>
@@ -307,7 +259,28 @@ Europe, en Afrique et dans d&amp;rsquo;autres régions du monde.&lt;/p></descrip
 &lt;p>Yann Le Cun (2019)&lt;/p>
 &lt;p>&lt;a href="https://www.goodreads.com/book/show/48497641-quand-la-machine-apprend">&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/livre_quand_la_machine_apprend.jpg" alt="" />&lt;/a>&lt;/p>
  &lt;/div>
-&lt;/div></description></item><item><title>Travaux notés</title><link>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</guid><description>&lt;h1 id="travaux-notés">
+&lt;/div></description></item><item><title>Que sont les données?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</guid><description>&lt;h1 id="que-sont-les-données-et-comment-les-représenter">
+ Que sont les données, et comment les représenter?
+ &lt;a class="anchor" href="#que-sont-les-donn%c3%a9es-et-comment-les-repr%c3%a9senter">#&lt;/a>
+&lt;/h1>
+&lt;p>Il y a une tension fondamentale en informatique entre les différentes manières
+de représenter les données, et ce qu&amp;rsquo;elles peuvent signifier. Quand on ajoute
+l&amp;rsquo;apprentissage automatique, la situation devient encore plus complexe. Tentons
+de clarifier le tout.&lt;/p>
+&lt;h2 id="niveau-des-bits-physiques-et-mathématiques">
+ Niveau des bits, physiques et mathématiques
+ &lt;a class="anchor" href="#niveau-des-bits-physiques-et-math%c3%a9matiques">#&lt;/a>
+&lt;/h2>
+&lt;p>Au niveau le plus fondamental, l&amp;rsquo;ordinateur, physiquement et logiquement, ne
+peut traiter qu&amp;rsquo;un seul type de donnée : le bit, qui est à la fois un concept
+mathématique (un symbole dont la valeur ne peut être que &lt;code>0&lt;/code> ou &lt;code>1&lt;/code> généralement, ou
+&lt;code>vrai&lt;/code> ou &lt;code>faux&lt;/code> plus spécifiquement en logique) et physique, au niveau de
+l&amp;rsquo;implémentation, soit en terme électrique (mémoire RAM, CPU, disque SSD), de
+magnétisme (disque dur) ou de caractéristiques optiques (CD). Les bits
+&lt;em>représentent&lt;/em> les nombres via la convention de l&amp;rsquo;encodage binaire.&lt;/p></description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle">
+ Qu&amp;rsquo;est-ce qu&amp;rsquo;on veut dire par modèle?
+ &lt;a class="anchor" href="#quest-ce-quon-veut-dire-par-mod%c3%a8le">#&lt;/a>
+&lt;/h1></description></item><item><title>Travaux notés</title><link>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</guid><description>&lt;h1 id="travaux-notés">
  Travaux notés
  &lt;a class="anchor" href="#travaux-not%c3%a9s">#&lt;/a>
 &lt;/h1>
@@ -344,7 +317,29 @@ Excel, car Google Sheets est plus accessible, et le langage de ses formules est
 plus facile à gérer (celui d&amp;rsquo;Excel dépend de la langue et des paramètres
 régionaux de votre système d&amp;rsquo;exploitation). Pour éviter la confusion dans le
 contexte de ce travail, nous devons tout d&amp;rsquo;abord nous assurer que la langue des
-fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p></description></item><item><title>Usage de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</guid><description>&lt;h1 id="lusage-dassistants-intelligents">
+fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p></description></item><item><title>Apprentissage supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
+ Les différents paradigmes de l&amp;rsquo;apprentissage automatique
+ &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique">#&lt;/a>
+&lt;/h1>
+&lt;p>Il existe plusieurs manières de catégoriser les algorithmes d&amp;rsquo;apprentissage
+automatique, selon leur nature et la structure des problèmes qu&amp;rsquo;ils tentent de
+résoudre. Nous allons considérer deux schémas de classement fondamentaux :&lt;/p>
+&lt;ul>
+&lt;li>L&amp;rsquo;apprentissage supervisé versus non-supervisé&lt;/li>
+&lt;li>L&amp;rsquo;apprentissage paramétrique versus non-paramétrique&lt;/li>
+&lt;/ul>
+&lt;h2 id="apprentissage-supervisé-classification-regression">
+ Apprentissage supervisé (classification, regression)
+ &lt;a class="anchor" href="#apprentissage-supervis%c3%a9-classification-regression">#&lt;/a>
+&lt;/h2>
+&lt;p>L&amp;rsquo;apprentissage supervisé fonctionne à partir de données pour lesquelles la
+&amp;ldquo;bonne réponse&amp;rdquo; (i.e. celle qu&amp;rsquo;on aimerait que l&amp;rsquo;algorithme fournisse
+systématiquement, une fois entraîné) est fournie, en tant que donnée
+d’entraînement. L&amp;rsquo;apprentissage supervisé correspond à la notion intuitive qu&amp;rsquo;on
+a de l&amp;rsquo;enseignement et de l&amp;rsquo;apprentissage : un enseignant qui pose une question
+à un étudiant est en mesure de le corriger en lui indiquant si sa réponse est
+correcte ou non (car l&amp;rsquo;enseignant connaît, à priori, la &amp;ldquo;bonne réponse&amp;rdquo; à sa
+propre question).&lt;/p></description></item><item><title>Usage de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</guid><description>&lt;h1 id="lusage-dassistants-intelligents">
  L&amp;rsquo;usage d&amp;rsquo;assistants intelligents
  &lt;a class="anchor" href="#lusage-dassistants-intelligents">#&lt;/a>
 &lt;/h1>
@@ -358,7 +353,11 @@ hésiter à engager un dialogue avec l&amp;rsquo;agent, dans le but de clarifier
 du problème qui pourraient rester obscurs pour vous. N&amp;rsquo;oubliez pas que le but de
 ce cours est la construction de bons modèles mentaux pour penser à des problèmes
 de modélisation. L&amp;rsquo;agent possède déjà ces modèles mentaux, si vous avez
-développé les vôtres à la fin de ce cours, le but aura clairement été atteint !&lt;/p></description></item><item><title>Ressources supplémentaires</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</guid><description>&lt;h1 id="pour-aller-plus-loin">
+développé les vôtres à la fin de ce cours, le but aura clairement été atteint !&lt;/p></description></item><item><title>Applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
+ Les différentes applications de l&amp;rsquo;apprentissage automatique
+ &lt;a class="anchor" href="#les-diff%c3%a9rentes-applications-de-lapprentissage-automatique">#&lt;/a>
+&lt;/h1>
+&lt;p>TODO&lt;/p></description></item><item><title>Ressources supplémentaires</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</guid><description>&lt;h1 id="pour-aller-plus-loin">
  Pour aller plus loin
  &lt;a class="anchor" href="#pour-aller-plus-loin">#&lt;/a>
 &lt;/h1>
@@ -374,7 +373,11 @@ profonds entre les mathématiques, la philosophie et l&amp;rsquo;intelligence ar
  &lt;/div>
 &lt;/details>
 &lt;p>En gros, on y présente 4 paradigmes mathématiques et leur correspondance dans le monde
-de l&amp;rsquo;intelligence artificielle :&lt;/p></description></item><item><title>Travail noté 1</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</guid><description>&lt;h1 id="travail-noté-1--création-dune-visualisation-annotée">
+de l&amp;rsquo;intelligence artificielle :&lt;/p></description></item><item><title>AA et programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/programmation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/programmation/</guid><description>&lt;h1 id="lapprentissage-automatique-et-la-programmation">
+ L&amp;rsquo;apprentissage automatique et la programmation
+ &lt;a class="anchor" href="#lapprentissage-automatique-et-la-programmation">#&lt;/a>
+&lt;/h1>
+&lt;p>TODO&lt;/p></description></item><item><title>Travail noté 1</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</guid><description>&lt;h1 id="travail-noté-1--création-dune-visualisation-annotée">
  Travail noté #1 : création d&amp;rsquo;une visualisation annotée
  &lt;a class="anchor" href="#travail-not%c3%a9-1--cr%c3%a9ation-dune-visualisation-annot%c3%a9e">#&lt;/a>
 &lt;/h1>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module 2 - Apprentissage automatique on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/</link><description>Recent content in Module 2 - Apprentissage automatique on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/module2/index.xml" rel="self" type="application/rss+xml"/><item><title>Un scénario imaginé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/01-sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h1 id="un-scénario-imaginaire-mais-réaliste-">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module 2 - Apprentissage automatique on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/</link><description>Recent content in Module 2 - Apprentissage automatique on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/module2/index.xml" rel="self" type="application/rss+xml"/><item><title>Un scénario réaliste</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h1 id="un-scénario-imaginaire-mais-réaliste-">
  Un scénario imaginaire, mais réaliste !
  &lt;a class="anchor" href="#un-sc%c3%a9nario-imaginaire-mais-r%c3%a9aliste-">#&lt;/a>
 &lt;/h1>
@@ -29,7 +29,7 @@ de problème avec cette image&amp;rdquo; (ou encore, ce qui serait équivalent m
 simple : &amp;ldquo;ok&amp;rdquo; ou &amp;ldquo;problème&amp;rdquo;). Cette valeur est binaire, dans le sens qu&amp;rsquo;elle a
 seulement deux valeurs possibles (peu importe lesquelles, en autant qu&amp;rsquo;il y en
 ait seulement deux). Sur la base de cette valeur binaire de sortie, on pourrait
-agir et envoyer un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus X</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/02-diff%C3%A9rence-avec-la-prog/</guid><description>&lt;h2 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel">
+agir et envoyer un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus X</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</guid><description>&lt;h2 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel">
  En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnel?
  &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnel">#&lt;/a>
 &lt;/h2>
@@ -38,7 +38,7 @@ d&amp;rsquo;un paradigme entièrement différent de celui de la programmation.&l
 &lt;p>Un programme traditionnel spécifie une série d&amp;rsquo;instructions que l&amp;rsquo;ordinateur
 exécute pour résoudre un problème. Normalement, ce programme fait son travail en
 relation avec des données fournies par l&amp;rsquo;utilisateur. Le programme dans ce cas
-est une série d&amp;rsquo;instructions symboliques dans un langage de programmation.&lt;/p></description></item><item><title>Que sont les données?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/05-repr%C3%A9sentation-des-donn%C3%A9es/</guid><description>&lt;h1 id="que-sont-les-données-et-comment-les-représenter">
+est une série d&amp;rsquo;instructions symboliques dans un langage de programmation.&lt;/p></description></item><item><title>Que sont les données?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</guid><description>&lt;h1 id="que-sont-les-données-et-comment-les-représenter">
  Que sont les données, et comment les représenter?
  &lt;a class="anchor" href="#que-sont-les-donn%c3%a9es-et-comment-les-repr%c3%a9senter">#&lt;/a>
 &lt;/h1>
@@ -56,7 +56,10 @@ mathématique (un symbole dont la valeur ne peut être que &lt;code>0&lt;/code> 
 &lt;code>vrai&lt;/code> ou &lt;code>faux&lt;/code> plus spécifiquement en logique) et physique, au niveau de
 l&amp;rsquo;implémentation, soit en terme électrique (mémoire RAM, CPU, disque SSD), de
 magnétisme (disque dur) ou de caractéristiques optiques (CD). Les bits
-&lt;em>représentent&lt;/em> les nombres via la convention de l&amp;rsquo;encodage binaire.&lt;/p></description></item><item><title>Paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/06-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
+&lt;em>représentent&lt;/em> les nombres via la convention de l&amp;rsquo;encodage binaire.&lt;/p></description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle">
+ Qu&amp;rsquo;est-ce qu&amp;rsquo;on veut dire par modèle?
+ &lt;a class="anchor" href="#quest-ce-quon-veut-dire-par-mod%c3%a8le">#&lt;/a>
+&lt;/h1></description></item><item><title>Apprentissage supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
  Les différents paradigmes de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
@@ -78,11 +81,11 @@ d’entraînement. L&amp;rsquo;apprentissage supervisé correspond à la notion 
 a de l&amp;rsquo;enseignement et de l&amp;rsquo;apprentissage : un enseignant qui pose une question
 à un étudiant est en mesure de le corriger en lui indiquant si sa réponse est
 correcte ou non (car l&amp;rsquo;enseignant connaît, à priori, la &amp;ldquo;bonne réponse&amp;rdquo; à sa
-propre question).&lt;/p></description></item><item><title>Applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/07-applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
+propre question).&lt;/p></description></item><item><title>Applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
  Les différentes applications de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rentes-applications-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
-&lt;p>TODO&lt;/p></description></item><item><title>AA et programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/08-programmation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/08-programmation/</guid><description>&lt;h1 id="lapprentissage-automatique-et-la-programmation">
+&lt;p>TODO&lt;/p></description></item><item><title>AA et programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/programmation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/programmation/</guid><description>&lt;h1 id="lapprentissage-automatique-et-la-programmation">
  L&amp;rsquo;apprentissage automatique et la programmation
  &lt;a class="anchor" href="#lapprentissage-automatique-et-la-programmation">#&lt;/a>
 &lt;/h1>
