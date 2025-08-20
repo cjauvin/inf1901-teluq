@@ -59,7 +59,13 @@ magnétisme (disque dur) ou de caractéristiques optiques (CD). Les bits
 &lt;em>représentent&lt;/em> les nombres via la convention de l&amp;rsquo;encodage binaire.&lt;/p></description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle">
  Qu&amp;rsquo;est-ce qu&amp;rsquo;on veut dire par modèle?
  &lt;a class="anchor" href="#quest-ce-quon-veut-dire-par-mod%c3%a8le">#&lt;/a>
-&lt;/h1></description></item><item><title>Les paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
+&lt;/h1>
+&lt;p>Le mot &amp;ldquo;modèle&amp;rdquo; est polysémique et peut prêter à confusion selon qu’on parle d’apprentissage automatique, de statistiques, de sciences ou de mathématiques pures. Ce chapitre clarifie ces sens et propose un vocabulaire pratique pour les distinguer dans le contexte de ce cours.&lt;/p>
+&lt;h2 id="le-sens-central-en-apprentissage-automatique">
+ Le sens central en apprentissage automatique
+ &lt;a class="anchor" href="#le-sens-central-en-apprentissage-automatique">#&lt;/a>
+&lt;/h2>
+&lt;p>Dans l’AA, un modèle est avant tout une fonction paramétrée qui prend des données en entrée et produit une sortie utile (prédiction, score, probabilité, texte, etc.) :&lt;/p></description></item><item><title>Les paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
  Les différents paradigmes de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
@@ -70,9 +76,13 @@ résoudre. Nous allons considérer deux schémas de classement fondamentaux :&lt
 &lt;li>L&amp;rsquo;apprentissage supervisé versus non-supervisé&lt;/li>
 &lt;li>L&amp;rsquo;apprentissage paramétrique versus non-paramétrique&lt;/li>
 &lt;/ul>
-&lt;h2 id="apprentissage-non-supervisé">
- Apprentissage non-supervisé
- &lt;a class="anchor" href="#apprentissage-non-supervis%c3%a9">#&lt;/a>
+&lt;h2 id="lapprentissage-supervisé">
+ L&amp;rsquo;apprentissage supervisé
+ &lt;a class="anchor" href="#lapprentissage-supervis%c3%a9">#&lt;/a>
+&lt;/h2>
+&lt;h2 id="lapprentissage-non-supervisé">
+ L&amp;rsquo;apprentissage non-supervisé
+ &lt;a class="anchor" href="#lapprentissage-non-supervis%c3%a9">#&lt;/a>
 &lt;/h2>
 &lt;p>Nous avons vu qu&amp;rsquo;une caractéristique essentielle de l&amp;rsquo;apprentissage
 supervisé est que la &amp;ldquo;bonne réponse&amp;rdquo; (qu&amp;rsquo;il s&amp;rsquo;agisse du prix réel
@@ -104,21 +114,21 @@ d’entraînement. L&amp;rsquo;apprentissage supervisé correspond à la notion 
 a de l&amp;rsquo;enseignement et de l&amp;rsquo;apprentissage : un enseignant qui pose une question
 à un étudiant est en mesure de le corriger en lui indiquant si sa réponse est
 correcte ou non (car l&amp;rsquo;enseignant connaît, à priori, la &amp;ldquo;bonne réponse&amp;rdquo; à sa
-propre question).&lt;/p></description></item><item><title>Applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
+propre question).&lt;/p></description></item><item><title>Apprentissage non-supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</guid><description>&lt;h1 id="lapprentissage-non-supervisé">
+ L&amp;rsquo;apprentissage non-supervisé
+ &lt;a class="anchor" href="#lapprentissage-non-supervis%c3%a9">#&lt;/a>
+&lt;/h1></description></item><item><title>Qu'est-ce qu'une fonction de coût?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/fonctions-de-co%C3%BBt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/fonctions-de-co%C3%BBt/</guid><description>&lt;h1 id="quest-ce-quune-fonction-de-coût">
+ Qu&amp;rsquo;est-ce qu&amp;rsquo;une fonction de coût?
+ &lt;a class="anchor" href="#quest-ce-quune-fonction-de-co%c3%bbt">#&lt;/a>
+&lt;/h1></description></item><item><title>Applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
  Les différentes applications de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rentes-applications-de-lapprentissage-automatique">#&lt;/a>
 &lt;/h1>
-&lt;p>TODO&lt;/p></description></item><item><title>Apprentissage non-supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</guid><description>&lt;h1 id="lapprentissage-non-supervisé">
- L&amp;rsquo;apprentissage non-supervisé
- &lt;a class="anchor" href="#lapprentissage-non-supervis%c3%a9">#&lt;/a>
-&lt;/h1></description></item><item><title>AA et programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/programmation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/programmation/</guid><description>&lt;h1 id="lapprentissage-automatique-et-la-programmation">
+&lt;p>TODO&lt;/p></description></item><item><title>AA et programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/programmation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/programmation/</guid><description>&lt;h1 id="lapprentissage-automatique-et-la-programmation">
  L&amp;rsquo;apprentissage automatique et la programmation
  &lt;a class="anchor" href="#lapprentissage-automatique-et-la-programmation">#&lt;/a>
 &lt;/h1>
-&lt;p>TODO&lt;/p></description></item><item><title>Qu'est-ce qu'une fonction de coût?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/fonctions-de-co%C3%BBt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/fonctions-de-co%C3%BBt/</guid><description>&lt;h1 id="quest-ce-quune-fonction-de-coût">
- Qu&amp;rsquo;est-ce qu&amp;rsquo;une fonction de coût?
- &lt;a class="anchor" href="#quest-ce-quune-fonction-de-co%c3%bbt">#&lt;/a>
-&lt;/h1></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
+&lt;p>TODO&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
  Classification naïve bayésienne pour détecter les pourriels
  &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels">#&lt;/a>
 &lt;/h1>
