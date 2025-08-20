@@ -284,6 +284,10 @@ ultimement des valeurs numériques (et même au final des entités physiques, le
 bits), mais il y a tout de même un sens clair à distinguer les deux types de
 mathématiques sur lesquels sont fondés l'IA classique et l'AA.
 
+![](/images/module2/schema_repr_donnees.png)
+
+### Les mots et leur sens
+
 Il se trouve que la distinction peut apparaître moins claire, selon le type
 d'algorithme d'apprentissage dont on parle. Avec les grands modèles de langage
 (GML), les données de base sont les mots (ou souvent des morceaux de mots, les
@@ -303,5 +307,11 @@ et sa représentation interne (c-à-d ses paramètres) son propre système
 symbolique, dans un format qui peut être particulièrement opaque pour un
 interprète humain.
 
-![](/images/module2/schema_repr_donnees.png)
+![](/images/module2/word_vector_space.png)
+
+![](/images/module2/word_vector_space_with_doc.png)
+
+![](/images/module2/word_vector_space_with_hypercube.png)
+
+![](/images/module2/word_embedding.png)
 

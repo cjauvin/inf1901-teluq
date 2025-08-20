@@ -12,7 +12,9 @@ résoudre. Nous allons considérer deux schémas de classement fondamentaux :
 - L'apprentissage supervisé versus non-supervisé
 - L'apprentissage paramétrique versus non-paramétrique
 
-## Apprentissage non-supervisé
+## L'apprentissage supervisé
+
+## L'apprentissage non-supervisé
 
 Nous avons vu qu'une caractéristique essentielle de l'apprentissage
 supervisé est que la "bonne réponse" (qu'il s'agisse du prix réel
@@ -35,7 +37,7 @@ chaque exemple à un groupe en particulier. Il pourrait être également
 possible que le nombre d'espèces soit à priori inconnu, ce qui rendrait
 la tâche de l'algorithme de classification encore plus difficile.
 
-### Partitionnement (clustering)
+### Le partitionnement (clustering)
 
 Avec un algorithme de partitionnement, on peut découvrir des
 "agrégats", ou des groupes naturels dans les données.

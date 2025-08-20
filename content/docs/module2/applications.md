@@ -1,6 +1,6 @@
 ---
 title: "Applications de l'AA"
-weight: 70
+weight: 90
 ---
 
 # Les différentes applications de l'apprentissage automatique

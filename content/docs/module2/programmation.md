@@ -1,6 +1,6 @@
 ---
 title: "AA et programmation"
-weight: 80
+weight: 100
 ---
 
 # L'apprentissage automatique et la programmation
