@@ -260,6 +260,21 @@ caractéristiques quantitatives (features) d'une maison :
 
 ![](/images/module2/nf_house.png)
 
+Un tel espace pourrait servir à représenter des données tabulaires de ce genre par exemple :
+
+| x1 (prix) | x2 (année de construction) | x3 (taille du terrain, m²) | x4 (surface habitable, m²) | x5 (nombre de chambres) | x6 (nombre de salles de bain) |
+|-----------|-----------------------------|-----------------------------|-----------------------------|--------------------------|--------------------------------|
+| 420 000   | 1995                        | 600                         | 180                         | 4                        | 2                              |
+| 350 000   | 1980                        | 500                         | 150                         | 3                        | 1                              |
+| 580 000   | 2010                        | 720                         | 220                         | 5                        | 3                              |
+| 310 000   | 1972                        | 450                         | 130                         | 3                        | 1                              |
+| 760 000   | 2020                        | 850                         | 260                         | 6                        | 3                              |
+| 490 000   | 2005                        | 640                         | 200                         | 4                        | 2                              |
+| 270 000   | 1965                        | 400                         | 110                         | 2                        | 1                              |
+| 690 000   | 2018                        | 780                         | 240                         | 5                        | 2                              |
+| 330 000   | 1988                        | 520                         | 145                         | 3                        | 1                              |
+| 815 000   | 2022                        | 900                         | 280                         | 6                        | 4                              |
+
 ### Les GPUs
 
 Il serait possible d'implémenter un espace vectoriel entièrement avec les
@@ -288,30 +303,126 @@ mathématiques sur lesquels sont fondés l'IA classique et l'AA.
 
 ### Les mots et leur sens
 
-Il se trouve que la distinction peut apparaître moins claire, selon le type
-d'algorithme d'apprentissage dont on parle. Avec les grands modèles de langage
-(GML), les données de base sont les mots (ou souvent des morceaux de mots, les
-"tokens") qui sont au départ des données de nature résolument symbolique (un mot
-est un symbole par excellence, après tout). Un GML fonctionne pourtant en fait à
-partir d'une représentation vectorielle des mots. Chaque mot est associé à un
-vecteur arbitraire dans un espace de grande dimensionnalité (par exemple 512
-dimensions), et ce sont ces vecteurs qui sont manipulés, transformés et
-*appris*, à l'interne, par un GML. Il n'est pas nécessairement clair à priori ce
-que représente chaque dimension de cet espace particulier. Mais il se trouve
-qu'après la phase d'apprentissage d'un GML, les mots se trouvant près les uns
-des autres, dans cet espace, auront tendance à être sémantiquement rapprochés.
-Les mots "chien" et "chat" seront donc probablement relativement proches (en
-terme de distance euclidienne), dans cet espace à 512 dimensions. Le
-fonctionnement du GML fait donc en sorte de reproduire, dans son fonctionnement
-et sa représentation interne (c-à-d ses paramètres) son propre système
-symbolique, dans un format qui peut être particulièrement opaque pour un
-interprète humain.
+Jusqu’ici, nous avons traité des données numériques ou tabulaires. Mais qu’en est-il du **langage naturel** ?
+Les mots portent du sens, mais pour un ordinateur ils doivent d’abord être **convertis en nombres**.
+Cette étape, qu’on appelle **représentation vectorielle**, est au cœur du traitement automatique du langage.
+
+---
+
+#### L’espace lexical vectoriel
+
+La manière la plus simple de représenter les mots est de construire un **espace lexical** où chaque mot
+du vocabulaire correspond à une dimension.
+Si le vocabulaire contient \\(|V|\\) mots, l’espace a \\(|V|\\) dimensions.
+
+- Par exemple, si le vocabulaire est : {chat, chien, maison, arbre, voiture},
+  alors l’espace est à 5 dimensions.
+- Le mot *chat* correspond à la première dimension, *chien* à la deuxième, etc.
+
+Un mot peut alors être représenté comme un vecteur binaire, par exemple :
+
+- *chien* → (0, 1, 0, 0, 0)
+- *maison* → (0, 0, 1, 0, 0)
 
 ![](/images/module2/word_vector_space.png)
 
+---
+
+#### Encodage d’un document (sac de mots)
+
+Avec cette idée, on peut représenter un **document entier** en regardant quels mots du vocabulaire
+y apparaissent. On construit alors un vecteur binaire de longueur \\(|V|\\) :
+
+- 1 si le mot est présent dans le document,
+- 0 sinon.
+
+Cette représentation est appelée **sac de mots** (*bag of words*), car on ne se préoccupe pas
+de l’ordre des mots ni de leur contexte, mais uniquement de leur présence/absence.
+
+Exemple avec notre petit vocabulaire {chat, chien, maison, arbre, voiture} :
+
+- Document : *« le chat dort dans la maison »*
+- Vecteur : (1, 0, 1, 0, 0)
+
 ![](/images/module2/word_vector_space_with_doc.png)
+
+---
+
+#### L’hypercube unitaire
+
+Si on visualise ces représentations, chaque document correspond à un point dans un **hypercube unitaire** de dimension \\(|V|\\).
+Chaque coordonnée vaut 0 ou 1.
+
+- Le sommet (0, 0, 0, 0, 0) correspond à un document vide.
+- Le sommet (1, 1, 1, 1, 1) correspond à un document qui contient tous les mots du vocabulaire.
+- La distance entre deux vecteurs reflète une certaine **similarité lexicale** (par exemple, la distance de Hamming compte le nombre de mots différents).
+
+Cela illustre bien que le traitement des mots peut être vu comme un problème **géométrique**.
 
 ![](/images/module2/word_vector_space_with_hypercube.png)
 
+---
+
+#### Limites du sac de mots
+
+Malgré sa simplicité, cette approche a de sérieuses limites :
+
+- **Dimensionnalité énorme** : le vocabulaire d’une langue peut contenir des dizaines de milliers de mots,
+  ce qui rend l’espace vectoriel gigantesque.
+- **Vecteurs creux (sparse)** : la plupart des documents n’utilisent qu’une fraction du vocabulaire,
+  donc les vecteurs contiennent surtout des zéros.
+- **Pas de notion de sens** : le sac de mots ne capture pas que *chien* et *chiot* sont liés,
+  ou que *banque* peut avoir plusieurs sens.
+- **Pas de contexte** : l’ordre des mots est perdu, alors que « le chien mord l’homme »
+  et « l’homme mord le chien » devraient clairement avoir des sens différents.
+
+---
+
+#### Vers des représentations plus compactes : les plongements lexicaux
+
+Pour dépasser ces limites, on utilise des représentations plus **compactes** et plus **riches** :
+les **plongements lexicaux** (*word embeddings*).
+
+- Les mots ou documents sont projetés dans un espace de **faible dimension** (par exemple 100 ou 512).
+- Les coordonnées ne sont plus 0 ou 1, mais des valeurs réelles continues.
+- Ces coordonnées sont **apprises automatiquement** par un modèle sur de grandes quantités de textes.
+
+L’idée clé : deux mots qui apparaissent souvent dans des contextes similaires
+auront des vecteurs proches dans cet espace.
+Par exemple, *roi* et *reine* ou *Paris* et *Londres*.
+
 ![](/images/module2/word_embedding.png)
 
+---
+
+#### Exemple intuitif
+
+Supposons qu’on entraîne un modèle sur un grand corpus.
+Il pourrait apprendre que :
+
+- *roi* ≈ (0.51, 0.12, -0.34, …)
+- *reine* ≈ (0.49, 0.18, -0.29, …)
+- *homme* ≈ (0.44, 0.05, -0.21, …)
+- *femme* ≈ (0.43, 0.09, -0.19, …)
+
+La proximité vectorielle montre que *roi* est plus proche de *reine* que de *voiture*.
+Mieux encore, les différences de vecteurs permettent de capturer des **analogies** :
+
+- *roi* - *homme* + *femme* ≈ *reine*
+
+C’est cette capacité à capturer des **relations sémantiques** qui rend les plongements lexicaux si puissants.
+
+![](/images/module2/word_embedding_words.png)
+
+---
+
+#### Résumé
+
+- **Espace lexical vectoriel** : chaque mot correspond à une dimension.
+- **Sac de mots** : un document est encodé comme un vecteur binaire (présence/absence).
+- **Hypercube unitaire** : vision géométrique de tous les documents possibles.
+- **Limites** : espace énorme, vecteurs creux, pas de contexte ni de sens.
+- **Plongements lexicaux** : espaces compacts et continus où la proximité vectorielle reflète la proximité sémantique.
+
+Ces représentations sont aujourd’hui la base du traitement du langage naturel,
+et elles alimentent directement les modèles modernes comme les réseaux de neurones récurrents, les Transformers et les grands modèles de langage.
