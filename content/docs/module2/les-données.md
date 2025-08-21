@@ -275,6 +275,9 @@ Un tel espace pourrait servir à représenter des données tabulaires de ce genr
 | 330 000   | 1988                        | 520                         | 145                         | 3                        | 1                              |
 | 815 000   | 2022                        | 900                         | 280                         | 6                        | 4                              |
 
+Donc même s'il s'agit d'un tableau à deux dimensions, les données qu'il contient
+sont multidimensionnelles.
+
 ### Les GPUs
 
 Il serait possible d'implémenter un espace vectoriel entièrement avec les
