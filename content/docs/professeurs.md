@@ -9,16 +9,16 @@ Ce cours a été co-créé par trois professeurs de la TÉLUQ.
 
 ## Richard Hotte
 
-[Richard Hotte](https://www.teluq.ca/siteweb/univ/rhotte.html?p_nue=true) est
+[Richard Hotte](https://www.teluq.ca/siteweb/univ/rhotte.html?p_nue=true) a été
 titulaire de la chaire UNESCO en système intelligent d'apprentissage repensé
-pour tous (UNESCO Chair for Global Smart Disruptive Learning (GSDL)). Cette
-chaire se rattache au programme UNITWIN/Chaires UNESCO et s'inscrit dans le
-champ de l'intelligence artificielle et apprentissage mobile. Elle a pour objet
-de promouvoir un système intégré de recherche, de formation et de documentation
-sur l'apprentissage mobile. Elle vise à  faciliter la collaboration entre des
-chercheurs et des enseignants de renommée internationale de l'Université et
-d'autres établissements au Canada ainsi qu'ailleurs en Amérique du Nord, en
-Europe, en Afrique et dans d'autres régions du monde.
+pour tous (UNESCO Chair for Global Smart Disruptive Learning (GSDL)), de 2019 à
+2023. Cette chaire se rattache au programme UNITWIN/Chaires UNESCO et s'inscrit
+dans le champ de l'intelligence artificielle et apprentissage mobile. Elle a
+pour objet de promouvoir un système intégré de recherche, de formation et de
+documentation sur l'apprentissage mobile. Elle vise à  faciliter la
+collaboration entre des chercheurs et des enseignants de renommée internationale
+de l'Université et d'autres établissements au Canada ainsi qu'ailleurs en
+Amérique du Nord, en Europe, en Afrique et dans d'autres régions du monde.
 
 ## Daniel Lemire
 
