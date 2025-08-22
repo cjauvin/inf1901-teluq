@@ -329,39 +329,19 @@ fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p></descri
 &lt;/h1>
 &lt;p>Il existe plusieurs manières de catégoriser les algorithmes d&amp;rsquo;apprentissage
 automatique, selon leur nature et la structure des problèmes qu&amp;rsquo;ils tentent de
-résoudre. Nous allons considérer deux schémas de classement fondamentaux :&lt;/p>
+résoudre. Nous allons brièvement discuter de trois schémas de classement :&lt;/p>
 &lt;ul>
-&lt;li>L&amp;rsquo;apprentissage supervisé versus non-supervisé&lt;/li>
-&lt;li>L&amp;rsquo;apprentissage paramétrique versus non-paramétrique&lt;/li>
+&lt;li>L&amp;rsquo;apprentissage &lt;em>supervisé&lt;/em> versus &lt;em>non-supervisé&lt;/em>&lt;/li>
+&lt;li>L&amp;rsquo;apprentissage &lt;em>paramétrique&lt;/em> versus &lt;em>non-paramétrique&lt;/em>&lt;/li>
+&lt;li>L&amp;rsquo;apprentissage &lt;em>inductif&lt;/em> versus &lt;em>transductif&lt;/em>&lt;/li>
 &lt;/ul>
-&lt;h2 id="lapprentissage-supervisé">
- L&amp;rsquo;apprentissage supervisé
- &lt;a class="anchor" href="#lapprentissage-supervis%c3%a9">#&lt;/a>
+&lt;p>Nous allons également parler de l&amp;rsquo;&lt;em>apprentissage par renforcement&lt;/em>, qui est dans
+une classe à part.&lt;/p>
+&lt;h2 id="apprentissage-supervisé-versus-non-supervisé">
+ Apprentissage supervisé versus non-supervisé
+ &lt;a class="anchor" href="#apprentissage-supervis%c3%a9-versus-non-supervis%c3%a9">#&lt;/a>
 &lt;/h2>
-&lt;h2 id="lapprentissage-non-supervisé">
- L&amp;rsquo;apprentissage non-supervisé
- &lt;a class="anchor" href="#lapprentissage-non-supervis%c3%a9">#&lt;/a>
-&lt;/h2>
-&lt;p>Nous avons vu qu&amp;rsquo;une caractéristique essentielle de l&amp;rsquo;apprentissage
-supervisé est que la &amp;ldquo;bonne réponse&amp;rdquo; (qu&amp;rsquo;il s&amp;rsquo;agisse du prix réel
-d&amp;rsquo;une maison, ou la variable binaire oui/non correspondant au fait
-qu&amp;rsquo;un étudiant ait échoué ou non) est fournie avec les données
-d’entraînement. Un algorithme d&amp;rsquo;apprentissage supervisé (nous avons vu
-qu&amp;rsquo;il y en avait plusieurs) utilise cette &amp;ldquo;bonne réponse&amp;rdquo; comme une
-cible cruciale qu&amp;rsquo;il doit s&amp;rsquo;efforcer d&amp;rsquo;atteindre, de modéliser donc.
-En contraste, un algorithme non-supervisé n&amp;rsquo;a pas cette &amp;ldquo;bonne
-réponse&amp;rdquo;, il n&amp;rsquo;a que des données non-étiquetées. Les algorithmes de
-cette famille ont donc une tâche entièrement différente que celle de
-l&amp;rsquo;apprentissage supervisé. Il doivent découvrir la structure inhérente
-aux données, de manière autonome, tout en étant guidé possible par des
-hypothèses. Par exemple, si les données sont des mesures décrivant un
-ensemble de fleurs de différentes espèces, il est possible que je
-sache à priori combien d&amp;rsquo;espèces l&amp;rsquo;ensemble d’entraînement contient.
-Dans ce cas, supposons que je sache qu&amp;rsquo;il y a trois espèces, alors
-l&amp;rsquo;algorithme n&amp;rsquo;aura qu&amp;rsquo;à découvrir ces trois groupes, et associer
-chaque exemple à un groupe en particulier. Il pourrait être également
-possible que le nombre d&amp;rsquo;espèces soit à priori inconnu, ce qui rendrait
-la tâche de l&amp;rsquo;algorithme de classification encore plus difficile.&lt;/p></description></item><item><title>Apprentissage supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</guid><description>&lt;h1 id="apprentissage-supervisé">
+&lt;p>La distinction la plus connue oppose l’apprentissage supervisé à l’apprentissage non-supervisé.&lt;/p></description></item><item><title>Apprentissage supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</guid><description>&lt;h1 id="apprentissage-supervisé">
  Apprentissage supervisé
  &lt;a class="anchor" href="#apprentissage-supervis%c3%a9">#&lt;/a>
 &lt;/h1>
