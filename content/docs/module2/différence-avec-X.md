@@ -13,14 +13,20 @@ exécute pour résoudre un problème. Normalement, ce programme fait son travail
 relation avec des données fournies par l'utilisateur. Le programme dans ce cas
 est une série d'instructions symboliques dans un langage de programmation.
 
-Un modèle d'AA (déjà entrainé) va prendre en entrée des données fournies par
-l'utilisateur, et va fournir une réponse appropriée après avoir effectué une
-série d'opérations mathématiques. Si on veut absolument parler de "programme"
-dans ce cas, on peut parler des opérations mathématiques (pas nécessairement
-symboliques) qui sont effectuées sur les données, pour les transformer en
-réponse. Il est important de comprendre que même si un modèle d'AA est avant
-tout un objet mathématique (un modèle avec ses paramètres), son implémentation
-concrète se fait quand même toujours avec un langage de programmation.
+Un modèle d'AA (déjà entraîné) va prendre en entrée des données fournies par
+l'utilisateur, et va offrir une réponse appropriée après avoir effectué une
+série d'opérations mathématiques (plus spécifiquement, des calculs souvent
+reliés à l'algèbre linéaire ou aux probabilités). Si on veut absolument parler
+de "programme" dans ce cas, on peut parler des opérations mathématiques (pas
+nécessairement symboliques) qui sont effectuées sur les données, pour les
+transformer en réponse. Il est important de comprendre que même si un modèle
+d'AA est avant tout un objet mathématique (un modèle avec ses paramètres), son
+implémentation concrète se fait quand même toujours avec un langage de
+programmation.
+
+Ce sujet est traité plus en profondeur dans le [prochain chapitre]({{< relref
+"docs/module2/les-données/" >}}), qui parle des données et de leur
+représentation.
 
 ![](/images/module2/abeille.png)
 
