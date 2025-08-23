@@ -35,9 +35,9 @@ millions de développeurs.
 ## Christian Jauvin
 
 [Christian Jauvin](https://www.teluq.ca/siteweb/univ/cjauvin.html) s’intéresse à
-la programmation, à la modélisation de données, à la science des données, à
-l’architecture logicielle, à la géomatique, à l’intelligence artificielle et à
-l’impact social des technologies numériques.
+la programmation, à la modélisation et la science des données, à l’architecture
+logicielle, à la géomatique, à l’intelligence artificielle et à l’impact social
+des technologies numériques.
 
 Titulaire d’une maîtrise en informatique de l’Université de Montréal, il a
 participé à ses débuts à des recherches pionnières sur la modélisation
