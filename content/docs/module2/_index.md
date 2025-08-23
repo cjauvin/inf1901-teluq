@@ -48,3 +48,9 @@ image (par contre, la question se pose à savoir ce qui devrait arriver si je lu
 présente l'image d'une vache!). Une bonne capacité de généralisation est le
 but fondamental de l'AA et de l'IA en général, et est reliée à ce qu'on entend
 par intelligence, scientifiquement parlant.
+
+## Les objectifs du module
+
+* Comprendre la différence entre la programmation traditionnelle et
+  l'apprentissage automatique
+* Explorer les différentes manières de représenter les données
