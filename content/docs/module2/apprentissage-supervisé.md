@@ -412,8 +412,8 @@ modèles travaillaient directement dans l’espace des variables réelles, où c
 donnée est représentée par un point dans le plan.
 
 Nous allons maintenant changer de domaine d’application et considérer un
-problème très concret : la détection de courriels indésirables (spam). Ce sera
-aussi le sujet de votre [travail noté 2]({{< relref
+problème très concret : la détection de courriels indésirables (pourriels, ou
+spam en anglais). Ce sera aussi le sujet de votre [travail noté 2]({{< relref
 "docs/module2/travail-noté-2" >}}).
 
 #### Représenter un courriel comme un vecteur
@@ -424,12 +424,18 @@ représenté par un vecteur dans l’« espace des mots ». Dans ce modèle vect
 chaque dimension correspond à un mot du vocabulaire, et la valeur dans cette
 dimension correspond au nombre de fois que le mot apparaît dans le document.
 
-Ainsi, un courriel devient un vecteur :
+Ainsi, un courriel devient un vecteur en très haute dimension :
 
-$$x = (n_{1}, n_{2}, \ldots, n_{V})$$
+$$\mathbf{x} = (n_{1}, n_{2}, \ldots, n_{V})$$
 
 où $n_{i}$ est le nombre d’occurrences du mot $i$ dans le courriel, et $V$ est
 la taille du vocabulaire.
+
+Il est utile de faire l'effort de se représenter l'analogie entre le
+$\mathbf{x}$ de nos exemples 2D précédents, et ce $\mathbf{x}$ qui vit dans un
+espace de beaucoup plus grande dimension, et composé de valeurs entières au lieu
+de valeurs continues (les comptes pour chaque dimension / mot), mais tout de
+même un vecteur de même nature.
 
 #### Le modèle probabiliste : multinomial
 
@@ -437,21 +443,28 @@ Dans le cas du classificateur naïf bayésien pour les données en deux dimensio
 nous avions supposé que chaque classe (par exemple `bleu` et `rouge`) était
 associée à une distribution gaussienne. Autrement dit, nous modélisions la
 distribution des variables continues $x_1$ et $x_2$ à l’aide d’une loi normale.
+Ce modèle est *génératif* dans le sens où il génère les données d'une classe
+(vecteurs 2D pour les classes `bleu` ou `rouge`, et vecteurs en dimension $|V|$
+pour les classes `pourriel` ou `courriel`).
 
 Dans le cas du texte d'un courriel, la situation est différente. Les variables
-$n_i$ sont des comptages de mots, et il est naturel de les modéliser par une
-distribution multinomiale.
+$n_i$ sont des comptes de mots, et il est naturel de les modéliser par une
+distribution multinomiale. Si on lance un dé à 6 faces 1000 fois, la
+distribution multinomiale permet de calculer la probabilité d'obtenir $X_1$ fois
+la face, $X_2$ fois la face 2, et ainsi de suite. Il s'agit donc d'une
+distribution qui modélise des événements *discrets* (des comptes entiers) par
+opposition à la distribution normale qui modélise des valeurs *continues*.
 
-Si un courriel appartient à la classe « spam », alors la probabilité d’observer
-un vecteur $x$ de comptages de mots est :
+Si un courriel appartient à la classe `pourriel`, alors la probabilité
+d’observer un vecteur $\mathbf{x}$ de comptes de mots est :
 
-$$P(x \mid \text{spam}) = \frac{N!}{n_{1}! \, n_{2}! \, \cdots \, n_{V}!} \, \prod_{i=1}^{V} p_{i}^{\,n_{i}}$$
+$$P(\mathbf{x} \mid \text{pourriel}) = \frac{N!}{n_{1}! \, n_{2}! \, \cdots \, n_{V}!} \, \prod_{i=1}^{V} p_{i}^{\,n_{i}}$$
 
 où :
 *	$N = \sum_{i=1}^{V} n_i$ est le nombre total de mots du courriel,
-*	$p_i$ est la probabilité qu’un mot de classe « spam » soit le mot i.
+*	$p_i$ est la probabilité à priori qu’un mot de classe `pourriel` soit le mot $i$ (cette probabilité à priori est probablement plus grande pour le mot "prix" que pour le mot "parent", par exemple).
 
-De la même façon, on définit un modèle multinomial pour la classe « non-spam ».
+De la même façon, on définit un modèle multinomial pour la classe `courriel`.
 
 #### Rappel : hypothèse de naïveté
 
@@ -464,15 +477,23 @@ le modèle beaucoup plus simple et efficace en pratique.
 
 Pour classer un courriel, nous utilisons la règle de Bayes :
 
-$$P(\text{spam} \mid x) = \frac{P(x \mid \text{spam}) \, P(\text{spam})}{P(x)}$$
+$$P(\text{pourriel} \mid \mathbf{x}) = \frac{P(x \mid \text{pourriel}) \, P(\text{pourriel})}{P(\mathbf{x})}$$
 
-$$P(\text{non-spam} \mid x) = \frac{P(x \mid \text{non-spam}) \, P(\text{non-spam})}{P(x)}$$
+$$P(\text{courriel} \mid \mathbf{x}) = \frac{P(\mathbf{x} \mid \text{courriel}) \, P(\text{courriel})}{P(\mathbf{x})}$$
 
-et nous choisissons la classe avec la plus grande probabilité a posteriori.
+ce qui permet, en ignorant $P(\mathbf{x})$ pour la même raison que celle
+expliquée ci-haut, d'obtenir un algorithme de classification similaire à celui
+que nous avons déjà vu :
 
-Dans le cas multinomial, il est pratique de travailler avec le logarithme :
-
-$$\log P(x \mid \text{spam}) = \sum_{i=1}^{V} n_i \, \log p_i + \text{constante}$$
+$$
+\text{classification}(\mathbf{x}) =
+\left\{
+\begin{array}{ll}
+\mathtt{pourriel} \text{ si } P(\mathbf{x} \mid \text{pourriel}) P(\text{pourriel}) \ge P(\mathbf{x} \mid \text{courriel}) P(\text{courriel}) & \\
+\mathtt{courriel} \text{ sinon } & \\
+\end{array}
+\right.
+$$
 
 Cela montre que la décision finale est une combinaison linéaire pondérée des
 fréquences de mots, ce qui fait le lien avec la régression logistique étudiée
@@ -480,10 +501,9 @@ précédemment.
 
 ### Autres algorithmes de classification
 
-- Régression logistique (ex1: à partir du nombre d'heures étudiées et du nombre de cours, prédire si un étudiant a gradué ou non, ex2: à partir des caractéristiques des passagers du Titanic, prédire s'ils ont survécu ou non)
 - k-NN
+- SVM
 - Arbres de décision
-- Naive Bayes
 - Réseau de neurones
 
 ## Régression
