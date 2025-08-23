@@ -499,6 +499,8 @@ Cela montre que la décision finale est une combinaison linéaire pondérée des
 fréquences de mots, ce qui fait le lien avec la régression logistique étudiée
 précédemment.
 
+![](/images/module2/spam_vector_space.png)
+
 ### Autres algorithmes de classification
 
 - k-NN
