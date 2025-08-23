@@ -66,7 +66,7 @@ apparaissent dans les courriels qui &ldquo;oui&rdquo;, sont des pourriels :</p><
 que la colonne D (il faut donc utiliser la fonction de remplissage
 automatique, pour laquelle le plus simple est de soit glisser (drag)
 la première cellule vers le bas, une fois qu&rsquo;elle a été calculée, ou
-encore de double-cliquer sur le petit &ldquo;+&rdquo; noir qui apparait en bas à
+encore de double-cliquer sur le petit &ldquo;+&rdquo; noir qui apparaît en bas à
 droite de la première cellule).</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/tn2/sheets_col_e_drag.png alt></p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/tn2/sheets_cols_e_et_f.png alt></p><p>À partir de ces fréquences de mots pour chaque classe (&ldquo;oui&rdquo; ou
 &ldquo;non&rdquo;), on peut maintenant calculer la probabilité conditionnelle de
 chaque mot du vocabulaire, étant donné le fait qu&rsquo;un courriel soit
@@ -97,11 +97,11 @@ pourriel :</p><pre tabindex=0><code>=PRODUCT(L:L) * C2
 </code></pre><p>Notre classification finale sera dans la colonne O :</p><pre tabindex=0><code>=IF(M1 &gt; N1; &#34;non&#34;; &#34;oui&#34;)
 </code></pre><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/tn2/sheets_toutes_les_cols.png alt></p><h2 id=questions>Questions
 <a class=anchor href=#questions>#</a></h2><ol><li><p>Que se passe-t-il si vous changez le mot &ldquo;spéciale&rdquo; par le mot
-&ldquo;livrée&rdquo; dans le courriel de test de la cellule I1?</p></li><li><p>Expliquez en vos mots ce qui se passe avec les probabilités
-conditionnelles du mot &ldquo;livrée&rdquo;, aux cellules K4 et L4. Pourquoi
+&ldquo;livrée&rdquo; dans le courriel de test de la cellule <code>I1</code>?</p></li><li><p>Expliquez en vos mots ce qui se passe avec les probabilités
+conditionnelles du mot &ldquo;livrée&rdquo;, aux cellules <code>K4</code> et <code>L4</code>. Pourquoi
 a-t-on besoin de faire en sorte que ça fonctionne ainsi?</p></li><li><p>Est-ce que ce modèle est paramétrique ou non? Expliquez pourquoi.</p></li><li><p>S&rsquo;il s&rsquo;agit d&rsquo;un modèle paramétrique, quels sont les paramètres du
-modèle exactement?</p></li><li><p>Quelle est la signification des nombres dans les cellules G11 et
-H11, comment peut-on les interpréter?</p></li><li><p>Quelles sont les différentes probabilités conditionnelles de ce
+modèle exactement?</p></li><li><p>Quelle est la signification des nombres dans les cellules <code>G11</code> et
+<code>H11</code>, comment peut-on les interpréter?</p></li><li><p>Quelles sont les différentes probabilités conditionnelles de ce
 modèles?</p></li><li><p>Quelles sont les probabilités non-conditionnelles (à priori)?</p></li><li><p>Est-ce qu&rsquo;il serait possible d&rsquo;utiliser seulement ces probabilités
 non-conditionnelles pour faire un modèle? Quelles conséquences ça
 entrainerait?</p></li><li><p>De quelle manière peut-ton dire que ce modèle généralise?</p></li><li><p>Est-ce que l&rsquo;ordre des mots joue un rôle dans les décisions de ce
