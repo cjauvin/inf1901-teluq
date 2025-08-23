@@ -215,28 +215,49 @@ pas explorer plus à fond.</p><p>Question intéressante à se poser? Pourquoi la
 deux dimensions : la régression logistique et le naïf bayésien gaussien. Ces
 modèles travaillaient directement dans l’espace des variables réelles, où chaque
 donnée est représentée par un point dans le plan.</p><p>Nous allons maintenant changer de domaine d’application et considérer un
-problème très concret : la détection de courriels indésirables (spam). Ce sera
-aussi le sujet de votre <a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/>travail noté 2</a>.</p><h4 id=représenter-un-courriel-comme-un-vecteur>Représenter un courriel comme un vecteur
+problème très concret : la détection de courriels indésirables (pourriels, ou
+spam en anglais). Ce sera aussi le sujet de votre <a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/>travail noté 2</a>.</p><h4 id=représenter-un-courriel-comme-un-vecteur>Représenter un courriel comme un vecteur
 <a class=anchor href=#repr%c3%a9senter-un-courriel-comme-un-vecteur>#</a></h4><p>Comme nous l’avons expliqué dans le chapitre sur <a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/#les-mots-et-leur-sens>les données</a>, un texte peut être
 représenté par un vecteur dans l’« espace des mots ». Dans ce modèle vectoriel,
 chaque dimension correspond à un mot du vocabulaire, et la valeur dans cette
-dimension correspond au nombre de fois que le mot apparaît dans le document.</p><p>Ainsi, un courriel devient un vecteur :</p>$$x = (n_{1}, n_{2}, \ldots, n_{V})$$<p>où $n_{i}$ est le nombre d’occurrences du mot $i$ dans le courriel, et $V$ est
-la taille du vocabulaire.</p><h4 id=le-modèle-probabiliste--multinomial>Le modèle probabiliste : multinomial
+dimension correspond au nombre de fois que le mot apparaît dans le document.</p><p>Ainsi, un courriel devient un vecteur en très haute dimension :</p>$$\mathbf{x} = (n_{1}, n_{2}, \ldots, n_{V})$$<p>où $n_{i}$ est le nombre d’occurrences du mot $i$ dans le courriel, et $V$ est
+la taille du vocabulaire.</p><p>Il est utile de faire l&rsquo;effort de se représenter l&rsquo;analogie entre le
+$\mathbf{x}$ de nos exemples 2D précédents, et ce $\mathbf{x}$ qui vit dans un
+espace de beaucoup plus grande dimension, et composé de valeurs entières au lieu
+de valeurs continues (les comptes pour chaque dimension / mot), mais tout de
+même un vecteur de même nature.</p><h4 id=le-modèle-probabiliste--multinomial>Le modèle probabiliste : multinomial
 <a class=anchor href=#le-mod%c3%a8le-probabiliste--multinomial>#</a></h4><p>Dans le cas du classificateur naïf bayésien pour les données en deux dimensions,
 nous avions supposé que chaque classe (par exemple <code>bleu</code> et <code>rouge</code>) était
 associée à une distribution gaussienne. Autrement dit, nous modélisions la
-distribution des variables continues $x_1$ et $x_2$ à l’aide d’une loi normale.</p><p>Dans le cas du texte d&rsquo;un courriel, la situation est différente. Les variables
-$n_i$ sont des comptages de mots, et il est naturel de les modéliser par une
-distribution multinomiale.</p><p>Si un courriel appartient à la classe « spam », alors la probabilité d’observer
-un vecteur $x$ de comptages de mots est :</p>$$P(x \mid \text{spam}) = \frac{N!}{n_{1}! \, n_{2}! \, \cdots \, n_{V}!} \, \prod_{i=1}^{V} p_{i}^{\,n_{i}}$$<p>où :</p><ul><li>$N = \sum_{i=1}^{V} n_i$ est le nombre total de mots du courriel,</li><li>$p_i$ est la probabilité qu’un mot de classe « spam » soit le mot i.</li></ul><p>De la même façon, on définit un modèle multinomial pour la classe « non-spam ».</p><h4 id=rappel--hypothèse-de-naïveté>Rappel : hypothèse de naïveté
+distribution des variables continues $x_1$ et $x_2$ à l’aide d’une loi normale.
+Ce modèle est <em>génératif</em> dans le sens où il génère les données d&rsquo;une classe
+(vecteurs 2D pour les classes <code>bleu</code> ou <code>rouge</code>, et vecteurs en dimension $|V|$
+pour les classes <code>pourriel</code> ou <code>courriel</code>).</p><p>Dans le cas du texte d&rsquo;un courriel, la situation est différente. Les variables
+$n_i$ sont des comptes de mots, et il est naturel de les modéliser par une
+distribution multinomiale. Si on lance un dé à 6 faces 1000 fois, la
+distribution multinomiale permet de calculer la probabilité d&rsquo;obtenir $X_1$ fois
+la face, $X_2$ fois la face 2, et ainsi de suite. Il s&rsquo;agit donc d&rsquo;une
+distribution qui modélise des événements <em>discrets</em> (des comptes entiers) par
+opposition à la distribution normale qui modélise des valeurs <em>continues</em>.</p><p>Si un courriel appartient à la classe <code>pourriel</code>, alors la probabilité
+d’observer un vecteur $\mathbf{x}$ de comptes de mots est :</p>$$P(\mathbf{x} \mid \text{pourriel}) = \frac{N!}{n_{1}! \, n_{2}! \, \cdots \, n_{V}!} \, \prod_{i=1}^{V} p_{i}^{\,n_{i}}$$<p>où :</p><ul><li>$N = \sum_{i=1}^{V} n_i$ est le nombre total de mots du courriel,</li><li>$p_i$ est la probabilité à priori qu’un mot de classe <code>pourriel</code> soit le mot $i$ (cette probabilité à priori est probablement plus grande pour le mot &ldquo;prix&rdquo; que pour le mot &ldquo;parent&rdquo;, par exemple).</li></ul><p>De la même façon, on définit un modèle multinomial pour la classe <code>courriel</code>.</p><h4 id=rappel--hypothèse-de-naïveté>Rappel : hypothèse de naïveté
 <a class=anchor href=#rappel--hypoth%c3%a8se-de-na%c3%afvet%c3%a9>#</a></h4><p>Comme dans le modèle gaussien naïf bayésien, nous faisons l’hypothèse que les
 mots sont générés indépendamment les uns des autres. Cette hypothèse est
 évidemment fausse (certains mots apparaissent souvent ensemble), mais elle rend
 le modèle beaucoup plus simple et efficace en pratique.</p><h4 id=décision-du-classificateur>Décision du classificateur
-<a class=anchor href=#d%c3%a9cision-du-classificateur>#</a></h4><p>Pour classer un courriel, nous utilisons la règle de Bayes :</p>$$P(\text{spam} \mid x) = \frac{P(x \mid \text{spam}) \, P(\text{spam})}{P(x)}$$$$P(\text{non-spam} \mid x) = \frac{P(x \mid \text{non-spam}) \, P(\text{non-spam})}{P(x)}$$<p>et nous choisissons la classe avec la plus grande probabilité a posteriori.</p><p>Dans le cas multinomial, il est pratique de travailler avec le logarithme :</p>$$\log P(x \mid \text{spam}) = \sum_{i=1}^{V} n_i \, \log p_i + \text{constante}$$<p>Cela montre que la décision finale est une combinaison linéaire pondérée des
+<a class=anchor href=#d%c3%a9cision-du-classificateur>#</a></h4><p>Pour classer un courriel, nous utilisons la règle de Bayes :</p>$$P(\text{pourriel} \mid \mathbf{x}) = \frac{P(x \mid \text{pourriel}) \, P(\text{pourriel})}{P(\mathbf{x})}$$$$P(\text{courriel} \mid \mathbf{x}) = \frac{P(\mathbf{x} \mid \text{courriel}) \, P(\text{courriel})}{P(\mathbf{x})}$$<p>ce qui permet, en ignorant $P(\mathbf{x})$ pour la même raison que celle
+expliquée ci-haut, d&rsquo;obtenir un algorithme de classification similaire à celui
+que nous avons déjà vu :</p>$$
+\text{classification}(\mathbf{x}) =
+\left\{
+\begin{array}{ll}
+\mathtt{pourriel} \text{ si } P(\mathbf{x} \mid \text{pourriel}) P(\text{pourriel}) \ge P(\mathbf{x} \mid \text{courriel}) P(\text{courriel}) & \\
+\mathtt{courriel} \text{ sinon } & \\
+\end{array}
+\right.
+$$<p>Cela montre que la décision finale est une combinaison linéaire pondérée des
 fréquences de mots, ce qui fait le lien avec la régression logistique étudiée
 précédemment.</p><h3 id=autres-algorithmes-de-classification>Autres algorithmes de classification
-<a class=anchor href=#autres-algorithmes-de-classification>#</a></h3><ul><li>Régression logistique (ex1: à partir du nombre d&rsquo;heures étudiées et du nombre de cours, prédire si un étudiant a gradué ou non, ex2: à partir des caractéristiques des passagers du Titanic, prédire s&rsquo;ils ont survécu ou non)</li><li>k-NN</li><li>Arbres de décision</li><li>Naive Bayes</li><li>Réseau de neurones</li></ul><h2 id=régression>Régression
+<a class=anchor href=#autres-algorithmes-de-classification>#</a></h3><ul><li>k-NN</li><li>SVM</li><li>Arbres de décision</li><li>Réseau de neurones</li></ul><h2 id=régression>Régression
 <a class=anchor href=#r%c3%a9gression>#</a></h2><p>Une régression est une famille d&rsquo;algorithmes d&rsquo;apprentissage supervisé
 (ou plus classiquement, de modélisation statistique) dont le but est
 de découvrir une fonction numérique continue, au sens classique
