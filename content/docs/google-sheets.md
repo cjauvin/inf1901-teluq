@@ -5,7 +5,7 @@ weight: 50
 
 # Google Sheets
 
-Pour les travaux notés 2 et 4, Nous allons utiliser le tableur en ligne [Google
+Pour les travaux notés 2 et 4, nous allons utiliser le tableur en ligne [Google
 Sheets](https://workspace.google.com/intl/en_ca/products/sheets/) au lieu de
 Excel, car Google Sheets est plus accessible, et le langage de ses formules est
 plus facile à gérer (celui d'Excel dépend de la langue et des paramètres
