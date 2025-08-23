@@ -6,6 +6,8 @@ draft: false
 
 # Travaux notés
 
+Le cours sera évalué avec cinq travaux pratiques, un par module.
+
 ## Module 1
 
 [Visualisation annotée](/docs/module1/travail-noté-1) illustrant des concepts
