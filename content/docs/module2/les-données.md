@@ -310,8 +310,6 @@ Jusqu’ici, nous avons traité des données numériques ou tabulaires. Mais qu�
 Les mots portent du sens, mais pour un ordinateur ils doivent d’abord être **convertis en nombres**.
 Cette étape, qu’on appelle **représentation vectorielle**, est au cœur du traitement automatique du langage.
 
----
-
 #### L’espace lexical vectoriel
 
 La manière la plus simple de représenter les mots est de construire un **espace lexical** où chaque mot
@@ -328,8 +326,6 @@ Un mot peut alors être représenté comme un vecteur binaire, par exemple :
 - *maison* → (0, 0, 1, 0, 0)
 
 ![](/images/module2/word_vector_space.png)
-
----
 
 #### Encodage d’un document (sac de mots)
 
@@ -349,37 +345,50 @@ Exemple avec notre petit vocabulaire {chat, chien, maison, arbre, voiture} :
 
 ![](/images/module2/word_vector_space_with_doc.png)
 
----
-
-#### L’hypercube unitaire
-
-Si on visualise ces représentations, chaque document correspond à un point dans un **hypercube unitaire** de dimension \\(|V|\\).
+Si on visualise ces représentations, chaque document correspond à un point dans
+un **hypercube unitaire** de dimension \\(|V|\\).
 Chaque coordonnée vaut 0 ou 1.
 
 - Le sommet (0, 0, 0, 0, 0) correspond à un document vide.
 - Le sommet (1, 1, 1, 1, 1) correspond à un document qui contient tous les mots du vocabulaire.
-- La distance entre deux vecteurs reflète une certaine **similarité lexicale** (par exemple, la distance de Hamming compte le nombre de mots différents).
-
-Cela illustre bien que le traitement des mots peut être vu comme un problème **géométrique**.
+- La distance entre deux vecteurs reflète une certaine **similarité lexicale**
+  (par exemple, la [distance de
+  Hamming](https://fr.wikipedia.org/wiki/Distance_de_Hamming) compte le nombre
+  de mots différents).
 
 ![](/images/module2/word_vector_space_with_hypercube.png)
 
----
+Il n'est pas nécessaire de limiter la représentation des mots ou des documents à
+cet hypercube par contre. Il y a d'autres possibilités :
+
+* Au lieu du critère binaire *présence ou absence* (0 ou 1), on pourrait utiliser le compte des mots (de 0 à $N$)
+* On pourrait aussi utiliser un schéma de pondération plus sophistiqué comme
+  [TF-IDF](https://fr.wikipedia.org/wiki/TF-IDF), qui assigne une valeur aux
+  mots proportionnelle à deux critères : (1) leur fréquence dans un document donné
+  et (2) l'inverse de leur fréquence à travers la **totalité** des documents
 
 #### Limites du sac de mots
 
 Malgré sa simplicité, cette approche a de sérieuses limites :
 
-- **Dimensionnalité énorme** : le vocabulaire d’une langue peut contenir des dizaines de milliers de mots,
-  ce qui rend l’espace vectoriel gigantesque.
-- **Vecteurs creux (sparse)** : la plupart des documents n’utilisent qu’une fraction du vocabulaire,
-  donc les vecteurs contiennent surtout des zéros.
+- **Dimensionnalité énorme** : le vocabulaire d’une langue peut contenir des
+  dizaines de milliers de mots, ce qui rend l’espace vectoriel gigantesque.
+- **Vecteurs creux (sparse)** : la plupart des documents n’utilisent qu’une fraction du vocabulaire, donc les vecteurs contiennent surtout des zéros.
 - **Pas de notion de sens** : le sac de mots ne capture pas que *chien* et *chiot* sont liés,
   ou que *banque* peut avoir plusieurs sens.
 - **Pas de contexte** : l’ordre des mots est perdu, alors que « le chien mord l’homme »
   et « l’homme mord le chien » devraient clairement avoir des sens différents.
 
----
+Une manière simple avec laquelle on pourrait tenter d'atténuer le problème du
+manque de contexte serait de considérer l'espace de toutes les suites possibles
+de *deux mots*, par exemple. Nous allons explorer concrètement une
+représentation de ce type (appelée *bigramme*) dans le [travail noté du
+quatrième module]({{< relref "docs/module4/travail-noté-4" >}}). Ceci ferait en
+sorte d'ajouter un contexte aux mots : le bigramme `livre intéressant` serait
+donc distinct du bigramme `livre ennuyant`. Le problème cependant serait que la
+taille du "vocabulaire" augmenterait de manière dramatique : $|V|^2$ au lieu de
+$|V|$, ce qui ferait également en sorte que la représentation serait encore plus
+"creuse".
 
 #### Vers des représentations plus compactes : les plongements lexicaux
 
@@ -395,8 +404,6 @@ auront des vecteurs proches dans cet espace.
 Par exemple, *roi* et *reine* ou *Paris* et *Londres*.
 
 ![](/images/module2/word_embedding.png)
-
----
 
 #### Exemple intuitif
 
@@ -416,8 +423,6 @@ Mieux encore, les différences de vecteurs permettent de capturer des **analogie
 C’est cette capacité à capturer des **relations sémantiques** qui rend les plongements lexicaux si puissants.
 
 ![](/images/module2/word_embedding_words.png)
-
----
 
 #### Résumé
 
