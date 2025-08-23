@@ -369,10 +369,7 @@ hésiter à engager un dialogue avec l&amp;rsquo;agent, dans le but de clarifier
 du problème qui pourraient rester obscurs pour vous. N&amp;rsquo;oubliez pas que le but de
 ce cours est la construction de bons modèles mentaux pour penser à des problèmes
 de modélisation. L&amp;rsquo;agent possède déjà ces modèles mentaux, si vous avez
-développé les vôtres à la fin de ce cours, le but aura clairement été atteint !&lt;/p></description></item><item><title>Apprentissage non-supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</guid><description>&lt;h1 id="lapprentissage-non-supervisé">
- L&amp;rsquo;apprentissage non-supervisé
- &lt;a class="anchor" href="#lapprentissage-non-supervis%c3%a9">#&lt;/a>
-&lt;/h1></description></item><item><title>Ressources supplémentaires</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</guid><description>&lt;h1 id="pour-aller-plus-loin">
+développé les vôtres à la fin de ce cours, le but aura clairement été atteint !&lt;/p></description></item><item><title>Ressources supplémentaires</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</guid><description>&lt;h1 id="pour-aller-plus-loin">
  Pour aller plus loin
  &lt;a class="anchor" href="#pour-aller-plus-loin">#&lt;/a>
 &lt;/h1>
@@ -388,18 +385,7 @@ profonds entre les mathématiques, la philosophie et l&amp;rsquo;intelligence ar
  &lt;/div>
 &lt;/details>
 &lt;p>En gros, on y présente 4 paradigmes mathématiques et leur correspondance dans le monde
-de l&amp;rsquo;intelligence artificielle :&lt;/p></description></item><item><title>Qu'est-ce qu'une fonction de coût?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/fonctions-de-co%C3%BBt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/fonctions-de-co%C3%BBt/</guid><description>&lt;h1 id="quest-ce-quune-fonction-de-coût">
- Qu&amp;rsquo;est-ce qu&amp;rsquo;une fonction de coût?
- &lt;a class="anchor" href="#quest-ce-quune-fonction-de-co%c3%bbt">#&lt;/a>
-&lt;/h1></description></item><item><title>Applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
- Les différentes applications de l&amp;rsquo;apprentissage automatique
- &lt;a class="anchor" href="#les-diff%c3%a9rentes-applications-de-lapprentissage-automatique">#&lt;/a>
-&lt;/h1>
-&lt;p>TODO&lt;/p></description></item><item><title>AA et programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/programmation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/programmation/</guid><description>&lt;h1 id="lapprentissage-automatique-et-la-programmation">
- L&amp;rsquo;apprentissage automatique et la programmation
- &lt;a class="anchor" href="#lapprentissage-automatique-et-la-programmation">#&lt;/a>
-&lt;/h1>
-&lt;p>TODO&lt;/p></description></item><item><title>Travail noté 1</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</guid><description>&lt;h1 id="travail-noté-1--création-dune-visualisation-annotée">
+de l&amp;rsquo;intelligence artificielle :&lt;/p></description></item><item><title>Travail noté 1</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</guid><description>&lt;h1 id="travail-noté-1--création-dune-visualisation-annotée">
  Travail noté #1 : création d&amp;rsquo;une visualisation annotée
  &lt;a class="anchor" href="#travail-not%c3%a9-1--cr%c3%a9ation-dune-visualisation-annot%c3%a9e">#&lt;/a>
 &lt;/h1>

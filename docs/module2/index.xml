@@ -94,21 +94,7 @@ d’entraînement. L&amp;rsquo;apprentissage supervisé correspond à la notion 
 a de l&amp;rsquo;enseignement et de l&amp;rsquo;apprentissage : un enseignant qui pose une question
 à un étudiant est en mesure de le corriger en lui indiquant si sa réponse est
 correcte ou non (car l&amp;rsquo;enseignant connaît, à priori, la &amp;ldquo;bonne réponse&amp;rdquo; à sa
-propre question).&lt;/p></description></item><item><title>Apprentissage non-supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</guid><description>&lt;h1 id="lapprentissage-non-supervisé">
- L&amp;rsquo;apprentissage non-supervisé
- &lt;a class="anchor" href="#lapprentissage-non-supervis%c3%a9">#&lt;/a>
-&lt;/h1></description></item><item><title>Qu'est-ce qu'une fonction de coût?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/fonctions-de-co%C3%BBt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/fonctions-de-co%C3%BBt/</guid><description>&lt;h1 id="quest-ce-quune-fonction-de-coût">
- Qu&amp;rsquo;est-ce qu&amp;rsquo;une fonction de coût?
- &lt;a class="anchor" href="#quest-ce-quune-fonction-de-co%c3%bbt">#&lt;/a>
-&lt;/h1></description></item><item><title>Applications de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/applications/</guid><description>&lt;h1 id="les-différentes-applications-de-lapprentissage-automatique">
- Les différentes applications de l&amp;rsquo;apprentissage automatique
- &lt;a class="anchor" href="#les-diff%c3%a9rentes-applications-de-lapprentissage-automatique">#&lt;/a>
-&lt;/h1>
-&lt;p>TODO&lt;/p></description></item><item><title>AA et programmation</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/programmation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/programmation/</guid><description>&lt;h1 id="lapprentissage-automatique-et-la-programmation">
- L&amp;rsquo;apprentissage automatique et la programmation
- &lt;a class="anchor" href="#lapprentissage-automatique-et-la-programmation">#&lt;/a>
-&lt;/h1>
-&lt;p>TODO&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
+propre question).&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
  Classification naïve bayésienne pour détecter les pourriels
  &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels">#&lt;/a>
 &lt;/h1>
