@@ -134,4 +134,3 @@ Ainsi, si l’on voulait simplifier au maximum :
 Cette distinction illustre bien que les paradigmes de l’apprentissage
 automatique ne décrivent pas seulement des techniques, mais aussi des modèles
 différents de l’intelligence elle-même.
-

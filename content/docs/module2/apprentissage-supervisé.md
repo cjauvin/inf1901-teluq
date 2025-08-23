@@ -402,10 +402,81 @@ Tout comme la régression logistique que nous avons étudiée, cet algorithme
 produit une décision linéaire, pour des raisons mathématiques que nous n'allons
 pas explorer plus à fond.
 
+Question intéressante à se poser? Pourquoi la décision est une ligne?
+
 ### Classification bayésienne naive (multinomiale)
 
-TODO
+Nous avons vu jusqu’à présent deux exemples de classificateurs supervisés en
+deux dimensions : la régression logistique et le naïf bayésien gaussien. Ces
+modèles travaillaient directement dans l’espace des variables réelles, où chaque
+donnée est représentée par un point dans le plan.
 
+Nous allons maintenant changer de domaine d’application et considérer un
+problème très concret : la détection de courriels indésirables (spam). Ce sera
+aussi le sujet de votre [travail noté 2]({{< relref
+"docs/module2/travail-noté-2" >}}).
+
+#### Représenter un courriel comme un vecteur
+
+Comme nous l’avons expliqué dans le chapitre sur [les données]({{< relref
+"docs/module2/les-données/#les-mots-et-leur-sens" >}}), un texte peut être
+représenté par un vecteur dans l’« espace des mots ». Dans ce modèle vectoriel,
+chaque dimension correspond à un mot du vocabulaire, et la valeur dans cette
+dimension correspond au nombre de fois que le mot apparaît dans le document.
+
+Ainsi, un courriel devient un vecteur :
+
+$$x = (n_{1}, n_{2}, \ldots, n_{V})$$
+
+où $n_{i}$ est le nombre d’occurrences du mot $i$ dans le courriel, et $V$ est
+la taille du vocabulaire.
+
+#### Le modèle probabiliste : multinomial
+
+Dans le cas du classificateur naïf bayésien pour les données en deux dimensions,
+nous avions supposé que chaque classe (par exemple `bleu` et `rouge`) était
+associée à une distribution gaussienne. Autrement dit, nous modélisions la
+distribution des variables continues $x_1$ et $x_2$ à l’aide d’une loi normale.
+
+Dans le cas du texte d'un courriel, la situation est différente. Les variables
+$n_i$ sont des comptages de mots, et il est naturel de les modéliser par une
+distribution multinomiale.
+
+Si un courriel appartient à la classe « spam », alors la probabilité d’observer
+un vecteur $x$ de comptages de mots est :
+
+$$P(x \mid \text{spam}) = \frac{N!}{n_{1}! \, n_{2}! \, \cdots \, n_{V}!} \, \prod_{i=1}^{V} p_{i}^{\,n_{i}}$$
+
+où :
+*	$N = \sum_{i=1}^{V} n_i$ est le nombre total de mots du courriel,
+*	$p_i$ est la probabilité qu’un mot de classe « spam » soit le mot i.
+
+De la même façon, on définit un modèle multinomial pour la classe « non-spam ».
+
+#### Rappel : hypothèse de naïveté
+
+Comme dans le modèle gaussien naïf bayésien, nous faisons l’hypothèse que les
+mots sont générés indépendamment les uns des autres. Cette hypothèse est
+évidemment fausse (certains mots apparaissent souvent ensemble), mais elle rend
+le modèle beaucoup plus simple et efficace en pratique.
+
+#### Décision du classificateur
+
+Pour classer un courriel, nous utilisons la règle de Bayes :
+
+$$P(\text{spam} \mid x) = \frac{P(x \mid \text{spam}) \, P(\text{spam})}{P(x)}$$
+
+$$P(\text{non-spam} \mid x) = \frac{P(x \mid \text{non-spam}) \, P(\text{non-spam})}{P(x)}$$
+
+et nous choisissons la classe avec la plus grande probabilité a posteriori.
+
+Dans le cas multinomial, il est pratique de travailler avec le logarithme :
+
+$$\log P(x \mid \text{spam}) = \sum_{i=1}^{V} n_i \, \log p_i + \text{constante}$$
+
+Cela montre que la décision finale est une combinaison linéaire pondérée des
+fréquences de mots, ce qui fait le lien avec la régression logistique étudiée
+précédemment.
 
 ### Autres algorithmes de classification
 
