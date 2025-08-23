@@ -108,7 +108,7 @@ Notez que les colonnes E et F doivent avoir le même nombre d'éléments
 que la colonne D (il faut donc utiliser la fonction de remplissage
 automatique, pour laquelle le plus simple est de soit glisser (drag)
 la première cellule vers le bas, une fois qu'elle a été calculée, ou
-encore de double-cliquer sur le petit "+" noir qui apparait en bas à
+encore de double-cliquer sur le petit "+" noir qui apparaît en bas à
 droite de la première cellule).
 
 ![](/images/module2/tn2/sheets_col_e_drag.png)
@@ -200,10 +200,10 @@ Notre classification finale sera dans la colonne O :
 ## Questions
 
 1. Que se passe-t-il si vous changez le mot "spéciale" par le mot
-   "livrée" dans le courriel de test de la cellule I1?
+   "livrée" dans le courriel de test de la cellule `I1`?
 
 2. Expliquez en vos mots ce qui se passe avec les probabilités
-   conditionnelles du mot "livrée", aux cellules K4 et L4. Pourquoi
+   conditionnelles du mot "livrée", aux cellules `K4` et `L4`. Pourquoi
    a-t-on besoin de faire en sorte que ça fonctionne ainsi?
 
 3. Est-ce que ce modèle est paramétrique ou non? Expliquez pourquoi.
@@ -211,8 +211,8 @@ Notre classification finale sera dans la colonne O :
 4. S'il s'agit d'un modèle paramétrique, quels sont les paramètres du
    modèle exactement?
 
-5. Quelle est la signification des nombres dans les cellules G11 et
-   H11, comment peut-on les interpréter?
+5. Quelle est la signification des nombres dans les cellules `G11` et
+   `H11`, comment peut-on les interpréter?
 
 6. Quelles sont les différentes probabilités conditionnelles de ce
    modèles?
