@@ -18,3 +18,21 @@ fonctions et des paramètres régionaux est l'anglais :
 Assurez-vous ensuite que la "barre de formules" soit visible :
 
 ![](/images/sheets_visu_barre_formule.png)
+
+## Fonction "copier-coller"
+
+Pour les travaux notés 2 et 4, il est pratique d'utiliser la fonction
+"copier-coller" de votre système d'exploitation, pour éviter d'avoir à recopier
+une grande quantité d'information à la main. Si vous utilisez les raccourcis du
+clavier (`Control + c` pour copier sur Windows, `Command + c` sur Mac) veuillez
+noter qu'il est préférable d'utiliser cependant `Control + Shift + v` (`Command + Shift + v` sur Mac)
+pour coller (plutôt que `Control + v` ou `Command + v`), car ceci utilise la fonction "collage sans
+formatage", qui fait en sorte de ne copier que l'information textuelle (en
+ignorant le formatage de la donnée source). Si vous ne désirez pas utiliser les
+raccourcis clavier et que vous utilisez un navigateur basé sur Chrome, veuillez
+noter qu'il vous sera nécessaire d'installer l'extension [Google Docs hors
+connexion](https://chromewebstore.google.com/detail/google-docs-offline/ghbmnnjooekpmoecnnnilnnbdlolhkhi?pli=1)
+pour faire en sorte que vous puissiez utiliser la fonction "copier-coller" à
+partir du menu de Google Sheets.
+
+![](/images/sheets_paste_special.png)
