@@ -321,7 +321,7 @@ profond. &lt;em>Pondération : 20% de la note finale.&lt;/em>&lt;/p></descriptio
  &lt;a class="anchor" href="#google-sheets">#&lt;/a>
 &lt;/h1>
 &lt;p>Pour les travaux notés 2 et 4, nous allons utiliser le tableur en ligne &lt;a href="https://workspace.google.com/intl/en_ca/products/sheets/">Google
-Sheets&lt;/a> au lieu de
+Sheets&lt;/a> au lieu du choix plus courant
 Excel, car Google Sheets est plus accessible, et le langage de ses formules est
 plus facile à gérer (celui d&amp;rsquo;Excel dépend de la langue et des paramètres
 régionaux de votre système d&amp;rsquo;exploitation). Pour éviter la confusion dans le
@@ -430,13 +430,19 @@ propriétés statistiques très différentes.&lt;/p></description></item><item><
  En conclusion..
  &lt;a class="anchor" href="#en-conclusion">#&lt;/a>
 &lt;/h1>
-&lt;p>Merci d&amp;rsquo;avoir participé à ce cours d&amp;rsquo;initiation à l&amp;rsquo;IA !&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels">
- Classification naïve bayésienne pour détecter les pourriels
- &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels">#&lt;/a>
+&lt;p>Merci d&amp;rsquo;avoir participé à ce cours d&amp;rsquo;initiation à l&amp;rsquo;IA !&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels-travail-noté-2">
+ Classification naïve bayésienne pour détecter les pourriels (travail noté 2)
+ &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels-travail-not%c3%a9-2">#&lt;/a>
 &lt;/h1>
 &lt;p>La classification naïve bayésienne est un algorithme d&amp;rsquo;apprentissage supervisé
-qui fonctionne avec les probabilités. Un problème classique qui peut être traité
-avec cet algorithme est la classification de courriels. On peut tenter d&amp;rsquo;estimer
-la probabilité qu&amp;rsquo;un courriel soit en fait un pourriel en prenant en compte les
-mots particuliers qu&amp;rsquo;il contient, l&amp;rsquo;idée étant que certains mots auront tendance
-à être plus souvent utilisés dans des pourriels.&lt;/p></description></item></channel></rss>
+qui fonctionne avec les probabilités. Nous avons vu deux variantes de cet
+algorithme :&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bayésienne-naive-gaussienne">La classification de simples points en 2d avec un modèle gaussien&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bayésienne-naive-multinomiale">La classification de vecteurs en haute dimension avec un modèle multinomial&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;p>Un problème classique qui peut être traité avec cet algorithme est la
+classification de courriels. On peut tenter d&amp;rsquo;estimer la probabilité qu&amp;rsquo;un
+courriel soit en fait un pourriel en prenant en compte les mots particuliers
+qu&amp;rsquo;il contient, l&amp;rsquo;idée étant que certains mots auront tendance à être plus
+souvent utilisés selon qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un pourriel ou d&amp;rsquo;un courriel.&lt;/p></description></item></channel></rss>
