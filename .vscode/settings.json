@@ -3,5 +3,26 @@
     "cSpell.words": [
         "mathbf",
         "mathtt"
+    ],
+    "[markdown]": {
+/*
+         "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+            },
+*/
+        "editor.suggest.showSnippets": true,
+        "editor.tabCompletion": "on"
+    },
+    "auto-correct.dictionary": [
+        {
+        "languages": ["*"],
+        "words": {
+            "plutot": "plutôt",
+            "entrainement": "entraînement"
+        },
+        "useLargeList": false
+        }
     ]
 }

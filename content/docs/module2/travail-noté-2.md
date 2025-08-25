@@ -3,33 +3,63 @@ title: "Travail noté 2"
 weight: 1000
 ---
 
-# Classification naïve bayésienne pour détecter les pourriels
+# Classification naïve bayésienne pour détecter les pourriels (travail noté 2)
 
 La classification naïve bayésienne est un algorithme d'apprentissage supervisé
-qui fonctionne avec les probabilités. Un problème classique qui peut être traité
-avec cet algorithme est la classification de courriels. On peut tenter d'estimer
-la probabilité qu'un courriel soit en fait un pourriel en prenant en compte les
-mots particuliers qu'il contient, l'idée étant que certains mots auront tendance
-à être plus souvent utilisés dans des pourriels.
+qui fonctionne avec les probabilités. Nous avons vu deux variantes de cet
+algorithme :
 
-La probabilité qui nous intéresse est en fait une probabilité conditionnelle,
-celle du fait qu'un courriel particulier soit ou non un pourriel, étant donné
-les mots particuliers qui le composent. Un courriel sera classifié en tant que
-pourriel si :
+1. [La classification de simples points en 2d avec un modèle gaussien]({{< relref "docs/module2/apprentissage-supervisé/#classification-bayésienne-naive-gaussienne" >}})
+2. [La classification de vecteurs en haute dimension avec un modèle multinomial]({{< relref "docs/module2/apprentissage-supervisé/#classification-bayésienne-naive-multinomiale" >}})
 
-$$\text{Prob(oui c'est un pourriel | mots)} > \text{Prob(non ce n'est pas un | mots)}$$
+Un problème classique qui peut être traité avec cet algorithme est la
+classification de courriels. On peut tenter d'estimer la probabilité qu'un
+courriel soit en fait un pourriel en prenant en compte les mots particuliers
+qu'il contient, l'idée étant que certains mots auront tendance à être plus
+souvent utilisés selon qu'il s'agit d'un pourriel ou d'un courriel.
+
+Comme nous l'avons vu, la classification naive bayésienne est un algorithme
+d'apprentissage *génératif*, ce qui veut donc dire qu'on considère tout d'abord
+deux modèles (un pour chaque classe, `pourriel` ou `courriel`) qui sont en
+charge de *générer* les données qu'on observe (plutôt que de directement les
+*classifier*) :
+
+$$P(\mathtt{les\ mots\ générés} \mid \mathtt{il\ s'agit\ d'un\ pourriel})$$
+$$P(\mathtt{les\ mots\ générés} \mid \mathtt{il\ s'agit\ d'un\ courriel})$$
+
+ou encore, de manière plus compacte :
+
+$$P(\mathbf{x} \mid \mathtt{pourriel})$$
+$$P(\mathbf{x} \mid \mathtt{courriel})$$
+
+Mais étant donné que ce qui nous intéresse, dans ce contexte, est de classifier
+les courriels, nous utilisons le [théorème de
+Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes) pour
+"inverser" les modèles, pour ainsi obtenir une règle de classification simple
+(qui prédit la classe plutôt que les mots):
+
+$$
+\text{classification}(\mathbf{x}) =
+\left\{
+\begin{array}{ll}
+\mathtt{pourriel} \text{ si } P(\mathbf{x} \mid \text{pourriel}) P(\text{pourriel}) \ge P(\mathbf{x} \mid \text{courriel}) P(\text{courriel}) & \\
+\mathtt{courriel} \text{ sinon } & \\
+\end{array}
+\right.
+$$
 
 ## Entraînement du modèle
 
 Voyons comment il est possible de calculer ces probabilités en entraînant un
 modèle de classification sur une série de courriels particuliers.
 
-Étant donné que nous allons encore une fois utiliser la tableur en ligne [Google
-Sheets]({{< relref "docs/google-sheets.md" >}}), assurez-vous que votre version
-est correctement configurée.
+Étant donné que nous allons utiliser le tableur en ligne [Google Sheets]({{<
+relref "docs/google-sheets.md" >}}), assurez-vous tout d'abord qu'il est
+correctement configuré.
 
-Copiez tout d'abord ces 10 courriels dans la colonne A d'une nouvelle "feuille"
-Google Sheets, un courriel par rangée :
+Copiez tout d'abord ces 10 mini-courriels dans la colonne A d'une nouvelle
+"feuille" Google Sheets, un courriel par rangée (assurez-vous d'utiliser
+correctement la [fonction "copier-coller"]({{< relref "docs/google-sheets/#fonction-copier-coller" >}}), si vous le faites) :
 
 ```
 voici le colis est arrivé
@@ -46,12 +76,12 @@ merci encore pour votre carte
 
 Pour avoir un aperçu de la tâche d’étiquetage des données (qui dans un scénario
 réel peut s'avérer très coûteuse et laborieuse), vous êtes invités à tenter tout
-d'abord de catégoriser les courriels dans la colonne B, en utilisant la valeur
-"oui" si vous considérez qu'il s'agit d'un pourriel, ou "non" (ce n'est pas un
-pourriel) sinon.
+d'abord de catégoriser vous-mêmes les courriels dans la colonne `B`, en
+utilisant la valeur "oui" si vous considérez qu'il s'agit d'un pourriel, ou
+"non" (ce n'est pas un pourriel) sinon.
 
 Si vous n'avez pas envie de vous soumettre à cet exercice à ce stade,
-vous pouvez toujours copier ces valeurs (dans la colonne B) :
+vous pouvez toujours copier ces valeurs (dans la colonne `B`) :
 
 ```
 non
@@ -70,7 +100,7 @@ non
 
 ![](/images/module2/tn2/sheets_cols_a_et_b.png)
 
-Calculons tout d'abord dans la colonne C la probabilité à priori qu'un
+Calculons tout d'abord dans la colonne `C` la probabilité à priori qu'un
 courriel quelconque soit un pourriel ou non (sans prendre en
 considérations les mots donc, pour le moment) :
 
@@ -78,19 +108,26 @@ considérations les mots donc, pour le moment) :
 =MAP(UNIQUE(B1:B10), LAMBDA(x, COUNTIF(B1:B10, x) / COUNTA(B1:B10)))
 ```
 
+{{% hint warning %}}
+
+Si vous obtenez une erreur avec la formule à ce stade, il est très possible
+que les paramètres linguistiques de votre Google Sheets ne soient pas [correctement configurés]({{< relref "docs/google-sheets" >}}).
+
+{{% /hint %}}
+
 Ces probabilités à priori nous serviront plus loin. Définissez ensuite
-la colonne D avec cette formule :
+la colonne `D` avec cette formule :
 
 ```
 =UNIQUE(TRANSPOSE(SPLIT(TEXTJOIN(" ", TRUE, A:A), " ")))
 ```
 
-La colonne D devrait maintenant contenir le vocabulaire des courriels :
+La colonne `D` devrait maintenant contenir le vocabulaire des courriels :
 
 ![](/images/module2/tn2/sheets_col_d_voc.png)
 
-La colonne E devrait ensuite correspondre au nombre de fois où les
-mots de la colonne D apparaissent dans les courriels valides (qui donc
+La colonne `E` devrait ensuite correspondre au nombre de fois où les
+mots de la colonne `D` apparaissent dans les courriels valides (qui donc
 "non", ne sont pas des pourriels) :
 
 ```
