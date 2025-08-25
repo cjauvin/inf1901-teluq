@@ -66,6 +66,6 @@ Le contenu du cours se découpe en cinq modules.
 
 4. Le quatrième module se consacre à l'IA générative et à l'essor récent des grands modèles de langage.
 
-5. Le cinquième module propose une vision plus vaste du sujet, avec l'exploration de perspectives autour de l'IA, à la fois philosophique, scientifique et sociale.
+5. Le cinquième module propose une vision plus vaste du sujet, avec l'exploration de perspectives autour de l'IA, à la fois philosophiques, scientifiques et sociales.
 
 

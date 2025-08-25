@@ -13,7 +13,8 @@ BookTheme = "auto"
 BookToC = true
 BookSearch = false
 BookNav = true
-javaRunnerEndpoint = "http://localhost:5123/run"
+BookLogo = "images/paperclip-logo.png"
+BookFavicon = "images/paperclip-logo.png"
 
 [markup]
   [markup.goldmark]
