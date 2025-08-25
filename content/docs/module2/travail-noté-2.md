@@ -77,8 +77,8 @@ merci encore pour votre carte
 Pour avoir un aperçu de la tâche d’étiquetage des données (qui dans un scénario
 réel peut s'avérer très coûteuse et laborieuse), vous êtes invités à tenter tout
 d'abord de catégoriser vous-mêmes les courriels dans la colonne `B`, en
-utilisant la valeur "oui" si vous considérez qu'il s'agit d'un pourriel, ou
-"non" (ce n'est pas un pourriel) sinon.
+utilisant la valeur `oui` si vous considérez qu'il s'agit d'un pourriel, ou
+`non` (ce n'est pas un pourriel) sinon.
 
 Si vous n'avez pas envie de vous soumettre à cet exercice à ce stade,
 vous pouvez toujours copier ces valeurs (dans la colonne `B`) :
@@ -110,8 +110,9 @@ considérations les mots donc, pour le moment) :
 
 {{% hint warning %}}
 
-Si vous obtenez une erreur avec la formule à ce stade, il est très possible
-que les paramètres linguistiques de votre Google Sheets ne soient pas [correctement configurés]({{< relref "docs/google-sheets" >}}).
+Si vous obtenez une erreur avec la formule à ce stade, il est très possible que
+les paramètres linguistiques de votre Google Sheets ne soient pas [correctement
+configurés]({{< relref "docs/google-sheets" >}}).
 
 {{% /hint %}}
 
@@ -128,50 +129,54 @@ La colonne `D` devrait maintenant contenir le vocabulaire des courriels :
 
 La colonne `E` devrait ensuite correspondre au nombre de fois où les
 mots de la colonne `D` apparaissent dans les courriels valides (qui donc
-"non", ne sont pas des pourriels) :
+`non`, ne sont pas des pourriels) :
 
 ```
-=SUMPRODUCT((B$1:B$10="non") * ISNUMBER(SEARCH(D1, A$1:A$10)))
+=SUMPRODUCT((B$1:B$10=`non`) * ISNUMBER(SEARCH(D1, A$1:A$10)))
 ```
 
-et de manière similaire pour la colonne F et la fréquence des mots qui
-apparaissent dans les courriels qui "oui", sont des pourriels :
+et de manière similaire pour la colonne `F` et la fréquence des mots qui
+apparaissent dans les courriels qui `oui`, sont des pourriels :
 
 ```
-=SUMPRODUCT((B$1:B$10="oui") * ISNUMBER(SEARCH(D1, A$1:A$10)))
+=SUMPRODUCT((B$1:B$10=`oui`) * ISNUMBER(SEARCH(D1, A$1:A$10)))
 ```
 
-Notez que les colonnes E et F doivent avoir le même nombre d'éléments
-que la colonne D (il faut donc utiliser la fonction de remplissage
+{{% hint warning %}}
+
+Notez que les colonnes `E` et `F` doivent avoir le même nombre d'éléments
+que la colonne `D` (il faut donc utiliser la fonction de remplissage
 automatique, pour laquelle le plus simple est de soit glisser (drag)
 la première cellule vers le bas, une fois qu'elle a été calculée, ou
 encore de double-cliquer sur le petit "+" noir qui apparaît en bas à
 droite de la première cellule).
 
+{{% /hint %}}
+
 ![](/images/module2/tn2/sheets_col_e_drag.png)
 
 ![](/images/module2/tn2/sheets_cols_e_et_f.png)
 
-À partir de ces fréquences de mots pour chaque classe ("oui" ou
-"non"), on peut maintenant calculer la probabilité conditionnelle de
+À partir de ces fréquences de mots pour chaque classe (`oui` ou
+`non`), on peut maintenant calculer la probabilité conditionnelle de
 chaque mot du vocabulaire, étant donné le fait qu'un courriel soit
-"oui" ou "non" un pourriel. Donc la colonne G correspond à la
-probabilité des mots étant donné que "non" il ne s'agit pas d'un
+`oui` ou `non` un pourriel. Donc la colonne `G` correspond à la
+probabilité des mots étant donné que `non` il ne s'agit pas d'un
 pourriel :
 
 ```
 =(E1 + 1) / (SUM(E:E) + COUNTA(D:D))
 ```
 
-et de manière similaire la colonne H est la probabilité des mots quand
-on sait que "oui" il s'agit d'un pourriel :
+et de manière similaire la colonne `H` est la probabilité des mots quand
+on sait que `oui` il s'agit d'un pourriel :
 
 ```
 =(F1 + 1) / (SUM(F:F) + COUNTA(D:D))
 ```
 
-Encore une fois les colonnes G et H doivent avoir la même taille que
-celle du vocabulaire (colonne D), il faut donc s'assurer d'utiliser le
+Encore une fois les colonnes `G` et `H` doivent avoir la même taille que
+celle du vocabulaire (colonne `D`), il faut donc s'assurer d'utiliser le
 mécanisme du remplissage automatique décrit précédemment.
 
 ![](/images/module2/tn2/sheets_cols_g_et_h.png)
@@ -179,60 +184,70 @@ mécanisme du remplissage automatique décrit précédemment.
 Notre modèle est maintenant entièrement entraîné, et il est donc prêt
 pour son utilisation!
 
+---
+
 ## Utilisation du modèle (inférence)
 
 Nous allons maintenant utiliser le modèle pour déterminer si un
 nouveau courriel (qui n'a pas servi à l'entraînement) est un pourriel
-ou non. Dans la colonne I entrez un courriel à tester :
+ou non. Dans la colonne `I` entrez un courriel à tester :
 
 ```
 voici votre carte spéciale
 ```
 
-Faites l'extraction des mots du courriel dans la colonne J :
+Faites l'extraction des mots du courriel dans la colonne `J` :
 
 ```
 =TRANSPOSE(SPLIT(I1, " "))
 ```
 
-Nous avons maintenant besoin, dans la colonne K, de la probabilité des
-mots de ce courriel de test dans l'hypothèse où "non", ça ne serait
+Nous avons maintenant besoin, dans la colonne `K`, de la probabilité des
+mots de ce courriel de test dans l'hypothèse où `non`, ça ne serait
 pas un pourriel :
 
 ```
 =IFERROR(XLOOKUP(J1, D:D, G:G), 1E-5)
 ```
 
-et de manière similaire pour la colonne L, avec la probabilité des
-mots du courriel dans l'hypothèse où "oui" il s'agit d'un pourriel :
+et de manière similaire pour la colonne `L`, avec la probabilité des
+mots du courriel dans l'hypothèse où `oui` il s'agit d'un pourriel :
 
 ```
 =IFERROR(XLOOKUP(J1, D:D, H:H), 1E-5)
 ```
 
-Les colonnes K et L doivent avoir la même taille que la colonne J,
+Les colonnes `K` et `L` doivent avoir la même taille que la colonne `J`,
 donc assurez-vous d'utiliser le remplissage automatique. Calculons
-dans la colonne M la probabilité que "non" le courriel n'est pas un
+dans la colonne `M` la probabilité que `non` le courriel n'est pas un
 pourriel :
 
 ```
 =PRODUCT(K:K) * C1
 ```
 
-Et dans la colonne N la probabilité que "oui" le courriel est un
+Et dans la colonne `N` la probabilité que `oui` le courriel est un
 pourriel :
 
 ```
 =PRODUCT(L:L) * C2
 ```
 
-Notre classification finale sera dans la colonne O :
+Notre classification finale sera dans la colonne `O` :
 
 ```
 =IF(M1 > N1; "non"; "oui")
 ```
 
 ![](/images/module2/tn2/sheets_toutes_les_cols.png)
+
+## Consignes
+
+1. Suivez les instructions ci-haut pour construire tout d'abord le fichier Google Sheets avec toutes les données nécessaires
+
+2. [Partagez votre fichier]({{< relref "docs/google-sheets/#fonction-de-partage-anonyme-dun-fichier" >}}) et copier le lien vers celui-ci dans un document PDF (**Attention : aucun autre format que PDF ne sera accepté**)
+
+3. Répondez aux questions ci-bas dans le même fichier PDF, en fournissant des réponses claires et précises
 
 ## Questions
 

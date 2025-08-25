@@ -38,3 +38,12 @@ pour faire en sorte que vous puissiez utiliser la fonction "copier-coller" à
 partir du menu de Google Sheets.
 
 ![](/images/sheets_paste_special.png)
+
+## Fonction de partage anonyme d'un fichier
+
+Il est possible de partager de manière anonyme un fichier Google Sheets en
+produisant un hyperlien, en utilisant la fonction "partage" et en cliquant sur
+le bouton "copier le lien", après s'être assuré que l'accès est en mode "tous
+les utilisateurs disposant du lien" :
+
+![](/images/sheets_sharing.png)
