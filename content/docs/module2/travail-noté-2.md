@@ -243,42 +243,43 @@ Notre classification finale sera dans la colonne `O` :
 
 ## Consignes
 
-1. Suivez les instructions ci-haut pour construire tout d'abord le fichier Google Sheets avec toutes les données nécessaires
+1. Suivez les instructions ci-haut pour construire tout d'abord le fichier Google Sheets avec toutes les données nécessaires.
 
-2. [Partagez votre fichier]({{< relref "docs/google-sheets/#fonction-de-partage-anonyme-dun-fichier" >}}) et copier le lien vers celui-ci dans un document PDF (**Attention : aucun autre format que PDF ne sera accepté**)
+2. Une fois qu'il est complété et fonctionnel, [partagez votre fichier]({{< relref "docs/google-sheets/#fonction-de-partage-anonyme-dun-fichier" >}}) et copier le lien vers celui-ci dans un document PDF (**Attention : aucun autre format que PDF ne sera accepté**).
 
-3. Répondez aux questions ci-bas dans le même fichier PDF, en fournissant des réponses claires et précises
+3. Répondez aux questions interprétatives qui suivent dans le même fichier PDF, en fournissant des réponses claires et précises.
 
-## Questions
+## Questions interprétatives
 
 1. Que se passe-t-il si vous changez le mot "spéciale" par le mot
    "livrée" dans le courriel de test de la cellule `I1`?
 
-2. Expliquez en vos mots ce qui se passe avec les probabilités
-   conditionnelles du mot "livrée", aux cellules `K4` et `L4`. Pourquoi
-   a-t-on besoin de faire en sorte que ça fonctionne ainsi?
+2. Après ce changement, expliquez les probabilités qu'on retrouve aux cellules
+   `K4` et `L4` associées au nouveau mot "livrée". D'où proviennent ces nouvelles
+   valeurs, et pourquoi a-t-on besoin d'avoir recours à celles-ci dans le cadre du calcul?
 
-3. Est-ce que ce modèle est paramétrique ou non? Expliquez pourquoi.
+3. Est-ce que ce modèle est [paramétrique]({{< relref "docs/module2/les-paradigmes/#apprentissage-paramétrique-versus-non-paramétrique" >}}) ou non? Expliquez pourquoi.
 
 4. S'il s'agit d'un modèle paramétrique, quels sont les paramètres du
-   modèle exactement?
+   modèle (quelles colonnes)?
 
-5. Quelle est la signification des nombres dans les cellules `G11` et
+5. Quelles colonnes constituent la partie *générative* du modèle? Expliquez pourquoi.
+
+6. Quelles colonnes constituent la partie *discriminative* du modèle? Expliquez pourquoi.
+
+7. Quelle est la signification des nombres dans les cellules `G11` et
    `H11`, comment peut-on les interpréter?
 
-6. Quelles sont les différentes probabilités conditionnelles de ce
-   modèles?
-
-7. Quelles sont les probabilités non-conditionnelles (à priori)?
+8. Quelles sont les probabilités non-conditionnelles (à priori)? À quoi servent-elles?
 
 8. Est-ce qu'il serait possible d'utiliser seulement ces probabilités
-   non-conditionnelles pour faire un modèle? Quelles conséquences ça
-   entrainerait?
+   non-conditionnelles pour faire un modèle de classification? Quelles
+   conséquences ça entraînerait?
 
-9. De quelle manière peut-ton dire que ce modèle généralise?
+9. De quelle manière peut-t-on dire que ce modèle généralise?
 
 10. Est-ce que l'ordre des mots joue un rôle dans les décisions de ce
-    modèle? Expliquez pourquoi c'est ainsi
+    modèle? Expliquez pourquoi c'est ainsi.
 
 11. Si l'ordre des mots ne joue pas de rôle, comment pourrait-on
     modifier le modèle de manière à ce qu'il en joue un?
