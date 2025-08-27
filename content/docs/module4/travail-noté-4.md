@@ -3,7 +3,7 @@ title: "Travail noté 4"
 weight: 100
 ---
 
-# Un mini ChatGPT dans Google Sheets
+# Un mini ChatGPT dans Google Sheets (travail noté 4)
 
 Un modèle de langage est un outil mathématique qui permet d'établir la
 distribution statistique des mots : en présence (ou dans le contexte) de
