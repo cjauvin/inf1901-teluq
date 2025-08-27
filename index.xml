@@ -389,32 +389,27 @@ de l&amp;rsquo;intelligence artificielle :&lt;/p></description></item><item><tit
  Travail noté #1 : création d&amp;rsquo;une visualisation annotée
  &lt;a class="anchor" href="#travail-not%c3%a9-1--cr%c3%a9ation-dune-visualisation-annot%c3%a9e">#&lt;/a>
 &lt;/h1>
-&lt;p>Dans le cadre de ce travail noté, vous êtes invité à réaliser une visualisation annotée. La visualisation est une représentation visuelle enrichie d&amp;rsquo;explications qui mettent en lumière des informations clés, des liens logiques ou des évolutions dans un domaine donné. Ici, la visualisation annotée vise à illustrer les principaux concepts historiques et logiques de l&amp;rsquo;intelligence artificielle, en lien avec les scientifiques qui ont marqué son évolution.&lt;/p></description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones">
- Apprivoisez un réseau de neurones
- &lt;a class="anchor" href="#apprivoisez-un-r%c3%a9seau-de-neurones">#&lt;/a>
+&lt;p>Dans le cadre de ce travail noté, vous êtes invité à réaliser une visualisation annotée. La visualisation est une représentation visuelle enrichie d&amp;rsquo;explications qui mettent en lumière des informations clés, des liens logiques ou des évolutions dans un domaine donné. Ici, la visualisation annotée vise à illustrer les principaux concepts historiques et logiques de l&amp;rsquo;intelligence artificielle, en lien avec les scientifiques qui ont marqué son évolution.&lt;/p></description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones-travail-noté-3">
+ Apprivoisez un réseau de neurones (travail noté 3)
+ &lt;a class="anchor" href="#apprivoisez-un-r%c3%a9seau-de-neurones-travail-not%c3%a9-3">#&lt;/a>
 &lt;/h1>
-&lt;h2 id="instructions-et-questions">
- Instructions et questions
- &lt;a class="anchor" href="#instructions-et-questions">#&lt;/a>
+&lt;p>Voici l&amp;rsquo;application &lt;a href="https://playground.tensorflow.org">Tensorflow Playground&lt;/a>,
+offerte en &lt;a href="https://github.com/tensorflow/playground">logiciel libre&lt;/a>, que nous
+avons adaptée pour les besoins de ce cours. Elle permet d&amp;rsquo;explorer de manière interactive et intuitive
+le fonctionnement des réseaux de neurones.&lt;/p>
+&lt;h2 id="consignes">
+ Consignes
+ &lt;a class="anchor" href="#consignes">#&lt;/a>
 &lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>En vous assurant tout d&amp;rsquo;abord que le &amp;ldquo;type de problème&amp;rdquo; (menu déroulant à
-droite) est la &amp;ldquo;classification&amp;rdquo;, considérez les 4 problèmes proposés.&lt;/p>
+&lt;p>En utilisant l&amp;rsquo;application interactive ci-haut, effectuez les expériences
+proposées dans la section &amp;ldquo;Instructions et questions&amp;rdquo; ci-bas.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Expliquez tout d&amp;rsquo;abord ce que veut dire &amp;ldquo;résoudre&amp;rdquo; ces problèmes.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Quel problème vous apparait ensuite le plus facile à résoudre, pour un
-algorithme d&amp;rsquo;apprentissage machine (pas seulement un réseau de neurones)?
-Expliquez pourquoi.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Considérez maintenant le problème avec lequel deux petits groupes de points
-sont disposés en diagonale, l&amp;rsquo;un par rapport à l&amp;rsquo;autre.&lt;/p></description></item><item><title>Travail noté 4</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%C3%A9-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%C3%A9-4/</guid><description>&lt;h1 id="un-mini-chatgpt-dans-google-sheets">
- Un mini ChatGPT dans Google Sheets
- &lt;a class="anchor" href="#un-mini-chatgpt-dans-google-sheets">#&lt;/a>
+&lt;p>Répondez de manière claire et précise aux questions d&amp;rsquo;interprétation dans un fichier PDF (&lt;strong>Attention : aucun autre format que PDF ne sera accepté&lt;/strong>).&lt;/p></description></item><item><title>Travail noté 4</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%C3%A9-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%C3%A9-4/</guid><description>&lt;h1 id="un-mini-chatgpt-dans-google-sheets-travail-noté-4">
+ Un mini ChatGPT dans Google Sheets (travail noté 4)
+ &lt;a class="anchor" href="#un-mini-chatgpt-dans-google-sheets-travail-not%c3%a9-4">#&lt;/a>
 &lt;/h1>
 &lt;p>Un modèle de langage est un outil mathématique qui permet d&amp;rsquo;établir la
 distribution statistique des mots : en présence (ou dans le contexte) de
