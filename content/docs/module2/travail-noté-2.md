@@ -245,7 +245,7 @@ Notre classification finale sera dans la colonne `O` :
 
 1. Suivez les instructions ci-haut pour construire tout d'abord le fichier Google Sheets avec toutes les données nécessaires.
 
-2. Une fois qu'il est complété et fonctionnel, [partagez votre fichier]({{< relref "docs/google-sheets/#fonction-de-partage-anonyme-dun-fichier" >}}) et copier le lien vers celui-ci dans un document PDF (**Attention : aucun autre format que PDF ne sera accepté**).
+2. Une fois qu'il est complété et fonctionnel, [partagez votre fichier]({{< relref "docs/google-sheets/#fonction-de-partage-anonyme-dun-fichier" >}}) et copier le lien vers celui-ci dans un document PDF (**Attention&nbsp;: aucun autre format que PDF ne sera accepté**).
 
 3. Répondez aux questions d'interprétation qui suivent dans le même fichier PDF, en fournissant des réponses claires et précises.
 
