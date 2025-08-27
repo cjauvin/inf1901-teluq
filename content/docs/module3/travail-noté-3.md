@@ -29,7 +29,7 @@ de manière interactive et intuitive le fonctionnement des réseaux de neurones.
 
 2. Des 4 jeux de données proposés, lequel vous apparaît ensuite le plus facile à
    classifier (en deux classes distinctes, `orange` et `bleue`), pour un
-   algorithme d'apprentissage machine (pas seulement un réseau de neurones)?
+   algorithme d'apprentissage automatique (pas seulement un réseau de neurones)?
    Expliquez pourquoi.
 
 3. Considérez maintenant le jeu de données avec lequel deux petits groupes de

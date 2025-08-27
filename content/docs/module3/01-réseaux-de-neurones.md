@@ -69,7 +69,7 @@ Ces obstacles expliquent pourquoi, malgré leur ancienneté, les réseaux
 de neurones profonds n'ont été largement utilisés que récemment.
 
 ## La relation entre le feature engineering classique et l'apprentissage profond
-Dans l'apprentissage machine classique, il fallait définir
+Dans l'apprentissage automatique classique, il fallait définir
 manuellement des *features*, c'est-à-dire des représentations
 pertinentes des données. Cela demandait une expertise importante et
 beaucoup d'essais. L'apprentissage profond a permis d'apprendre

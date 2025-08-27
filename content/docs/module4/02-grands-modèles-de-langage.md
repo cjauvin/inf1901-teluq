@@ -27,7 +27,7 @@ qui précèdent chaque mot à prédire. Ces modèles avaient deux limites majeur
 
 ## Premiers réseaux de neurones appliqués au langage et représentations vectorielles
 
-Avec l’essor de l’apprentissage machine et des réseaux neuronaux, des chercheurs
+Avec l’essor de l’apprentissage automatique et des réseaux neuronaux, des chercheurs
 ont cherché à dépasser ces limites. Passer d’un modèle purement statistique à un
 modèle *neuronal* a permis de représenter les mots sous une forme plus compacte
 et plus riche en information.
