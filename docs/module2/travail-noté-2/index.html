@@ -31,7 +31,7 @@ souvent utilisés selon qu&rsquo;il s&rsquo;agit d&rsquo;un pourriel ou d&rsquo;
 d&rsquo;apprentissage <em>génératif</em>, ce qui veut donc dire qu&rsquo;on considère tout d&rsquo;abord
 deux modèles (un pour chaque classe, <code>pourriel</code> ou <code>courriel</code>) qui sont en
 charge de <em>générer</em> les données qu&rsquo;on observe (plutôt que de directement les
-<em>classifier</em>) :</p>$$P(\mathtt{les\ mots\ générés} \mid \mathtt{il\ s'agit\ d'un\ pourriel})$$<p></p>$$P(\mathtt{les\ mots\ générés} \mid \mathtt{il\ s'agit\ d'un\ courriel})$$<p>ou encore, de manière plus compacte :</p>$$P(\mathbf{x} \mid \mathtt{pourriel})$$<p></p>$$P(\mathbf{x} \mid \mathtt{courriel})$$<p>Mais étant donné que ce qui nous intéresse, dans ce contexte, est de classifier
+<em>classifier</em>) :</p>$$P(\text{les mots générés} \mid \text{il s'agit d'un pourriel})$$<p></p>$$P(\text{les mots générés} \mid \text{il s'agit d'un courriel})$$<p>ou encore, de manière plus compacte :</p>$$P(\mathbf{x} \mid \mathtt{pourriel})$$<p></p>$$P(\mathbf{x} \mid \mathtt{courriel})$$<p>Mais étant donné que ce qui nous intéresse, dans ce contexte, est de classifier
 les courriels, nous utilisons le <a href=https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes>théorème de
 Bayes</a> pour
 &ldquo;inverser&rdquo; les modèles, pour ainsi obtenir une règle de classification simple
@@ -39,7 +39,7 @@ Bayes</a> pour
 \text{classification}(\mathbf{x}) =
 \left\{
 \begin{array}{ll}
-\mathtt{pourriel} \text{ si } P(\mathbf{x} \mid \text{pourriel}) P(\text{pourriel}) \ge P(\mathbf{x} \mid \text{courriel}) P(\text{courriel}) & \\
+\mathtt{pourriel} \text{ si } P(\mathbf{x} \mid \mathtt{pourriel}) P(\mathtt{pourriel}) \ge P(\mathbf{x} \mid \mathtt{courriel}) P(\mathtt{courriel}) & \\
 \mathtt{courriel} \text{ sinon } & \\
 \end{array}
 \right.
