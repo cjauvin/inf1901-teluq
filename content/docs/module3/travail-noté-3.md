@@ -8,8 +8,8 @@ weight: 100
 
 Voici l'application [Tensorflow Playground](https://playground.tensorflow.org),
 offerte en [logiciel libre](https://github.com/tensorflow/playground), que nous
-avons adaptée pour les besoins de ce cours. Elle permet d'explorer de manière interactive et intuitive
-le fonctionnement des réseaux de neurones.
+avons quelque peu adaptée pour les besoins de ce cours. Elle permet d'explorer
+de manière interactive et intuitive le fonctionnement des réseaux de neurones.
 
 ## Consignes
 

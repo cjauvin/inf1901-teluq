@@ -22,11 +22,13 @@
         ],
         "description": "hugo relative links"
     },
-	"hint_warning": {
-        "prefix": "hint_warning",
+	"hugo_hint": {
+        "prefix": "hugo_hint",
         "body": [
-			"{{% hint warning %}}",
+			"{{% hint ... %}}",
+			"",
 			"...$0",
+			"",
 			"{{% /hint %}}",
         ],
         "description": "hugo book hint warning block"

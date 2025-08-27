@@ -5,6 +5,8 @@ weight: 50
 
 # Google Sheets
 
+## Paramètres linguistiques
+
 Pour les travaux notés 2 et 4, nous allons utiliser le tableur en ligne [Google
 Sheets](https://workspace.google.com/intl/en_ca/products/sheets/) au lieu du choix plus courant
 Excel, car Google Sheets est plus accessible, et le langage de ses formules est
