@@ -247,7 +247,7 @@ $\mathbf{b}$), on appelle $\alpha$ un *hyper-paramètre*.
 
 {{% details "La programmation de la régression logistique" open %}}
 
-<iframe src="/notebooks/module2/reglog.html" width="100%" height="800px"></iframe>
+<iframe src="/html/notebooks/module2/reglog.html" width="100%" height="800px"></iframe>
 
 {{% /details %}}
 
