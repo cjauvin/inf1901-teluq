@@ -1,34 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Accueil on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/</link><description>Recent content in Accueil on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/index.xml" rel="self" type="application/rss+xml"/><item><title>Activités</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/activit%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/activit%C3%A9s/</guid><description>&lt;h2 id="une-entrevue">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Accueil on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/</link><description>Recent content in Accueil on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/index.xml" rel="self" type="application/rss+xml"/><item><title>Activités</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/activit%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/activit%C3%A9s/</guid><description>&lt;h2 id="une-entrevue"&gt;
  Une entrevue
- &lt;a class="anchor" href="#une-entrevue">#&lt;/a>
-&lt;/h2>
-&lt;p>Commencez votre exploration de l&amp;rsquo;IA en visionnant cette entrevue donnée par Yann Le Cun.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qTGust2Ur0o?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+ &lt;a class="anchor" href="#une-entrevue"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Commencez votre exploration de l&amp;rsquo;IA en visionnant cette entrevue donnée par Yann Le Cun.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qTGust2Ur0o?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;h2 id="quelques-lectures">
+&lt;h2 id="quelques-lectures"&gt;
  Quelques lectures
- &lt;a class="anchor" href="#quelques-lectures">#&lt;/a>
-&lt;/h2>
-&lt;p>Poursuivez votre réflexion avec ces lectures :&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Le prologue du livre &lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence">La plus belle histoire de l&amp;rsquo;intelligence&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Ce texte en ligne sur &lt;a href="https://www.ibm.com/fr-fr/think/topics/history-of-artificial-intelligence">l&amp;rsquo;histoire de l&amp;rsquo;IA&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Ce texte en ligne sur &lt;a href="https://www.thecanadianencyclopedia.ca/fr/article/intelligence-artificielle">l&amp;rsquo;IA dans une perspective canadienne&lt;/a>&lt;/p></description></item><item><title>Attitudes à l'égard de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/attitudes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/attitudes/</guid><description>&lt;h1 id="les-grandes-attitudes-contemporaines-à-légard-de-lia">
+ &lt;a class="anchor" href="#quelques-lectures"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Poursuivez votre réflexion avec ces lectures :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Le prologue du livre &lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence"&gt;La plus belle histoire de l&amp;rsquo;intelligence&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ce texte en ligne sur &lt;a href="https://www.ibm.com/fr-fr/think/topics/history-of-artificial-intelligence"&gt;l&amp;rsquo;histoire de l&amp;rsquo;IA&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ce texte en ligne sur &lt;a href="https://www.thecanadianencyclopedia.ca/fr/article/intelligence-artificielle"&gt;l&amp;rsquo;IA dans une perspective canadienne&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Attitudes à l'égard de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/attitudes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/attitudes/</guid><description>&lt;h1 id="les-grandes-attitudes-contemporaines-à-légard-de-lia"&gt;
  Les grandes attitudes contemporaines à l&amp;rsquo;égard de l&amp;rsquo;IA
- &lt;a class="anchor" href="#les-grandes-attitudes-contemporaines-%c3%a0-l%c3%a9gard-de-lia">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="lattitude-libérale">
+ &lt;a class="anchor" href="#les-grandes-attitudes-contemporaines-%c3%a0-l%c3%a9gard-de-lia"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="lattitude-libérale"&gt;
  L&amp;rsquo;attitude libérale
- &lt;a class="anchor" href="#lattitude-lib%c3%a9rale">#&lt;/a>
-&lt;/h2>
-&lt;p>La vision libérale conçoit l&amp;rsquo;intelligence artificielle comme un outil de progrès
+ &lt;a class="anchor" href="#lattitude-lib%c3%a9rale"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;La vision libérale conçoit l&amp;rsquo;intelligence artificielle comme un outil de progrès
 techniques et économie au service de l&amp;rsquo;individu et du marché. Elle s&amp;rsquo;appuie sur
 des valeurs héritées du libéralisme classique (liberté individuelle, innovation,
 responsabilité) et du néolibéralisme (primauté du marché, dérégulation,
@@ -42,14 +42,14 @@ il est divisé en sections. Deux sections couvrent davantage les aspects
 critiques et éthiques. Ce sont Défis éthiques et sociaux qui abordent des
 questions liées à la vie privée, à la sécurité et aux inégalités (1 : 00 : 40)
 ainsi que Furturs possibles qui discute des scénarios optimistes et pessimistes
-concernant l&amp;rsquo;impact de l&amp;rsquo;IA sur la société (1 : 23 ; 01).&lt;/p></description></item><item><title>Conversation synoptique autour de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</guid><description>&lt;h1 id="conversation-synoptique-autour-de-lia">
+concernant l&amp;rsquo;impact de l&amp;rsquo;IA sur la société (1 : 23 ; 01).&lt;/p&gt;</description></item><item><title>Conversation synoptique autour de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/</guid><description>&lt;h1 id="conversation-synoptique-autour-de-lia"&gt;
  Conversation synoptique autour de l&amp;rsquo;IA
- &lt;a class="anchor" href="#conversation-synoptique-autour-de-lia">#&lt;/a>
-&lt;/h1>
-&lt;p>À l&amp;rsquo;été 2025, les professeurs Daniel Lemire et Christian Jauvin, du département
+ &lt;a class="anchor" href="#conversation-synoptique-autour-de-lia"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;À l&amp;rsquo;été 2025, les professeurs Daniel Lemire et Christian Jauvin, du département
 science et technologie de l&amp;rsquo;Université TÉLUQ, ont eu une discussion par rapport
-à certains thèmes touchant de près ou de loin l&amp;rsquo;IA, animée par Dolorès Grossemy.&lt;/p>
-&lt;p>Cet entretien vidéo offre une exploration approfondie des enjeux philosophiques,
+à certains thèmes touchant de près ou de loin l&amp;rsquo;IA, animée par Dolorès Grossemy.&lt;/p&gt;
+&lt;p&gt;Cet entretien vidéo offre une exploration approfondie des enjeux philosophiques,
 scientifiques et sociétaux liés à l&amp;rsquo;intelligence artificielle. À travers une
 discussion dynamique, les professeurs abordent des concepts comme le paradoxe de
 Moravec, l&amp;rsquo;évolution des définitions de l&amp;rsquo;intelligence (y compris le phénomène
@@ -59,42 +59,42 @@ ainsi que les influences culturelles et les risques existentiels. Ces éléments
 enrichissent directement l&amp;rsquo;étude des quatre visions contemporaines de l&amp;rsquo;IA –
 libérale, défaitiste, optimiste/accélérationniste et transhumaniste – en
 invitant à une réflexion sur les tensions entre progrès technologique, éthique
-et humanité.&lt;/p></description></item><item><title>IA générative</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/</guid><description>&lt;h1 id="lia-générative">
+et humanité.&lt;/p&gt;</description></item><item><title>IA générative</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/</guid><description>&lt;h1 id="lia-générative"&gt;
  L&amp;rsquo;IA générative
- &lt;a class="anchor" href="#lia-g%c3%a9n%c3%a9rative">#&lt;/a>
-&lt;/h1></description></item><item><title>Les réseaux de neurones</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</guid><description>&lt;h1 id="quest-ce-quun-réseau-de-neurones">
+ &lt;a class="anchor" href="#lia-g%c3%a9n%c3%a9rative"&gt;#&lt;/a&gt;
+&lt;/h1&gt;</description></item><item><title>Les réseaux de neurones</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</guid><description>&lt;h1 id="quest-ce-quun-réseau-de-neurones"&gt;
  Qu&amp;rsquo;est-ce qu&amp;rsquo;un réseau de neurones?
- &lt;a class="anchor" href="#quest-ce-quun-r%c3%a9seau-de-neurones">#&lt;/a>
-&lt;/h1>
-&lt;p>Un réseau de neurones artificiel est un système inspiré du cerveau
-humain, composé d&amp;rsquo;unités appelées &lt;em>neurones&lt;/em> organisées en couches.
+ &lt;a class="anchor" href="#quest-ce-quun-r%c3%a9seau-de-neurones"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Un réseau de neurones artificiel est un système inspiré du cerveau
+humain, composé d&amp;rsquo;unités appelées &lt;em&gt;neurones&lt;/em&gt; organisées en couches.
 Chaque neurone réalise une opération mathématique simple, et
 l&amp;rsquo;ensemble du réseau transforme des données d&amp;rsquo;entrée en une prédiction
-ou une décision.&lt;/p>
-&lt;h2 id="les-données">
+ou une décision.&lt;/p&gt;
+&lt;h2 id="les-données"&gt;
  Les données
- &lt;a class="anchor" href="#les-donn%c3%a9es">#&lt;/a>
-&lt;/h2>
-&lt;p>Les données sont la matière première. Elles peuvent être des images,
+ &lt;a class="anchor" href="#les-donn%c3%a9es"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Les données sont la matière première. Elles peuvent être des images,
 du texte, du son ou des tableaux de nombres. Chaque exemple de données
 est représenté sous forme numérique, souvent sous forme de vecteurs ou
 de matrices. C&amp;rsquo;est à partir de ces données que le réseau apprend à
-reconnaître des motifs.&lt;/p></description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</guid><description>&lt;h1 id="vidéo-de-3blue1brown">
+reconnaître des motifs.&lt;/p&gt;</description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</guid><description>&lt;h1 id="vidéo-de-3blue1brown"&gt;
  Vidéo de 3Blue1Brown
- &lt;a class="anchor" href="#vid%c3%a9o-de-3blue1brown">#&lt;/a>
-&lt;/h1>
-&lt;p>Visionnez cette vidéo d&amp;rsquo;introduction aux réseaux de neurones, créée par
+ &lt;a class="anchor" href="#vid%c3%a9o-de-3blue1brown"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Visionnez cette vidéo d&amp;rsquo;introduction aux réseaux de neurones, créée par
 3Blue1Brown. Notez qu&amp;rsquo;il est possible d&amp;rsquo;avoir le contenu audio et les
-sous-titres en français, via les réglages du lecteur YouTube.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aircAruvnKk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+sous-titres en français, via les réglages du lecteur YouTube.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aircAruvnKk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;h2 id="qui-est-3blue1brown">
+&lt;h2 id="qui-est-3blue1brown"&gt;
  Qui est 3Blue1Brown?
- &lt;a class="anchor" href="#qui-est-3blue1brown">#&lt;/a>
-&lt;/h2>
-&lt;p>Grant Sanderson, connu sous le pseudonyme 3Blue1Brown, est un vulgarisateur
+ &lt;a class="anchor" href="#qui-est-3blue1brown"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Grant Sanderson, connu sous le pseudonyme 3Blue1Brown, est un vulgarisateur
 scientifique et créateur de vidéos éducatives sur YouTube. Il s’est fait
 remarquer grâce à son style visuel unique qui combine des animations claires et
 élégantes avec des explications intuitives de concepts mathématiques parfois
@@ -102,79 +102,79 @@ complexes, comme l’algèbre linéaire, le calcul différentiel, les probabilit
 encore l’intelligence artificielle. Son approche met l’accent sur la
 compréhension en profondeur plutôt que sur la simple application de formules, et
 a permis à des millions de personnes dans le monde de découvrir la beauté et la
-logique des mathématiques.&lt;/p></description></item><item><title>Grands modèles de langage</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/</guid><description>&lt;h1 id="les-modèles-de-langage-petits-et-grands">
+logique des mathématiques.&lt;/p&gt;</description></item><item><title>Grands modèles de langage</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/</guid><description>&lt;h1 id="les-modèles-de-langage-petits-et-grands"&gt;
  Les modèles de langage (petits et grands)
- &lt;a class="anchor" href="#les-mod%c3%a8les-de-langage-petits-et-grands">#&lt;/a>
-&lt;/h1>
-&lt;p>Ce module présente l&amp;rsquo;évolution des modèles de langage, des approches classiques
+ &lt;a class="anchor" href="#les-mod%c3%a8les-de-langage-petits-et-grands"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Ce module présente l&amp;rsquo;évolution des modèles de langage, des approches classiques
 aux modèles modernes fondés sur les transformers. Il montre comment ces systèmes
 ont permis de passer de la simple prévision statistique des mots à des
-conversations complexes avec les machines.&lt;/p>
-&lt;h2 id="introduction-aux-modèles-de-langage">
+conversations complexes avec les machines.&lt;/p&gt;
+&lt;h2 id="introduction-aux-modèles-de-langage"&gt;
  Introduction aux modèles de langage
- &lt;a class="anchor" href="#introduction-aux-mod%c3%a8les-de-langage">#&lt;/a>
-&lt;/h2>
-&lt;p>Un &lt;em>modèle de langage&lt;/em> est un système qui attribue une probabilité à une
+ &lt;a class="anchor" href="#introduction-aux-mod%c3%a8les-de-langage"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Un &lt;em&gt;modèle de langage&lt;/em&gt; est un système qui attribue une probabilité à une
 séquence de mots. Son objectif principal est de prévoir le mot suivant dans un
 texte, ce qui est essentiel pour des applications comme la reconnaissance
-vocale, la traduction automatique ou la recherche d’information.&lt;/p></description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/03-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/03-3blue1brown/</guid><description>&lt;h1 id="vidéos-de-3blue1brown">
+vocale, la traduction automatique ou la recherche d’information.&lt;/p&gt;</description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/03-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/03-3blue1brown/</guid><description>&lt;h1 id="vidéos-de-3blue1brown"&gt;
  Vidéos de 3Blue1Brown
- &lt;a class="anchor" href="#vid%c3%a9os-de-3blue1brown">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="introduction-aux-modèles-de-langages">
+ &lt;a class="anchor" href="#vid%c3%a9os-de-3blue1brown"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="introduction-aux-modèles-de-langages"&gt;
  Introduction aux modèles de langages
- &lt;a class="anchor" href="#introduction-aux-mod%c3%a8les-de-langages">#&lt;/a>
-&lt;/h2>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/LPZh9BOjkQs?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+ &lt;a class="anchor" href="#introduction-aux-mod%c3%a8les-de-langages"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/LPZh9BOjkQs?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;h2 id="introduction-aux-transformers">
+&lt;h2 id="introduction-aux-transformers"&gt;
  Introduction aux transformers
- &lt;a class="anchor" href="#introduction-aux-transformers">#&lt;/a>
-&lt;/h2>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/wjZofJX0v4M?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+ &lt;a class="anchor" href="#introduction-aux-transformers"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/wjZofJX0v4M?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;h2 id="introduction-au-mécanisme-dattention">
+&lt;h2 id="introduction-au-mécanisme-dattention"&gt;
  Introduction au mécanisme d&amp;rsquo;attention
- &lt;a class="anchor" href="#introduction-au-m%c3%a9canisme-dattention">#&lt;/a>
-&lt;/h2>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eMlx5fFNoYc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+ &lt;a class="anchor" href="#introduction-au-m%c3%a9canisme-dattention"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eMlx5fFNoYc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;h2 id="comment-un-gml-peut-storer-linformation">
+&lt;h2 id="comment-un-gml-peut-storer-linformation"&gt;
  Comment un GML peut storer l&amp;rsquo;information
- &lt;a class="anchor" href="#comment-un-gml-peut-storer-linformation">#&lt;/a>
-&lt;/h2>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9-Jl0dxWQs8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div></description></item><item><title>Travail noté 5</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</guid><description>&lt;h1 id="travail-noté-5">
+ &lt;a class="anchor" href="#comment-un-gml-peut-storer-linformation"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9-Jl0dxWQs8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;</description></item><item><title>Travail noté 5</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/</guid><description>&lt;h1 id="travail-noté-5"&gt;
  Travail noté 5
- &lt;a class="anchor" href="#travail-not%c3%a9-5">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="objectif-du-travail">
+ &lt;a class="anchor" href="#travail-not%c3%a9-5"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="objectif-du-travail"&gt;
  Objectif du travail
- &lt;a class="anchor" href="#objectif-du-travail">#&lt;/a>
-&lt;/h2>
-&lt;p>Ce travail vise à développer votre capacité à analyser de manière critique une
+ &lt;a class="anchor" href="#objectif-du-travail"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Ce travail vise à développer votre capacité à analyser de manière critique une
 question philosophique ou éthique liée à l’intelligence artificielle (IA). Vous
 explorerez les débats entourant l’IA, en vous appuyant sur une vidéo discutant
 des perspectives des &amp;ldquo;doomers&amp;rdquo; (ceux qui craignent des conséquences
 catastrophiques de l’IA) et des &amp;ldquo;accélérationistes&amp;rdquo; (ceux qui prônent un
 développement rapide de l’IA). Vous utiliserez également un outil d’IA pour vous
 assister dans la rédaction, tout en réfléchissant à son impact sur votre
-processus.&lt;/p></description></item><item><title>Présentation du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</guid><description>&lt;blockquote class="book-hint info">
-&lt;p>&lt;em>« Toute technologie suffisamment avancée est indiscernable de la magie. »&lt;/em>&lt;/p>
-&lt;p>Arthur C. Clarke&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="présentation-du-cours">
+processus.&lt;/p&gt;</description></item><item><title>Présentation du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</guid><description>&lt;blockquote class="book-hint info"&gt;
+&lt;p&gt;&lt;em&gt;« Toute technologie suffisamment avancée est indiscernable de la magie. »&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Arthur C. Clarke&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="présentation-du-cours"&gt;
  Présentation du cours
- &lt;a class="anchor" href="#pr%c3%a9sentation-du-cours">#&lt;/a>
-&lt;/h2>
-&lt;p>L’intelligence artificielle (IA) constitue aujourd’hui un champ de recherches et
+ &lt;a class="anchor" href="#pr%c3%a9sentation-du-cours"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;L’intelligence artificielle (IA) constitue aujourd’hui un champ de recherches et
 d’applications essentiel dont l’influence s’étend à de multiples domaines, de la
 science et la médecine aux industries créatives et à l’éducation. Conséquemment,
 les entreprises de divers secteurs sont confrontées à cette transformation
@@ -182,25 +182,25 @@ numérique sans précédent, si bien que l’intégration de l’IA dans les mod
 d’affaires n’est plus un luxe, mais une nécessité pour demeurer compétitif dans
 un marché mondial en constante évolution. L’émergence de modèles de langage
 avancés tels que ChatGPT, DeepSeek et Llama 3 illustre cette transformation, en
-ouvrant de nouvelles perspectives tant scientifiques que sociétales.&lt;/p></description></item><item><title>Un scénario réaliste</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h1 id="un-scénario-imaginaire-mais-réaliste-">
+ouvrant de nouvelles perspectives tant scientifiques que sociétales.&lt;/p&gt;</description></item><item><title>Un scénario réaliste</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h1 id="un-scénario-imaginaire-mais-réaliste-"&gt;
  Un scénario imaginaire, mais réaliste !
- &lt;a class="anchor" href="#un-sc%c3%a9nario-imaginaire-mais-r%c3%a9aliste-">#&lt;/a>
-&lt;/h1>
-&lt;p>Imaginez une compagnie où il y a une chaîne de montage avec laquelle on assemble
-des téléviseurs.&lt;/p>
-&lt;p>&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module2/tv_assembly_line.png" alt="" />&lt;/p>
-&lt;h2 id="le-problème">
+ &lt;a class="anchor" href="#un-sc%c3%a9nario-imaginaire-mais-r%c3%a9aliste-"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Imaginez une compagnie où il y a une chaîne de montage avec laquelle on assemble
+des téléviseurs.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module2/tv_assembly_line.png" alt="" /&gt;&lt;/p&gt;
+&lt;h2 id="le-problème"&gt;
  Le problème
- &lt;a class="anchor" href="#le-probl%c3%a8me">#&lt;/a>
-&lt;/h2>
-&lt;p>Supposons que dans un endroit particulièrement délicat de la chaîne de montage,
+ &lt;a class="anchor" href="#le-probl%c3%a8me"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Supposons que dans un endroit particulièrement délicat de la chaîne de montage,
 un problème avec un appareil d&amp;rsquo;assemblage particulier survienne parfois, que
-l&amp;rsquo;on aimerait détecter le plus rapidement possible.&lt;/p>
-&lt;h2 id="une-solution-possible">
+l&amp;rsquo;on aimerait détecter le plus rapidement possible.&lt;/p&gt;
+&lt;h2 id="une-solution-possible"&gt;
  Une solution possible
- &lt;a class="anchor" href="#une-solution-possible">#&lt;/a>
-&lt;/h2>
-&lt;p>On pourrait imaginer placer une caméra vidéo dont le but serait de visionner en
+ &lt;a class="anchor" href="#une-solution-possible"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;On pourrait imaginer placer une caméra vidéo dont le but serait de visionner en
 permanence le flot des appareils en cours d&amp;rsquo;assemblage, pour tenter de détecter
 les problèmes. Pour ce faire, la caméra pourrait transmettre, à intervalles
 réguliers, les pixels de ce qu&amp;rsquo;elle capte, en tant que données à un modèle
@@ -213,37 +213,37 @@ de problème avec cette image&amp;rdquo; (ou encore, ce qui serait équivalent m
 simple : &amp;ldquo;ok&amp;rdquo; ou &amp;ldquo;problème&amp;rdquo;). Cette valeur est binaire, dans le sens qu&amp;rsquo;elle a
 seulement deux valeurs possibles (peu importe lesquelles, en autant qu&amp;rsquo;il y en
 ait seulement deux). Sur la base de cette valeur binaire de sortie, on pourrait
-agir et envoyer un technicien, en cas de besoin, pour régler le problème.&lt;/p></description></item><item><title>AA versus X</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</guid><description>&lt;h2 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel">
+agir et envoyer un technicien, en cas de besoin, pour régler le problème.&lt;/p&gt;</description></item><item><title>AA versus X</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</guid><description>&lt;h2 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel"&gt;
  En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnel?
- &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnel">#&lt;/a>
-&lt;/h2>
-&lt;p>Bien que l&amp;rsquo;apprentissage automatique requiert de la programmation, il s&amp;rsquo;agit
-d&amp;rsquo;un paradigme entièrement différent de celui de la programmation.&lt;/p>
-&lt;p>Un programme traditionnel spécifie une série d&amp;rsquo;instructions que l&amp;rsquo;ordinateur
+ &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnel"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Bien que l&amp;rsquo;apprentissage automatique requiert de la programmation, il s&amp;rsquo;agit
+d&amp;rsquo;un paradigme entièrement différent de celui de la programmation.&lt;/p&gt;
+&lt;p&gt;Un programme traditionnel spécifie une série d&amp;rsquo;instructions que l&amp;rsquo;ordinateur
 exécute pour résoudre un problème. Normalement, ce programme fait son travail en
 relation avec des données fournies par l&amp;rsquo;utilisateur. Le programme dans ce cas
-est une série d&amp;rsquo;instructions symboliques dans un langage de programmation.&lt;/p></description></item><item><title>Philosophie du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/philosophie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/philosophie/</guid><description>&lt;h2 id="la-philosophie-du-cours">
+est une série d&amp;rsquo;instructions symboliques dans un langage de programmation.&lt;/p&gt;</description></item><item><title>Philosophie du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/philosophie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/philosophie/</guid><description>&lt;h2 id="la-philosophie-du-cours"&gt;
  La philosophie du cours
- &lt;a class="anchor" href="#la-philosophie-du-cours">#&lt;/a>
-&lt;/h2>
-&lt;blockquote class="book-hint info">
-&lt;p>&lt;em>« Le vrai problème de l’humanité est le suivant : nous avons des émotions paléolithiques, des institutions médiévales, et une technologie digne des dieux. »&lt;/em>&lt;/p>
-&lt;p>E.O. Wilson&lt;/p>
-&lt;/blockquote>
-&lt;p>L&amp;rsquo;apprentissage automatique (AA) est un sujet complexe et fortement dynamique,
+ &lt;a class="anchor" href="#la-philosophie-du-cours"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;blockquote class="book-hint info"&gt;
+&lt;p&gt;&lt;em&gt;« Le vrai problème de l’humanité est le suivant : nous avons des émotions paléolithiques, des institutions médiévales, et une technologie digne des dieux. »&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;E.O. Wilson&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;L&amp;rsquo;apprentissage automatique (AA) est un sujet complexe et fortement dynamique,
 au confluent de plusieurs disciplines : mathématiques, informatique, sciences
 cognitives. Les fondements de la discipline sont résolument mathématiques,
 principalement avec l&amp;rsquo;algèbre linéaire et les probabilités (qui entretiennent
-elles-mêmes des liens très étroits).&lt;/p></description></item><item><title>Les professeurs</title><link>https://cjauvin.github.io/inf1901-teluq/docs/professeurs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/professeurs/</guid><description>&lt;h1 id="les-professeurs">
+elles-mêmes des liens très étroits).&lt;/p&gt;</description></item><item><title>Les professeurs</title><link>https://cjauvin.github.io/inf1901-teluq/docs/professeurs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/professeurs/</guid><description>&lt;h1 id="les-professeurs"&gt;
  Les professeurs
- &lt;a class="anchor" href="#les-professeurs">#&lt;/a>
-&lt;/h1>
-&lt;p>Ce cours a été co-créé par trois professeurs de la TÉLUQ.&lt;/p>
-&lt;h2 id="richard-hotte">
+ &lt;a class="anchor" href="#les-professeurs"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Ce cours a été co-créé par trois professeurs de la TÉLUQ.&lt;/p&gt;
+&lt;h2 id="richard-hotte"&gt;
  Richard Hotte
- &lt;a class="anchor" href="#richard-hotte">#&lt;/a>
-&lt;/h2>
-&lt;p>&lt;a href="https://www.teluq.ca/siteweb/univ/rhotte.html?p_nue=true">Richard Hotte&lt;/a> a été
+ &lt;a class="anchor" href="#richard-hotte"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.teluq.ca/siteweb/univ/rhotte.html?p_nue=true"&gt;Richard Hotte&lt;/a&gt; a été
 titulaire de la chaire UNESCO en système intelligent d&amp;rsquo;apprentissage repensé
 pour tous (UNESCO Chair for Global Smart Disruptive Learning (GSDL)), de 2019 à
 2023. Cette chaire se rattache au programme UNITWIN/Chaires UNESCO et s&amp;rsquo;inscrit
@@ -252,166 +252,170 @@ pour objet de promouvoir un système intégré de recherche, de formation et de
 documentation sur l&amp;rsquo;apprentissage mobile. Elle vise à faciliter la
 collaboration entre des chercheurs et des enseignants de renommée internationale
 de l&amp;rsquo;Université et d&amp;rsquo;autres établissements au Canada ainsi qu&amp;rsquo;ailleurs en
-Amérique du Nord, en Europe, en Afrique et dans d&amp;rsquo;autres régions du monde.&lt;/p></description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h1 id="les-livres-du-cours">
+Amérique du Nord, en Europe, en Afrique et dans d&amp;rsquo;autres régions du monde.&lt;/p&gt;</description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h1 id="les-livres-du-cours"&gt;
  Les livres du cours
- &lt;a class="anchor" href="#les-livres-du-cours">#&lt;/a>
-&lt;/h1>
-&lt;div class="book-columns flex flex-wrap">
-&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
-&lt;p>&lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence">La plus belle histoire de l&amp;rsquo;intelligence&lt;/a>&lt;/p>
-&lt;p>Stanislas Dehaene, Yann Le Cun et Jacques Girardon (2018)&lt;/p>
-&lt;p>&lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence">&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/livre_la_plus_belle_histoire_de_lintelligence.jpg" alt="" />&lt;/a>&lt;/p>
- &lt;/div>
-&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
-&lt;p>&lt;a href="https://www.goodreads.com/book/show/48497641-quand-la-machine-apprend">Quand la machine apprend: la révolution des neurones artificiels et de l&amp;rsquo;apprentissage profond&lt;/a>&lt;/p>
-&lt;p>Yann Le Cun (2019)&lt;/p>
-&lt;p>&lt;a href="https://www.goodreads.com/book/show/48497641-quand-la-machine-apprend">&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/livre_quand_la_machine_apprend.jpg" alt="" />&lt;/a>&lt;/p>
- &lt;/div>
-&lt;/div></description></item><item><title>Que sont les données?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</guid><description>&lt;h1 id="que-sont-les-données-et-comment-les-représenter">
+ &lt;a class="anchor" href="#les-livres-du-cours"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;div class="book-columns flex flex-wrap"&gt;
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;"&gt;
+&lt;p&gt;&lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence"&gt;La plus belle histoire de l&amp;rsquo;intelligence&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Stanislas Dehaene, Yann Le Cun et Jacques Girardon (2018)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.goodreads.com/book/show/42388073-la-plus-belle-histoire-de-l-intelligence"&gt;&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/livre_la_plus_belle_histoire_de_lintelligence.jpg" alt="" /&gt;&lt;/a&gt;&lt;/p&gt;
+ &lt;/div&gt;
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;"&gt;
+&lt;p&gt;&lt;a href="https://www.goodreads.com/book/show/48497641-quand-la-machine-apprend"&gt;Quand la machine apprend: la révolution des neurones artificiels et de l&amp;rsquo;apprentissage profond&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Yann Le Cun (2019)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.goodreads.com/book/show/48497641-quand-la-machine-apprend"&gt;&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/livre_quand_la_machine_apprend.jpg" alt="" /&gt;&lt;/a&gt;&lt;/p&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Que sont les données?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</guid><description>&lt;h1 id="que-sont-les-données-et-comment-les-représenter"&gt;
  Que sont les données, et comment les représenter?
- &lt;a class="anchor" href="#que-sont-les-donn%c3%a9es-et-comment-les-repr%c3%a9senter">#&lt;/a>
-&lt;/h1>
-&lt;p>Il y a une tension fondamentale en informatique entre les différentes manières
+ &lt;a class="anchor" href="#que-sont-les-donn%c3%a9es-et-comment-les-repr%c3%a9senter"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Il y a une tension fondamentale en informatique entre les différentes manières
 de représenter les données, et ce qu&amp;rsquo;elles peuvent signifier. Quand on ajoute
 l&amp;rsquo;apprentissage automatique, la situation devient encore plus complexe. Tentons
-de clarifier le tout.&lt;/p>
-&lt;h2 id="niveau-des-bits-physiques-et-mathématiques">
+de clarifier le tout.&lt;/p&gt;
+&lt;h2 id="niveau-des-bits-physiques-et-mathématiques"&gt;
  Niveau des bits, physiques et mathématiques
- &lt;a class="anchor" href="#niveau-des-bits-physiques-et-math%c3%a9matiques">#&lt;/a>
-&lt;/h2>
-&lt;p>Au niveau le plus fondamental, l&amp;rsquo;ordinateur, physiquement et logiquement, ne
+ &lt;a class="anchor" href="#niveau-des-bits-physiques-et-math%c3%a9matiques"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Au niveau le plus fondamental, l&amp;rsquo;ordinateur, physiquement et logiquement, ne
 peut traiter qu&amp;rsquo;un seul type de donnée : le bit, qui est à la fois un concept
-mathématique (un symbole dont la valeur ne peut être que &lt;code>0&lt;/code> ou &lt;code>1&lt;/code> généralement, ou
-&lt;code>vrai&lt;/code> ou &lt;code>faux&lt;/code> plus spécifiquement en logique) et physique, au niveau de
+mathématique (un symbole dont la valeur ne peut être que &lt;code&gt;0&lt;/code&gt; ou &lt;code&gt;1&lt;/code&gt; généralement, ou
+&lt;code&gt;vrai&lt;/code&gt; ou &lt;code&gt;faux&lt;/code&gt; plus spécifiquement en logique) et physique, au niveau de
 l&amp;rsquo;implémentation, soit en terme électrique (mémoire RAM, CPU, disque SSD), de
 magnétisme (disque dur) ou de caractéristiques optiques (CD). Les bits
-&lt;em>représentent&lt;/em> les nombres via la convention de l&amp;rsquo;encodage binaire.&lt;/p></description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle">
+&lt;em&gt;représentent&lt;/em&gt; les nombres via la convention de l&amp;rsquo;encodage binaire.&lt;/p&gt;</description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle"&gt;
  Qu&amp;rsquo;est-ce qu&amp;rsquo;on veut dire par modèle?
- &lt;a class="anchor" href="#quest-ce-quon-veut-dire-par-mod%c3%a8le">#&lt;/a>
-&lt;/h1>
-&lt;p>Le mot &amp;ldquo;modèle&amp;rdquo; est polysémique et peut prêter à confusion selon qu’on parle d’apprentissage automatique, de statistiques, de sciences ou de mathématiques pures. Ce chapitre clarifie ces sens et propose un vocabulaire pratique pour les distinguer dans le contexte de ce cours.&lt;/p>
-&lt;h2 id="le-sens-central-en-apprentissage-automatique">
+ &lt;a class="anchor" href="#quest-ce-quon-veut-dire-par-mod%c3%a8le"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Le mot &amp;ldquo;modèle&amp;rdquo; est polysémique et peut prêter à confusion selon qu’on parle d’apprentissage automatique, de statistiques, de sciences ou de mathématiques pures. Ce chapitre clarifie ces sens et propose un vocabulaire pratique pour les distinguer dans le contexte de ce cours.&lt;/p&gt;
+&lt;h2 id="le-sens-central-en-apprentissage-automatique"&gt;
  Le sens central en apprentissage automatique
- &lt;a class="anchor" href="#le-sens-central-en-apprentissage-automatique">#&lt;/a>
-&lt;/h2>
-&lt;p>Dans l’AA, un modèle est avant tout une fonction paramétrée qui prend des données en entrée et produit une sortie utile (prédiction, score, probabilité, texte, etc.) :&lt;/p></description></item><item><title>Travaux notés</title><link>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</guid><description>&lt;h1 id="travaux-notés">
+ &lt;a class="anchor" href="#le-sens-central-en-apprentissage-automatique"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Dans l’AA, un modèle est avant tout une fonction paramétrée qui prend des données en entrée et produit une sortie utile (prédiction, score, probabilité, texte, etc.) :&lt;/p&gt;</description></item><item><title>Travaux notés</title><link>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</guid><description>&lt;h1 id="travaux-notés"&gt;
  Travaux notés
- &lt;a class="anchor" href="#travaux-not%c3%a9s">#&lt;/a>
-&lt;/h1>
-&lt;p>Le cours sera évalué avec cinq travaux pratiques, un par module.&lt;/p>
-&lt;h2 id="module-1">
+ &lt;a class="anchor" href="#travaux-not%c3%a9s"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Le cours sera évalué avec cinq travaux pratiques, un par module.&lt;/p&gt;
+&lt;h2 id="module-1"&gt;
  Module 1
- &lt;a class="anchor" href="#module-1">#&lt;/a>
-&lt;/h2>
-&lt;p>&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%c3%a9-1">Visualisation annotée&lt;/a> illustrant des concepts
-historiques et logiques ainsi que des acteur. &lt;em>Pondération : 15% de la note
-finale.&lt;/em>&lt;/p>
-&lt;h2 id="module-2">
+ &lt;a class="anchor" href="#module-1"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%c3%a9-1"&gt;Visualisation annotée&lt;/a&gt; illustrant des concepts
+historiques et logiques ainsi que des acteur. &lt;em&gt;Pondération : 15% de la note
+finale.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="module-2"&gt;
  Module 2
- &lt;a class="anchor" href="#module-2">#&lt;/a>
-&lt;/h2>
-&lt;p>&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%c3%a9-2">Construction guidée&lt;/a> d’un algorithme de classification des courriels. &lt;em>Pondération : 20% de la note finale.&lt;/em>&lt;/p>
-&lt;h2 id="module-3">
+ &lt;a class="anchor" href="#module-2"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%c3%a9-2"&gt;Construction guidée&lt;/a&gt; d’un algorithme de classification des courriels. &lt;em&gt;Pondération : 20% de la note finale.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="module-3"&gt;
  Module 3
- &lt;a class="anchor" href="#module-3">#&lt;/a>
-&lt;/h2>
-&lt;p>&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%c3%a9-3">Exercices interactifs&lt;/a> suivis de questions interprétatives sur l’apprentissage
-profond. &lt;em>Pondération : 20% de la note finale.&lt;/em>&lt;/p></description></item><item><title>Google Sheets</title><link>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</guid><description>&lt;h1 id="google-sheets">
+ &lt;a class="anchor" href="#module-3"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%c3%a9-3"&gt;Exercices interactifs&lt;/a&gt; suivis de questions interprétatives sur l’apprentissage
+profond. &lt;em&gt;Pondération : 20% de la note finale.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Google Sheets</title><link>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/</guid><description>&lt;h1 id="google-sheets"&gt;
  Google Sheets
- &lt;a class="anchor" href="#google-sheets">#&lt;/a>
-&lt;/h1>
-&lt;p>Pour les travaux notés 2 et 4, nous allons utiliser le tableur en ligne &lt;a href="https://workspace.google.com/intl/en_ca/products/sheets/">Google
-Sheets&lt;/a> au lieu du choix plus courant
+ &lt;a class="anchor" href="#google-sheets"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="paramètres-linguistiques"&gt;
+ Paramètres linguistiques
+ &lt;a class="anchor" href="#param%c3%a8tres-linguistiques"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Pour les travaux notés 2 et 4, nous allons utiliser le tableur en ligne &lt;a href="https://workspace.google.com/intl/en_ca/products/sheets/"&gt;Google
+Sheets&lt;/a&gt; au lieu du choix plus courant
 Excel, car Google Sheets est plus accessible, et le langage de ses formules est
 plus facile à gérer (celui d&amp;rsquo;Excel dépend de la langue et des paramètres
 régionaux de votre système d&amp;rsquo;exploitation). Pour éviter la confusion dans le
 contexte de ce travail, nous devons tout d&amp;rsquo;abord nous assurer que la langue des
-fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p></description></item><item><title>Les paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique">
+fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p&gt;</description></item><item><title>Les paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique"&gt;
  Les différents paradigmes de l&amp;rsquo;apprentissage automatique
- &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique">#&lt;/a>
-&lt;/h1>
-&lt;p>Il existe plusieurs manières de catégoriser les algorithmes d&amp;rsquo;apprentissage
+ &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Il existe plusieurs manières de catégoriser les algorithmes d&amp;rsquo;apprentissage
 automatique, selon leur nature et la structure des problèmes qu&amp;rsquo;ils tentent de
-résoudre. Nous allons brièvement discuter de trois schémas de classement :&lt;/p>
-&lt;ul>
-&lt;li>L&amp;rsquo;apprentissage &lt;em>supervisé&lt;/em> versus &lt;em>non-supervisé&lt;/em>&lt;/li>
-&lt;li>L&amp;rsquo;apprentissage &lt;em>paramétrique&lt;/em> versus &lt;em>non-paramétrique&lt;/em>&lt;/li>
-&lt;li>L&amp;rsquo;apprentissage &lt;em>inductif&lt;/em> versus &lt;em>transductif&lt;/em>&lt;/li>
-&lt;/ul>
-&lt;p>Nous allons également parler de l&amp;rsquo;&lt;em>apprentissage par renforcement&lt;/em>, qui est dans
-une classe à part.&lt;/p>
-&lt;h2 id="apprentissage-supervisé-versus-non-supervisé">
+résoudre. Nous allons brièvement discuter de trois schémas de classement :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;L&amp;rsquo;apprentissage &lt;em&gt;supervisé&lt;/em&gt; versus &lt;em&gt;non-supervisé&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;apprentissage &lt;em&gt;paramétrique&lt;/em&gt; versus &lt;em&gt;non-paramétrique&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;apprentissage &lt;em&gt;inductif&lt;/em&gt; versus &lt;em&gt;transductif&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nous allons également parler de l&amp;rsquo;&lt;em&gt;apprentissage par renforcement&lt;/em&gt;, qui est dans
+une classe à part.&lt;/p&gt;
+&lt;h2 id="apprentissage-supervisé-versus-non-supervisé"&gt;
  Apprentissage supervisé versus non-supervisé
- &lt;a class="anchor" href="#apprentissage-supervis%c3%a9-versus-non-supervis%c3%a9">#&lt;/a>
-&lt;/h2>
-&lt;p>La distinction la plus connue oppose l’apprentissage supervisé à l’apprentissage non-supervisé.&lt;/p></description></item><item><title>Apprentissage supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</guid><description>&lt;h1 id="apprentissage-supervisé">
+ &lt;a class="anchor" href="#apprentissage-supervis%c3%a9-versus-non-supervis%c3%a9"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;La distinction la plus connue oppose l’apprentissage supervisé à l’apprentissage non-supervisé.&lt;/p&gt;</description></item><item><title>Apprentissage supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</guid><description>&lt;h1 id="apprentissage-supervisé"&gt;
  Apprentissage supervisé
- &lt;a class="anchor" href="#apprentissage-supervis%c3%a9">#&lt;/a>
-&lt;/h1>
-&lt;p>L&amp;rsquo;apprentissage supervisé fonctionne à partir de données pour lesquelles la
+ &lt;a class="anchor" href="#apprentissage-supervis%c3%a9"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;L&amp;rsquo;apprentissage supervisé fonctionne à partir de données pour lesquelles la
 &amp;ldquo;bonne réponse&amp;rdquo; (i.e. celle qu&amp;rsquo;on aimerait que l&amp;rsquo;algorithme fournisse
 systématiquement, une fois entraîné) est fournie, en tant que donnée
 d’entraînement. L&amp;rsquo;apprentissage supervisé correspond à la notion intuitive qu&amp;rsquo;on
 a de l&amp;rsquo;enseignement et de l&amp;rsquo;apprentissage : un enseignant qui pose une question
 à un étudiant est en mesure de le corriger en lui indiquant si sa réponse est
 correcte ou non (car l&amp;rsquo;enseignant connaît, à priori, la &amp;ldquo;bonne réponse&amp;rdquo; à sa
-propre question).&lt;/p></description></item><item><title>Usage de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</guid><description>&lt;h1 id="lusage-dassistants-intelligents">
+propre question).&lt;/p&gt;</description></item><item><title>Usage de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</guid><description>&lt;h1 id="lusage-dassistants-intelligents"&gt;
  L&amp;rsquo;usage d&amp;rsquo;assistants intelligents
- &lt;a class="anchor" href="#lusage-dassistants-intelligents">#&lt;/a>
-&lt;/h1>
-&lt;p>Étant donné qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un cours sur l&amp;rsquo;intelligence artificielle, l&amp;rsquo;usage
+ &lt;a class="anchor" href="#lusage-dassistants-intelligents"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Étant donné qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un cours sur l&amp;rsquo;intelligence artificielle, l&amp;rsquo;usage
 d&amp;rsquo;assistants intelligents (ChatGPT, Claude, Gemini, etc) est évidemment
 encouragé ! Ceci s&amp;rsquo;applique autant aux travaux notés qu&amp;rsquo;au reste du contenu du
-cours.&lt;/p>
-&lt;p>Par contre si vous utilisez un tel outil, nous vous conseillons de vous assurer
+cours.&lt;/p&gt;
+&lt;p&gt;Par contre si vous utilisez un tel outil, nous vous conseillons de vous assurer
 d&amp;rsquo;avoir une compréhension viscérale des réponses qu&amp;rsquo;il fournira, et de ne pas
 hésiter à engager un dialogue avec l&amp;rsquo;agent, dans le but de clarifier des aspects
 du problème qui pourraient rester obscurs pour vous. N&amp;rsquo;oubliez pas que le but de
 ce cours est la construction de bons modèles mentaux pour penser à des problèmes
 de modélisation. L&amp;rsquo;agent possède déjà ces modèles mentaux, si vous avez
-développé les vôtres à la fin de ce cours, le but aura clairement été atteint !&lt;/p></description></item><item><title>Ressources supplémentaires</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</guid><description>&lt;h1 id="pour-aller-plus-loin">
+développé les vôtres à la fin de ce cours, le but aura clairement été atteint !&lt;/p&gt;</description></item><item><title>Ressources supplémentaires</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</guid><description>&lt;h1 id="pour-aller-plus-loin"&gt;
  Pour aller plus loin
- &lt;a class="anchor" href="#pour-aller-plus-loin">#&lt;/a>
-&lt;/h1>
-&lt;p>Cette présentation (en anglais seulement) fait un excellent survol des liens
+ &lt;a class="anchor" href="#pour-aller-plus-loin"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Cette présentation (en anglais seulement) fait un excellent survol des liens
 profonds entre les mathématiques, la philosophie et l&amp;rsquo;intelligence artificielle
-:&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Lqt7TgYk8rU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+:&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Lqt7TgYk8rU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;details >&lt;summary>Transcription traduite en français&lt;/summary>
- &lt;div class="markdown-inner">
- &lt;/div>
-&lt;/details>
-&lt;p>En gros, on y présente 4 paradigmes mathématiques et leur correspondance dans le monde
-de l&amp;rsquo;intelligence artificielle :&lt;/p></description></item><item><title>Travail noté 1</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</guid><description>&lt;h1 id="travail-noté-1--création-dune-visualisation-annotée">
+&lt;details &gt;&lt;summary&gt;Transcription traduite en français&lt;/summary&gt;
+ &lt;div class="markdown-inner"&gt;
+ &lt;/div&gt;
+&lt;/details&gt;
+&lt;p&gt;En gros, on y présente 4 paradigmes mathématiques et leur correspondance dans le monde
+de l&amp;rsquo;intelligence artificielle :&lt;/p&gt;</description></item><item><title>Travail noté 1</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</guid><description>&lt;h1 id="travail-noté-1--création-dune-visualisation-annotée"&gt;
  Travail noté #1 : création d&amp;rsquo;une visualisation annotée
- &lt;a class="anchor" href="#travail-not%c3%a9-1--cr%c3%a9ation-dune-visualisation-annot%c3%a9e">#&lt;/a>
-&lt;/h1>
-&lt;p>Dans le cadre de ce travail noté, vous êtes invité à réaliser une visualisation annotée. La visualisation est une représentation visuelle enrichie d&amp;rsquo;explications qui mettent en lumière des informations clés, des liens logiques ou des évolutions dans un domaine donné. Ici, la visualisation annotée vise à illustrer les principaux concepts historiques et logiques de l&amp;rsquo;intelligence artificielle, en lien avec les scientifiques qui ont marqué son évolution.&lt;/p></description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones-travail-noté-3">
+ &lt;a class="anchor" href="#travail-not%c3%a9-1--cr%c3%a9ation-dune-visualisation-annot%c3%a9e"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Dans le cadre de ce travail noté, vous êtes invité à réaliser une visualisation annotée. La visualisation est une représentation visuelle enrichie d&amp;rsquo;explications qui mettent en lumière des informations clés, des liens logiques ou des évolutions dans un domaine donné. Ici, la visualisation annotée vise à illustrer les principaux concepts historiques et logiques de l&amp;rsquo;intelligence artificielle, en lien avec les scientifiques qui ont marqué son évolution.&lt;/p&gt;</description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones-travail-noté-3"&gt;
  Apprivoisez un réseau de neurones (travail noté 3)
- &lt;a class="anchor" href="#apprivoisez-un-r%c3%a9seau-de-neurones-travail-not%c3%a9-3">#&lt;/a>
-&lt;/h1>
-&lt;p>Voici l&amp;rsquo;application &lt;a href="https://playground.tensorflow.org">Tensorflow Playground&lt;/a>,
-offerte en &lt;a href="https://github.com/tensorflow/playground">logiciel libre&lt;/a>, que nous
-avons adaptée pour les besoins de ce cours. Elle permet d&amp;rsquo;explorer de manière interactive et intuitive
-le fonctionnement des réseaux de neurones.&lt;/p>
-&lt;h2 id="consignes">
+ &lt;a class="anchor" href="#apprivoisez-un-r%c3%a9seau-de-neurones-travail-not%c3%a9-3"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Voici l&amp;rsquo;application &lt;a href="https://playground.tensorflow.org"&gt;Tensorflow Playground&lt;/a&gt;,
+offerte en &lt;a href="https://github.com/tensorflow/playground"&gt;logiciel libre&lt;/a&gt;, que nous
+avons quelque peu adaptée pour les besoins de ce cours. Elle permet d&amp;rsquo;explorer
+de manière interactive et intuitive le fonctionnement des réseaux de neurones.&lt;/p&gt;
+&lt;h2 id="consignes"&gt;
  Consignes
- &lt;a class="anchor" href="#consignes">#&lt;/a>
-&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>En utilisant l&amp;rsquo;application interactive, effectuez les expériences proposées
-dans la section &amp;ldquo;Instructions et questions&amp;rdquo; ci-bas.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Répondez de manière claire et précise aux questions d&amp;rsquo;interprétation dans un fichier PDF (&lt;strong>Attention : aucun autre format que PDF ne sera accepté&lt;/strong>).&lt;/p></description></item><item><title>Travail noté 4</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%C3%A9-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%C3%A9-4/</guid><description>&lt;h1 id="un-mini-chatgpt-dans-google-sheets-travail-noté-4">
+ &lt;a class="anchor" href="#consignes"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;En utilisant l&amp;rsquo;application interactive, effectuez les expériences proposées
+dans la section &amp;ldquo;Instructions et questions&amp;rdquo; ci-bas.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Répondez de manière claire et précise aux questions d&amp;rsquo;interprétation dans un fichier PDF (&lt;strong&gt;Attention : aucun autre format que PDF ne sera accepté&lt;/strong&gt;).&lt;/p&gt;</description></item><item><title>Travail noté 4</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%C3%A9-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%C3%A9-4/</guid><description>&lt;h1 id="un-mini-chatgpt-dans-google-sheets-travail-noté-4"&gt;
  Un mini ChatGPT dans Google Sheets (travail noté 4)
- &lt;a class="anchor" href="#un-mini-chatgpt-dans-google-sheets-travail-not%c3%a9-4">#&lt;/a>
-&lt;/h1>
-&lt;p>Un modèle de langage est un outil mathématique qui permet d&amp;rsquo;établir la
+ &lt;a class="anchor" href="#un-mini-chatgpt-dans-google-sheets-travail-not%c3%a9-4"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Un modèle de langage est un outil mathématique qui permet de modéliser la
 distribution statistique des mots : en présence (ou dans le contexte) de
 certains mots, quel mot a tendance à suivre, et dans quelle proportion des cas
 (c&amp;rsquo;est-à-dire avec quelle probabilité). Un modèle de langage n&amp;rsquo;est pas un objet
@@ -419,25 +423,25 @@ abstrait qui décrit une réalité théorique : il s&amp;rsquo;agit d&amp;rsquo;
 entraîné sur des données particulières. De la même manière qu&amp;rsquo;un modèle de
 prédiction de la température pour la ville de Montréal est différent d&amp;rsquo;un modèle
 pour la ville de Québec, un modèle de langage créé par exemple à partir des
-données de 100 livres écrits au 19ième siècle, et un autre à partir de 100
-livres écrits au 20ième siècles, seront deux modèles distincts, et auront des
-propriétés statistiques très différentes.&lt;/p></description></item><item><title>Conclusion</title><link>https://cjauvin.github.io/inf1901-teluq/docs/conclusion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/conclusion/</guid><description>&lt;h1 id="en-conclusion">
+données de 100 livres écrits au 19e siècle, et un autre à partir de 100
+livres écrits au 20e siècle, seront deux modèles distincts, et auront des
+propriétés statistiques très différentes.&lt;/p&gt;</description></item><item><title>Conclusion</title><link>https://cjauvin.github.io/inf1901-teluq/docs/conclusion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/conclusion/</guid><description>&lt;h1 id="en-conclusion"&gt;
  En conclusion..
- &lt;a class="anchor" href="#en-conclusion">#&lt;/a>
-&lt;/h1>
-&lt;p>Merci d&amp;rsquo;avoir participé à ce cours d&amp;rsquo;initiation à l&amp;rsquo;IA !&lt;/p></description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels-travail-noté-2">
+ &lt;a class="anchor" href="#en-conclusion"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Merci d&amp;rsquo;avoir participé à ce cours d&amp;rsquo;initiation à l&amp;rsquo;IA !&lt;/p&gt;</description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels-travail-noté-2"&gt;
  Classification naïve bayésienne pour détecter les pourriels (travail noté 2)
- &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels-travail-not%c3%a9-2">#&lt;/a>
-&lt;/h1>
-&lt;p>La classification naïve bayésienne est un algorithme d&amp;rsquo;apprentissage supervisé
+ &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels-travail-not%c3%a9-2"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;La classification naïve bayésienne est un algorithme d&amp;rsquo;apprentissage supervisé
 qui fonctionne avec les probabilités. Nous avons vu deux variantes de cet
-algorithme :&lt;/p>
-&lt;ol>
-&lt;li>&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bayésienne-naive-gaussienne">La classification de simples points en 2d avec un modèle gaussien&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bayésienne-naive-multinomiale">La classification de vecteurs en haute dimension avec un modèle multinomial&lt;/a>&lt;/li>
-&lt;/ol>
-&lt;p>Un problème classique qui peut être traité avec cet algorithme est la
+algorithme :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bayésienne-naive-gaussienne"&gt;La classification de simples points en 2d avec un modèle gaussien&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bayésienne-naive-multinomiale"&gt;La classification de vecteurs en haute dimension avec un modèle multinomial&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Un problème classique qui peut être traité avec cet algorithme est la
 classification de courriels. On peut tenter d&amp;rsquo;estimer la probabilité qu&amp;rsquo;un
 courriel soit en fait un pourriel en prenant en compte les mots particuliers
 qu&amp;rsquo;il contient, l&amp;rsquo;idée étant que certains mots auront tendance à être plus
-souvent utilisés selon qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un pourriel ou d&amp;rsquo;un courriel.&lt;/p></description></item></channel></rss>
+souvent utilisés selon qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un pourriel ou d&amp;rsquo;un courriel.&lt;/p&gt;</description></item></channel></rss>

@@ -77,7 +77,7 @@ non
 courriel quelconque soit un pourriel ou non (sans prendre en
 considérations les mots donc, pour le moment) :</p><pre tabindex=0><code>=MAP(UNIQUE(B1:B10), LAMBDA(x, COUNTIF(B1:B10, x) / COUNTA(B1:B10)))
 </code></pre><blockquote class="book-hint warning"><p>Si vous obtenez une erreur avec la formule à ce stade, il est très possible que
-les paramètres linguistiques de votre Google Sheets ne soient pas <a href=https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/>correctement
+les paramètres linguistiques de votre Google Sheets ne soient pas <a href=https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/#parametres-linguistiques>correctement
 configurés</a>.</p></blockquote><p>Ces probabilités à priori nous serviront plus loin. Définissez ensuite
 la colonne <code>D</code> avec cette formule :</p><pre tabindex=0><code>=UNIQUE(TRANSPOSE(SPLIT(TEXTJOIN(&#34; &#34;, TRUE, A:A), &#34; &#34;)))
 </code></pre><p>La colonne <code>D</code> devrait maintenant contenir le vocabulaire des courriels :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/tn2/sheets_col_d_voc.png alt></p><p>La colonne <code>E</code> devrait ensuite correspondre au nombre de fois où les

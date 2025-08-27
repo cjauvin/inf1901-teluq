@@ -1,36 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module 3 - Réseaux de neurones et apprentissage profond on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/</link><description>Recent content in Module 3 - Réseaux de neurones et apprentissage profond on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/module3/index.xml" rel="self" type="application/rss+xml"/><item><title>Les réseaux de neurones</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</guid><description>&lt;h1 id="quest-ce-quun-réseau-de-neurones">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module 3 - Réseaux de neurones et apprentissage profond on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/</link><description>Recent content in Module 3 - Réseaux de neurones et apprentissage profond on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/module3/index.xml" rel="self" type="application/rss+xml"/><item><title>Les réseaux de neurones</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</guid><description>&lt;h1 id="quest-ce-quun-réseau-de-neurones"&gt;
  Qu&amp;rsquo;est-ce qu&amp;rsquo;un réseau de neurones?
- &lt;a class="anchor" href="#quest-ce-quun-r%c3%a9seau-de-neurones">#&lt;/a>
-&lt;/h1>
-&lt;p>Un réseau de neurones artificiel est un système inspiré du cerveau
-humain, composé d&amp;rsquo;unités appelées &lt;em>neurones&lt;/em> organisées en couches.
+ &lt;a class="anchor" href="#quest-ce-quun-r%c3%a9seau-de-neurones"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Un réseau de neurones artificiel est un système inspiré du cerveau
+humain, composé d&amp;rsquo;unités appelées &lt;em&gt;neurones&lt;/em&gt; organisées en couches.
 Chaque neurone réalise une opération mathématique simple, et
 l&amp;rsquo;ensemble du réseau transforme des données d&amp;rsquo;entrée en une prédiction
-ou une décision.&lt;/p>
-&lt;h2 id="les-données">
+ou une décision.&lt;/p&gt;
+&lt;h2 id="les-données"&gt;
  Les données
- &lt;a class="anchor" href="#les-donn%c3%a9es">#&lt;/a>
-&lt;/h2>
-&lt;p>Les données sont la matière première. Elles peuvent être des images,
+ &lt;a class="anchor" href="#les-donn%c3%a9es"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Les données sont la matière première. Elles peuvent être des images,
 du texte, du son ou des tableaux de nombres. Chaque exemple de données
 est représenté sous forme numérique, souvent sous forme de vecteurs ou
 de matrices. C&amp;rsquo;est à partir de ces données que le réseau apprend à
-reconnaître des motifs.&lt;/p></description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</guid><description>&lt;h1 id="vidéo-de-3blue1brown">
+reconnaître des motifs.&lt;/p&gt;</description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</guid><description>&lt;h1 id="vidéo-de-3blue1brown"&gt;
  Vidéo de 3Blue1Brown
- &lt;a class="anchor" href="#vid%c3%a9o-de-3blue1brown">#&lt;/a>
-&lt;/h1>
-&lt;p>Visionnez cette vidéo d&amp;rsquo;introduction aux réseaux de neurones, créée par
+ &lt;a class="anchor" href="#vid%c3%a9o-de-3blue1brown"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Visionnez cette vidéo d&amp;rsquo;introduction aux réseaux de neurones, créée par
 3Blue1Brown. Notez qu&amp;rsquo;il est possible d&amp;rsquo;avoir le contenu audio et les
-sous-titres en français, via les réglages du lecteur YouTube.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aircAruvnKk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+sous-titres en français, via les réglages du lecteur YouTube.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aircAruvnKk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;h2 id="qui-est-3blue1brown">
+&lt;h2 id="qui-est-3blue1brown"&gt;
  Qui est 3Blue1Brown?
- &lt;a class="anchor" href="#qui-est-3blue1brown">#&lt;/a>
-&lt;/h2>
-&lt;p>Grant Sanderson, connu sous le pseudonyme 3Blue1Brown, est un vulgarisateur
+ &lt;a class="anchor" href="#qui-est-3blue1brown"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Grant Sanderson, connu sous le pseudonyme 3Blue1Brown, est un vulgarisateur
 scientifique et créateur de vidéos éducatives sur YouTube. Il s’est fait
 remarquer grâce à son style visuel unique qui combine des animations claires et
 élégantes avec des explications intuitives de concepts mathématiques parfois
@@ -38,22 +38,22 @@ complexes, comme l’algèbre linéaire, le calcul différentiel, les probabilit
 encore l’intelligence artificielle. Son approche met l’accent sur la
 compréhension en profondeur plutôt que sur la simple application de formules, et
 a permis à des millions de personnes dans le monde de découvrir la beauté et la
-logique des mathématiques.&lt;/p></description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones-travail-noté-3">
+logique des mathématiques.&lt;/p&gt;</description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones-travail-noté-3"&gt;
  Apprivoisez un réseau de neurones (travail noté 3)
- &lt;a class="anchor" href="#apprivoisez-un-r%c3%a9seau-de-neurones-travail-not%c3%a9-3">#&lt;/a>
-&lt;/h1>
-&lt;p>Voici l&amp;rsquo;application &lt;a href="https://playground.tensorflow.org">Tensorflow Playground&lt;/a>,
-offerte en &lt;a href="https://github.com/tensorflow/playground">logiciel libre&lt;/a>, que nous
-avons adaptée pour les besoins de ce cours. Elle permet d&amp;rsquo;explorer de manière interactive et intuitive
-le fonctionnement des réseaux de neurones.&lt;/p>
-&lt;h2 id="consignes">
+ &lt;a class="anchor" href="#apprivoisez-un-r%c3%a9seau-de-neurones-travail-not%c3%a9-3"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Voici l&amp;rsquo;application &lt;a href="https://playground.tensorflow.org"&gt;Tensorflow Playground&lt;/a&gt;,
+offerte en &lt;a href="https://github.com/tensorflow/playground"&gt;logiciel libre&lt;/a&gt;, que nous
+avons quelque peu adaptée pour les besoins de ce cours. Elle permet d&amp;rsquo;explorer
+de manière interactive et intuitive le fonctionnement des réseaux de neurones.&lt;/p&gt;
+&lt;h2 id="consignes"&gt;
  Consignes
- &lt;a class="anchor" href="#consignes">#&lt;/a>
-&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>En utilisant l&amp;rsquo;application interactive, effectuez les expériences proposées
-dans la section &amp;ldquo;Instructions et questions&amp;rdquo; ci-bas.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Répondez de manière claire et précise aux questions d&amp;rsquo;interprétation dans un fichier PDF (&lt;strong>Attention : aucun autre format que PDF ne sera accepté&lt;/strong>).&lt;/p></description></item></channel></rss>
+ &lt;a class="anchor" href="#consignes"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;En utilisant l&amp;rsquo;application interactive, effectuez les expériences proposées
+dans la section &amp;ldquo;Instructions et questions&amp;rdquo; ci-bas.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Répondez de manière claire et précise aux questions d&amp;rsquo;interprétation dans un fichier PDF (&lt;strong&gt;Attention : aucun autre format que PDF ne sera accepté&lt;/strong&gt;).&lt;/p&gt;</description></item></channel></rss>
