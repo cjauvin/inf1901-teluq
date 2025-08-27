@@ -24,8 +24,8 @@ deux modèles (un pour chaque classe, `pourriel` ou `courriel`) qui sont en
 charge de *générer* les données qu'on observe (plutôt que de directement les
 *classifier*) :
 
-$$P(\mathtt{les\ mots\ générés} \mid \mathtt{il\ s'agit\ d'un\ pourriel})$$
-$$P(\mathtt{les\ mots\ générés} \mid \mathtt{il\ s'agit\ d'un\ courriel})$$
+$$P(\text{les mots générés} \mid \text{il s'agit d'un pourriel})$$
+$$P(\text{les mots générés} \mid \text{il s'agit d'un courriel})$$
 
 ou encore, de manière plus compacte :
 
@@ -42,7 +42,7 @@ $$
 \text{classification}(\mathbf{x}) =
 \left\{
 \begin{array}{ll}
-\mathtt{pourriel} \text{ si } P(\mathbf{x} \mid \text{pourriel}) P(\text{pourriel}) \ge P(\mathbf{x} \mid \text{courriel}) P(\text{courriel}) & \\
+\mathtt{pourriel} \text{ si } P(\mathbf{x} \mid \mathtt{pourriel}) P(\mathtt{pourriel}) \ge P(\mathbf{x} \mid \mathtt{courriel}) P(\mathtt{courriel}) & \\
 \mathtt{courriel} \text{ sinon } & \\
 \end{array}
 \right.
