@@ -31,7 +31,7 @@ par les possibilités de l’IA, ce cours est conçu pour vous. Nous vous invito
 consulter le site Web du cours dès son lancement pour découvrir la feuille de
 route et la liste des activités prévues. Le site du cours comprend une dizaine 
 de vidéos et plusieurs activités interactives  à réaliser dans votre navigateur Web. 
-Il ne s'agit pas d'un cours  léger&nbsp;:vous compterez près de 35,000 mots et 
+Il ne s'agit pas d'un cours  léger&nbsp;: vous compterez près de 35,000 mots et 
 des dizaines d'illustrations. Si vous avez des questions, n’hésitez pas à nous 
 contacter. Nous sommes impatients de collaborer avec vous dans cette aventure&nbsp;!
 
