@@ -1,6 +1,6 @@
 ---
 title: "Ressources supplémentaires"
-weight: 70
+weight: 600
 ---
 
 # Pour aller plus loin
