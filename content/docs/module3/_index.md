@@ -31,3 +31,22 @@ nouvelles architectures qui allaient bouleverser non seulement la vision par
 ordinateur, mais aussi le traitement automatique du langage, la reconnaissance
 vocale et bien d’autres domaines. Ce module vous guidera dans la découverte de
 ce tournant historique et des concepts fondamentaux qui l’ont rendu possible.
+
+
+## But et objectifs
+
+Ce module vise à :
+- Comprendre le fonctionnement des réseaux de neurones artificiels et leur rôle dans l’apprentissage profond.
+- Explorer les concepts fondamentaux : neurones, couches, fonctions d’activation, propagation avant et rétropropagation.
+- Découvrir l’impact historique d’AlexNet et des avancées récentes en vision par ordinateur et traitement du langage.
+- S’initier à l’interprétation visuelle et intuitive des réseaux de neurones grâce à des ressources pédagogiques (ex. : vidéo 3Blue1Brown).
+- Expérimenter concrètement avec des outils interactifs pour mieux saisir les mécanismes d’apprentissage.
+
+# Durée 
+
+Trois semaines ou 27 heures.
+
+## Évaluation
+L’évaluation de ce module repose sur un travail noté où vous devrez manipuler un réseau de neurones via une application interactive (Tensorflow Playground), répondre à des questions d’interprétation et remettre un fichier PDF.
+
+

@@ -54,3 +54,13 @@ par intelligence, scientifiquement parlant.
 * Comprendre la différence entre la programmation traditionnelle et
   l'apprentissage automatique
 * Explorer les différentes manières de représenter les données
+
+## Durée
+
+Trois semaines ou 27 heures.
+
+## Évaluation
+
+L’évaluation de ce module repose sur un travail noté où vous appliquerez la classification naïve bayésienne pour détecter les pourriels, en répondant à des questions d’interprétation et en expliquant les étapes de l’algorithme.
+
+
