@@ -22,11 +22,9 @@ Plus spécifiquement, ce module vous permettra de :
 * Explorer et approfondir quatre attitudes contemporaines à l'égard de l'IA et leurs impacts sur l'avenir de la société;
 * Réfléchir à des thèmes scientifiques, philosophiques et culturels reliées à l'IA, avec une conversation entre deux professeurs du cours
 
-# Durée 
+## Durée 
 
 Trois semaines ou 27 heures.
-
-
 
 ## Évaluation
 
