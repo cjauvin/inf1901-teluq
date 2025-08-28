@@ -32,11 +32,11 @@ grands modèles de langages (LLM) comme GPT-4, d'autre part.
 * Dresser un état des lieux des avancées technologiques actuelles et des débats éthiques qu'elles encourent;
 * Décrire les risques et les menaces potentiels associés à l'IA
 
-## Durée (à préciser)
+## Durée
 
-2 à 3 semaines, soit de 18 à 27 heures de travail.
+2 semaines ou 18 heures.
 
-## Travail noté
+## Évaluation
 
 Le [travail noté 1](/docs/module1/travail-noté-1), comptant pour 15% de
 l'évaluation finale, consiste à représenter une ligne de temps documentée,
@@ -45,3 +45,4 @@ marquant l'évolution de l'intelligence artificielle depuis ses fondations
 sélection de cinq grandes étapes de l'histoire de l'intelligence artificielle en
 y associant le ou les principaux scientifiques ainsi qu'une description des
 innovations ou travaux qui s'y rattachent.
+
