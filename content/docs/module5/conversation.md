@@ -77,24 +77,24 @@ En préparation à votre écoute, consultez les liens suivants.
 
 Après votre visionnement, essayez de répondre aux dix questions suivantes.
 
-1. Comment le paradoxe de Moravec illustre-t-il les limites actuelles de l'IA dans les tâches quotidiennes, et en quoi cela questionne-t-il la vision optimiste qui prône une accélération technologique sans limites ?
+1. Comment le paradoxe de Moravec illustre-t-il les limites actuelles de l'IA dans les tâches quotidiennes, et en quoi cela questionne-t-il la vision optimiste qui prône une accélération technologique sans limites&nbsp;?
 
-2. Le phénomène des objectifs changeants (moving goalposts) montre-t-il que notre définition de l'intelligence évolue avec les avancées technologiques ?
+2. Le phénomène des objectifs changeants (moving goalposts) montre-t-il que notre définition de l'intelligence évolue avec les avancées technologiques&nbsp;?
 
-3. L'IA étroite, comme celle de Deep Blue aux échecs, diffère-t-elle fondamentalement d'une IA générale, et cela justifie-t-il les craintes de la vision défaitiste face à une potentielle superintelligence ?
+3. L'IA étroite, comme celle de Deep Blue aux échecs, diffère-t-elle fondamentalement d'une IA générale, et cela justifie-t-il les craintes de la vision défaitiste face à une potentielle superintelligence&nbsp;?
 
-4. Le test de Turing, maintenant dépassé par des modèles comme ChatGPT, prouve-t-il que l'IA peut simuler l'intelligence humaine, et comment cela interroge-t-il la vision transhumaniste sur la fusion homme-machine ?
+4. Le test de Turing, maintenant dépassé par des modèles comme ChatGPT, prouve-t-il que l'IA peut simuler l'intelligence humaine, et comment cela interroge-t-il la vision transhumaniste sur la fusion homme-machine&nbsp;?
 
-5. Les zombies philosophiques représentent-ils une critique valable de l'IA, en suggérant qu'elle pourrait manquer de conscience réelle, et cela aligne-t-il avec les préoccupations éthiques de la vision libérale ?
+5. Les zombies philosophiques représentent-ils une critique valable de l'IA, en suggérant qu'elle pourrait manquer de conscience réelle, et cela aligne-t-il avec les préoccupations éthiques de la vision libérale&nbsp;?
 
-6. L'alignement de l'IA avec les valeurs humaines est-il réalisable sans régulation stricte, et en quoi cela contredit-il la vision accélérationniste qui défend une croissance technologique illimitée ?
+6. L'alignement de l'IA avec les valeurs humaines est-il réalisable sans régulation stricte, et en quoi cela contredit-il la vision accélérationniste qui défend une croissance technologique illimitée&nbsp;?
 
-7. Les influences culturelles, comme les films de science-fiction (2001 : l'odyssée de l'espace ou Terminator), façonnent-elles nos peurs existentielles, et cela amplifie-t-il la vision défaitiste des doomers ?
+7. Les influences culturelles, comme les films de science-fiction (2001 : l'odyssée de l'espace ou Terminator), façonnent-elles nos peurs existentielles, et cela amplifie-t-il la vision défaitiste des doomers&nbsp;?
 
-8. La philosophie de l'esprit, avec des concepts comme les qualia, suggère-t-elle que l'IA ne pourra jamais égaler l'expérience humaine, et cela remet-il en cause la vision transhumaniste du dépassement biologique ?
-9. Les rationalistes, comme Eliezer Yudkowsky, prônent-ils une approche trop alarmiste pour éviter les risques, et cela s'harmonise-t-il avec la vision libérale qui équilibre innovation et contrôle démocratique ?
+8. La philosophie de l'esprit, avec des concepts comme les qualia, suggère-t-elle que l'IA ne pourra jamais égaler l'expérience humaine, et cela remet-il en cause la vision transhumaniste du dépassement biologique&nbsp;?
+9. Les rationalistes, comme Eliezer Yudkowsky, prônent-ils une approche trop alarmiste pour éviter les risques, et cela s'harmonise-t-il avec la vision libérale qui équilibre innovation et contrôle démocratique&nbsp;?
 
-10. Les critiques actuelles sur l'opacité des algorithmes et le manque de régulation sont-elles justifiées face aux avancées des grands modèles de langage, et comment cela influence-t-il une réflexion éthique sur les quatre visions de l'IA ?
+10. Les critiques actuelles sur l'opacité des algorithmes et le manque de régulation sont-elles justifiées face aux avancées des grands modèles de langage, et comment cela influence-t-il une réflexion éthique sur les quatre visions de l'IA&nbsp;?
 
 ## Les thèmes préalables de la discussion
 
@@ -120,7 +120,7 @@ Le paradoxe de Moravec stipule que les tâches faciles pour les humains (comme l
 
 {{% /details %}}
 
-Q: Qu'est-ce que la différence entre "l'IA étroite" et l'IAG (AGI) ?
+Q: Qu'est-ce que la différence entre "l'IA étroite" et l'IAG (AGI)&nbsp;?
 
 {{% details "Réponse de ChatGPT" %}}
 

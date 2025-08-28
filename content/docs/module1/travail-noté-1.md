@@ -44,11 +44,11 @@ Hiérarchisez l'information et utilisez des couleurs ou icônes pour distinguer 
 ### Soigner les annotations
 
 - Courtes (2–4 lignes), claires et informatives
-- Répondez aux questions : Qui ? Quoi ? Pourquoi est-ce important ?
+- Répondez aux questions : Qui&nbsp;? Quoi&nbsp;? Pourquoi est-ce important&nbsp;?
 - Ajoutez une source ou un lien si pertinent
-- Quelle histoire votre visualisation raconte-t-elle ?
-- Est-elle accessible à quelqu’un qui découvre l’IA ?
-- Fait-elle ressortir les ruptures ou évolutions majeures ?
+- Quelle histoire votre visualisation raconte-t-elle&nbsp;?
+- Est-elle accessible à quelqu’un qui découvre l’IA&nbsp;?
+- Fait-elle ressortir les ruptures ou évolutions majeures&nbsp;?
 
 ### Conseils de forme
 
