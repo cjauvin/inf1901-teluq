@@ -262,11 +262,11 @@ plus général) : en quoi est-ce que ceci constitue de l'intelligence,
 
 {{% /hint %}}
 
-Une fois que les idées de base de ce petit exemple interactif sont bien claires
+<!--Une fois que les idées de base de ce petit exemple interactif sont bien claires
 pour vous, on peut généraliser le concept de la régression logistique pour en
 faire un modèle plus puissant et complexe :
 
-- Considérer ..
+- Considérer ..-->
 
 ### Classification bayésienne naive (gaussienne)
 
