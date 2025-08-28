@@ -1,9 +1,9 @@
 ---
-title: "Philosophie du cours"
+title: "Approche pédagogique du cours"
 weight: 20
 ---
 
-## La philosophie du cours
+## Approche pédagogique du cours
 
 {{% hint info %}}
 
