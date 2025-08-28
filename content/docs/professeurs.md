@@ -20,18 +20,6 @@ collaboration entre des chercheurs et des enseignants de renommée international
 de l'Université et d'autres établissements au Canada ainsi qu'ailleurs en
 Amérique du Nord, en Europe, en Afrique et dans d'autres régions du monde.
 
-## Daniel Lemire
-
-[Daniel Lemire](https://www.teluq.ca/siteweb/univ/dlemire.html) est professeur
-titulaire en informatique. Il s'intéresse particulièrement à la performance du
-logiciel et aux techniques d'indexation en science des données. Il aime poser un
-regard critique sur l'utilisation des technologies.
-
-Daniel Lemire est parmi les 2 % de scientifiques les plus cités au monde
-(classement de l'Université Stanford, 2024). Il fait partie des 0,0006 % de
-programmeurs les plus suivis au monde sur GitHub ; GitHub compte plus de 100
-millions de développeurs.
-
 ## Christian Jauvin
 
 [Christian Jauvin](https://www.teluq.ca/siteweb/univ/cjauvin.html) s’intéresse à
@@ -52,3 +40,17 @@ géographique (K2 Géospatial) et la modélisation climatique (Ouranos). Son
 parcours l’a amené à concevoir des applications distribuées dans le cloud, à
 contribuer à des projets open source, et à développer des outils logiciels sur
 mesure pour des besoins spécifiques.
+
+
+## Daniel Lemire
+
+[Daniel Lemire](https://www.teluq.ca/siteweb/univ/dlemire.html) est professeur
+titulaire en informatique. Il s'intéresse particulièrement à la performance du
+logiciel et aux techniques d'indexation en science des données. Il aime poser un
+regard critique sur l'utilisation des technologies.
+
+Daniel Lemire est parmi les 2 % de scientifiques les plus cités au monde
+(classement de l'Université Stanford, 2024). Il fait partie des 0,0006 % de
+programmeurs les plus suivis au monde sur GitHub ; GitHub compte plus de 100
+millions de développeurs.
+
