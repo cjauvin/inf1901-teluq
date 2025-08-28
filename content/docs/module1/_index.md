@@ -34,7 +34,7 @@ grands modèles de langages (LLM) comme GPT-4, d'autre part.
 
 ## Durée
 
-2 semaines, soit de 18 heures de travail.
+2 semaines ou 18 heures.
 
 ## Évaluation
 
