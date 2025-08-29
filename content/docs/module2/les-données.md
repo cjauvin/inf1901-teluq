@@ -306,7 +306,7 @@ mathématiques sur lesquels sont fondés l'IA classique et l'AA.
 
 ### Les mots et leur sens
 
-Jusqu’ici, nous avons traité des données numériques ou tabulaires. Mais qu’en est-il du **langage naturel** ?
+Jusqu’ici, nous avons traité des données numériques ou tabulaires. Mais qu’en est-il du **langage naturel**&nbsp;?
 Les mots portent du sens, mais pour un ordinateur ils doivent d’abord être **convertis en nombres**.
 Cette étape, qu’on appelle **représentation vectorielle**, est au cœur du traitement automatique du langage.
 
