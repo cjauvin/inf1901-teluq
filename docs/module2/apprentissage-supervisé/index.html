@@ -300,7 +300,8 @@ faire une idée intuitive de son fonctionnement. Les points sont tout d&rsquo;ab
 distribués de manière semi-aléatoire, c&rsquo;est à dire qu&rsquo;ils suivent grossièrement
 la forme d&rsquo;une fonction linéaire implicite, dont les paramètres exacts sont connus de
 l&rsquo;applet interactive, mais non de vous. Votre tâche est d&rsquo;ajuster la fonction
-(donc ses paramètres) de manière à minimiser la fonction d&rsquo;erreur.</p><div style=text-align:center;margin-bottom:10px><label for=pointSlider2>Nombre de points : </label><input type=range id=pointSlider2 min=2 max=50 value=25 style=width:200px>
+(donc ses paramètres) de manière à minimiser la fonction d&rsquo;erreur. Notez que la fonction
+de séparation ne peut être <em>que</em> linéaire, c&rsquo;est une contrainte fondamentale de cet algorithme, qui évidemment explique aussi son nom.</p><div style=text-align:center;margin-bottom:10px><label for=pointSlider2>Nombre de points : </label><input type=range id=pointSlider2 min=2 max=50 value=25 style=width:200px>
 <span id=pointCount2>25</span></div><canvas id=canvas2></canvas><div id=info2 style=text-align:center;margin-top:20px>f(x) = mx + b</div><hr><blockquote class="book-hint info"><p>Une fois qu&rsquo;on a fait des efforts pour comprendre le fonctionnement de certains algorithmes de base en apprentissage automatique,
 il peut être intéressant de considérer, <a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/#en-quoi-est-ce-que-ceci-constitue-de-lintelligence>à nouveau</a>, notre question d&rsquo;ordre philosophique (ou linguistique) : en quoi, au juste, est-ce que cela constitue de l&rsquo;intelligence, <em>artificielle</em> ou non? Nous allons voir par la suite
 en quoi les idées relativement simples et peu puissantes que nous avons développées dans ce module vont évoluer vers les systèmes beaucoup plus impressionnants
