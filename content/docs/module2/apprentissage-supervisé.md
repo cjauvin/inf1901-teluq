@@ -585,7 +585,8 @@ faire une idée intuitive de son fonctionnement. Les points sont tout d'abord
 distribués de manière semi-aléatoire, c'est à dire qu'ils suivent grossièrement
 la forme d'une fonction linéaire implicite, dont les paramètres exacts sont connus de
 l'applet interactive, mais non de vous. Votre tâche est d'ajuster la fonction
-(donc ses paramètres) de manière à minimiser la fonction d'erreur.
+(donc ses paramètres) de manière à minimiser la fonction d'erreur. Notez que la fonction
+de séparation ne peut être *que* linéaire, c'est une contrainte fondamentale de cet algorithme, qui évidemment explique aussi son nom.
 
 <div style="text-align: center; margin-bottom: 10px;">
   <label for="pointSlider2">Nombre de points : </label>
