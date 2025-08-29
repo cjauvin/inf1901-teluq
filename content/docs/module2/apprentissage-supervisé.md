@@ -71,7 +71,7 @@ est d'inverser le schéma de classification (les points `bleus` deviennent
 La tâche de l'algorithme de régression logistique est de trouver les "meilleures"
 valeurs pour les paramètres pour la fonction de décision (donc $m$ et $b$),
 celles qui font en sorte que la valeur de la fonction d'erreur est la plus
-petite possible (zéro idéalement).
+petite possible (idéalement *zéro*).
 
 {{% hint info %}}
 
@@ -81,7 +81,7 @@ permettrait de faire en sorte que ça devienne possible?
 
 {{% /hint %}}
 
-{{% details "Les mathématiques de la régression logistique" open %}}
+{{% details "Les mathématiques de la régression logistique (un sujet optionnel, plus complexe)" %}}
 
 Bien que nous en ayons parlé en termes purement géométriques jusqu'ici, la
 régression logistique est en fait une méthode probabiliste : un point est
@@ -245,28 +245,28 @@ $\mathbf{b}$), on appelle $\alpha$ un *hyper-paramètre*.
 
 {{% /details %}}
 
-{{% details "La programmation de la régression logistique" open %}}
+<br />
+
+{{% details "La programmation de la régression logistique (un sujet optionnel, plus technique)" %}}
+
+Si cela vous intéresse, voici du code Python qui met en oeuvre la régression
+logistique que nous venons d'étudier. Le code est délibérément détaillé et assez
+"bas niveau", car il utilise seulement
+[numpy](https://fr.wikipedia.org/wiki/NumPy), une librairie pour faire des
+opérations basées sur l'algèbre linéaire (ainsi que
+[Matplotlib](https://fr.wikipedia.org/wiki/Matplotlib) pour faire les
+visualisations). Si on utilisait une librairie d'apprentissage automatique
+spécialisée, comme [Scikit-learn](https://fr.wikipedia.org/wiki/Scikit-learn)
+par exemple, le code serait plus simple et compact, étant donné que le niveau
+d'abstraction serait plus élevé (bien qu'il s'agirait toujours de Python, le
+code serait de plus "haut niveau"). Il n'est pas nécessaire de comprendre ce
+code dans les détails, mais il peut s'avérer intéressant d'en avoir un aperçu,
+car il est très représentatif de ce qui se fait dans de vrais environnements de
+programmation.
 
 <iframe src="/html/notebooks/module2/reglog.html" width="100%" height="800px"></iframe>
 
 {{% /details %}}
-
-{{% hint info %}}
-
-Une question qu'il peut être intéressant de considérer, une fois qu'on a fait
-l'effort de mieux comprendre le fonctionnement d'un algorithme relativement
-simple comme la régression logistique (simple mais très représentatif, si vous
-le comprenez bien, vous avez déjà une excellente compréhension de l'AA au sens
-plus général) : en quoi est-ce que ceci constitue de l'intelligence,
-*artificielle* ou non? ...
-
-{{% /hint %}}
-
-<!--Une fois que les idées de base de ce petit exemple interactif sont bien claires
-pour vous, on peut généraliser le concept de la régression logistique pour en
-faire un modèle plus puissant et complexe :
-
-- Considérer ..-->
 
 ### Classification bayésienne naive (gaussienne)
 
@@ -281,7 +281,11 @@ un algorithme **génératif**, qui tente tout d'abord de modéliser la distribut
 statistiques des classes, avant d'utiliser ces modèles (un modèle pour la classe
 `bleue` et un pour la classe `rouge`) pour déterminer si un point particulier a
 plus de chance d'avoir été *généré* par un modèle particulier (disons `rouge`)
-plutôt qu'un autre.
+plutôt qu'un autre. Cette "inversion" qui permet à un modèle discriminatif d'être construit
+en fonction d'un modèle génératif est effectué à l'aide d'un résultat fondamental
+en probabilité : le [théorème de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes).
+
+{{% details "Les mathématiques de la classification bayésienne naive (optionnel)" %}}
 
 Chaque couple **dimension + classe** sera modélisé par une gaussienne à une
 dimension (donc 4 modèles en tout : un pour la classe `rouge` sur la dimension
@@ -402,7 +406,13 @@ Tout comme la régression logistique que nous avons étudiée, cet algorithme
 produit une décision linéaire, pour des raisons mathématiques que nous n'allons
 pas explorer plus à fond.
 
-Question intéressante à se poser? Pourquoi la décision est une ligne?
+{{% hint info %}}
+
+Question intéressante à se poser : pourquoi la décision est une ligne?
+
+{{% /hint %}}
+
+{{% /details %}}
 
 ### Classification bayésienne naive (multinomiale)
 
@@ -412,7 +422,7 @@ modèles travaillaient directement dans l’espace des variables réelles, où c
 donnée est représentée par un point dans le plan.
 
 Nous allons maintenant changer de domaine d’application et considérer un
-problème très concret : la détection de courriels indésirables (pourriels, ou
+problème plus concret : la détection de courriels indésirables (pourriels, ou
 spam en anglais). Ce sera aussi le sujet de votre [travail noté 2]({{< relref
 "docs/module2/travail-noté-2" >}}).
 
@@ -436,6 +446,10 @@ $\mathbf{x}$ de nos exemples 2D précédents, et ce $\mathbf{x}$ qui vit dans un
 espace de beaucoup plus grande dimension, et composé de valeurs entières au lieu
 de valeurs continues (les comptes pour chaque dimension / mot), mais tout de
 même un vecteur de même nature.
+
+![](/images/module2/courriel_hyperplan.png)
+
+{{% details "Les mathématiques de la classification naive multinomiale (optionnel)" %}}
 
 #### Le modèle probabiliste : multinomial
 
@@ -499,31 +513,79 @@ Cela montre que la décision finale est une combinaison linéaire pondérée des
 fréquences de mots, ce qui fait le lien avec la régression logistique étudiée
 précédemment.
 
-![](/images/module2/spam_vector_space.png)
+{{% /details %}}
 
 ### Autres algorithmes de classification
 
-- k-NN
-- SVM
-- Arbres de décision
-- Réseau de neurones
+Le monde des algorithmes de classification supervisé est extrêmement riche et créatif, et il en existe de très nombreux exemples, dont les principes et modes de fonctionnement sont complètement différents de ce que nous avons vu ([paramétriques, non-paramétriques, inductifs, etc.]({{< relref "docs/module2/les-paradigmes#apprentissage-paramétrique-versus-non-paramétrique" >}})). Parmi les plus connus, on retrouve :
+
+- [k-NN](https://fr.wikipedia.org/wiki/M%C3%A9thode_des_k_plus_proches_voisins)
+- [SVM](https://fr.wikipedia.org/wiki/Machine_%C3%A0_vecteurs_de_support)
+- [Arbre de décision](https://fr.wikipedia.org/wiki/Arbre_de_d%C3%A9cision)
+- [Réseau de neurones](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels)
 
 ## Régression
 
-Une régression est une famille d'algorithmes d'apprentissage supervisé
-(ou plus classiquement, de modélisation statistique) dont le but est
-de découvrir une fonction numérique continue, au sens classique
-mathématique (dans sa forme la plus simple, une fonction associe une
-valeur numérique du domaine X vers l'image Y).
+Comme nous l'avons vu, les algorithmes de classification permettent de trouver les paramètres optimaux
+d'une fonction qui détermine à quelle classe, ou étiquette, un exemple
+appartient (par ex. est-ce que cette image est un chat ou un chien, est-ce que ceci est un
+pourriel ou un courriel?). Nous avons expliqué également en quoi il s'agit d'apprentissage automatique *supervisé*,
+car l'entraînement se fait à l'aide de la "bonne" étiquette (ou classe), qu'on connaît, qui est donnée à
+priori.
 
-- Régression linéaire (ex. à partir du nombre de pièces et l'année de construction, on aimerait prédire le prix d'une maison)
-- Réseau de neurones
+![](/images/module2/classif.png)
+
+Nous allons voir maintenant que les régressions sont une autre famille d'algorithmes d'apprentissage supervisé
+où on cherche plutôt à trouver les paramètres optimaux d'une fonction au sens
+général, qui va fournir une valeur *distincte* pour chaque exemple. Par exemple,
+je pourrais vouloir avoir une fonction qui me fournit l'estimé du prix d'une
+maison, à partir de ses dimensions, de son année de construction et de son lieu
+géographique. Ou encore, une fonction pour estimer le temps de vol, à partir du
+lieu de départ, la destination, et la grosseur de l'avion utilisé.
+
+![](/images/module2/regression.png)
+
+Une fonction de classification a un nombre restreint de valeurs possibles,
+tandis qu'une fonction de régression a une infinité de valeurs possibles. Dans
+les deux cas il s'agit d'apprentissage supervisé, car dans les deux cas, on
+possède la "bonne réponse" (soit sous la forme d'une catégorie connue d'avance,
+ou de valeur d'une fonction connue d'avance) pour faire l’entraînement du
+modèle, c'est-à-dire trouver les paramètres optimaux, ceux qui font en sorte de
+minimiser l'erreur de classification ou de régression.
+
+{{% hint warning %}}
+
+Attention à la confusion possible avec le fait que la régression logistique est
+un algorithme de classification, en dépit de son nom.
+
+{{% /hint %}}
 
 ### Régression linéaire
 
-Voici un autre exemple interactif pour explorer la régression linéaire. Les
-points bleus suivent une droite cachée avec du bruit, et vous pouvez ajuster
-votre ligne pour minimiser l'erreur quadratique moyenne :
+Il existe de nombreux algorithmes de régression, mais nous allons nous contenter
+d'étudier le plus simple et le plus classique : la *régression linéaire*. Il
+s'agit d'un algorithme particulièrement vénérable en fait, qui a des [origines historiques profondes](https://fr.wikipedia.org/wiki/R%C3%A9gression_lin%C3%A9aire#Histoire), qui datent de bien avant l'informatique moderne.
+
+{{% hint info %}}
+
+Les gens sont souvent un peu surpris et même incrédules d'apprendre que la
+modeste régression linéaire est une forme d'intelligence artificielle... Ils se
+demandent quel peut bien être le rapport entre trouver les coefficients d'une
+fonction linéaire et ChatGPT? C'est bel et bien le cas pourtant, et ceci
+illustre bien le fait qu'il y a des liens profonds entre les statistiques (le
+domaine auquel la régression linéaire est classiquement associé) et l'IA au sens
+moderne (qui est surtout centrée sur l'apprentissage automatique, qui est une
+forme de statistiques sur les stéroïdes, qui combine la puissance des
+mathématiques et des ordinateurs modernes).
+
+{{% /hint %}}
+
+Voici tout d'abord un petit exemple interactif de régression linéaire, pour vous
+faire une idée intuitive de son fonctionnement. Les points sont tout d'abord
+distribués de manière semi-aléatoire, c'est à dire qu'ils suivent grossièrement
+la forme d'une fonction linéaire implicite, dont les paramètres exacts sont connus de
+l'applet interactive, mais non de vous. Votre tâche est d'ajuster la fonction
+(donc ses paramètres) de manière à minimiser la fonction d'erreur.
 
 <div style="text-align: center; margin-bottom: 10px;">
   <label for="pointSlider2">Nombre de points : </label>
@@ -533,6 +595,22 @@ votre ligne pour minimiser l'erreur quadratique moyenne :
 <canvas id="canvas2"></canvas>
 <div id="info2" style="text-align: center; margin-top: 20px" >f(x) = mx + b</div>
 
+---
+
+{{% hint info %}}
+
+Une fois qu'on a fait des efforts pour comprendre le fonctionnement de certains algorithmes de base en apprentissage automatique,
+il peut être intéressant de considérer, [à nouveau]({{< relref "docs/module2/scénario-réel/#en-quoi-est-ce-que-ceci-constitue-de-lintelligence" >}}), notre question d'ordre philosophique (ou linguistique) : en quoi, au juste, est-ce que cela constitue de l'intelligence, *artificielle* ou non? Nous allons voir par la suite
+en quoi les idées relativement simples et peu puissantes que nous avons développées dans ce module vont évoluer vers les systèmes beaucoup plus impressionnants
+qui jouent un rôle de plus en plus important dans notre vie moderne.
+
+{{% /hint %}}
+
+<!-- ---------------------------------------------------------------------------------------------------------------------->
+<!-- ---------------------------------------------------------------------------------------------------------------------->
+<!-- ---------------------------------------------------------------------------------------------------------------------->
+<!-- ---------------------------------------------------------------------------------------------------------------------->
+<!-- ---------------------------------------------------------------------------------------------------------------------->
 
 <script>
 const BLUE = '#4285F4';
@@ -1263,7 +1341,7 @@ function draw2() {
 
   // Draw points (all blue)
   points2.forEach(point => {
-    ctx2.fillStyle = BLUE; // '#4285f4'; // Blue color
+    ctx2.fillStyle = 'white'; // '#4285f4'; // Blue color
     ctx2.beginPath();
     ctx2.arc(point.x + graphX2, point.y, outerRadius2, 0, 2 * Math.PI);
     ctx2.fill();
@@ -1280,10 +1358,10 @@ function draw2() {
   ctx2.arc(anchor2.x + graphX2, anchor2.y, anchorRadius2, 0, 2 * Math.PI);
   ctx2.fill();
 
-  ctx2.fillStyle = '#fff';
-  ctx2.beginPath();
-  ctx2.arc(anchor2.x + graphX2, anchor2.y, innerRadius2, 0, 2 * Math.PI);
-  ctx2.fill();
+  // ctx2.fillStyle = '#fff';
+  // ctx2.beginPath();
+  // ctx2.arc(anchor2.x + graphX2, anchor2.y, innerRadius2, 0, 2 * Math.PI);
+  // ctx2.fill();
 
   // Draw user's line on top of points and anchor (dashed)
   ctx2.save();
