@@ -642,6 +642,14 @@ différence au carré (pour éviter que les erreurs positives et négatives
 s'annulent, et pour pénaliser plus les grosses erreurs), puis on fait la moyenne
 sur tous les points.
 
+Géométriquement, la régression linéaire cherche la droite qui minimise la somme
+des distances verticales (et non perpendiculaires) entre chaque point et la
+ligne. Ces distances verticales correspondent exactement aux résidus dont nous
+parlions. Si vous imaginez que chaque point est relié à la ligne par un ressort
+vertical, la position d'équilibre de la ligne correspondrait exactement à la
+solution de la régression linéaire. Vous développerez probablement une meilleure
+intuition pour ce processus en manipulant l'application interactive suivante :
+
 {{< applet src="/html/applets/linear-regression-with-springs.html" >}}
 
 {{% details "Les mathématiques de la régression linéaire (optionnel)" %}}
