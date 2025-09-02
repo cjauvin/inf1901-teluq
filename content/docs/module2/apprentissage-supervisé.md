@@ -631,7 +631,7 @@ extensions comme la régression polynomiale.)
 
 {{% /hint %}}
 
-## La fonction d'erreur : mesurer l'imperfection
+#### La fonction d'erreur : mesurer l'imperfection
 
 Pour quantifier "à quel point c'est mauvais", on utilise une fonction d'erreur
 (aussi appelée fonction de perte ou de coût). Dans la régression linéaire, la
@@ -666,14 +666,14 @@ quand vous déplacez la ligne avec la souris, vous modifiez $m$ et $b$
 manuellement, et vous voyez l'erreur diminuer (ou augmenter) en temps réel. Mais
 un algorithme fait ça automatiquement, de manière systématique.
 
-## Minimiser l'erreur : deux approches principales
+#### Minimiser l'erreur : deux approches principales
 
 Il existe deux façons classiques de trouver ces paramètres optimaux : une
 méthode analytique (exacte et rapide pour des cas simples) et une méthode
 itérative (plus générale, surtout utile pour des problèmes complexes ou en haute
 dimension).
 
-### 1. La méthode des moindres carrés (analytique)
+##### 1. La méthode des moindres carrés (analytique)
 
 C'est la plus traditionnelle, inventée par Gauss au 19e siècle. L'idée est de
 résoudre directement l'équation qui met les dérivées partielles de $J$ à zéro
@@ -692,7 +692,7 @@ résultat exact. Ça marche super bien pour des données pas trop volumineuses, 
 c'est ce que font la plupart des tableurs comme Excel quand vous ajoutez une
 "tendance linéaire" à un graphique.
 
-### 2. La descente de gradient (itérative)
+##### 2. La descente de gradient (itérative)
 
 C'est la même technique que nous avons vue pour la régression logistique ! On
 imagine $J(m, b)$ comme une vallée montagneuse en 3D (avec $m$ et $b$ comme
