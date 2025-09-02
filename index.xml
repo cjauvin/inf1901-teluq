@@ -387,7 +387,20 @@ hésiter à engager un dialogue avec l&amp;rsquo;agent, dans le but de clarifier
 du problème qui pourraient rester obscurs pour vous. N&amp;rsquo;oubliez pas que le but de
 ce cours est la construction de bons modèles mentaux pour penser à des problèmes
 de modélisation. L&amp;rsquo;agent possède déjà ces modèles mentaux, si vous avez
-développé les vôtres à la fin de ce cours, le but aura clairement été atteint !&lt;/p&gt;</description></item><item><title>Travail noté 1</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</guid><description>&lt;h1 id="travail-noté-1--création-dune-visualisation-annotée"&gt;
+développé les vôtres à la fin de ce cours, le but aura clairement été atteint !&lt;/p&gt;</description></item><item><title>Apprentissage non supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</guid><description>&lt;h1 id="lapprentissage-non-supervisé"&gt;
+ L&amp;rsquo;apprentissage non supervisé
+ &lt;a class="anchor" href="#lapprentissage-non-supervis%c3%a9"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Contrairement à l&amp;rsquo;apprentissage supervisé, où les données d&amp;rsquo;entraînement
+incluent explicitement les &amp;ldquo;bonnes réponses&amp;rdquo; (sous forme d&amp;rsquo;étiquettes ou de
+valeurs cibles), l&amp;rsquo;apprentissage non supervisé opère sur des données brutes,
+sans aucune guidance externe. L&amp;rsquo;algorithme doit découvrir par lui-même des
+structures cachées, des patterns ou des regroupements dans les données. C&amp;rsquo;est un
+peu comme explorer un territoire inconnu sans carte : on observe les
+similarités, les regroupements naturels, ou les anomalies, pour en déduire une
+organisation. Cela rend l&amp;rsquo;approche plus exploratoire et moins directive, idéale
+pour des tâches comme la segmentation de clients en marketing, la compression de
+données, ou la détection d&amp;rsquo;anomalies en cybersécurité.&lt;/p&gt;</description></item><item><title>Travail noté 1</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/</guid><description>&lt;h1 id="travail-noté-1--création-dune-visualisation-annotée"&gt;
  Travail noté #1 : création d&amp;rsquo;une visualisation annotée
  &lt;a class="anchor" href="#travail-not%c3%a9-1--cr%c3%a9ation-dune-visualisation-annot%c3%a9e"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
