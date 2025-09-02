@@ -282,7 +282,7 @@ statistiques des classes, avant d'utiliser ces modèles (un modèle pour la clas
 `bleue` et un pour la classe `rouge`) pour déterminer si un point particulier a
 plus de chance d'avoir été *généré* par un modèle particulier (disons `rouge`)
 plutôt qu'un autre. Cette "inversion" qui permet à un modèle discriminatif d'être construit
-en fonction d'un modèle génératif est effectué à l'aide d'un résultat fondamental
+en fonction d'un modèle génératif sous-jacent, est effectuée à l'aide d'un résultat fondamental
 en probabilité : le [théorème de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes).
 
 {{% details "Les mathématiques de la classification bayésienne naive (optionnel)" %}}
@@ -596,14 +596,135 @@ de séparation ne peut être *que* linéaire, c'est une contrainte fondamentale 
 <canvas id="canvas2"></canvas>
 <div id="info2" style="text-align: center; margin-top: 20px" >f(x) = mx + b</div>
 
----
+Comme vous avez pu le constater dans l'exemple interactif ci-dessus, la
+régression linéaire vise à trouver la ligne droite qui "colle" le mieux à un
+ensemble de points dispersés. Contrairement à la classification, où l'on sépare
+des groupes en catégories discrètes (comme bleu ou rouge), ici on cherche à
+prédire une valeur continue pour chaque point d'entrée. Imaginez que les points
+représentent des maisons : l'axe x pourrait être la superficie en mètres carrés,
+et l'axe y le prix de vente. La ligne que vous ajustez deviendrait alors une
+fonction qui estime le prix d'une maison en fonction de sa taille – une
+prédiction numérique précise, plutôt qu'une simple étiquette. Le principe de
+base est simple : on suppose que la relation entre les variables est linéaire,
+c'est-à-dire qu'elle peut être décrite par l'équation classique d'une droite :
+
+$$y = mx + b$$
+
+où :
+
+* $y$ est la valeur prédite (par exemple, le prix de la maison),
+* $x$ est la variable d'entrée (par exemple, la superficie),
+* $m$ est la pente (qui indique comment $y$ change quand $x$ augmente),
+* $b$ est l'ordonnée à l'origine (la valeur de $y$ quand $x = 0$).
+
+Bien sûr, dans la réalité, les données ne tombent pas parfaitement sur une ligne
+droite – il y a du bruit, des variations imprévues. C'est là que la notion
+d'erreur entre en jeu : l'algorithme mesure à quel point la ligne prédite
+s'éloigne des points réels, et ajuste $m$ et $b$ pour minimiser cette erreur
+globale.
 
 {{% hint info %}}
 
-Une fois qu'on a fait des efforts pour comprendre le fonctionnement de certains algorithmes de base en apprentissage automatique,
-il peut être intéressant de considérer, [à nouveau]({{< relref "docs/module2/scénario-réel/#en-quoi-est-ce-que-ceci-constitue-de-lintelligence" >}}), notre question d'ordre philosophique (ou linguistique) : en quoi, au juste, est-ce que cela constitue de l'intelligence, *artificielle* ou non? Nous allons voir par la suite
-en quoi les idées relativement simples et peu puissantes que nous avons développées dans ce module vont évoluer vers les systèmes beaucoup plus impressionnants
-qui jouent un rôle de plus en plus important dans notre vie moderne.
+Matière à réflexion : pourquoi assume-t-on une relation linéaire ? Dans quels
+cas cela pourrait-il ne pas suffire, et que faire alors ? (Indice : pensez à des
+extensions comme la régression polynomiale.)
+
+{{% /hint %}}
+
+## La fonction d'erreur : mesurer l'imperfection
+
+Pour quantifier "à quel point c'est mauvais", on utilise une fonction d'erreur
+(aussi appelée fonction de perte ou de coût). Dans la régression linéaire, la
+plus courante est l'erreur quadratique moyenne (Mean Squared Error, ou MSE en
+anglais). Pour chaque point de données, on calcule la différence entre la valeur
+réelle $y_i$ et la valeur prédite $\hat{y}_i = m x_i + b$, on met cette
+différence au carré (pour éviter que les erreurs positives et négatives
+s'annulent, et pour pénaliser plus les grosses erreurs), puis on fait la moyenne
+sur tous les points.
+
+{{< applet src="/html/applets/linear-regression-with-springs.html" >}}
+
+{{% details "Les mathématiques de la régression linéaire (optionnel)" %}}
+
+Mathématiquement, pour $n$ points de données :
+
+$$J(m, b) = \frac{1}{n} \sum_{i=1}^{n} (y_i - (m x_i + b))^2$$
+
+Cette fonction $J$ est comme une "carte topographique" de l'erreur : pour chaque
+paire de valeurs $(m, b)$, elle donne une hauteur représentant le niveau
+d'erreur. L'objectif est de trouver le point le plus bas de cette carte – les
+valeurs optimales de $m$ et $b$ qui minimisent $J$. Dans l'exemple interactif,
+quand vous déplacez la ligne avec la souris, vous modifiez $m$ et $b$
+manuellement, et vous voyez l'erreur diminuer (ou augmenter) en temps réel. Mais
+un algorithme fait ça automatiquement, de manière systématique.
+
+## Minimiser l'erreur : deux approches principales
+
+Il existe deux façons classiques de trouver ces paramètres optimaux : une
+méthode analytique (exacte et rapide pour des cas simples) et une méthode
+itérative (plus générale, surtout utile pour des problèmes complexes ou en haute
+dimension).
+
+### 1. La méthode des moindres carrés (analytique)
+
+C'est la plus traditionnelle, inventée par Gauss au 19e siècle. L'idée est de
+résoudre directement l'équation qui met les dérivées partielles de $J$ à zéro
+(les points où la pente de la "carte topographique" est nulle, donc un minimum).
+Pour notre cas simple en une dimension :
+
+$$ \frac{\partial J}{\partial m} = 0 \quad \text{et} \quad \frac{\partial J}{\partial b} = 0 $$
+
+En résolvant ces équations, on obtient des formules fermées pour $m$ et $b$ :
+
+* $ m = \frac{n \sum (x_i y_i) - \sum x_i \sum y_i}{n \sum x_i^2 - (\sum x_i)^2} $
+* $ b = \frac{\sum y_i - m \sum x_i}{n} $
+
+C'est comme appuyer sur un bouton "calculer" : pas d'itérations, juste un
+résultat exact. Ça marche super bien pour des données pas trop volumineuses, et
+c'est ce que font la plupart des tableurs comme Excel quand vous ajoutez une
+"tendance linéaire" à un graphique.
+
+### 2. La descente de gradient (itérative)
+
+C'est la même technique que nous avons vue pour la régression logistique ! On
+imagine $J(m, b)$ comme une vallée montagneuse en 3D (avec $m$ et $b$ comme
+coordonnées x et y, et l'erreur comme altitude). On commence avec des valeurs
+aléatoires pour $m$ et $b$, puis on calcule le gradient (la direction de la
+pente la plus raide vers le bas) et on fait un petit pas dans cette direction.
+On répète jusqu'à ce que l'erreur ne diminue plus beaucoup.
+
+Les règles de mise à jour sont :
+
+$$ m \leftarrow m - \alpha \cdot \frac{\partial J}{\partial m} $$
+$$ b \leftarrow b - \alpha \cdot \frac{\partial J}{\partial b} $$
+
+Où $\alpha$ est le taux d'apprentissage (un hyper-paramètre que l'on ajuste :
+trop grand, et on risque de "sauter" par-dessus le minimum ; trop petit, et ça
+prend une éternité). Les dérivées partielles sont :
+
+$$ \frac{\partial J}{\partial m} = -\frac{2}{n} \sum_{i=1}^{n} x_i (y_i - (m x_i + b)) $$
+$$ \frac{\partial J}{\partial b} = -\frac{2}{n} \sum_{i=1}^{n} (y_i - (m x_i + b)) $$
+
+Cette méthode est puissante car elle s'étend facilement à plus de dimensions
+(par exemple, prédire le prix d'une maison avec superficie, âge, et nombre de
+chambres – on aurait alors $y = w_1 x_1 + w_2 x_2 + w_3 x_3 + b$, avec un
+vecteur de poids $\mathbf{w}$). C'est aussi la base de l'entraînement des
+réseaux de neurones modernes.
+
+{{% /details %}}
+
+{{% hint info %}}
+
+Une fois qu'on a fait des efforts pour comprendre le fonctionnement de certains
+algorithmes de base en apprentissage automatique, il peut être intéressant de
+considérer, [à nouveau]({{< relref
+"docs/module2/scénario-réel/#en-quoi-est-ce-que-ceci-constitue-de-lintelligence"
+>}}), notre question d'ordre philosophique (ou linguistique) : en quoi, au
+juste, est-ce que cela constitue de l'intelligence, *artificielle* ou non? Nous
+allons voir par la suite en quoi les idées relativement simples et peu
+puissantes que nous avons développées dans ce module vont évoluer vers les
+systèmes beaucoup plus impressionnants qui jouent un rôle de plus en plus
+important dans notre vie moderne.
 
 {{% /hint %}}
 

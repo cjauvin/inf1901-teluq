@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Régression linéaire — Ressorts verticaux (app démonstrative)</title>
+  <style>
+    :root{
+      --bg:#0f1220;
+      --panel:#171a2b;
+      --ink:#e8ecff;
+      --muted:#a9b3d7;
+      --accent:#7aa2ff;
+      --spring:#9da9ff;
+      --point:#ffd36e;
+      --line:#ffffff;
+      --warn:#ff8a8a;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+
+    html, body { height: 100%; }
+    body{
+      margin:0; font: 15px/1.45 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+      color:var(--ink); background: radial-gradient(1200px 700px at 70% 0%, #151936 0%, #0c0f1c 60%, #090b14 100%);
+      overflow:hidden;
+    }
+    .wrap{ position:relative; width:100%; height:100%; display:grid; grid-template-columns: 1fr 320px; }
+    .canvas-wrap{ position:relative; }
+    canvas{ width:100%; height:100%; display:block; background:transparent; cursor: crosshair; }
+
+    .panel{ background:var(--panel); color:var(--ink); border:1px solid rgba(255,255,255,.06); border-radius:16px; box-shadow: var(--shadow); }
+    .hud{ position:absolute; left:16px; top:16px; padding:12px 14px; min-width:280px; backdrop-filter: blur(6px); }
+    .hud h1{ margin:0 0 6px; font-size:16px; font-weight:700; letter-spacing:.2px; }
+    .hud p{ margin:4px 0 0; color: var(--muted); font-size:12px; }
+    .legend{ display:flex; gap:12px; align-items:center; margin-top:8px; flex-wrap:wrap;}
+    .legend .chip{ display:inline-flex; align-items:center; gap:6px; font-size:12px; color:var(--muted); }
+    .chip .dot{ width:12px; height:2px; border-radius:2px; background:var(--ink); }
+    .dot.point{ background:var(--point);} .dot.spring{ background:var(--spring);} .dot.line{ background:var(--line);}
+
+    .controls{ padding:16px; display:flex; flex-direction:column; gap:14px; }
+    .controls header{ display:flex; align-items:center; justify-content:space-between; }
+    .controls h2{ margin:0; font-size:16px; }
+    .row{ display:grid; grid-template-columns: 1fr; gap:8px; }
+    .row2{ display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+
+    .btn{ background:#1f2441; color:var(--ink); border:1px solid rgba(255,255,255,.09); border-radius:12px; padding:10px 12px; cursor:pointer; transition: .2s transform, .2s background; text-align:center; }
+    .btn:hover{ background:#262c51; }
+    .btn:active{ transform: translateY(1px); }
+
+    select, .textlike{ background:#13162b; color:var(--ink); border:1px solid rgba(255,255,255,.12); border-radius:10px; padding:8px 10px; font-size:14px; }
+    .tiny{ font-size:12px; }
+    .note{ font-size:12px; color:var(--muted); line-height:1.35; }
+    .footer{ margin-top:auto; font-size:12px; color:var(--muted); display:flex; justify-content:space-between; align-items:center; }
+    a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="canvas-wrap">
+      <canvas id="c"></canvas>
+<!--       <div class="panel hud">
+        <div class="legend">
+          <span class="chip"><span class="dot point"></span> points</span>
+          <span class="chip"><span class="dot spring"></span> ressorts (résidus verticaux)</span>
+          <span class="chip"><span class="dot line"></span> droite mobile</span>
+        </div>
+        <p class="tiny">Faites glisser la <em>droite</em> (centre pour déplacer, extrémités pour pivoter) ou n'importe quel <em>point</em>. Relâchez pour laisser les ressorts tirer la droite vers la solution des <strong>moindres carrés ordinaires (OLS)</strong>. Cliquez dans le plan pour <em>ajouter un point</em>.</p>
+      </div>
+ -->    </div>
+
+    <aside class="panel" style="margin:16px; overflow:auto;">
+      <div class="controls">
+        <header>
+          <h2>Contrôles</h2>
+          <a href="#" id="helpLink">Aide</a>
+        </header>
+
+        <div class="row2">
+          <button class="btn" id="randomBtn">Nouv. points</button>
+          <button class="btn" id="resetLineBtn">Réinitialiser la droite</button>
+        </div>
+        <div class="row2">
+          <button class="btn" id="snapBtn" title="Ajuster par OLS (résidus verticaux)">Ajuster (moindres carrés)</button>
+          <button class="btn" id="clearBtn">Effacer & ajouter</button>
+        </div>
+
+        <div class="row">
+          <label for="datasetSelect">Jeu de points</label>
+          <select id="datasetSelect">
+            <option value="noisy">Ligne bruitée</option>
+            <option value="twoClusters">Deux amas</option>
+            <option value="arc">Courbe</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label>Erreur (SSE) = Σ r²</label>
+          <div class="textlike" id="energyBox" style="text-align:right; min-width:135px;">—</div>
+        </div>
+
+        <div class="note">Astuce : déplacez des points pour voir comment la droite optimale change. « Ajuster » calcule directement la droite OLS (sans animation).</div>
+
+        <div class="footer">
+          <span>Pour apprendre 💡</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script>
+  (()=>{
+    const canvas = document.getElementById('c');
+    const ctx = canvas.getContext('2d');
+
+    // Éléments UI utiles (régression uniquement)
+    const randomBtn = document.getElementById('randomBtn');
+    const resetLineBtn = document.getElementById('resetLineBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const snapBtn = document.getElementById('snapBtn');
+    const datasetSelect = document.getElementById('datasetSelect');
+    const energyBox = document.getElementById('energyBox');
+    const helpLink = document.getElementById('helpLink');
+
+    // Mise à l'échelle DPR
+    const resize = ()=>{
+      const dpr = Math.max(1, window.devicePixelRatio || 1);
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.round(rect.width * dpr);
+      canvas.height = Math.round(rect.height * dpr);
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+    };
+    new ResizeObserver(resize).observe(canvas); resize();
+
+    // Utilitaires
+    const add=(a,b)=>({x:a.x+b.x,y:a.y+b.y});
+    const sub=(a,b)=>({x:a.x-b.x,y:a.y-b.y});
+    const mul=(a,s)=>({x:a.x*s,y:a.y*s});
+    const dot=(a,b)=>a.x*b.x+a.y*b.y;
+    const len=(a)=>Math.hypot(a.x,a.y);
+    const norm=(a)=>{const L=len(a)||1; return {x:a.x/L,y:a.y/L};};
+    const rnd=(a,b)=>a + Math.random()*(b-a);
+    const gauss=()=>{ let u=0,v=0; while(u===0)u=Math.random(); while(v===0)v=Math.random(); return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v); };
+
+    // État (résidus VERTICAUX uniquement)
+    let state = {
+      points: [],
+      k: 1.0,                 // raideur (fixe, pas de contrôle)
+      damping: 0.20,          // amortissement (fixe)
+      line: {                 // droite mobile
+        c:{x: window.innerWidth*0.35, y: window.innerHeight*0.55},
+        theta: 0.3,
+        L: 2400,
+        v:{x:0,y:0},
+        w:0,
+        m:1.0,
+      },
+      drag:{ type:null, idx:-1, offset:{x:0,y:0}, anchorAngle:0 },
+      metrics:{ energy:0 },
+    };
+
+    const inertia = ()=> (state.line.m * state.line.L * state.line.L)/12;
+
+    function resetLine(){
+      state.line.c = {x: canvas.clientWidth*0.5, y: canvas.clientHeight*0.5};
+      state.line.theta = rnd(-0.8,0.8);
+      state.line.v = {x:0,y:0};
+      state.line.w = 0;
+    }
+
+    function makeDataset(kind='noisy'){
+      const pts=[]; const W=canvas.clientWidth, H=canvas.clientHeight;
+      if(kind==='noisy'){
+        const m=rnd(-0.8,0.8), b=H*0.5 + rnd(-60,60); const n=28;
+        for(let i=0;i<n;i++){ const x = (i+0.5)/(n+0.5) * (W*0.85) + W*0.07; const y = m*x + b + gauss()*60; pts.push({x, y, r:5}); }
+      } else if(kind==='twoClusters'){
+        const c1={x:W*0.35,y:H*0.4}, c2={x:W*0.65,y:H*0.65};
+        for(let i=0;i<18;i++) pts.push({x:c1.x+gauss()*45, y:c1.y+gauss()*35, r:5});
+        for(let i=0;i<18;i++) pts.push({x:c2.x+gauss()*55, y:c2.y+gauss()*35, r:5});
+      } else if(kind==='arc'){
+        const cx=W*0.5, cy=H*0.58; const R=W*0.28; const n=28;
+        for(let i=0;i<n;i++){ const t = rnd(-0.9,0.2); const x = cx + R*Math.cos(t); const y = cy + R*0.55*Math.sin(t) + gauss()*18; pts.push({x,y,r:5}); }
+      }
+      state.points = pts;
+    }
+
+    function lineBasis(){ const u={x:Math.cos(state.line.theta), y:Math.sin(state.line.theta)}; const n={x:-u.y, y:u.x}; return {u,n}; }
+
+    function accumulateForces(){
+      const k = state.k; const o = state.line.c; const {u} = lineBasis();
+      let F={x:0,y:0}, T=0, E=0; const springs=[];
+      for(const p of state.points){
+        if(Math.abs(u.x) < 1e-3) continue; // évite quasi-vertical
+        const t = (p.x - o.x)/u.x;          // intersection à x = p.x
+        const q = {x:o.x + t*u.x, y:o.y + t*u.y};
+        const rvec = {x:0, y: p.y - q.y};  // résidu VERTICAL
+        const f = {x: k*rvec.x, y: k*rvec.y};
+        F = add(F, f);
+        const r = sub(q, o); const tau = r.x*f.y - r.y*f.x; T += tau;
+        E += 0.5 * k * (rvec.y*rvec.y);
+        springs.push({p,q});
+      }
+      state.metrics.energy = E;
+      return {F,T,springs};
+    }
+
+    // Intégration simple (pas d'interrupteurs UI)
+    let lastT = performance.now();
+    function stepPhysics(){
+      const now = performance.now();
+      let dt = Math.min(0.033, (now - lastT)/1000); lastT = now;
+      const {F, T} = accumulateForces();
+      const L = state.line; const m=L.m; const I=inertia();
+      L.v.x += (F.x/m) * dt; L.v.y += (F.y/m) * dt; L.w += (T/I) * dt;
+      const decay = Math.exp(-3.0 * state.damping * dt);
+      L.v.x *= decay; L.v.y *= decay; L.w *= decay;
+      L.c.x += L.v.x * dt; L.c.y += L.v.y * dt; L.theta += L.w * dt;
+    }
+
+    function draw(){
+      const W = canvas.clientWidth, H = canvas.clientHeight;
+      ctx.clearRect(0,0,W,H);
+      drawGrid(W,H);
+
+      const o = state.line.c; const {u} = lineBasis();
+      const half = state.line.L/2; const A = add(o, mul(u,-half)); const B = add(o, mul(u, half));
+      const agg = accumulateForces();
+
+      // Ressorts (derrière)
+      ctx.lineWidth = 1.5; ctx.strokeStyle = getCSS('--spring'); ctx.globalAlpha = 0.9;
+      for(const s of agg.springs){ drawSpring(s.q, s.p); }
+      ctx.globalAlpha = 1;
+
+      // Points
+      for(const p of state.points){ drawPoint(p.x, p.y, p.r || 5); }
+
+      // Droite + poignées
+      drawLineSegment(A, B, 3, getCSS('--line'));
+      drawGrip(o.x, o.y, 7, getCSS('--line'));
+      drawGrip(A.x, A.y, 5, '#7aa2ff');
+      drawGrip(B.x, B.y, 5, '#7aa2ff');
+
+      // Affichage SSE
+      energyBox.textContent = state.metrics.energy.toFixed(2);
+
+      // Avertissement pour quasi-vertical
+      if(Math.abs(u.x) < 0.12){
+        ctx.fillStyle = getCSS('--warn');
+        ctx.font = '12px system-ui, -apple-system, Segoe UI, Roboto';
+        ctx.fillText('Résidus verticaux mal définis près d\'une droite verticale — pivotez légèrement.', 12, H-12);
+      }
+    }
+
+    // Primitifs dessin
+    function getCSS(name){ return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+    function drawGrid(W,H){ const s=40; ctx.save(); ctx.strokeStyle='rgba(255,255,255,0.05)'; ctx.lineWidth=1; for(let x=0; x<=W; x+=s){ ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,H); ctx.stroke(); } for(let y=0; y<=H; y+=s){ ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(W,y); ctx.stroke(); } ctx.restore(); }
+    function drawLineSegment(A,B,w,color){ ctx.save(); ctx.strokeStyle=color; ctx.lineWidth=w; ctx.beginPath(); ctx.moveTo(A.x, A.y); ctx.lineTo(B.x, B.y); ctx.stroke(); ctx.restore(); }
+    function drawPoint(x,y,r){ ctx.save(); ctx.fillStyle=getCSS('--point'); ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill(); ctx.restore(); }
+    function drawGrip(x,y,r,color){ ctx.save(); ctx.fillStyle=color; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill(); ctx.strokeStyle='rgba(0,0,0,.35)'; ctx.lineWidth=1; ctx.stroke(); ctx.restore(); }
+    function drawSpring(a,b){ ctx.save(); ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke(); ctx.restore(); }
+
+    // Interaction
+    const pickRadius = 12;
+    function hitPoint(x,y){ for(let i=state.points.length-1;i>=0;i--){ const p=state.points[i]; if(Math.hypot(x-p.x,y-p.y) <= pickRadius) return i; } return -1; }
+    function lineEnds(){ const {u} = lineBasis(); const o=state.line.c; const half = state.line.L/2; return { A: add(o, mul(u,-half)), B:add(o, mul(u,half)) }; }
+    function hitGrip(x,y){ const {A,B} = lineEnds(); const o=state.line.c; if(Math.hypot(x-o.x,y-o.y) <= pickRadius) return {which:'center'}; if(Math.hypot(x-A.x,y-A.y) <= pickRadius) return {which:'A'}; if(Math.hypot(x-B.x,y-B.y) <= pickRadius) return {which:'B'}; return null; }
+
+    function onPointerDown(e){ const rect=canvas.getBoundingClientRect(); const x=e.clientX-rect.left, y=e.clientY-rect.top; const pi = hitPoint(x,y);
+      if(pi>=0){ state.drag={type:'point', idx:pi, offset:{x:state.points[pi].x-x,y:state.points[pi].y-y}}; return; }
+      const g = hitGrip(x,y);
+      if(g){ if(g.which==='center'){ state.drag={type:'translate', idx:-1, offset:{x:state.line.c.x-x,y:state.line.c.y-y}}; } else { const o=state.line.c; const ang=Math.atan2(y-o.y, x-o.x); state.drag={type:'rotate', idx:-1, anchorAngle:ang - state.line.theta}; } return; }
+      state.points.push({x,y,r:5});
+    }
+
+    function onPointerMove(e){ const rect=canvas.getBoundingClientRect(); const x=e.clientX-rect.left, y=e.clientY-rect.top;
+      if(state.drag.type==='point' && state.drag.idx>=0){ const p=state.points[state.drag.idx]; p.x = x + state.drag.offset.x; p.y = y + state.drag.offset.y; }
+      else if(state.drag.type==='translate'){ state.line.c.x = x + state.drag.offset.x; state.line.c.y = y + state.drag.offset.y; state.line.v = {x:0,y:0}; state.line.w = 0; }
+      else if(state.drag.type==='rotate'){ const o=state.line.c; const ang = Math.atan2(y-o.y, x-o.x); state.line.theta = ang - state.drag.anchorAngle; state.line.v = {x:0,y:0}; state.line.w = 0; }
+    }
+
+    function onPointerUp(){ state.drag={type:null, idx:-1, offset:{x:0,y:0}}; }
+    canvas.addEventListener('pointerdown', onPointerDown);
+    window.addEventListener('pointermove', onPointerMove);
+    window.addEventListener('pointerup', onPointerUp);
+
+    // Boutons
+    randomBtn.addEventListener('click', ()=> makeDataset(datasetSelect.value));
+    datasetSelect.addEventListener('change', ()=> makeDataset(datasetSelect.value));
+    resetLineBtn.addEventListener('click', resetLine);
+    clearBtn.addEventListener('click', ()=>{ state.points=[]; });
+
+    // Ajustement direct OLS (résidus verticaux)
+    snapBtn.addEventListener('click', ()=>{
+      if(state.points.length<2) return;
+      let sumx=0,sumy=0,sumxx=0,sumxy=0; const n=state.points.length;
+      for(const p of state.points){ sumx+=p.x; sumy+=p.y; sumxx+=p.x*p.x; sumxy+=p.x*p.y; }
+      const denom = (n*sumxx - sumx*sumx) || 1e-9;
+      const m = (n*sumxy - sumx*sumy) / denom;
+      const b = (sumy - m*sumx)/n;
+      const x0 = canvas.clientWidth*0.5; const y0 = m*x0 + b;
+      state.line.c = {x:x0, y:y0}; state.line.theta = Math.atan2(m,1);
+      state.line.v={x:0,y:0}; state.line.w=0;
+    });
+
+    // Aide
+    helpLink.addEventListener('click', (e)=>{
+      e.preventDefault();
+      alert(`Principe:
+
+• Chaque point est relié à la droite par un ressort VERTICAL — la longueur du ressort est le résidu r.
+• L\'énergie totale est proportionnelle à Σ r² (SSE).
+• En relâchant la droite, la somme des forces et couples l\'amène vers l\'optimum OLS.
+
+Essayez :
+• Faites pivoter/déplacer la droite, ou déplacez/ajoutez des points.
+• Cliquez sur « Ajuster » pour calculer immédiatement la meilleure droite (moindres carrés).`);
+    });
+
+    // Init
+    makeDataset('noisy');
+    resetLine();
+
+    // Boucle
+    function tick(){ stepPhysics(); draw(); requestAnimationFrame(tick); }
+    requestAnimationFrame(tick);
+  })();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
+
+</body>
+</html>
