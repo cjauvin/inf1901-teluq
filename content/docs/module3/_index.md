@@ -42,11 +42,13 @@ Ce module vise à :
 - S’initier à l’interprétation visuelle et intuitive des réseaux de neurones grâce à des ressources pédagogiques (ex. : vidéo 3Blue1Brown).
 - Expérimenter concrètement avec des outils interactifs pour mieux saisir les mécanismes d’apprentissage.
 
-## Durée 
+## Durée
 
 Trois semaines ou 27 heures.
 
 ## Évaluation
-L’évaluation de ce module repose sur un travail noté où vous devrez manipuler un réseau de neurones via une application interactive (Tensorflow Playground), répondre à des questions d’interprétation et remettre un fichier PDF.
+L’évaluation de ce module repose sur un travail noté où vous devrez manipuler un
+réseau de neurones via une application interactive (Tensorflow Playground),
+répondre à des questions d’interprétation et remettre un fichier PDF.
 
 

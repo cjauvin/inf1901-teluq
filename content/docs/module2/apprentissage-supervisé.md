@@ -684,8 +684,8 @@ $$ \frac{\partial J}{\partial m} = 0 \quad \text{et} \quad \frac{\partial J}{\pa
 
 En résolvant ces équations, on obtient des formules fermées pour $m$ et $b$ :
 
-* $ m = \frac{n \sum (x_i y_i) - \sum x_i \sum y_i}{n \sum x_i^2 - (\sum x_i)^2} $
-* $ b = \frac{\sum y_i - m \sum x_i}{n} $
+$$m = \frac{n \sum (x_i y_i) - \sum x_i \sum y_i}{n \sum x_i^2 - (\sum x_i)^2}$$
+$$b = \frac{\sum y_i - m \sum x_i}{n}$$
 
 C'est comme appuyer sur un bouton "calculer" : pas d'itérations, juste un
 résultat exact. Ça marche super bien pour des données pas trop volumineuses, et
