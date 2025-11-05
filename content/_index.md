@@ -2,7 +2,7 @@
 title: "Accueil"
 ---
 
-![HAL9000](/images/hal9000.webp)
+![HAL9000](/images/hal_and_clippy.png)
 
 # Bienvenue !
 
