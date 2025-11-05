@@ -2,7 +2,7 @@
 title: "Accueil"
 ---
 
-![Clippy](/images/HAL9000.webp)
+![HAL9000](/images/hal9000.webp)
 
 # Bienvenue !
 
