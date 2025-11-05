@@ -1,6 +1,6 @@
 ---
 title: "3Blue1Brown"
-weight: 2
+weight: 20
 ---
 
 # Vidéo de 3Blue1Brown
