@@ -30,6 +30,32 @@ représentation.
 
 ![](/images/module2/abeille.png)
 
+Voici une bande dessinée fameuse de l'artiste web [XKCD](https://xkcd.com/) qui illustre la même idée :
+
+<p style="text-align: center;">
+    <a href="https://xkcd.com/1425/"><img src="/images/xkcd1425.png" alt="My image" style="width: 50%;"></a>
+</p>
+
+{{% hint info %}}
+
+Traduction : <br />
+&#8208; "Quand un usager prend une photo, l'application devrait vérifier s'il est dans un parc national..."<br />
+&#8208; "Pas de problème, un simple appel [SIG](https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27information_g%C3%A9ographique), donne-moi quelques heures."<br />
+&#8208; "... et vérifier si la photo est celle d'un oiseau."<br />
+&#8208; "Je vais avoir besoin d'une équipe de recherche et de 5 ans."<br />
+En informatique, il peut être difficile d'expliquer la différence entre ce qui est facile et ce qui est presque impossible.
+
+{{% /hint %}}
+
+{{% hint warning %}}
+
+Cette bande dessinée a plus de 10 ans maintenant, et ce qu'elle dit n'est plus
+vrai (car identifier un oiseau dans une photo est devenu facile), mais il reste
+que l'idée de base, que certaines tâches sont plus difficiles que d'autres,
+reste valide.
+
+{{% /hint %}}
+
 ## En quoi l'apprentissage automatique diffère de l'IA?
 
 L'intelligence artificielle est le domaine plus vaste, qui englobe
