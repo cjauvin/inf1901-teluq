@@ -1,0 +1,269 @@
+<!doctype html><html lang=fr dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+  Les réseaux de neurones
+  #
+
+
+  Une généralisation de la régression logistique
+  #
+
+Sans le réaliser, au module 2, nous avons déjà vu un réseau de neurones (RDN)
+simple, mais qui portait alors un autre nom : la régression logistique
+(RL).
+Une manière visuelle de représenter la régression logistique est la suivante
+(sous la forme d&rsquo;un
+graphe,
+avec des noeuds (ou sommets) et des arêtes) :
+
+La couche d&rsquo;entrée (la rangée de cercles à gauche) n&rsquo;est pas vraiment une
+couche, elle représente simplement les données que l&rsquo;on va fournir en entrée
+(input) à la RL, comme cette extension du même diagramme le démontre :"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://cjauvin.github.io/inf1901-teluq/docs/module3/r%C3%A9seaux-de-neurones/"><meta property="og:site_name" content="INF1901 - Initiation à l'IA : concepts et réflexions"><meta property="og:title" content="Les réseaux de neurones"><meta property="og:description" content="Les réseaux de neurones # Une généralisation de la régression logistique # Sans le réaliser, au module 2, nous avons déjà vu un réseau de neurones (RDN) simple, mais qui portait alors un autre nom : la régression logistique (RL).
+Une manière visuelle de représenter la régression logistique est la suivante (sous la forme d’un graphe, avec des noeuds (ou sommets) et des arêtes) :
+La couche d’entrée (la rangée de cercles à gauche) n’est pas vraiment une couche, elle représente simplement les données que l’on va fournir en entrée (input) à la RL, comme cette extension du même diagramme le démontre :"><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Les réseaux de neurones | INF1901 - Initiation à l'IA : concepts et réflexions</title><link rel=icon href=https://cjauvin.github.io/inf1901-teluq/images/paperclip-logo.png><link rel=manifest href=https://cjauvin.github.io/inf1901-teluq/manifest.json><link rel=canonical href=https://cjauvin.github.io/inf1901-teluq/docs/module3/r%C3%A9seaux-de-neurones/><link rel=stylesheet href=https://cjauvin.github.io/inf1901-teluq/book.min.97898183dc29e99dd0d8e5c58bc35164ef42b34cfa3992d69b27fc92f94774a9.css integrity="sha256-l4mBg9wp6Z3Q2OXFi8NRZO9Cs0z6OZLWmyf8kvlHdKk=" crossorigin=anonymous><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=https://cjauvin.github.io/inf1901-teluq/><img src=https://cjauvin.github.io/inf1901-teluq/images/paperclip-logo.png alt=Logo class=book-icon><span>INF1901 - Initiation à l'IA : concepts et réflexions</span></a></h2><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/>Présentation du cours</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/philosophie/>Approche pédagogique du cours</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/professeurs/>Les professeurs</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/livres/>Les livres</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/>Travaux notés</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/feuille-de-route/>Feuille de route</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/>Google Sheets</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/>Usage de l'IA</a></li><li><input type=checkbox id=section-8907ef67e4ecdf3db52171242f091373 class=toggle>
+<label for=section-8907ef67e4ecdf3db52171242f091373 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/ class=flex-auto>Module 1 - Intelligence artificielle</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/activit%C3%A9s/>Activités</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/>Travail noté 1</a></li></ul></li><li><input type=checkbox id=section-0e47afea11237f1612150a31e7123755 class=toggle>
+<label for=section-0e47afea11237f1612150a31e7123755 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/ class=flex-auto>Module 2 - Apprentissage automatique</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/>Un scénario réaliste</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/>AA versus X</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/>Que sont les données?</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/>Qu'est-ce qu'un modèle?</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/>Les paradigmes de l'AA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/>Apprentissage supervisé</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/>Apprentissage non supervisé</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/>Travail noté 2</a></li></ul></li><li><input type=checkbox id=section-9cc60359ac12343378e5fa944b3863f7 class=toggle checked>
+<label for=section-9cc60359ac12343378e5fa944b3863f7 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/ class=flex-auto>Module 3 - Réseaux de neurones et apprentissage profond</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/r%C3%A9seaux-de-neurones/ class=active>Les réseaux de neurones</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/>3Blue1Brown</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/>Architectures avancées</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/>Travail noté 3</a></li></ul></li><li><input type=checkbox id=section-d23b9c643b16319dcdaeed5376bcec9c class=toggle>
+<label for=section-d23b9c643b16319dcdaeed5376bcec9c class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module4/ class=flex-auto>Module 4 - IA générative et grands modèles de langage</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/>IA générative</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/>Grands modèles de langage</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module4/03-3blue1brown/>3Blue1Brown</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%C3%A9-4/>Travail noté 4</a></li></ul></li><li><input type=checkbox id=section-b90ca6a3362bb22be66d4f5e1f8ab16c class=toggle>
+<label for=section-b90ca6a3362bb22be66d4f5e1f8ab16c class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module5/ class=flex-auto>Module 5 - Autour de l'IA</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module5/attitudes/>Attitudes à l'égard de l'IA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/>Conversation synoptique autour de l'IA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/>Travail noté 5</a></li></ul></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/>Ressources supplémentaires</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/conclusion/>Conclusion</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=https://cjauvin.github.io/inf1901-teluq/svg/menu.svg class=book-icon alt=Menu></label><h3>Les réseaux de neurones</h3><label for=toc-control><img src=https://cjauvin.github.io/inf1901-teluq/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#une-généralisation-de-la-régression-logistique>Une généralisation de la régression logistique</a></li><li><a href=#lentraînement-avec-la-rétropropagation-du-gradient>L’entraînement avec la rétropropagation du gradient</a><ul><li><a href=#phase-de-propagation-avant-algèbre-linéaire>Phase de propagation avant (algèbre linéaire)</a></li><li><a href=#phase-de-rétropropagation-calcul-différentiel>Phase de rétropropagation (calcul différentiel)</a></li><li><a href=#entraînement>Entraînement</a></li><li><a href=#inférence>Inférence</a></li></ul></li><li><a href=#quest-ce-que-lapprentissage-profond>Qu&rsquo;est-ce que l&rsquo;apprentissage profond?</a><ul><li><a href=#plus-de-couches-cachées>Plus de couches cachées?</a></li><li><a href=#la-décomposition-hiérarchique-des-connaissances>La décomposition hiérarchique des connaissances</a></li><li><a href=#des-caractéristiques-manuelles-à-une-représentation-riche-et-entièrement-dérivée-par-le-rdn>Des caractéristiques &ldquo;manuelles&rdquo; à une représentation riche et entièrement dérivée par le RDN</a></li><li><a href=#lessor-des-processeurs-graphiques-gpus>L&rsquo;essor des processeurs graphiques (GPUs)</a></li></ul></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=les-réseaux-de-neurones>Les réseaux de neurones
+<a class=anchor href=#les-r%c3%a9seaux-de-neurones>#</a></h1><h2 id=une-généralisation-de-la-régression-logistique>Une généralisation de la régression logistique
+<a class=anchor href=#une-g%c3%a9n%c3%a9ralisation-de-la-r%c3%a9gression-logistique>#</a></h2><p>Sans le réaliser, au module 2, nous avons déjà vu un réseau de neurones (RDN)
+simple, mais qui portait alors un autre nom : la <a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#la-régression-logistique>régression logistique</a>
+(RL).</p><p>Une manière visuelle de représenter la régression logistique est la suivante
+(sous la forme d&rsquo;un
+<a href=https://fr.wikipedia.org/wiki/Graphe_%28math%C3%A9matiques_discr%C3%A8tes%29>graphe</a>,
+avec des noeuds (ou sommets) et des arêtes) :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/rl1.png alt></p><p>La couche d&rsquo;entrée (la rangée de cercles à gauche) n&rsquo;est pas vraiment une
+couche, elle représente simplement les données que l&rsquo;on va fournir en entrée
+(input) à la RL, comme cette extension du même diagramme le démontre :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/rl1_with_data.png alt></p><p>Comme nous l&rsquo;avons déjà exploré au <a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/#niveau-de-lapprentissage-automatique-et-des-mathématiques>module 2</a>, les données (la partie à gauche) sont la représentation vectorielle
+(numérique et souvent multidimensionnelle) d&rsquo;un aspect de la réalité, comme par
+exemple ici, une maison à vendre, dont on aimerait déterminer (prédire), à
+partir de ses caractéristiques (les variables $\mathbf{x}$ qui la décrivent), si
+elle est à vendre ou non (soit la variable $y$, qui ne peut prendre que deux
+valeurs possibles, 0 ou 1, que l&rsquo;on peut interpréter comme <code>non</code> ou <code>oui</code>,
+arbitrairement). Pour effectuer cette prédiction, la régression logistique
+utilise les paramètres (la couche de poids $\mathbf{w}$, qui correspondent aux
+flèches, ou aux arêtes du graphe), dont l&rsquo;interaction avec les données va
+produire la prédiction souhaitée (la sortie $y$ donc). Pour obtenir de bonnes
+prédictions, on doit procéder à l’entraînement de la RL, ce qui correspond à la
+recherche des valeurs optimales pour ses paramètres (les poids), qui vont faire
+en sorte de minimiser la fonction d&rsquo;erreur.</p><p>Voici maintenant un réseau de neurones. Il faut tout d&rsquo;abord imaginer que le
+réseau de connexions (les flèches sur les diagramme) entre les neurones
+artificiels (les cercles sur les diagrammes) est <em>total</em>, c&rsquo;est-à-dire que
+chaque neurone d&rsquo;une couche est connecté à chaque neurones de la couche
+suivante. Le diagramme serait trop chargé avec toutes ces connexions, mais en
+principe elles sont là.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/nn.png alt></p><p>La première chose qu&rsquo;on peut remarquer, c&rsquo;est le changement de langage, qui nous
+transporte maintenant dans un domaine qui évoque plus l&rsquo;intelligence : les
+neurones ! Il faut donc tout d&rsquo;abord clarifier ce qu&rsquo;on entend par <em>neurone</em> :
+il s&rsquo;agit en fait d&rsquo;un usage métaphorique, basé de manière très simpliste sur
+l&rsquo;anatomie du cerveau. Voici un schéma qui aide à faire la correspondance entre
+les deux mondes (intelligence biologique ou artificielle) :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/neurone.png alt></p><p>Le cerveau biologique est constitué d’un enchevêtrement de cellules nerveuses
+spécialisées (les neurones). Chaque neurone reçoit des signaux par ses
+dendrites, les intègre dans le corps cellulaire, puis transmet un signal
+électrique le long de son axone vers d’autres neurones via les synapses. De
+manière relativement analogue, notre notion de neurone artificiel (les cercles,
+ou noeuds dans les diagrammes) correspond donc à une &ldquo;unité de calcul&rdquo; qui
+&ldquo;intègre&rdquo; ses valeurs entrantes avec deux opérations mathématiques successives
+et simples :</p><ol><li>La somme (addition) des poids (synapses) qui lui sont connectés (les valeurs
+entrantes du neurone)</li><li>Le passage de (1) dans une fonction d&rsquo;activation (non-linéaire)</li></ol><p>Dans nos deux diagrammes précédents (celui de la régression logistique et celui
+d&rsquo;un réseau de neurones), la première couche (celle qui reçoit, ou connecte avec
+les données) n&rsquo;est donc pas une couche de neurones dans le sens décrit, car elle
+ne contient pas ce mécanisme d&rsquo;intégration. La RL a donc, par conséquent, un
+seul neurone au final, et un RDN plusieurs (dans la couche cachée et la couche
+de sortie). L&rsquo;autre composante qui fait en sorte qu&rsquo;il s&rsquo;agit d&rsquo;un réseau sont
+les synapses (pour le cerveau biologique) ou les poids (pour un réseau de
+neurones artificiels). Dans le cerveau, la transmission des signaux se fait
+selon un mécanisme très complexe, mais dans un RDN, les poids sont simplement
+des valeurs numériques, habituellement rassemblées dans une matrice : si une
+couche de $N$ neurones est reliée à une autre couche de $M$ neurones, il y aura
+donc une matrice de $N \times M$ poids pour établir la connexion.</p><p>Si cette description en mots vous apparaît un peu laborieuse, voici un exemple
+interactif qui pourrait vous aider à clarifier les idées. Changez les valeurs
+d&rsquo;entrées, ainsi que celle des poids (paramètres) et convainquez-vous que vous
+avez une compréhension claire de ce mécanisme relativement simple :</p><iframe src=https://cjauvin.github.io/inf1901-teluq/html/applets/neuron.html id=applet-1762357795551450389 class=applet-iframe width=100% style=zgotmplz loading=lazy data-iresize=true></iframe><p>La somme de la multiplication des valeurs du vecteur d&rsquo;entrée ($\mathbf{x}$) et
+celles du vecteur de paramètres ($\mathbf{w}$) est représentée par la lettre
+grecque sigma majuscule ($\Sigma$), tandis que la lettre sigma minuscule
+($\sigma$) représente la fonction d&rsquo;activation
+<a href=https://fr.wikipedia.org/wiki/Sigmo%C3%AFde_%28math%C3%A9matiques%29>sigmoïde</a>,
+qui transforme une valeur arbitraire (n&rsquo;importe quel nombre) en une valeur
+correspondante, entre 0 et 1.</p><p>Le réseau de neurones introduit donc, par rapport à la RL, une couche
+intermédiaire de neurones (la couche dite <em>cachée</em>, entre la couche d&rsquo;entrée et
+celle de sortie), ainsi qu&rsquo;une couche de poids supplémentaire, entre la couche
+cachée et celle de sortie. Une autre différence est qu&rsquo;il y a un nombre variable
+de neurones de sortie, ce qui veut donc dire que le résultat ne sera pas
+nécessairement un seul nombre (qu&rsquo;on interprétait dans le cas de la régression
+logistique toujours en tant que probabilité). On peut donc considérer qu&rsquo;une
+régression logistique est un cas spécial d&rsquo;un réseau de neurones, sans couche
+cachée, et avec un seul neurone de sortie.</p><blockquote class="book-hint info"><p>Ce fonctionnement en cascade rappelle la structure et le fonctionnement du
+cerveau humain : des «entrées » qui véhiculent l’information, des « noeuds »
+qui effectuent un calcul ou une transformation, et des « sorties » transmises à
+d’autres unités. De la même manière que l’intelligence du cerveau émerge de la
+combinaison massive et parallèle de ses cellules, l’apprentissage automatique
+exploite l’interconnexion d’un grand nombre de neurones artificiels pour
+produire des comportements complexes à partir de règles simples. Ce paradigme
+computationnel particulier, pour implémenter des comportements intelligents, se
+nomme le <a href=https://fr.wikipedia.org/wiki/Connexionnisme>connexionnisme</a>. Le
+connexionnisme, quand il s&rsquo;agit d&rsquo;intelligence artificielle et d&rsquo;ordinateurs,
+est fondamentalement différent de la programmation traditionnelle, symbolique.</p></blockquote><h2 id=lentraînement-avec-la-rétropropagation-du-gradient>L’entraînement avec la rétropropagation du gradient
+<a class=anchor href=#lentra%c3%aenement-avec-la-r%c3%a9tropropagation-du-gradient>#</a></h2><p>Nous avons déjà vu que la régression logistique est entraînée à l&rsquo;aide de la
+technique de la descente de gradient. Le but est de changer graduellement les
+valeurs de sa couche de poids, de manière à minimiser une fonction d&rsquo;erreur. La
+même technique est utilisée pour l’entraînement d&rsquo;un RDN, mais elle doit
+évidemment composer avec la structure plus complexe du réseau, qui comporte plus
+d&rsquo;éléments (au moins une couche de poids, et une couche de neurones
+supplémentaire). Étant donné que la descente de gradient utilise la notion de la
+dérivée partielle de la fonction d&rsquo;erreur, il est possible d&rsquo;utiliser la <a href=https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_d%C3%A9rivation_des_fonctions_compos%C3%A9es>règle
+de la
+chaîne</a>
+pour calculer le gradient à travers tous les éléments du réseau (les sommes de
+poids, les fonctions d&rsquo;activation, etc). Cet algorithme très fameux et puissant
+se nomme la <a href=https://fr.wikipedia.org/wiki/R%C3%A9tropropagation_du_gradient>rétropropagation du
+gradient</a>
+(<em>backpropagation</em> en anglais), et il se trouve au coeur de l&rsquo;intelligence
+artificielle moderne. On le retrouve partout, de la fonction de recherche
+thématique dans Google Photos à ChatGPT.</p><p>Pour bien comprendre l’entraînement d&rsquo;un RDN, il faut considérer qu&rsquo;il y a deux
+phases dans son fonctionnement.</p><h3 id=phase-de-propagation-avant-algèbre-linéaire>Phase de propagation avant (algèbre linéaire)
+<a class=anchor href=#phase-de-propagation-avant-alg%c3%a8bre-lin%c3%a9aire>#</a></h3><p>La première phase consiste en la propagation des données à travers le réseau, en
+passant (de gauche à droite) par toutes les couches successives, pour finir par
+le calcul des valeurs de sortie. Concrètement, la phase de propagation vers
+l&rsquo;avant correspond au calcul de tous les éléments qui constituent le réseau,
+dans un sens procédural : les données, en tant que vecteurs, sont tout d&rsquo;abord
+multipliées à la première couche de poids (une matrice de nombres réels), et
+ensuite chaque neurone est responsable de faire la somme de ses entrées, et
+d&rsquo;appliquer sa fonction d&rsquo;activation non-linéaire sur le résultat (par exemple
+une fonction sigmoïde, qui fait en sorte de forcer les valeurs entre 0 et 1). Le
+processus se répète dans la deuxième section du RDN, avec la seconde couche de
+poids, pour aboutir aux valeurs pour la couche de sortie. Les poids sont donc
+utilisés, mais ne sont pas modifiés par ce calcul. On peut donc dire que la
+phase de propagation est essentiellement une série d&rsquo;opérations élémentaires
+d&rsquo;algèbre linéaire.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/forward.png alt></p><h3 id=phase-de-rétropropagation-calcul-différentiel>Phase de rétropropagation (calcul différentiel)
+<a class=anchor href=#phase-de-r%c3%a9tropropagation-calcul-diff%c3%a9rentiel>#</a></h3><p>La deuxième phase commence par le calcul de &ldquo;l&rsquo;erreur&rdquo; (c-à-d la différence
+entre la valeur de sortie calculée par la propagation avant, et la &ldquo;bonne&rdquo;
+valeur, celle qu&rsquo;on aimerait que le réseau calcule), qui est ensuite
+rétropropagée vers l&rsquo;arrière, afin de modifier les couches de poids. L&rsquo;erreur
+permet de calculer le gradient, qui est la direction (un vecteur) dans laquelle
+sa diminution est la plus marquée. Le gradient est utilisé pour faire la
+modification des poids, qui sont les seuls éléments du réseau modifiés par cette
+phase (les données elles-mêmes ne sont évidemment pas modifiées). Si la phase de
+propagation avant est de l&rsquo;algèbre linéaire, la phase de rétropropagation est
+donc du calcul différentiel.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/backward.png alt></p><h3 id=entraînement>Entraînement
+<a class=anchor href=#entra%c3%aenement>#</a></h3><p>Avant de pouvoir être utilisé, un réseau de neurones doit tout d&rsquo;abord être
+entraîné (cette phase est en général coûteuse et complexe, et demande énormément
+d&rsquo;ingénierie). L&rsquo;algorithme de l’entraînement d&rsquo;un RDN (ou de tout autre
+algorithme d&rsquo;AA en fait) peut donc être résumé schématiquement de la manière
+suivante, en pseudo-code :</p><pre tabindex=0><code>Tant que l&#39;erreur (sur les données d’entraînement) est suffisamment élevée :
+    Propager les données vers l&#39;avant dans le réseau (sans toucher aux poids)
+    Calculer l&#39;erreur
+    Rétropropager l&#39;erreur pour modifier les poids du réseau
+</code></pre><h3 id=inférence>Inférence
+<a class=anchor href=#inf%c3%a9rence>#</a></h3><p>Une fois entraîné, un RDN peut être utilisé de manière statique, sans que ses
+poids ne soient plus jamais modifiés (cette phase est souvent nommée
+<em>inférence</em>). Seul le mécanisme de propagation avant des données (possiblement
+avec des nouvelles données, qui n&rsquo;ont jamais été &ldquo;vues&rdquo; par le modèle, sur
+lesquelles il n&rsquo;a pas été entraîné donc) intervient donc dans cette phase. Cette
+phase est en général moins coûteuse computationnellement, mais ceci est de moins
+en moins vrai, surtout avec les systèmes modernes hyper complexes comme ChatGPT.</p><blockquote class="book-hint info"><p>Bien que le cerveau biologique n&rsquo;utilise pas le mécanisme de la rétropropagation
+en tant que tel (l&rsquo;analogie est donc assez limitée comme on l&rsquo;a vu), il est
+possible qu&rsquo;il en utilise une forme approximative, mais ceci n&rsquo;est pas encore
+totalement élucidé par la neuroscience moderne.</p></blockquote><h2 id=quest-ce-que-lapprentissage-profond>Qu&rsquo;est-ce que l&rsquo;apprentissage profond?
+<a class=anchor href=#quest-ce-que-lapprentissage-profond>#</a></h2><p>La question de l&rsquo;apprentissage profond (en anglais <em>deep learning</em>) commence par
+la différence fondamentale qu&rsquo;on a observée entre la régression logistique et le
+réseau de neurones : la couche cachée. À quoi sert-elle? En un mot, à faire en
+sorte qu&rsquo;il soit possible d&rsquo;apprendre des fonctions non-linéaires. Les
+algorithmes que nous avons vus au module 2 : la régression logistique, la
+classification naive bayésienne, la régression linéaire, etc. ne permettaient de
+séparer (classifier) ou modéliser (régression) des données que de manière
+linéaire.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/linear.png alt></p><p>Par contre il est très facile d&rsquo;imaginer des problèmes similaires, mais qui sont
+non-linéaires.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/nonlinear.png alt></p><p>La couche cachée d&rsquo;un réseau de neurones permet cela, en augmentant les
+possibilités d&rsquo;articulation, ou d&rsquo;expressivité d&rsquo;un modèle moins puissant, comme
+la régression logistique. Comment accomplit-elle cela? Essentiellement avec la
+non-linéarité de la fonction d&rsquo;activation (sigmoïde par exemple) qu&rsquo;on retrouve
+au coeur des neurones de la couche cachée.</p><blockquote class="book-hint warning"><p>Un fin observateur pourrait faire remarquer que la régression logistique utilise
+elle aussi une fonction sigmoïde, alors qu&rsquo;on a dit qu&rsquo;elle était un modèle
+linéaire.. la différence est que la sigmoïde est seulement utilisée pour
+transformer le résultat de sa fonction de séparation (linéaire), au moment de la
+sortie, en probabilité (donc en une valeur entre 0 et 1). Au moment de
+l&rsquo;activation, la séparation est déjà accomplie, alors que ce n&rsquo;est pas le cas
+pour la couche cachée d&rsquo;un RDN, avec laquelle il est possible d&rsquo;effectuer une
+séparation non-linéaire, en la connectant sur la couche de sortie.</p></blockquote><h3 id=plus-de-couches-cachées>Plus de couches cachées?
+<a class=anchor href=#plus-de-couches-cach%c3%a9es>#</a></h3><p>Donc si ajouter une couche cachée augmente la puissance (de linéaire à
+non-linéaire), qu&rsquo;arrive-t-il si on en ajoute plusieurs? Est-ce qu&rsquo;on augmente
+la puissance encore plus? Est-ce qu&rsquo;il y a quelque chose au-delà de la
+non-linéarité?</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/deep.png alt></p><p>En fait la réponse est non, le fait d&rsquo;avoir plus d&rsquo;une couche cachée n&rsquo;augmente
+pas la puissance d&rsquo;un RDN, et le <a href=https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_d%27approximation_universelle>théorème d&rsquo;approximation
+universelle</a>
+le démontre formellement.</p><p>Ceci explique en partie pourquoi la recherche en matière de réseaux de neurones
+n&rsquo;a pas exploré cette avenue de manière particulièrement vigoureuse, jusqu&rsquo;à
+l&rsquo;avènement de <a href=https://fr.wikipedia.org/wiki/Apprentissage_profond>l&rsquo;apprentissage
+profond</a>. Différents
+problèmes et limitations techniques ont joué un rôle également, comme le
+<a href=https://en.wikipedia.org/wiki/Vanishing_gradient_problem>&ldquo;problème du gradient
+évanescent&rdquo;</a>, une
+forme d&rsquo;instabilité numérique qui fait en sorte que la rétropropagation de
+l&rsquo;erreur (du gradient en fait) est rendue de plus en plus difficile à mesure que
+le réseau acquiert des couches.</p><p>En somme, l&rsquo;apprentissage profond est difficile à résumer, car il est constitué
+d&rsquo;une constellation d&rsquo;idées, d&rsquo;architectures (pour les réseaux de neurones,
+aussi appelées des topologies, ou des structures de connectivité) et de progrès
+techniques (par exemple l&rsquo;avènement des GPUs, pour accélérer les calculs au
+niveau physique des processeurs).</p><h3 id=la-décomposition-hiérarchique-des-connaissances>La décomposition hiérarchique des connaissances
+<a class=anchor href=#la-d%c3%a9composition-hi%c3%a9rarchique-des-connaissances>#</a></h3><p>Pour comprendre l&rsquo;intuition la plus fondamentale par rapport à l&rsquo;apprentissage
+profond, il faut revenir à l’analogie avec le cerveau et la cognition. Lorsque
+nous percevons le monde, par exemple à travers la vision, les données brutes qui
+parviennent à nos yeux sont simplement des variations lumineuses projetées sur
+la rétine. Ces signaux sont ensuite traités dans le cerveau à travers une
+succession d’étapes hiérarchiques : les premiers neurones réagissent à des
+motifs simples (bords, contrastes, orientations), puis des couches plus
+profondes combinent ces motifs pour former des représentations plus complexes
+(formes, textures, objets spécifiques). À un niveau encore plus élevé, ces
+représentations se combinent pour donner lieu à des concepts abstraits, comme
+reconnaître un visage, une émotion ou même une idée.</p><p>De la même manière, un réseau de neurones artificiels profond fonctionne en
+superposant plusieurs couches cachées : les premières extraient des
+caractéristiques élémentaires des données, les suivantes en composent des motifs
+plus riches, et ainsi de suite jusqu’à atteindre des niveaux d’abstraction qui
+permettent de résoudre des tâches complexes (par exemple comprendre une phrase,
+traduire un texte ou générer une image). Ce traitement en couches successives
+est précisément ce qui confère à l’apprentissage profond son nom et sa
+puissance : la capacité de transformer des données brutes en
+représentations de plus en plus élaborées, utiles pour la prise de décision ou
+la production de contenu.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/hierarchical.png alt></p><h3 id=des-caractéristiques-manuelles-à-une-représentation-riche-et-entièrement-dérivée-par-le-rdn>Des caractéristiques &ldquo;manuelles&rdquo; à une représentation riche et entièrement dérivée par le RDN
+<a class=anchor href=#des-caract%c3%a9ristiques-manuelles-%c3%a0-une-repr%c3%a9sentation-riche-et-enti%c3%a8rement-d%c3%a9riv%c3%a9e-par-le-rdn>#</a></h3><p>Avant l’essor de l’apprentissage profond, la plupart des algorithmes
+d’apprentissage automatique reposaient sur des caractéristiques (en anglais
+<em>features</em>) construites &ldquo;à la main&rdquo;, souvent de manière ad hoc. En pratique,
+cela signifiait que les experts du domaine devaient analyser les données brutes
+(images, textes, sons, etc.) et en extraire eux-mêmes les éléments jugés
+pertinents : par exemple, dans une image, on pouvait calculer des contours, des
+textures ou des histogrammes de couleur ; dans du texte, on pouvait compter les
+fréquences de mots ou utiliser des règles grammaticales prédéfinies.
+L’efficacité du modèle d&rsquo;apprentissage dépendait donc en grande partie de la
+qualité de ce travail manuel de conception des features.</p><p>Le changement de paradigme apporté par les réseaux de neurones profonds consiste
+à laisser le modèle apprendre directement ces représentations, au lieu de les
+définir à priori. Grâce à leurs multiples couches cachées, les RDN peuvent
+automatiquement dériver des caractéristiques de plus en plus abstraites à partir
+des données brutes. Par exemple, un réseau de vision artificielle apprend
+d’abord à détecter des bords, puis des formes, puis des objets entiers, sans que
+l’humain ait besoin de coder explicitement ces étapes.</p><p>Ce passage des features manuelles à des représentations apprises est ce qui a
+permis aux réseaux de neurones modernes d’atteindre une telle puissance : le
+modèle n’est plus limité par l’intuition ou les connaissances préalables des
+humains, mais peut découvrir, dans les données elles-mêmes, les structures les
+plus utiles pour accomplir une tâche donnée.</p><h3 id=lessor-des-processeurs-graphiques-gpus>L&rsquo;essor des processeurs graphiques (GPUs)
+<a class=anchor href=#lessor-des-processeurs-graphiques-gpus>#</a></h3><p>Un autre facteur déterminant dans l’essor de l’apprentissage profond a été
+l’utilisation des processeurs graphiques (GPUs). Initialement conçus pour
+accélérer le rendu des images dans les jeux vidéo, les GPUs se sont révélés
+idéaux pour les calculs massivement parallèles nécessaires à l’entraînement des
+réseaux de neurones. Là où un processeur classique (CPU) excelle dans
+l’exécution séquentielle de tâches diverses, un GPU est capable de réaliser en
+parallèle des milliers d’opérations mathématiques identiques, comme des
+multiplications de matrices. Cette capacité a permis de réduire drastiquement
+les temps d’entraînement, rendant possible l’exploration de modèles beaucoup
+plus grands et complexes qu’auparavant.</p><p>Un second progrès technique essentiel a été l’apparition de frameworks de
+différentiation automatique (comme Theano à l’époque, suivi par TensorFlow,
+PyTorch et d’autres). Ces bibliothèques ont démocratisé l’usage de la
+rétropropagation du gradient en automatisant le calcul des dérivées partielles à
+travers des réseaux de neurones potentiellement très profonds. Avant cela,
+implémenter la rétropropagation à la main pour chaque nouveau modèle était
+fastidieux et sujet aux erreurs. Grâce à ces outils, les chercheurs et
+praticiens ont pu se concentrer sur la conception d’architectures et
+d’applications, tout en profitant d’une optimisation fiable et efficace en
+arrière-plan. Ce mariage entre puissance matérielle (GPUs) et outils logiciels
+(différentiation automatique) a véritablement ouvert la voie à l’ère moderne de
+l&rsquo;apprentissage profond.</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><div class="flex flex-wrap justify-between"><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/ class="flex align-center float-left book-icon"><img src=https://cjauvin.github.io/inf1901-teluq/svg/backward.svg alt=Previous title="Module 3 - Réseaux de neurones et apprentissage profond">
+<span>Module 3 - Réseaux de neurones et apprentissage profond</span>
+</a><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/ class="flex align-center float-right book-icon"><span>3Blue1Brown</span>
+<img src=https://cjauvin.github.io/inf1901-teluq/svg/forward.svg alt=Next title=3Blue1Brown></a></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#une-généralisation-de-la-régression-logistique>Une généralisation de la régression logistique</a></li><li><a href=#lentraînement-avec-la-rétropropagation-du-gradient>L’entraînement avec la rétropropagation du gradient</a><ul><li><a href=#phase-de-propagation-avant-algèbre-linéaire>Phase de propagation avant (algèbre linéaire)</a></li><li><a href=#phase-de-rétropropagation-calcul-différentiel>Phase de rétropropagation (calcul différentiel)</a></li><li><a href=#entraînement>Entraînement</a></li><li><a href=#inférence>Inférence</a></li></ul></li><li><a href=#quest-ce-que-lapprentissage-profond>Qu&rsquo;est-ce que l&rsquo;apprentissage profond?</a><ul><li><a href=#plus-de-couches-cachées>Plus de couches cachées?</a></li><li><a href=#la-décomposition-hiérarchique-des-connaissances>La décomposition hiérarchique des connaissances</a></li><li><a href=#des-caractéristiques-manuelles-à-une-représentation-riche-et-entièrement-dérivée-par-le-rdn>Des caractéristiques &ldquo;manuelles&rdquo; à une représentation riche et entièrement dérivée par le RDN</a></li><li><a href=#lessor-des-processeurs-graphiques-gpus>L&rsquo;essor des processeurs graphiques (GPUs)</a></li></ul></li></ul></nav></div></aside></main><script src=https://cdn.jsdelivr.net/npm/iframe-resizer/js/iframeResizer.min.js defer></script><script>document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll('iframe[data-iresize="true"]');if(!e.length||typeof iFrameResize!="function")return;const t={license:"GPLv3",checkOrigin:!1,heightCalculationMethod:"max"};e.forEach(e=>{const n={...t},s=e.getAttribute("data-hcm");s&&(n.heightCalculationMethod=s);const o=e.getAttribute("data-check-origin");o==="true"&&(n.checkOrigin=!0),o==="false"&&(n.checkOrigin=!1),e.getAttribute("data-log")==="true"&&(n.log=!0),e.iFrameResizer||iFrameResize(n,e)})})</script></body></html>

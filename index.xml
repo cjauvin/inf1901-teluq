@@ -64,47 +64,7 @@ et humanité.&lt;/p&gt;</description></item><item><title>IA générative</title>
  &lt;a class="anchor" href="#lia-g%c3%a9n%c3%a9rative"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;L’IA générative désigne une catégorie d’intelligences artificielles capables de créer de nouveaux contenus à partir de données existantes. Ces systèmes, souvent basés sur des réseaux de neurones profonds, apprennent à imiter, transformer ou inventer des images, des vidéos, du texte ou de la musique.&lt;/p&gt;
-&lt;p&gt;Les premiers modèles de génération de texte utilisaient des approches statistiques simples, comme les n-grammes, qui prédisaient le mot suivant en fonction des précédents. L’arrivée des réseaux de neurones, puis des architectures avancées comme les Transformers, a révolutionné le domaine. Les modèles modernes, tels que GPT, sont capables de comprendre des instructions complexes, de dialoguer, de traduire et de générer des textes longs et structurés.&lt;/p&gt;</description></item><item><title>Les réseaux de neurones</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</guid><description>&lt;h1 id="quest-ce-quun-réseau-de-neurones"&gt;
- Qu&amp;rsquo;est-ce qu&amp;rsquo;un réseau de neurones?
- &lt;a class="anchor" href="#quest-ce-quun-r%c3%a9seau-de-neurones"&gt;#&lt;/a&gt;
-&lt;/h1&gt;
-&lt;p&gt;Un réseau de neurones artificiel est un système inspiré du cerveau
-humain, composé d&amp;rsquo;unités appelées &lt;em&gt;neurones&lt;/em&gt; organisées en couches.
-Chaque neurone réalise une opération mathématique simple, et
-l&amp;rsquo;ensemble du réseau transforme des données d&amp;rsquo;entrée en une prédiction
-ou une décision.&lt;/p&gt;
-&lt;h2 id="les-données"&gt;
- Les données
- &lt;a class="anchor" href="#les-donn%c3%a9es"&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;Les données sont la matière première. Elles peuvent être des images,
-du texte, du son ou des tableaux de nombres. Chaque exemple de données
-est représenté sous forme numérique, souvent sous forme de vecteurs ou
-de matrices. C&amp;rsquo;est à partir de ces données que le réseau apprend à
-reconnaître des motifs.&lt;/p&gt;</description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</guid><description>&lt;h1 id="vidéo-de-3blue1brown"&gt;
- Vidéo de 3Blue1Brown
- &lt;a class="anchor" href="#vid%c3%a9o-de-3blue1brown"&gt;#&lt;/a&gt;
-&lt;/h1&gt;
-&lt;p&gt;Visionnez cette vidéo d&amp;rsquo;introduction aux réseaux de neurones, créée par
-3Blue1Brown. Notez qu&amp;rsquo;il est possible d&amp;rsquo;avoir le contenu audio et les
-sous-titres en français, via les réglages du lecteur YouTube.&lt;/p&gt;
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aircAruvnKk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
-&lt;h2 id="qui-est-3blue1brown"&gt;
- Qui est 3Blue1Brown?
- &lt;a class="anchor" href="#qui-est-3blue1brown"&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;Grant Sanderson, connu sous le pseudonyme 3Blue1Brown, est un vulgarisateur
-scientifique et créateur de vidéos éducatives sur YouTube. Il s’est fait
-remarquer grâce à son style visuel unique qui combine des animations claires et
-élégantes avec des explications intuitives de concepts mathématiques parfois
-complexes, comme l’algèbre linéaire, le calcul différentiel, les probabilités ou
-encore l’intelligence artificielle. Son approche met l’accent sur la
-compréhension en profondeur plutôt que sur la simple application de formules, et
-a permis à des millions de personnes dans le monde de découvrir la beauté et la
-logique des mathématiques.&lt;/p&gt;</description></item><item><title>Grands modèles de langage</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/</guid><description>&lt;h1 id="les-modèles-de-langage-petits-et-grands"&gt;
+&lt;p&gt;Les premiers modèles de génération de texte utilisaient des approches statistiques simples, comme les n-grammes, qui prédisaient le mot suivant en fonction des précédents. L’arrivée des réseaux de neurones, puis des architectures avancées comme les Transformers, a révolutionné le domaine. Les modèles modernes, tels que GPT, sont capables de comprendre des instructions complexes, de dialoguer, de traduire et de générer des textes longs et structurés.&lt;/p&gt;</description></item><item><title>Grands modèles de langage</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/</guid><description>&lt;h1 id="les-modèles-de-langage-petits-et-grands"&gt;
  Les modèles de langage (petits et grands)
  &lt;a class="anchor" href="#les-mod%c3%a8les-de-langage-petits-et-grands"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -168,7 +128,25 @@ des perspectives des &amp;ldquo;doomers&amp;rdquo; (ceux qui craignent des cons�
 catastrophiques de l’IA) et des &amp;ldquo;accélérationistes&amp;rdquo; (ceux qui prônent un
 développement rapide de l’IA). Vous utiliserez également un outil d’IA pour vous
 assister dans la rédaction, tout en réfléchissant à son impact sur votre
-processus.&lt;/p&gt;</description></item><item><title>Présentation du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</guid><description>&lt;blockquote class="book-hint info"&gt;
+processus.&lt;/p&gt;</description></item><item><title>Les réseaux de neurones</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/r%C3%A9seaux-de-neurones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/r%C3%A9seaux-de-neurones/</guid><description>&lt;h1 id="les-réseaux-de-neurones"&gt;
+ Les réseaux de neurones
+ &lt;a class="anchor" href="#les-r%c3%a9seaux-de-neurones"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="une-généralisation-de-la-régression-logistique"&gt;
+ Une généralisation de la régression logistique
+ &lt;a class="anchor" href="#une-g%c3%a9n%c3%a9ralisation-de-la-r%c3%a9gression-logistique"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Sans le réaliser, au module 2, nous avons déjà vu un réseau de neurones (RDN)
+simple, mais qui portait alors un autre nom : la &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#la-régression-logistique"&gt;régression logistique&lt;/a&gt;
+(RL).&lt;/p&gt;
+&lt;p&gt;Une manière visuelle de représenter la régression logistique est la suivante
+(sous la forme d&amp;rsquo;un
+&lt;a href="https://fr.wikipedia.org/wiki/Graphe_%28math%C3%A9matiques_discr%C3%A8tes%29"&gt;graphe&lt;/a&gt;,
+avec des noeuds (ou sommets) et des arêtes) :&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module3/rl1.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;La couche d&amp;rsquo;entrée (la rangée de cercles à gauche) n&amp;rsquo;est pas vraiment une
+couche, elle représente simplement les données que l&amp;rsquo;on va fournir en entrée
+(input) à la RL, comme cette extension du même diagramme le démontre :&lt;/p&gt;</description></item><item><title>Présentation du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/</guid><description>&lt;blockquote class="book-hint info"&gt;
 &lt;p&gt;&lt;em&gt;« Toute technologie suffisamment avancée est indiscernable de la magie. »&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Arthur C. Clarke&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -215,7 +193,30 @@ de problème avec cette image&amp;rdquo; (ou encore, ce qui serait équivalent m
 simple : &amp;ldquo;ok&amp;rdquo; ou &amp;ldquo;problème&amp;rdquo;). Cette valeur est &lt;em&gt;binaire&lt;/em&gt;, dans le sens qu&amp;rsquo;elle a
 seulement deux valeurs possibles (peu importe lesquelles, en autant qu&amp;rsquo;il y en
 ait seulement deux). Sur la base de cette valeur binaire de sortie, on pourrait
-agir et envoyer un technicien, en cas de besoin, pour régler le problème.&lt;/p&gt;</description></item><item><title>AA versus X</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</guid><description>&lt;h2 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel"&gt;
+agir et envoyer un technicien, en cas de besoin, pour régler le problème.&lt;/p&gt;</description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</guid><description>&lt;h1 id="vidéo-de-3blue1brown"&gt;
+ Vidéo de 3Blue1Brown
+ &lt;a class="anchor" href="#vid%c3%a9o-de-3blue1brown"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Visionnez cette vidéo d&amp;rsquo;introduction aux réseaux de neurones, créée par
+3Blue1Brown. Notez qu&amp;rsquo;il est possible d&amp;rsquo;avoir le contenu audio et les
+sous-titres en français, via les réglages du lecteur YouTube.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aircAruvnKk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+&lt;h2 id="qui-est-3blue1brown"&gt;
+ Qui est 3Blue1Brown?
+ &lt;a class="anchor" href="#qui-est-3blue1brown"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Grant Sanderson, connu sous le pseudonyme 3Blue1Brown, est un vulgarisateur
+scientifique et créateur de vidéos éducatives sur YouTube. Il s’est fait
+remarquer grâce à son style visuel unique qui combine des animations claires et
+élégantes avec des explications intuitives de concepts mathématiques parfois
+complexes, comme l’algèbre linéaire, le calcul différentiel, les probabilités ou
+encore l’intelligence artificielle. Son approche met l’accent sur la
+compréhension en profondeur plutôt que sur la simple application de formules, et
+a permis à des millions de personnes dans le monde de découvrir la beauté et la
+logique des mathématiques.&lt;/p&gt;</description></item><item><title>AA versus X</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</guid><description>&lt;h2 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel"&gt;
  En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnel?
  &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnel"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
@@ -236,7 +237,17 @@ est une série d&amp;rsquo;instructions symboliques dans un langage de programma
 au confluent de plusieurs disciplines : mathématiques, informatique, sciences
 cognitives. Les fondements de la discipline sont résolument mathématiques,
 principalement avec l&amp;rsquo;algèbre linéaire et les probabilités (qui entretiennent
-elles-mêmes des liens très étroits).&lt;/p&gt;</description></item><item><title>Les professeurs</title><link>https://cjauvin.github.io/inf1901-teluq/docs/professeurs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/professeurs/</guid><description>&lt;h1 id="les-professeurs"&gt;
+elles-mêmes des liens très étroits).&lt;/p&gt;</description></item><item><title>Architectures avancées</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/</guid><description>&lt;h1 id="les-architectures-neuronales-avancées"&gt;
+ Les architectures neuronales avancées
+ &lt;a class="anchor" href="#les-architectures-neuronales-avanc%c3%a9es"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Une fois que les principes de base des réseaux de neurones sont bien compris, et
+que les idées de l&amp;rsquo;apprentissage profond sont plus claires, les choses
+deviennent foisonnantes et très intéressantes avec ce sujet !&lt;/p&gt;
+&lt;p&gt;Un peu comme on l&amp;rsquo;a fait avec l&amp;rsquo;ajout de couches cachées supplémentaires pour un
+réseau de neurones, si on prend un moment pour considérer son architecture, il
+est relativement facile d&amp;rsquo;imaginer des variations &amp;ldquo;topologiques&amp;rdquo; (des manières
+pour ses éléments d&amp;rsquo;être connectés en un graphe).&lt;/p&gt;</description></item><item><title>Les professeurs</title><link>https://cjauvin.github.io/inf1901-teluq/docs/professeurs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/professeurs/</guid><description>&lt;h1 id="les-professeurs"&gt;
  Les professeurs
  &lt;a class="anchor" href="#les-professeurs"&gt;#&lt;/a&gt;
 &lt;/h1&gt;

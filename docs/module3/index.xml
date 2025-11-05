@@ -1,21 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module 3 - Réseaux de neurones et apprentissage profond on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/</link><description>Recent content in Module 3 - Réseaux de neurones et apprentissage profond on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/module3/index.xml" rel="self" type="application/rss+xml"/><item><title>Les réseaux de neurones</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/01-r%C3%A9seaux-de-neurones/</guid><description>&lt;h1 id="quest-ce-quun-réseau-de-neurones"&gt;
- Qu&amp;rsquo;est-ce qu&amp;rsquo;un réseau de neurones?
- &lt;a class="anchor" href="#quest-ce-quun-r%c3%a9seau-de-neurones"&gt;#&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module 3 - Réseaux de neurones et apprentissage profond on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/</link><description>Recent content in Module 3 - Réseaux de neurones et apprentissage profond on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/module3/index.xml" rel="self" type="application/rss+xml"/><item><title>Les réseaux de neurones</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/r%C3%A9seaux-de-neurones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/r%C3%A9seaux-de-neurones/</guid><description>&lt;h1 id="les-réseaux-de-neurones"&gt;
+ Les réseaux de neurones
+ &lt;a class="anchor" href="#les-r%c3%a9seaux-de-neurones"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;Un réseau de neurones artificiel est un système inspiré du cerveau
-humain, composé d&amp;rsquo;unités appelées &lt;em&gt;neurones&lt;/em&gt; organisées en couches.
-Chaque neurone réalise une opération mathématique simple, et
-l&amp;rsquo;ensemble du réseau transforme des données d&amp;rsquo;entrée en une prédiction
-ou une décision.&lt;/p&gt;
-&lt;h2 id="les-données"&gt;
- Les données
- &lt;a class="anchor" href="#les-donn%c3%a9es"&gt;#&lt;/a&gt;
+&lt;h2 id="une-généralisation-de-la-régression-logistique"&gt;
+ Une généralisation de la régression logistique
+ &lt;a class="anchor" href="#une-g%c3%a9n%c3%a9ralisation-de-la-r%c3%a9gression-logistique"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;Les données sont la matière première. Elles peuvent être des images,
-du texte, du son ou des tableaux de nombres. Chaque exemple de données
-est représenté sous forme numérique, souvent sous forme de vecteurs ou
-de matrices. C&amp;rsquo;est à partir de ces données que le réseau apprend à
-reconnaître des motifs.&lt;/p&gt;</description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</guid><description>&lt;h1 id="vidéo-de-3blue1brown"&gt;
+&lt;p&gt;Sans le réaliser, au module 2, nous avons déjà vu un réseau de neurones (RDN)
+simple, mais qui portait alors un autre nom : la &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#la-régression-logistique"&gt;régression logistique&lt;/a&gt;
+(RL).&lt;/p&gt;
+&lt;p&gt;Une manière visuelle de représenter la régression logistique est la suivante
+(sous la forme d&amp;rsquo;un
+&lt;a href="https://fr.wikipedia.org/wiki/Graphe_%28math%C3%A9matiques_discr%C3%A8tes%29"&gt;graphe&lt;/a&gt;,
+avec des noeuds (ou sommets) et des arêtes) :&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module3/rl1.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;La couche d&amp;rsquo;entrée (la rangée de cercles à gauche) n&amp;rsquo;est pas vraiment une
+couche, elle représente simplement les données que l&amp;rsquo;on va fournir en entrée
+(input) à la RL, comme cette extension du même diagramme le démontre :&lt;/p&gt;</description></item><item><title>3Blue1Brown</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/</guid><description>&lt;h1 id="vidéo-de-3blue1brown"&gt;
  Vidéo de 3Blue1Brown
  &lt;a class="anchor" href="#vid%c3%a9o-de-3blue1brown"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -38,7 +39,17 @@ complexes, comme l’algèbre linéaire, le calcul différentiel, les probabilit
 encore l’intelligence artificielle. Son approche met l’accent sur la
 compréhension en profondeur plutôt que sur la simple application de formules, et
 a permis à des millions de personnes dans le monde de découvrir la beauté et la
-logique des mathématiques.&lt;/p&gt;</description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones-travail-noté-3"&gt;
+logique des mathématiques.&lt;/p&gt;</description></item><item><title>Architectures avancées</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/</guid><description>&lt;h1 id="les-architectures-neuronales-avancées"&gt;
+ Les architectures neuronales avancées
+ &lt;a class="anchor" href="#les-architectures-neuronales-avanc%c3%a9es"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Une fois que les principes de base des réseaux de neurones sont bien compris, et
+que les idées de l&amp;rsquo;apprentissage profond sont plus claires, les choses
+deviennent foisonnantes et très intéressantes avec ce sujet !&lt;/p&gt;
+&lt;p&gt;Un peu comme on l&amp;rsquo;a fait avec l&amp;rsquo;ajout de couches cachées supplémentaires pour un
+réseau de neurones, si on prend un moment pour considérer son architecture, il
+est relativement facile d&amp;rsquo;imaginer des variations &amp;ldquo;topologiques&amp;rdquo; (des manières
+pour ses éléments d&amp;rsquo;être connectés en un graphe).&lt;/p&gt;</description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones-travail-noté-3"&gt;
  Apprivoisez un réseau de neurones (travail noté 3)
  &lt;a class="anchor" href="#apprivoisez-un-r%c3%a9seau-de-neurones-travail-not%c3%a9-3"&gt;#&lt;/a&gt;
 &lt;/h1&gt;

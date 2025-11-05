@@ -1,0 +1,153 @@
+<!doctype html><html lang=fr dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+  Les architectures neuronales avancées
+  #
+
+Une fois que les principes de base des réseaux de neurones sont bien compris, et
+que les idées de l&rsquo;apprentissage profond sont plus claires, les choses
+deviennent foisonnantes et très intéressantes avec ce sujet !
+Un peu comme on l&rsquo;a fait avec l&rsquo;ajout de couches cachées supplémentaires pour un
+réseau de neurones, si on prend un moment pour considérer son architecture, il
+est relativement facile d&rsquo;imaginer des variations &ldquo;topologiques&rdquo; (des manières
+pour ses éléments d&rsquo;être connectés en un graphe)."><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/"><meta property="og:site_name" content="INF1901 - Initiation à l'IA : concepts et réflexions"><meta property="og:title" content="Architectures avancées"><meta property="og:description" content="Les architectures neuronales avancées # Une fois que les principes de base des réseaux de neurones sont bien compris, et que les idées de l’apprentissage profond sont plus claires, les choses deviennent foisonnantes et très intéressantes avec ce sujet !
+Un peu comme on l’a fait avec l’ajout de couches cachées supplémentaires pour un réseau de neurones, si on prend un moment pour considérer son architecture, il est relativement facile d’imaginer des variations “topologiques” (des manières pour ses éléments d’être connectés en un graphe)."><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Architectures avancées | INF1901 - Initiation à l'IA : concepts et réflexions</title><link rel=icon href=https://cjauvin.github.io/inf1901-teluq/images/paperclip-logo.png><link rel=manifest href=https://cjauvin.github.io/inf1901-teluq/manifest.json><link rel=canonical href=https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/><link rel=stylesheet href=https://cjauvin.github.io/inf1901-teluq/book.min.97898183dc29e99dd0d8e5c58bc35164ef42b34cfa3992d69b27fc92f94774a9.css integrity="sha256-l4mBg9wp6Z3Q2OXFi8NRZO9Cs0z6OZLWmyf8kvlHdKk=" crossorigin=anonymous><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=https://cjauvin.github.io/inf1901-teluq/><img src=https://cjauvin.github.io/inf1901-teluq/images/paperclip-logo.png alt=Logo class=book-icon><span>INF1901 - Initiation à l'IA : concepts et réflexions</span></a></h2><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/>Présentation du cours</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/philosophie/>Approche pédagogique du cours</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/professeurs/>Les professeurs</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/livres/>Les livres</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/>Travaux notés</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/feuille-de-route/>Feuille de route</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/>Google Sheets</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/>Usage de l'IA</a></li><li><input type=checkbox id=section-8907ef67e4ecdf3db52171242f091373 class=toggle>
+<label for=section-8907ef67e4ecdf3db52171242f091373 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/ class=flex-auto>Module 1 - Intelligence artificielle</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/activit%C3%A9s/>Activités</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/>Travail noté 1</a></li></ul></li><li><input type=checkbox id=section-0e47afea11237f1612150a31e7123755 class=toggle>
+<label for=section-0e47afea11237f1612150a31e7123755 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/ class=flex-auto>Module 2 - Apprentissage automatique</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/>Un scénario réaliste</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/>AA versus X</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/>Que sont les données?</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/>Qu'est-ce qu'un modèle?</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/>Les paradigmes de l'AA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/>Apprentissage supervisé</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/>Apprentissage non supervisé</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/>Travail noté 2</a></li></ul></li><li><input type=checkbox id=section-9cc60359ac12343378e5fa944b3863f7 class=toggle checked>
+<label for=section-9cc60359ac12343378e5fa944b3863f7 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/ class=flex-auto>Module 3 - Réseaux de neurones et apprentissage profond</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/r%C3%A9seaux-de-neurones/>Les réseaux de neurones</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/>3Blue1Brown</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/ class=active>Architectures avancées</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/>Travail noté 3</a></li></ul></li><li><input type=checkbox id=section-d23b9c643b16319dcdaeed5376bcec9c class=toggle>
+<label for=section-d23b9c643b16319dcdaeed5376bcec9c class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module4/ class=flex-auto>Module 4 - IA générative et grands modèles de langage</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module4/01-ia-g%C3%A9n%C3%A9rative/>IA générative</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module4/02-grands-mod%C3%A8les-de-langage/>Grands modèles de langage</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module4/03-3blue1brown/>3Blue1Brown</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%C3%A9-4/>Travail noté 4</a></li></ul></li><li><input type=checkbox id=section-b90ca6a3362bb22be66d4f5e1f8ab16c class=toggle>
+<label for=section-b90ca6a3362bb22be66d4f5e1f8ab16c class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module5/ class=flex-auto>Module 5 - Autour de l'IA</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module5/attitudes/>Attitudes à l'égard de l'IA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/>Conversation synoptique autour de l'IA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/>Travail noté 5</a></li></ul></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/>Ressources supplémentaires</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/conclusion/>Conclusion</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=https://cjauvin.github.io/inf1901-teluq/svg/menu.svg class=book-icon alt=Menu></label><h3>Architectures avancées</h3><label for=toc-control><img src=https://cjauvin.github.io/inf1901-teluq/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#les-réseaux-de-neurones-convolutifs-cnns>Les réseaux de neurones convolutifs (CNNs)</a><ul><li><a href=#imagenet>ImageNet</a></li><li><a href=#avantages-et-applications>Avantages et applications</a></li></ul></li><li><a href=#les-réseaux-de-neurones-récurrents-rnns-et-leurs-variantes>Les réseaux de neurones récurrents (RNNs) et leurs variantes</a></li><li><a href=#les-autoencodeurs>Les autoencodeurs</a></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=les-architectures-neuronales-avancées>Les architectures neuronales avancées
+<a class=anchor href=#les-architectures-neuronales-avanc%c3%a9es>#</a></h1><p>Une fois que les principes de base des réseaux de neurones sont bien compris, et
+que les idées de l&rsquo;apprentissage profond sont plus claires, les choses
+deviennent foisonnantes et très intéressantes avec ce sujet !</p><p>Un peu comme on l&rsquo;a fait avec l&rsquo;ajout de couches cachées supplémentaires pour un
+réseau de neurones, si on prend un moment pour considérer son architecture, il
+est relativement facile d&rsquo;imaginer des variations &ldquo;topologiques&rdquo; (des manières
+pour ses éléments d&rsquo;être connectés en un graphe).</p><p>L&rsquo;essor de l&rsquo;apprentissage profond est venu avec une explosion de créativité à
+ce niveau, comme le démontre le fameux <a href=https://www.asimovinstitute.org/neural-network-zoo/>Zoo des réseaux de
+neurones</a> :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/nn_zoo.png alt></p><p>Nous allons faire un survol des architectures les plus importantes.</p><h2 id=les-réseaux-de-neurones-convolutifs-cnns>Les réseaux de neurones convolutifs (CNNs)
+<a class=anchor href=#les-r%c3%a9seaux-de-neurones-convolutifs-cnns>#</a></h2><p>Une limitation fondamentale des réseaux de neurones &ldquo;traditionnels&rdquo; (aussi
+appelés &ldquo;feedforward&rdquo;) est le fait que leurs neurones sont organisés en rangées
+unidimensionnelles. Si les données d&rsquo;entrée du réseau sont une image, par
+exemple, la correspondance entre la structure 2D de l&rsquo;image et la structure 1D
+de la couche d&rsquo;entrée impose une difficulté supplémentaire au réseau, qui doit
+alors &ldquo;découvrir&rdquo;, par lui-même, le fait que certains pixels sont corrélés entre
+eux. Par exemple s&rsquo;il y a une pelouse dans le coin inférieur gauche de mon
+image, les pixels qui se trouvent dans cette zone auront tendance à être verts,
+et le fait qu&rsquo;un pixel particulier de cette zone soit vert &ldquo;influence&rdquo;, de ce
+fait, les pixels voisins.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/christmas.png alt></p><p>Les réseaux de neurones à convolution (CNN en anglais, ou ConvNet) sont
+particulièrement adéquats pour le traitement des images, parce qu&rsquo;ils utilisent
+des convolutions, qui sont des petits &ldquo;filtres&rdquo; 2D (de quelques pixels de
+dimension) qui sont &ldquo;glissés&rdquo; sur l&rsquo;image d&rsquo;entrée, de manière à détecter
+efficacement certaines structures, à différentes échelles, dans une image (comme
+la boule de Noel bleue dans l&rsquo;image par exemple, ou un oeil dans un visage). Un
+CNN est une collection de convolutions distinctes, dont la tâche est de détecter
+différents motifs dans les données, mais leurs paramètres exacts sont appris,
+plutôt que déterminés d&rsquo;avance. Avant l’entraînement, les convolutions sont
+aléatoires, et si on entraîne avec un jeu de données qui contient des visages
+humains, elles deviendront progressivement spécialisées pour la détection de
+caractéristiques anatomiques. Si on entraînait plutôt avec un jeu de données de
+véhicules, la spécialisation prendrait une autre direction. Ceci veut donc dire
+que l&rsquo;on ne décide pas d&rsquo;avance de ce qu&rsquo;on l&rsquo;on voudra détecter, le réseau
+décidera par lui-même, et cela dépendra évidemment de la nature des images
+d’entraînement.</p><p>Les CNNs ont des architectures complexes, avec de nombreux détails :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/cnn.png alt></p><h3 id=imagenet>ImageNet
+<a class=anchor href=#imagenet>#</a></h3><p>Les CNNs ont joué un rôle particulièrement important dans l&rsquo;avènement de
+l&rsquo;apprentissage profond, en grande partie en raison d&rsquo;un tournant, arrivé en
+2012, lors du concours &ldquo;Large Scale Visual Recognition Challenge&rdquo; (ILSVRC), avec
+la base de données d&rsquo;images <a href=https://fr.wikipedia.org/wiki/ImageNet>ImageNet</a>.
+Ce défi consistait à classer plus d’un million d’images en 1000 catégories
+différentes. Cette année-là, l’architecture AlexNet, un CNN profond entraîné sur
+GPU, a pulvérisé les performances de toutes les méthodes classiques (SVM, random
+forests, etc.), réduisant l’erreur de près de moitié. Ce succès a marqué le
+début de la révolution de l&rsquo;apprentissage profond en vision par ordinateur : les
+CNN sont rapidement devenus la méthode dominante pour la reconnaissance
+d’images, puis pour de nombreuses autres tâches (détection d’objets,
+segmentation, analyse vidéo, etc.). Depuis, des architectures toujours plus
+sophistiquées (VGG, ResNet, EfficientNet, etc.) ont pris le relais, mais le
+point de bascule historique reste la victoire d’AlexNet sur ImageNet en 2012.</p><h3 id=avantages-et-applications>Avantages et applications
+<a class=anchor href=#avantages-et-applications>#</a></h3><p>Les CNNs sont plus efficaces que les RDN standards pour les images car ils
+partagent les poids (réduisant le nombre de paramètres) et exploitent
+l&rsquo;invariance à la translation (un motif détecté, comme un oeil, n&rsquo;importe où
+dans l&rsquo;image est reconnu).</p><p>Applications courantes : reconnaissance d&rsquo;objets (ex. : ResNet pour la
+classification d&rsquo;images), détection faciale, ou même dans les voitures autonomes
+pour analyser les flux vidéo en temps réel.</p><h2 id=les-réseaux-de-neurones-récurrents-rnns-et-leurs-variantes>Les réseaux de neurones récurrents (RNNs) et leurs variantes
+<a class=anchor href=#les-r%c3%a9seaux-de-neurones-r%c3%a9currents-rnns-et-leurs-variantes>#</a></h2><p>Tous les types de données d&rsquo;entrée pour les réseaux de neurones que nous avons
+vus jusqu&rsquo;à présent étaient statiques, fixés dans le temps : une image, un point
+dans l&rsquo;espace, les attributs d&rsquo;une maison (son prix, ses dimensions, etc).
+Est-ce qu&rsquo;il serait possible de prendre en considération des données
+séquentielles, qui s&rsquo;articulent dans le temps, comme la musique, les mots
+(prononcés ou écrits), etc?</p><p>Il est tout à fait possible de présenter à un réseau de neurones une série
+d&rsquo;images séquentielles, comme celles d&rsquo;un film par exemple. Mais le problème est
+que chaque image sera traitée de manière indépendante. C&rsquo;est comme si le réseau
+repartait de zéro, à chaque exemple qu&rsquo;il traite. Il faudrait introduire un
+mécanisme pour modéliser un &ldquo;état&rdquo; dans lequel se trouve le réseau. Par exemple,
+si on lui présente une suite de mots, et que les trois premiers sont <code>bonjour</code>,
+<code>comment</code> et <code>ça</code>, il devrait être possible pour le réseau d&rsquo;avoir un certain
+&ldquo;souvenir&rdquo; de ceux-ci, quand il traite le prochain mot (probablement le mot
+<code>va</code>). Les réseaux de neurones dits <em>récurrents</em> (RNNs en anglais) introduisent
+dans leur architecture des boucles de rétroaction, permettant au réseau de
+conserver une &ldquo;mémoire&rdquo; des états précédents.</p><p>Concrètement, et dans sa version la plus simple, ceci veut dire ajouter une
+couche de poids récurrents (ou réentrants) à la couche cachée. Si la couche
+cachée a $h$ neurones, ceci introduira donc une matrice de poids (paramètres)
+additionnels de $h \times h$ éléments.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/rnn.png alt></p><p>Le problème du &ldquo;gradient qui devient trop petit&rdquo;, dont nous avons discuté dans
+une <a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/r%C3%A9seaux-de-neurones/#plus-de-couches-cachées>section précédente</a> est
+particulièrement important avec les réseaux récurrents. Si on y pense un peu,
+ceci est à prévoir, car si on &ldquo;déroule&rdquo; un réseau récurrent, il est clair que ça
+correspond à une structure avec plusieurs couches successives, ce qui fait en
+sorte d&rsquo;introduire de l&rsquo;instabilité numérique au niveau du calcul de gradient
+(en gros, parce que les multiplications répétées de nombres très petits
+deviennent de plus en plus difficiles, pour un ordinateur digital). Une des
+méthodes pour remédier à ce problème est de rendre l&rsquo;architecture encore plus
+complexe, comme c&rsquo;est le cas par exemple avec un réseau LSTM (Long Short-Term
+Memory) :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/lstm.png alt></p><p>L&rsquo;idée du LSTM est d&rsquo;introduire des &ldquo;portes&rdquo; (sortes d&rsquo;interrupteurs) qui
+régissent le flot de l&rsquo;information, en faisant en sorte que la topologie (les
+connexions entre les éléments) devienne dynamique et changeante, au lieu d&rsquo;être
+fixée d&rsquo;avance. Si une porte est fermée (valeur 0) alors c&rsquo;est comme si la
+connexion correspondante ne se faisait plus. L&rsquo;état de ces portes n&rsquo;est pas fixé
+d&rsquo;avance cependant, il est plutôt &ldquo;appris&rdquo; par le réseau, c&rsquo;est-à-dire qu&rsquo;il est
+soumis lui aussi au régime de le rétropropagation, ce qui implique donc que ces
+portes doivent avoir leur propre jeu de paramètres qui leur sont propres.</p><p>Il est à noter qu&rsquo;il est possible d&rsquo;utiliser un réseau récurrent pour créer un
+<em>modèle de langage</em> (le mécanisme qui se trouve au coeur d&rsquo;applications comme
+ChatGPT, par exemple), mais comme nous allons le voir plus loin, il existe
+maintenant un type de réseau de neurones encore plus puissant (les
+transformers) qui permettent de faire cela encore plus efficacement.</p><p>Applications : prévision de séries temporelles (ex. : bourse), traduction
+automatique (ex. : Seq2Seq), ou reconnaissance vocale (ex. : dans les assistants
+comme Siri).</p><h2 id=les-autoencodeurs>Les autoencodeurs
+<a class=anchor href=#les-autoencodeurs>#</a></h2><p>Un autoencodeur est une idée simple mais intrigante : supposons que nous
+connections ensemble deux réseaux de neurones, le deuxième inversé par rapport au
+premier, que pourrions nous en tirer?</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/autoencoder.png alt></p><p>Il faut tout d&rsquo;abord distinguer les deux parties de ce réseau de neurones particulier,
+soit l&rsquo;encodeur, à gauche, et le décodeur, à droite :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/enc_dec.png alt></p><p>Un autoencodeur est un algorithme d&rsquo;apprentissage dit <em>auto-supervisé</em>, car sa tâche
+est de tenter de reconstruire l&rsquo;image d&rsquo;entrée. Autrement dit, si on donne une
+image en entrée à un autoencodeur, et que sa sortie (c-à-d les neurones
+complètement à droite) la reproduit parfaitement, alors l&rsquo;erreur est nulle (ce
+que l&rsquo;on souhaite). Mais quel est donc l&rsquo;intérêt de faire cela? L&rsquo;intérêt réside
+dans la partie centrale du diagramme, soit la sortie de la couche d&rsquo;activation
+de la couche cachée la plus petite au milieu de l&rsquo;autoencodeur. Étant donné la
+structure du réseau et la fonction de reconstruction qu&rsquo;il optimise, la couche
+centrale contiendra, une fois entraînée, une version correspondante de l&rsquo;entrée
+(qui vit dans un espace à haute dimensionnalité, comme c&rsquo;est le cas par exemple
+d&rsquo;une image avec ses pixels), projetée dans un espace de plus faible
+dimensionnalité, dit <em>latent</em>.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/funnel.png alt></p><p>Cet espace latent est intéressant pour plusieurs raisons. Il constitue
+premièrement une représentation compressée des données d&rsquo;entrée, et en
+considérant le diagramme et le fonctionnement de l&rsquo;autoencodeur (la tâche de
+reconstruction qu&rsquo;il accomplit), la raison devrait apparaître intuitivement
+assez claire : étant donné que le nombre de neurones de la couche latente est,
+par design, plus petit que celui des couches d&rsquo;entrée et de sortie, c&rsquo;est comme
+si on forçait les données dans un goulot d&rsquo;étranglement (l&rsquo;encodage), pour les
+rendre plus &ldquo;compactes&rdquo;. Mais étant donné que, de cette représentation réduite,
+on <em>doit</em> ensuite être capable de reconstruire l&rsquo;image de sortie le mieux
+possible (soit la <em>décoder</em>), cela pousse la représentation compacte à préserver
+un maximum d&rsquo;information (car si ce n&rsquo;était pas le cas, la reconstruction ne
+serait tout simplement pas possible). On constate donc que, de par son design et
+son architecture, un autoencodeur constitue un mécanisme de compression (et de
+reconstruction) des données.</p><p>Quand on pense à la compression d&rsquo;une image, on pourrait imaginer qu&rsquo;il s&rsquo;agit
+d&rsquo;un mécanisme similaire à la compression
+<a href=https://fr.wikipedia.org/wiki/JPEG>JPEG</a> par exemple, qui réduit la taille
+d&rsquo;un fichier d&rsquo;image, tout en la conservant visuellement identique (malgré qu&rsquo;il
+y a une dégradation de la qualité qui peut être perceptible à des degrés variés).</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/jpeg.png alt></p><p>Les espaces latents sont un sujet très riches et profonds, et ils ont de
+nombreux usages en apprentissage automatique. Par exemple, nous verrons que les
+transformers, qui sont un type de réseaux de neurones profonds qui servent de
+fondements aux grands modèles de langage (comme ChatGPT par exemple), en font
+usage. Nous avons déjà brièvement touché ce sujet dans la section sur les
+<a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/#vers-des-représentations-plus-compactes--les-plongements-lexicaux>placements lexicaux</a> (word embeddings).</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/encoder.png alt></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><div class="flex flex-wrap justify-between"><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/ class="flex align-center float-left book-icon"><img src=https://cjauvin.github.io/inf1901-teluq/svg/backward.svg alt=Previous title=3Blue1Brown>
+<span>3Blue1Brown</span>
+</a><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/ class="flex align-center float-right book-icon"><span>Travail noté 3</span>
+<img src=https://cjauvin.github.io/inf1901-teluq/svg/forward.svg alt=Next title="Travail noté 3"></a></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#les-réseaux-de-neurones-convolutifs-cnns>Les réseaux de neurones convolutifs (CNNs)</a><ul><li><a href=#imagenet>ImageNet</a></li><li><a href=#avantages-et-applications>Avantages et applications</a></li></ul></li><li><a href=#les-réseaux-de-neurones-récurrents-rnns-et-leurs-variantes>Les réseaux de neurones récurrents (RNNs) et leurs variantes</a></li><li><a href=#les-autoencodeurs>Les autoencodeurs</a></li></ul></nav></div></aside></main></body></html>
