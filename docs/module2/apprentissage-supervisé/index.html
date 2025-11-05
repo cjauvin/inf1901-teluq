@@ -47,7 +47,7 @@ quand cette ligne de décision sépare parfaitement les points rouges des points
 bleus, ce qui correspond à une valeur de 0% pour la fonction d&rsquo;erreur (elle-même
 représentée par la barre à droite, et distincte de la fonction de décision). Ce
 n&rsquo;est pas toujours possible ! Notez qu&rsquo;il est possible d&rsquo;ajouter ou d&rsquo;enlever
-des points, et de les déplacer, en utilisant la souris.</p><iframe src=https://cjauvin.github.io/inf1901-teluq/html/applets/logistic-regression.html id=applet-1762360904494865993 class=applet-iframe width=100% style=zgotmplz loading=lazy data-iresize=true></iframe><p>Remarquez un détail important : quoiqu&rsquo;on fasse, l&rsquo;erreur ne peut jamais
+des points, et de les déplacer, en utilisant la souris.</p><iframe src=https://cjauvin.github.io/inf1901-teluq/html/applets/logistic-regression.html id=applet-1762364108402383646 class=applet-iframe width=100% style=zgotmplz loading=lazy data-iresize=true></iframe><p>Remarquez un détail important : quoiqu&rsquo;on fasse, l&rsquo;erreur ne peut jamais
 dépasser 50%. Quand on y pense, c&rsquo;est logique, car même si on place la ligne de
 décision à un endroit extrême, qui fait en sorte que TOUS les points se trouvent
 d&rsquo;un côté, il reste que 50% de ceux-ci sont tout de même correctement
@@ -300,7 +300,7 @@ distribués de manière semi-aléatoire, c&rsquo;est à dire qu&rsquo;ils suiven
 la forme d&rsquo;une fonction linéaire implicite, dont les paramètres exacts sont connus de
 l&rsquo;applet interactive, mais non de vous. Votre tâche est d&rsquo;ajuster la fonction
 (donc ses paramètres) de manière à minimiser la fonction d&rsquo;erreur. Notez que la fonction
-de séparation ne peut être <em>que</em> linéaire, c&rsquo;est une contrainte fondamentale de cet algorithme, qui évidemment explique aussi son nom.</p><iframe src=https://cjauvin.github.io/inf1901-teluq/html/applets/linear-regression.html id=applet-1762360904494978243 class=applet-iframe width=100% style=zgotmplz loading=lazy data-iresize=true></iframe><p>Comme vous avez pu le constater dans l&rsquo;exemple interactif ci-dessus, la
+de séparation ne peut être <em>que</em> linéaire, c&rsquo;est une contrainte fondamentale de cet algorithme, qui évidemment explique aussi son nom.</p><iframe src=https://cjauvin.github.io/inf1901-teluq/html/applets/linear-regression.html id=applet-1762364108402508951 class=applet-iframe width=100% style=zgotmplz loading=lazy data-iresize=true></iframe><p>Comme vous avez pu le constater dans l&rsquo;exemple interactif ci-dessus, la
 régression linéaire vise à trouver la ligne droite qui &ldquo;colle&rdquo; le mieux à un
 ensemble de points dispersés. Contrairement à la classification, où l&rsquo;on sépare
 des groupes en catégories discrètes (comme bleu ou rouge), ici on cherche à
@@ -330,7 +330,7 @@ ligne. Ces distances verticales correspondent exactement aux résidus dont nous
 parlions. Si vous imaginez que chaque point est relié à la ligne par un ressort
 vertical, la position d&rsquo;équilibre de la ligne correspondrait exactement à la
 solution de la régression linéaire. Vous développerez probablement une meilleure
-intuition pour ce processus en manipulant l&rsquo;application interactive suivante :</p><iframe src=https://cjauvin.github.io/inf1901-teluq/html/applets/linear-regression-with-springs.html id=applet-1762360904495010664 class=applet-iframe width=100% style=zgotmplz loading=lazy data-iresize=true></iframe><details><summary>Les mathématiques de la régression linéaire (optionnel)</summary><div class=markdown-inner><p>Mathématiquement, pour $n$ points de données :</p>$$J(m, b) = \frac{1}{n} \sum_{i=1}^{n} (y_i - (m x_i + b))^2$$<p>Cette fonction $J$ est comme une &ldquo;carte topographique&rdquo; de l&rsquo;erreur : pour chaque
+intuition pour ce processus en manipulant l&rsquo;application interactive suivante :</p><iframe src=https://cjauvin.github.io/inf1901-teluq/html/applets/linear-regression-with-springs.html id=applet-1762364108402542514 class=applet-iframe width=100% style=zgotmplz loading=lazy data-iresize=true></iframe><details><summary>Les mathématiques de la régression linéaire (optionnel)</summary><div class=markdown-inner><p>Mathématiquement, pour $n$ points de données :</p>$$J(m, b) = \frac{1}{n} \sum_{i=1}^{n} (y_i - (m x_i + b))^2$$<p>Cette fonction $J$ est comme une &ldquo;carte topographique&rdquo; de l&rsquo;erreur : pour chaque
 paire de valeurs $(m, b)$, elle donne une hauteur représentant le niveau
 d&rsquo;erreur. L&rsquo;objectif est de trouver le point le plus bas de cette carte – les
 valeurs optimales de $m$ et $b$ qui minimisent $J$. Dans l&rsquo;exemple interactif,
