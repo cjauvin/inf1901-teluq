@@ -212,14 +212,11 @@ usage. Nous avons déjà brièvement touché ce sujet dans la section sur les
 
 ![](/images/module3/encoder.png)
 
-
-
+<!--
 Si on revient à l'exemple de nos données qui seraient des images, il est important de
 comprendre que .. zip vs autoenc
 
-
 TODO: Encodeur vs décodeur
-
 
 ## Les réseaux de neurones sur graphes (GNNs)
 
@@ -238,3 +235,4 @@ Variantes : Graph Attention Networks (GAT) qui ajoutent de l'attention pour pond
 Contrairement aux CNNs (pour grilles) ou RNNs (pour séquences), les GNNs gèrent des structures irrégulières. Applications : recommandation (ex. : Netflix), chimie (prédiction de propriétés moléculaires), ou analyse de réseaux sociaux.
 
 TODO: neural machine
+-->
