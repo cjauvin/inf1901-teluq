@@ -351,12 +351,12 @@ indiquée par le tableau suivant :&lt;/p&gt;</description></item><item><title>Go
  &lt;a class="anchor" href="#param%c3%a8tres-linguistiques"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;Pour les travaux notés 2 et 4, nous allons utiliser le tableur en ligne &lt;a href="https://workspace.google.com/intl/en_ca/products/sheets/"&gt;Google
-Sheets&lt;/a&gt; au lieu du choix plus courant
-Excel, car Google Sheets est plus accessible, et le langage de ses formules est
-plus facile à gérer (celui d&amp;rsquo;Excel dépend de la langue et des paramètres
-régionaux de votre système d&amp;rsquo;exploitation). Pour éviter la confusion dans le
-contexte de ce travail, nous devons tout d&amp;rsquo;abord nous assurer que la langue des
-fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p&gt;</description></item><item><title>Les paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique"&gt;
+Sheets&lt;/a&gt; au lieu du
+choix plus courant Excel, car Google Sheets est plus accessible, et le langage
+de ses formules est plus facile à gérer (celui d&amp;rsquo;Excel dépend de la langue et
+des paramètres régionaux de votre système d&amp;rsquo;exploitation). Pour éviter la
+confusion dans le contexte des travaux notés, nous devons tout d&amp;rsquo;abord nous
+assurer que la langue des fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p&gt;</description></item><item><title>Les paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique"&gt;
  Les différents paradigmes de l&amp;rsquo;apprentissage automatique
  &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
