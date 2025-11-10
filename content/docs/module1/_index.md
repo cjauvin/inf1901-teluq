@@ -9,8 +9,8 @@ bookCollapseSection: true
 # Module 1 - Intelligence artificielle
 
 Ce premier module vise à vous habiliter à saisir le sens même de l'évolution de
-l,IA dans le temps et dans l'espace. La démarche pédagogique retenue, basée sur
-trois activités : Visionner une entrevue de Yann Le Cun, effectuer un ensemble
+l'IA dans le temps et dans l'espace. La démarche pédagogique retenue, basée sur
+trois activités : visionner une entrevue de Yann Le Cun, effectuer un ensemble
 de lectures et consolider vos connaissances par un test, vous prépare à réaliser
 un exercice noté de visualisation annotée et interactive de l'évolution de l'IA;
 ce qui est, certes, un excellent exercice pour bien intégrer non seulement
@@ -21,7 +21,7 @@ Ce premier module propose une exploration des enjeux cruciaux de l'intelligence
 artificielle et de son impact sur la société d'aujourd'hui tout en jetant un
 regard sur l'évolution de l'intelligence artificielle du test de Turing (1950)
 qui marque le premier pas vers l'intelligence artificielle à l'émergence des
-grands modèles de langages (LLM) comme GPT-4, d'autre part.
+grands modèles de langages (GML, ou LLM en anglais) comme GPT de OpenAI, d'autre part.
 
 ## Objectifs
 
