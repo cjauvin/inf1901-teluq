@@ -1,9 +1,9 @@
 ---
-title: "Un scénario réaliste"
+title: "Un scénario pour se faire une idée"
 weight: 10
 ---
 
-# Un scénario imaginaire, mais réaliste !
+# Un scénario pour se faire une idée
 
 Imaginez une compagnie où il y a une chaîne de montage avec laquelle on assemble
 des téléviseurs.
