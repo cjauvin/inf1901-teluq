@@ -200,6 +200,35 @@ y a une dégradation de la qualité qui peut être perceptible à des degrés va
 
 ![](/images/module3/jpeg.png)
 
+La compression effectuée par un autoencodeur est pourtant de nature très
+différente. Étant donné qu'il s'agit d'un algorithme d'apprentissage, qui
+traite de manière statistique une série d'exemples (par exemple des images de
+chien), le résultat de la compression est de nature sémantique : la
+représentation compressée obtenue sera interprétable. Par exemple, bien que ça
+ne soit pas garanti, il est très possible que les dimensions de l'espace réduit
+(latent) correspondent à des caractéristiques concrètes pouvant servir à
+l'interprétation d'une image de chien : une dimension correspondant à sa
+couleur, une autre à la position de sa tête, etc. Il est important de comprendre
+que l'espace original de l'image non-compressée, celui des pixels, ne comportent
+_pas_ cette dimension sémantique. Il en est de même de la compression JPEG, qui
+effectue son travail en prenant en considération les données d'un angle plus bas
+niveau, celui des bits d'information. La compression JPEG ne cherche qu'à optimiser
+le ratio entre le poids de l'image et sa qualité, tandis qu'un autoencodeur cherche
+plutôt à optimiser la généralité de la représentation obtenue.
+
+![](/images/module3/encoder.png)
+
+{{% hint info %}}
+
+L'auteur américain de science-fiction [Ted
+Chiang](https://fr.wikipedia.org/wiki/Ted_Chiang) a écrit un texte intéressant
+et provoquant, intitulé [ChatGPT is a blurry JPEG of the
+web](https://archive.ph/VbwGB) (en anglais seulement) qui traite de cette
+dualité entre l'intelligence humaine et artificielle, du point de vue d'une
+analogie avec la compression logicielle.
+
+{{% /hint %}}
+
 Les espaces latents sont un sujet très riches et profonds, et ils ont de
 nombreux usages en apprentissage automatique. Par exemple, nous verrons que les
 transformers, qui sont un type de réseaux de neurones profonds qui servent de
@@ -209,8 +238,13 @@ usage. Nous avons déjà brièvement touché ce sujet dans la section sur les
 "docs/module2/les-données/#vers-des-représentations-plus-compactes--les-plongements-lexicaux"
 >}}) (word embeddings).
 
+<!--
 
-![](/images/module3/encoder.png)
+## Les machines de Turing neuronales (ou dérivables)
+
+La dernière architecture que nous allons explorer dans ce module est celle des machines de Turing neuronales
+
+-->
 
 <!--
 Si on revient à l'exemple de nos données qui seraient des images, il est important de
