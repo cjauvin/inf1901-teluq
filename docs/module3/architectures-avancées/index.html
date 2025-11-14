@@ -142,12 +142,31 @@ reconstruction) des données.</p><p>Quand on pense à la compression d&rsquo;une
 d&rsquo;un mécanisme similaire à la compression
 <a href=https://fr.wikipedia.org/wiki/JPEG>JPEG</a> par exemple, qui réduit la taille
 d&rsquo;un fichier d&rsquo;image, tout en la conservant visuellement identique (malgré qu&rsquo;il
-y a une dégradation de la qualité qui peut être perceptible à des degrés variés).</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/jpeg.png alt></p><p>Les espaces latents sont un sujet très riches et profonds, et ils ont de
+y a une dégradation de la qualité qui peut être perceptible à des degrés variés).</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/jpeg.png alt></p><p>La compression effectuée par un autoencodeur est pourtant de nature très
+différente. Étant donné qu&rsquo;il s&rsquo;agit d&rsquo;un algorithme d&rsquo;apprentissage, qui
+traite de manière statistique une série d&rsquo;exemples (par exemple des images de
+chien), le résultat de la compression est de nature sémantique : la
+représentation compressée obtenue sera interprétable. Par exemple, bien que ça
+ne soit pas garanti, il est très possible que les dimensions de l&rsquo;espace réduit
+(latent) correspondent à des caractéristiques concrètes pouvant servir à
+l&rsquo;interprétation d&rsquo;une image de chien : une dimension correspondant à sa
+couleur, une autre à la position de sa tête, etc. Il est important de comprendre
+que l&rsquo;espace original de l&rsquo;image non-compressée, celui des pixels, ne comportent
+<em>pas</em> cette dimension sémantique. Il en est de même de la compression JPEG, qui
+effectue son travail en prenant en considération les données d&rsquo;un angle plus bas
+niveau, celui des bits d&rsquo;information. La compression JPEG ne cherche qu&rsquo;à optimiser
+le ratio entre le poids de l&rsquo;image et sa qualité, tandis qu&rsquo;un autoencodeur cherche
+plutôt à optimiser la généralité de la représentation obtenue.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/encoder.png alt></p><blockquote class="book-hint info"><p>L&rsquo;auteur américain de science-fiction <a href=https://fr.wikipedia.org/wiki/Ted_Chiang>Ted
+Chiang</a> a écrit un texte intéressant
+et provoquant, intitulé <a href=https://archive.ph/VbwGB>ChatGPT is a blurry JPEG of the
+web</a> (en anglais seulement) qui traite de cette
+dualité entre l&rsquo;intelligence humaine et artificielle, du point de vue d&rsquo;une
+analogie avec la compression logicielle.</p></blockquote><p>Les espaces latents sont un sujet très riches et profonds, et ils ont de
 nombreux usages en apprentissage automatique. Par exemple, nous verrons que les
 transformers, qui sont un type de réseaux de neurones profonds qui servent de
 fondements aux grands modèles de langage (comme ChatGPT par exemple), en font
 usage. Nous avons déjà brièvement touché ce sujet dans la section sur les
-<a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/#vers-des-représentations-plus-compactes--les-plongements-lexicaux>placements lexicaux</a> (word embeddings).</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/encoder.png alt></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><div class="flex flex-wrap justify-between"><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/ class="flex align-center float-left book-icon"><img src=https://cjauvin.github.io/inf1901-teluq/svg/backward.svg alt=Previous title=3Blue1Brown>
+<a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/#vers-des-représentations-plus-compactes--les-plongements-lexicaux>placements lexicaux</a> (word embeddings).</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><div class="flex flex-wrap justify-between"><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/02-3blue1brown/ class="flex align-center float-left book-icon"><img src=https://cjauvin.github.io/inf1901-teluq/svg/backward.svg alt=Previous title=3Blue1Brown>
 <span>3Blue1Brown</span>
 </a><a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/ class="flex align-center float-right book-icon"><span>Travail noté 3</span>
 <img src=https://cjauvin.github.io/inf1901-teluq/svg/forward.svg alt=Next title="Travail noté 3"></a></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#les-réseaux-de-neurones-convolutifs-cnns>Les réseaux de neurones convolutifs (CNNs)</a><ul><li><a href=#imagenet>ImageNet</a></li><li><a href=#avantages-et-applications>Avantages et applications</a></li></ul></li><li><a href=#les-réseaux-de-neurones-récurrents-rnns-et-leurs-variantes>Les réseaux de neurones récurrents (RNNs) et leurs variantes</a></li><li><a href=#les-autoencodeurs>Les autoencodeurs</a></li></ul></nav></div></aside></main></body></html>
