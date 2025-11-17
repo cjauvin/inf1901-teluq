@@ -238,6 +238,111 @@ usage. Nous avons déjà brièvement touché ce sujet dans la section sur les
 "docs/module2/les-données/#vers-des-représentations-plus-compactes--les-plongements-lexicaux"
 >}}) (word embeddings).
 
+## Les réseaux de neurones pour les graphes
+
+Nous avons vu différents exemples de données que peuvent traiter les réseaux de
+neurones : des images, des séquences de mots ou de notes (un roman, ou une pièce
+musicale), des données tabulaires dans un tableur (Excel), etc. Mais les
+possibilités ne s'arrêtent pas là. Il est également possible de représenter des
+types de données plus abstraits, comme des graphes mathématiques, une structure
+de données très couramment utilisée en informatique. Un graphe est composé de deux types d'éléments :
+
+* Des sommets
+* Des arêtes qui relient les sommets (et qui peuvent avoir ou non une direction)
+
+![](/images/module3/graph.png)
+
+Notons tout d'abord qu'un réseau de neurones est, en soi, _déjà un graphe ! Les
+sommets sont les neurones, et les poids (paramètres) sont les arêtes. Mais le problème auquel on fait face est ici comment
+_représenter_ un graphe (la structure de données) par un mécanisme
+(le réseau de neurones) qui est lui-même un graphe. Il s'agit donc, en quelque
+sorte, d'un graphe dans un graphe. Mais pourquoi voudrait-on faire cela? Parce
+que les graphes sont des objets mathématiques puissants et versatiles, qui ont de nombreux usages. Avec un
+graphe, il est par exemple possible de représenter un réseau de connaissances
+Facebook, et de suggérer de nouveaux liens. Il est également possible de
+modéliser les transports en commun d'une ville, ou des molécules pouvant servir
+à fabriquer de nouveaux médicaments. Un graphe encode une structure, avec des
+objets et leurs relations.
+
+Un GNN (graph neural network) est donc un type de réseau de neurones capable de
+représenter un graphe (dont la structure est connue d'avance), et de répondre à
+certaines "questions" (ou requêtes) le concernant. Examinons tout d'abord
+comment il est possible de représenter un graphe, à l'aide d'un réseau de
+neurones (qui est lui-même une sorte de graphe, rappelons-le). Considérons tout
+d'abord comment représenter les sommets. Supposons que nous ayons un graphe
+simple avec trois sommets (`A`, `B` et `C`) et deux arêtes non-dirigées (`A--B`
+et `A--C`). Chaque sommet est tout d'abord représenté par une liste de valeurs
+de taille fixe. Il est important de comprendre la nature de ces valeurs numériques, qui sont au coeur du mécanisme de représentation. On peut
+considérer que toutes ces définitions sont équivalentes :
+
+* Une liste de $N$ nombres
+* Un vecteur de dimension $N$
+* Un plongement vectoriel (de nature très semblable aux [plongements lexicaux]({{< relref
+"docs/module2/les-données/#vers-des-représentations-plus-compactes--les-plongements-lexicaux"
+>}}) que nous avons déjà rencontrés dans un chapitre précédent)
+* En anglais, les termes "features" et "embeddings" (la traduction technique de "plongement", un terme très rare en français)
+
+Dans notre exemple, considérons des plongements de dimension $N=2$, choisis pour représenter
+chaque sommet. Au départ, ces valeurs sont arbitraires et aléatoires : elles ne veulent rien dire, en soi.
+
+![](/images/module3/nodes.png)
+
+Nous avons donc là notre première couche de neurones, qui représente les sommets de notre graphe grâce aux plongements :
+
+![](/images/module3/node_embeddings.png)
+
+Comment est-il maintenant possible de représenter les arêtes? Intuitivement, il semble moins
+facile de représenter les arêtes que les sommets, car il s'agit d'objets dont la rôle est
+de relier deux sommets (contrairement aux sommets, qui sont des objets plus simples). Comment peut-on représenter une relation entre deux objets?
+Le mécanisme utilisé pour faire cela s'appelle le "passage de messages" (message
+passing), avec lequel chaque sommet envoie un "message" à ses voisins connectés
+par des arêtes. Ce "message" numérique permet au sommet de mettre à jour sa
+représentation, en prenant en considération celle de ses sommets voisins. La couche de départ est transformée par les messages, et ses valeurs sont donc changées.
+
+![](/images/module3/messages.png)
+
+Un _message_ est une opération mathématique simple entre les valeurs concernées : un
+message entre `A` et `C` par exemple pourrait être simplement la somme (ou
+encore, la moyenne) des valeurs (plongements) de `A` et des valeurs de `C`. Une fois cette
+transformation effectuée (tous les messages passés et traités), on fait intervenir une couche de paramètres (une matrice $W$),
+dont une des deux dimensions correspondra à la taille de notre couche d'entrée
+transformée (6 dans notre exemple), une fois que la représentation des sommets a
+été transformée par les "messages" envoyés à ses voisins (qui sont déterminés
+par la structure du graphe, donc ses arêtes).
+
+![](/images/module3/gnn_h.png)
+
+La reste de notre construction du GNN ressemble plus à un réseau de neurones
+traditionnel : la couche d'entrée transformée par les messages ($T$, de
+dimension 6) est ensuite multipliée par une matrice de paramètres ($W$, de
+dimension 6 x 8, qui seront "appris" par l’entraînement du modèle) pour résulter
+en une couche cachée $H$ (de dimension 8).
+
+Étudions maintenant un vrai problème, qui peut être traité par un GNN. Le jeu de données Cora
+comprend :
+
+* Une série de 2708 articles scientifiques (les sommets)
+* Un vocabulaire de 1433 mots pour décrire chaque article
+* 5429 liens (les arêtes) pour relier les articles entre eux
+* 7 grandes catégories pour classifier les articles
+
+![](/images/module3/cora.png)
+
+La seule différence entre le modèle proposé dans un [article séminal](https://arxiv.org/abs/1609.02907) et celui que nous
+avons étudié ci-haut, se trouve au niveau de la représentation des sommets : dans l'article, les sommets sont représentés
+par des vecteurs de 1433 éléments qui ne sont pas des plongements, mais bien des vecteurs "creux" (ou parcimonieux, "sparse" en anglais)
+qui représentent de manière littérale la présence ou l'absence d'un mot. Nous avons tout d'abord rencontré cette idée dans la
+section précédente sur les [sacs de mots]({{< relref "docs/module2/les-données/##lespace-lexical-vectoriel" >}}). Un sac de mots, est "creux" dans le sens
+où, pour un article ou document donné, la plupart des mots du vocabulaire ne sont pas utilisés (donc leur valeur est zéro, et c'est seulement pour certains mots particuliers que la
+valeur sera autre que zéro). En contraste, un plongement est "dense" car les dimensions ne représentent pas des notions concrètes et discrètes. Chaque dimension d'un plongement
+correspond donc à une valeur non-zéro.
+
+La tâche du réseau de neurones, dans ce cas particulier, est très classique : il s'agit de classifier chaque article en l'une de sept grandes classes (ou thèmes), connues d'avance.
+Le modèle particulier décrit dans l'article parvient à le faire avec une précision de 81%. Il est important de comprendre que ce résultat est bien supérieur à ce qui aurait
+été obtenu grâce à un modèle plus classique, qui utiliserait seulement les mots pour décrire les articles, au lieu de considérer les mots et les liens entre les articles. Le
+fait de considérer les liens, la structure entre les objets que l'on tente de modéliser, apporte une dimension beaucoup plus riche, qui permet de résoudre des problèmes de manière
+plus efficace.
+
 <!--
 
 ## Les machines de Turing neuronales (ou dérivables)
