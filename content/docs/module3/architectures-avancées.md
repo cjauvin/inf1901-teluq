@@ -87,7 +87,7 @@ Applications courantes : reconnaissance d'objets (ex. : ResNet pour la
 classification d'images), détection faciale, ou même dans les voitures autonomes
 pour analyser les flux vidéo en temps réel.
 
-## Les réseaux de neurones récurrents (RNNs) et leurs variantes
+## Les réseaux de neurones récurrents (RNNs)
 
 Tous les types de données d'entrée pour les réseaux de neurones que nous avons
 vus jusqu'à présent étaient statiques, fixés dans le temps : une image, un point
@@ -238,7 +238,7 @@ usage. Nous avons déjà brièvement touché ce sujet dans la section sur les
 "docs/module2/les-données/#vers-des-représentations-plus-compactes--les-plongements-lexicaux"
 >}}) (word embeddings).
 
-## Les réseaux de neurones pour les graphes
+## Les réseaux de neurones pour les graphes (GNNs)
 
 Nous avons vu différents exemples de données que peuvent traiter les réseaux de
 neurones : des images, des séquences de mots ou de notes (un roman, ou une pièce
@@ -343,35 +343,59 @@ Le modèle particulier décrit dans l'article parvient à le faire avec une pré
 fait de considérer les liens, la structure entre les objets que l'on tente de modéliser, apporte une dimension beaucoup plus riche, qui permet de résoudre des problèmes de manière
 plus efficace.
 
-<!--
+## Les machines de Turing neuronales (NTMs)
 
-## Les machines de Turing neuronales (ou dérivables)
+La dernière architecture avancée que nous allons explorer dans ce module est
+celle des machines de Turing neuronales (NTM, ou Neural Turing Machines en
+anglais). Nous avons vu, avec les RNNs et les GNNs qu'il était possible pour un
+réseau de neurones de traiter des structures de données plus abstraites, comme
+des séquences ou mêmes des graphes. Il est même possible de traiter des
+structures encore plus générales. Une [machine de
+Turing](https://fr.wikipedia.org/wiki/Machine_de_Turing) est une idée
+fondamentale en informatique et en mathématiques : la nature fondamentale d'un
+algorithme, c'est-à-dire quelque chose que l'on peut calculer, est d'être une
+sorte de mécanisme très simple, une "machine". Cette machine est en fait un
+modèle théorique, et n'est donc pas une machine dans un sens conventionnel et
+concret. Une bonne manière de se représenter l'essence de cette machine
+théorique particulière est d'imaginer ses composantes fondamentales :
 
-La dernière architecture que nous allons explorer dans ce module est celle des machines de Turing neuronales
+* Un ruban : une longue feuille quadrillée, infinie dans les deux directions. Chaque case contient soit un symbole (par exemple 0 ou 1), soit rien.
+* Une tête de lecture : un petit curseur qui regarde une case du ruban, et qui peut lire, effacer, écrire un symbole.
+* Une table de règles : une feuille avec des consignes du type : “Si tu vois un 0 et que tu es dans l’état A : écris un 1, déplace-toi la tête à droite, passe en état B.”
 
--->
+Ce modèle en apparence simple est extrêmement important et profond en
+informatique, car il permet de comprendre ce qu'est la nature fondamentale d'un
+ordinateur, ce qu'il peut et ne peut faire dans un sens logique profond. Par
+exemple, on peut concevoir un ordinateur pour calculer l'âge probable de la
+Terre, car il est possible de construire une machine de Turing simple (un
+algorithme), qui accomplirait cette tâche. Par contre, il n'est pas possible
+d'écrire un programme $P$ qui permettrait de déterminer si un autre programme
+$P'$ s'arrêtera ou non (sur une entrée particulière), car il possible de
+démontrer mathématiquement que ceci est
+[impossible](https://fr.wikipedia.org/wiki/Probl%C3%A8me_de_l%27arr%C3%AAt). Il
+n'existe tout simplement pas de machine de Turing capable d'accomplir cette
+tâche, car si elle existait, cela constituerait une contradiction logique.
 
-<!--
-Si on revient à l'exemple de nos données qui seraient des images, il est important de
-comprendre que .. zip vs autoenc
+Un programme classique (en dehors donc du contexte de l'apprentissage
+automatique) peut toujours être vu comme une machine de Turing particulière. Par
+contre, pour les modèles d'apprentissage automatique que nous avons vus jusqu'à
+maintenant, la correspondance est moins évidente. Elle est pourtant possible,
+comme l'existence des NTMs le [démontre](https://arxiv.org/abs/1410.5401).
 
-TODO: Encodeur vs décodeur
+![](/images/module3/ntm.png)
 
-## Les réseaux de neurones sur graphes (GNNs)
-
-Les GNNs, ou *Graph Neural Networks*, traitent des données structurées en graphes, comme les réseaux sociaux ou les molécules.
-
-### Principe de base
-
-Un GNN propage des informations à travers les nœuds et arêtes d'un graphe. Chaque nœud agrège les features de ses voisins via des convolutions graphiques (ex. : Graph Convolutional Networks, GCN). Cela capture les relations structurelles.
-
-Variantes : Graph Attention Networks (GAT) qui ajoutent de l'attention pour pondérer les voisins.
-
-![](/images/module3/gnn.png)
-
-### Avantages et applications
-
-Contrairement aux CNNs (pour grilles) ou RNNs (pour séquences), les GNNs gèrent des structures irrégulières. Applications : recommandation (ex. : Netflix), chimie (prédiction de propriétés moléculaires), ou analyse de réseaux sociaux.
-
-TODO: neural machine
--->
+Il est possible de créer un réseau de neurones capable d'utiliser différentes
+structures de contrôle afin de reproduire un mécanisme similaire à celui d'une
+machine de Turing, donc d'un algorithme classique (comme par exemple un
+algorithme de tri, ou de multiplication). En particulier, un réseau de neurones
+de base n'a pas de "mémoire" au sens computationnel usuel du terme, celui d'un
+programme classique (qui a accès à la mémoire de l'ordinateur, avec des
+variables, etc). Pourtant, avec un NTM, le réseau de neurones acquiert une
+version particulière d'une mémoire, qui fonctionne d'une manière similaire à
+celle d'un ordinateur : il peut y sauvegarder de l'information de manière
+temporaire, qu'il va pouvoir relire plus tard. Il s'agit là d'un croisement
+particulièrement impressionnant entre le modèle computationnel classique et
+l'apprentissage automatique. Il s'agit donc, quelque sorte, d'une version
+"molle" d'un algorithme classique (au sens où l'est un algorithme
+d'apprentissage, qui est moins "rigide" qu'un algorithme classique, de par sa
+nature statistique).
