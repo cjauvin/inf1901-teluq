@@ -398,4 +398,5 @@ particulièrement impressionnant entre le modèle computationnel classique et
 l'apprentissage automatique. Il s'agit donc, quelque sorte, d'une version
 "molle" d'un algorithme classique (au sens où l'est un algorithme
 d'apprentissage, qui est moins "rigide" qu'un algorithme classique, de par sa
-nature statistique).
+nature statistique). Nous allons voir dans le prochain module que l'IA moderne
+tend globalement à aller dans la direction d'innovations de ce genre.
