@@ -299,7 +299,30 @@ mathématique (un symbole dont la valeur ne peut être que &lt;code&gt;0&lt;/cod
 &lt;code&gt;vrai&lt;/code&gt; ou &lt;code&gt;faux&lt;/code&gt; plus spécifiquement en logique) et physique, au niveau de
 l&amp;rsquo;implémentation, soit en terme électrique (mémoire RAM, CPU, disque SSD), de
 magnétisme (disque dur) ou de caractéristiques optiques (CD). Les bits
-&lt;em&gt;représentent&lt;/em&gt; les nombres via la convention de l&amp;rsquo;encodage binaire.&lt;/p&gt;</description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle"&gt;
+&lt;em&gt;représentent&lt;/em&gt; les nombres via la convention de l&amp;rsquo;encodage binaire.&lt;/p&gt;</description></item><item><title>L'algorithme le plus simple</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/</guid><description>&lt;h1 id="lalgorithme-dapprentissage-le-plus-simple-les-k-plus-proches-voisins"&gt;
+ L&amp;rsquo;algorithme d&amp;rsquo;apprentissage le plus simple (les $k$ plus proches voisins)
+ &lt;a class="anchor" href="#lalgorithme-dapprentissage-le-plus-simple-les-k-plus-proches-voisins"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Commençons par étudier le problème le plus fondamental et représentatif de
+l&amp;rsquo;apprentissage automatique, celui de la classification d&amp;rsquo;objets. Par exemple,
+pouvoir dire si l&amp;rsquo;image sur cette photo est celle d&amp;rsquo;un chien, ou d&amp;rsquo;un chat. Si
+on considère de nouveau notre &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/"&gt;scénario initial&lt;/a&gt;, on peut synthétiser la structure du problème
+de la manière suivante :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nous avons à priori une série d&amp;rsquo;&lt;strong&gt;objets&lt;/strong&gt; existants (des données)&lt;/li&gt;
+&lt;li&gt;Chaque objet a des &lt;strong&gt;caractéristiques&lt;/strong&gt; qui le décrivent, ainsi qu&amp;rsquo;une &lt;strong&gt;classe&lt;/strong&gt; (on parle parfois aussi d&amp;rsquo;une &lt;em&gt;étiquette&lt;/em&gt;, ou label en anglais)&lt;/li&gt;
+&lt;li&gt;Il est possible de mesurer la &lt;strong&gt;distance&lt;/strong&gt; qui sépare deux objets (en se basant sur les caractéristiques)&lt;/li&gt;
+&lt;li&gt;Pour un &lt;em&gt;nouvel&lt;/em&gt; objet qu&amp;rsquo;on nous donne, dont on connaît les caractéristiques
+mais &lt;strong&gt;pas&lt;/strong&gt; la classe (parce que personne nous l&amp;rsquo;a donnée), nous aimerions la
+&lt;em&gt;prédire&lt;/em&gt; (la classe)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;L&amp;rsquo;algorithme le plus simple pour faire cela est assurément celui des $k$ plus
+proches voisins ($k$-NN, $k$ Nearest Neighbors). Pour chaque point que l&amp;rsquo;on désire
+classer, il suffit de considérer ses $k$ plus proches voisins (&lt;em&gt;proche&lt;/em&gt;, dans la
+plupart des contextes géométriques, veut dire en terme de la &lt;a href="https://fr.wikipedia.org/wiki/Distance_euclidienne"&gt;distance
+euclidienne&lt;/a&gt;) et de choisir
+la classe majoritaire. L&amp;rsquo;applet interactive suivante illustre ce
+fonctionnement, à l&amp;rsquo;aide de points rouges et bleus en deux dimensions.&lt;/p&gt;</description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle"&gt;
  Qu&amp;rsquo;est-ce qu&amp;rsquo;on veut dire par modèle?
  &lt;a class="anchor" href="#quest-ce-quon-veut-dire-par-mod%c3%a8le"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -399,7 +422,16 @@ hésiter à engager un dialogue avec l&amp;rsquo;agent, dans le but de clarifier
 du problème qui pourraient rester obscurs pour vous. N&amp;rsquo;oubliez pas que le but de
 ce cours est la construction de bons modèles mentaux pour penser à des problèmes
 de modélisation. L&amp;rsquo;agent possède déjà ces modèles mentaux, si vous avez
-développé les vôtres à la fin de ce cours, le but aura clairement été atteint !&lt;/p&gt;</description></item><item><title>Apprentissage non supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</guid><description>&lt;h1 id="lapprentissage-non-supervisé"&gt;
+développé les vôtres à la fin de ce cours, le but aura clairement été atteint !&lt;/p&gt;</description></item><item><title>Évolution du cours</title><link>https://cjauvin.github.io/inf1901-teluq/docs/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/changelog/</guid><description>&lt;h1 id="évolution-du-cours"&gt;
+ Évolution du cours
+ &lt;a class="anchor" href="#%c3%a9volution-du-cours"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;L&amp;rsquo;intelligence artificielle est un sujet qui évolue à une vitesse prodigieuse,
+et le cours INF 1901 tente donc d&amp;rsquo;évoluer lui aussi, avec des changements
+continuels.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;2025-11-24&lt;/em&gt; : Ajout d&amp;rsquo;une &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/"&gt;section&lt;/a&gt; au module 2, sur l&amp;rsquo;algorithme des plus proches voisins et du dilemme biais-variance.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;2025-11-17&lt;/em&gt; : Ajout d&amp;rsquo;architectures neuronales avancées au module 3 : les &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/#les-autoencodeurs"&gt;autoencodeurs&lt;/a&gt;, les &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/#les-réseaux-de-neurones-pour-les-graphes-gnns"&gt;réseaux de neurones pour les graphes&lt;/a&gt;
+ainsi que les &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/#les-machines-de-turing-neuronales-ntms"&gt;machines de Turing neuronales&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Apprentissage non supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</guid><description>&lt;h1 id="lapprentissage-non-supervisé"&gt;
  L&amp;rsquo;apprentissage non supervisé
  &lt;a class="anchor" href="#lapprentissage-non-supervis%c3%a9"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
