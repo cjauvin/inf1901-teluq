@@ -129,7 +129,7 @@ Des résultats récents en apprentissage profond ont toutefois apporté de grand
 surprises, car il semble que ce principe, qui était considéré comme étant
 immuable et indiscutable depuis des décennies, peut être, dans certaines
 circonstances, [remis en
-question](https://en.wikipedia.org/wiki/Double_descent)!
+question](https://en.wikipedia.org/wiki/Double_descent) !
 
 {{% /hint %}}
 
