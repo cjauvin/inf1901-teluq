@@ -179,6 +179,8 @@ capter), il est possible que notre modèle se comporte moins bien, et fasse donc
 plus d'erreurs. Il sera donc peut-être nécessaire de procéder à son
 ré-entraînement.
 
+![](/images/module2/intro-inference.png)
+
 ## En quoi est-ce que ceci constitue de l'intelligence?
 
 Une question valide qui peut persister après cette expérience de pensée est la
