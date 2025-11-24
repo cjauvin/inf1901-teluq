@@ -41,9 +41,12 @@ Pourquoi dit-on que cet algorithme est le plus simple? Parce que contrairement �
 algorithmes d'apprentissage que nous verrons plus tard :
 
 * Il y a un seul paramètres qui doit être "appris" : $k$, soit le nombre de voisins consultés;
-* Il n'y a pas de processus d’entraînement, à proprement parler : dès qu'on a un
-  ensemble de données étiquetées, l'algorithme est prêt à être utilisé; si on ajoute un nouveau point, il est
-  instantanément classé, en fonction de ses $k$ plus proches voisins
+* Bien qu'il y ait un jeu de données d’entraînement, il n'y a pas de processus
+  d’entraînement, à proprement parler (contrairement à la plupart des
+  algorithmes que nous verrons par la suite): dès qu'on a un ensemble de données
+  étiquetées, l'algorithme est prêt à être utilisé; si on ajoute un nouveau
+  point, il est instantanément classé, en fonction de ses $k$ plus proches
+  voisins
 
 {{% hint info %}}
 
@@ -63,31 +66,35 @@ départ, ce qu'il considère comme étant vrai à priori, avant même de commenc
 apprendre. Par exemple, si mon "modèle" du temps estimé pour me rendre au
 travail est que "ça prend toujours 20 minutes", alors dans certains cas, il sera en erreur, car il
 n'aura pas pris en considération le fait qu'il pleut aujourd'hui, ou que c'est
-le jour du Tour de l'Ile à Montréal.
+le jour du Tour de l'Ile à Montréal. C'est un modèle beaucoup trop général, au point où
+il est très peu utile, car trop flou.
 
 La **variance** d'un modèle est l'erreur qui est introduite quand j'essaie de
-bâtir un modèle à partir de _ces_ exemples particuliers (les données
-d’entraînement particulières) plutôt que _ceux-là_. Il s'agit donc de l'erreur
-qui correspond aux variations naturelles, ou accidentelles, qu'on observe dans
-la nature, ce qu'on nomme parfois aussi le **bruit**. Par exemple, si mon
-"modèle" du temps estimé pour me rendre au travail est "20 minutes le lundi",
-"30 minutes le mardi", et ainsi de suite, il est très probable que ce modèle
-colle de trop près à la réalité, et qu'il tente trop de généraliser à partir de
-ce qui n'est, au fond, que des fluctuations aléatoires (le fait que ça m'a pris
-20 minutes pour me rendre au travail lundi passé est assez peu corrélé avec le
-temps que ça me prendra le lundi suivant, et c'est probablement une erreur de
-trop vouloir généraliser).
+bâtir un modèle à partir de _ces_ exemples particuliers (ces données
+d’entraînement particulières, que j'ai possiblement obtenu par hasard) plutôt
+que _ceux-là_. Il s'agit donc de l'erreur qui correspond aux variations
+naturelles, ou accidentelles, qu'on observe dans la nature, ce qu'on nomme
+parfois aussi le **bruit**. Par exemple, si mon "modèle" du temps estimé pour me
+rendre au travail est basé sur mes observations d'une semaine particulière, donc
+: "20 minutes le lundi", "30 minutes le mardi", et ainsi de suite, il est très
+probable que ce modèle colle de trop près à la réalité, et qu'il tente trop de
+généraliser à partir de ce qui n'est, au fond, que des fluctuations aléatoires
+(le fait que ça m'a pris 20 minutes pour me rendre au travail lundi passé est
+assez peu corrélé avec le temps que ça me prendra le lundi suivant, et c'est
+probablement une erreur de trop vouloir généraliser). Ce modèle est trop
+spécifique, pas assez général.
 
-Nous pouvons analyser notre algorithme des plus proches voisins à la lumière de
-ces notions : quand $k$ est petit, la variance du modèle est très élevée, et les
-particularités individuelles des données (le fait que _ce_ point rouge soit
-exactement _ici_, plutôt que _là_) ont une grande importance. On parle ici de
-**sur-apprentissage** (overfitting). À l'inverse, quand $k$ est très grand,
-c'est le biais qui devient très élevé : le modèle prend en considération un très
-grand nombre de facteurs (c-à-d de points) pour prendre une décision, et
-probablement qu'il s'agit d'une généralisation excessive. On parle alors de
-**sous-apprentissage** (underfitting). Le modèle aurait probablement avantage,
-dans ce cas, à considérer les données de manière un peu plus spécifique.
+Nous pouvons donc analyser notre algorithme des plus proches voisins à la
+lumière de ces notions : quand $k$ est petit, la variance du modèle est très
+élevée, et les particularités individuelles des données (le fait que _ce_ point
+rouge soit exactement _ici_, plutôt que _là_) ont une grande importance. On
+parle ici de **sur-apprentissage** (overfitting). À l'inverse, quand $k$ est
+très grand, c'est le biais qui devient très élevé : le modèle prend en
+considération un très grand nombre de facteurs (c-à-d de points) pour prendre
+une décision, et probablement qu'il s'agit d'une généralisation excessive. On
+parle alors de **sous-apprentissage** (underfitting). Le modèle aurait
+probablement avantage, dans ce cas, à considérer les données de manière un peu
+plus spécifique.
 
 On considère en général que ces deux notions sont l'inverse, l'une de l'autre :
 quand le biais d'un modèle augmente, sa variance diminue, et vice versa.
