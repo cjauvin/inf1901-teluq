@@ -42,10 +42,13 @@ plupart des contextes géométriques, veut dire en terme de la <a href=https://f
 euclidienne</a>) et de choisir
 la classe majoritaire. L&rsquo;applet interactive suivante illustre ce
 fonctionnement, à l&rsquo;aide de points rouges et bleus en deux dimensions.</p><p>Dans cet exemple :</p><ul><li>Les caractéristiques des points 2D sont leurs coordonnées $x$ et $y$</li><li>Leurs classes sont <code>rouge</code> ou <code>bleu</code></li><li>La distance entre les points est la <a href=https://fr.wikipedia.org/wiki/Distance_euclidienne>distance euclidienne</a></li><li>Les régions en bleu et rouge pâle correspondent à la classification de tout
-nouveau point ajouté dans cette région (un point apparaît en cliquant)</li></ul><iframe src=https://cjauvin.github.io/inf1901-teluq/html/applets/knn.html id=applet-1763940437092359863 class=applet-iframe width=100% style=zgotmplz loading=lazy data-iresize=true></iframe><p>Pourquoi dit-on que cet algorithme est le plus simple? Parce que contrairement à d&rsquo;autres
-algorithmes d&rsquo;apprentissage que nous verrons plus tard :</p><ul><li>Il y a un seul paramètres qui doit être &ldquo;appris&rdquo; : $k$, soit le nombre de voisins consultés;</li><li>Il n&rsquo;y a pas de processus d’entraînement, à proprement parler : dès qu&rsquo;on a un
-ensemble de données étiquetées, l&rsquo;algorithme est prêt à être utilisé; si on ajoute un nouveau point, il est
-instantanément classé, en fonction de ses $k$ plus proches voisins</li></ul><blockquote class="book-hint info"><p>Dans un sens, les données d’entraînement, accompagnées d&rsquo;un choix de valeur pour
+nouveau point ajouté dans cette région (un point apparaît en cliquant)</li></ul><iframe src=https://cjauvin.github.io/inf1901-teluq/html/applets/knn.html id=applet-1763994029115968050 class=applet-iframe width=100% style=zgotmplz loading=lazy data-iresize=true></iframe><p>Pourquoi dit-on que cet algorithme est le plus simple? Parce que contrairement à d&rsquo;autres
+algorithmes d&rsquo;apprentissage que nous verrons plus tard :</p><ul><li>Il y a un seul paramètres qui doit être &ldquo;appris&rdquo; : $k$, soit le nombre de voisins consultés;</li><li>Bien qu&rsquo;il y ait un jeu de données d’entraînement, il n&rsquo;y a pas de processus
+d’entraînement, à proprement parler (contrairement à la plupart des
+algorithmes que nous verrons par la suite): dès qu&rsquo;on a un ensemble de données
+étiquetées, l&rsquo;algorithme est prêt à être utilisé; si on ajoute un nouveau
+point, il est instantanément classé, en fonction de ses $k$ plus proches
+voisins</li></ul><blockquote class="book-hint info"><p>Dans un sens, les données d’entraînement, accompagnées d&rsquo;un choix de valeur pour
 $k$, constitue l&rsquo;algorithme, ou le modèle lui-même.</p></blockquote><h2 id=le-compromis-ou-dilemme-biais-variance>Le compromis, ou dilemme biais-variance
 <a class=anchor href=#le-compromis-ou-dilemme-biais-variance>#</a></h2><p>Nous allons maintenant introduire deux notions fondamentales en apprentissage
 automatique, qui vont nous permettre d&rsquo;en comprendre l&rsquo;enjeu, ou la difficulté
@@ -54,27 +57,24 @@ départ, ce qu&rsquo;il considère comme étant vrai à priori, avant même de c
 apprendre. Par exemple, si mon &ldquo;modèle&rdquo; du temps estimé pour me rendre au
 travail est que &ldquo;ça prend toujours 20 minutes&rdquo;, alors dans certains cas, il sera en erreur, car il
 n&rsquo;aura pas pris en considération le fait qu&rsquo;il pleut aujourd&rsquo;hui, ou que c&rsquo;est
-le jour du Tour de l&rsquo;Ile à Montréal.</p><p>La <strong>variance</strong> d&rsquo;un modèle est l&rsquo;erreur qui est introduite quand j&rsquo;essaie de
-bâtir un modèle à partir de <em>ces</em> exemples particuliers (les données
-d’entraînement particulières) plutôt que <em>ceux-là</em>. Il s&rsquo;agit donc de l&rsquo;erreur
-qui correspond aux variations naturelles, ou accidentelles, qu&rsquo;on observe dans
-la nature, ce qu&rsquo;on nomme parfois aussi le <strong>bruit</strong>. Par exemple, si mon
-&ldquo;modèle&rdquo; du temps estimé pour me rendre au travail est &ldquo;20 minutes le lundi&rdquo;,
-&ldquo;30 minutes le mardi&rdquo;, et ainsi de suite, il est très probable que ce modèle
-colle de trop près à la réalité, et qu&rsquo;il tente trop de généraliser à partir de
-ce qui n&rsquo;est, au fond, que des fluctuations aléatoires (le fait que ça m&rsquo;a pris
-20 minutes pour me rendre au travail lundi passé est assez peu corrélé avec le
-temps que ça me prendra le lundi suivant, et c&rsquo;est probablement une erreur de
-trop vouloir généraliser).</p><p>Nous pouvons analyser notre algorithme des plus proches voisins à la lumière de
-ces notions : quand $k$ est petit, la variance du modèle est très élevée, et les
-particularités individuelles des données (le fait que <em>ce</em> point rouge soit
-exactement <em>ici</em>, plutôt que <em>là</em>) ont une grande importance. On parle ici de
-<strong>sur-apprentissage</strong> (overfitting). À l&rsquo;inverse, quand $k$ est très grand,
-c&rsquo;est le biais qui devient très élevé : le modèle prend en considération un très
-grand nombre de facteurs (c-à-d de points) pour prendre une décision, et
-probablement qu&rsquo;il s&rsquo;agit d&rsquo;une généralisation excessive. On parle alors de
-<strong>sous-apprentissage</strong> (underfitting). Le modèle aurait probablement avantage,
-dans ce cas, à considérer les données de manière un peu plus spécifique.</p><p>On considère en général que ces deux notions sont l&rsquo;inverse, l&rsquo;une de l&rsquo;autre :
+le jour du Tour de l&rsquo;Ile à Montréal. C&rsquo;est un modèle beaucoup trop général, au point où
+il est très peu utile, car trop flou.</p><dl><dt>La <strong>variance</strong> d&rsquo;un modèle est l&rsquo;erreur qui est introduite quand j&rsquo;essaie de</dt><dt>bâtir un modèle à partir de <em>ces</em> exemples particuliers (ces données</dt><dt>d’entraînement particulières, que j&rsquo;ai possiblement obtenu par hasard) plutôt</dt><dt>que <em>ceux-là</em>. Il s&rsquo;agit donc de l&rsquo;erreur qui correspond aux variations</dt><dt>naturelles, ou accidentelles, qu&rsquo;on observe dans la nature, ce qu&rsquo;on nomme</dt><dt>parfois aussi le <strong>bruit</strong>. Par exemple, si mon &ldquo;modèle&rdquo; du temps estimé pour me</dt><dt>rendre au travail est basé sur mes observations d&rsquo;une semaine particulière, donc</dt><dd>&ldquo;20 minutes le lundi&rdquo;, &ldquo;30 minutes le mardi&rdquo;, et ainsi de suite, il est très
+probable que ce modèle colle de trop près à la réalité, et qu&rsquo;il tente trop de
+généraliser à partir de ce qui n&rsquo;est, au fond, que des fluctuations aléatoires
+(le fait que ça m&rsquo;a pris 20 minutes pour me rendre au travail lundi passé est
+assez peu corrélé avec le temps que ça me prendra le lundi suivant, et c&rsquo;est
+probablement une erreur de trop vouloir généraliser). Ce modèle est trop
+spécifique, pas assez général.</dd></dl><p>Nous pouvons donc analyser notre algorithme des plus proches voisins à la
+lumière de ces notions : quand $k$ est petit, la variance du modèle est très
+élevée, et les particularités individuelles des données (le fait que <em>ce</em> point
+rouge soit exactement <em>ici</em>, plutôt que <em>là</em>) ont une grande importance. On
+parle ici de <strong>sur-apprentissage</strong> (overfitting). À l&rsquo;inverse, quand $k$ est
+très grand, c&rsquo;est le biais qui devient très élevé : le modèle prend en
+considération un très grand nombre de facteurs (c-à-d de points) pour prendre
+une décision, et probablement qu&rsquo;il s&rsquo;agit d&rsquo;une généralisation excessive. On
+parle alors de <strong>sous-apprentissage</strong> (underfitting). Le modèle aurait
+probablement avantage, dans ce cas, à considérer les données de manière un peu
+plus spécifique.</p><p>On considère en général que ces deux notions sont l&rsquo;inverse, l&rsquo;une de l&rsquo;autre :
 quand le biais d&rsquo;un modèle augmente, sa variance diminue, et vice versa.
 L&rsquo;apprentissage automatique constitue donc l&rsquo;art de trouver un bon compromis
 entre ces deux extrêmes.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/bias-vs-variance.png alt></p><h2 id=deux-types-derreur>Deux types d&rsquo;erreur
