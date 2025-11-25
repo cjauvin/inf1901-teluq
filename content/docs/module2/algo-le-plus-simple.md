@@ -75,8 +75,8 @@ d’entraînement particulières, que j'ai possiblement obtenu par hasard) plut�
 que _ceux-là_. Il s'agit donc de l'erreur qui correspond aux variations
 naturelles, ou accidentelles, qu'on observe dans la nature, ce qu'on nomme
 parfois aussi le **bruit**. Par exemple, si mon "modèle" du temps estimé pour me
-rendre au travail est basé sur mes observations d'une semaine particulière, donc
-: "20 minutes le lundi", "30 minutes le mardi", et ainsi de suite, il est très
+rendre au travail est basé sur mes observations d'une semaine particulière, donc :
+"20 minutes le lundi", "30 minutes le mardi", et ainsi de suite, il est très
 probable que ce modèle colle de trop près à la réalité, et qu'il tente trop de
 généraliser à partir de ce qui n'est, au fond, que des fluctuations aléatoires
 (le fait que ça m'a pris 20 minutes pour me rendre au travail lundi passé est
@@ -88,13 +88,27 @@ Nous pouvons donc analyser notre algorithme des plus proches voisins à la
 lumière de ces notions : quand $k$ est petit, la variance du modèle est très
 élevée, et les particularités individuelles des données (le fait que _ce_ point
 rouge soit exactement _ici_, plutôt que _là_) ont une grande importance. On
-parle ici de **sur-apprentissage** (overfitting). À l'inverse, quand $k$ est
-très grand, c'est le biais qui devient très élevé : le modèle prend en
-considération un très grand nombre de facteurs (c-à-d de points) pour prendre
-une décision, et probablement qu'il s'agit d'une généralisation excessive. On
-parle alors de **sous-apprentissage** (underfitting). Le modèle aurait
-probablement avantage, dans ce cas, à considérer les données de manière un peu
-plus spécifique.
+parle ici de **sur-apprentissage** (overfitting). Visuellement, on peut
+constater ceci en considérant que la ligne de décision (l'endroit où la zone
+rouge pâle du fond devient bleue pâle, et qui marque le classement de tout
+nouveau point éventuel) est complexe et fragmentée, car elle épouse presque
+parfaitement les particularités de ce jeu de données particulier, afin d'éviter
+toute erreur (et d'ailleurs on remarque aussi que cette configuration change
+complètement, dès qu'on régénère de nouvelles données aléatoires).
+
+![](/images/module2/knn-small-k.png)
+
+À l'inverse, quand $k$ est très grand, c'est le biais qui devient très élevé :
+le modèle prend en considération un très grand nombre de facteurs (c-à-d de
+points) pour prendre une décision, et probablement qu'il s'agit d'une
+généralisation excessive. On parle alors de **sous-apprentissage**
+(underfitting). La ligne de décision entre les zones rouges et bleues devient
+alors plus linéaire, et moins changeante, car elle représente une décision
+moyenne, plus tolérante aux erreurs potentielles avec les données
+d’entraînement. Le modèle aurait probablement avantage, dans ce cas, à
+considérer les données de manière un peu plus spécifique.
+
+![](/images/module2/knn-big-k.png)
 
 On considère en général que ces deux notions sont l'inverse, l'une de l'autre :
 quand le biais d'un modèle augmente, sa variance diminue, et vice versa.
