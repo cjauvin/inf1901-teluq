@@ -68,7 +68,7 @@ de la manière suivante :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Nous avons à priori une série d&amp;rsquo;&lt;strong&gt;objets&lt;/strong&gt; existants (des données)&lt;/li&gt;
 &lt;li&gt;Chaque objet a des &lt;strong&gt;caractéristiques&lt;/strong&gt; qui le décrivent, ainsi qu&amp;rsquo;une &lt;strong&gt;classe&lt;/strong&gt; (on parle parfois aussi d&amp;rsquo;une &lt;em&gt;étiquette&lt;/em&gt;, ou label en anglais)&lt;/li&gt;
-&lt;li&gt;Il est possible de mesurer la &lt;strong&gt;distance&lt;/strong&gt; qui sépare deux objets (en se basant sur les caractéristiques)&lt;/li&gt;
+&lt;li&gt;Il est possible de mesurer la &lt;strong&gt;distance&lt;/strong&gt; qui sépare deux objets (en se basant sur les caractéristiques); cette distance peut être vue comme une mesure de _similarité, à quel point les deux objets sont semblables&lt;/li&gt;
 &lt;li&gt;Pour un &lt;em&gt;nouvel&lt;/em&gt; objet qu&amp;rsquo;on nous donne, dont on connaît les caractéristiques
 mais &lt;strong&gt;pas&lt;/strong&gt; la classe (parce que personne nous l&amp;rsquo;a donnée), nous aimerions la
 &lt;em&gt;prédire&lt;/em&gt; (la classe)&lt;/li&gt;
