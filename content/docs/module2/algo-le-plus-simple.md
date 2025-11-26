@@ -14,7 +14,7 @@ de la manière suivante :
 
 * Nous avons à priori une série d'**objets** existants (des données)
 * Chaque objet a des **caractéristiques** qui le décrivent, ainsi qu'une **classe** (on parle parfois aussi d'une _étiquette_, ou label en anglais)
-* Il est possible de mesurer la **distance** qui sépare deux objets (en se basant sur les caractéristiques)
+* Il est possible de mesurer la **distance** qui sépare deux objets (en se basant sur les caractéristiques); cette distance peut être vue comme une mesure de _similarité, à quel point les deux objets sont semblables
 * Pour un _nouvel_ objet qu'on nous donne, dont on connaît les caractéristiques
   mais **pas** la classe (parce que personne nous l'a donnée), nous aimerions la
   _prédire_ (la classe)
