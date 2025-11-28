@@ -317,12 +317,15 @@ mais &lt;strong&gt;pas&lt;/strong&gt; la classe (parce que personne nous l&amp;r
 &lt;em&gt;prédire&lt;/em&gt; (la classe)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;L&amp;rsquo;algorithme le plus simple pour faire cela est assurément celui des $k$ plus
-proches voisins ($k$-NN, $k$ Nearest Neighbors). Pour chaque point que l&amp;rsquo;on désire
-classer, il suffit de considérer ses $k$ plus proches voisins (&lt;em&gt;proche&lt;/em&gt;, dans la
-plupart des contextes géométriques, veut dire en terme de la &lt;a href="https://fr.wikipedia.org/wiki/Distance_euclidienne"&gt;distance
-euclidienne&lt;/a&gt;) et de choisir
-la classe majoritaire. L&amp;rsquo;applet interactive suivante illustre ce
-fonctionnement, à l&amp;rsquo;aide de points rouges et bleus en deux dimensions.&lt;/p&gt;</description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle"&gt;
+proches voisins ($k$-NN, $k$ Nearest Neighbors). Pour chaque point que l&amp;rsquo;on
+désire classifier, il suffit de considérer ses $k$ plus proches voisins
+(&lt;em&gt;proche&lt;/em&gt;, dans la plupart des contextes géométriques, veut dire en terme de la
+&lt;a href="https://fr.wikipedia.org/wiki/Distance_euclidienne"&gt;distance euclidienne&lt;/a&gt;) et
+de choisir la classe majoritaire. Notez que cet algorithme pourrait s&amp;rsquo;appeler
+également les $k$ &lt;em&gt;voisins les plus semblables&lt;/em&gt;, car la distance peut également
+être interprétée en tant que mesure de similarité. L&amp;rsquo;applet interactive suivante
+illustre ce fonctionnement, à l&amp;rsquo;aide de points rouges et bleus en deux
+dimensions.&lt;/p&gt;</description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle"&gt;
  Qu&amp;rsquo;est-ce qu&amp;rsquo;on veut dire par modèle?
  &lt;a class="anchor" href="#quest-ce-quon-veut-dire-par-mod%c3%a8le"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
