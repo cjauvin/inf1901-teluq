@@ -20,12 +20,15 @@ de la manière suivante :
   _prédire_ (la classe)
 
 L'algorithme le plus simple pour faire cela est assurément celui des $k$ plus
-proches voisins ($k$-NN, $k$ Nearest Neighbors). Pour chaque point que l'on désire
-classer, il suffit de considérer ses $k$ plus proches voisins (_proche_, dans la
-plupart des contextes géométriques, veut dire en terme de la [distance
-euclidienne](https://fr.wikipedia.org/wiki/Distance_euclidienne)) et de choisir
-la classe majoritaire. L'applet interactive suivante illustre ce
-fonctionnement, à l'aide de points rouges et bleus en deux dimensions.
+proches voisins ($k$-NN, $k$ Nearest Neighbors). Pour chaque point que l'on
+désire classifier, il suffit de considérer ses $k$ plus proches voisins
+(_proche_, dans la plupart des contextes géométriques, veut dire en terme de la
+[distance euclidienne](https://fr.wikipedia.org/wiki/Distance_euclidienne)) et
+de choisir la classe majoritaire. Notez que cet algorithme pourrait s'appeler
+également les $k$ _voisins les plus semblables_, car la distance peut également
+être interprétée en tant que mesure de similarité. L'applet interactive suivante
+illustre ce fonctionnement, à l'aide de points rouges et bleus en deux
+dimensions.
 
 Dans cet exemple :
 

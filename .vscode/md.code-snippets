@@ -16,7 +16,7 @@
 	// 	"description": "Log output to console"
 	// }
 	"hugo_relref": {
-        "prefix": "relref",
+        "prefix": "hugo_relref",
         "body": [
 			"({{< relref \"docs/module..$0\" >}})",
         ],
