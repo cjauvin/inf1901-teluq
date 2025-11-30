@@ -18,9 +18,9 @@ de manière interactive et intuitive le fonctionnement des réseaux de neurones.
 
 2. Répondez de manière claire et précise aux questions d'interprétation dans un fichier PDF (**Attention&nbsp;: aucun autre format que PDF ne sera accepté**).
 
-<div style="transform: scale(0.8); transform-origin: top left; height: 600px">
-  <iframe src="/html/playground/index.html#dataset=gauss&networkShape=&showTestData_hide=true&percTrainData_hide=true&batchSize_hide=true&dataset_hide=false&activation_hide=true&problem_hide=false&regularization_hide=true&regularizationRate_hide=true&learningRate_hide=true&discretize_hide=true" width="150%" height="750px" style="border: none;"></iframe>
-</div>
+{{< applet src="/html/playground/index.html#dataset=gauss&networkShape=&showTestData_hide=true&percTrainData_hide=true&batchSize_hide=true&dataset_hide=false&activation_hide=true&problem_hide=false&regularization_hide=true&regularizationRate_hide=true&learningRate_hide=true&discretize_hide=true" width="150%" scale="0.8" >}}
+
+aaa
 
 ## Instructions et questions d'interprétation
 
