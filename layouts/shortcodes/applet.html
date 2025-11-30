@@ -12,14 +12,13 @@
 {{/* Flag the page so we load the library once */}}
 {{- .Page.Scratch.Add "needs_iresizer" 1 -}}
 
-<div style="transform: scale({{ $scale }}); transform-origin: top left">
+<div class="applet-wrapper" style="--applet-scale: {{ $scale }}; width: {{ $width }};">
   <iframe
     src="{{ $src }}"
     id="{{ $id }}"
     class="applet-iframe"
     width="{{ $width }}"
     {{- if $height }} height="{{ $height }}"{{ end -}}
-    style="{{ $style }}"
     loading="lazy"
     data-iresize="true"
     {{- if $hcm  }} data-hcm="{{ $hcm }}"{{ end -}}
