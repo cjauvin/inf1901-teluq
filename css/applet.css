@@ -4,13 +4,11 @@
   width: 100%; /* default, can be overridden by inline style */
 }
 
-/* Take iframe out of flow and scale it visually */
-.applet-wrapper > .applet-iframe {
+.applet-iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   transform-origin: top left;
-  transform: scale(var(--applet-scale, 1));
   border: 0;
 }
