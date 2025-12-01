@@ -14,9 +14,8 @@
           const wrapper = iframe?.parentElement;
           if (!wrapper) return;
 
-          // read the scale from the CSS custom property
-          const scaleStr =
-            getComputedStyle(wrapper).getPropertyValue("--applet-scale") || "1";
+          // read the scale from the data attribute
+          const scaleStr = iframe.getAttribute("data-transform-scale") || "1";
           let scale = parseFloat(scaleStr);
           if (!Number.isFinite(scale) || scale <= 0) scale = 1;
 
@@ -34,6 +33,10 @@
         if (co === "false") opts.checkOrigin = false;
 
         if (el.getAttribute("data-log") === "true") opts.log = true;
+
+        // Apply the transform scale directly to the iframe
+        const scale = el.getAttribute("data-transform-scale") || "1";
+        el.style.transform = `scale(${scale})`;
 
         if (!el.iFrameResizer) iframeResize(opts, el);
       });
