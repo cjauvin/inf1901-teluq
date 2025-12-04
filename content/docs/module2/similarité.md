@@ -100,7 +100,8 @@ mots, ainsi que la signification de ses dimensions, n'est pas déterminée
 d'avance, avant le début de l’entraînement. C'est plutôt le processus
 d’entraînement qui entraîne leur définition, par optimisation. L'algorithme
 apprend le sens des mots, et s'en construit une représentation, avec un
-"vocabulaire" qui lui est propre. Ce mécanisme de représentation particulier est
-ce qui explique, en partie, l'extraordinaire puissance de ChatGPT.
+"vocabulaire" qui lui est propre. Ce mécanisme de représentation particulier,
+qu'on nomme les _plongements lexicaux_ (word embeddings) est ce qui explique, en
+grande partie, l'extraordinaire capacité linguistique de ChatGPT.
 
 ![](/images/module2/distance_mots4.png)
