@@ -18,7 +18,7 @@
 	"hugo_relref": {
         "prefix": "hugo_relref",
         "body": [
-			"({{< relref \"docs/module..$0\" >}})",
+			"{{< relref \"docs/module..$0\" >}}",
         ],
         "description": "hugo relative links"
     },
