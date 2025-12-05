@@ -4,17 +4,11 @@
 
 Nous avons vu avec l&rsquo;algorithme des plus proches voisins qu&rsquo;une notion essentielle est de
 pouvoir mesurer la distance entre deux objets, afin de déterminer à quel point
-ils sont similaires. Mais que veut-on dire exactement par cela? Pour de simples
-points en deux dimensions, nous avons une conception intuitive raisonnable : il
-s&rsquo;agit de la distance
+ils sont similaires, qu&rsquo;ils se ressemblent. Mais que veut-on dire exactement par
+cela? Pour de simples points en deux dimensions, nous avons une conception
+intuitive raisonnable : il s&rsquo;agit de la distance
 euclidienne entre les deux
-points.
-
-Pour d&rsquo;autres types d&rsquo;objets (ou de données), comme des images, par exemple,
-bien que cela soit plus difficile à imaginer, il faut transposer son intuition
-géométrique dans un espace à plus haute dimension, par exemple un espace où
-chaque pixel d&rsquo;une image correspond à une dimension :"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/"><meta property="og:site_name" content="INF1901 - Initiation à l'IA : concepts et réflexions"><meta property="og:title" content="Le concept de similarité"><meta property="og:description" content="Le concept de similarité # Nous avons vu avec l’algorithme des plus proches voisins qu’une notion essentielle est de pouvoir mesurer la distance entre deux objets, afin de déterminer à quel point ils sont similaires. Mais que veut-on dire exactement par cela? Pour de simples points en deux dimensions, nous avons une conception intuitive raisonnable : il s’agit de la distance euclidienne entre les deux points.
-Pour d’autres types d’objets (ou de données), comme des images, par exemple, bien que cela soit plus difficile à imaginer, il faut transposer son intuition géométrique dans un espace à plus haute dimension, par exemple un espace où chaque pixel d’une image correspond à une dimension :"><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Le concept de similarité | INF1901 - Initiation à l'IA : concepts et réflexions</title><link rel=icon href=https://cjauvin.github.io/inf1901-teluq/images/paperclip-logo.png><link rel=manifest href=https://cjauvin.github.io/inf1901-teluq/manifest.json><link rel=canonical href=https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/><link rel=stylesheet href=https://cjauvin.github.io/inf1901-teluq/book.min.97898183dc29e99dd0d8e5c58bc35164ef42b34cfa3992d69b27fc92f94774a9.css integrity="sha256-l4mBg9wp6Z3Q2OXFi8NRZO9Cs0z6OZLWmyf8kvlHdKk=" crossorigin=anonymous><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}}</script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><link rel=stylesheet href=https://cjauvin.github.io/inf1901-teluq/css/applet.css></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+points, qui se calcule à l&rsquo;aide d&rsquo;une formule mathématique simple."><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/"><meta property="og:site_name" content="INF1901 - Initiation à l'IA : concepts et réflexions"><meta property="og:title" content="Le concept de similarité"><meta property="og:description" content="Le concept de similarité # Nous avons vu avec l’algorithme des plus proches voisins qu’une notion essentielle est de pouvoir mesurer la distance entre deux objets, afin de déterminer à quel point ils sont similaires, qu’ils se ressemblent. Mais que veut-on dire exactement par cela? Pour de simples points en deux dimensions, nous avons une conception intuitive raisonnable : il s’agit de la distance euclidienne entre les deux points, qui se calcule à l’aide d’une formule mathématique simple."><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Le concept de similarité | INF1901 - Initiation à l'IA : concepts et réflexions</title><link rel=icon href=https://cjauvin.github.io/inf1901-teluq/images/paperclip-logo.png><link rel=manifest href=https://cjauvin.github.io/inf1901-teluq/manifest.json><link rel=canonical href=https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/><link rel=stylesheet href=https://cjauvin.github.io/inf1901-teluq/book.min.97898183dc29e99dd0d8e5c58bc35164ef42b34cfa3992d69b27fc92f94774a9.css integrity="sha256-l4mBg9wp6Z3Q2OXFi8NRZO9Cs0z6OZLWmyf8kvlHdKk=" crossorigin=anonymous><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}}</script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><link rel=stylesheet href=https://cjauvin.github.io/inf1901-teluq/css/applet.css></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=https://cjauvin.github.io/inf1901-teluq/><img src=https://cjauvin.github.io/inf1901-teluq/images/paperclip-logo.png alt=Logo class=book-icon><span>INF1901 - Initiation à l'IA : concepts et réflexions</span></a></h2><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/pr%C3%A9sentation/>Présentation du cours</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/philosophie/>Approche pédagogique du cours</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/professeurs/>Les professeurs</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/livres/>Les livres</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/>Travaux notés</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/feuille-de-route/>Feuille de route</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/google-sheets/>Google Sheets</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/>Usage de l'IA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/changelog/>Évolution du cours</a></li><li><input type=checkbox id=section-8907ef67e4ecdf3db52171242f091373 class=toggle>
 <label for=section-8907ef67e4ecdf3db52171242f091373 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/ class=flex-auto>Module 1 - Intelligence artificielle</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/activit%C3%A9s/>Activités</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/>Travail noté 1</a></li></ul></li><li><input type=checkbox id=section-0e47afea11237f1612150a31e7123755 class=toggle checked>
 <label for=section-0e47afea11237f1612150a31e7123755 class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/ class=flex-auto>Module 2 - Apprentissage automatique</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/>Un scénario pour se faire une idée</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/>AA versus X</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/>Que sont les données?</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/>L'algorithme le plus simple</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/ class=active>Le concept de similarité</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/>Qu'est-ce qu'un modèle?</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/>Les paradigmes de l'AA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/>Apprentissage supervisé</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/>Apprentissage non supervisé</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/>Travail noté 2</a></li></ul></li><li><input type=checkbox id=section-9cc60359ac12343378e5fa944b3863f7 class=toggle>
@@ -23,65 +17,76 @@ Pour d’autres types d’objets (ou de données), comme des images, par exemple
 <label for=section-b90ca6a3362bb22be66d4f5e1f8ab16c class=flex><a href=https://cjauvin.github.io/inf1901-teluq/docs/module5/ class=flex-auto>Module 5 - Autour de l'IA</a></label><ul><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module5/attitudes/>Attitudes à l'égard de l'IA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module5/conversation/>Conversation synoptique autour de l'IA</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/module5/travail-not%C3%A9-5/>Travail noté 5</a></li></ul></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/>Ressources supplémentaires</a></li><li><a href=https://cjauvin.github.io/inf1901-teluq/docs/conclusion/>Conclusion</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=https://cjauvin.github.io/inf1901-teluq/svg/menu.svg class=book-icon alt=Menu></label><h3>Le concept de similarité</h3><label for=toc-control><img src=https://cjauvin.github.io/inf1901-teluq/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#distance-entre-les-mots-ou-les-concepts>Distance entre les mots ou les concepts</a></li><li><a href=#distance-de-levenshtein>Distance de Levenshtein</a></li><li><a href=#modélisation-du-contexte-des-mots>Modélisation du contexte des mots</a></li><li><a href=#les-plongements-lexicaux-word-embeddings>Les plongements lexicaux (word embeddings)</a></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=le-concept-de-similarité>Le concept de similarité
 <a class=anchor href=#le-concept-de-similarit%c3%a9>#</a></h1><p>Nous avons vu avec l&rsquo;algorithme des <a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/>plus proches voisins</a> qu&rsquo;une notion essentielle est de
 pouvoir mesurer la distance entre deux objets, afin de déterminer à quel point
-ils sont similaires. Mais que veut-on dire exactement par cela? Pour de simples
-points en deux dimensions, nous avons une conception intuitive raisonnable : il
-s&rsquo;agit de la <a href=https://fr.wikipedia.org/wiki/Distance_euclidienne>distance
+ils sont similaires, qu&rsquo;ils se ressemblent. Mais que veut-on dire exactement par
+cela? Pour de simples points en deux dimensions, nous avons une conception
+intuitive raisonnable : il s&rsquo;agit de la <a href=https://fr.wikipedia.org/wiki/Distance_euclidienne>distance
 euclidienne</a> entre les deux
-points.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_2d.png alt></p><p>Pour d&rsquo;autres types d&rsquo;objets (ou de données), comme des images, par exemple,
+points, qui se calcule à l&rsquo;aide d&rsquo;une formule mathématique simple.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_2d.png alt></p><p>Pour d&rsquo;autres types d&rsquo;objets (ou de données), comme des images, par exemple,
 bien que cela soit plus difficile à imaginer, il faut transposer son intuition
 géométrique dans un espace à plus haute dimension, par exemple un espace où
 chaque pixel d&rsquo;une image correspond à une dimension :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_high_dim.png alt></p><p>Dans ce sens particulier, une image correspond donc à un vecteur en très haute
-dimension. En fait pour la plupart des données de type numérique (comme par
-exemple les rangées d&rsquo;un tableau Excel) il est possible d&rsquo;utiliser la même
-représentation, comme nous l&rsquo;avons vu déjà :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_high_dim2.png alt></p><h2 id=distance-entre-les-mots-ou-les-concepts>Distance entre les mots ou les concepts
-<a class=anchor href=#distance-entre-les-mots-ou-les-concepts>#</a></h2><p>Mais supposons maintenant que nous voulions mesurer la distance entre deux mots,
-ou deux concepts, que pourrions-nous faire?</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_mots.png alt></p><p>Une possibilité serait de considérer un espace composé par les 26 lettres de
+dimension, et exactement la même formule mathématique pour calculer la distance
+peut être utilisée. En fait pour la plupart des données de type numérique (comme
+par exemple les rangées d&rsquo;un tableau Excel qui correspondent à des maisons en
+vente) il est possible d&rsquo;utiliser la même représentation, comme nous l&rsquo;avons vu
+déjà :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_high_dim2.png alt></p><h2 id=distance-entre-les-mots-ou-les-concepts>Distance entre les mots ou les concepts
+<a class=anchor href=#distance-entre-les-mots-ou-les-concepts>#</a></h2><p>Mais supposons maintenant que nous voulions mesurer la similarité
+(distance) entre deux mots, ou deux concepts, que pourrions-nous faire?</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_mots.png alt></p><p>Une possibilité serait de considérer un espace composé par les 26 lettres de
 l&rsquo;alphabet, où la présence d&rsquo;une lettre dans un mot serait représentée par la
-valeur 1 dans la dimension correspondante, ou 0 sinon.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_mots2.png alt></p><h2 id=distance-de-levenshtein>Distance de Levenshtein
+valeur 1 dans la dimension correspondante, ou 0 sinon.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_mots2.png alt></p><p>Si on y pense un peu, on se rend compte tout de suite d&rsquo;un problème : les mots
+&ldquo;navire&rdquo; et &ldquo;bateau&rdquo; seront très distants, alors que les mots &ldquo;amande&rdquo; et &ldquo;amende&rdquo;
+seront très proches.</p><h2 id=distance-de-levenshtein>Distance de Levenshtein
 <a class=anchor href=#distance-de-levenshtein>#</a></h2><p>Une autre possibilité, très utilisée en pratique, est la <a href=https://fr.wikipedia.org/wiki/Distance_de_Levenshtein>distance de
 Levenshtein</a>, (aussi
 appelée distance d&rsquo;édition), qui permet de quantifier la différence entre deux
 chaines de caractères, en terme du nombre d&rsquo;opérations à effectuer, pour
 transformer une chaîne en une autre. Utilisez l&rsquo;application interactive ci-dessous
-pour mesurer la distance de Levenshtein entre les mots &ldquo;navire&rdquo; et &ldquo;bateau&rdquo; :</p><div class=applet-wrapper style=width:140%><iframe src=https://cjauvin.github.io/inf1901-teluq/html/applets/levenshtein.html id=applet-1764884581205322165 class=applet-iframe width=140% loading=lazy data-iresize=true data-transform-scale=0.9></iframe></div><p>Bien que cette notion particulière de distance soit très utile pour faire des
+pour mesurer la distance de Levenshtein entre les mots &ldquo;navire&rdquo; et &ldquo;bateau&rdquo; :</p><div class=applet-wrapper style=width:140%><iframe src=https://cjauvin.github.io/inf1901-teluq/html/applets/levenshtein.html id=applet-1764950319613945522 class=applet-iframe width=140% loading=lazy data-iresize=true data-transform-scale=0.9></iframe></div><p>Bien que cette notion particulière de distance soit très utile pour faire des
 applications qui permettent par exemple de corriger des erreurs d&rsquo;orthographe
 (ou de faire en sorte que les requêtes Google soient plus flexibles), elle est
-moins utile pour l&rsquo;apprentissage automatique. Comment ChatGPT peut faire en
+moins utile pour l&rsquo;intelligence artificielle. Comment ChatGPT peut faire en
 sorte, par exemple, de considérer que les mots &ldquo;navire&rdquo; et &ldquo;bateau&rdquo; sont
 <em>sémantiquement</em> proches (et possiblement interchangeables), si les notions de
 distance que nous avons considérées jusqu&rsquo;à maintenant ne permettent pas d&rsquo;en
 offrir une mesure concrète?</p><h2 id=modélisation-du-contexte-des-mots>Modélisation du contexte des mots
-<a class=anchor href=#mod%c3%a9lisation-du-contexte-des-mots>#</a></h2><p>Une manière de résoudre et de modéliser le sens des mots (ce qu&rsquo;ils veulent
-dire) est de considérer les mots qui ont tendance à accompagner certains mots.
-On peut ainsi construire un espace vectoriel où chaque dimension correspond à un
-mot du vocabulaire. Un mot particulier, comme &ldquo;chat&rdquo;, par exemple, aura des
-valeurs qui correspondront aux mots qu&rsquo;on a tendance à retrouver dans son
-contexte, comme par exemple : ronronner, souris, miauler, etc. On peut
-considérer que le sens du mot chat est déterminé par le champ lexical des mots
-qui ont tendance à l&rsquo;accompagner.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_mots3.png alt></p><p>Cette approche fonctionne et est utilisée en pratique, mais elle présente des
-problèmes pour les algorithmes d&rsquo;apprentissage automatique. Premièrement
-l&rsquo;espace comporte un très grand nombre de dimensions (si on considère un
-vocabulaire de 100,000 mots, par exemple), dont la plupart seront de valeur zéro
-(car la plupart des mots ne se retrouvent pas dans le contexte immédiat d&rsquo;un mot
-particulier). Les algorithmes d&rsquo;apprentissage ont de la difficulté à opérer dans
-un tel type d&rsquo;espace (beaucoup de dimensions, dont la plupart à zéro, donc de
-<em>densité</em> très faible).</p><h2 id=les-plongements-lexicaux-word-embeddings>Les plongements lexicaux (word embeddings)
-<a class=anchor href=#les-plongements-lexicaux-word-embeddings>#</a></h2><p>Une autre solution est de représenter les mots dans un espace de dimension
-moyenne (par exemple 512), dont la densité sera beaucoup plus grande (toutes les
-dimensions seront non-zéro, donc &ldquo;utilisées&rdquo;). La contrepartie, ce que l&rsquo;on
-perd, avec un tel espace, est la signification des dimensions. Si la dimension
-127 du précédent modèle correspondait au mot &ldquo;chat&rdquo;, par exemple, ici, dans cet
-espace, elle ne correspond à aucun mot en particulier. On parle d&rsquo;un espace
-<em>latent</em>. L&rsquo;avantage d&rsquo;une tel espace est qu&rsquo;il constitue un substrat malléable,
-à partir duquel un algorithme d&rsquo;apprentissage peut façonner sa propre
-représentation des mots et de leur sens, de manière interne. La position des
-mots, ainsi que la signification de ses dimensions, n&rsquo;est pas déterminée
-d&rsquo;avance, avant le début de l’entraînement. C&rsquo;est plutôt le processus
-d’entraînement qui entraîne leur définition, par optimisation. L&rsquo;algorithme
-apprend le sens des mots, et s&rsquo;en construit une représentation, avec un
-&ldquo;vocabulaire&rdquo; qui lui est propre. Ce mécanisme de représentation particulier,
-qu&rsquo;on nomme les <em>plongements lexicaux</em> (word embeddings) est ce qui explique, en
-grande partie, l&rsquo;extraordinaire capacité linguistique de ChatGPT.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_mots4.png alt></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><div class="flex flex-wrap justify-between"><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/ class="flex align-center float-left book-icon"><img src=https://cjauvin.github.io/inf1901-teluq/svg/backward.svg alt=Previous title="L'algorithme le plus simple">
+<a class=anchor href=#mod%c3%a9lisation-du-contexte-des-mots>#</a></h2><p>Une manière de résoudre ce problème est de tenter de modéliser le sens des mots
+(ce qu&rsquo;ils veulent dire) en considérant le contexte lexical qui a tendance à
+accompagner certains mots. Autrement dit, quels mots ont tendance à se retrouver
+dans le voisinage d&rsquo;un mot particulier. On peut ainsi construire un espace
+vectoriel où chaque dimension correspond à un mot du vocabulaire. Un mot
+particulier, comme &ldquo;chat&rdquo;, par exemple, aura des valeurs qui correspondront aux
+mots qu&rsquo;on a tendance à retrouver dans son contexte, comme par exemple :
+&ldquo;ronronner&rdquo;, &ldquo;souris&rdquo;, &ldquo;miauler&rdquo;, etc. On peut considérer que le sens du mot
+&ldquo;chat&rdquo; est déterminé par le champ lexical des mots qui ont tendance à
+l&rsquo;accompagner.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_mots3.png alt></p><p>Cette approche fonctionne et est utilisée en pratique, mais elle présente tout
+de même des problèmes pour les algorithmes d&rsquo;apprentissage automatique.
+Premièrement l&rsquo;espace comporte un très grand nombre de dimensions (si on
+considère un vocabulaire de 100,000 mots, par exemple), dont la plupart seront
+de valeur zéro (car la plupart des mots ne se retrouvent pas dans le contexte
+immédiat d&rsquo;un mot particulier). Les algorithmes d&rsquo;apprentissage ont de la
+difficulté à opérer dans un tel type d&rsquo;espace (beaucoup de dimensions, dont la
+plupart à zéro, donc de <em>densité</em> très faible). On parle parfois du <a href=https://fr.wikipedia.org/wiki/Fl%C3%A9au_de_la_dimension>fléau de la
+dimension</a> (curse of
+dimensionality) décrire ce problème.</p><h2 id=les-plongements-lexicaux-word-embeddings>Les plongements lexicaux (word embeddings)
+<a class=anchor href=#les-plongements-lexicaux-word-embeddings>#</a></h2><p>Une autre solution est de représenter les mots dans un espace de dimension plus
+restreinte (par exemple 512 dimensions), dont la densité sera beaucoup plus
+grande (toutes les dimensions seront non-zéro, donc &ldquo;utilisées&rdquo;). La
+contrepartie avec un tel espace, ce que l&rsquo;on perd, est la signification claire
+des dimensions. Si la dimension 127 du précédent modèle correspondait au mot
+&ldquo;chat&rdquo;, par exemple, ici, dans cet espace, elle ne correspond à aucun mot en
+particulier. On parle d&rsquo;un espace <em>latent</em>. L&rsquo;avantage d&rsquo;une tel espace est
+qu&rsquo;il constitue un substrat malléable, à partir duquel un algorithme
+d&rsquo;apprentissage peut façonner sa propre représentation des mots et de leur sens,
+de manière interne. La position des mots dans cet espace, ainsi que la
+signification de ses dimensions, n&rsquo;est pas déterminée d&rsquo;avance, avant le début
+de l’entraînement. C&rsquo;est plutôt le processus d’entraînement qui constitue leur
+définition, par un processus d&rsquo;optimisation (la qualité de la représente
+augmente, à mesure que l’entraînement progresse). L&rsquo;algorithme apprend le sens
+des mots, et s&rsquo;en construit une représentation interne, qui lui est propre. Ce
+mécanisme de représentation particulier, qu&rsquo;on nomme les <em>plongements lexicaux</em>
+(word embeddings) est ce qui explique, en grande partie, les extraordinaires
+capacités linguistiques de ChatGPT, le fait qu&rsquo;il manipule si aisément le sens
+des mots.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_mots4.png alt></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><div class="flex flex-wrap justify-between"><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/ class="flex align-center float-left book-icon"><img src=https://cjauvin.github.io/inf1901-teluq/svg/backward.svg alt=Previous title="L'algorithme le plus simple">
 <span>L'algorithme le plus simple</span>
 </a><a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/ class="flex align-center float-right book-icon"><span>Qu'est-ce qu'un modèle?</span>
 <img src=https://cjauvin.github.io/inf1901-teluq/svg/forward.svg alt=Next title="Qu'est-ce qu'un modèle?"></a></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#distance-entre-les-mots-ou-les-concepts>Distance entre les mots ou les concepts</a></li><li><a href=#distance-de-levenshtein>Distance de Levenshtein</a></li><li><a href=#modélisation-du-contexte-des-mots>Modélisation du contexte des mots</a></li><li><a href=#les-plongements-lexicaux-word-embeddings>Les plongements lexicaux (word embeddings)</a></li></ul></nav></div></aside></main><script src=https://cdn.jsdelivr.net/npm/iframe-resizer/js/iframeResizer.min.js defer></script><script>document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll('iframe[data-iresize="true"]');if(!e.length||typeof iFrameResize!="function")return;const t={license:"GPLv3",checkOrigin:!1,onResized:function({iframe:e,height:t}){const s=e?.parentElement;if(!s)return;const o=e.getAttribute("data-transform-scale")||"1";let n=parseFloat(o);(!Number.isFinite(n)||n<=0)&&(n=1),s.style.height=t*n+"px"}};e.forEach(e=>{const n={...t},s=e.getAttribute("data-check-origin");s==="true"&&(n.checkOrigin=!0),s==="false"&&(n.checkOrigin=!1),e.getAttribute("data-log")==="true"&&(n.log=!0);const o=e.getAttribute("data-transform-scale")||"1";e.style.transform=`scale(${o})`,e.iFrameResizer||iframeResize(n,e)})})</script></body></html>

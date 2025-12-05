@@ -88,16 +88,11 @@ dimensions.&lt;/p&gt;</description></item><item><title>Le concept de similarité
 &lt;/h1&gt;
 &lt;p&gt;Nous avons vu avec l&amp;rsquo;algorithme des &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/"&gt;plus proches voisins&lt;/a&gt; qu&amp;rsquo;une notion essentielle est de
 pouvoir mesurer la distance entre deux objets, afin de déterminer à quel point
-ils sont similaires. Mais que veut-on dire exactement par cela? Pour de simples
-points en deux dimensions, nous avons une conception intuitive raisonnable : il
-s&amp;rsquo;agit de la &lt;a href="https://fr.wikipedia.org/wiki/Distance_euclidienne"&gt;distance
+ils sont similaires, qu&amp;rsquo;ils se ressemblent. Mais que veut-on dire exactement par
+cela? Pour de simples points en deux dimensions, nous avons une conception
+intuitive raisonnable : il s&amp;rsquo;agit de la &lt;a href="https://fr.wikipedia.org/wiki/Distance_euclidienne"&gt;distance
 euclidienne&lt;/a&gt; entre les deux
-points.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module2/distance_2d.png" alt="" /&gt;&lt;/p&gt;
-&lt;p&gt;Pour d&amp;rsquo;autres types d&amp;rsquo;objets (ou de données), comme des images, par exemple,
-bien que cela soit plus difficile à imaginer, il faut transposer son intuition
-géométrique dans un espace à plus haute dimension, par exemple un espace où
-chaque pixel d&amp;rsquo;une image correspond à une dimension :&lt;/p&gt;</description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle"&gt;
+points, qui se calcule à l&amp;rsquo;aide d&amp;rsquo;une formule mathématique simple.&lt;/p&gt;</description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle"&gt;
  Qu&amp;rsquo;est-ce qu&amp;rsquo;on veut dire par modèle?
  &lt;a class="anchor" href="#quest-ce-quon-veut-dire-par-mod%c3%a8le"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
