@@ -34,14 +34,15 @@ déjà :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/d
 (distance) entre deux mots, ou deux concepts, que pourrions-nous faire?</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_mots.png alt></p><p>Une possibilité serait de considérer un espace composé par les 26 lettres de
 l&rsquo;alphabet, où la présence d&rsquo;une lettre dans un mot serait représentée par la
 valeur 1 dans la dimension correspondante, ou 0 sinon.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module2/distance_mots2.png alt></p><p>Si on y pense un peu, on se rend compte tout de suite d&rsquo;un problème : les mots
-&ldquo;navire&rdquo; et &ldquo;bateau&rdquo; seront très distants, alors que les mots &ldquo;amande&rdquo; et &ldquo;amende&rdquo;
-seront très proches.</p><h2 id=distance-de-levenshtein>Distance de Levenshtein
+&ldquo;navire&rdquo; et &ldquo;bateau&rdquo; seront assez distants dans cet espace (alors qu&rsquo;on voudrait
+qu&rsquo;ils soient proches), tandis que les mots &ldquo;amande&rdquo; et &ldquo;amende&rdquo;, qu&rsquo;on
+désirerait éloignés, seront très proches.</p><h2 id=distance-de-levenshtein>Distance de Levenshtein
 <a class=anchor href=#distance-de-levenshtein>#</a></h2><p>Une autre possibilité, très utilisée en pratique, est la <a href=https://fr.wikipedia.org/wiki/Distance_de_Levenshtein>distance de
 Levenshtein</a>, (aussi
 appelée distance d&rsquo;édition), qui permet de quantifier la différence entre deux
 chaines de caractères, en terme du nombre d&rsquo;opérations à effectuer, pour
 transformer une chaîne en une autre. Utilisez l&rsquo;application interactive ci-dessous
-pour mesurer la distance de Levenshtein entre les mots &ldquo;navire&rdquo; et &ldquo;bateau&rdquo; :</p><div class=applet-wrapper style=width:140%><iframe src=https://cjauvin.github.io/inf1901-teluq/html/applets/levenshtein.html id=applet-1764950319613945522 class=applet-iframe width=140% loading=lazy data-iresize=true data-transform-scale=0.9></iframe></div><p>Bien que cette notion particulière de distance soit très utile pour faire des
+pour mesurer la distance de Levenshtein entre les mots &ldquo;navire&rdquo; et &ldquo;bateau&rdquo; :</p><div class=applet-wrapper style=width:140%><iframe src=https://cjauvin.github.io/inf1901-teluq/html/applets/levenshtein.html id=applet-1765290813802236312 class=applet-iframe width=140% loading=lazy data-iresize=true data-transform-scale=0.9></iframe></div><p>Bien que cette notion particulière de distance soit très utile pour faire des
 applications qui permettent par exemple de corriger des erreurs d&rsquo;orthographe
 (ou de faire en sorte que les requêtes Google soient plus flexibles), elle est
 moins utile pour l&rsquo;intelligence artificielle. Comment ChatGPT peut faire en
