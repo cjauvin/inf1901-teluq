@@ -46,8 +46,9 @@ valeur 1 dans la dimension correspondante, ou 0 sinon.
 ![](/images/module2/distance_mots2.png)
 
 Si on y pense un peu, on se rend compte tout de suite d'un problème : les mots
-"navire" et "bateau" seront très distants, alors que les mots "amande" et "amende"
-seront très proches.
+"navire" et "bateau" seront assez distants dans cet espace (alors qu'on voudrait
+qu'ils soient proches), tandis que les mots "amande" et "amende", qu'on
+désirerait éloignés, seront très proches.
 
 ## Distance de Levenshtein
 
