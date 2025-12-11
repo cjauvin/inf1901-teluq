@@ -11,7 +11,6 @@ Les premiers modèles de génération de texte utilisaient des approches statist
 
 L’apprentissage par renforcement avec retour humain (RLHF) a permis d’aligner ces modèles sur des critères de qualité, de sécurité et de pertinence, rendant possible l’émergence d’assistants conversationnels comme ChatGPT.
 
-
 Dans le domaine de l’image, des modèles comme DALL·E, Midjourney ou Stable Diffusion peuvent générer des illustrations, des photos réalistes ou des œuvres artistiques à partir de simples descriptions textuelles. L’utilisateur propose une idée (« un chat sur la lune », « un portrait à la manière de Van Gogh ») et l’IA produit une image originale, parfois bluffante de réalisme ou de créativité.
 
 La génération de vidéos, plus complexe, progresse rapidement. Des outils comme Sora (OpenAI) ou Runway permettent de créer des séquences animées à partir de scénarios ou de prompts textuels. L’IA peut inventer des scènes, animer des personnages, ou transformer des vidéos existantes en leur donnant un style particulier. Ces avancées ouvrent la voie à de nouveaux usages : cinéma, publicité, jeux vidéo, éducation, mais posent aussi des questions éthiques sur la véracité des contenus et la manipulation de l’image.
