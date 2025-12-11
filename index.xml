@@ -442,10 +442,17 @@ développé les vôtres à la fin de ce cours, le but aura clairement été atte
 &lt;p&gt;L&amp;rsquo;intelligence artificielle est un sujet qui évolue à une vitesse prodigieuse,
 et le cours INF 1901 tente donc d&amp;rsquo;évoluer lui aussi, avec des changements
 continuels.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;2025-12-11&lt;/em&gt; : Ajout d&amp;rsquo;un serveur &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/discord/"&gt;Discord&lt;/a&gt;, pour jaser d&amp;rsquo;IA en ligne.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;2025-12-04&lt;/em&gt; : Ajout d&amp;rsquo;une &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/"&gt;section&lt;/a&gt; au module 2, sur les notions de similarité et de représentation du sens des mots.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;2025-11-24&lt;/em&gt; : Ajout d&amp;rsquo;une &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/"&gt;section&lt;/a&gt; au module 2, sur l&amp;rsquo;algorithme des plus proches voisins et du dilemme biais-variance.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;2025-11-17&lt;/em&gt; : Ajout d&amp;rsquo;architectures neuronales avancées au module 3 : les &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/#les-autoencodeurs"&gt;autoencodeurs&lt;/a&gt;, les &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/#les-réseaux-de-neurones-pour-les-graphes-gnns"&gt;réseaux de neurones pour les graphes&lt;/a&gt;
-ainsi que les &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/#les-machines-de-turing-neuronales-ntms"&gt;machines de Turing neuronales&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Apprentissage non supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</guid><description>&lt;h1 id="lapprentissage-non-supervisé"&gt;
+&lt;p&gt;&lt;em&gt;2025-11-24&lt;/em&gt; : Ajout d&amp;rsquo;une &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/"&gt;section&lt;/a&gt; au module 2, sur l&amp;rsquo;algorithme des plus proches voisins et du dilemme biais-variance.&lt;/p&gt;</description></item><item><title>Serveur Discord</title><link>https://cjauvin.github.io/inf1901-teluq/docs/discord/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/discord/</guid><description>&lt;h1 id="venez-discuter-dia-sur-discord-"&gt;
+ Venez discuter d&amp;rsquo;IA sur Discord !
+ &lt;a class="anchor" href="#venez-discuter-dia-sur-discord-"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;On tente une expérience : si ça vous tente, venez discuter des idées
+de ce cours dans un serveur de discussion &lt;a href="https://discord.com"&gt;Discord&lt;/a&gt;,
+à l&amp;rsquo;adresse suivante : &lt;a href="https://discord.gg/yZwwDZyn"&gt;https://discord.gg/yZwwDZyn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Venez poser des questions et discuter de questions philosophiques avec au moins
+&lt;a href="https://www.teluq.ca/siteweb/univ/cjauvin.html"&gt;un&lt;/a&gt; des professeurs de ce cours !&lt;/p&gt;</description></item><item><title>Apprentissage non supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</guid><description>&lt;h1 id="lapprentissage-non-supervisé"&gt;
  L&amp;rsquo;apprentissage non supervisé
  &lt;a class="anchor" href="#lapprentissage-non-supervis%c3%a9"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
