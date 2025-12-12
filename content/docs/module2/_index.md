@@ -54,6 +54,8 @@ par intelligence, scientifiquement parlant.
 * Comprendre la différence entre la programmation traditionnelle et
   l'apprentissage automatique
 * Explorer les différentes manières de représenter les données
+* Explorer les fondements de l'apprentissage automatique (machine learning), ainsi
+que certains de ses algorithmes classiques
 
 ## Durée
 
