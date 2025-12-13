@@ -68,4 +68,4 @@ Le contenu du cours se découpe en cinq modules.
 
 5. Le cinquième module propose une vision plus vaste du sujet, avec l'exploration de perspectives autour de l'IA, à la fois philosophiques, scientifiques et sociales.
 
-
+![](/images/ai-venn.png)
