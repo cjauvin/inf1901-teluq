@@ -42,6 +42,8 @@ Ce module vise à :
 - S’initier à l’interprétation visuelle et intuitive des réseaux de neurones grâce à des ressources pédagogiques (ex. : vidéo 3Blue1Brown).
 - Expérimenter concrètement avec des outils interactifs pour mieux saisir les mécanismes d’apprentissage.
 
+![](/images/module3/ai-venn.png)
+
 ## Durée
 
 Trois semaines ou 27 heures.

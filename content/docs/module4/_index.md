@@ -47,6 +47,8 @@ de génération vidéo, comme les très récents Sora et Veo;
 puissante, les grands modèles de langage (GML, ou LLM en anglais), avec ChatGPT, qui
 est l'application la plus fameuse et spectaculaire de l'IAG.
 
+![](/images/module4/ai-venn.png)
+
 ## Durée
 
 Trois semaines ou 27 heures.

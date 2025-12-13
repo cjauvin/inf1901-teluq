@@ -57,6 +57,8 @@ par intelligence, scientifiquement parlant.
 * Explorer les fondements de l'apprentissage automatique (machine learning), ainsi
 que certains de ses algorithmes classiques
 
+![](/images/module2/ai-venn.png)
+
 ## Durée
 
 Trois semaines ou 27 heures.
