@@ -9,6 +9,9 @@ L'intelligence artificielle est un sujet qui évolue à une vitesse prodigieuse,
 et le cours INF 1901 tente donc d'évoluer lui aussi, avec des changements
 continuels.
 
+*2025-12-22* : Ajout d'une section sur [l'apprentissage automatique adverse]({{<
+relref "docs/module3/aa-adverse" >}}) au module 3.
+
 *2025-12-11* : Ajout d'un serveur [Discord]({{< relref "docs/discord" >}}), pour
 jaser d'IA et du cours en ligne.
 

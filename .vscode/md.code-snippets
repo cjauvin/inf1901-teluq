@@ -32,5 +32,10 @@
 			"{{% /hint %}}",
         ],
         "description": "hugo book hint warning block"
-    }
+    },
+	"hugo_colon": {
+		"prefix": "hugo_colon",
+		"body": "&nbsp;:"
+	}
+
 }
