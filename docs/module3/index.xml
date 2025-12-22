@@ -49,7 +49,20 @@ deviennent foisonnantes et très intéressantes avec ce sujet !&lt;/p&gt;
 &lt;p&gt;Un peu comme on l&amp;rsquo;a fait avec l&amp;rsquo;ajout de couches cachées supplémentaires pour un
 réseau de neurones, si on prend un moment pour considérer son architecture, il
 est relativement facile d&amp;rsquo;imaginer des variations &amp;ldquo;topologiques&amp;rdquo; (des manières
-pour ses éléments d&amp;rsquo;être connectés en un graphe).&lt;/p&gt;</description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones-travail-noté-3"&gt;
+pour ses éléments d&amp;rsquo;être connectés en un graphe).&lt;/p&gt;</description></item><item><title>Apprentissage automatique adverse</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/aa-adverse/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/aa-adverse/</guid><description>&lt;h1 id="apprentissage-automatique-adverse"&gt;
+ Apprentissage automatique adverse
+ &lt;a class="anchor" href="#apprentissage-automatique-adverse"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Il existe un sous-domaine fascinant de l&amp;rsquo;apprentissage automatique, qui consiste
+à comprendre et étudier une de ses faiblesses étonnantes, les &lt;strong&gt;attaques
+adverses&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Voici tout d&amp;rsquo;abord un exemple fameux, provenant d&amp;rsquo;un &lt;a href="https://arxiv.org/pdf/1412.6572"&gt;article séminal de
+2014&lt;/a&gt; :&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module3/panda-vs-gibbon2.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;Dans certains cas pathologiques, il est donc possible pour un modèle de faire
+une erreur qui apparaît difficilement concevable pour un humain, à savoir
+classifier deux images pratiquement identiques, de manière complètement
+différente. Voyons comment ceci est possible.&lt;/p&gt;</description></item><item><title>Travail noté 3</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/</guid><description>&lt;h1 id="apprivoisez-un-réseau-de-neurones-travail-noté-3"&gt;
  Apprivoisez un réseau de neurones (travail noté 3)
  &lt;a class="anchor" href="#apprivoisez-un-r%c3%a9seau-de-neurones-travail-not%c3%a9-3"&gt;#&lt;/a&gt;
 &lt;/h1&gt;

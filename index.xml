@@ -237,17 +237,7 @@ est une série d&amp;rsquo;instructions symboliques dans un langage de programma
 au confluent de plusieurs disciplines : mathématiques, informatique, sciences
 cognitives. Les fondements de la discipline sont résolument mathématiques,
 principalement avec l&amp;rsquo;algèbre linéaire et les probabilités (qui entretiennent
-elles-mêmes des liens très étroits).&lt;/p&gt;</description></item><item><title>Architectures avancées</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/</guid><description>&lt;h1 id="les-architectures-neuronales-avancées"&gt;
- Les architectures neuronales avancées
- &lt;a class="anchor" href="#les-architectures-neuronales-avanc%c3%a9es"&gt;#&lt;/a&gt;
-&lt;/h1&gt;
-&lt;p&gt;Une fois que les principes de base des réseaux de neurones sont bien compris, et
-que les idées de l&amp;rsquo;apprentissage profond sont plus claires, les choses
-deviennent foisonnantes et très intéressantes avec ce sujet !&lt;/p&gt;
-&lt;p&gt;Un peu comme on l&amp;rsquo;a fait avec l&amp;rsquo;ajout de couches cachées supplémentaires pour un
-réseau de neurones, si on prend un moment pour considérer son architecture, il
-est relativement facile d&amp;rsquo;imaginer des variations &amp;ldquo;topologiques&amp;rdquo; (des manières
-pour ses éléments d&amp;rsquo;être connectés en un graphe).&lt;/p&gt;</description></item><item><title>Les professeurs</title><link>https://cjauvin.github.io/inf1901-teluq/docs/professeurs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/professeurs/</guid><description>&lt;h1 id="les-professeurs"&gt;
+elles-mêmes des liens très étroits).&lt;/p&gt;</description></item><item><title>Les professeurs</title><link>https://cjauvin.github.io/inf1901-teluq/docs/professeurs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/professeurs/</guid><description>&lt;h1 id="les-professeurs"&gt;
  Les professeurs
  &lt;a class="anchor" href="#les-professeurs"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -265,7 +255,17 @@ pour objet de promouvoir un système intégré de recherche, de formation et de
 documentation sur l&amp;rsquo;apprentissage mobile. Elle vise à faciliter la
 collaboration entre des chercheurs et des enseignants de renommée internationale
 de l&amp;rsquo;Université et d&amp;rsquo;autres établissements au Canada ainsi qu&amp;rsquo;ailleurs en
-Amérique du Nord, en Europe, en Afrique et dans d&amp;rsquo;autres régions du monde.&lt;/p&gt;</description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h1 id="les-livres-du-cours"&gt;
+Amérique du Nord, en Europe, en Afrique et dans d&amp;rsquo;autres régions du monde.&lt;/p&gt;</description></item><item><title>Architectures avancées</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/architectures-avanc%C3%A9es/</guid><description>&lt;h1 id="les-architectures-neuronales-avancées"&gt;
+ Les architectures neuronales avancées
+ &lt;a class="anchor" href="#les-architectures-neuronales-avanc%c3%a9es"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Une fois que les principes de base des réseaux de neurones sont bien compris, et
+que les idées de l&amp;rsquo;apprentissage profond sont plus claires, les choses
+deviennent foisonnantes et très intéressantes avec ce sujet !&lt;/p&gt;
+&lt;p&gt;Un peu comme on l&amp;rsquo;a fait avec l&amp;rsquo;ajout de couches cachées supplémentaires pour un
+réseau de neurones, si on prend un moment pour considérer son architecture, il
+est relativement facile d&amp;rsquo;imaginer des variations &amp;ldquo;topologiques&amp;rdquo; (des manières
+pour ses éléments d&amp;rsquo;être connectés en un graphe).&lt;/p&gt;</description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h1 id="les-livres-du-cours"&gt;
  Les livres du cours
  &lt;a class="anchor" href="#les-livres-du-cours"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -335,7 +335,20 @@ ils sont similaires, qu&amp;rsquo;ils se ressemblent. Mais que veut-on dire exac
 cela? Pour de simples points en deux dimensions, nous avons une conception
 intuitive raisonnable : il s&amp;rsquo;agit de la &lt;a href="https://fr.wikipedia.org/wiki/Distance_euclidienne"&gt;distance
 euclidienne&lt;/a&gt; entre les deux
-points, qui se calcule à l&amp;rsquo;aide d&amp;rsquo;une formule mathématique simple.&lt;/p&gt;</description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle"&gt;
+points, qui se calcule à l&amp;rsquo;aide d&amp;rsquo;une formule mathématique simple.&lt;/p&gt;</description></item><item><title>Apprentissage automatique adverse</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/aa-adverse/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/aa-adverse/</guid><description>&lt;h1 id="apprentissage-automatique-adverse"&gt;
+ Apprentissage automatique adverse
+ &lt;a class="anchor" href="#apprentissage-automatique-adverse"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Il existe un sous-domaine fascinant de l&amp;rsquo;apprentissage automatique, qui consiste
+à comprendre et étudier une de ses faiblesses étonnantes, les &lt;strong&gt;attaques
+adverses&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Voici tout d&amp;rsquo;abord un exemple fameux, provenant d&amp;rsquo;un &lt;a href="https://arxiv.org/pdf/1412.6572"&gt;article séminal de
+2014&lt;/a&gt; :&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module3/panda-vs-gibbon2.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;Dans certains cas pathologiques, il est donc possible pour un modèle de faire
+une erreur qui apparaît difficilement concevable pour un humain, à savoir
+classifier deux images pratiquement identiques, de manière complètement
+différente. Voyons comment ceci est possible.&lt;/p&gt;</description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle"&gt;
  Qu&amp;rsquo;est-ce qu&amp;rsquo;on veut dire par modèle?
  &lt;a class="anchor" href="#quest-ce-quon-veut-dire-par-mod%c3%a8le"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -442,13 +455,12 @@ développé les vôtres à la fin de ce cours, le but aura clairement été atte
 &lt;p&gt;L&amp;rsquo;intelligence artificielle est un sujet qui évolue à une vitesse prodigieuse,
 et le cours INF 1901 tente donc d&amp;rsquo;évoluer lui aussi, avec des changements
 continuels.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;2025-12-22&lt;/em&gt; : Ajout d&amp;rsquo;une section sur &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/aa-adverse/"&gt;l&amp;rsquo;apprentissage automatique adverse&lt;/a&gt; au module 3.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;2025-12-11&lt;/em&gt; : Ajout d&amp;rsquo;un serveur &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/discord/"&gt;Discord&lt;/a&gt;, pour
 jaser d&amp;rsquo;IA et du cours en ligne.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;2025-12-04&lt;/em&gt; : Ajout d&amp;rsquo;une &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/"&gt;section&lt;/a&gt;
 au module 2, sur les notions de similarité et de représentation du sens des
-mots.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;2025-11-24&lt;/em&gt; : Ajout d&amp;rsquo;une &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/"&gt;section&lt;/a&gt; au module 2, sur l&amp;rsquo;algorithme des plus
-proches voisins et du dilemme biais-variance.&lt;/p&gt;</description></item><item><title>Serveur Discord</title><link>https://cjauvin.github.io/inf1901-teluq/docs/discord/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/discord/</guid><description>&lt;h1 id="venez-discuter-dia-sur-discord-"&gt;
+mots.&lt;/p&gt;</description></item><item><title>Serveur Discord</title><link>https://cjauvin.github.io/inf1901-teluq/docs/discord/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/discord/</guid><description>&lt;h1 id="venez-discuter-dia-sur-discord-"&gt;
  Venez discuter d&amp;rsquo;IA sur Discord !
  &lt;a class="anchor" href="#venez-discuter-dia-sur-discord-"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
