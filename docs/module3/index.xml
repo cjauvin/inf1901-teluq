@@ -53,9 +53,9 @@ pour ses éléments d&amp;rsquo;être connectés en un graphe).&lt;/p&gt;</descr
  Apprentissage automatique adverse
  &lt;a class="anchor" href="#apprentissage-automatique-adverse"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;Il existe un sous-domaine fascinant de l&amp;rsquo;apprentissage automatique, qui consiste
-à comprendre et étudier une de ses faiblesses étonnantes, les &lt;strong&gt;attaques
-adverses&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Il existe un sous-domaine fascinant et troublant de l&amp;rsquo;apprentissage automatique,
+qui consiste à comprendre et étudier une de ses faiblesses étonnantes, les
+&lt;strong&gt;attaques adverses&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Voici tout d&amp;rsquo;abord un exemple fameux, provenant d&amp;rsquo;un &lt;a href="https://arxiv.org/pdf/1412.6572"&gt;article séminal de
 2014&lt;/a&gt; :&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module3/panda-vs-gibbon2.png" alt="" /&gt;&lt;/p&gt;
