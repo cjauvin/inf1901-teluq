@@ -6,9 +6,9 @@ draft: false
 
 # Apprentissage automatique adverse
 
-Il existe un sous-domaine fascinant de l'apprentissage automatique, qui consiste
-à comprendre et étudier une de ses faiblesses étonnantes, les **attaques
-adverses**.
+Il existe un sous-domaine fascinant et troublant de l'apprentissage automatique,
+qui consiste à comprendre et étudier une de ses faiblesses étonnantes, les
+**attaques adverses**.
 
 Voici tout d'abord un exemple fameux, provenant d'un [article séminal de
 2014](https://arxiv.org/pdf/1412.6572)&nbsp;:
