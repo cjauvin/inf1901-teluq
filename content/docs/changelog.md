@@ -1,5 +1,5 @@
 ---
-title: "Évolution du cours"
+title: "Évolution du cours (venez voir de temps en temps!)"
 weight: 65
 ---
 
