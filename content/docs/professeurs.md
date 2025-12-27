@@ -3,6 +3,14 @@ title: "Les professeurs"
 weight: 25
 ---
 
+{{% hint info %}}
+
+*« Le futur est déjà là, il n'est juste pas très équitablement réparti. »*
+
+William Gibson
+
+{{% /hint %}}
+
 # Les professeurs
 
 Ce cours a été co-créé par trois professeurs de l'Université TÉLUQ.

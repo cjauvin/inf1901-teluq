@@ -3,8 +3,6 @@ title: "Approche pédagogique du cours"
 weight: 20
 ---
 
-## Approche pédagogique du cours
-
 {{% hint info %}}
 
 *« Le vrai problème de l’humanité est le suivant : nous avons des émotions paléolithiques, des institutions médiévales, et une technologie digne des dieux. »*
@@ -12,6 +10,8 @@ weight: 20
 E.O. Wilson
 
 {{% /hint %}}
+
+# Approche pédagogique du cours
 
 L'apprentissage automatique (AA) est un sujet complexe et fortement dynamique,
 au confluent de plusieurs disciplines : mathématiques, informatique, sciences

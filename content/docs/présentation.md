@@ -11,7 +11,7 @@ Arthur C. Clarke
 
 {{% /hint %}}
 
-## Présentation du cours
+# Présentation du cours
 
 L’intelligence artificielle (IA) constitue aujourd’hui un champ de recherches et
 d’applications essentiel dont l’influence s’étend à de multiples domaines, de la
