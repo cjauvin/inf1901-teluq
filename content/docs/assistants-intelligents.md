@@ -26,5 +26,4 @@ faire une capture d'écran du texte et la donner à ChatGPT, et poser ma questio
 équivalentes").. ChatGPT (ou un autre outil) se fera un plaisir de vous
 expliquer avec une patience infinie :
 
-![](/images/exemple-chatgpt.png)
-
+{{< image src="/images/exemple-chatgpt.png" alt="ChatGPT" title="ChatGPT" loading="lazy" >}}
