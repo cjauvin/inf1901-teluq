@@ -1,21 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module 2 - Apprentissage automatique on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/</link><description>Recent content in Module 2 - Apprentissage automatique on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/module2/index.xml" rel="self" type="application/rss+xml"/><item><title>Un scénario pour se faire une idée</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h1 id="un-scénario-pour-se-faire-une-idée"&gt;
- Un scénario pour se faire une idée
- &lt;a class="anchor" href="#un-sc%c3%a9nario-pour-se-faire-une-id%c3%a9e"&gt;#&lt;/a&gt;
-&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module 2 - Apprentissage automatique on INF1901 - Initiation à l'IA : concepts et réflexions</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/</link><description>Recent content in Module 2 - Apprentissage automatique on INF1901 - Initiation à l'IA : concepts et réflexions</description><generator>Hugo</generator><language>fr</language><atom:link href="https://cjauvin.github.io/inf1901-teluq/docs/module2/index.xml" rel="self" type="application/rss+xml"/><item><title>Un scénario pour se faire une idée</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/</guid><description>&lt;h1 id="un-scénario-pour-se-faire-une-idée"&gt;Un scénario pour se faire une idée&lt;a class="anchor" href="#un-sc%c3%a9nario-pour-se-faire-une-id%c3%a9e"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Imaginez une compagnie où il y a une chaîne de montage avec laquelle on assemble
 des téléviseurs.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/module2/tv_assembly_line.png" alt="" /&gt;&lt;/p&gt;
-&lt;h2 id="le-problème"&gt;
- Le problème
- &lt;a class="anchor" href="#le-probl%c3%a8me"&gt;#&lt;/a&gt;
-&lt;/h2&gt;
+&lt;h2 id="le-problème"&gt;Le problème&lt;a class="anchor" href="#le-probl%c3%a8me"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Supposons que dans un endroit particulièrement délicat de la chaîne de montage,
 un problème avec un appareil d&amp;rsquo;assemblage particulier survienne parfois, que
 l&amp;rsquo;on aimerait détecter le plus rapidement possible.&lt;/p&gt;
-&lt;h2 id="une-solution-possible"&gt;
- Une solution possible
- &lt;a class="anchor" href="#une-solution-possible"&gt;#&lt;/a&gt;
-&lt;/h2&gt;
+&lt;h2 id="une-solution-possible"&gt;Une solution possible&lt;a class="anchor" href="#une-solution-possible"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;On pourrait imaginer placer une caméra vidéo dont le but serait de visionner en
 permanence le flot des appareils en cours d&amp;rsquo;assemblage, pour tenter de détecter
 les problèmes. Pour ce faire, la caméra pourrait transmettre, à intervalles
@@ -29,37 +20,25 @@ de problème avec cette image&amp;rdquo; (ou encore, ce qui serait équivalent m
 simple : &amp;ldquo;ok&amp;rdquo; ou &amp;ldquo;problème&amp;rdquo;). Cette valeur est &lt;em&gt;binaire&lt;/em&gt;, dans le sens qu&amp;rsquo;elle a
 seulement deux valeurs possibles (peu importe lesquelles, en autant qu&amp;rsquo;il y en
 ait seulement deux). Sur la base de cette valeur binaire de sortie, on pourrait
-agir et envoyer un technicien, en cas de besoin, pour régler le problème.&lt;/p&gt;</description></item><item><title>AA versus X</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</guid><description>&lt;h2 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel"&gt;
- En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnel?
- &lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnel"&gt;#&lt;/a&gt;
-&lt;/h2&gt;
+agir et envoyer un technicien, en cas de besoin, pour régler le problème.&lt;/p&gt;</description></item><item><title>AA versus X</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/diff%C3%A9rence-avec-x/</guid><description>&lt;h2 id="en-quoi-lapprentissage-automatique-diffère-de-la-programmation-au-sens-traditionnel"&gt;En quoi l&amp;rsquo;apprentissage automatique diffère de la programmation au sens traditionnel?&lt;a class="anchor" href="#en-quoi-lapprentissage-automatique-diff%c3%a8re-de-la-programmation-au-sens-traditionnel"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Bien que l&amp;rsquo;apprentissage automatique requiert de la programmation, il s&amp;rsquo;agit
 d&amp;rsquo;un paradigme entièrement différent de celui de la programmation.&lt;/p&gt;
 &lt;p&gt;Un programme traditionnel spécifie une série d&amp;rsquo;instructions que l&amp;rsquo;ordinateur
 exécute pour résoudre un problème. Normalement, ce programme fait son travail en
 relation avec des données fournies par l&amp;rsquo;utilisateur. Le programme dans ce cas
-est une série d&amp;rsquo;instructions symboliques dans un langage de programmation.&lt;/p&gt;</description></item><item><title>Que sont les données?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</guid><description>&lt;h1 id="que-sont-les-données-et-comment-les-représenter"&gt;
- Que sont les données, et comment les représenter?
- &lt;a class="anchor" href="#que-sont-les-donn%c3%a9es-et-comment-les-repr%c3%a9senter"&gt;#&lt;/a&gt;
-&lt;/h1&gt;
+est une série d&amp;rsquo;instructions symboliques dans un langage de programmation.&lt;/p&gt;</description></item><item><title>Que sont les données?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</guid><description>&lt;h1 id="que-sont-les-données-et-comment-les-représenter"&gt;Que sont les données, et comment les représenter?&lt;a class="anchor" href="#que-sont-les-donn%c3%a9es-et-comment-les-repr%c3%a9senter"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Il y a une tension fondamentale en informatique entre les différentes manières
 de représenter les données, et ce qu&amp;rsquo;elles peuvent signifier. Quand on ajoute
 l&amp;rsquo;apprentissage automatique, la situation devient encore plus complexe. Tentons
 de clarifier le tout.&lt;/p&gt;
-&lt;h2 id="niveau-des-bits-physiques-et-mathématiques"&gt;
- Niveau des bits, physiques et mathématiques
- &lt;a class="anchor" href="#niveau-des-bits-physiques-et-math%c3%a9matiques"&gt;#&lt;/a&gt;
-&lt;/h2&gt;
+&lt;h2 id="niveau-des-bits-physiques-et-mathématiques"&gt;Niveau des bits, physiques et mathématiques&lt;a class="anchor" href="#niveau-des-bits-physiques-et-math%c3%a9matiques"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Au niveau le plus fondamental, l&amp;rsquo;ordinateur, physiquement et logiquement, ne
 peut traiter qu&amp;rsquo;un seul type de donnée : le bit, qui est à la fois un concept
 mathématique (un symbole dont la valeur ne peut être que &lt;code&gt;0&lt;/code&gt; ou &lt;code&gt;1&lt;/code&gt; généralement, ou
 &lt;code&gt;vrai&lt;/code&gt; ou &lt;code&gt;faux&lt;/code&gt; plus spécifiquement en logique) et physique, au niveau de
 l&amp;rsquo;implémentation, soit en terme électrique (mémoire RAM, CPU, disque SSD), de
 magnétisme (disque dur) ou de caractéristiques optiques (CD). Les bits
-&lt;em&gt;représentent&lt;/em&gt; les nombres via la convention de l&amp;rsquo;encodage binaire.&lt;/p&gt;</description></item><item><title>L'algorithme le plus simple</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/</guid><description>&lt;h1 id="lalgorithme-dapprentissage-le-plus-simple-les-k-plus-proches-voisins"&gt;
- L&amp;rsquo;algorithme d&amp;rsquo;apprentissage le plus simple (les $k$ plus proches voisins)
- &lt;a class="anchor" href="#lalgorithme-dapprentissage-le-plus-simple-les-k-plus-proches-voisins"&gt;#&lt;/a&gt;
-&lt;/h1&gt;
+&lt;em&gt;représentent&lt;/em&gt; les nombres via la convention de l&amp;rsquo;encodage binaire.&lt;/p&gt;</description></item><item><title>L'algorithme le plus simple</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/</guid><description>&lt;h1 id="lalgorithme-dapprentissage-le-plus-simple-les-k-plus-proches-voisins"&gt;L&amp;rsquo;algorithme d&amp;rsquo;apprentissage le plus simple (les $k$ plus proches voisins)&lt;a class="anchor" href="#lalgorithme-dapprentissage-le-plus-simple-les-k-plus-proches-voisins"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Commençons par étudier le problème le plus fondamental et représentatif de
 l&amp;rsquo;apprentissage automatique, celui de la classification d&amp;rsquo;objets. Par exemple,
 pouvoir dire si l&amp;rsquo;image sur cette photo est celle d&amp;rsquo;un chien, ou d&amp;rsquo;un chat. Si
@@ -82,29 +61,17 @@ de choisir la classe majoritaire. Notez que cet algorithme pourrait s&amp;rsquo;
 également les $k$ &lt;em&gt;voisins les plus semblables&lt;/em&gt;, car la distance peut également
 être interprétée en tant que mesure de similarité. L&amp;rsquo;applet interactive suivante
 illustre ce fonctionnement, à l&amp;rsquo;aide de points rouges et bleus en deux
-dimensions.&lt;/p&gt;</description></item><item><title>Le concept de similarité</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/</guid><description>&lt;h1 id="le-concept-de-similarité"&gt;
- Le concept de similarité
- &lt;a class="anchor" href="#le-concept-de-similarit%c3%a9"&gt;#&lt;/a&gt;
-&lt;/h1&gt;
+dimensions.&lt;/p&gt;</description></item><item><title>Le concept de similarité</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/</guid><description>&lt;h1 id="le-concept-de-similarité"&gt;Le concept de similarité&lt;a class="anchor" href="#le-concept-de-similarit%c3%a9"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Nous avons vu avec l&amp;rsquo;algorithme des &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/"&gt;plus proches voisins&lt;/a&gt; qu&amp;rsquo;une notion essentielle est de
 pouvoir mesurer la distance entre deux objets, afin de déterminer à quel point
 ils sont similaires, qu&amp;rsquo;ils se ressemblent. Mais que veut-on dire exactement par
 cela? Pour de simples points en deux dimensions, nous avons une conception
 intuitive raisonnable : il s&amp;rsquo;agit de la &lt;a href="https://fr.wikipedia.org/wiki/Distance_euclidienne"&gt;distance
 euclidienne&lt;/a&gt; entre les deux
-points, qui se calcule à l&amp;rsquo;aide d&amp;rsquo;une formule mathématique simple.&lt;/p&gt;</description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle"&gt;
- Qu&amp;rsquo;est-ce qu&amp;rsquo;on veut dire par modèle?
- &lt;a class="anchor" href="#quest-ce-quon-veut-dire-par-mod%c3%a8le"&gt;#&lt;/a&gt;
-&lt;/h1&gt;
+points, qui se calcule à l&amp;rsquo;aide d&amp;rsquo;une formule mathématique simple.&lt;/p&gt;</description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle"&gt;Qu&amp;rsquo;est-ce qu&amp;rsquo;on veut dire par modèle?&lt;a class="anchor" href="#quest-ce-quon-veut-dire-par-mod%c3%a8le"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Le mot &amp;ldquo;modèle&amp;rdquo; est polysémique et peut prêter à confusion selon qu’on parle d’apprentissage automatique, de statistiques, de sciences ou de mathématiques pures. Ce chapitre clarifie ces sens et propose un vocabulaire pratique pour les distinguer dans le contexte de ce cours.&lt;/p&gt;
-&lt;h2 id="le-sens-central-en-apprentissage-automatique"&gt;
- Le sens central en apprentissage automatique
- &lt;a class="anchor" href="#le-sens-central-en-apprentissage-automatique"&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;Dans l’AA, un modèle est avant tout une fonction paramétrée qui prend des données en entrée et produit une sortie utile (prédiction, score, probabilité, texte, etc.) :&lt;/p&gt;</description></item><item><title>Les paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique"&gt;
- Les différents paradigmes de l&amp;rsquo;apprentissage automatique
- &lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique"&gt;#&lt;/a&gt;
-&lt;/h1&gt;
+&lt;h2 id="le-sens-central-en-apprentissage-automatique"&gt;Le sens central en apprentissage automatique&lt;a class="anchor" href="#le-sens-central-en-apprentissage-automatique"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Dans l’AA, un modèle est avant tout une fonction paramétrée qui prend des données en entrée et produit une sortie utile (prédiction, score, probabilité, texte, etc.) :&lt;/p&gt;</description></item><item><title>Les paradigmes de l'AA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-paradigmes/</guid><description>&lt;h1 id="les-différents-paradigmes-de-lapprentissage-automatique"&gt;Les différents paradigmes de l&amp;rsquo;apprentissage automatique&lt;a class="anchor" href="#les-diff%c3%a9rents-paradigmes-de-lapprentissage-automatique"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Il existe plusieurs manières de catégoriser les algorithmes d&amp;rsquo;apprentissage
 automatique, selon leur nature et la structure des problèmes qu&amp;rsquo;ils tentent de
 résoudre. Nous allons brièvement discuter de trois schémas de classement :&lt;/p&gt;
@@ -115,14 +82,8 @@ résoudre. Nous allons brièvement discuter de trois schémas de classement :&lt
 &lt;/ul&gt;
 &lt;p&gt;Nous allons également parler de l&amp;rsquo;&lt;em&gt;apprentissage par renforcement&lt;/em&gt;, qui est dans
 une classe à part.&lt;/p&gt;
-&lt;h2 id="apprentissage-supervisé-versus-non-supervisé"&gt;
- Apprentissage supervisé versus non-supervisé
- &lt;a class="anchor" href="#apprentissage-supervis%c3%a9-versus-non-supervis%c3%a9"&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;La distinction la plus connue oppose l’apprentissage supervisé à l’apprentissage non-supervisé.&lt;/p&gt;</description></item><item><title>Apprentissage supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</guid><description>&lt;h1 id="apprentissage-supervisé"&gt;
- Apprentissage supervisé
- &lt;a class="anchor" href="#apprentissage-supervis%c3%a9"&gt;#&lt;/a&gt;
-&lt;/h1&gt;
+&lt;h2 id="apprentissage-supervisé-versus-non-supervisé"&gt;Apprentissage supervisé versus non-supervisé&lt;a class="anchor" href="#apprentissage-supervis%c3%a9-versus-non-supervis%c3%a9"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;La distinction la plus connue oppose l’apprentissage supervisé à l’apprentissage non-supervisé.&lt;/p&gt;</description></item><item><title>Apprentissage supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/</guid><description>&lt;h1 id="apprentissage-supervisé"&gt;Apprentissage supervisé&lt;a class="anchor" href="#apprentissage-supervis%c3%a9"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;L&amp;rsquo;apprentissage supervisé fonctionne à partir de données pour lesquelles la
 &amp;ldquo;bonne réponse&amp;rdquo; (i.e. celle qu&amp;rsquo;on aimerait que l&amp;rsquo;algorithme fournisse
 systématiquement, une fois entraîné) est fournie, en tant que donnée
@@ -130,10 +91,7 @@ d’entraînement. L&amp;rsquo;apprentissage supervisé correspond à la notion 
 a de l&amp;rsquo;enseignement et de l&amp;rsquo;apprentissage : un enseignant qui pose une question
 à un étudiant est en mesure de le corriger en lui indiquant si sa réponse est
 correcte ou non (car l&amp;rsquo;enseignant connaît, à priori, la &amp;ldquo;bonne réponse&amp;rdquo; à sa
-propre question).&lt;/p&gt;</description></item><item><title>Apprentissage non supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</guid><description>&lt;h1 id="lapprentissage-non-supervisé"&gt;
- L&amp;rsquo;apprentissage non supervisé
- &lt;a class="anchor" href="#lapprentissage-non-supervis%c3%a9"&gt;#&lt;/a&gt;
-&lt;/h1&gt;
+propre question).&lt;/p&gt;</description></item><item><title>Apprentissage non supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</guid><description>&lt;h1 id="lapprentissage-non-supervisé"&gt;L&amp;rsquo;apprentissage non supervisé&lt;a class="anchor" href="#lapprentissage-non-supervis%c3%a9"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Contrairement à l&amp;rsquo;apprentissage supervisé, où les données d&amp;rsquo;entraînement
 incluent explicitement les &amp;ldquo;bonnes réponses&amp;rdquo; (sous forme d&amp;rsquo;étiquettes ou de
 valeurs cibles), l&amp;rsquo;apprentissage non supervisé opère sur des données brutes,
@@ -143,10 +101,7 @@ peu comme explorer un territoire inconnu sans carte : on observe les
 similarités, les regroupements naturels, ou les anomalies, pour en déduire une
 organisation. Cela rend l&amp;rsquo;approche plus exploratoire et moins directive, idéale
 pour des tâches comme la segmentation de clients en marketing, la compression de
-données, ou la détection d&amp;rsquo;anomalies en cybersécurité.&lt;/p&gt;</description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels-travail-noté-2"&gt;
- Classification naïve bayésienne pour détecter les pourriels (travail noté 2)
- &lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels-travail-not%c3%a9-2"&gt;#&lt;/a&gt;
-&lt;/h1&gt;
+données, ou la détection d&amp;rsquo;anomalies en cybersécurité.&lt;/p&gt;</description></item><item><title>Travail noté 2</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/</guid><description>&lt;h1 id="classification-naïve-bayésienne-pour-détecter-les-pourriels-travail-noté-2"&gt;Classification naïve bayésienne pour détecter les pourriels (travail noté 2)&lt;a class="anchor" href="#classification-na%c3%afve-bay%c3%a9sienne-pour-d%c3%a9tecter-les-pourriels-travail-not%c3%a9-2"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;La classification naïve bayésienne est un algorithme d&amp;rsquo;apprentissage supervisé
 qui fonctionne avec les probabilités. Nous avons vu deux variantes de cet
 algorithme :&lt;/p&gt;
