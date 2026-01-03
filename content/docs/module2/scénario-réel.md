@@ -1,9 +1,9 @@
 ---
-title: "Un scénario pour se faire une idée"
+title: "Un scénario réaliste pour se faire tout d'abord une idée"
 weight: 10
 ---
 
-# Un scénario pour se faire une idée
+# Un scénario réaliste pour se faire tout d'abord une idée
 
 Imaginez une compagnie où il y a une chaîne de montage avec laquelle on assemble
 des téléviseurs.
@@ -15,6 +15,8 @@ des téléviseurs.
 Supposons que dans un endroit particulièrement délicat de la chaîne de montage,
 un problème avec un appareil d'assemblage particulier survienne parfois, que
 l'on aimerait détecter le plus rapidement possible.
+
+![](/images/module2/tv_assembly_problem.png)
 
 ## Une solution possible
 
