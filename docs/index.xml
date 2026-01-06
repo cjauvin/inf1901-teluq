@@ -49,16 +49,16 @@ Amérique du Nord, en Europe, en Afrique et dans d&amp;rsquo;autres régions du 
 &lt;/div&gt;&lt;/div&gt;</description></item><item><title>Travaux notés</title><link>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</guid><description>&lt;h1 id="travaux-notés"&gt;Travaux notés&lt;a class="anchor" href="#travaux-not%c3%a9s"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Le cours sera évalué avec cinq travaux pratiques, un par module.&lt;/p&gt;
 &lt;h2 id="module-1"&gt;Module 1&lt;a class="anchor" href="#module-1"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%c3%a9-1"&gt;Visualisation annotée&lt;/a&gt; illustrant des concepts
+&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/"&gt;Visualisation annotée&lt;/a&gt; illustrant des concepts
 historiques et logiques ainsi que des acteur. &lt;em&gt;Pondération : 15% de la note
 finale.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id="module-2"&gt;Module 2&lt;a class="anchor" href="#module-2"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%c3%a9-2"&gt;Construction guidée&lt;/a&gt; d’un algorithme de classification des courriels. &lt;em&gt;Pondération : 20% de la note finale.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/"&gt;Construction guidée&lt;/a&gt; d’un algorithme de classification des courriels. &lt;em&gt;Pondération : 20% de la note finale.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id="module-3"&gt;Module 3&lt;a class="anchor" href="#module-3"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%c3%a9-3"&gt;Exercices interactifs&lt;/a&gt; suivis de questions interprétatives sur l’apprentissage
+&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/"&gt;Exercices interactifs&lt;/a&gt; suivis de questions interprétatives sur l’apprentissage
 profond. &lt;em&gt;Pondération : 20% de la note finale.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id="module-4"&gt;Module 4&lt;a class="anchor" href="#module-4"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%c3%a9-4"&gt;Construction guidée&lt;/a&gt; d&amp;rsquo;un modèle de langage bigramme. &lt;em&gt;Pondération : 20% de la
+&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%C3%A9-4/"&gt;Construction guidée&lt;/a&gt; d&amp;rsquo;un modèle de langage bigramme. &lt;em&gt;Pondération : 20% de la
 note finale.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Feuille de route</title><link>https://cjauvin.github.io/inf1901-teluq/docs/feuille-de-route/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/feuille-de-route/</guid><description>&lt;h1 id="feuille-de-route"&gt;Feuille de route&lt;a class="anchor" href="#feuille-de-route"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Prévoyez environ 9 heures de travail par semaine pendant quinze semaines. Pour
 la plupart d’entre vous, il est impossible de réussir ce cours en y consacrant
@@ -94,7 +94,7 @@ continuels.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;2025-12-22&lt;/em&gt; : Ajout d&amp;rsquo;une section sur &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/aa-adverse/"&gt;l&amp;rsquo;apprentissage automatique adverse&lt;/a&gt; au module 3.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;2025-12-11&lt;/em&gt; : Ajout d&amp;rsquo;un serveur &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/discord/"&gt;Discord&lt;/a&gt;, pour
 jaser d&amp;rsquo;IA et du cours en ligne.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;2025-12-04&lt;/em&gt; : Ajout d&amp;rsquo;une &lt;a href="module2/37-similarit%c3%a9"&gt;section&lt;/a&gt; au module 2, sur les notions
+&lt;p&gt;&lt;em&gt;2025-12-04&lt;/em&gt; : Ajout d&amp;rsquo;une &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/"&gt;section&lt;/a&gt; au module 2, sur les notions
 de similarité et de représentation du sens des mots.&lt;/p&gt;</description></item><item><title>Serveur Discord</title><link>https://cjauvin.github.io/inf1901-teluq/docs/discord/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/discord/</guid><description>&lt;h1 id="venez-discuter-dia-sur-discord-"&gt;Venez discuter d&amp;rsquo;IA sur Discord !&lt;a class="anchor" href="#venez-discuter-dia-sur-discord-"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;On tente une expérience : si ça vous tente, venez discuter des idées de ce cours
 sur la plateforme en ligne &lt;a href="https://discord.com"&gt;Discord&lt;/a&gt;, à l&amp;rsquo;adresse
