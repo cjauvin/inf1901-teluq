@@ -15,10 +15,8 @@ Dans l’AA, un modèle est avant tout une fonction paramétrée qui prend des d
 $$
 f_{\boldsymbol{\theta}} : \mathcal{X} \rightarrow \mathcal{Y}
 $$
-- Données : voir [Que sont les données?]({{< relref "docs/module2/30-les-données" >}})
-
-
-- Tâche : voir [Apprentissage supervisé]({{< relref "docs/module2/60-apprentissage-supervisé" >}}) et [Les paradigmes]({{< relref "docs/module2/50-les-paradigmes" >}})
+- Données : voir [Que sont les données?](30-les-données)
+- Tâche : voir [Apprentissage supervisé](60-apprentissage-supervisé) et [Les paradigmes](50-les-paradigmes)
 - Paramètres : les valeurs numériques internes du modèle (par ex. les pentes et l’ordonnée en régression linéaire, ou les "poids" d’un réseau de neurones)
 - Apprentissage : ajuster les paramètres pour minimiser une fonction d’erreur (aussi appelée "perte")
 
@@ -40,13 +38,16 @@ En statistique, un modèle spécifie une famille de distributions de probabilit�
 - Modèles discriminatifs : apprennent \(p(y\mid x)\) ou directement une frontière de décision (ex. régression logistique, SVM).
 - Modèles génératifs : apprennent \(p(x)\) ou \(p(x, y)\) pour échantillonner/simuler des données (ex. mélanges gaussiens, autoencodeurs variationnels, modèles de diffusion).
 
-Un "modèle de langage" moderne (LLM) est un modèle génératif sur des séquences de tokens, qui approxime \(p(\text{token}_t \mid \text{contexte})\). Voir [Grands modèles de langage]({{< relref "docs/module4/20-grands-modèles-de-langage" >}}).
+Un "modèle de langage" moderne (LLM) est un modèle génératif sur des séquences
+de tokens, qui approxime \(p(\text{token}_t \mid \text{contexte})\). Voir
+[Grands modèles de langage](docs/module4/20-grands-modèles-de-langage).
 
 ## Exemples concrets et repères
 
 - Régression linéaire : architecture linéaire; paramètres = coefficients et biais; sortie = valeur réelle.
 - Arbre de décision : architecture arborescente; paramètres = seuils/splits appris; sortie = classe/valeur.
-- Réseau de neurones : architecture composée de couches; paramètres = matrices de poids; peut être discriminatif ou génératif. Introduction : [Réseaux de neurones]({{< relref "docs/module3/10-réseaux-de-neurones" >}}).
+- Réseau de neurones : architecture composée de couches; paramètres = matrices de poids; peut être discriminatif ou génératif.
+Introduction : [Réseaux de neurones](docs/module3/10-réseaux-de-neurones).
 
 Termes utiles :
 

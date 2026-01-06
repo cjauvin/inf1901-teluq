@@ -9,9 +9,8 @@ slug: algo-le-plus-simple
 Commençons par étudier le problème le plus fondamental et représentatif de
 l'apprentissage automatique, celui de la classification d'objets. Par exemple,
 pouvoir dire si l'image sur cette photo est celle d'un chien, ou d'un chat. Si
-on considère de nouveau notre [scénario initial]({{< relref
-"docs/module2/10-scénario-réel" >}}), on peut synthétiser la structure du problème
-de la manière suivante :
+on considère de nouveau notre [scénario initial](10-scénario-réel), on peut
+synthétiser la structure du problème de la manière suivante :
 
 * Nous avons à priori une série d'**objets** existants (des données)
 * Chaque objet a des **caractéristiques** qui le décrivent, ainsi qu'une **classe** (on parle parfois aussi d'une _étiquette_, ou label en anglais)

@@ -279,7 +279,7 @@ Une manière simple avec laquelle on pourrait tenter d'atténuer le problème du
 manque de contexte serait de considérer l'espace de toutes les suites possibles
 de *deux mots*, par exemple. Nous allons explorer concrètement une
 représentation de ce type (appelée *bigramme*) dans le [travail noté du
-quatrième module]({{< relref "docs/module4/99-travail-noté-4" >}}). Ceci ferait en
+quatrième module](../module4/99-travail-noté-4). Ceci ferait en
 sorte d'ajouter un contexte aux mots : le bigramme `livre intéressant` serait
 donc distinct du bigramme `livre ennuyant`. Le problème cependant serait que la
 taille du "vocabulaire" augmenterait de manière dramatique : $|V|^2$ au lieu de

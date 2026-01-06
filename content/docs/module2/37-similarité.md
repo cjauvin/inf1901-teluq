@@ -6,12 +6,12 @@ slug: similarité
 
 # Le concept de similarité
 
-Nous avons vu avec l'algorithme des [plus proches voisins]({{< relref
-"docs/module2/35-algo-le-plus-simple/" >}}) qu'une notion essentielle est de
-pouvoir mesurer la distance entre deux objets, afin de déterminer à quel point
-ils sont similaires, qu'ils se ressemblent. Mais que veut-on dire exactement par
-cela? Pour de simples points en deux dimensions, nous avons une conception
-intuitive raisonnable : il s'agit de la [distance
+Nous avons vu avec l'algorithme des [plus proches
+voisins](35-algo-le-plus-simple) qu'une notion essentielle est de pouvoir
+mesurer la distance entre deux objets, afin de déterminer à quel point ils sont
+similaires, qu'ils se ressemblent. Mais que veut-on dire exactement par cela?
+Pour de simples points en deux dimensions, nous avons une conception intuitive
+raisonnable : il s'agit de la [distance
 euclidienne](https://fr.wikipedia.org/wiki/Distance_euclidienne) entre les deux
 points, qui se calcule à l'aide d'une formule mathématique simple.
 

@@ -25,9 +25,8 @@ d'AA est avant tout un objet mathématique (un modèle avec ses paramètres), so
 implémentation concrète se fait quand même toujours avec un langage de
 programmation.
 
-Ce sujet est traité plus en profondeur dans le [prochain chapitre]({{< relref
-"docs/module2/30-les-données/" >}}), qui parle des données et de leur
-représentation.
+Ce sujet est traité plus en profondeur dans le [prochain
+chapitre](30-les-données), qui parle des données et de leur représentation.
 
 ![](/images/module2/abeille.png)
 
