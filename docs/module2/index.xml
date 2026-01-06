@@ -43,8 +43,8 @@ magnétisme (disque dur) ou de caractéristiques optiques (CD). Les bits
 &lt;p&gt;Commençons par étudier le problème le plus fondamental et représentatif de
 l&amp;rsquo;apprentissage automatique, celui de la classification d&amp;rsquo;objets. Par exemple,
 pouvoir dire si l&amp;rsquo;image sur cette photo est celle d&amp;rsquo;un chien, ou d&amp;rsquo;un chat. Si
-on considère de nouveau notre &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/"&gt;scénario initial&lt;/a&gt;, on peut synthétiser la structure du problème
-de la manière suivante :&lt;/p&gt;
+on considère de nouveau notre &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/sc%C3%A9nario-r%C3%A9el/"&gt;scénario initial&lt;/a&gt;, on peut
+synthétiser la structure du problème de la manière suivante :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Nous avons à priori une série d&amp;rsquo;&lt;strong&gt;objets&lt;/strong&gt; existants (des données)&lt;/li&gt;
 &lt;li&gt;Chaque objet a des &lt;strong&gt;caractéristiques&lt;/strong&gt; qui le décrivent, ainsi qu&amp;rsquo;une &lt;strong&gt;classe&lt;/strong&gt; (on parle parfois aussi d&amp;rsquo;une &lt;em&gt;étiquette&lt;/em&gt;, ou label en anglais)&lt;/li&gt;
@@ -63,11 +63,12 @@ de choisir la classe majoritaire. Notez que cet algorithme pourrait s&amp;rsquo;
 être interprétée en tant que mesure de similarité. L&amp;rsquo;applet interactive suivante
 illustre ce fonctionnement, à l&amp;rsquo;aide de points rouges et bleus en deux
 dimensions.&lt;/p&gt;</description></item><item><title>Le concept de similarité</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/</guid><description>&lt;h1 id="le-concept-de-similarité"&gt;Le concept de similarité&lt;a class="anchor" href="#le-concept-de-similarit%c3%a9"&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;Nous avons vu avec l&amp;rsquo;algorithme des &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/"&gt;plus proches voisins&lt;/a&gt; qu&amp;rsquo;une notion essentielle est de
-pouvoir mesurer la distance entre deux objets, afin de déterminer à quel point
-ils sont similaires, qu&amp;rsquo;ils se ressemblent. Mais que veut-on dire exactement par
-cela? Pour de simples points en deux dimensions, nous avons une conception
-intuitive raisonnable : il s&amp;rsquo;agit de la &lt;a href="https://fr.wikipedia.org/wiki/Distance_euclidienne"&gt;distance
+&lt;p&gt;Nous avons vu avec l&amp;rsquo;algorithme des &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/algo-le-plus-simple/"&gt;plus proches
+voisins&lt;/a&gt; qu&amp;rsquo;une notion essentielle est de pouvoir
+mesurer la distance entre deux objets, afin de déterminer à quel point ils sont
+similaires, qu&amp;rsquo;ils se ressemblent. Mais que veut-on dire exactement par cela?
+Pour de simples points en deux dimensions, nous avons une conception intuitive
+raisonnable : il s&amp;rsquo;agit de la &lt;a href="https://fr.wikipedia.org/wiki/Distance_euclidienne"&gt;distance
 euclidienne&lt;/a&gt; entre les deux
 points, qui se calcule à l&amp;rsquo;aide d&amp;rsquo;une formule mathématique simple.&lt;/p&gt;</description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle"&gt;Qu&amp;rsquo;est-ce qu&amp;rsquo;on veut dire par modèle?&lt;a class="anchor" href="#quest-ce-quon-veut-dire-par-mod%c3%a8le"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Le mot &amp;ldquo;modèle&amp;rdquo; est polysémique et peut prêter à confusion selon qu’on parle d’apprentissage automatique, de statistiques, de sciences ou de mathématiques pures. Ce chapitre clarifie ces sens et propose un vocabulaire pratique pour les distinguer dans le contexte de ce cours.&lt;/p&gt;
