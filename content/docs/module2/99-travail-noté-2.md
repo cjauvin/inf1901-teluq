@@ -10,8 +10,8 @@ La classification naïve bayésienne est un algorithme d'apprentissage supervis�
 qui fonctionne avec les probabilités. Nous avons vu deux variantes de cet
 algorithme :
 
-1. [La classification de simples points en 2d avec un modèle gaussien]({{< relref "docs/module2/60-apprentissage-supervisé/#classification-bayésienne-naive-gaussienne" >}})
-2. [La classification de vecteurs en haute dimension avec un modèle multinomial]({{< relref "docs/module2/60-apprentissage-supervisé/#classification-bayésienne-naive-multinomiale" >}})
+1. [La classification de simples points en 2d avec un modèle gaussien](docs/module2/60-apprentissage-supervisé/#classification-bayésienne-naive-gaussienne)
+2. [La classification de vecteurs en haute dimension avec un modèle multinomial](docs/module2/60-apprentissage-supervisé/#classification-bayésienne-naive-multinomiale)
 
 Un problème classique qui peut être traité avec cet algorithme est la
 classification de courriels. On peut tenter d'estimer la probabilité qu'un
@@ -53,7 +53,7 @@ $$
 
 1. Suivez les instructions qui suivent pour construire tout d'abord le fichier Google Sheets avec toutes les données nécessaires.
 
-2. Une fois qu'il est complété et fonctionnel, [partagez votre fichier]({{< relref "docs/50-google-sheets/#fonction-de-partage-anonyme-dun-fichier" >}}) et copier le lien vers celui-ci dans un document PDF (**Attention&nbsp;: aucun autre format que PDF ne sera accepté**).
+2. Une fois qu'il est complété et fonctionnel, [partagez votre fichier](docs/50-google-sheets/#fonction-de-partage-anonyme-dun-fichier) et copier le lien vers celui-ci dans un document PDF (**Attention&nbsp;: aucun autre format que PDF ne sera accepté**).
 
 3. Répondez aux questions d'interprétation de la dernière section dans le même fichier PDF, en fournissant des réponses claires et précises.
 
@@ -62,13 +62,12 @@ $$
 Voyons comment il est possible de calculer ces probabilités en entraînant un
 modèle de classification sur une série de courriels particuliers.
 
-Étant donné que nous allons utiliser le tableur en ligne [Google Sheets]({{<
-relref "docs/50-google-sheets" >}}), assurez-vous tout d'abord qu'il est
+Étant donné que nous allons utiliser le tableur en ligne [Google Sheets](docs/50-google-sheets), assurez-vous tout d'abord qu'il est
 correctement configuré.
 
 Copiez tout d'abord ces 10 mini-courriels dans la colonne A d'une nouvelle
 "feuille" Google Sheets, un courriel par rangée (assurez-vous d'utiliser
-correctement la [fonction "copier-coller"]({{< relref "docs/50-google-sheets/#fonction-copier-coller" >}}), si vous le faites) :
+correctement la [fonction "copier-coller"](docs/50-google-sheets/#fonction-copier-coller), si vous le faites) :
 
 ```
 voici le colis est arrivé
@@ -258,7 +257,7 @@ Notre classification finale sera dans la colonne `O` :
    `K4` et `L4` associées au nouveau mot "livrée". D'où proviennent ces nouvelles
    valeurs, et pourquoi a-t-on besoin d'avoir recours à celles-ci dans le cadre du calcul?
 
-3. Est-ce que ce modèle est [paramétrique]({{< relref "docs/module2/50-les-paradigmes/#apprentissage-paramétrique-versus-non-paramétrique" >}}) ou non? Expliquez pourquoi.
+3. Est-ce que ce modèle est [paramétrique](docs/module2/50-les-paradigmes/#apprentissage-paramétrique-versus-non-paramétrique) ou non? Expliquez pourquoi.
 
 4. S'il s'agit d'un modèle paramétrique, quels sont les paramètres du
    modèle (quelles colonnes)?

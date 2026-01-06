@@ -9,8 +9,7 @@ slug: réseaux-de-neurones
 ## Une généralisation de la régression logistique
 
 Sans le réaliser, au module 2, nous avons déjà vu un réseau de neurones (RDN)
-simple, mais qui portait alors un autre nom : la [régression logistique]({{<
-relref "docs/module2/60-apprentissage-supervisé/#la-régression-logistique" >}})
+simple, mais qui portait alors un autre nom : la [régression logistique](docs/module2/60-apprentissage-supervisé#la-régression-logistique)
 (RL).
 
 Une manière visuelle de représenter la régression logistique est la suivante
@@ -26,9 +25,7 @@ couche, elle représente simplement les données que l'on va fournir en entrée
 
 ![](/images/module3/rl1_with_data.png)
 
-Comme nous l'avons déjà exploré au [module 2]({{< relref
-"docs/module2/30-les-données/#niveau-de-lapprentissage-automatique-et-des-mathématiques"
->}}), les données (la partie à gauche) sont la représentation vectorielle
+Comme nous l'avons déjà exploré au [module 2](docs/module2/30-les-données#niveau-de-lapprentissage-automatique-et-des-mathématiques), les données (la partie à gauche) sont la représentation vectorielle
 (numérique et souvent multidimensionnelle) d'un aspect de la réalité, comme par
 exemple ici, une maison à vendre, dont on aimerait déterminer (prédire), à
 partir de ses caractéristiques (les variables $\mathbf{x}$ qui la décrivent), si

@@ -20,9 +20,7 @@ propre question).
 La famille d'algorithmes d'apprentissage supervisé la plus facile à comprendre
 est celle des modèles de classification. Un algorithme de classification est une
 fonction mathématique qui associe des "objets" (donc des points dans un
-[espace vectoriel]({{< relref
-"docs/module2/30-les-données/#niveau-de-lapprentissage-automatique-et-des-mathématiques"
->}})) vers une série prédéfinie d'étiquettes, qu'on appelle souvent des "classes".
+[espace vectoriel](docs/module2/30-les-données/#niveau-de-lapprentissage-automatique-et-des-mathématiques)) vers une série prédéfinie d'étiquettes, qu'on appelle souvent des "classes".
 
 ### La régression logistique
 
@@ -422,8 +420,7 @@ spam en anglais). Ce sera aussi le sujet de votre [travail noté 2](99-travail-n
 
 #### Représenter un courriel comme un vecteur
 
-Comme nous l’avons expliqué dans le chapitre sur [les données]({{< relref
-"docs/module2/30-les-données/#les-mots-et-leur-sens" >}}), un texte peut être
+Comme nous l'avons expliqué dans le chapitre sur [les données](docs/module2/30-les-données/#les-mots-et-leur-sens), un texte peut être
 représenté par un vecteur dans l’« espace des mots ». Dans ce modèle vectoriel,
 chaque dimension correspond à un mot du vocabulaire, et la valeur dans cette
 dimension correspond au nombre de fois que le mot apparaît dans le document.
@@ -511,7 +508,7 @@ précédemment.
 
 ### Autres algorithmes de classification
 
-Le monde des algorithmes de classification supervisé est extrêmement riche et créatif, et il en existe de très nombreux exemples, dont les principes et modes de fonctionnement sont complètement différents de ce que nous avons vu ([paramétriques, non-paramétriques, inductifs, etc.]({{< relref "docs/module2/50-les-paradigmes#apprentissage-paramétrique-versus-non-paramétrique" >}})). Parmi les plus connus, on retrouve :
+Le monde des algorithmes de classification supervisé est extrêmement riche et créatif, et il en existe de très nombreux exemples, dont les principes et modes de fonctionnement sont complètement différents de ce que nous avons vu ([paramétriques, non-paramétriques, inductifs, etc.](docs/module2/50-les-paradigmes#apprentissage-paramétrique-versus-non-paramétrique)). Parmi les plus connus, on retrouve :
 
 - [k-NN](https://fr.wikipedia.org/wiki/M%C3%A9thode_des_k_plus_proches_voisins)
 - [SVM](https://fr.wikipedia.org/wiki/Machine_%C3%A0_vecteurs_de_support)

@@ -87,10 +87,10 @@ Parce que ce sens explique l’intuition générale du mot : un "modèle" est un
 
 ## Où cela s’insère dans le cours
 
-- Les données et leur représentation : [Que sont les données?]({{< relref "docs/module2/30-les-données" >}})
-- Les grandes familles : [Les paradigmes]({{< relref "docs/module2/50-les-paradigmes" >}})
-- L'entraînement supervisé : [Apprentissage supervisé]({{< relref "docs/module2/60-apprentissage-supervisé" >}})
-- Les réseaux et LLMs : [Réseaux de neurones]({{< relref "docs/module3/10-réseaux-de-neurones" >}}), [Grands modèles de langage]({{< relref "docs/module4/20-grands-modèles-de-langage" >}})
+- Les données et leur représentation : [Que sont les données?](docs/module2/30-les-données)
+- Les grandes familles : [Les paradigmes](docs/module2/50-les-paradigmes)
+- L'entraînement supervisé : [Apprentissage supervisé](docs/module2/60-apprentissage-supervisé)
+- Les réseaux et LLMs : [Réseaux de neurones](docs/module3/10-réseaux-de-neurones), [Grands modèles de langage](docs/module4/20-grands-modèles-de-langage)
 
 {{% hint info %}}
 À retenir : en AA, un "modèle" = une fonction paramétrée; en stats, une famille de distributions paramétrée; en sciences, une représentation d’un phénomène; en logique, une structure qui satisfait des axiomes. Préciser le contexte dissipe 95% des ambiguïtés.

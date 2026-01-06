@@ -57,7 +57,7 @@ qui permet à ChatGPT de répondre à une question, ou de composer un poème.
 
 1. Suivez les instructions ci-haut pour construire tout d'abord le fichier Google Sheets avec toutes les données nécessaires.
 
-2. Une fois qu'il est complété et fonctionnel, [partagez votre fichier]({{< relref "docs/50-google-sheets/#fonction-de-partage-anonyme-dun-fichier" >}}) et copier le lien vers celui-ci dans un document PDF (**Attention&nbsp;: aucun autre format que PDF ne sera accepté**).
+2. Une fois qu'il est complété et fonctionnel, [partagez votre fichier](docs/50-google-sheets/#fonction-de-partage-anonyme-dun-fichier) et copier le lien vers celui-ci dans un document PDF (**Attention&nbsp;: aucun autre format que PDF ne sera accepté**).
 
 3. Répondez aux questions d'interprétation qui suivent dans le même fichier PDF, en fournissant des réponses claires et précises.
 
@@ -67,13 +67,12 @@ Voyons maintenant comment il est possible de calculer ces probabilités en
 entraînant un modèle bigramme génératif à partir d'un texte très simple.
 
 Étant donné que nous allons encore une fois utiliser la tableur en ligne [Google
-Sheets]({{< relref "docs/50-google-sheets" >}}), assurez-vous tout d'abord que
+Sheets](docs/50-google-sheets), assurez-vous tout d'abord que
 votre version est correctement configurée.
 
 Copiez tout d'abord les mots de ce texte dans la colonne `A` d'une nouvelle
 "feuille" Google Sheets, un mot par rangée (assurez-vous d'utiliser correctement
-la [fonction "copier-coller"]({{< relref
-"docs/50-google-sheets/#fonction-copier-coller" >}}), si vous le faites) :
+la [fonction "copier-coller"](docs/50-google-sheets/#fonction-copier-coller), si vous le faites) :
 
 ```
 le
