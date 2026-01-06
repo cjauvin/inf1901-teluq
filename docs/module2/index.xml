@@ -108,8 +108,8 @@ données, ou la détection d&amp;rsquo;anomalies en cybersécurité.&lt;/p&gt;</
 qui fonctionne avec les probabilités. Nous avons vu deux variantes de cet
 algorithme :&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bayésienne-naive-gaussienne"&gt;La classification de simples points en 2d avec un modèle gaussien&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bayésienne-naive-multinomiale"&gt;La classification de vecteurs en haute dimension avec un modèle multinomial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bay%c3%a9sienne-naive-gaussienne"&gt;La classification de simples points en 2d avec un modèle gaussien&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bay%c3%a9sienne-naive-multinomiale"&gt;La classification de vecteurs en haute dimension avec un modèle multinomial&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Un problème classique qui peut être traité avec cet algorithme est la
 classification de courriels. On peut tenter d&amp;rsquo;estimer la probabilité qu&amp;rsquo;un

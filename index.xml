@@ -35,7 +35,7 @@ concernant l&amp;rsquo;impact de l&amp;rsquo;IA sur la société (1 : 23 ; 01).&
 &lt;p&gt;Les premiers modèles de génération de texte utilisaient des approches statistiques simples, comme les n-grammes, qui prédisaient le mot suivant en fonction des précédents. L’arrivée des réseaux de neurones, puis des architectures avancées comme les Transformers, a révolutionné le domaine. Les modèles modernes, tels que GPT, sont capables de comprendre des instructions complexes, de dialoguer, de traduire et de générer des textes longs et structurés.&lt;/p&gt;</description></item><item><title>Les réseaux de neurones</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module3/r%C3%A9seaux-de-neurones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module3/r%C3%A9seaux-de-neurones/</guid><description>&lt;h1 id="les-réseaux-de-neurones"&gt;Les réseaux de neurones&lt;a class="anchor" href="#les-r%c3%a9seaux-de-neurones"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;h2 id="une-généralisation-de-la-régression-logistique"&gt;Une généralisation de la régression logistique&lt;a class="anchor" href="#une-g%c3%a9n%c3%a9ralisation-de-la-r%c3%a9gression-logistique"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Sans le réaliser, au module 2, nous avons déjà vu un réseau de neurones (RDN)
-simple, mais qui portait alors un autre nom : la &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#la-régression-logistique"&gt;régression logistique&lt;/a&gt;
+simple, mais qui portait alors un autre nom : la &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#la-r%c3%a9gression-logistique"&gt;régression logistique&lt;/a&gt;
 (RL).&lt;/p&gt;
 &lt;p&gt;Une manière visuelle de représenter la régression logistique est la suivante
 (sous la forme d&amp;rsquo;un
@@ -332,8 +332,8 @@ suivante : &lt;a href="https://discord.gg/yZwwDZyn"&gt;https://discord.gg/yZwwD
 qui fonctionne avec les probabilités. Nous avons vu deux variantes de cet
 algorithme :&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bayésienne-naive-gaussienne"&gt;La classification de simples points en 2d avec un modèle gaussien&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bayésienne-naive-multinomiale"&gt;La classification de vecteurs en haute dimension avec un modèle multinomial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bay%c3%a9sienne-naive-gaussienne"&gt;La classification de simples points en 2d avec un modèle gaussien&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-supervis%C3%A9/#classification-bay%c3%a9sienne-naive-multinomiale"&gt;La classification de vecteurs en haute dimension avec un modèle multinomial&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Un problème classique qui peut être traité avec cet algorithme est la
 classification de courriels. On peut tenter d&amp;rsquo;estimer la probabilité qu&amp;rsquo;un

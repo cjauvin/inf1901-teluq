@@ -81,7 +81,7 @@ conserver une &ldquo;mémoire&rdquo; des états précédents.</p><p>Concrètemen
 couche de poids récurrents (ou réentrants) à la couche cachée. Si la couche
 cachée a $h$ neurones, ceci introduira donc une matrice de poids (paramètres)
 additionnels de $h \times h$ éléments.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/rnn.png alt></p><p>Le problème du &ldquo;gradient qui devient trop petit&rdquo;, dont nous avons discuté dans
-une <a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/r%C3%A9seaux-de-neurones/#plus-de-couches-cachées>section précédente</a> est
+une <a href=https://cjauvin.github.io/inf1901-teluq/docs/module3/r%C3%A9seaux-de-neurones/#plus-de-couches-cach%c3%a9es>section précédente</a> est
 particulièrement important avec les réseaux récurrents. Si on y pense un peu,
 ceci est à prévoir, car si on &ldquo;déroule&rdquo; un réseau récurrent, il est clair que ça
 correspond à une structure avec plusieurs couches successives, ce qui fait en
@@ -158,7 +158,7 @@ nombreux usages en apprentissage automatique. Par exemple, nous verrons que les
 transformers, qui sont un type de réseaux de neurones profonds qui servent de
 fondements aux grands modèles de langage (comme ChatGPT par exemple), en font
 usage. Nous avons déjà brièvement touché ce sujet dans la section sur les
-<a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/#vers-des-représentations-plus-compactes--les-plongements-lexicaux>placements lexicaux</a> (word embeddings).</p><h2 id=les-réseaux-de-neurones-pour-les-graphes-gnns>Les réseaux de neurones pour les graphes (GNNs)<a class=anchor href=#les-r%c3%a9seaux-de-neurones-pour-les-graphes-gnns>#</a></h2><p>Nous avons vu différents exemples de données que peuvent traiter les réseaux de
+<a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/#vers-des-repr%c3%a9sentations-plus-compactes--les-plongements-lexicaux>placements lexicaux</a> (word embeddings).</p><h2 id=les-réseaux-de-neurones-pour-les-graphes-gnns>Les réseaux de neurones pour les graphes (GNNs)<a class=anchor href=#les-r%c3%a9seaux-de-neurones-pour-les-graphes-gnns>#</a></h2><p>Nous avons vu différents exemples de données que peuvent traiter les réseaux de
 neurones : des images, des séquences de mots ou de notes (un roman, ou une pièce
 musicale), des données tabulaires dans un tableur (Excel), etc. Mais les
 possibilités ne s&rsquo;arrêtent pas là. Il est également possible de représenter des
@@ -182,7 +182,7 @@ d&rsquo;abord comment représenter les sommets. Supposons que nous ayons un grap
 simple avec trois sommets (<code>A</code>, <code>B</code> et <code>C</code>) et deux arêtes non-dirigées (<code>A--B</code>
 et <code>A--C</code>). Chaque sommet est tout d&rsquo;abord représenté par une liste de valeurs
 de taille fixe. Il est important de comprendre la nature de ces valeurs numériques, qui sont au coeur du mécanisme de représentation. On peut
-considérer que toutes ces définitions sont équivalentes :</p><ul><li>Une liste de $N$ nombres</li><li>Un vecteur de dimension $N$</li><li>Un plongement vectoriel (de nature très semblable aux <a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/#vers-des-représentations-plus-compactes--les-plongements-lexicaux>plongements lexicaux</a> que nous avons déjà rencontrés dans un chapitre précédent)</li><li>En anglais, les termes &ldquo;features&rdquo; et &ldquo;embeddings&rdquo; (la traduction technique de &ldquo;plongement&rdquo;, un terme très rare en français)</li></ul><p>Dans notre exemple, considérons des plongements de dimension $N=2$, choisis pour représenter
+considérer que toutes ces définitions sont équivalentes :</p><ul><li>Une liste de $N$ nombres</li><li>Un vecteur de dimension $N$</li><li>Un plongement vectoriel (de nature très semblable aux <a href=https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/#vers-des-repr%c3%a9sentations-plus-compactes--les-plongements-lexicaux>plongements lexicaux</a> que nous avons déjà rencontrés dans un chapitre précédent)</li><li>En anglais, les termes &ldquo;features&rdquo; et &ldquo;embeddings&rdquo; (la traduction technique de &ldquo;plongement&rdquo;, un terme très rare en français)</li></ul><p>Dans notre exemple, considérons des plongements de dimension $N=2$, choisis pour représenter
 chaque sommet. Au départ, ces valeurs sont arbitraires et aléatoires : elles ne veulent rien dire, en soi.</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/nodes.png alt></p><p>Nous avons donc là notre première couche de neurones, qui représente les sommets de notre graphe grâce aux plongements :</p><p><img src=https://cjauvin.github.io/inf1901-teluq/images/module3/node_embeddings.png alt></p><p>Comment est-il maintenant possible de représenter les arêtes? Intuitivement, il semble moins
 facile de représenter les arêtes que les sommets, car il s&rsquo;agit d&rsquo;objets dont la rôle est
 de relier deux sommets (contrairement aux sommets, qui sont des objets plus simples). Comment peut-on représenter une relation entre deux objets?
