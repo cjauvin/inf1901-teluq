@@ -713,9 +713,7 @@ réseaux de neurones modernes.
 
 Une fois qu'on a fait des efforts pour comprendre le fonctionnement de certains
 algorithmes de base en apprentissage automatique, il peut être intéressant de
-considérer, [à nouveau]({{< relref
-"docs/module2/10-scénario-réel/#en-quoi-est-ce-que-ceci-constitue-de-lintelligence"
->}}), notre question d'ordre philosophique (ou linguistique) : en quoi, au
+considérer, [à nouveau](10-scénario-réel#en-quoi-est-ce-que-ceci-constitue-de-lintelligence), notre question d'ordre philosophique (ou linguistique) : en quoi, au
 juste, est-ce que cela constitue de l'intelligence, *artificielle* ou non? Nous
 allons voir par la suite en quoi les idées relativement simples et peu
 puissantes que nous avons développées dans ce module vont évoluer vers les

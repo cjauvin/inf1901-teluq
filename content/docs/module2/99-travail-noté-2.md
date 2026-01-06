@@ -120,8 +120,7 @@ considérations les mots donc, pour le moment) :
 {{% hint warning %}}
 
 Si vous obtenez une erreur avec la formule à ce stade, il est très possible que
-les paramètres linguistiques de votre Google Sheets ne soient pas [correctement
-configurés]({{< relref "docs/50-google-sheets#parametres-linguistiques" >}}).
+les paramètres linguistiques de votre Google Sheets ne soient pas [correctement configurés](../50-google-sheets#parametres-linguistiques).
 
 {{% /hint %}}
 

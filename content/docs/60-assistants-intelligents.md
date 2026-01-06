@@ -21,7 +21,7 @@ développé les vôtres à la fin de ce cours, le but aura clairement été atte
 
 Voici un exemple d'interaction : supposons que j'ai de la difficulté à
 comprendre un aspect des [mathématiques de la régression
-logistique](60-apprentissage-supervisé#la-régression-logistique), je peux
+logistique](module2/60-apprentissage-supervisé#la-régression-logistique), je peux
 faire une capture d'écran du texte et la donner à ChatGPT, et poser ma question
 ("je ne comprends pas pourquoi les deux dernières équations sont
 équivalentes").. ChatGPT (ou un autre outil) se fera un plaisir de vous

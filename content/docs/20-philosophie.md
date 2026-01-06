@@ -32,7 +32,7 @@ intuitive. Nous allons tenter d'exploiter cela, en mettant le plus possible
 l'emphase sur la visualisation et les explications claires en mots, plutôt que
 les équations (bien que ces dernières seront présentes mais optionnelles, car
 elles constituent tout de même les fondations théoriques, qui permettent de
-réduire l'ambiguité conceptuelle au minimum, et souvent de faire des liens
+réduire l’ambiguïté conceptuelle au minimum, et souvent de faire des liens
 profonds et subtils entre des idées mathématiques qui ne semblent pas à priori
 si proches).
 
@@ -46,16 +46,16 @@ certains concepts, et les vidéos que nous proposons du créateur en ligne
 pas se passer.
 
 L'apprentissage automatique est aussi profondément computationnel, et évidemment
-la programmation y joue un grand rôle. Le substrat de l'intelligence articielle
-est l'ordinateur, et celui-ci n'a jamais cessé, depuis sa création, d'être basé
-sur l'architecture de Von Neumann, ce qui implique que son fonctionnement
-requiert nécessairement de la programmation au sens traditionnel (l'AA n'y
-échappe pas). Il serait probablement possible d'enseigner les fondements de l'AA
-entièrement de cette perspective, étant donné qu'il est possible d'exprimer
-toutes les idées mathématiques à l'aide de programmes. Nous allons toutefois
-nous contenter de faire cela seulement à quelques endroits, qui resteront
-optionnels. Il est à noter que deux des travaux notés utilisent Google Sheets,
-la version en ligne de Excel, qui est un environnement de calcul qui se
+la programmation y joue un grand rôle. Le substrat de l'intelligence
+artificielle est l'ordinateur, et celui-ci n'a jamais cessé, depuis sa création,
+d'être basé sur l'architecture de Von Neumann, ce qui implique que son
+fonctionnement requiert nécessairement de la programmation au sens traditionnel
+(l'AA n'y échappe pas). Il serait probablement possible d'enseigner les
+fondements de l'AA entièrement de cette perspective, étant donné qu'il est
+possible d'exprimer toutes les idées mathématiques à l'aide de programmes. Nous
+allons toutefois nous contenter de faire cela seulement à quelques endroits, qui
+resteront optionnels. Il est à noter que deux des travaux notés utilisent Google
+Sheets, la version en ligne de Excel, qui est un environnement de calcul qui se
 rapproche beaucoup de la programmation, de par sa nature même. Nous pensons que
 ceci fera en sorte d'offrir au moins une idée approximative du développement en
 AA, même pour les gens qui ne maîtrisent pas la programmation.

@@ -163,7 +163,7 @@ colonne `C`) :
 
 Si vous obtenez une erreur avec la formule à ce stade, il est très possible que
 les paramètres linguistiques de votre Google Sheets ne soient pas [correctement
-configurés]({{< relref "docs/50-google-sheets#parametres-linguistiques" >}}).
+configurés](../50-google-sheets#parametres-linguistiques).
 
 {{% /hint %}}
 
@@ -290,7 +290,7 @@ en glissant la cellule `J2` vers le bas.
 2. Expliquez en vos mots comment ces paramètres sont calculés.
 
 3. En quoi la colonne `B` de ce modèle diffère de la colonne `B` du modèle de
-   classification des courriels du [travail noté 2](/docs/module2/travail-noté-22)
+   classification des courriels du [travail noté 2](/docs/module2/99-travail-noté-2)
 
 4. Expliquez en quoi le modèle de classification du travail 2 était un modèle
    discriminatif, alors que ce modèle de langage est un modèle génératif?

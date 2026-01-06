@@ -38,11 +38,10 @@ grands modèles de langages (GML, ou LLM en anglais) comme GPT de OpenAI, d'autr
 
 ## Évaluation
 
-Le [travail noté 1](/docs/module1/travail-noté-1), comptant pour 15% de
+Le [travail noté 1](99-travail-noté-1), comptant pour 15% de
 l'évaluation finale, consiste à représenter une ligne de temps documentée,
 marquant l'évolution de l'intelligence artificielle depuis ses fondations
 (Turing, 1950) jusqu'à aujourd'hui. Cette ligne de temps doit indiquer votre
 sélection de cinq grandes étapes de l'histoire de l'intelligence artificielle en
 y associant le ou les principaux scientifiques ainsi qu'une description des
 innovations ou travaux qui s'y rattachent.
-
