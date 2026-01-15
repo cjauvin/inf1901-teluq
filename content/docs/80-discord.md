@@ -13,3 +13,5 @@ suivante&nbsp;: https://discord.gg/QxrtkpgtRS
 Venez poser des questions et discuter de questions philosophiques avec au moins
 [un](https://www.teluq.ca/siteweb/univ/cjauvin.html) des professeurs de ce cours
 !
+
+<iframe src="https://discord.com/widget?id=1448801083991396450&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
