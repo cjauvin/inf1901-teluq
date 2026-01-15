@@ -76,7 +76,7 @@ choix plus courant Excel, car Google Sheets est plus accessible, et le langage
 de ses formules est plus facile à gérer (celui d&amp;rsquo;Excel dépend de la langue et
 des paramètres régionaux de votre système d&amp;rsquo;exploitation). Pour éviter la
 confusion dans le contexte des travaux notés, nous devons tout d&amp;rsquo;abord nous
-assurer que la langue des fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p&gt;</description></item><item><title>Usage de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</guid><description>&lt;h1 id="lusage-dassistants-intelligents"&gt;L&amp;rsquo;usage d&amp;rsquo;assistants intelligents&lt;a class="anchor" href="#lusage-dassistants-intelligents"&gt;#&lt;/a&gt;&lt;/h1&gt;
+assurer que la langue des fonctions et des paramètres régionaux est l&amp;rsquo;anglais :&lt;/p&gt;</description></item><item><title>Usage de l'IA (pour ce cours)</title><link>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</guid><description>&lt;h1 id="lusage-dassistants-intelligents"&gt;L&amp;rsquo;usage d&amp;rsquo;assistants intelligents&lt;a class="anchor" href="#lusage-dassistants-intelligents"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Étant donné qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un cours sur l&amp;rsquo;intelligence artificielle, l&amp;rsquo;usage
 d&amp;rsquo;assistants intelligents (ChatGPT, Claude, Gemini, etc) est évidemment
 encouragé ! Ceci s&amp;rsquo;applique autant aux travaux notés qu&amp;rsquo;au reste du contenu du
@@ -85,8 +85,9 @@ cours.&lt;/p&gt;
 d&amp;rsquo;avoir une compréhension viscérale des réponses qu&amp;rsquo;il fournira, et de ne pas
 hésiter à engager un dialogue avec l&amp;rsquo;agent, dans le but de clarifier des aspects
 du problème qui pourraient rester obscurs pour vous. N&amp;rsquo;oubliez pas que le but de
-ce cours est la construction de bons modèles mentaux pour penser à des problèmes
-de modélisation. L&amp;rsquo;agent possède déjà ces modèles mentaux, si vous avez
+ce cours est la construction de bons modèles mentaux pour penser à
+l&amp;rsquo;intelligence artificielle, et comprendre son fonctionnement, au-delà de sa
+surface applicative. L&amp;rsquo;agent possède déjà ces modèles mentaux, si vous avez
 développé les vôtres à la fin de ce cours, le but aura clairement été atteint !&lt;/p&gt;</description></item><item><title>Évolution du cours (venez voir de temps en temps!)</title><link>https://cjauvin.github.io/inf1901-teluq/docs/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/changelog/</guid><description>&lt;h1 id="évolution-du-cours"&gt;Évolution du cours&lt;a class="anchor" href="#%c3%a9volution-du-cours"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;L&amp;rsquo;intelligence artificielle est un sujet qui évolue à une vitesse prodigieuse,
 et le cours INF 1901 tente donc d&amp;rsquo;évoluer lui aussi, avec des changements

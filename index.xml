@@ -293,7 +293,7 @@ d’entraînement. L&amp;rsquo;apprentissage supervisé correspond à la notion 
 a de l&amp;rsquo;enseignement et de l&amp;rsquo;apprentissage : un enseignant qui pose une question
 à un étudiant est en mesure de le corriger en lui indiquant si sa réponse est
 correcte ou non (car l&amp;rsquo;enseignant connaît, à priori, la &amp;ldquo;bonne réponse&amp;rdquo; à sa
-propre question).&lt;/p&gt;</description></item><item><title>Usage de l'IA</title><link>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</guid><description>&lt;h1 id="lusage-dassistants-intelligents"&gt;L&amp;rsquo;usage d&amp;rsquo;assistants intelligents&lt;a class="anchor" href="#lusage-dassistants-intelligents"&gt;#&lt;/a&gt;&lt;/h1&gt;
+propre question).&lt;/p&gt;</description></item><item><title>Usage de l'IA (pour ce cours)</title><link>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/assistants-intelligents/</guid><description>&lt;h1 id="lusage-dassistants-intelligents"&gt;L&amp;rsquo;usage d&amp;rsquo;assistants intelligents&lt;a class="anchor" href="#lusage-dassistants-intelligents"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Étant donné qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un cours sur l&amp;rsquo;intelligence artificielle, l&amp;rsquo;usage
 d&amp;rsquo;assistants intelligents (ChatGPT, Claude, Gemini, etc) est évidemment
 encouragé ! Ceci s&amp;rsquo;applique autant aux travaux notés qu&amp;rsquo;au reste du contenu du
@@ -302,8 +302,9 @@ cours.&lt;/p&gt;
 d&amp;rsquo;avoir une compréhension viscérale des réponses qu&amp;rsquo;il fournira, et de ne pas
 hésiter à engager un dialogue avec l&amp;rsquo;agent, dans le but de clarifier des aspects
 du problème qui pourraient rester obscurs pour vous. N&amp;rsquo;oubliez pas que le but de
-ce cours est la construction de bons modèles mentaux pour penser à des problèmes
-de modélisation. L&amp;rsquo;agent possède déjà ces modèles mentaux, si vous avez
+ce cours est la construction de bons modèles mentaux pour penser à
+l&amp;rsquo;intelligence artificielle, et comprendre son fonctionnement, au-delà de sa
+surface applicative. L&amp;rsquo;agent possède déjà ces modèles mentaux, si vous avez
 développé les vôtres à la fin de ce cours, le but aura clairement été atteint !&lt;/p&gt;</description></item><item><title>Apprentissage non supervisé</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/apprentissage-non-supervis%C3%A9/</guid><description>&lt;h1 id="lapprentissage-non-supervisé"&gt;L&amp;rsquo;apprentissage non supervisé&lt;a class="anchor" href="#lapprentissage-non-supervis%c3%a9"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Contrairement à l&amp;rsquo;apprentissage supervisé, où les données d&amp;rsquo;entraînement
 incluent explicitement les &amp;ldquo;bonnes réponses&amp;rdquo; (sous forme d&amp;rsquo;étiquettes ou de
