@@ -10,6 +10,10 @@ L'intelligence artificielle est un sujet qui évolue à une vitesse prodigieuse,
 et le cours INF 1901 tente donc d'évoluer lui aussi, avec des changements
 continuels.
 
+*2026-01-29* : Ajout d'un lien vers le podcast [Machine Learning Street
+Talk](https://www.youtube.com/@MachineLearningStreetTalk) dans les [ressources
+additionnelles](600-ressources-additionnelles).
+
 *2025-12-22* : Ajout d'une section sur [l'apprentissage automatique adverse](module3/40-aa-adverse) au module 3.
 
 *2025-12-11* : Ajout d'un serveur [Discord](80-discord), pour jaser d'IA et du cours en ligne.

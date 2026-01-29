@@ -6,6 +6,17 @@ slug: ressources-additionnelles
 
 # Pour aller plus loin
 
+## Le podcast MLST
+
+Le podcast [Machine Learning Street
+Talk](https://www.youtube.com/@MachineLearningStreetTalk) (en anglais seulement)
+est un excellent mélange de discussions philosophiques, scientifiques et
+techniques à propos de ce qui se passe en IA :
+
+{{< youtube-playlist id="UUMLtBahI5DMrt0NPvDSoIRQ" >}}
+
+## Présentations diverses
+
 Cette présentation (en anglais seulement) fait un excellent survol des liens
 profonds entre les mathématiques, la philosophie et l'intelligence artificielle
 :
