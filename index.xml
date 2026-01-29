@@ -319,6 +319,9 @@ données, ou la détection d&amp;rsquo;anomalies en cybersécurité.&lt;/p&gt;</
 &lt;p&gt;L&amp;rsquo;intelligence artificielle est un sujet qui évolue à une vitesse prodigieuse,
 et le cours INF 1901 tente donc d&amp;rsquo;évoluer lui aussi, avec des changements
 continuels.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;2026-01-29&lt;/em&gt; : Ajout d&amp;rsquo;un lien vers le podcast &lt;a href="https://www.youtube.com/@MachineLearningStreetTalk"&gt;Machine Learning Street
+Talk&lt;/a&gt; dans les &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/"&gt;ressources
+additionnelles&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;2025-12-22&lt;/em&gt; : Ajout d&amp;rsquo;une section sur &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/aa-adverse/"&gt;l&amp;rsquo;apprentissage automatique adverse&lt;/a&gt; au module 3.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;2025-12-11&lt;/em&gt; : Ajout d&amp;rsquo;un serveur &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/discord/"&gt;Discord&lt;/a&gt;, pour jaser d&amp;rsquo;IA et du cours en ligne.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;2025-12-04&lt;/em&gt; : Ajout d&amp;rsquo;une &lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/similarit%C3%A9/"&gt;section&lt;/a&gt; au module 2, sur les notions de similarité et de représentation du sens des mots.&lt;/p&gt;</description></item><item><title>Serveur Discord</title><link>https://cjauvin.github.io/inf1901-teluq/docs/discord/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/discord/</guid><description>&lt;h1 id="venez-discuter-dia-sur-discord-"&gt;Venez discuter d&amp;rsquo;IA sur Discord !&lt;a class="anchor" href="#venez-discuter-dia-sur-discord-"&gt;#&lt;/a&gt;&lt;/h1&gt;
@@ -374,17 +377,26 @@ catastrophiques de l’IA) et des &amp;ldquo;accélérationistes&amp;rdquo; (ceu
 développement rapide de l’IA). Vous utiliserez également un outil d’IA pour vous
 assister dans la rédaction, tout en réfléchissant à son impact sur votre
 processus.&lt;/p&gt;</description></item><item><title>Ressources supplémentaires</title><link>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/ressources-additionnelles/</guid><description>&lt;h1 id="pour-aller-plus-loin"&gt;Pour aller plus loin&lt;a class="anchor" href="#pour-aller-plus-loin"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="le-podcast-mlst"&gt;Le podcast MLST&lt;a class="anchor" href="#le-podcast-mlst"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Le podcast &lt;a href="https://www.youtube.com/@MachineLearningStreetTalk"&gt;Machine Learning Street
+Talk&lt;/a&gt; (en anglais seulement)
+est un excellent mélange de discussions philosophiques, scientifiques et
+techniques à propos de ce qui se passe en IA :&lt;/p&gt;
+&lt;div class="book-embed"&gt;
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe
+ src="https://www.youtube.com/embed?listType=playlist&amp;list=UUMLtBahI5DMrt0NPvDSoIRQ"
+ style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+ frameborder="0"
+ allowfullscreen
+ loading="lazy"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id="présentations-diverses"&gt;Présentations diverses&lt;a class="anchor" href="#pr%c3%a9sentations-diverses"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Cette présentation (en anglais seulement) fait un excellent survol des liens
 profonds entre les mathématiques, la philosophie et l&amp;rsquo;intelligence artificielle
-:&lt;/p&gt;
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Lqt7TgYk8rU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
-&lt;details &gt;&lt;summary&gt;Transcription traduite en français&lt;/summary&gt;&lt;div class="markdown-inner"&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;p&gt;En gros, on y présente 4 paradigmes mathématiques et leur correspondance dans le monde
-de l&amp;rsquo;intelligence artificielle :&lt;/p&gt;</description></item><item><title>Conclusion</title><link>https://cjauvin.github.io/inf1901-teluq/docs/conclusion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/conclusion/</guid><description>&lt;h1 id="conclusion"&gt;Conclusion&lt;a class="anchor" href="#conclusion"&gt;#&lt;/a&gt;&lt;/h1&gt;
+:&lt;/p&gt;</description></item><item><title>Conclusion</title><link>https://cjauvin.github.io/inf1901-teluq/docs/conclusion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/conclusion/</guid><description>&lt;h1 id="conclusion"&gt;Conclusion&lt;a class="anchor" href="#conclusion"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Merci d&amp;rsquo;avoir participé à ce cours d&amp;rsquo;initiation à l&amp;rsquo;IA !&lt;/p&gt;
 &lt;p&gt;Au fil des modules, vous avez découvert les fondements de l’intelligence artificielle, ses principaux paradigmes, les réseaux de neurones, l’apprentissage automatique, l’IA générative et les grands modèles de langage. Vous avez exploré les enjeux techniques, philosophiques et éthiques qui accompagnent le développement de ces technologies.&lt;/p&gt;
 &lt;p&gt;L’IA transforme déjà de nombreux domaines : santé, éducation, industrie, arts, communication… Elle ouvre des perspectives fascinantes, mais soulève aussi des questions sur la responsabilité, la transparence et l’impact social.&lt;/p&gt;</description></item></channel></rss>
