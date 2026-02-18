@@ -4,6 +4,14 @@ weight: 40
 slug: travaux-notés
 ---
 
+{{% hint info %}}
+
+*« Bien sûr. Je suis une machine, et vous êtes une machine, et nous pensons tous les deux, n’est-ce pas ? »*
+
+Claude Shannon (en réponse à la question "est-ce qu'une machine peut penser?")
+
+{{% /hint %}}
+
 # Travaux notés
 
 Le cours sera évalué avec cinq travaux pratiques, un par module.

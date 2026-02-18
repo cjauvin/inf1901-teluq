@@ -4,6 +4,19 @@ weight: 30
 slug: livres
 ---
 
+{{% hint info %}}
+
+*« Une machine peut-elle penser ? — Peut-elle avoir mal ? Eh bien, le corps
+humain doit-il être appelé une machine ? Il s’en rapproche assurément autant que
+possible. Mais une machine ne peut sûrement pas penser ! Est-ce une proposition
+empirique ? Non. Nous disons seulement d’un être humain, et de ce qui lui
+ressemble, qu’il pense. Nous le disons aussi des poupées (et peut-être même des
+fantômes). Considère le mot “penser” comme un instrument ! »*
+
+Ludwig Wittgenstein
+
+{{% /hint %}}
+
 # Les livres du cours
 
 Cliquez sur les liens pour vous procurer la version e-Pub des livres, que vous devez acheter pour le cours.
