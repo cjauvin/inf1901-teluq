@@ -177,17 +177,13 @@ deviennent foisonnantes et très intéressantes avec ce sujet !&lt;/p&gt;
 &lt;p&gt;Un peu comme on l&amp;rsquo;a fait avec l&amp;rsquo;ajout de couches cachées supplémentaires pour un
 réseau de neurones, si on prend un moment pour considérer son architecture, il
 est relativement facile d&amp;rsquo;imaginer des variations &amp;ldquo;topologiques&amp;rdquo; (des manières
-pour ses éléments d&amp;rsquo;être connectés en un graphe).&lt;/p&gt;</description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;h1 id="les-livres-du-cours"&gt;Les livres du cours&lt;a class="anchor" href="#les-livres-du-cours"&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;Cliquez sur les liens pour vous procurer la version e-Pub des livres, que vous devez acheter pour le cours.&lt;/p&gt;
-&lt;div class="book-columns flex flex-wrap"&gt;&lt;div class="flex-even markdown-inner" style="flex-grow: 1;"&gt;
-&lt;p&gt;&lt;a href="https://www.leslibraires.ca/livres/la-plus-belle-histoire-de-l-stanislas-dehaene-9782221221105.html"&gt;La plus belle histoire de l&amp;rsquo;intelligence&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Stanislas Dehaene, Yann Le Cun et Jacques Girardon (2018)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.leslibraires.ca/livres/la-plus-belle-histoire-de-l-stanislas-dehaene-9782221221105.html"&gt;&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/livre_la_plus_belle_histoire_de_lintelligence.jpg" alt="" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;div class="flex-even markdown-inner" style="flex-grow: 1;"&gt;
-&lt;p&gt;&lt;a href="https://www.leslibraires.ca/livres/quand-la-machine-apprend-la-revolution-yann-le-cun-9782738149312.html"&gt;Quand la machine apprend: la révolution des neurones artificiels et de l&amp;rsquo;apprentissage profond&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Yann Le Cun (2019)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.leslibraires.ca/livres/quand-la-machine-apprend-la-revolution-yann-le-cun-9782738149312.html"&gt;&lt;img src="https://cjauvin.github.io/inf1901-teluq/images/livre_quand_la_machine_apprend.jpg" alt="" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description></item><item><title>Que sont les données?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</guid><description>&lt;h1 id="que-sont-les-données-et-comment-les-représenter"&gt;Que sont les données, et comment les représenter?&lt;a class="anchor" href="#que-sont-les-donn%c3%a9es-et-comment-les-repr%c3%a9senter"&gt;#&lt;/a&gt;&lt;/h1&gt;
+pour ses éléments d&amp;rsquo;être connectés en un graphe).&lt;/p&gt;</description></item><item><title>Les livres</title><link>https://cjauvin.github.io/inf1901-teluq/docs/livres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/livres/</guid><description>&lt;blockquote class="book-hint info"&gt;
+&lt;p&gt;&lt;em&gt;« Une machine peut-elle penser ? — Peut-elle avoir mal ? Eh bien, le corps
+humain doit-il être appelé une machine ? Il s’en rapproche assurément autant que
+possible. Mais une machine ne peut sûrement pas penser ! Est-ce une proposition
+empirique ? Non. Nous disons seulement d’un être humain, et de ce qui lui
+ressemble, qu’il pense. Nous le disons aussi des poupées (et peut-être même des
+fantômes). Considère le mot “penser” comme un instrument ! »&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Que sont les données?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/les-donn%C3%A9es/</guid><description>&lt;h1 id="que-sont-les-données-et-comment-les-représenter"&gt;Que sont les données, et comment les représenter?&lt;a class="anchor" href="#que-sont-les-donn%c3%a9es-et-comment-les-repr%c3%a9senter"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Il y a une tension fondamentale en informatique entre les différentes manières
 de représenter les données, et ce qu&amp;rsquo;elles peuvent signifier. Quand on ajoute
 l&amp;rsquo;apprentissage automatique, la situation devient encore plus complexe. Tentons
@@ -243,20 +239,18 @@ classifier deux images pratiquement identiques, de manière complètement
 différente. Voyons comment ceci est possible.&lt;/p&gt;</description></item><item><title>Qu'est-ce qu'un modèle?</title><link>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/module2/mod%C3%A8les/</guid><description>&lt;h1 id="quest-ce-quon-veut-dire-par-modèle"&gt;Qu&amp;rsquo;est-ce qu&amp;rsquo;on veut dire par modèle?&lt;a class="anchor" href="#quest-ce-quon-veut-dire-par-mod%c3%a8le"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Le mot &amp;ldquo;modèle&amp;rdquo; est polysémique et peut prêter à confusion selon qu’on parle d’apprentissage automatique, de statistiques, de sciences ou de mathématiques pures. Ce chapitre clarifie ces sens et propose un vocabulaire pratique pour les distinguer dans le contexte de ce cours.&lt;/p&gt;
 &lt;h2 id="le-sens-central-en-apprentissage-automatique"&gt;Le sens central en apprentissage automatique&lt;a class="anchor" href="#le-sens-central-en-apprentissage-automatique"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Dans l’AA, un modèle est avant tout une fonction paramétrée qui prend des données en entrée et produit une sortie utile (prédiction, score, probabilité, texte, etc.) :&lt;/p&gt;</description></item><item><title>Travaux notés</title><link>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</guid><description>&lt;h1 id="travaux-notés"&gt;Travaux notés&lt;a class="anchor" href="#travaux-not%c3%a9s"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Dans l’AA, un modèle est avant tout une fonction paramétrée qui prend des données en entrée et produit une sortie utile (prédiction, score, probabilité, texte, etc.) :&lt;/p&gt;</description></item><item><title>Travaux notés</title><link>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/travaux-not%C3%A9s/</guid><description>&lt;blockquote class="book-hint info"&gt;
+&lt;p&gt;&lt;em&gt;« Bien sûr. Je suis une machine, et vous êtes une machine, et nous pensons tous les deux, n’est-ce pas ? »&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Claude Shannon (en réponse à la question &amp;ldquo;est-ce qu&amp;rsquo;une machine peut penser?&amp;rdquo;)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="travaux-notés"&gt;Travaux notés&lt;a class="anchor" href="#travaux-not%c3%a9s"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Le cours sera évalué avec cinq travaux pratiques, un par module.&lt;/p&gt;
 &lt;h2 id="module-1"&gt;Module 1&lt;a class="anchor" href="#module-1"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module1/travail-not%C3%A9-1/"&gt;Visualisation annotée&lt;/a&gt; illustrant des concepts
 historiques et logiques ainsi que des acteur. &lt;em&gt;Pondération : 15% de la note
 finale.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id="module-2"&gt;Module 2&lt;a class="anchor" href="#module-2"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/"&gt;Construction guidée&lt;/a&gt; d’un algorithme de classification des courriels. &lt;em&gt;Pondération : 20% de la note finale.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id="module-3"&gt;Module 3&lt;a class="anchor" href="#module-3"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module3/travail-not%C3%A9-3/"&gt;Exercices interactifs&lt;/a&gt; suivis de questions interprétatives sur l’apprentissage
-profond. &lt;em&gt;Pondération : 20% de la note finale.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id="module-4"&gt;Module 4&lt;a class="anchor" href="#module-4"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module4/travail-not%C3%A9-4/"&gt;Construction guidée&lt;/a&gt; d&amp;rsquo;un modèle de langage bigramme. &lt;em&gt;Pondération : 20% de la
-note finale.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Feuille de route</title><link>https://cjauvin.github.io/inf1901-teluq/docs/feuille-de-route/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/feuille-de-route/</guid><description>&lt;h1 id="feuille-de-route"&gt;Feuille de route&lt;a class="anchor" href="#feuille-de-route"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://cjauvin.github.io/inf1901-teluq/docs/module2/travail-not%C3%A9-2/"&gt;Construction guidée&lt;/a&gt; d’un algorithme de classification des courriels. &lt;em&gt;Pondération : 20% de la note finale.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Feuille de route</title><link>https://cjauvin.github.io/inf1901-teluq/docs/feuille-de-route/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cjauvin.github.io/inf1901-teluq/docs/feuille-de-route/</guid><description>&lt;h1 id="feuille-de-route"&gt;Feuille de route&lt;a class="anchor" href="#feuille-de-route"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Prévoyez environ 9 heures de travail par semaine pendant quinze semaines. Pour
 la plupart d’entre vous, il est impossible de réussir ce cours en y consacrant
 que quelques d’heures par semaine.&lt;/p&gt;
