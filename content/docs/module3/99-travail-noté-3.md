@@ -64,8 +64,8 @@ de manière interactive et intuitive le fonctionnement des réseaux de neurones.
    </p>
 
    À priori, est-ce qu'il vous apparaît possible qu'un modèle ayant servi à
-   classifier le précédent jeu de donnes puisse servir à classifier celui-ci? Expliquez
-   pourquoi. Tentez l'expérience, que se passe-t-il?
+   classifier le précédent jeu de données puisse servir à classifier celui-ci?
+   Expliquez pourquoi. Tentez l'expérience, que se passe-t-il?
 
 6. Ajoutez maintenant une couche cachée avec trois neurones, quel est l'effet
    sur l’entraînement? N'oubliez pas que la fonction d’entraînement est démarrée
