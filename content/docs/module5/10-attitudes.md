@@ -20,11 +20,11 @@ libérale est présentée dans le documentaire L'intelligence artificielle déco
 innovation et contrôle. Ce documentaire est relativement long (2 heures), mais
 il est divisé en sections. Deux sections couvrent davantage les aspects
 critiques et éthiques. Ce sont Défis éthiques et sociaux qui abordent des
-questions liées à la vie privée, à la sécurité et aux inégalités (1 : 00 : 40)
+questions liées à la vie privée, à la sécurité et aux inégalités (`1:00:40`)
 ainsi que Furturs possibles qui discute des scénarios optimistes et pessimistes
-concernant l'impact de l'IA sur la société (1 : 23 ; 01).
+concernant l'impact de l'IA sur la société (`1:23;01`).
 
-{{< youtube id="QFKHd2k_RNE" >}}
+{{< youtube id="QFKHd2k_RNE" start="95">}}
 
 On ajoute ici [La Déclaration de Montréal pour un développement responsable de
 l'IA](https://droit.cairn.info/article/RAI_077_0067), que vous pourriez
