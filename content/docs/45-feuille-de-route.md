@@ -4,6 +4,14 @@ weight: 45
 slug: feuille-de-route
 ---
 
+{{% hint info %}}
+
+*« Nous avons tendance à surestimer les effets d'une technologie à court terme et à les sous-estimer à long terme. »*
+
+Roy Amara (cette idée est appelée la "Loi d'Amara")
+
+{{% /hint %}}
+
 # Feuille de route
 
 Prévoyez environ 9 heures de travail par semaine pendant quinze semaines. Pour
