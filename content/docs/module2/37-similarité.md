@@ -95,7 +95,7 @@ immédiat d'un mot particulier). Les algorithmes d'apprentissage ont de la
 difficulté à opérer dans un tel type d'espace (beaucoup de dimensions, dont la
 plupart à zéro, donc de _densité_ très faible). On parle parfois du [fléau de la
 dimension](https://fr.wikipedia.org/wiki/Fl%C3%A9au_de_la_dimension) (curse of
-dimensionality) décrire ce problème.
+dimensionality), pour décrire ce problème.
 
 ## Les plongements lexicaux (word embeddings)
 
@@ -111,7 +111,7 @@ d'apprentissage peut façonner sa propre représentation des mots et de leur sen
 de manière interne. La position des mots dans cet espace, ainsi que la
 signification de ses dimensions, n'est pas déterminée d'avance, avant le début
 de l’entraînement. C'est plutôt le processus d’entraînement qui constitue leur
-définition, par un processus d'optimisation (la qualité de la représente
+définition, par un processus d'optimisation (la qualité de la représentation
 augmente, à mesure que l’entraînement progresse). L'algorithme apprend le sens
 des mots, et s'en construit une représentation interne, qui lui est propre. Ce
 mécanisme de représentation particulier, qu'on nomme les _plongements lexicaux_
