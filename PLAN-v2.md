@@ -60,8 +60,8 @@ Front matter : `title`, `weight` (ordonne le menu), `slug` optionnel. Fichiers n
 ### Ossature (6 épisodes, à raffiner à la rédaction)
 1. **Turing, la question fondatrice (1950)** — mécaniser la pensée ? Test de Turing, machine universelle. Idée : la pensée comme calcul.
 2. **1956-58, deux paris rivaux** — Dartmouth / IA symbolique (règles, symboles) **vs** perceptron de Rosenblatt (apprendre d'exemples). Les deux grandes hypothèses sur l'intelligence, nées quasi simultanément.
-3. **L'âge d'or symbolique : chercher et raisonner** — espaces d'états, minimax, explosion combinatoire (jusqu'à Deep Blue 1997). Idée : résoudre = explorer un arbre.
-4. **Représenter le monde** — réseaux sémantiques (Quillian), frames (Minsky 1974), scripts (Schank & Abelson), dépendance conceptuelle → mène au **problème du sens commun** (CYC de Lenat). Explique *pourquoi* le GOFAI a plafonné ; résonne avec ce que les LLM font « gratuitement » (contraste M4).
+3. **L'âge d'or symbolique : chercher et raisonner** — espaces d'états, minimax, explosion combinatoire (jusqu'à Deep Blue 1997). Idée : résoudre = explorer un arbre. **Y loger : ELIZA** (Weizenbaum 1966 — appariement de motifs, « effet ELIZA », rappel du test de Turing ép. 1, sème M4/M5) ; **Lisp** (McCarthy 1958 — la langue maternelle du GOFAI, *list processing* = manipulation de symboles ; résonne à l'ép. 6 avec le krach des machines Lisp).
+4. **Représenter le monde** — réseaux sémantiques (Quillian), frames (Minsky 1974), scripts (Schank & Abelson), dépendance conceptuelle → mène au **problème du sens commun** (CYC de Lenat). Explique *pourquoi* le GOFAI a plafonné ; résonne avec ce que les LLM font « gratuitement » (contraste M4). **Y loger : SHRDLU** (Winograd 1970 — le sommet de l'ambition symbolique dans un « micro-monde de blocs », mais qui ne marche *que* là → bute pile sur le sens commun).
 5. **Capturer l'expertise : les systèmes experts (70-80)** — l'intelligence comme règles d'experts (MYCIN), grandeur et fragilité (goulot d'étranglement de la connaissance). Idée : connaissance = règles explicites.
 6. **Les hivers et la bascule** — Minsky & Papert tuent le perceptron (1969, 1er hiver) ; limites du symbolique (2e hiver). Le monde réel résiste aux règles → porte d'entrée du M2 (« et si on laissait les données parler ? »).
 
@@ -76,6 +76,8 @@ Front matter : `title`, `weight` (ordonne le menu), `slug` optionnel. Fichiers n
 - **Contraintes** : satisfaction de contraintes (CSP)
 - **Règles / expertise** : systèmes de production, algorithme RETE, systèmes experts (MYCIN), goulot d'étranglement de la connaissance
 - **Représentation des connaissances** : réseaux sémantiques (Quillian), frames (Minsky), scripts (Schank), dépendance conceptuelle, CYC (Lenat), problème du sens commun
+- **Langage / dialogue (illusion de compréhension)** : ELIZA (Weizenbaum 1966, « effet ELIZA » → ép. 3), PARRY (pendant paranoïaque), STUDENT (problèmes d'algèbre en mots), SHRDLU (Winograd, monde des blocs → ép. 4)
+- **Outils / substrat** : Lisp (McCarthy 1958, langage du GOFAI → ép. 3) ; machines Lisp et leur krach (~1987, déclencheur du 2e hiver → ép. 6) ; Samuel's Checkers (1959, machine qui apprend aux dames — petite graine RL)
 - **Zone-pont GOFAI ↔ ML** : arbres de décision ID3 (Quinlan) / CART (Breiman) [→ M1], réseaux bayésiens (Pearl 1988)
 - **Fondations** : Turing (test, machine universelle), Dartmouth (1956), perceptron (Rosenblatt 1958), Minsky & Papert (1969), hivers de l'IA
 
