@@ -37,11 +37,17 @@ Ce qui donnera sa cohérence à la v2 — à exploiter activement comme liens en
   - **M1 (origine)** : inspiration biologique fondatrice (McCulloch & Pitts 1943, cybernétique de Wiener, perceptron). Recoupe « l'esprit comme logique » (symbolique) vs « l'esprit comme cerveau » (connexionnisme). Touche légère.
   - **M3 (cœur — le piège technique)** : là où la métaphore est la plus séduisante et trompeuse. Encadré « la carte n'est pas le territoire » : le neurone artificiel est une caricature (pas de spikes, pas de neuromodulation, le cerveau ne fait pas de rétropropagation). Démystifiage à haute valeur, au moment de la tentation.
   - **M5 (la question profonde)** : reproduire le cerveau donnerait-il un esprit ? conscience, paradoxe de Moravec. Touche légère / terreau.
+- **Fil transversal syntaxe → sémantique → pragmatique** (les trois niveaux du langage et du sens) — grille qui éclaire *pourquoi* le symbolique a plafonné.
+  - **Posé au M1 (épisode 4)** : manipuler des symboles selon leur *forme* (**syntaxe**) ne donne pas le *sens* (**sémantique**), encore moins l'*usage en contexte* (**pragmatique**). Exemple incarnant les trois : « Pouvez-vous me passer le sel ? ». Regard rétrospectif léger : la logique/recherche/ELIZA des épisodes 1-3 relevaient de la syntaxe ; les réseaux *sémantiques* (ép. 4) visent la sémantique ; le mur du sens commun est d'ordre pragmatique. **Pas de rétro-couture dans les ép. 1-3** (introduit à neuf en ép. 4 + une phrase rétrospective).
+  - **Fleurit au M4** : les LLM ont-ils de la sémantique, ou une syntaxe statistique très sophistiquée ?
+  - **Dénoué au M5** : Chambre chinoise de Searle — la syntaxe ne suffit pas à produire la sémantique.
 - **Principe d'interactivité** : *quand le sujet est un mécanisme, laisser l'étudiant le faire tourner* (vaut M1-M4). Constat clé : ce qui distingue les modules « riches » des « pauvres » n'est pas le volume de texte mais la **densité d'expériences manipulables**. Le M5 (philo) a un levier différent : engagement par le **débat et l'actualité**.
 
 ## 4. Gabarit de module (à appliquer uniformément)
 
 Le squelette commun existe déjà en v1 ; il est **à appliquer partout**, pas à inventer.
+
+> **Terminologie des unités textuelles (convention du cours)** : hiérarchie `Cours > Module > page > Section`. Un **Module** est l'une des 5 grandes divisions (M1…M5). Une **page** est un fichier `.md` (nommé `NN-titre.md`, où `NN` = `weight`). Une **Section** est un bloc `##` à l'intérieur d'une page — c'est l'unité de rédaction qu'on valide pas à pas. Le niveau « page » reçoit un nom thématique selon le format du module : au **M1**, les pages sont des **épisodes** (« épisode historique → idée technique ») ; au **M5**, ce seront des **dossiers** (chauds). Les mots *Module* et *Section* sont universels ; seul le nom du niveau intermédiaire varie.
 
 1. **`_index.md`** — mise en contexte, objectifs (3-5), durée, aperçu de l'évaluation. (`bookCollapseSection: true`)
 2. **Page « 10 »** — *premier contact concret* avant la théorie (ex. scénario d'assemblage de téléviseurs au M2).
