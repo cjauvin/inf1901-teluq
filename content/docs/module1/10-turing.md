@@ -126,6 +126,77 @@ pas à calculer *vite* ; elle sert à définir, une fois pour toutes, *ce que
 une machine de Turing porte d'ailleurs un nom : la **thèse de Church-Turing**.
 {{% /details %}}
 
+## L'ombre de Gödel
+
+Ce rêve — *penser, c'est calculer* — portait pourtant en lui une **ombre**,
+projetée presque au même moment. Cinq ans avant la machine de Turing, en **1931**,
+un jeune logicien autrichien, **Kurt Gödel**, avait démontré un théorème qui
+allait ébranler les mathématiques elles-mêmes : son **théorème d'incomplétude**.
+
+Le résultat est aussi simple à énoncer que vertigineux. Tout système de règles
+formelles assez puissant pour faire de l'arithmétique contient des énoncés qui
+sont **vrais**, mais que le système est **incapable de prouver**. La *vérité*
+déborde toujours la *démonstration* : aucun jeu de règles, si complet soit-il, ne
+pourra jamais tout capturer. Et le ressort de la preuve est une idée qui va
+devenir centrale pour nous — l'**auto-référence**. Gödel construit, à l'intérieur
+du système, un énoncé qui parle de lui-même et affirme en substance : *« Cet
+énoncé n'est pas démontrable. »* Si le système le démontrait, il prouverait
+quelque chose de faux ; il ne peut donc pas le démontrer — et c'est justement ce
+qui le rend vrai. Une boucle qui se mord la queue, et dont le système ne peut pas
+sortir.
+
+Turing, du reste, n'a pas échappé à cette ombre : il l'a lui-même prolongée. Sa
+machine de 1936 servait aussi à établir qu'il existe des questions qu'**aucun
+algorithme ne pourra jamais trancher** (la plus célèbre étant de savoir si un
+programme donné finira par s'arrêter ou tournera à l'infini). Le père de l'idée
+« penser = calculer » a donc, du même geste, tracé les **frontières** du calcul.
+Le pari de l'IA naît ainsi avec, inscrite en lui, la trace de ses propres limites.
+
+Que conclure, pour notre question — une machine peut-elle penser ? Étonnamment, on
+a tiré de Gödel **deux leçons radicalement opposées**, et toutes deux nous
+accompagneront jusqu'au bout du cours.
+
+**Première lecture : le théorème est un mur.** Le physicien **Roger Penrose** en a
+tiré l'argument anti-IA le plus célèbre : *nous*, humains, sommes capables de
+*voir* qu'un tel énoncé est vrai, là où la machine reste bloquée. Si notre esprit
+saisit une vérité qu'aucun système formel ne peut prouver, c'est donc qu'il ne se
+réduit **pas** à un système formel — que penser ne se ramène pas à du calcul. Nous
+reviendrons longuement sur cette thèse au **Module 5**, aux côtés d'un autre
+adversaire célèbre de l'IA, le philosophe John Searle.
+
+**Seconde lecture : le théorème est un moteur.** Pour le penseur américain
+**Douglas Hofstadter**, la boucle auto-référentielle de Gödel n'est pas une
+infirmité, mais le secret même de l'esprit. Un système assez riche pour se
+**représenter lui-même** engendre une « **boucle étrange** » — et c'est de ce
+repli sur soi qu'émergeraient, selon lui, le sentiment d'un « je », le sens, la
+conscience. Loin d'interdire la pensée à la machine, l'auto-référence en serait la
+**source**. Nous recroiserons Hofstadter et ses idées à plusieurs reprises dans ce
+module.
+
+Un même théorème, donc, et deux conclusions inverses : l'auto-référence comme
+*limite* infranchissable, ou comme *origine* de l'esprit. Le désaccord n'est
+toujours pas tranché. Retenez surtout l'essentiel : dès sa naissance, le rêve
+d'une pensée mécanique avance avec une ombre attachée à ses pas.
+
+{{% details "Pour aller plus loin : ce que dit — et ne dit pas — le théorème de Gödel" %}}
+Le théorème vaut pour tout système formel **cohérent** (sans contradiction) et
+assez riche pour exprimer l'arithmétique. Gödel établit en fait deux résultats : un
+tel système ne peut pas prouver tous les énoncés arithmétiques vrais (**premier
+théorème**), et il ne peut pas non plus prouver sa **propre cohérence** (**second
+théorème**). Le tour de force technique est le *codage de Gödel* : numéroter chaque
+énoncé pour que le système puisse, en parlant de nombres, **parler de lui-même** —
+et fabriquer ainsi la phrase « je ne suis pas démontrable ».
+
+Attention aux contresens : le théorème ne dit **pas** que « les mathématiques sont
+fausses », ni que la vérité serait une affaire d'opinion. C'est une limite
+**précise** sur ce qu'une démonstration *formelle, à l'intérieur d'un système
+donné*, peut atteindre. On peut toujours prouver l'énoncé récalcitrant dans un
+système **plus puissant** — qui aura alors, à son tour, son propre angle mort.
+Quant à l'argument de Penrose, il reste **contesté** : ses critiques objectent que
+rien ne garantit qu'un humain puisse réellement « voir » la vérité en question sans
+déjà supposer, gratuitement, la cohérence du système.
+{{% /details %}}
+
 ## Une fin tragique, et une porte qui s'ouvre
 
 L'histoire personnelle de Turing, elle, se termine mal. En 1952, il est poursuivi
