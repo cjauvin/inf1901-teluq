@@ -18,9 +18,10 @@ Le cours sera évalué avec cinq travaux pratiques, un par module.
 
 ## Module 1
 
-[Visualisation annotée](/docs/module1/99-travail-noté-1) illustrant des concepts
-historiques et logiques ainsi que des acteur. *Pondération : 15% de la note
-finale.*
+[Système expert à incarner](/docs/module1/99-travail-noté-1) : vous jouez
+vous-même le rôle du moteur d'inférence d'un système à base de règles
+`si… alors…`, que vous faites tourner, mettez en échec, puis corrigez. *Pondération :
+15% de la note finale.*
 
 ## Module 2
 
