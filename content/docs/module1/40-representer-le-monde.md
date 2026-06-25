@@ -54,6 +54,8 @@ oiseau*, *oiseau possède ailes* — pour conclure que oui. (Notez que ces rése
 portent le mot **sémantique** dans leur nom : c'est tout l'enjeu, passer de la
 forme au *sens*.)
 
+{{< image src="/images/module1/reseau-semantique.svg" alt="Réseau sémantique reliant canari, oiseau et animal par des liens « est-un », avec héritage des propriétés." title="Un réseau sémantique : les propriétés s'héritent en remontant les liens « est-un »." loading="lazy" >}}
+
 **Les frames, ou « cadres »** (Marvin Minsky, 1974). Plutôt que des concepts
 isolés, Minsky propose de regrouper le savoir en **situations types** munies de
 « cases » à remplir, avec des valeurs par défaut. Le cadre « chambre d'hôtel »
@@ -62,12 +64,16 @@ s'attend à y trouver un lit. Quand vous entrez dans une chambre d'hôtel inconn
 vous n'analysez pas la scène de zéro : vous chargez ce cadre tout prêt, et vous ne
 corrigez que ce qui détonne. C'est une manière de capturer nos **attentes**.
 
+{{< image src="/images/module1/frame-chambre-hotel.svg" alt="Le cadre « chambre d'hôtel » sous forme de fiche : des cases (lit, salle de bain, porte, fenêtre, téléviseur) avec leurs valeurs par défaut." title="Un frame : une situation type aux cases déjà pré-remplies de valeurs par défaut." loading="lazy" >}}
+
 **Les scripts** (Roger Schank et Robert Abelson). Même idée, mais appliquée aux
 **enchaînements d'actions**. Le « script du restaurant » décrit la séquence
 attendue : entrer, s'asseoir, consulter le menu, commander, manger, payer, partir.
 Grâce à lui, une machine peut **combler les trous** d'un récit : si on lui dit
 « Jean est allé au restaurant et a commandé un steak », elle infère qu'il s'est
 assis, qu'il a mangé, puis payé — bien que rien de tout cela n'ait été dit.
+
+{{< image src="/images/module1/script-restaurant.svg" alt="Le script du restaurant en sept étapes ; seules « entrer » et « commander » sont dites, les autres sont comblées par le script." title="Un script : la séquence attendue, où la machine comble d'elle-même les étapes non dites." loading="lazy" >}}
 
 Le point commun de ces trois approches est ce qui faisait défaut à Deep Blue et à
 ELIZA : la capacité à **inférer l'implicite**, à mobiliser un savoir de fond pour
@@ -93,8 +99,6 @@ tourner la recherche de Google ou Wikidata en descendent en droite ligne, et les
 programmation moderne. Nous y reviendrons dans « [Les hivers et la
 bascule](docs/module1/60-hivers) », pour mesurer ce que le GOFAI a *vraiment* légué.
 {{% /hint %}}
-
-<!-- FIGURE À CRÉER (M1, ép. 4) : petit schéma du réseau sémantique canari→oiseau→animal + ailes/chanter. Repère laissé volontairement. -->
 
 ## SHRDLU, ou le sommet de l'ambition
 
@@ -145,7 +149,7 @@ reste dans un domaine assez petit pour être entièrement décrit, et s'effondre
 qu'affleure l'immensité de ce que nous, humains, tenons pour évident. Cette immensité
 a un nom, et c'est le mur sur lequel le GOFAI tout entier va se briser.
 
-<!-- FIGURE À CRÉER (M1, ép. 4) : illustration du micro-monde de blocs de SHRDLU (cubes/pyramides/boîte sur une table). Candidat applet/interactif possible. -->
+{{< image src="/images/module1/micromonde-shrdlu.svg" alt="Le micro-monde de SHRDLU : un cube rouge, une pile de blocs, une pyramide et une boîte posés sur une table, avec un bras robotique." title="Le « micro-monde » de SHRDLU : un univers de poche, entièrement décrit à la main." loading="lazy" >}}
 
 ## Le mur du sens commun
 
@@ -218,6 +222,8 @@ repartir de l'autre bout de l'alphabet… Le « bon » résultat dépend de la *
 dont on voit la situation. Et c'est là tout le propos : l'intelligence n'est pas
 l'exécution d'une règle, mais une **perception fluide, sensible au contexte**.
 
+{{< image src="/images/module1/copycat-analogie.svg" alt="L'énigme de Copycat : abc devient abd, ijk devient ijl, puis le cas xyz qui admet plusieurs réponses (xyd, wyz, xya)." title="L'énigme de Copycat : pour « xyz », la réponse dépend de la manière dont on perçoit la suite." loading="lazy" >}}
+
 Voilà le renversement. SHRDLU, lui aussi, vivait dans un micro-monde — mais il
 l'avait rapetissé pour **tricher** : un univers assez petit pour qu'on puisse tout y
 énumérer d'avance. Hofstadter rapetisse le sien pour la raison **inverse** : écarter
@@ -264,6 +270,4 @@ Le sens n'y est donc pas *calculé* d'un trait, mais **gagné** peu à peu, par 
 compétition de perceptions partielles — une image, à petite échelle, de ce que
 Hofstadter tient pour le propre de la cognition.
 {{% /details %}}
-
-<!-- FIGURE/APPLET À CRÉER (M1, ép. 4) : énigme d'analogie de Copycat (abc→abd, ijk→? puis le cas xyz). Candidat applet interactif. -->
 
