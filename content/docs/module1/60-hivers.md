@@ -154,6 +154,43 @@ secret du GOFAI — non pas une impasse, mais une **diaspora**. Ses idées ont q
 maison « intelligence artificielle » pour s'installer, anonymes et indispensables, au
 cœur de la programmation ordinaire.
 
+## Un éclair hybride : Watson (2011)
+
+Avant de refermer le module, arrêtons-nous sur une dernière image — celle qui montre le
+mieux que le GOFAI ne s'est pas seulement *dissous*, mais qu'il a parfois resurgi en
+pleine lumière, métissé. En février **2011**, un système d'IBM nommé **Watson** affronte,
+au jeu télévisé américain *Jeopardy!*, les deux plus grands champions de l'histoire de
+l'émission, Ken Jennings et Brad Rutter — et les bat à plate couture.
+
+L'exploit est d'une tout autre nature que celui de Deep Blue. Les échecs ont des règles
+nettes et un espace de recherche bien défini ; *Jeopardy!*, lui, baigne dans le
+**langage** le plus retors — calembours, allusions, jeux de mots, indices tordus. Rien
+que comprendre *ce que la question demande* est déjà un défi. Et Watson y répond en
+quelques secondes, en puisant dans une immense réserve de connaissances.
+
+Mais voici le point qui nous intéresse : Watson n'est **ni du GOFAI pur, ni un réseau de
+neurones**. C'est un **hybride**. D'un côté, il hérite en droite ligne du symbolique —
+une vaste base de connaissances, des traitements du langage à base de règles. De l'autre,
+il pèse ses centaines d'indices et calcule sa **confiance** par des méthodes
+**statistiques**, apprises sur des milliers de questions passées. Quatorze ans après Deep
+Blue, ce n'est plus la seule force brute de la recherche qui triomphe, mais un *mariage* :
+le savoir structuré du GOFAI et l'apprentissage statistique, attelés ensemble. Watson
+est, à sa manière, le portrait même de la **charnière** où nous venons d'arriver — un
+pied dans chaque âge.
+
+{{% hint warning %}}
+La suite de Watson ressemble, à s'y méprendre, à celle des systèmes experts. Galvanisé
+par le triomphe de 2011, IBM promit de **révolutionner la médecine** avec *Watson
+Health* : on annonça une machine capable de conseiller les cancérologues mieux que leurs
+confrères. La réalité fut tout autre. Les recommandations se révélèrent parfois douteuses,
+voire dangereuses ; de grands hôpitaux partenaires abandonnèrent le projet après des
+dizaines de millions de dollars engloutis ; et IBM finit par **revendre** Watson Health
+en 2022. Trente ans après MYCIN — brillant en démonstration, jamais admis au chevet d'un
+vrai patient —, la même leçon se répétait : entre l'exploit de laboratoire (ou de plateau
+télé) et le monde réel, têtu, l'écart reste vertigineux. La promesse trop grande, encore
+une fois, avait précédé la déception.
+{{% /hint %}}
+
 ## La bascule
 
 Reprenons le chemin parcouru. Tout est parti, dans « [Turing et la question
@@ -191,5 +228,14 @@ la laissait les découvrir dans les données ?* Ce renversement a un nom :
 l'**apprentissage automatique**, et c'est l'objet du **Module 2**. Quant à la vieille
 tradition connexionniste, qu'on réveillera avec la rétropropagation et la puissance des
 machines modernes, elle le portera, au **Module 3**, jusqu'à des sommets que ni Turing,
-ni Rosenblatt, ni Minsky n'avaient osé imaginer. L'âge des règles s'achève ; celui de
-l'apprentissage commence.
+ni Rosenblatt, ni Minsky n'avaient osé imaginer.
+
+Tout le module se résume alors à un glissement d'un verbe à l'autre. Trois décennies
+durant, être intelligent, pour une machine, ce fut **chercher** — explorer un espace de
+possibilités, guidée par des règles posées d'avance. L'ère qui s'ouvre lui substitue
+**apprendre**. Et pourtant — retenez-le, car la suite y reviendra — les deux verbes ne
+sont pas si éloignés : apprendre, c'est encore chercher, mais dans un autre espace. Non
+plus fouiller les coups d'une partie, mais l'immensité des réglages possibles d'un
+modèle, jusqu'à trouver ceux qui épousent les données. Là où le GOFAI cherchait *la
+solution*, l'apprentissage cherchera *de quoi la fabriquer*. L'âge de la recherche
+s'achève ; celui de l'apprentissage — une recherche d'un genre nouveau — commence.
