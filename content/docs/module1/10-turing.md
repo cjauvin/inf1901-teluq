@@ -7,7 +7,8 @@ slug: turing
 # Turing et la question fondatrice (1950)
 
 {{< image src="/images/module1/turing-16.jpg" alt="Portrait d'Alan Turing adolescent." title="Alan Turing adolescent, vers 1928." loading="lazy" >}}
-*Alan Turing adolescent, vers 1928. Domaine public — Wikimedia Commons.*
+
+<p class="image-credit">Alan Turing adolescent, vers 1928. Domaine public — Wikimedia Commons.</p>
 
 ## Le moment
 
@@ -28,10 +29,12 @@ croyait réservées à l'esprit humain. Mais une machine qui *déchiffre* est-el
 une machine qui *pense* ? C'est tout l'objet de son article.
 
 {{< image src="/images/module1/enigma.jpg" alt="Une machine de chiffrement Enigma, clavier et rotors visibles." title="Une machine Enigma." loading="lazy" >}}
-*Une machine Enigma. Photo : Karsten Sperling, domaine public.*
+
+<p class="image-credit">Une machine Enigma. Photo : Karsten Sperling, domaine public.</p>
 
 {{< image src="/images/module1/bombe.jpg" alt="Reconstitution d'une « bombe » de décryptage à Bletchley Park." title="Une « bombe » de décryptage, Bletchley Park." loading="lazy" >}}
-*Reconstitution d'une « bombe » de décryptage, Bletchley Park. Photo : Sarah Hartwell, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons.*
+
+<p class="image-credit">Reconstitution d'une « bombe » de décryptage, Bletchley Park. Photo : Sarah Hartwell, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, via Wikimedia Commons.</p>
 
 ## Le jeu de l'imitation
 
@@ -145,7 +148,8 @@ un jeune logicien autrichien, **Kurt Gödel**, avait démontré un théorème qu
 allait ébranler les mathématiques elles-mêmes : son **théorème d'incomplétude**.
 
 {{< image src="/images/module1/godel-1925.jpg" alt="Portrait de Kurt Gödel jeune, étudiant." title="Kurt Gödel étudiant, vers 1925." loading="lazy" >}}
-*Kurt Gödel étudiant, vers 1925. Domaine public — Wikimedia Commons.*
+
+<p class="image-credit">Kurt Gödel étudiant, vers 1925. Domaine public — Wikimedia Commons.</p>
 
 Le résultat est aussi simple à énoncer que vertigineux. Tout système de règles
 formelles assez puissant pour faire de l'arithmétique contient des énoncés qui

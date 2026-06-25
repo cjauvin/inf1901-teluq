@@ -17,3 +17,18 @@ p {
 .book-image input:checked + img {
   z-index: 100 !important;
 }
+
+// Centrer les images {{< image >}} et leur légende/crédit
+.book-image {
+  display: block;
+  text-align: center;
+  margin: 1.25rem auto 0.4rem;
+}
+
+.image-credit {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.85em;
+  opacity: 0.7;
+  margin-top: 0;
+}
