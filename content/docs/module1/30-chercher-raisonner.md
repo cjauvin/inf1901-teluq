@@ -1,10 +1,10 @@
 ---
-title: "Épisode 3 — L'âge d'or symbolique : chercher et raisonner"
+title: "L'âge d'or symbolique : chercher et raisonner"
 weight: 30
 slug: chercher-raisonner
 ---
 
-# Épisode 3 — L'âge d'or symbolique : chercher et raisonner
+# L'âge d'or symbolique : chercher et raisonner
 
 ## Résoudre, c'est explorer
 
@@ -123,7 +123,7 @@ Et elle est, à sa façon, encore plus déroutante.
 
 ## L'autre visage : ELIZA, ou l'illusion de comprendre
 
-L'âge d'or symbolique ne fut pas que recherche et calcul. Un de ses épisodes les
+L'âge d'or symbolique ne fut pas que recherche et calcul. Un de ses moments les
 plus marquants — et les plus troublants — concerne une machine qui semblait, non
 pas *jouer*, mais *parler*. En 1966, au MIT, l'informaticien **Joseph
 Weizenbaum** écrit **ELIZA**, un programme qui imite un psychothérapeute. La
@@ -196,12 +196,13 @@ systèmes censés *raisonner* sur des symboles.
 
 Pendant des décennies, Lisp resta la langue maternelle de l'IA symbolique. On
 construisit même des ordinateurs spécialisés, les **« machines Lisp »**, pour le
-faire tourner au mieux. Nous recroiserons leur effondrement, vers 1987, à
-l'épisode 6 : il y marquera l'un des hivers de l'IA.
+faire tourner au mieux. Nous recroiserons leur effondrement, vers 1987, dans
+« [Les hivers et la bascule](docs/module1/60-hivers) » : il y marquera l'un des
+hivers de l'IA.
 
 Deep Blue *cherchait*, ELIZA *bricolait du langage* — mais ni l'un ni l'autre ne
 *connaissait* véritablement le monde. Pour aller plus loin, il fallait doter la
 machine de quelque chose qui lui manquait cruellement : une façon de
 **représenter ce qu'elle sait**. C'est le grand chantier — et la grande
-déconvenue — du prochain épisode.
+déconvenue — de « [Représenter le monde](docs/module1/40-representer-le-monde) ».
 

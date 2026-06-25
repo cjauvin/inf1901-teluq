@@ -1,10 +1,10 @@
 ---
-title: "Épisode 2 — Deux paris rivaux (1956-1958)"
+title: "Deux paris rivaux (1956-1958)"
 weight: 20
 slug: deux-paris
 ---
 
-# Épisode 2 — Deux paris rivaux (1956-1958)
+# Deux paris rivaux (1956-1958)
 
 ## Le moment : l'été 1956 à Dartmouth
 
@@ -57,9 +57,10 @@ L'enthousiasme est à son comble. Newell et Simon iront jusqu'à formuler une
 hypothèse audacieuse : un système qui manipule des symboles de la bonne manière
 posséderait *tout ce qu'il faut* pour être intelligent — ni plus, ni moins.
 Pendant les décennies suivantes, c'est cette voie, **symbolique**, qui dominera
-la recherche et récoltera les financements. Ce sera le cœur des épisodes 3 à 5 de
-ce module : la recherche, la représentation des connaissances, les systèmes
-experts.
+la recherche et récoltera les financements. Ce sera le cœur des chapitres suivants :
+la [recherche](docs/module1/30-chercher-raisonner), la [représentation des
+connaissances](docs/module1/40-representer-le-monde), les [systèmes
+experts](docs/module1/50-systemes-experts).
 
 ## Le second pari : l'esprit comme cerveau
 
@@ -119,7 +120,8 @@ presque opposées.
 
 Ces deux univers ne vont pas avancer côte à côte dans une paisible indifférence :
 ils vont **s'éclipser à tour de rôle**. Dès la fin des années 1960, comme nous le
-verrons à l'épisode 6, le camp symbolique portera au perceptron un coup si rude
+verrons dans « [Les hivers et la bascule](docs/module1/60-hivers) », le camp
+symbolique portera au perceptron un coup si rude
 qu'il manquera de le tuer — et l'approche symbolique régnera presque sans partage
 sur les vingt années suivantes. Il faudra attendre les années 2010, et le module
 3 de ce cours, pour assister au spectaculaire retour de la tradition
@@ -135,4 +137,4 @@ moment où la tentation de confondre les deux sera la plus forte.
 Pour l'instant, laissons le perceptron à sa promesse, et suivons le camp qui va
 prendre les devants. Car c'est la voie symbolique qui, la première, va connaître
 son âge d'or — celui des machines qui *cherchent* et qui *raisonnent*. C'est
-l'objet du prochain épisode.
+l'objet de « [Chercher et raisonner](docs/module1/30-chercher-raisonner) ».

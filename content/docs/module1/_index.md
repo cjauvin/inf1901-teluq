@@ -16,7 +16,7 @@ aujourd'hui l'**IA symbolique**, ou *GOFAI* (pour *Good Old-Fashioned AI*, la
 accumulé des succès spectaculaires... puis buté sur des murs qui ont fini par la
 faire passer pour démodée.
 
-Ce module raconte cette histoire à travers **six épisodes**, chacun nouant un
+Ce module raconte cette histoire à travers **six chapitres**, chacun nouant un
 *moment historique* à une *idée technique*. Le but n'est pas de vous rendre
 capable de programmer ces systèmes, mais de comprendre l'**idée** qu'ils
 incarnent et le **drame** qu'ils ont vécu — car c'est en comprenant pourquoi

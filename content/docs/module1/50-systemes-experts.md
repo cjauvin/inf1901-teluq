@@ -1,15 +1,16 @@
 ---
-title: "Épisode 5 — Capturer l'expertise : les systèmes experts"
+title: "Capturer l'expertise : les systèmes experts"
 weight: 50
 slug: systemes-experts
 ---
 
-# Épisode 5 — Capturer l'expertise : les systèmes experts
+# Capturer l'expertise : les systèmes experts
 
 ## Rétrécir et codifier le monde pour réussir
 
-L'épisode précédent s'est achevé sur un constat sévère : on ne peut pas *écrire* le
-sens commun, parce qu'il n'a pas de fond. Faut-il pour autant renoncer ? Les
+Le chapitre « [Représenter le monde](docs/module1/40-representer-le-monde) » s'est
+achevé sur un constat sévère : on ne peut pas *écrire* le sens commun, parce qu'il
+n'a pas de fond. Faut-il pour autant renoncer ? Les
 chercheurs des années 1970 tirent du mur une leçon plus rusée que désespérée. Si le
 savoir général est hors d'atteinte, c'est peut-être qu'on visait trop large. Alors :
 visons **étroit**.
@@ -23,7 +24,7 @@ conditions, alors telle conclusion*. Le médecin qui raisonne « *si* le patient
 la fièvre **et** telle bactérie dans le sang, *alors* prescrire tel antibiotique »
 applique, au fond, une règle. Recueillons assez de ces règles, inscrivons-les dans la
 machine, et celle-ci devrait, dans ce périmètre, *raisonner comme l'expert*. C'est le
-pari des **systèmes experts**, et le mot d'ordre de tout l'épisode : **connaissance =
+pari des **systèmes experts**, et le mot d'ordre de tout ce chapitre : **connaissance =
 règles explicites**.
 
 On reconnaît là une vieille ruse. SHRDLU ne « comprenait » son monde de blocs que
@@ -170,7 +171,8 @@ liste de règles dormant dans un tiroir. On ne codifie pas ce qui n'a jamais ét
 formulé. Ce blocage a reçu un nom resté célèbre : le **goulot d'étranglement de
 l'acquisition des connaissances**.
 
-Deuxième fissure, déjà rencontrée à l'épisode 4 : la **rigidité**. Un système expert
+Deuxième fissure, déjà rencontrée dans « [Représenter le
+monde](docs/module1/40-representer-le-monde) » : la **rigidité**. Un système expert
 ne connaît que ses règles, et rien autour. Tant qu'on reste pile dans son domaine, il
 brille ; qu'on en sorte d'un pas, et il ne *fléchit* pas — il s'effondre, sans le
 moindre signe d'embarras. MYCIN diagnostiquait les infections du sang ; si on lui
@@ -203,4 +205,4 @@ Mais cette question-là devra attendre. Car les promesses des systèmes experts 
 devenues trop grandes pour des livraisons si minces : à la fin des années 1980, les
 capitaux fuient, les entreprises ferment, les fameuses machines Lisp finissent au
 rebut. Avant que la machine n'apprenne, l'IA devra d'abord traverser un long
-**hiver** — celui du prochain épisode.
+**hiver** — celui de « [Les hivers et la bascule](docs/module1/60-hivers) ».

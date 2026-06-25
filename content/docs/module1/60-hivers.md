@@ -1,14 +1,15 @@
 ---
-title: "Épisode 6 — Les hivers et la bascule"
+title: "Les hivers et la bascule"
 weight: 60
 slug: hivers-et-bascule
 ---
 
-# Épisode 6 — Les hivers et la bascule
+# Les hivers et la bascule
 
 ## Le premier hiver : la mort du perceptron (1969)
 
-Souvenez-vous : à l'épisode 2, nous avions laissé le **perceptron** de Rosenblatt au
+Souvenez-vous : dans « [Deux paris rivaux](docs/module1/20-deux-paris) », nous avions
+laissé le **perceptron** de Rosenblatt au
 sommet de sa promesse — *une machine qui apprend de ses erreurs* —, salué par le *New
 York Times* comme l'aube d'une intelligence électronique. Nous avions aussi annoncé
 qu'un coup terrible l'attendait. Le voici.
@@ -53,7 +54,8 @@ pour l'heure, c'est au tour du camp symbolique d'approcher de son propre hiver.
 ## Le second hiver : l'effondrement du symbolique (fin des années 1980)
 
 L'âge d'or symbolique, on l'a vu, reposait sur une promesse vertigineuse : capturer
-l'expertise humaine dans des règles. Mais les fissures de l'épisode 5 — le savoir
+l'expertise humaine dans des règles. Mais les fissures de « [Capturer
+l'expertise](docs/module1/50-systemes-experts) » — le savoir
 tacite qu'on n'extrait pas, la rigidité sans bon sens, les bases ingérables — finirent
 par lézarder l'édifice tout entier. À mesure que les systèmes experts livrés
 décevaient, l'écart se creusa entre ce qu'on avait *promis* aux investisseurs et ce que
@@ -72,7 +74,9 @@ coupèrent les crédits ; « intelligence artificielle » devint une étiquette 
 honteuse, que les chercheurs évitaient désormais sur leurs demandes de subvention. On
 parla, pour cette période, d'un second **hiver de l'IA** — le mot collait maintenant à
 la peau du symbolique, comme il avait collé, vingt ans plus tôt, à celle du perceptron.
-La leçon, au fond, était la même qu'aux épisodes 4 et 5 : le monde réel, têtu, résiste
+La leçon, au fond, était la même que dans « [Représenter le
+monde](docs/module1/40-representer-le-monde) » et « [Capturer
+l'expertise](docs/module1/50-systemes-experts) » : le monde réel, têtu, résiste
 à qui prétend l'enfermer dans des règles écrites à la main.
 
 Et pourtant — c'est la grande ironie de notre histoire — pendant que le camp symbolique
@@ -101,14 +105,14 @@ les jours. Ses plus belles réussites sont devenues si banales, si fiables, qu'o
 oublié qu'elles sortaient des laboratoires d'IA. Suivons-en quatre à la trace — vous
 les côtoyez sans doute chaque jour.
 
-**La recherche dans un arbre** (épisode 3). Les algorithmes d'exploration — minimax,
+**[La recherche dans un arbre](docs/module1/30-chercher-raisonner)**. Les algorithmes d'exploration — minimax,
 A\* — qui faisaient gagner les machines aux échecs sont aujourd'hui partout : ce sont
 eux qui calculent votre itinéraire **GPS** en une fraction de seconde, qui animent les
 personnages des jeux vidéo, qui optimisent les tournées d'un transporteur ou les gestes
 d'un robot. Personne, en suivant la flèche bleue sur son téléphone, ne songe qu'il fait
 tourner de l'« intelligence artificielle » des années 1960.
 
-**Les moteurs de règles** (épisode 5). Les systèmes experts n'ont pas disparu : ils ont
+**[Les moteurs de règles](docs/module1/50-systemes-experts)**. Les systèmes experts n'ont pas disparu : ils ont
 changé de nom. On les appelle « règles métier », et ils décident en silence de l'octroi
 d'un prêt, du repérage d'une transaction frauduleuse, du calcul d'une prime
 d'assurance. Les **configurateurs** qui, sur un site marchand, vérifient que les
@@ -116,7 +120,7 @@ options de votre voiture ou de votre ordinateur sont compatibles sont les enfant
 directs de XCON. Et quand votre logiciel d'**impôts** vous guide de question en
 question jusqu'au bon formulaire, il fait, à la lettre, le métier de MYCIN.
 
-**Les idées de Lisp** (épisode 3). C'est peut-être l'héritage le plus profond. Le
+**[Les idées de Lisp](docs/module1/30-chercher-raisonner)**. C'est peut-être l'héritage le plus profond. Le
 langage de McCarthy a fait passer dans la programmation réelle tout un courant, la
 **programmation fonctionnelle** : traiter les fonctions comme des valeurs (les
 *lambdas*), enchaîner des opérations comme `map`, `filter`, `reduce`, manier des
@@ -130,7 +134,7 @@ Haskell, descend du langage **ML**, que Robin Milner avait créé pour faire tou
 fonctionnelle moderne jaillissent donc, l'une comme l'autre, du raisonnement
 symbolique.
 
-**La représentation des connaissances** (épisode 4). Souvenez-vous des réseaux
+**[La représentation des connaissances](docs/module1/40-representer-le-monde)**. Souvenez-vous des réseaux
 sémantiques et des frames : on les avait dits promis à une descendance vivante. La
 voici. Les **ontologies** et les **knowledge graphs** qui structurent le savoir du web
 en sont les héritiers directs : quand Google affiche une fiche toute prête à côté de vos
@@ -152,17 +156,19 @@ cœur de la programmation ordinaire.
 
 ## La bascule
 
-Reprenons le chemin parcouru. Tout est parti, à l'épisode 1, d'un pari de Turing :
-*penser, c'est calculer*. De ce pari est née une famille d'idées — manipuler des
+Reprenons le chemin parcouru. Tout est parti, dans « [Turing et la question
+fondatrice](docs/module1/10-turing) », d'un pari : *penser, c'est calculer*. De ce pari est née une famille d'idées — manipuler des
 symboles selon des règles — qui a porté, trois décennies durant, des réussites
 éclatantes : des machines qui démontrent des théorèmes, qui gagnent aux échecs, qui
 dialoguent, qui représentent le monde, qui diagnostiquent comme des médecins. Le
 programme symbolique fut tout sauf un échec : il a fondé l'informatique du raisonnement,
 et nous en vivons encore.
 
-Et pourtant, deux fois, il s'est cogné au même mur. À l'épisode 4, le **sens commun** :
-cet océan d'évidences que personne ne pense à formuler, et qu'on ne peut donc pas
-écrire. À l'épisode 5, le **goulot d'étranglement** : l'expertise qui se dérobe dès
+Et pourtant, deux fois, il s'est cogné au même mur. Dans « [Représenter le
+monde](docs/module1/40-representer-le-monde) », le **sens commun** : cet océan
+d'évidences que personne ne pense à formuler, et qu'on ne peut donc pas écrire. Dans
+« [Capturer l'expertise](docs/module1/50-systemes-experts) », le **goulot
+d'étranglement** : l'expertise qui se dérobe dès
 qu'on veut la mettre en règles, parce qu'une grande part du savoir humain ne se dit pas.
 Deux visages d'une seule et même leçon — celle, peut-être, que Hofstadter avait
 pressentie le premier : *on n'inscrit pas l'intelligence de l'extérieur, fait après
@@ -172,7 +178,8 @@ liste de règles.*
 Si l'on ne peut pas *dicter* ce savoir à la machine, alors il faut qu'elle l'**acquière
 elle-même**. Or l'idée n'était pas neuve : elle dormait depuis 1958 dans le perceptron
 de Rosenblatt — *une machine qui apprend de ses erreurs* — que le camp symbolique avait
-cru tuer en 1969. C'est ici que se dénoue le fil rouge tendu depuis l'épisode 2. Les
+cru tuer en 1969. C'est ici que se dénoue le fil rouge tendu depuis « [Deux paris
+rivaux](docs/module1/20-deux-paris) ». Les
 deux traditions, la symbolique et la connexionniste, ne se sont jamais succédé
 proprement : elles ont coexisté en rivales, s'éclipsant tour à tour. L'hiver symbolique
 de la fin des années 1980 n'est pas la fin de l'histoire — c'est l'instant où le

@@ -1,10 +1,10 @@
 ---
-title: "Épisode 1 — Turing et la question fondatrice (1950)"
+title: "Turing et la question fondatrice (1950)"
 weight: 10
 slug: turing
 ---
 
-# Épisode 1 — Turing et la question fondatrice (1950)
+# Turing et la question fondatrice (1950)
 
 ## Le moment
 
@@ -213,4 +213,4 @@ il n'a pas dit *comment* s'y prendre concrètement pour construire une machine
 intelligente. Cette tâche revient à la génération suivante. Et, dès le départ,
 celle-ci va se diviser : non pas une, mais **deux réponses rivales** vont naître
 presque en même temps, chacune pariant sur une idée radicalement différente de ce
-qu'est l'intelligence. C'est le sujet du prochain épisode.
+qu'est l'intelligence. C'est le sujet de « [Deux paris rivaux](docs/module1/20-deux-paris) ».

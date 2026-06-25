@@ -1,14 +1,14 @@
 ---
-title: "Épisode 4 — Représenter le monde"
+title: "Représenter le monde"
 weight: 40
 slug: representer-le-monde
 ---
 
-# Épisode 4 — Représenter le monde
+# Représenter le monde
 
 ## Le sens, angle mort de la machine
 
-Faisons le bilan des épisodes précédents. Le Logic Theorist démontrait des
+Faisons le bilan des chapitres précédents. Le Logic Theorist démontrait des
 théorèmes, Deep Blue gagnait aux échecs, ELIZA tenait la conversation — mais
 tous, au fond, faisaient *la même chose* : **manipuler des symboles d'après leur
 forme**, selon des règles. ELIZA repérait le mot « mère » sans avoir la moindre
@@ -33,7 +33,7 @@ Voilà le drame de l'IA symbolique résumé en une phrase : elle excellait au ni
 de la **syntaxe**, peinait à atteindre la **sémantique**, et se fracassait sur la
 **pragmatique**. Car pour passer de la forme au sens, une machine a besoin de
 quelque chose dont Deep Blue et ELIZA étaient totalement dépourvus : des
-**connaissances** sur le monde. C'est le grand chantier de cet épisode — et, on
+**connaissances** sur le monde. C'est le grand chantier de ce chapitre — et, on
 le verra, sa grande déconvenue. Reste la question vertigineuse par laquelle tout
 commence : comment loger dans une machine *ce que tout le monde sait* ?
 
@@ -90,8 +90,8 @@ hiérarchies *est-un* — pourraient sembler s'être éteintes avec le GOFAI. Il
 rien : elles ont essaimé. Les **ontologies** et les **knowledge graphs** qui font
 tourner la recherche de Google ou Wikidata en descendent en droite ligne, et les
 *cases héritées* des frames ne sont pas sans rappeler les **objets** de la
-programmation moderne. Nous y reviendrons à l'épisode 6, pour mesurer ce que le GOFAI
-a *vraiment* légué.
+programmation moderne. Nous y reviendrons dans « [Les hivers et la
+bascule](docs/module1/60-hivers) », pour mesurer ce que le GOFAI a *vraiment* légué.
 {{% /hint %}}
 
 <!-- FIGURE À CRÉER (M1, ép. 4) : petit schéma du réseau sémantique canari→oiseau→animal + ailes/chanter. Repère laissé volontairement. -->
@@ -140,7 +140,7 @@ world*) — et le mot *micro* dit tout.
 Que se passe-t-il si l'on sort de la table à blocs ? Rien. Le modèle du monde de
 SHRDLU ne sait rien de la pluie, d'un mensonge ou d'un escalier ; il ne peut pas
 *grandir* vers le monde réel, parce qu'il faudrait alors y faire entrer… tout. C'est
-le sort commun de toutes les approches de cet épisode : elles brillent tant qu'on
+le sort commun de toutes les approches de ce chapitre : elles brillent tant qu'on
 reste dans un domaine assez petit pour être entièrement décrit, et s'effondrent dès
 qu'affleure l'immensité de ce que nous, humains, tenons pour évident. Cette immensité
 a un nom, et c'est le mur sur lequel le GOFAI tout entier va se briser.
@@ -175,7 +175,7 @@ héroïque, et le plus fou, de toute l'histoire du GOFAI.
 Et il n'a jamais atteint son but. Non par manque d'argent ou de talent, mais parce
 que la tâche est **sans fond** : pour chaque évidence saisie, dix autres surgissent,
 et chacune en présuppose cent. On ne *remplit* pas le sens commun à la cuillère ; il
-se dérobe à mesure qu'on l'écrit. CYC a buté, comme tout le reste de cet épisode,
+se dérobe à mesure qu'on l'écrit. CYC a buté, comme tout le reste de ce chapitre,
 sur la même vérité — **le savoir implicite d'un humain ordinaire est trop vaste pour
 être énuméré**.
 
@@ -189,7 +189,8 @@ symbolique, il faut écouter cette voix dissidente.
 ## L'objection de Hofstadter
 
 Cette voix, nous l'avons déjà entendue. Le trublion, c'est **Douglas Hofstadter** —
-l'homme de la *boucle étrange*, croisé dès le premier épisode à propos de Gödel.
+l'homme de la *boucle étrange*, croisé dès « [Turing et la question
+fondatrice](docs/module1/10-turing) » à propos de Gödel.
 Tandis que ses collègues bâtissaient des moteurs d'échecs et des bases de règles,
 lui n'a cessé de répéter que l'IA dominante courait après la mauvaise proie. Battre
 Kasparov par force brute, aligner des millions d'assertions à la manière de CYC :
@@ -224,7 +225,7 @@ tout le bric-à-brac du savoir encyclopédique afin d'**isoler l'essence**, l'ac
 d'analogie à l'état pur. Deux micro-mondes, deux idées opposées de ce qu'est, au
 fond, l'intelligence.
 
-Reste la question qui hante tout l'épisode : *comment du sens peut-il naître de
+Reste la question qui hante tout ce chapitre : *comment du sens peut-il naître de
 simples symboles ?* La réponse de Hofstadter prolonge sa **boucle étrange**. Le sens,
 dit-il, ne s'**injecte** pas de l'extérieur, fait après fait, comme CYC l'espérait :
 il **émerge** — d'un système assez riche pour se replier sur lui-même, percevoir ses
@@ -240,7 +241,8 @@ est resté un petit programme de laboratoire, magnifique et confiné. Hofstadter
 n'était pas non plus un homme des réseaux de neurones. Il a montré la bonne direction
 sans construire le véhicule qui y mènerait.
 
-Car ce véhicule existait déjà — en sommeil. Depuis l'épisode 2, une **autre
+Car ce véhicule existait déjà — en sommeil. Depuis « [Deux paris
+rivaux](docs/module1/20-deux-paris) », une **autre
 tradition** attend dans l'ombre : celle qui ne prétend pas *dire* le monde à la
 machine, mais la laisse l'**apprendre** d'elle-même, à partir d'exemples. Le GOFAI
 vient de se cogner à son plafond ; le sens commun lui a résisté ; et l'idée
