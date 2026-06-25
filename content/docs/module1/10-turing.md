@@ -6,6 +6,9 @@ slug: turing
 
 # Turing et la question fondatrice (1950)
 
+{{< image src="/images/module1/turing-16.jpg" alt="Portrait d'Alan Turing adolescent." title="Alan Turing adolescent, vers 1928." loading="lazy" >}}
+*Alan Turing adolescent, vers 1928. Domaine public — Wikimedia Commons.*
+
 ## Le moment
 
 Nous sommes en 1950. La Seconde Guerre mondiale vient de s'achever, et le
@@ -23,6 +26,12 @@ estiment qu'il a pu écourter le conflit de plusieurs années. Turing sait donc,
 mieux que quiconque à son époque, qu'une machine peut accomplir des tâches qu'on
 croyait réservées à l'esprit humain. Mais une machine qui *déchiffre* est-elle
 une machine qui *pense* ? C'est tout l'objet de son article.
+
+{{< image src="/images/module1/enigma.jpg" alt="Une machine de chiffrement Enigma, clavier et rotors visibles." title="Une machine Enigma." loading="lazy" >}}
+*Une machine Enigma. Photo : Karsten Sperling, domaine public.*
+
+{{< image src="/images/module1/bombe.jpg" alt="Reconstitution d'une « bombe » de décryptage à Bletchley Park." title="Une « bombe » de décryptage, Bletchley Park." loading="lazy" >}}
+*Reconstitution d'une « bombe » de décryptage, Bletchley Park. Photo : Sarah Hartwell, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons.*
 
 ## Le jeu de l'imitation
 
@@ -90,6 +99,8 @@ aujourd'hui la **machine de Turing** : un dispositif imaginaire, d'une simplicit
 presque dérisoire, qui se contente de lire et d'écrire des symboles sur un ruban
 en suivant un jeu de règles fixes.
 
+{{< image src="/images/module1/machine-de-turing.svg" alt="Schéma d'une machine de Turing : un ruban de cases, une tête de lecture/écriture, un état courant et une règle de transition." title="Une machine de Turing : lire un symbole, l'écrire, se déplacer, changer d'état." loading="lazy" >}}
+
 Son résultat est stupéfiant : ce mécanisme élémentaire peut, en principe,
 **calculer tout ce qui est calculable**. En fait, la machine de Turing donne une
 définition précise à une notion qu'on emploie tous les jours sans jamais la
@@ -132,6 +143,9 @@ Ce rêve — *penser, c'est calculer* — portait pourtant en lui une **ombre**,
 projetée presque au même moment. Cinq ans avant la machine de Turing, en **1931**,
 un jeune logicien autrichien, **Kurt Gödel**, avait démontré un théorème qui
 allait ébranler les mathématiques elles-mêmes : son **théorème d'incomplétude**.
+
+{{< image src="/images/module1/godel-1925.jpg" alt="Portrait de Kurt Gödel jeune, étudiant." title="Kurt Gödel étudiant, vers 1925." loading="lazy" >}}
+*Kurt Gödel étudiant, vers 1925. Domaine public — Wikimedia Commons.*
 
 Le résultat est aussi simple à énoncer que vertigineux. Tout système de règles
 formelles assez puissant pour faire de l'arithmétique contient des énoncés qui
