@@ -89,26 +89,43 @@ Front matter : `title`, `weight` (ordonne le menu), `slug` optionnel. Fichiers n
 
 ## 6. Module 2 — Apprentissage automatique (refonte de fond)
 
-### Diagnostic v1
-Le plus riche (≈17 000 mots, 7 applets), bon fil narratif, mais : (1) **page monstre** `60-apprentissage-supervisé.md` (5509 mots = ⅓ du module) ; (2) **déséquilibre supervisé (5500) / non-supervisé (800)** ; (3) pages préparatoires dispersées ; (4) ordre discutable ; (5) **aucun foyer pour généralisation/surapprentissage/évaluation** alors que le `_index` en fait le cœur.
+> **Note de refonte (séance de conception M2)** — Le M2 est le module le plus riche en matériel *original* de Christian (≈17 000 mots, applets maison), mais son **fil conducteur est le maillon faible**. La refonte ci-dessous a été décidée après relecture intégrale de la v1 ; elle *réassemble* le matériel existant plutôt que de le jeter. Les pages dont Christian est fier (`30-les-données`, `35-kNN`) sont préservées et **mises en valeur**, pas diluées.
+
+### Diagnostic v1 (établi à la relecture)
+Beaucoup de bon matériel, mais cinq problèmes structurels concrets :
+1. **La page 10 livre tout le pipeline d'un coup, en mots, sur le pire exemple.** Le scénario téléviseurs nomme déjà modèle/paramètres/erreur/entraînement/inférence/généralisation — mais abstraitement, sans rien à manipuler, et avec la **vision** (6 M de dimensions, le cas le plus dur) comme premier exemple. Puis ce pipeline n'est **jamais réutilisé comme colonne**.
+2. **Le cœur conceptuel — la généralisation — est enterré et éparpillé.** Sur-apprentissage / biais-variance / erreur train-test est aujourd'hui une *sous-section de la page kNN (35)*, introduite avant tout modèle réellement entraîné. Aucun foyer propre.
+3. **« Apprendre = minimiser une erreur par descente de gradient » arrive tard et en double** : enfoui dans les `details` optionnels de la page 60, **expliqué deux fois** (logistique + linéaire).
+4. **Deux pages définitionnelles/taxonomiques tuent l'élan** juste avant la page-monstre : `40-modèles` (polysémie, jusqu'à la théorie des modèles en logique) et `50-paradigmes` (supervisé/non-sup., paramétrique/non-param., inductif/transductif) — exactement le classement « par paradigmes » rejeté, et trop académique pour des non-informaticiens.
+5. **Redondance + matériel mal placé** : les **plongements lexicaux** sont traités deux fois (`30` et `37`) et renvoient eux-mêmes au M4 (→ ils y appartiennent) ; la descente bits → CPU → langages (`30`, applet `cpu-simulator`) est un long détour *non-ML* avant que le ML commence.
 
 ### Décision : refonte complète, colonne = **le flux de travail ML**
-Principe organisateur : **données → modèle → entraînement par minimisation d'une erreur → vérification de la généralisation**. Enseigne un *modèle mental transférable* qui démystifie le ML en entier (mieux qu'une taxonomie « par paradigmes », un « zoo » d'algos, ou un narratif pur). Les algorithmes deviennent des *illustrations* dans ce squelette. Supervisé/non-supervisé = une **bifurcation** (la cible est présente ou absente), pas la colonne. Le contenu v1 = carrière d'idées à réassembler (refonte radicale assumée).
+Principe organisateur : **données → modèle (fonction réglable) → entraînement par minimisation d'une erreur → vérification de la généralisation**. Enseigne un *modèle mental transférable* qui démystifie le ML en entier (mieux qu'une taxonomie « par paradigmes », un « zoo » d'algos, ou un narratif pur). Les algorithmes deviennent des *illustrations* dans ce squelette. Supervisé/non-supervisé = une **bifurcation** (la cible est présente ou absente), pas la colonne. **Raccord M1** : la dernière phrase du M1 (*« apprendre, c'est chercher dans l'immensité des réglages d'un modèle »*) annonce déjà la descente de gradient — l'épine dorsale du M2.
 
-### Structure : **fil continu « construire en butant sur des obstacles »**
-Pas de pages « préparatoires » abstraites : chaque concept **naît quand un obstacle le rend nécessaire**. Le module devient une seule démonstration qui se construit.
-1. **Le problème** (scénario d'ouverture conservé) — on veut prédire qqch.
-2. **Le modèle le plus bête** — prédire la moyenne/majorité ; c'est *déjà* un modèle. Obstacle : ignore l'entrée.
-3. **Regarder les données** — attributs, vecteurs (la notion « données » émerge par besoin).
-4. **Prédire par ressemblance** — similarité + kNN (apprendre presque sans modèle). Obstacle : lourd, pas d'« apprentissage ».
-5. **Un vrai modèle qui s'entraîne** — régression linéaire, fonction d'erreur, descente de gradient (cœur du flux). Obstacle : et pour une catégorie ?
-6. **Classer** — régression logistique, Bayes naïf → TN2. Obstacle : marche-t-il sur du neuf ?
-7. **Généraliser** — train/test, surapprentissage (cœur conceptuel, **nouveau**).
-8. **De quel signal apprend-on ?** — bifurcation à 3 branches : supervisé (cible étiquetée) / non-supervisé (clustering, k-means) / **renforcement** (récompense, essai-erreur).
-9. **TN2**
+### Trois décisions de conception (forks tranchés)
+1. **Exemple-fil** : la **vision en *bornes*** (accroche page 10 + ouverture vers les CNN du M3), pas comme substrat. Le fil de travail des étapes 20→70 est un **exemple tabulaire unique et réaliste — la maison** (déjà présente dans `30`), qui sert *à la fois* la régression (prédire le prix) et, étiqueté, la classification. Motif : la vision motive bien *pourquoi le ML existe*, mais sa donnée n'est pas intuitive, n'est pas manipulable dans les applets (tous en 2D), et force de toute façon un basculement vers le tabulaire.
+2. **Plongements lexicaux → M4** : au M2 on ne plante que la **graine** (mots → vecteurs → sac de mots, juste ce qu'il faut pour le TN2 pourriels). Les embeddings denses sont au M4, qui les traite déjà.
+3. **Niveau math** : **intuition géométrique + une seule** explication propre de la descente de gradient (à l'étape 50, réutilisée sans re-dérivation à l'étape 60). Le reste (entropie croisée, inversion de Bayes, formules de gradient) en optionnel clairement balisé ou en liens.
 
-- La page monstre est absorbée par cette structure (régression linéaire → étape 5 ; logistique + Bayes → étape 6).
-- **Graine RL** (étape 8) : l'idée seulement (agent, action, récompense, essai-erreur, exploration), exemple simple **non-profond** (souris dans un labyrinthe / gridworld), tease AlphaGo. Pas d'algos (Q-learning, etc.). Fleurit au M3.
+### Structure cible : **fil continu « construire en butant sur des obstacles »**
+Pas de pages « préparatoires » abstraites : chaque concept **naît quand un obstacle le rend nécessaire**, et **la fin de chaque page motive la suivante**. Rédiger *dans l'ordre*, section (`##`) par section.
+
+| Nouvelle page | Source v1 | Action | Obstacle qui motive la suite |
+|---|---|---|---|
+| `_index` | `_index` | mettre à jour (objectifs, éval. inchangée : TN2 Bayes pourriels) | — |
+| `10` **Le problème** (accroche, sans déballer le vocabulaire) | `10-scénario` + contraste prog./ML de `20-différence` | réduire ; vision = image d'ouverture | « comment une machine pourrait-elle *prédire* ça ? » |
+| `20` **Le modèle le plus bête** (prédire la moyenne/majorité — déjà un modèle ; *baseline*) | — | **nouveau** | il ignore l'entrée |
+| `30` **Regarder les données** (attributs, vecteurs, espace haute-dim, table de maisons) | `30-données` | élaguer bits→CPU→langages ; sortir embeddings → M4 | comment se servir de ces attributs pour prédire ? |
+| `40` **Prédire par ressemblance** (kNN + similarité/distance) | `35-kNN` + `37-similarité` | fusionner ; **sortir biais-variance → 70** ; embeddings → M4 | lourd à l'inférence, aucun « apprentissage », rien de compressé en paramètres |
+| `50` **Un modèle qui s'entraîne** (régression linéaire + fonction d'erreur + **descente de gradient**) | moitié « régression » de `60` | **cœur** ; gradient expliqué **une seule fois** ici | et pour prédire une *catégorie* ? |
+| `60` **Classer** (régression logistique, puis Bayes naïf génératif) | moitié « classif » de `60` | alléger la math ; réutilise la descente de gradient | marche-t-il sur des données *neuves* ? |
+| `70` **Généraliser** (train/test, sur-/sous-apprentissage, biais-variance) | extrait de `35` | **nouveau foyer** (enfin à sa place) | de quel *signal* a-t-on appris ? |
+| `80` **De quel signal apprend-on ?** (supervisé / non-supervisé `k-means` / **renforcement**) | `50-paradigmes` + `70-non-sup.` | remplacer la taxonomie par la bifurcation à 3 branches | (RL) → fleurit au M3 |
+| `99` **TN2** (Bayes naïf / pourriels en Sheets) | `99` | garder | — |
+
+- **Disparaissent comme pages autonomes** : `40-modèles` (la distinction utile *architecture / paramètres / hyperparamètres* → petit encadré à l'étape 50 ; le reste, polysémie stats/sciences/logique, coupé) et `50-paradigmes` (taxonomie → devient la bifurcation `80` ; paramétrique/non-param. et inductif/transductif **coupés** comme trop académiques).
+- **Graine RL** (étape 80) : l'idée seulement (agent, action, récompense, essai-erreur, exploration), exemple simple **non-profond** (souris dans un labyrinthe / gridworld), tease AlphaGo. Pas d'algos (Q-learning, etc.). Fleurit au M3.
+- **Applets réutilisés tels quels** : `knn` (40), `linear-regression` + `linear-regression-with-springs` (50), `logistic-regression` (60), `kmeans` (80). L'ossature interactive existe déjà ; le travail est surtout **rédactionnel**.
 
 ## 7. Module 3 — Réseaux de neurones et apprentissage profond
 
