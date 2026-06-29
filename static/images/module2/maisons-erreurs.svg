@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 660 460" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">
+<title>L'erreur du modèle moyen : l'écart de chaque maison à la prédiction</title>
+<desc>Le nuage de maisons et la droite plate à 500 000 $. Pour chaque maison, un segment vertical rouge relie son vrai prix à la prédiction : c'est l'erreur du modèle sur cette maison. Les segments sont longs aux extrêmes (maisons très bon marché ou très chères) et courts près du centre.</desc>
+
+<rect x="0" y="0" width="660" height="460" rx="14" fill="#efe7d3" stroke="#d9cbac"/>
+
+<!-- lignes de repère horizontales -->
+<g stroke="#e0d4b8" stroke-width="1">
+<line x1="80" y1="351.7" x2="630" y2="351.7"/>
+<line x1="80" y1="238.3" x2="630" y2="238.3"/>
+<line x1="80" y1="125" x2="630" y2="125"/>
+</g>
+
+<!-- axes -->
+<g stroke="#b8a888" stroke-width="1.6">
+<line x1="80" y1="40" x2="80" y2="380"/>
+<line x1="80" y1="380" x2="630" y2="380"/>
+</g>
+
+<!-- graduations + étiquettes axe X (superficie) -->
+<g stroke="#b8a888" stroke-width="1.4">
+<line x1="80" y1="380" x2="80" y2="386"/>
+<line x1="224.7" y1="380" x2="224.7" y2="386"/>
+<line x1="369.5" y1="380" x2="369.5" y2="386"/>
+<line x1="514.2" y1="380" x2="514.2" y2="386"/>
+</g>
+<g font-size="13" fill="#5b5249" text-anchor="middle">
+<text x="80" y="402">100</text>
+<text x="224.7" y="402">150</text>
+<text x="369.5" y="402">200</text>
+<text x="514.2" y="402">250</text>
+<text x="355" y="430" font-size="15" fill="#3a3531">superficie (m²)</text>
+</g>
+
+<!-- graduations + étiquettes axe Y (prix) -->
+<g stroke="#b8a888" stroke-width="1.4">
+<line x1="74" y1="351.7" x2="80" y2="351.7"/>
+<line x1="74" y1="238.3" x2="80" y2="238.3"/>
+<line x1="74" y1="125" x2="80" y2="125"/>
+</g>
+<g font-size="13" fill="#5b5249" text-anchor="end">
+<text x="68" y="356">300 k$</text>
+<text x="68" y="242.8">500 k$</text>
+<text x="68" y="129.5">700 k$</text>
+</g>
+<text x="26" y="210" font-size="15" fill="#3a3531" text-anchor="middle" transform="rotate(-90 26 210)">prix de vente</text>
+
+<!-- baseline : prédiction constante = prix moyen -->
+<line x1="80" y1="238.3" x2="630" y2="238.3" stroke="#9a5b33" stroke-width="2.6" stroke-dasharray="7 4"/>
+<text x="624" y="230" font-size="13" fill="#9a5b33" text-anchor="end" font-weight="600">toujours 500 k$</text>
+
+<!-- erreurs : segments verticaux du point à la prédiction -->
+<g stroke="#c4564a" stroke-width="1.8" opacity="0.85">
+<line x1="123" y1="357" x2="123" y2="238.3"/>
+<line x1="167" y1="346" x2="167" y2="238.3"/>
+<line x1="225" y1="323" x2="225" y2="238.3"/>
+<line x1="268" y1="318" x2="268" y2="238.3"/>
+<line x1="312" y1="284" x2="312" y2="238.3"/>
+<line x1="355" y1="233" x2="355" y2="238.3"/>
+<line x1="427" y1="193" x2="427" y2="238.3"/>
+<line x1="471" y1="182" x2="471" y2="238.3"/>
+<line x1="529" y1="108" x2="529" y2="238.3"/>
+<line x1="587" y1="57" x2="587" y2="238.3"/>
+</g>
+<text x="131" y="303" font-size="13" fill="#c4564a" font-weight="600">erreur</text>
+
+<!-- nuage de points -->
+<g fill="#2f6f6a" stroke="#efe7d3" stroke-width="1.5">
+<circle cx="123" cy="357" r="6.5"/>
+<circle cx="167" cy="346" r="6.5"/>
+<circle cx="225" cy="323" r="6.5"/>
+<circle cx="268" cy="318" r="6.5"/>
+<circle cx="312" cy="284" r="6.5"/>
+<circle cx="355" cy="233" r="6.5"/>
+<circle cx="427" cy="193" r="6.5"/>
+<circle cx="471" cy="182" r="6.5"/>
+<circle cx="529" cy="108" r="6.5"/>
+<circle cx="587" cy="57" r="6.5"/>
+</g>
+</svg>
