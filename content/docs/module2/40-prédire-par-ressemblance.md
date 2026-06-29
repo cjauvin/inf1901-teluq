@@ -32,17 +32,31 @@ celle de tous les jours.)
 
 {{< image src="/images/module2/distance_2d.png" alt="Deux points dans un plan reliés par un segment droit : la distance euclidienne entre eux." title="La distance entre deux points : la longueur du trait droit qui les relie." loading="lazy" >}}
 
-Le vrai tour de force, c'est que cette mesure ne dépend pas du nombre de
-dimensions. Que nos objets soient décrits par 2 caractéristiques, par 6, ou par
-les millions de pixels d'une image, **la même idée de distance s'applique** : on
-compare les objets coordonnée par coordonnée, et on en tire un seul nombre —
-petit s'ils se ressemblent, grand s'ils diffèrent.
+Cette mesure se calcule de la même façon dès qu'il y a plusieurs
+caractéristiques : deux (un plan), six (notre tableau de maisons)… on compare les
+objets coordonnée par coordonnée et on en tire un seul nombre — petit s'ils se
+ressemblent, grand s'ils diffèrent. Et, comme on l'a vu au chapitre précédent,
+rien n'oblige à s'arrêter là : la même formule vaut jusqu'à une image, dont les
+millions de pixels forment autant de coordonnées.
 
-{{< image src="/images/module2/distance_high_dim.png" alt="La même idée de distance, transposée à un espace de haute dimension." title="La même distance s'applique, quel que soit le nombre de dimensions." loading="lazy" >}}
+{{< image src="/images/module2/distance_high_dim.png" alt="La même idée de distance, transposée à un espace de haute dimension." title="La même distance se calcule, quel que soit le nombre de dimensions." loading="lazy" >}}
 
-Nous tenons donc notre mesure de ressemblance, valable pour n'importe quel objet
-qu'on sait décrire par des nombres. Il ne reste plus qu'à nous en servir pour
-prédire.
+{{% hint warning %}}
+**Une nuance importante.** Que la distance se *calcule* sur des pixels ne veut pas
+dire qu'elle y *mesure bien* la ressemblance. Sur des caractéristiques choisies
+par un humain (superficie, nombre de pièces…), la proximité a un sens clair. Sur
+des pixels bruts, beaucoup moins : deux photos du *même* chat, dans deux poses,
+peuvent être très éloignées pixel à pixel ; une photo et sa version simplement
+assombrie, quasi identiques pour notre œil, le seront tout autant. Faire en sorte
+que la distance reflète la ressemblance *réelle* d'objets complexes est un
+problème à part entière — celui des **bonnes représentations** —, que nous
+retrouverons avec les réseaux de neurones (Module&nbsp;3) et les plongements
+(Module&nbsp;4). Pour des données tabulaires comme nos maisons, en revanche, la
+distance brute fait déjà très bien l'affaire.
+{{% /hint %}}
+
+Nous tenons donc notre mesure de ressemblance — fiable pour des données
+tabulaires comme nos maisons. Il ne reste plus qu'à nous en servir pour prédire.
 
 ## Les k plus proches voisins
 
