@@ -127,6 +127,23 @@ Pas de pages « préparatoires » abstraites : chaque concept **naît quand un o
 - **Graine RL** (étape 80) : l'idée seulement (agent, action, récompense, essai-erreur, exploration), exemple simple **non-profond** (souris dans un labyrinthe / gridworld), tease AlphaGo. Pas d'algos (Q-learning, etc.). Fleurit au M3.
 - **Applets réutilisés tels quels** : `knn` (40), `linear-regression` + `linear-regression-with-springs` (50), `logistic-regression` (60), `kmeans` (80). L'ossature interactive existe déjà ; le travail est surtout **rédactionnel**.
 
+### État de la rédaction (mise à jour 2026-06-30)
+**Pages rédigées, refondues et committées** (fichiers en `<poids>-<slug>` **sans accent**, slugs idem) :
+- `10-le-probleme` ✅ · `20-modele-le-plus-bete` ✅ · `30-les-donnees` ✅ · `40-predire-par-ressemblance` ✅ · `50-entrainer-un-modele` ✅
+- **Restent** : `60-classer`, `70-generaliser` (foyer biais-variance, à extraire de l'ancien kNN), `80` (signal : sup./non-sup./RL), `99` TN2, `_index` (à rafraîchir).
+- Encore en *ancien* format (à refondre/renommer le moment venu) : `60-apprentissage-supervisé.md` (source classif. de la page 60), `70-apprentissage-non-supervisé.md` (source k-means → page 80), `99-travail-noté-2.md`.
+
+**Conventions visuelles établies** : SVG parchemin maison (fond `#efe7d3`, accents teal `#2f6f6a` / brun `#9a5b33` / rouge erreur `#c4564a`). **Aucun label texte ne touche un élément graphique** (voir mémoire). Fil maison (tabulaire) ; vision en bornes ; embeddings → M4 ; math en `{{% details %}}`. SVG complexes générables par script (cf. cuvette 3D : `rsvg-convert` pour prévisualiser, pas de cairosvg).
+
+**Squelette convenu pour la page 60 « Classer »** (à rédiger ensuite) :
+1. intro — même machinerie qu'en p.50, mais une droite qui **sépare** ;
+2. `## Tracer une frontière : la régression logistique` (discriminatif ; applet `logistic-regression` ; entraînée par descente de gradient ; math en `details`) ;
+3. `## Renverser le problème : la classification bayésienne` (génératif ; contraste discriminatif/génératif = graine M4 ; math en `details`) ;
+4. `## Le cas des pourriels` (Bayes naïf sur sac de mots → pont TN2) ;
+5. `## Et sur des données neuves ?` (obstacle → page 70).
+
+**En suspens côté Christian** : réétiqueter `nf_house.png` (`x1 prix` → `x1 superficie`).
+
 ## 7. Module 3 — Réseaux de neurones et apprentissage profond
 
 ### Diagnostic v1
