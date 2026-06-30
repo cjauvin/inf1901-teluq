@@ -271,3 +271,90 @@ On compare donc, pour le point observé, lequel des deux portraits le rend le pl
 **vraisemblable** — et c'est le portrait gagnant qui donne la classe.
 
 {{% /details %}}
+
+## Le cas des pourriels
+
+Quittons maintenant les points colorés et leur plan abstrait pour un problème
+bien réel — celui-là même qui vous attend au [travail noté
+2](99-travail-noté-2) : reconnaître automatiquement les **pourriels** (les
+courriels indésirables, le *spam*). C'est un cas d'école de classification :
+deux classes, `pourriel` ou `courriel` légitime, et une décision à prendre pour
+chaque message qui arrive.
+
+Mais un premier obstacle se dresse. Nos deux classificateurs attendent un
+**point** — une petite liste de nombres. Un courriel, lui, est un *texte*.
+Comment transformer « *Félicitations ! Vous avez gagné un prix…* » en
+coordonnées ?
+
+La réponse reprend exactement le geste de la [page sur les
+données](30-les-donnees) : une chose se décrit par une **liste de nombres**, et
+devient ainsi un point dans un espace. Pour un texte, le procédé le plus simple
+s'appelle le **sac de mots** : on dresse la liste de tous les mots possibles (le
+*vocabulaire*), et on décrit un courriel en comptant combien de fois chacun y
+apparaît. Une dimension par mot du vocabulaire ; la valeur, le nombre
+d'occurrences. Le mot « gratuit » apparaît deux fois, « réunion » zéro fois, et
+ainsi de suite.
+
+$$\mathbf{x} = (n_1, n_2, \ldots, n_V)$$
+
+La seule différence avec le vecteur d'une maison, c'est l'échelle : là où la
+maison tenait en quelques caractéristiques, le vocabulaire compte des *dizaines
+de milliers* de mots. Notre courriel est donc un point — un vrai —, mais dans un
+espace d'une vertigineuse dimension. Et, comme nos points bleus et rouges, les
+pourriels et les courriels légitimes y forment deux nuages distincts :
+
+{{< image src="/images/module2/spam_vector_space.png" alt="Un système d'axes où chaque axe représente un mot du vocabulaire. Les courriels sont des points dans cet espace de très haute dimension ; les pourriels se regroupent dans une région, les courriels légitimes dans une autre." title="Chaque mot du vocabulaire est un axe ; un courriel devient un point dans cet espace. Pourriels et courriels légitimes y forment deux nuages." loading="lazy" >}}
+
+Deux nuages dans un espace : nous savons faire. Toute la machinerie de la section
+précédente s'applique telle quelle. On dresse le **portrait** de chaque classe —
+à quoi ressemblent les mots d'un pourriel typique ? d'un courriel honnête ? —
+puis on classe un nouveau message en demandant lequel des deux portraits rend ses
+mots les plus vraisemblables. C'est, encore une fois, l'approche **générative** de
+Bayes naïf ; et l'hypothèse « naïve » revient à supposer que les mots sont tirés
+**indépendamment** les uns des autres — faux (« carte » appelle « bancaire »),
+mais commode et étonnamment efficace.
+
+Un seul détail technique change par rapport à la section précédente. Là, nos
+caractéristiques étaient des valeurs *continues*, qu'on décrivait par une courbe
+en cloche. Ici, ce sont des *comptes* — des nombres entiers : zéro, une, deux
+occurrences. La cloche cède donc la place à une loi taillée pour les comptes, la
+**loi multinomiale** ; mais l'esprit est identique. Le portrait d'une classe, ce
+n'est plus une moyenne et une dispersion, c'est la liste des mots qu'elle emploie
+volontiers : « gratuit », « urgent », « félicitations » pèsent lourd côté
+pourriel, beaucoup moins côté courriel ordinaire.
+
+{{% hint info %}}
+
+C'est précisément ce classificateur — Bayes naïf multinomial sur un sac de mots —
+que vous mettrez en œuvre au **travail noté 2** pour bâtir votre propre filtre
+anti-pourriel.
+
+{{% /hint %}}
+
+{{% details "Les mathématiques du Bayes naïf multinomial (optionnel)" %}}
+
+Un courriel est le vecteur de comptes $\mathbf{x} = (n_1, \ldots, n_V)$, où $n_i$
+est le nombre d'occurrences du mot $i$ et $V$ la taille du vocabulaire. Si ce
+courriel appartient à la classe `pourriel`, la probabilité d'observer ce vecteur,
+selon la loi multinomiale, est :
+
+$$P(\mathbf{x} \mid \text{pourriel}) = \frac{N!}{n_1!\,n_2!\cdots n_V!} \prod_{i=1}^{V} p_i^{\,n_i}$$
+
+où $N = \sum_i n_i$ est le nombre total de mots du courriel, et $p_i$ la
+probabilité, dans un pourriel, que le mot tiré soit le mot $i$ (plus élevée pour
+« prix » que pour « parent », disons). On définit de même un modèle pour la
+classe `courriel`. Ces $p_i$ s'estiment directement, en comptant la fréquence de
+chaque mot dans les courriels d'entraînement de la classe — exactement comme on
+estimait la moyenne d'une gaussienne.
+
+La décision se prend ensuite par le théorème de Bayes, comme à la section
+précédente. En ignorant le dénominateur $P(\mathbf{x})$ (le même pour les deux
+classes) :
+
+$$\text{classe}(\mathbf{x}) = \begin{cases} \mathtt{pourriel} & \text{si } P(\mathbf{x}\mid\text{pourriel})\,P(\text{pourriel}) \ge P(\mathbf{x}\mid\text{courriel})\,P(\text{courriel}) \\ \mathtt{courriel} & \text{sinon} \end{cases}$$
+
+On retrouve, sous le calcul, une décision **linéaire** dans l'espace des mots —
+le même genre de frontière que celle de la régression logistique. Les deux
+familles, discriminative et générative, se rejoignent une fois de plus.
+
+{{% /details %}}
