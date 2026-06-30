@@ -161,6 +161,8 @@ ressemble un point bleu, typiquement ? Et un rouge ? Si je dispose d'un bon
 portrait de chacun, je peux classer un nouveau point en demandant simplement :
 *ressemble-t-il davantage à un bleu ou à un rouge ?*
 
+{{< image src="/images/module2/qui-je-ressemble.svg" alt="Deux nuages de points, l'un bleu, l'autre rouge, chacun entouré d'un halo qui figure son « portrait » (sa répartition). Un point neuf, posé entre les deux, demande : à qui je ressemble le plus ? On le compare à chaque portrait pour décider de sa classe." title="L'approche générative : on décrit le « portrait » de chaque classe, puis on demande auquel le nouveau point ressemble le plus." loading="lazy" >}}
+
 C'est l'approche dite **générative**, et le mot mérite qu'on s'y arrête. Décrire
 une classe assez finement pour reconnaître ses membres, c'est aussi savoir, en
 principe, en *fabriquer* de nouveaux : un modèle qui connaît le portrait-robot du
