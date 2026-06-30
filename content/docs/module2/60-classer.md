@@ -152,3 +152,120 @@ On répète jusqu'à ce que l'erreur ne diminue plus. C'est, trait pour trait, l
 mécanique du chapitre précédent — seule la fonction d'erreur a changé de visage.
 
 {{% /details %}}
+
+## Renverser le problème : la classification bayésienne
+
+La seconde façon de penser prend le problème par l'autre bout. Plutôt que de
+tracer d'emblée la frontière, elle commence par **décrire chaque classe**. À quoi
+ressemble un point bleu, typiquement ? Et un rouge ? Si je dispose d'un bon
+portrait de chacun, je peux classer un nouveau point en demandant simplement :
+*ressemble-t-il davantage à un bleu ou à un rouge ?*
+
+C'est l'approche dite **générative**, et le mot mérite qu'on s'y arrête. Décrire
+une classe assez finement pour reconnaître ses membres, c'est aussi savoir, en
+principe, en *fabriquer* de nouveaux : un modèle qui connaît le portrait-robot du
+« bleu typique » pourrait inventer des bleus plausibles qu'il n'a jamais vus.
+D'où *génératif* — il pourrait générer des données, pas seulement les trancher.
+Retenez cette idée : elle paraît modeste ici, mais c'est elle qui, poussée à
+l'extrême, donnera plus tard l'IA *générative* — celle qui produit textes et
+images (Module 4).
+
+Comment dresse-t-on le portrait d'une classe ? En décrivant **comment ses points
+se répartissent** le long de chaque caractéristique. Les maisons bleues se
+concentrent-elles autour de telle valeur de $x_1$ ? Les rouges, plus haut ? Cette
+répartition se résume par une courbe familière, la fameuse **courbe en cloche**
+(ou *gaussienne*) : un sommet là où les points sont denses, des bords qui
+s'amincissent là où ils se raréfient. Un portrait de classe, c'est une poignée de
+ces cloches — une par caractéristique.
+
+Pour garder le calcul simple, on fait une hypothèse délibérément grossière : on
+traite **chaque caractéristique séparément**, comme si elles étaient
+indépendantes. C'est rarement tout à fait vrai (la superficie et le nombre de
+pièces, par exemple, vont de pair), et c'est précisément ce que veut dire le mot
+**naïve** dans le nom de la méthode. Naïve, mais redoutablement efficace en
+pratique.
+
+Reste alors un dernier tour de passe-passe. Nos portraits répondent à la
+question : « *si* ce point est bleu, à quel point est-il typique ? » — autrement
+dit, la probabilité du point *sachant* la classe. Mais ce qu'on veut, c'est
+l'inverse : « ce point étant donné, quelle est la probabilité qu'il soit bleu ? »
+Renverser ainsi le conditionnement — passer de *probabilité du point sachant la
+classe* à *probabilité de la classe sachant le point* — est exactement ce que
+permet un résultat fondamental des probabilités, le **théorème de Bayes**. C'est
+lui qui donne son nom à la méthode, la **classification bayésienne naïve**.
+
+Voilà donc deux routes vers le même but :
+
+| | **Régression logistique** | **Bayes naïf** |
+|---|---|---|
+| Philosophie | **discriminative** | **générative** |
+| Stratégie | tracer la frontière | décrire chaque classe |
+| Question posée | *de quel côté ?* | *à quel portrait ressemble-t-il le plus ?* |
+| Bonus | — | pourrait *générer* de nouveaux exemples |
+
+Fait remarquable : sur nos données en deux dimensions, ces deux chemins si
+différents aboutissent à la **même forme de frontière** — une droite. Mais la
+distinction entre apprendre à *séparer* et apprendre à *décrire* est l'une des
+plus profondes de tout le domaine. Nous la retrouverons, en grand, au Module 4 :
+les modèles qui *classent* d'un côté, ceux qui *engendrent* du contenu de
+l'autre.
+
+{{% details "Les mathématiques de la classification bayésienne naïve (optionnel)" %}}
+
+Chaque couple **caractéristique + classe** est modélisé par une gaussienne à une
+dimension — soit, sur nos deux caractéristiques et nos deux classes, quatre
+cloches en tout. La gaussienne (ou loi normale) décrit comment la « masse de
+probabilité » se répartit autour d'une valeur centrale, la moyenne :
+
+![](/images/module2/gaussian.png)
+
+Un point subtil : la hauteur de la courbe en un endroit n'est *pas* la
+probabilité de ce point. Comme la courbe est continue, une probabilité
+correspond à une **aire** sous la courbe (entre deux bornes) ; l'aire totale vaut
+1, et l'aire à gauche de la moyenne vaut donc 0,5.
+
+Concrètement, on projette d'abord les points sur l'axe $x_1$, ce qui les rend
+unidimensionnels…
+
+![](/images/module2/nb_x1_proj.png)
+
+…puis on ajuste une cloche par classe, dont la largeur épouse la dispersion des
+points projetés :
+
+![](/images/module2/nb_x1_gauss.png)
+
+et on recommence sur l'axe $x_2$ :
+
+![](/images/module2/nb_x2_proj.png)
+
+![](/images/module2/nb_x2_gauss.png)
+
+On dispose alors de quatre modèles $p(x_j \mid \text{classe})$. La moyenne $\mu$
+et l'écart-type $\sigma$ de chaque cloche s'obtiennent **directement** par un
+simple calcul de moyenne et de dispersion sur les points concernés — pas besoin,
+ici, de descente de gradient itérative :
+
+$$\hat\mu_{j,c} = \frac{1}{N_c}\sum_{i \in c} x_{ij}, \qquad \hat\sigma^2_{j,c} = \frac{1}{N_c}\sum_{i \in c} \big(x_{ij} - \hat\mu_{j,c}\big)^2$$
+
+L'hypothèse *naïve* d'indépendance permet de combiner les caractéristiques par
+simple multiplication :
+
+$$p(\mathbf{x} \mid c) = p(x_1 \mid c)\,\cdot\,p(x_2 \mid c)$$
+
+Ce modèle est *génératif* : il décrit la probabilité d'un point $\mathbf{x}$
+*sachant* sa classe, $P(\mathbf{x} \mid y)$. Mais la classification réclame
+l'inverse, $P(y \mid \mathbf{x})$. Le **théorème de Bayes** opère le
+renversement :
+
+$$P(y \mid \mathbf{x}) = \frac{P(\mathbf{x} \mid y)\,P(y)}{P(\mathbf{x})}$$
+
+où $P(y)$ est la proportion de chaque classe (souvent 50/50 si les données sont
+équilibrées). Comme le dénominateur $P(\mathbf{x})$ ne dépend pas de la classe,
+on peut l'ignorer pour décider :
+
+$$\text{classe}(\mathbf{x}) = \begin{cases} \mathtt{rouge} & \text{si } P(\mathbf{x}\mid\text{rouge})\,P(\text{rouge}) \ge P(\mathbf{x}\mid\text{bleu})\,P(\text{bleu}) \\ \mathtt{bleu} & \text{sinon} \end{cases}$$
+
+On compare donc, pour le point observé, lequel des deux portraits le rend le plus
+**vraisemblable** — et c'est le portrait gagnant qui donne la classe.
+
+{{% /details %}}
