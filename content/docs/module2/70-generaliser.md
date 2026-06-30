@@ -60,3 +60,64 @@ troisième paquet, l'**ensemble de validation**, dédié à ces réglages ; le j
 test, lui, reste vierge pour l'ultime verdict.
 
 {{% /hint %}}
+
+## Trop coller, ou trop lisser : le compromis biais-variance
+
+Maintenant que nous savons *mesurer* la généralisation, regardons-la varier. Le
+meilleur terrain d'observation est notre vieille connaissance, kNN — car son
+unique réglage, le nombre de voisins $k$, agit précisément comme un curseur de
+souplesse. Reprenez l'applet ; cette fois, faites lentement glisser $k$ d'un bout
+à l'autre, et observez la frontière.
+
+{{< applet src="/html/applets/knn.html" >}}
+
+À **$k = 1$**, chaque point ne consulte que son unique plus proche voisin : la
+frontière se contorsionne pour entourer le moindre exemple, forme des îlots
+autour des points isolés, épouse jusqu'au dernier détail. L'erreur
+d'entraînement tombe à *zéro* — forcément, chaque exemple est son propre voisin
+le plus proche. Mais cette frontière torturée a pris pour argent comptant le
+moindre hasard des données : un point un peu aberrant, du bruit, et elle se plie
+quand même pour l'accommoder. C'est le **surapprentissage** — notre étudiant qui
+a appris le corrigé par cœur, jusqu'aux coquilles, sans rien comprendre. Sur des
+données neuves, il trébuche.
+
+À l'autre extrême, **$k$ très grand**, chaque prédiction moyenne tant de voisins
+que la frontière se lisse en une courbe placide, presque droite. Si placide,
+parfois, qu'elle gomme des structures pourtant bien réelles. C'est le travers
+inverse, le **sous-apprentissage** : le modèle est trop rigide pour épouser la
+vraie forme des données.
+
+Deux façons d'échouer, donc, et elles portent chacune un nom :
+
+- la **variance**, c'est la sensibilité du modèle au hasard de l'échantillon
+  (côté $k$ petit) : changez quelques points d'entraînement, et un modèle à haute
+  variance se redessine du tout au tout ;
+- le **biais**, c'est sa rigidité de naissance (côté $k$ grand) : son incapacité
+  *systématique* à capturer la vraie forme, quels que soient les points qu'on lui
+  montre.
+
+Et voici le nœud — l'une des idées les plus profondes du domaine. Quand on rend
+un modèle plus souple (ici, en diminuant $k$), son erreur d'entraînement ne fait
+que baisser : un modèle flexible colle toujours mieux à ce qu'il a déjà vu. Mais
+son erreur de *test*, elle, suit une courbe en **U** : elle baisse d'abord — on
+capture enfin les vraies régularités — puis **remonte** dès qu'on se met à épouser
+le bruit. Le bon modèle se cache tout au fond du U, à l'équilibre exact entre
+biais et variance.
+
+{{< image src="/images/module2/bias-vs-variance-with-errors.png" alt="Deux courbes en fonction de k. L'erreur d'entraînement (rouge) croît régulièrement de k=1 à k=21. L'erreur de test (bleu) a une forme en U : elle décroît, atteint un minimum, puis remonte. Deux droites diagonales figurent la variance (décroissante) et le biais (croissant) ; leur croisement marque le minimum de l'erreur de test." title="L'erreur de test (en bleu) suit une courbe en U : trop de variance à gauche, trop de biais à droite. Le meilleur modèle est au creux." loading="lazy" >}}
+
+Le point crucial : **rien de tout cela n'est propre à kNN.** Chaque modèle possède
+son curseur de souplesse — le degré d'un polynôme en régression, la profondeur
+d'un arbre de décision, le nombre de paramètres d'un réseau de neurones — et
+chacun affronte le même U, le même arbitrage entre coller et lisser. C'est le
+**compromis biais-variance**, et savoir le régler est l'un des vrais savoir-faire
+de l'apprentissage automatique.
+
+{{% hint info %}}
+
+Une énigme pour plus tard : si trop de souplesse nuit, comment les réseaux de
+neurones géants d'aujourd'hui — des centaines de *milliards* de paramètres,
+soit une souplesse vertigineuse — parviennent-ils malgré tout à généraliser ?
+La réponse, surprenante, bousculera cette jolie courbe en U… au Module 3.
+
+{{% /hint %}}
