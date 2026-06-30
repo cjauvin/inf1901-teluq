@@ -257,7 +257,7 @@ Notre classification finale sera dans la colonne `O` :
    `K4` et `L4` associées au nouveau mot "livrée". D'où proviennent ces nouvelles
    valeurs, et pourquoi a-t-on besoin d'avoir recours à celles-ci dans le cadre du calcul?
 
-3. Est-ce que ce modèle est [paramétrique](docs/module2/50-les-paradigmes/#apprentissage-paramétrique-versus-non-paramétrique) ou non? Expliquez pourquoi.
+3. Est-ce que ce modèle est [paramétrique](docs/module2/70-generaliser/#paramétrique-ou-non-paramétrique) ou non? Expliquez pourquoi.
 
 4. S'il s'agit d'un modèle paramétrique, quels sont les paramètres du
    modèle (quelles colonnes)?
