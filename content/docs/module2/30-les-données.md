@@ -24,10 +24,10 @@ Reprenons notre table de maisons. Chaque ligne décrit une maison par quelques
 
 | Superficie (m²) | Année | Chambres | Salles de bain | Prix |
 |---|---|---|---|---|
-| 180 | 1995 | 4 | 2 | 420 000 $ |
-| 150 | 1980 | 3 | 1 | 350 000 $ |
-| 220 | 2010 | 5 | 3 | 580 000 $ |
-| 130 | 1972 | 3 | 1 | 310 000 $ |
+| 180 | 1995 | 4 | 2 | 420 000 \$ |
+| 150 | 1980 | 3 | 1 | 350 000 \$ |
+| 220 | 2010 | 5 | 3 | 580 000 \$ |
+| 130 | 1972 | 3 | 1 | 310 000 \$ |
 
 Pour une machine, décrire la première maison, c'est simplement aligner ses
 caractéristiques :

@@ -105,10 +105,10 @@ construction, son nombre de chambres — et, surtout, de son **prix de vente** :
 
 | Superficie (m²) | Année | Chambres | Prix |
 |---|---|---|---|
-| 180 | 1995 | 4 | 420 000 $ |
-| 150 | 1980 | 3 | 350 000 $ |
-| 220 | 2010 | 5 | 580 000 $ |
-| 130 | 1972 | 3 | 310 000 $ |
+| 180 | 1995 | 4 | 420 000 \$ |
+| 150 | 1980 | 3 | 350 000 \$ |
+| 220 | 2010 | 5 | 580 000 \$ |
+| 130 | 1972 | 3 | 310 000 \$ |
 | … | … | … | … |
 
 La question est simple à énoncer : **une nouvelle maison se présente, dont on

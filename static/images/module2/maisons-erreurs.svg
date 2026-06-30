@@ -47,7 +47,7 @@
 <text x="68" y="242.8">500 k$</text>
 <text x="68" y="129.5">700 k$</text>
 </g>
-<text x="26" y="210" font-size="15" fill="#3a3531" text-anchor="middle" transform="rotate(-90 26 210)">prix de vente</text>
+<text x="18" y="210" font-size="15" fill="#3a3531" text-anchor="middle" transform="rotate(-90 18 210)">prix de vente</text>
 
 <!-- baseline : prédiction constante = prix moyen -->
 <line x1="80" y1="238.3" x2="630" y2="238.3" stroke="#9a5b33" stroke-width="2.6" stroke-dasharray="7 4"/>

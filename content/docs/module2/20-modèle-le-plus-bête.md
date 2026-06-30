@@ -19,14 +19,14 @@ ignore tout d'elle — sa superficie, son âge, son nombre de chambres — et on
 annonce toujours le **même** prix : le **prix moyen** de toutes les maisons de
 notre liste.
 
-Dans notre exemple, ce prix moyen tourne autour de **500 000 $**. La prédiction
-ne dépend alors plus de rien : un minuscule studio ? 500 000 $. Un vaste manoir ?
-500 000 $ aussi. C'est manifestement ridicule.
+Dans notre exemple, ce prix moyen tourne autour de **500 000 \$**. La prédiction
+ne dépend alors plus de rien : un minuscule studio ? 500 000 \$. Un vaste manoir ?
+500 000 \$ aussi. C'est manifestement ridicule.
 
 Et pourtant — c'est parfaitement défini, ça ne « plante » jamais, et ça donne
 toujours une réponse. Sur le nuage de points de la page précédente, ce
 prédicteur se réduit à une simple **ligne horizontale** : la même hauteur
-(500 000 $) quelle que soit la superficie. Elle traverse le nuage en son milieu,
+(500 000 \$) quelle que soit la superficie. Elle traverse le nuage en son milieu,
 au-dessus des maisons bon marché, en dessous des plus chères.
 
 {{< image src="/images/module2/maisons-baseline.svg" alt="Le nuage de maisons traversé par une droite horizontale à 500 000 $ : un modèle qui prédit toujours le prix moyen, sans tenir compte de la superficie." title="Le modèle le plus bête : une droite plate à 500 000 $, qui ignore complètement la superficie." loading="lazy" >}}
@@ -45,7 +45,7 @@ entrée ne le disqualifie pas — ça en fait juste un *très mauvais* modèle, 
 non-modèle.
 
 Remarquez de quoi ce modèle est fait : **un seul nombre**, le prix moyen
-(500 000 $). Ce nombre, c'est ce que le modèle a « retenu » des données ; on
+(500 000 \$). Ce nombre, c'est ce que le modèle a « retenu » des données ; on
 l'appelle son **paramètre**. Et le calculer — faire la moyenne des prix observés
 — c'est déjà une forme rudimentaire d'*apprentissage* : le modèle a tiré son
 unique connaissance des exemples qu'on lui a montrés.
@@ -66,12 +66,12 @@ venir.
 « Bon » et « mauvais » ne veulent en effet rien dire dans l'absolu. Pour savoir
 si un modèle vaut quelque chose, il faut une référence ; et la plus honnête qui
 soit, c'est : *fait-il mieux que de ne rien regarder du tout ?* Un modèle, si
-sophistiqué soit-il, incapable de battre « toujours 500 000 $ » n'aurait,
+sophistiqué soit-il, incapable de battre « toujours 500 000 \$ » n'aurait,
 littéralement, rien appris d'utile.
 
 On peut rendre cette comparaison concrète sans la moindre formule : il suffit de
 mesurer **de combien un modèle se trompe, en moyenne**. Pour le prédicteur bête,
-l'écart entre le prix annoncé (toujours 500 000 $) et le vrai prix peut atteindre
+l'écart entre le prix annoncé (toujours 500 000 \$) et le vrai prix peut atteindre
 des centaines de milliers de dollars aux extrêmes. C'est exactement cette
 « distance à la vérité » qu'un meilleur modèle cherchera à réduire. Nous lui
 donnerons plus loin un nom et une définition précise — la *fonction d'erreur* —,
