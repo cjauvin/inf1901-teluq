@@ -9,7 +9,7 @@ slug: réseaux-de-neurones
 ## Une généralisation de la régression logistique
 
 Sans le réaliser, au module 2, nous avons déjà vu un réseau de neurones (RDN)
-simple, mais qui portait alors un autre nom : la [régression logistique](docs/module2/60-apprentissage-supervisé#la-régression-logistique)
+simple, mais qui portait alors un autre nom : la [régression logistique](docs/module2/60-classer/#tracer-une-frontière--la-régression-logistique)
 (RL).
 
 Une manière visuelle de représenter la régression logistique est la suivante

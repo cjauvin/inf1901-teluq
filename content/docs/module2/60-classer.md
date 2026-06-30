@@ -358,3 +358,28 @@ le même genre de frontière que celle de la régression logistique. Les deux
 familles, discriminative et générative, se rejoignent une fois de plus.
 
 {{% /details %}}
+
+## Et sur des données neuves ?
+
+Faisons le point. Nous avons maintenant tout un arsenal : une droite qui prédit
+un nombre, deux classificateurs qui prédisent une catégorie, et un moteur commun
+— minimiser une fonction d'erreur — pour les entraîner. Chacun apprend en rendant
+son erreur la plus petite possible **sur les exemples qu'on lui a montrés**.
+
+Mais relisons cette dernière phrase. *Sur les exemples qu'on lui a montrés.* Or
+ce n'est pas du tout ce qui nous intéresse ! Un filtre anti-pourriel qui classe
+parfaitement les courriels d'hier — ceux qui ont servi à l'entraîner — ne vaut
+rien s'il se trompe sur ceux qui arriveront demain. Depuis la première page de ce
+module, le but n'a jamais été de *mémoriser* des exemples, mais d'en tirer de
+quoi traiter des cas **encore jamais vus**.
+
+Et là se cache un piège. Un modèle peut très bien réussir un sans-faute sur ses
+données d'entraînement *et* s'effondrer sur des données neuves — un peu comme un
+étudiant qui aurait appris les réponses du corrigé par cœur sans rien comprendre
+au sujet. Nous avons même déjà croisé l'ombre de ce problème, à propos de kNN et
+de son réglage de $k$ : trop coller aux exemples peut être une *faiblesse*, pas
+une force.
+
+Comment, alors, mesurer si un modèle a vraiment *appris* plutôt que *retenu* ?
+Comment déjouer le piège ? C'est toute la question de la **généralisation** — et
+le sujet du prochain chapitre.

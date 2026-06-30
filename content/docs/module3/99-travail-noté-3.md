@@ -50,7 +50,7 @@ de manière interactive et intuitive le fonctionnement des réseaux de neurones.
    constater visuellement?
 
 3. Quelle est la différence entre ce problème de classification et celui que
-   nous avons vu dans le deuxième module avec la [régression logistique](docs/module2/60-apprentissage-supervisé/#la-régression-logistique)?
+   nous avons vu dans le deuxième module avec la [régression logistique](docs/module2/60-classer/#tracer-une-frontière--la-régression-logistique)?
 
 4. Ajustez maintenant la valeur de "bruit" à 25, et appuyez sur le bouton
    "régénérez" à quelques reprises. Est-ce que ceci rend la tâche de
