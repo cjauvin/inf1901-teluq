@@ -95,7 +95,7 @@ l'**altitude** en chaque point. Les hauteurs sont les mauvais modèles (grande
 erreur) ; les vallées, les bons. Trouver le meilleur modèle, c'est trouver le
 **point le plus bas** de ce paysage.
 
-{{< image src="/images/module2/descente-gradient.svg" alt="Une vallée en U représentant l'erreur selon les réglages du modèle. Une bille lâchée au hasard sur le versant gauche descend pas à pas vers le creux, marqué « meilleur modèle »." title="La descente de gradient, vue en coupe : la bille dévale la vallée d'erreur jusqu'au creux." loading="lazy" >}}
+{{< image src="/images/module2/descente-gradient.svg" alt="Une cuvette en trois dimensions (paraboloïde) représentant l'erreur du modèle au-dessus du plan des réglages (m, b). Une bille lâchée au hasard sur le bord dévale la pente jusqu'au creux, où l'erreur est minimale : le meilleur modèle." title="La descente de gradient : l'erreur forme une cuvette au-dessus des réglages (m, b) ; la bille roule jusqu'au creux — le meilleur modèle." loading="lazy" >}}
 
 Comment l'atteindre, sans carte du relief ? La machine fait ce que ferait un
 randonneur dans le brouillard : elle tâte la **pente** sous ses pieds et fait un
