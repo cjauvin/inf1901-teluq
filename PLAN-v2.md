@@ -129,18 +129,18 @@ Pas de pages « préparatoires » abstraites : chaque concept **naît quand un o
 
 ### État de la rédaction (mise à jour 2026-06-30)
 **Pages rédigées, refondues et committées** (fichiers en `<poids>-<slug>` **sans accent**, slugs idem) :
-- `10-le-probleme` ✅ · `20-modele-le-plus-bete` ✅ · `30-les-donnees` ✅ · `40-predire-par-ressemblance` ✅ · `50-entrainer-un-modele` ✅
-- **Restent** : `60-classer`, `70-generaliser` (foyer biais-variance, à extraire de l'ancien kNN), `80` (signal : sup./non-sup./RL), `99` TN2, `_index` (à rafraîchir).
-- Encore en *ancien* format (à refondre/renommer le moment venu) : `60-apprentissage-supervisé.md` (source classif. de la page 60), `70-apprentissage-non-supervisé.md` (source k-means → page 80), `99-travail-noté-2.md`.
+- `10-le-probleme` ✅ · `20-modele-le-plus-bete` ✅ · `30-les-donnees` ✅ · `40-predire-par-ressemblance` ✅ · `50-entrainer-un-modele` ✅ · `60-classer` ✅
+- **Restent** : `70-generaliser` (foyer biais-variance, à extraire de l'ancien kNN), `80` (signal : sup./non-sup./RL), `99` TN2 (révision/renommage), `_index` (à rafraîchir).
+- Encore en *ancien* format (à refondre/renommer le moment venu) : `70-apprentissage-non-supervisé.md` (source k-means → page 80), `99-travail-noté-2.md`.
+- L'ancienne `60-apprentissage-supervisé.md` est **supprimée** ; tous les liens entrants (assistants, module3, TN2) repointent vers `60-classer` (ancres : régression logistique `#tracer-une-frontière--la-régression-logistique`, NB gaussien `#renverser-le-problème--la-classification-bayésienne`, multinomial/pourriels `#le-cas-des-pourriels`).
 
-**Conventions visuelles établies** : SVG parchemin maison (fond `#efe7d3`, accents teal `#2f6f6a` / brun `#9a5b33` / rouge erreur `#c4564a`). **Aucun label texte ne touche un élément graphique** (voir mémoire). Fil maison (tabulaire) ; vision en bornes ; embeddings → M4 ; math en `{{% details %}}`. SVG complexes générables par script (cf. cuvette 3D : `rsvg-convert` pour prévisualiser, pas de cairosvg).
+**Conventions visuelles établies** : SVG parchemin maison (fond `#efe7d3`, accents teal `#2f6f6a` / brun `#9a5b33` / rouge erreur `#c4564a` ; bleu classif. `#3a6ea5`). **Aucun label texte ne touche un élément graphique** (voir mémoire). Fil maison (tabulaire) ; vision en bornes ; embeddings → M4 ; math en `{{% details %}}`. SVG complexes générables par script (cf. cuvette 3D, schémas `suivre-vs-separer` et `qui-je-ressemble` : `rsvg-convert` pour prévisualiser, pas de cairosvg).
 
-**Squelette convenu pour la page 60 « Classer »** (à rédiger ensuite) :
-1. intro — même machinerie qu'en p.50, mais une droite qui **sépare** ;
-2. `## Tracer une frontière : la régression logistique` (discriminatif ; applet `logistic-regression` ; entraînée par descente de gradient ; math en `details`) ;
-3. `## Renverser le problème : la classification bayésienne` (génératif ; contraste discriminatif/génératif = graine M4 ; math en `details`) ;
-4. `## Le cas des pourriels` (Bayes naïf sur sac de mots → pont TN2) ;
-5. `## Et sur des données neuves ?` (obstacle → page 70).
+**Page 60 « Classer » — telle que rédigée** : intro + schéma SVG `suivre-vs-separer` (droite qui suit vs sépare) ; §2 régression logistique (discriminatif, applet) ; §3 Bayes naïf (génératif, schéma SVG `qui-je-ressemble`, contraste discriminatif/génératif = **graine M4**) ; §4 « Le cas des pourriels » (sac de mots + multinomial, image `spam_vector_space.png`, pont TN2) ; §5 « Et sur des données neuves ? » (obstacle → page 70).
+
+**Décisions actées pour la suite** :
+- **TN2** : on **garde** l'exercice Sheets actuel (Bayes naïf multinomial). Liens internes vers la page 60 déjà corrigés (lignes 13-14). **Restent à faire au moment de la page 70** : reloger **paramétrique/non-paramétrique** dans la page 70 « Généraliser » (kNN non-param. vs régression/logistique/Bayes param.) et y repointer la **question 3** du TN2 (lien actuellement cassé vers `50-les-paradigmes`). Renommer enfin `99-travail-noté-2.md` → `99-travail-note-2.md`.
+- **Page 70** : devra **définir paramétrique/non-paramétrique** (déjà semé en p.50 : « un seul nombre / aucun / deux »), en plus du foyer biais-variance extrait de l'ancien kNN.
 
 **En suspens côté Christian** : réétiqueter `nf_house.png` (`x1 prix` → `x1 superficie`).
 
