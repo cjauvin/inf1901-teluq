@@ -121,3 +121,46 @@ soit une souplesse vertigineuse — parviennent-ils malgré tout à généralise
 La réponse, surprenante, bousculera cette jolie courbe en U… au Module 3.
 
 {{% /hint %}}
+
+## Paramétrique ou non-paramétrique
+
+Il existe une seconde grande façon de classer les modèles — non plus selon leur
+souplesse, mais selon ce qu'il en reste une fois l'entraînement terminé. La
+question est simple : le modèle a-t-il **distillé** les données en une poignée de
+réglages, ou les **garde-t-il** auprès de lui ?
+
+Repensez à kNN et à son angle mort (page 40) : il n'a, à proprement parler, rien
+à apprendre. Pas de paramètres à régler ; pour prédire, il consulte directement
+les exemples mémorisés. *Les données sont le modèle.* Conséquence : sa taille
+grossit avec le jeu de données — mille exemples, mille exemples à trimballer ;
+un million, un million. On dit d'un tel modèle qu'il est **non-paramétrique** :
+il ne résume pas les données dans un nombre fixe de réglages, il s'appuie sur
+elles, telles quelles, jusqu'au bout.
+
+À l'opposé, notre droite de régression : une fois trouvés sa pente et son
+ordonnée, on peut **jeter les données** — il ne reste que deux nombres, $m$ et
+$b$, et ils suffisent à prédire. Pareil pour la régression logistique (un poids
+par caractéristique) ou pour Bayes naïf (une moyenne et une dispersion par
+classe, ou une probabilité par mot). Ces modèles sont **paramétriques** : ils
+compressent toute leur connaissance dans un jeu de paramètres de taille *fixée
+d'avance*, que l'on ait appris sur cent exemples ou sur cent millions. Vous
+reconnaissez là le fil de la page 50 : le modèle bête distillait tout en *un*
+nombre, la droite en *deux*, kNN en *aucun*. C'était déjà, sans le dire, l'axe
+paramétrique / non-paramétrique.
+
+Chaque famille a son tempérament :
+
+- le modèle **paramétrique** est léger, rapide à la prédiction, et généralise par
+  l'effet même de la compression qu'il s'impose — mais il *parie sur une forme*
+  (une droite, par exemple). Si la vraie structure des données n'a pas cette
+  forme, aucun réglage ne le sauvera : c'est du **biais** ;
+- le modèle **non-paramétrique** ne présume presque rien de la forme et peut
+  épouser des structures très complexes — mais il est lourd (tout garder), lent à
+  prédire, et plus exposé à coller au bruit : c'est de la **variance**.
+
+On retrouve, en filigrane, le compromis de la section précédente. Distiller ou
+tout garder, parier sur une forme ou suivre les données : il n'existe pas de
+réponse universelle, seulement des choix adaptés au problème — et c'est tout l'art
+de la discipline que de les faire avec discernement.
+
+{{< image src="/images/module2/parametrique-vs-non.svg" alt="À gauche, un nuage de points est résumé par une droite réduite à deux réglages m et b : le modèle paramétrique distille les données et peut ensuite les jeter. À droite, les mêmes points sont conservés tels quels : le modèle non-paramétrique garde toutes les données et s'appuie dessus pour prédire." title="Paramétrique : distiller les données en quelques réglages, puis les jeter. Non-paramétrique : garder toutes les données et s'appuyer dessus." loading="lazy" >}}
