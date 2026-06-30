@@ -234,7 +234,7 @@ nombreux usages en apprentissage automatique. Par exemple, nous verrons que les
 transformers, qui sont un type de réseaux de neurones profonds qui servent de
 fondements aux grands modèles de langage (comme ChatGPT par exemple), en font
 usage. Nous avons déjà brièvement touché ce sujet dans la section sur les
-[placements lexicaux](docs/module2/30-les-données/#vers-des-représentations-plus-compactes--les-plongements-lexicaux) (word embeddings).
+[placements lexicaux](docs/module2/30-les-donnees/#vers-des-représentations-plus-compactes--les-plongements-lexicaux) (word embeddings).
 
 ## Les réseaux de neurones pour les graphes (GNNs)
 
@@ -275,7 +275,7 @@ considérer que toutes ces définitions sont équivalentes :
 
 * Une liste de $N$ nombres
 * Un vecteur de dimension $N$
-* Un plongement vectoriel (de nature très semblable aux [plongements lexicaux](docs/module2/30-les-données/#vers-des-représentations-plus-compactes--les-plongements-lexicaux) que nous avons déjà rencontrés dans un chapitre précédent)
+* Un plongement vectoriel (de nature très semblable aux [plongements lexicaux](docs/module2/30-les-donnees/#vers-des-représentations-plus-compactes--les-plongements-lexicaux) que nous avons déjà rencontrés dans un chapitre précédent)
 * En anglais, les termes "features" et "embeddings" (la traduction technique de "plongement", un terme très rare en français)
 
 Dans notre exemple, considérons des plongements de dimension $N=2$, choisis pour représenter
@@ -328,7 +328,7 @@ La seule différence entre le modèle proposé dans un [article séminal](https:
 avons étudié ci-haut, se trouve au niveau de la représentation des sommets : dans l'article, les sommets sont représentés
 par des vecteurs de 1433 éléments qui ne sont pas des plongements, mais bien des vecteurs "creux" (ou parcimonieux, "sparse" en anglais)
 qui représentent de manière littérale la présence ou l'absence d'un mot. Nous avons tout d'abord rencontré cette idée dans la
-section précédente sur les [sacs de mots](docs/module2/30-les-données/##lespace-lexical-vectoriel). Un sac de mots, est "creux" dans le sens
+section précédente sur les [sacs de mots](docs/module2/30-les-donnees/##lespace-lexical-vectoriel). Un sac de mots, est "creux" dans le sens
 où, pour un article ou document donné, la plupart des mots du vocabulaire ne sont pas utilisés (donc leur valeur est zéro, et c'est seulement pour certains mots particuliers que la
 valeur sera autre que zéro). En contraste, un plongement est "dense" car les dimensions ne représentent pas des notions concrètes et discrètes. Chaque dimension d'un plongement
 correspond donc à une valeur non-zéro.

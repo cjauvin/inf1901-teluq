@@ -25,7 +25,7 @@ couche, elle représente simplement les données que l'on va fournir en entrée
 
 ![](/images/module3/rl1_with_data.png)
 
-Comme nous l'avons déjà exploré au [module 2](docs/module2/30-les-données#niveau-de-lapprentissage-automatique-et-des-mathématiques), les données (la partie à gauche) sont la représentation vectorielle
+Comme nous l'avons déjà exploré au [module 2](docs/module2/30-les-donnees#niveau-de-lapprentissage-automatique-et-des-mathématiques), les données (la partie à gauche) sont la représentation vectorielle
 (numérique et souvent multidimensionnelle) d'un aspect de la réalité, comme par
 exemple ici, une maison à vendre, dont on aimerait déterminer (prédire), à
 partir de ses caractéristiques (les variables $\mathbf{x}$ qui la décrivent), si

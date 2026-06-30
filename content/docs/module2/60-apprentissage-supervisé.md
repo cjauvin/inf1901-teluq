@@ -20,7 +20,7 @@ propre question).
 La famille d'algorithmes d'apprentissage supervisé la plus facile à comprendre
 est celle des modèles de classification. Un algorithme de classification est une
 fonction mathématique qui associe des "objets" (donc des points dans un
-[espace vectoriel](docs/module2/30-les-données/#niveau-de-lapprentissage-automatique-et-des-mathématiques)) vers une série prédéfinie d'étiquettes, qu'on appelle souvent des "classes".
+[espace vectoriel](docs/module2/30-les-donnees/#niveau-de-lapprentissage-automatique-et-des-mathématiques)) vers une série prédéfinie d'étiquettes, qu'on appelle souvent des "classes".
 
 ### La régression logistique
 
@@ -420,7 +420,7 @@ spam en anglais). Ce sera aussi le sujet de votre [travail noté 2](99-travail-n
 
 #### Représenter un courriel comme un vecteur
 
-Comme nous l'avons expliqué dans le chapitre sur [les données](docs/module2/30-les-données/#les-mots-et-leur-sens), un texte peut être
+Comme nous l'avons expliqué dans le chapitre sur [les données](docs/module2/30-les-donnees/#les-mots-et-leur-sens), un texte peut être
 représenté par un vecteur dans l’« espace des mots ». Dans ce modèle vectoriel,
 chaque dimension correspond à un mot du vocabulaire, et la valeur dans cette
 dimension correspond au nombre de fois que le mot apparaît dans le document.
@@ -710,7 +710,7 @@ réseaux de neurones modernes.
 
 Une fois qu'on a fait des efforts pour comprendre le fonctionnement de certains
 algorithmes de base en apprentissage automatique, il peut être intéressant de
-considérer, [à nouveau](10-scénario-réel#en-quoi-est-ce-que-ceci-constitue-de-lintelligence), notre question d'ordre philosophique (ou linguistique) : en quoi, au
+considérer, [à nouveau](10-le-probleme#en-quoi-est-ce-que-ceci-constitue-de-lintelligence), notre question d'ordre philosophique (ou linguistique) : en quoi, au
 juste, est-ce que cela constitue de l'intelligence, *artificielle* ou non? Nous
 allons voir par la suite en quoi les idées relativement simples et peu
 puissantes que nous avons développées dans ce module vont évoluer vers les

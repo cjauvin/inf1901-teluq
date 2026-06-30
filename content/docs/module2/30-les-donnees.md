@@ -1,7 +1,7 @@
 ---
 title: "Regarder les données"
 weight: 30
-slug: les-données
+slug: les-donnees
 ---
 
 # Regarder les données

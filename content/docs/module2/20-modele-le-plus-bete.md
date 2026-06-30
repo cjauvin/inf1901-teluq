@@ -103,4 +103,4 @@ Mais avant de pouvoir s'en servir, encore faut-il savoir ce qu'« écouter
 l'entrée » signifie concrètement. Qu'est-ce, au juste, qu'une « donnée » pour une
 machine ? Comment une maison — ou une image, ou un courriel — se transforme-t-elle
 en quelque chose qu'un modèle peut manipuler ? C'est l'objet de la [page
-suivante](docs/module2/30-les-données).
+suivante](docs/module2/30-les-donnees).
