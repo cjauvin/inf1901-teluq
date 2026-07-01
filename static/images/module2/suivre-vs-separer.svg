@@ -6,17 +6,17 @@
 <line x1="55" y1="55" x2="55" y2="285"/>
 <line x1="55" y1="285" x2="300" y2="285"/>
 </g>
-<line x1="68" y1="272" x2="300" y2="92" stroke="#9a5b33" stroke-width="2.6"/>
+<line x1="72" y1="255" x2="298" y2="95" stroke="#9a5b33" stroke-width="2.6"/>
 <g fill="#2f6f6a" stroke="#efe7d3" stroke-width="1.4">
-<circle cx="80" cy="265" r="6"/>
-<circle cx="108" cy="255" r="6"/>
-<circle cx="138" cy="238" r="6"/>
-<circle cx="165" cy="232" r="6"/>
-<circle cx="192" cy="205" r="6"/>
-<circle cx="218" cy="178" r="6"/>
-<circle cx="250" cy="150" r="6"/>
-<circle cx="275" cy="138" r="6"/>
-<circle cx="295" cy="98" r="6"/>
+<circle cx="80" cy="259" r="6"/>
+<circle cx="107" cy="222" r="6"/>
+<circle cx="134" cy="219" r="6"/>
+<circle cx="161" cy="184" r="6"/>
+<circle cx="188" cy="181" r="6"/>
+<circle cx="215" cy="146" r="6"/>
+<circle cx="242" cy="143" r="6"/>
+<circle cx="269" cy="108" r="6"/>
+<circle cx="296" cy="102" r="6"/>
 </g>
 <g stroke="#b8a888" stroke-width="1.6" fill="none">
 <line x1="375" y1="55" x2="375" y2="285"/>
@@ -41,8 +41,8 @@
 <circle cx="520" cy="150" r="6"/>
 <circle cx="575" cy="90" r="6"/>
 </g>
-<text x="177" y="322" font-size="15" fill="#3a3531" text-anchor="middle" font-weight="600">régression : la droite suit</text>
-<text x="177" y="342" font-size="12.5" fill="#7a6f63" text-anchor="middle">elle passe à travers les points</text>
-<text x="497" y="322" font-size="15" fill="#3a3531" text-anchor="middle" font-weight="600">classification : la droite sépare</text>
-<text x="497" y="342" font-size="12.5" fill="#7a6f63" text-anchor="middle">elle passe entre les groupes</text>
+<text x="177" y="320" font-size="15" fill="#3a3531" text-anchor="middle" font-weight="600">régression</text>
+<text x="177" y="343" font-size="14" fill="#5b5249" text-anchor="middle">la droite suit les points</text>
+<text x="497" y="320" font-size="15" fill="#3a3531" text-anchor="middle" font-weight="600">classification</text>
+<text x="497" y="343" font-size="14" fill="#5b5249" text-anchor="middle">la droite sépare les points</text>
 </svg>
