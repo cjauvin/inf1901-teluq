@@ -22,6 +22,16 @@ règle, on la lui fait découvrir dans les données. C'est ce déplacement — d
 règles vers les exemples — qui rapproche l'AA de ce qu'on appelle l'intelligence,
 et le rattache à des courants comme le connexionnisme.
 
+Vu autrement, les deux démarches **échangent leurs entrées et leurs sorties**. En
+programmation classique, un humain écrit les *règles* ; l'ordinateur les applique
+aux *données* pour produire des *réponses*. En apprentissage automatique, on
+renverse la chose : on fournit à l'ordinateur les *données* **et** les *réponses*
+(ce sont nos exemples), et c'est *lui* qui en dégage les *règles* — ce qu'on
+appelle alors le **modèle**. Ce qui était fourni par l'humain (les règles) devient
+le résultat ; ce qui était le résultat (les réponses) devient une donnée d'entrée.
+Le schéma ci-dessous rend cette permutation visible : suivez les « règles » (en
+brun) et les « réponses » (en teal) passer d'un côté à l'autre.
+
 {{< image src="/images/module2/regles-vs-exemples.svg" alt="Deux schémas de flux. À gauche, « programmation classique » : on fournit à l'ordinateur les règles et les données, il produit les réponses. À droite, « apprentissage automatique » : on lui fournit les données et les réponses, il produit les règles — le modèle. Les « règles » (en brun) et les « réponses » (en teal) échangent leur place d'un panneau à l'autre." title="Le renversement au cœur de l'apprentissage automatique : ce qu'on fournit et ce que l'ordinateur produit s'inversent. En programmation classique, on écrit les règles ; en AA, c'est l'ordinateur qui les découvre." loading="lazy" >}}
 
 ## Une seule grande idée, déclinée
