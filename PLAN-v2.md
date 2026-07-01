@@ -129,9 +129,9 @@ Pas de pages « préparatoires » abstraites : chaque concept **naît quand un o
 
 ### État de la rédaction (mise à jour 2026-06-30)
 **Pages rédigées, refondues et committées** (fichiers en `<poids>-<slug>` **sans accent**, slugs idem) :
-- `10-le-probleme` ✅ · `20-modele-le-plus-bete` ✅ · `30-les-donnees` ✅ · `40-predire-par-ressemblance` ✅ · `50-entrainer-un-modele` ✅ · `60-classer` ✅ · `70-generaliser` ✅
-- **Restent** : `80` (signal : sup./non-sup./RL), `99` TN2 (renommage `99-travail-note-2.md`), `_index` (à rafraîchir).
-- Encore en *ancien* format (à refondre/renommer le moment venu) : `70-apprentissage-non-supervisé.md` (source k-means → page 80), `99-travail-noté-2.md`.
+- `10-le-probleme` ✅ · `20-modele-le-plus-bete` ✅ · `30-les-donnees` ✅ · `40-predire-par-ressemblance` ✅ · `50-entrainer-un-modele` ✅ · `60-classer` ✅ · `70-generaliser` ✅ · `80-trois-facons-d-apprendre` ✅
+- **Restent** : `99` TN2 (renommage `99-travail-note-2.md`), `_index` (à rafraîchir). **Toutes les pages de contenu du M2 sont rédigées.**
+- Anciennes pages *supprimées* : `60-apprentissage-supervisé.md`, `70-apprentissage-non-supervisé.md`. Encore en ancien format : `99-travail-noté-2.md`.
 - L'ancienne `60-apprentissage-supervisé.md` est **supprimée** ; tous les liens entrants (assistants, module3, TN2) repointent vers `60-classer` (ancres : régression logistique `#tracer-une-frontière--la-régression-logistique`, NB gaussien `#renverser-le-problème--la-classification-bayésienne`, multinomial/pourriels `#le-cas-des-pourriels`).
 
 **Conventions visuelles établies** : SVG parchemin maison (fond `#efe7d3`, accents teal `#2f6f6a` / brun `#9a5b33` / rouge erreur `#c4564a` ; bleu classif. `#3a6ea5`). **Aucun label texte ne touche un élément graphique** (voir mémoire). Fil maison (tabulaire) ; vision en bornes ; embeddings → M4 ; math en `{{% details %}}`. SVG complexes générables par script (cf. cuvette 3D, schémas `suivre-vs-separer` et `qui-je-ressemble` : `rsvg-convert` pour prévisualiser, pas de cairosvg).
@@ -140,9 +140,11 @@ Pas de pages « préparatoires » abstraites : chaque concept **naît quand un o
 
 **Page 70 « Généraliser » — telle que rédigée** : §1 intro (appris vs retenu) ; §2 « Un modèle se juge sur ce qu'il n'a jamais vu » (jeu de test, analogie examen, encadré validation/hyperparam., SVG `jeu-de-test`) ; §3 « Trop coller, ou trop lisser : le compromis biais-variance » (applet kNN ré-embarqué + image `bias-vs-variance-with-errors.png`, courbe en U, universel, encadré énigme sur-paramétrisation → M3) ; §4 « Paramétrique ou non-paramétrique » (SVG `parametrique-vs-non`) ; §5 « Tout cela portait un nom : l'apprentissage supervisé » (nomme le supervisé, pont p.80 sur le **signal**). Question 3 du TN2 repointée vers `#paramétrique-ou-non-paramétrique`.
 
-**Décisions actées pour la suite** :
-- **TN2** : on **garde** l'exercice Sheets actuel (Bayes naïf multinomial). Liens vers page 60 (lignes 13-14) et question 3 (→ page 70) déjà corrigés. **Reste** : renommer `99-travail-noté-2.md` → `99-travail-note-2.md`.
-- **Page 80** : « signal » sup./non-sup./RL ; source à refondre `70-apprentissage-non-supervisé.md` (k-means).
+**Page 80 « Trois façons d'apprendre » — telle que rédigée** : §1 intro (le **signal** ; 3 familles) + opener SVG `trois-paradigmes` (3 panneaux) ; §2 le supervisé (récap) + **aparté info « l'étiquetage, une industrie »** (Mechanical Turk/Scale AI → M4/RLHF, M5 éthique) ; §3 le non-supervisé (k-means, applet `kmeans.html`, fléchages autoencodeurs M3 / plongements M4) ; §4 le renforcement (**nouvelle applet `reinforcement.html`** — gridworld Q-learning, testée : politique optimale en 10 pas ; rappel M1/AlphaGo ; deep RL → M3, RLHF → M4) ; §5 « Un même squelette, d'un bout à l'autre » (clôture du module, pont M3/M4).
+
+**Reste pour finir le M2** :
+- **TN2** : garder l'exercice Sheets (Bayes multinomial) ; liens page 60 + question 3 (→ page 70) déjà corrigés. **Reste** : renommer `99-travail-noté-2.md` → `99-travail-note-2.md`.
+- **`_index.md`** du module à rafraîchir.
 
 **En suspens côté Christian** : réétiqueter `nf_house.png` (`x1 prix` → `x1 superficie`).
 
