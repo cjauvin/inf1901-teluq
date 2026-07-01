@@ -1,0 +1,33 @@
+<svg viewBox="0 0 700 270" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">
+<title>Programmation classique ou apprentissage automatique</title>
+<desc>Deux schémas de flux. À gauche (programmation classique) : on fournit à l'ordinateur les règles et les données, il produit les réponses. À droite (apprentissage automatique) : on lui fournit les données et les réponses, il produit les règles (le modèle). Les « règles » (en brun) et les « réponses » (en teal) changent de côté d'un panneau à l'autre.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#5b5249" stroke-width="1.7"/></marker></defs>
+<rect x="0" y="0" width="700" height="270" rx="14" fill="#efe7d3" stroke="#d9cbac"/>
+<line x1="350" y1="44" x2="350" y2="232" stroke="#e0d4b8" stroke-width="1.4"/>
+<text x="178" y="38" font-size="15" fill="#3a3531" text-anchor="middle" font-weight="700">programmation classique</text>
+<rect x="31" y="80" width="90" height="40" rx="9" fill="rgba(154,91,51,0.16)" stroke="#9a5b33" stroke-width="1.8"/>
+<text x="76" y="100" font-size="14" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">règles</text>
+<rect x="31" y="156" width="90" height="40" rx="9" fill="rgba(138,125,110,0.14)" stroke="#8a7d6e" stroke-width="1.8"/>
+<text x="76" y="176" font-size="14" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">données</text>
+<rect x="143" y="109" width="86" height="58" rx="9" fill="#e8dcc0" stroke="#5b5249" stroke-width="1.8"/>
+<text x="186" y="138" font-size="12" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">ordinateur</text>
+<rect x="242" y="118" width="84" height="40" rx="9" fill="rgba(47,111,106,0.16)" stroke="#2f6f6a" stroke-width="1.8"/>
+<text x="284" y="138" font-size="14" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">réponses</text>
+<line x1="121" y1="104" x2="141" y2="126" stroke="#5b5249" stroke-width="1.7" marker-end="url(#a)"/>
+<line x1="121" y1="172" x2="141" y2="150" stroke="#5b5249" stroke-width="1.7" marker-end="url(#a)"/>
+<line x1="229" y1="138" x2="242" y2="138" stroke="#5b5249" stroke-width="1.7" marker-end="url(#a)"/>
+<text x="522" y="38" font-size="15" fill="#3a3531" text-anchor="middle" font-weight="700">apprentissage automatique</text>
+<rect x="375" y="80" width="90" height="40" rx="9" fill="rgba(138,125,110,0.14)" stroke="#8a7d6e" stroke-width="1.8"/>
+<text x="420" y="100" font-size="14" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">données</text>
+<rect x="375" y="156" width="90" height="40" rx="9" fill="rgba(47,111,106,0.16)" stroke="#2f6f6a" stroke-width="1.8"/>
+<text x="420" y="176" font-size="14" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">réponses</text>
+<rect x="487" y="109" width="86" height="58" rx="9" fill="#e8dcc0" stroke="#5b5249" stroke-width="1.8"/>
+<text x="530" y="138" font-size="12" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">apprentissage</text>
+<rect x="586" y="118" width="84" height="40" rx="9" fill="rgba(154,91,51,0.16)" stroke="#9a5b33" stroke-width="1.8"/>
+<text x="628" y="138" font-size="14" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">règles</text>
+<text x="628" y="172" font-size="11.5" fill="#7a6f63" text-anchor="middle">(le modèle)</text>
+<line x1="465" y1="104" x2="485" y2="126" stroke="#5b5249" stroke-width="1.7" marker-end="url(#a)"/>
+<line x1="465" y1="172" x2="485" y2="150" stroke="#5b5249" stroke-width="1.7" marker-end="url(#a)"/>
+<line x1="573" y1="138" x2="586" y2="138" stroke="#5b5249" stroke-width="1.7" marker-end="url(#a)"/>
+<text x="350" y="252" font-size="12" fill="#7a6f63" text-anchor="middle">les règles (brun) et les réponses (teal) changent de côté</text>
+</svg>

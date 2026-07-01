@@ -22,6 +22,8 @@ règle, on la lui fait découvrir dans les données. C'est ce déplacement — d
 règles vers les exemples — qui rapproche l'AA de ce qu'on appelle l'intelligence,
 et le rattache à des courants comme le connexionnisme.
 
+{{< image src="/images/module2/regles-vs-exemples.svg" alt="Deux schémas de flux. À gauche, « programmation classique » : on fournit à l'ordinateur les règles et les données, il produit les réponses. À droite, « apprentissage automatique » : on lui fournit les données et les réponses, il produit les règles — le modèle. Les « règles » (en brun) et les « réponses » (en teal) échangent leur place d'un panneau à l'autre." title="Le renversement au cœur de l'apprentissage automatique : ce qu'on fournit et ce que l'ordinateur produit s'inversent. En programmation classique, on écrit les règles ; en AA, c'est l'ordinateur qui les découvre." loading="lazy" >}}
+
 ## Une seule grande idée, déclinée
 
 Plutôt qu'un catalogue d'algorithmes, ce module construit **un modèle mental
