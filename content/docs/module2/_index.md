@@ -4,67 +4,72 @@ weight: 200
 bookCollapseSection: true
 ---
 
-# Module 2 - Apprentissage automatique
+# Module 2 — Apprentissage automatique
 
 ![](/images/machine-learning.webp)
 
-##  Qu'est-ce que l'apprentissage automatique?
+## Qu'est-ce que l'apprentissage automatique ?
 
-L'apprentissage automatique (AA) est un ensemble de techniques mathématiques qui
-permettent de résoudre des problèmes ardus en informatique, souvent associés à
-l'intelligence artificielle (IA) : classifier ou reconnaître des images (est-ce
-un chien ou un chat?), estimer la valeur d'une maison, jouer aux échecs,
-converser en anglais, résoudre des problèmes généraux, etc.
+L'apprentissage automatique (AA, ou *machine learning*) est un ensemble de
+techniques qui permettent à un ordinateur de résoudre des problèmes qu'il serait
+très ardu de programmer à la main : reconnaître un chat sur une photo, estimer le
+prix d'une maison, filtrer les pourriels, jouer aux échecs, converser…
 
-Ces problèmes sont considérés difficiles car il serait ardu d'écrire un
-programme classique pour les résoudre. Un programme classique encode
-essentiellement une série de règles et de procédures logiques pour résoudre un
-problème, tandis qu'un modèle d'AA dérive plutôt son fonctionnement à partir
-d'exemples. Le fait qu'on parle d'intelligence de manière plus explicite dans le
-cas d'un modèle d'AA (par rapport à un programme classique) est un peu
-arbitraire et culturel, et matière à débat. Il reste que fondamentalement, l'AA
-est associé à des courants philosophiques, comme le connexionnisme par exemple,
-qui sont généralement associés à l'étude de l'intelligence humaine ou animale.
+La différence avec la programmation classique est profonde. Un programme
+traditionnel encode une série de **règles** écrites par un humain. Un modèle d'AA,
+lui, **dérive son fonctionnement à partir d'exemples** : on ne lui dicte pas la
+règle, on la lui fait découvrir dans les données. C'est ce déplacement — des
+règles vers les exemples — qui rapproche l'AA de ce qu'on appelle l'intelligence,
+et le rattache à des courants comme le connexionnisme.
 
-En général, l'apprentissage automatique utilise des données (qu'on appelle
-parfois des exemples) pour "entraîner" un modèle à l'aide d'un algorithme
-d'apprentissage. Une fois l'entraînement accompli, on peut utiliser l'algorithme
-dans un contexte où c'est utile. Le modèle est dynamique et changeant seulement
-dans la phase d'entraînement; dans la phase d'utilisation, il devient un objet
-statique, qui ne change généralement pas.
+## Une seule grande idée, déclinée
 
-La notion probablement la plus profonde et philosophique de l'AA, et celle qui
-fait en sorte qu'on rattache ce domaine à l'IA, est qu'un algorithme
-d'apprentissage devrait être en mesure de généraliser : si j'ai entrainé un
-modèle à distinguer entre un chien et un chat avec 1000 images d'entraînement,
-je ne suis pas intéressé par la performance du modèle sur l'une des images
-particulières qui ont servi à l'entraînement (une photo particulière de mon
-chien Fido par exemple). Par construction et quasiment par définition, cette
-classification particulière devrait être correcte. Je suis plutôt intéressé par
-la classification de la 1001ième image, qui n'a *pas* servi à l'entraînement du
-modèle, et qui est donc entièrement nouvelle, pour le modèle. Si ce dernier a
-été entrainé avec succès, il devrait pouvoir généraliser à n'importe quelle
-image (par contre, la question se pose à savoir ce qui devrait arriver si je lui
-présente l'image d'une vache!). Une bonne capacité de généralisation est le
-but fondamental de l'AA et de l'IA en général, et est reliée à ce qu'on entend
-par intelligence, scientifiquement parlant.
+Plutôt qu'un catalogue d'algorithmes, ce module construit **un modèle mental
+unique et transférable**, qui revient de page en page :
 
-## Les objectifs du module
+> partir de **données** → choisir un **modèle** (une fonction réglable par des
+> paramètres) → mesurer son **erreur** → régler les paramètres pour la
+> **minimiser** → vérifier qu'il **généralise** à des cas nouveaux.
 
-* Comprendre la différence entre la programmation traditionnelle et
-  l'apprentissage automatique
-* Explorer les différentes manières de représenter les données
-* Explorer les fondements de l'apprentissage automatique (machine learning), ainsi
-que certains de ses algorithmes classiques
+Chaque algorithme classique que nous rencontrerons — du plus bête au plus
+astucieux — n'est qu'une **variation** sur cette même trame. Une fois cette trame
+en main, l'apprentissage automatique cesse d'être une boîte noire.
+
+## Le but ultime : généraliser
+
+La notion la plus profonde de l'AA est cette capacité à **généraliser**. Si
+j'entraîne un modèle à distinguer chien et chat avec 1000 images, sa performance
+sur ces 1000 images-là ne m'intéresse guère : par construction, il devrait les
+reconnaître. Ce qui compte, c'est la **1001ᵉ** image — inédite pour lui. Un modèle
+qui a vraiment *appris*, plutôt que *mémorisé*, saura la classer correctement (et
+la question devient passionnante si on lui montre… une vache !). Bien généraliser
+est le véritable objectif de l'AA — et l'un des sens les plus concrets qu'on
+puisse donner au mot « apprendre ».
+
+## Le parcours du module
+
+Nous partirons du **modèle le plus simple imaginable**, puis le perfectionnerons
+en butant, chaque fois, sur un obstacle qui appelle l'idée suivante : prédire par
+ressemblance, puis un modèle qui *s'entraîne* vraiment (la descente de gradient),
+puis classer, puis mesurer la généralisation — pour finir par un panorama des
+**trois grandes façons d'apprendre** (supervisé, non supervisé, par renforcement).
 
 ![](/images/module2/ai-venn.png)
 
+## Objectifs
+
+* Distinguer clairement programmation traditionnelle et apprentissage automatique ;
+* Maîtriser le fil conducteur *données → modèle → erreur → généralisation* ;
+* Comprendre, de l'intérieur, quelques algorithmes classiques (baseline, kNN,
+  régression, classification, k-means) et l'idée de descente de gradient ;
+* Saisir ce que veut dire *généraliser*, et pourquoi c'est le cœur du sujet.
+
 ## Durée
 
-Trois semaines ou 27 heures.
+Trois semaines, soit environ 27 heures.
 
 ## Évaluation
 
-L’évaluation de ce module repose sur un travail noté où vous appliquerez la classification naïve bayésienne pour détecter les pourriels, en répondant à des questions d’interprétation et en expliquant les étapes de l’algorithme.
-
-
+Un travail noté (20 % de la note finale) où vous construirez, pas à pas, un
+filtre anti-pourriel par classification bayésienne naïve, avec des questions
+d'interprétation sur le fonctionnement de l'algorithme.
