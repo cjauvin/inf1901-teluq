@@ -43,6 +43,8 @@ unique et transférable**, qui revient de page en page :
 > paramètres) → mesurer son **erreur** → régler les paramètres pour la
 > **minimiser** → vérifier qu'il **généralise** à des cas nouveaux.
 
+{{< image src="/images/module2/fil-conducteur.svg" alt="Le fil conducteur du module en quatre stations : « données » (un nuage de points), « modèle » (deux molettes figurant des paramètres réglables), « erreur » (un résidu rouge entre un point et la droite du modèle), et « généraliser » (un point neuf marqué d'un « ? » face à une frontière). Une boucle de retour relie « erreur » à « modèle », étiquetée : régler les paramètres pour minimiser — et répéter." title="L'épine dorsale du module : données → modèle → erreur → généraliser, avec au cœur la boucle d'entraînement (régler les paramètres pour minimiser l'erreur, encore et encore)." loading="lazy" >}}
+
 Chaque algorithme classique que nous rencontrerons — du plus bête au plus
 astucieux — n'est qu'une **variation** sur cette même trame. Une fois cette trame
 en main, l'apprentissage automatique cesse d'être une boîte noire.
