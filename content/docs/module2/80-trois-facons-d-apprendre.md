@@ -145,3 +145,52 @@ plusieurs fois avec des centres initiaux différents, pour garder la meilleure
 solution.
 
 {{% /details %}}
+
+## Apprendre par l'expérience : le renforcement
+
+Reste une troisième situation, très différente des deux premières. Pas
+d'étiquettes ; mais cette fois, pas non plus un simple tas de données à
+structurer. Ici, le modèle — qu'on appelle un **agent** — doit *agir*, et il
+apprend des **conséquences** de ses actes. Pensez à un enfant qui apprend à faire
+du vélo, à un robot qui apprend à marcher, ou à un joueur qui découvre un jeu :
+personne ne leur dicte le bon geste à chaque instant ; ils essaient, tombent,
+recommencent, et retiennent ce qui marche.
+
+Le signal, ici, c'est une **récompense** — un point gagné, une partie remportée,
+une chute évitée. Sa particularité : elle arrive souvent **bien après** les
+actions qui l'ont causée. Quand on gagne une partie d'échecs, quel coup, au juste,
+fut décisif ? Ce décalage est toute la difficulté du renforcement : il faut
+apprendre à relier une récompense tardive aux gestes qui l'ont, un jour, rendue
+possible.
+
+La stratégie est celle de l'**essai-erreur**. L'agent explore, encaisse
+récompenses et punitions, et **renforce** peu à peu les actions qui mènent au
+succès — d'où le nom. Voyez-le à l'œuvre : dans l'applet ci-dessous, un agent
+(le point jaune) cherche la sortie (**+1**) d'une petite grille en évitant un
+piège (**−1**), sans rien savoir au départ. Lancez l'entraînement.
+
+{{< applet src="/html/applets/reinforcement.html" >}}
+
+Au début, l'agent erre au hasard. Puis, épisode après épisode, une **carte de
+valeur** se dessine (les cases se teintent selon leur promesse) et une
+**politique** émerge — les flèches, indiquant en chaque case le meilleur
+mouvement, finissent par tracer un chemin sûr vers le but. Un détail est
+instructif : le curseur d'**exploration** (ε). À zéro, l'agent ne fait
+qu'exploiter ce qu'il croit déjà savoir et peut rester coincé dans un chemin
+médiocre ; un peu de hasard le pousse à *explorer* d'autres routes, et parfois à
+en trouver de meilleures. Cet arbitrage entre **explorer et exploiter** est au
+cœur du renforcement.
+
+Reconnaissez-vous un air de famille ? Au Module 1, nous parlions des machines qui
+jouent aux échecs en *cherchant* dans l'arbre des coups possibles. Le
+renforcement, c'est cette quête, mais où la machine *apprend* elle-même à évaluer
+les positions plutôt que de tout calculer. C'est précisément ce mariage — la
+recherche du GOFAI et l'apprentissage — qui a permis à **AlphaGo** de battre les
+meilleurs joueurs de go humains, là où la seule force brute échouait.
+
+Le renforcement est aussi la famille la plus gourmande en calcul, et c'est en le
+mariant aux **réseaux de neurones** (le *deep reinforcement learning*, Module 3)
+qu'il a pris son essor. Vous le recroiserez même au cœur des assistants modernes :
+c'est en partie par renforcement, à partir des préférences d'évaluateurs humains
+(le fameux **RLHF**), qu'on façonne le comportement de ChatGPT — nous y viendrons
+au Module 4.
