@@ -194,3 +194,33 @@ qu'il a pris son essor. Vous le recroiserez même au cœur des assistants modern
 c'est en partie par renforcement, à partir des préférences d'évaluateurs humains
 (le fameux **RLHF**), qu'on façonne le comportement de ChatGPT — nous y viendrons
 au Module 4.
+
+## Un même squelette, d'un bout à l'autre
+
+Trois signaux, trois familles — trois réponses à une seule question : *de quoi le
+modèle apprend-il ?* Une réponse fournie, une structure à découvrir, une
+récompense à conquérir. Mais si l'on gratte sous la surface, ces trois mondes
+partagent la même charpente : celle, précisément, qui a couru tout au long de ce
+module.
+
+Rappelez-vous le chemin. On part de **données**, qu'on décrit par des nombres —
+des points dans un espace. On choisit un **modèle** : une fonction réglée par des
+paramètres. On mesure son **erreur**. On règle alors les paramètres pour la
+**minimiser** — le plus souvent en dévalant la pente par descente de gradient. Et
+l'on vérifie qu'il **généralise** au-delà des exemples appris. Tout ce que nous
+avons croisé n'est qu'une variation sur cette grammaire : le modèle bête et son
+unique nombre, kNN et ses zéro paramètre, la droite et ses deux, la régression
+logistique et Bayes qui classent, k-means qui regroupe sans étiquettes, l'agent
+qui apprend d'une récompense. Mêmes gestes, décors différents.
+
+C'est là, au fond, toute la démystification que visait ce module. « Apprendre »,
+pour une machine, n'a rien de magique : c'est **ajuster des réglages pour réduire
+une erreur sur des exemples**. La question que nous posions dès la première page —
+*en quoi est-ce de l'intelligence ?* — reste ouverte, et c'est très bien ainsi ;
+mais vous savez désormais, concrètement, ce qui se passe sous le capot.
+
+Il ne reste plus qu'à changer d'échelle. Au **Module 3**, nous empilerons ces
+fonctions réglables en **réseaux de neurones** profonds — et verrons pourquoi
+c'est là que l'image et le langage prennent enfin leur envol. Au **Module 4**,
+ces mêmes réseaux deviendront **génératifs**, capables de produire textes et
+images : les grands modèles de langage. Le squelette ne changera pas. Il grandira.
