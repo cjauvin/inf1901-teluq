@@ -5,10 +5,10 @@
 <rect x="0" y="0" width="700" height="270" rx="14" fill="#efe7d3" stroke="#d9cbac"/>
 <line x1="350" y1="44" x2="350" y2="232" stroke="#e0d4b8" stroke-width="1.4"/>
 <text x="178" y="38" font-size="15" fill="#3a3531" text-anchor="middle" font-weight="700">programmation classique</text>
-<rect x="30" y="80" width="88" height="40" rx="9" fill="rgba(154,91,51,0.16)" stroke="#9a5b33" stroke-width="1.8"/>
-<text x="74" y="100" font-size="14" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">règles</text>
-<rect x="30" y="156" width="88" height="40" rx="9" fill="rgba(138,125,110,0.14)" stroke="#8a7d6e" stroke-width="1.8"/>
-<text x="74" y="176" font-size="14" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">données</text>
+<rect x="30" y="80" width="88" height="40" rx="9" fill="rgba(138,125,110,0.14)" stroke="#8a7d6e" stroke-width="1.8"/>
+<text x="74" y="100" font-size="14" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">données</text>
+<rect x="30" y="156" width="88" height="40" rx="9" fill="rgba(154,91,51,0.16)" stroke="#9a5b33" stroke-width="1.8"/>
+<text x="74" y="176" font-size="14" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">règles</text>
 <rect x="134" y="109" width="100" height="58" rx="9" fill="#e8dcc0" stroke="#5b5249" stroke-width="1.8"/>
 <text x="184" y="138" font-size="12" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">programme</text>
 <text x="184" y="181" font-size="11.5" fill="#7a6f63" text-anchor="middle">(algorithme)</text>
