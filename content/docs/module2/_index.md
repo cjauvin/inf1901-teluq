@@ -68,7 +68,11 @@ ressemblance, puis un modèle qui *s'entraîne* vraiment (la descente de gradien
 puis classer, puis mesurer la généralisation — pour finir par un panorama des
 **trois grandes façons d'apprendre** (supervisé, non supervisé, par renforcement).
 
-![](/images/module2/ai-venn.png)
+Et pour situer ce module dans l'ensemble : l'apprentissage automatique n'est
+qu'une région d'un paysage plus vaste, celui de l'intelligence artificielle — que
+le cours parcourt module par module.
+
+{{< image src="/images/carte-ia.svg" alt="Carte en régions imbriquées de l'intelligence artificielle, chaque région portant le module du cours qui l'explore. À l'intérieur de « Intelligence artificielle » : d'un côté « IA classique » (Module 1) ; de l'autre « Apprentissage automatique » (machine learning), qui contient « Méthodes d'AA diverses » (Module 2) et « Réseaux de neurones / apprentissage profond » (Module 3), lesquels contiennent à leur tour « IA générative » et « ChatGPT » (Module 4). Une note indique que le Module 5 (enjeux éthiques et philosophiques) traverse tout ce paysage." title="La carte de l'IA : chaque module du cours explore une région de ce paysage. Le Module 2 (apprentissage automatique classique) en est le socle." loading="lazy" >}}
 
 ## Objectifs
 
