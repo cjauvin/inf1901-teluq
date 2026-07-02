@@ -142,8 +142,16 @@ Pas de pages « préparatoires » abstraites : chaque concept **naît quand un o
 
 **Page 80 « Trois façons d'apprendre » — telle que rédigée** : §1 intro (le **signal** ; 3 familles) + opener SVG `trois-paradigmes` (3 panneaux) ; §2 le supervisé (récap) + **aparté info « l'étiquetage, une industrie »** (Mechanical Turk/Scale AI → M4/RLHF, M5 éthique) ; §3 le non-supervisé (k-means, applet `kmeans.html`, fléchages autoencodeurs M3 / plongements M4) ; §4 le renforcement (**nouvelle applet `reinforcement.html`** — gridworld Q-learning, testée : politique optimale en 10 pas ; rappel M1/AlphaGo ; deep RL → M3, RLHF → M4) ; §5 « Un même squelette, d'un bout à l'autre » (clôture du module, pont M3/M4).
 
-**M2 COMPLET** ✅ — toutes les pages de contenu (10→80), l'`_index` (refonte : épine dorsale + parcours) et le TN2 sont en place et rendus en 200.
+**M2 COMPLET** ✅ — toutes les pages de contenu (10→80), l'`_index` et le TN2 sont en place et rendus en 200.
 - **TN2** : conservé tel quel (exercice Sheets, Bayes multinomial) ; liens page 60 + question 3 (→ page 70) corrigés. **Décision : PAS de renommage** — les 5 travaux notés du cours partagent la convention accentuée `99-travail-noté-N.md` (cohérence de série > convention sans-accent des pages de contenu).
+
+**`_index.md` du M2 — refondu, avec 3 visuels maison** :
+1. `regles-vs-exemples.svg` — le **renversement** programmation classique / AA : à gauche `règles`+`données` → *programme (algorithme)* → `réponses` ; à droite `données`+`réponses` → *apprentissage (algorithme)* → `règles (le modèle)`. Codage couleur (règles brun / réponses teal permutent) ; `données` en haut des deux panneaux (invariant ancré). Précédé d'un § qui explicite l'inversion.
+2. `fil-conducteur.svg` — **l'épine dorsale** : `données`(nuage) → `modèle`(boîte-fonction *f* + 2 sliders) → `erreur`(cible manquée) → `généraliser`(point neuf « ? »), avec **boucle d'entraînement** teal (erreur→modèle, « régler les paramètres pour minimiser — et répéter »). Placé sous la phrase-pipeline.
+3. `carte-ia.svg` (chemin **générique** `/images/carte-ia.svg`) — **carte du cours** en régions imbriquées (Euler) : IA classique=M1, méthodes d'AA=M2, réseaux/deep=M3, génératif/ChatGPT=M4, note M5 transversale. **Remplace l'ancienne `ai-venn.png`**.
+
+⚠️ **FIL OUVERT (à reprendre après compaction)** : Christian a dit « tu n'as pas compris ce que je veux » à propos de la **carte-IA** — il va **réexpliquer sa demande**. La version actuelle (`/images/carte-ia.svg`, dans l'`_index` du M2) est donc **à revoir selon son explication**. Générable via le script `scratchpad/gen_carte_ia.py`. Ne pas considérer la carte comme finalisée.
+
 - **Reste, hors M2** : côté Christian, réétiqueter `nf_house.png` (`x1 prix` → `x1 superficie`). Prochaine grande étape du cours : **Module 3** (réseaux de neurones).
 
 ## 7. Module 3 — Réseaux de neurones et apprentissage profond
