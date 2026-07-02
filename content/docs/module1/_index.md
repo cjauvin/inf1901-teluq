@@ -23,6 +23,13 @@ incarnent et le **drame** qu'ils ont vécu — car c'est en comprenant pourquoi
 cette première IA a plafonné qu'on comprend ce qui rendra la suite (les modules
 2 à 4) si différente.
 
+Pour situer ce module dans l'ensemble : l'IA symbolique occupe une région bien
+particulière du paysage de l'intelligence artificielle — celle de l'**IA
+« classique »**, distincte de l'apprentissage automatique que le cours explorera
+ensuite.
+
+{{< image src="/images/module1/ai-venn.svg" alt="Carte en régions imbriquées de l'intelligence artificielle. À l'intérieur de « Intelligence artificielle (IA) » : d'un côté « IA classique » ; de l'autre « Apprentissage automatique (AA) » (machine learning), qui contient « Méthodes d'AA diverses » et « Réseaux de neurones / apprentissage profond », lesquels contiennent à leur tour « IA générative » et « ChatGPT ». Un repère « Module 1 » pointe vers l'ensemble « IA classique », qui est le sujet du module." title="La carte de l'IA : le Module 1 explore l'IA « classique » (symbolique) — la région du paysage antérieure à l'apprentissage automatique." loading="lazy" >}}
+
 Un fil rouge traverse tout le module : dès les années 1950, **deux grandes
 hypothèses rivales** sur la nature de l'intelligence sont nées presque en même
 temps. L'une voit l'esprit comme de la **logique** (manipuler des symboles,
