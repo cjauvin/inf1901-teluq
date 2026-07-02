@@ -71,29 +71,49 @@ accidents.
 Ce nombre de voisins consultés, on le note **k** — d'où le nom de l'algorithme :
 les **k plus proches voisins** (*k-nearest neighbors*, ou kNN).
 
+Jusqu'ici, nous avons prédit un **nombre** — un prix — en *moyennant* nos
+voisins. Mais la même recette sait tout aussi bien prédire une **catégorie** : il
+suffit de remplacer, à la toute dernière étape, la moyenne par un **vote
+majoritaire**. Pour deviner si une maison est « abordable » ou « chère », on
+regarde la gamme de prix de ses plus proches voisins et on retient la plus
+fréquente.
+
+Ce simple basculement — *moyenne* ou *majorité* — recouvre la grande partition
+des tâches de prédiction : la **régression** (prédire un nombre, comme un prix)
+et la **classification** (prédire une catégorie — trier des courriels en
+« pourriel » ou non, des photos en « chat » ou « chien »). kNN a ceci de
+remarquable qu'il fait *les deux* sans rien changer d'essentiel : seule sa toute
+dernière étape diffère. La plupart des algorithmes que nous verrons ensuite, eux,
+se spécialiseront dans l'un ou l'autre.
+
+Notre exemple « abordable ou chère » est un peu particulier : la gamme de prix
+n'est jamais qu'un nombre rangé en cases. La classification devient franchement
+indispensable quand la catégorie n'a **aucun nombre sous-jacent** à moyenner :
+« pourriel » ou « courriel », « chat » ou « chien » ne sont pas des tranches
+d'une grandeur — ce sont des natures distinctes. Le vote des voisins, lui, reste
+exactement le même geste.
+
+{{< image src="/images/module2/knn-regression-vs-classification.svg" alt="La recette kNN, illustrée comme un tronc commun qui se sépare en deux à la fin. Tronc commun : une nouvelle maison, puis les distances à tous les exemples connus, puis les k plus proches voisins — ces étapes sont communes aux deux tâches. Puis une seule bifurcation, à l'étape d'agrégation : en haut, la moyenne des prix des voisins donne un nombre (250 000 $) — c'est la régression ; en bas, le vote majoritaire de la gamme de prix des voisins donne une catégorie (« abordable ») — c'est la classification." title="Un seul tronc, une seule fourche : kNN suit exactement les mêmes étapes pour la régression et la classification ; seule la toute dernière — moyenne ou majorité — les distingue." loading="lazy" >}}
+
 {{% hint info %}}
-**La recette des _k_ plus proches voisins** — pour prédire le prix d'une nouvelle maison :
+**La recette des _k_ plus proches voisins** — pour prédire à propos d'une nouvelle maison :
 
 1. Calculer la **distance** entre cette maison et *chacune* des maisons déjà connues (à partir de leurs caractéristiques).
 2. Garder les **k** maisons les plus proches — ses « voisins ».
-3. Prédire la **moyenne** des prix de ces voisins.
+3. Combiner les réponses de ces voisins :
+   - pour un **nombre** (régression) → prendre leur **moyenne** ;
+   - pour une **catégorie** (classification) → prendre leur **majorité**.
 
-*(Pour une catégorie plutôt qu'un nombre — pourriel ou non, chat ou chien — une seule étape change : à l'étape 3, on prend la **majorité** des voisins au lieu de leur moyenne.)*
+Seule cette dernière étape distingue les deux tâches ; tout le reste est identique.
 {{% /hint %}}
 
-Ce simple basculement — moyenne ou majorité — recouvre la grande partition des
-tâches de prédiction : la **régression** (prédire un nombre, comme un prix) et la
-**classification** (prédire une catégorie, comme « pourriel » ou « courriel »).
-kNN a ceci de remarquable qu'il fait *les deux* sans rien changer d'essentiel ;
-la plupart des algorithmes que nous verrons ensuite, eux, se spécialiseront dans
-l'un ou l'autre.
-
-L'applet ci-dessous illustre le cas de la **classification**, en deux dimensions,
-avec deux catégories — des points rouges et des points bleus. Chaque point
-coloré est un exemple connu ; le fond coloré, lui, montre la prédiction de kNN
-pour *tout* nouveau point qui s'y trouverait. Ajoutez des points, déplacez-les,
-faites varier **k**, et observez la frontière entre territoire rouge et
-territoire bleu se redessiner.
+L'applet ci-dessous donne à voir la **classification** — plus parlante à l'œil,
+car une frontière entre deux catégories se *voit* d'un seul coup en deux
+dimensions. Le kNN à l'œuvre, lui, reste exactement le même. Deux catégories,
+donc — des points rouges et des points bleus. Chaque point coloré est un exemple
+connu ; le fond coloré, lui, montre la prédiction de kNN pour *tout* nouveau
+point qui s'y trouverait. Ajoutez des points, déplacez-les, faites varier **k**,
+et observez la frontière entre territoire rouge et territoire bleu se redessiner.
 
 {{< applet src="/html/applets/knn.html" >}}
 
