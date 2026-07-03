@@ -81,6 +81,8 @@ ou non selon que la somme dépasse un certain seuil. Ils montrent qu'en reliant
 ces unités élémentaires en réseau, on peut en principe réaliser des opérations
 logiques. C'est le premier pont jeté entre la matière du cerveau et le calcul.
 
+{{< image src="/images/module1/neurone-formel.svg" alt="Schéma d'un neurone formel : trois signaux d'entrée convergent vers un corps cellulaire qui les additionne (Σ) et compare la somme à un seuil ; en sortie, le neurone s'allume (1) si le seuil est dépassé, ou reste éteint (0)." title="Le neurone formel : combiner des signaux, puis s'activer si leur somme dépasse un seuil." loading="lazy" >}}
+
 Restait à expliquer comment un tel réseau pourrait *apprendre*. En 1949, le
 psychologue **Donald Hebb** avance une idée appelée à devenir célèbre : lorsque
 deux neurones s'activent ensemble de façon répétée, le lien qui les unit se
@@ -88,6 +90,8 @@ renforce — « *neurons that fire together, wire together* ». L'apprentissage,
 cette optique, ne consiste pas à réécrire des règles, mais à **ajuster la force
 des connexions**. C'est précisément ce levier que Rosenblatt va donner à sa
 machine.
+
+{{< image src="/images/module1/regle-de-hebb.svg" alt="Schéma de la règle de Hebb : à gauche, deux neurones A et B au repos reliés par un lien fin ; à droite, lorsqu'ils s'activent ensemble, ils s'allument et le lien qui les unit s'épaissit, illustrant son renforcement." title="La règle de Hebb : deux neurones qui s'activent ensemble voient leur lien se renforcer." loading="lazy" >}}
 
 En 1958, le psychologue **Frank Rosenblatt** transforme cette idée en une machine
 bien réelle : le **perceptron**. Le principe est d'une élégance frappante. Au
