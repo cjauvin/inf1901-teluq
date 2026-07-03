@@ -16,6 +16,10 @@ mathématicien **John McCarthy**, qu'apparaît pour la première fois l'expressi
 **« intelligence artificielle »**. Le mot est choisi en partie pour marquer une
 rupture, et se démarquer des étiquettes existantes comme la cybernétique.
 
+{{< image src="/images/module1/dartmouth-hall.jpg" alt="Dartmouth Hall, un grand bâtiment géorgien en briques peintes en blanc, orné d'un fronton portant la date « 1784 » et surmonté d'un clocheton, sur le campus du Dartmouth College." title="Dartmouth Hall, sur le campus du Dartmouth College où se tint l'atelier de 1956." loading="lazy" >}}
+
+<p class="image-credit">Dartmouth Hall (Dartmouth College). Photo : Kenneth C. Zirkel, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, via Wikimedia Commons.</p>
+
 L'ambition affichée donne le vertige. La proposition postule que *« tout aspect
 de l'apprentissage, ou de toute autre caractéristique de l'intelligence, peut en
 principe être décrit avec une telle précision qu'une machine peut être construite
