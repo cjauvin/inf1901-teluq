@@ -107,6 +107,12 @@ très loin du compte. Mais l'idée maîtresse — *une machine qui apprend de se
 erreurs* — est, elle, promise à un avenir immense. C'est la graine de tout ce que
 nous étudierons aux modules 2, 3 et 4.
 
+En un sens très concret, le perceptron est l'**ancêtre direct des réseaux de
+neurones** d'aujourd'hui : l'apprentissage profond qui fait la une n'est, pour
+l'essentiel, qu'un empilement de perceptrons perfectionnés, par millions et sur
+de nombreuses couches. La ligne de descendance est directe — nous la remonterons
+au **module 3**.
+
 ## Deux univers parallèles
 
 On serait tenté de croire que ces deux paris se sont succédé — d'abord l'un, puis
