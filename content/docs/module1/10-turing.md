@@ -217,6 +217,8 @@ sa phrase ne se contredit pas — elle est simplement **vraie sans être
 démontrable**. Tout son génie tient dans ce glissement, qui change un paradoxe
 stérile en théorème.
 
+{{< image src="/images/module1/paradoxe-menteur.svg" alt="Un personnage déclare « Je mens toujours. » ; un symbole de boucle sans fin illustre que l'affirmation ne peut être ni vraie ni fausse — s'il dit vrai, alors il ment, et s'il ment, alors il dit vrai." title="Le paradoxe du menteur : une phrase qui se mord la queue." loading="lazy" >}}
+
 Attention aux contresens : le théorème ne dit **pas** que « les mathématiques sont
 fausses », ni que la vérité serait une affaire d'opinion. C'est une limite
 **précise** sur ce qu'une démonstration *formelle, à l'intérieur d'un système
