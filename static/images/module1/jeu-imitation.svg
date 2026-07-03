@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">
+<svg viewBox="0 0 732 380" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">
 <title>Le jeu de l'imitation</title>
 <desc>Un juge humain, à gauche, dialogue par écrit avec deux interlocuteurs cachés derrière une cloison, à droite. Chaque interlocuteur est représenté par une silhouette humaine et un robot séparés d'un point d'interrogation, sous-titrés « humain ou machine ? » : derrière chaque écran se trouve soit un humain, soit une machine, sans qu'on sache lequel. Les deux interlocuteurs sont identiques et indiscernables pour le juge, qui doit deviner lequel est la machine.</desc>
 
-<rect x="0" y="0" width="700" height="380" rx="14" fill="#efe7d3" stroke="#d9cbac"/>
+<rect x="0" y="0" width="732" height="380" rx="14" fill="#efe7d3" stroke="#d9cbac"/>
 
 <text x="28" y="34" font-size="15" fill="#5b5249" text-anchor="start">Le jeu de l'imitation</text>
 
