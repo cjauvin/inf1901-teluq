@@ -172,6 +172,8 @@ programme donné finira par s'arrêter ou tournera à l'infini). Le père de l'i
 « penser = calculer » a donc, du même geste, tracé les **frontières** du calcul.
 Le pari de l'IA naît ainsi avec, inscrite en lui, la trace de ses propres limites.
 
+{{< image src="/images/module1/probleme-arret.svg" alt="Schéma : un programme P, montré comme une fenêtre de code, est donné en entrée à un autre programme H, un « détecteur d'arrêt » censé dire en sortie si P s'arrête ou tourne à l'infini. La légende conclut qu'un tel programme H ne peut pas exister." title="Le problème de l'arrêt : un programme qui prendrait un autre programme en entrée pour prédire s'il s'arrête — et pourquoi il ne peut pas exister." loading="lazy" >}}
+
 Que conclure, pour notre question — une machine peut-elle penser ? Étonnamment, on
 a tiré de Gödel **deux leçons radicalement opposées**, et toutes deux nous
 accompagneront jusqu'au bout du cours.
