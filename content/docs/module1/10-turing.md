@@ -187,8 +187,9 @@ reviendrons longuement sur cette thèse au **Module 5**, aux côtés d'un autre
 adversaire célèbre de l'IA, le philosophe John Searle.
 
 **Seconde lecture : le théorème est un moteur.** Pour le penseur américain
-**Douglas Hofstadter**, la boucle auto-référentielle de Gödel n'est pas une
-infirmité, mais le secret même de l'esprit. Un système assez riche pour se
+**Douglas Hofstadter** — auteur du livre culte *Gödel, Escher, Bach* (1979),
+où il développe précisément cette idée —, la boucle auto-référentielle de Gödel
+n'est pas une infirmité, mais le secret même de l'esprit. Un système assez riche pour se
 **représenter lui-même** engendre une « **boucle étrange** » — et c'est de ce
 repli sur soi qu'émergeraient, selon lui, le sentiment d'un « je », le sens, la
 conscience. Loin d'interdire la pensée à la machine, l'auto-référence en serait la
