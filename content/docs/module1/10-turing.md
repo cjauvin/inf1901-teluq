@@ -210,6 +210,13 @@ théorème**). Le tour de force technique est le *codage de Gödel* : numéroter
 énoncé pour que le système puisse, en parlant de nombres, **parler de lui-même** —
 et fabriquer ainsi la phrase « je ne suis pas démontrable ».
 
+Cette phrase est une variante subtile du **paradoxe du menteur** (« cette phrase
+est fausse »), dont Gödel s'est explicitement inspiré. Mais là où le menteur
+s'effondre en pure contradiction, Gödel remplace « faux » par « indémontrable » :
+sa phrase ne se contredit pas — elle est simplement **vraie sans être
+démontrable**. Tout son génie tient dans ce glissement, qui change un paradoxe
+stérile en théorème.
+
 Attention aux contresens : le théorème ne dit **pas** que « les mathématiques sont
 fausses », ni que la vérité serait une affaire d'opinion. C'est une limite
 **précise** sur ce qu'une démonstration *formelle, à l'intérieur d'un système
