@@ -57,9 +57,12 @@ de démarrer**. Donnons à notre système une poignée de règles —
 
 > **R1** — *si* le moteur ne se lance pas du tout **et** les phares sont faibles,
 > *alors* la batterie est déchargée.
+>
 > **R2** — *si* la batterie est déchargée, *alors* recharger ou remplacer la batterie.
+>
 > **R3** — *si* le moteur se lance normalement mais ne démarre pas **et** le réservoir
 > est vide, *alors* refaire le plein.
+>
 > **R4** — *si* le moteur se lance normalement **et** le réservoir n'est pas vide,
 > *alors* faire vérifier l'allumage.
 
@@ -87,6 +90,50 @@ moteur ne se lance pas* **et** que *les phares soient faibles*. Or ces deux dern
 points, aucune règle ne les produit : ce sont des choses à **observer**. Le système
 vous les demande donc — *« les phares sont-ils faibles ? »* — et n'examine *que* ce
 qui sert l'hypothèse poursuivie. C'est le **chaînage arrière**.
+
+{{% hint info %}}
+**Prolog : le chaînage arrière fait langage.** L'idée « déclarer des faits et des
+règles *si… alors…*, puis laisser un moteur général les enchaîner » s'est révélée
+si puissante qu'on en a fait, dès 1972, un **langage de programmation** à part
+entière : **Prolog**. Le programmeur n'y écrit *que* des faits et des règles ; le
+langage, lui, fournit d'office le moteur d'inférence — un chaînage arrière comme
+celui qu'on vient de dérouler à la main. On ne lui dit pas *comment* calculer,
+mais *ce qui est vrai* : c'est la **programmation logique**, cousine du Lisp
+fonctionnel (le langage des machines de la photo) mais d'un esprit tout autre.
+Longtemps l'étendard européen de l'IA symbolique, Prolog sera le pari du projet
+japonais de **Cinquième Génération** que nous croisons plus bas — et sa
+descendance déclarative se perpétue aujourd'hui, de Datalog aux moteurs de règles.
+{{% /hint %}}
+
+{{% details "Pour aller plus loin : à quoi ressemble du Prolog ?" %}}
+Reprenons notre panne de voiture. En Prolog, on écrit d'abord les **faits**
+observés, puis les **règles** — la tête *avant* le `:-`, qui se lit « *si* », et
+les conditions séparées par des virgules qui se lisent « *et* » :
+
+```prolog
+% Les faits observés :
+moteur_ne_se_lance_pas.
+phares_faibles.
+
+% Les règles R1 et R2, « si … alors … » :
+batterie_dechargee   :- moteur_ne_se_lance_pas, phares_faibles.
+recharger_batterie   :- batterie_dechargee.
+```
+
+On **interroge** ensuite le programme en lui soumettant un but à prouver (le `?-`
+est l'invite) :
+
+```prolog
+?- recharger_batterie.
+true.
+```
+
+Pour répondre, Prolog fait *exactement* le chaînage arrière qu'on vient de
+dérouler : pour établir `recharger_batterie`, il lui faut `batterie_dechargee` ;
+pour celle-ci, les deux faits `moteur_ne_se_lance_pas` et `phares_faibles` — tous
+deux connus. But atteint : `true`. Nulle part on n'a écrit *comment* mener cette
+recherche ; le moteur du langage s'en charge.
+{{% /details %}}
 
 Deux directions, donc, pour une même base de règles : **en avant**, poussé par les
 faits ; **en arrière**, tiré par un but. Le second a un avantage décisif pour le
@@ -156,6 +203,10 @@ taillés pour ces programmes ; et le Japon lança un projet national pharaonique
 Jamais l'IA symbolique n'avait semblé si près de tenir ses promesses. Mais le sommet
 est aussi l'endroit d'où l'on commence à redescendre — et, déjà, des fissures
 couraient sous l'édifice.
+
+{{< image src="/images/module1/symbolics-3620.jpg" alt="Un poste de travail Lisp Symbolics 3620 : un moniteur beige marqué « symbolics », un clavier et une souris posés sur une tablette, et une haute unité centrale nervurée à droite. Un cartel de musée indique « 3620 LISP Workstation CPU, Symbolics, US, 1983 »." title="Une « machine Lisp » : le poste de travail Symbolics 3620 (1983), un ordinateur spécialisé taillé pour faire tourner les programmes d'IA symbolique." loading="lazy" >}}
+
+<p class="image-credit">Une machine Lisp Symbolics 3620 (1983), Computer History Museum. Photo : leighklotz, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, via Wikimedia Commons.</p>
 
 ## Le goulot d'étranglement
 
