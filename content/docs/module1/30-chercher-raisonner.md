@@ -58,6 +58,8 @@ grand — le **nombre de Shannon**, environ un 1 suivi de 120 zéros — qu'il d
 de très loin le nombre d'atomes dans l'univers observable. Aucune machine, si
 rapide soit-elle, ne pourra jamais explorer un tel espace en entier.
 
+{{< image src="/images/module1/explosion-combinatoire.svg" alt="Un arbre de jeu qui s'évase : une position donne environ 30 coups, chacun environ 900, puis environ 27 000, et ainsi de suite. En dessous, le nombre de parties d'échecs possibles (environ 10 puissance 120, le nombre de Shannon) est comparé au nombre d'atomes de l'univers observable (environ 10 puissance 80), qu'il dépasse de très loin." title="L'explosion combinatoire : à ~30 coups par tour, l'arbre des parties dépasse vite le nombre d'atomes de l'univers." loading="lazy" >}}
+
 Pour les jeux à deux adversaires, les chercheurs mettent au point une stratégie
 élégante, le **minimax**. L'idée : la machine explore l'arbre des coups en
 supposant que son adversaire jouera toujours du mieux possible. À chaque étape,
@@ -151,6 +153,8 @@ questions**, selon une poignée de règles toutes simples. Dites « ma mère ne
 m'écoute jamais » et le mot « mère » déclenche « parlez-moi de votre famille ».
 C'est un tour de passe-passe, sans le moindre savoir sur le monde, sur la
 solitude ou sur les mères.
+
+{{< image src="/images/module1/eliza.svg" alt="Une fenêtre de conversation : l'utilisateur écrit « je me sens seul ces temps-ci » et ELIZA répond « depuis quand vous sentez-vous seul ? ». Sous le capot, le programme repère le mot-clé « seul » et le glisse dans un gabarit tout prêt, sans aucune compréhension." title="ELIZA : repérer un mot-clé et renvoyer la phrase en question, sans rien comprendre." loading="lazy" >}}
 
 Le plus fascinant est ce qui se produisit alors. Les gens s'attachèrent à ELIZA.
 La propre secrétaire de Weizenbaum, qui savait pourtant pertinemment qu'il
