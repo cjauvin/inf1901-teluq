@@ -22,6 +22,8 @@ d'arborescence géante : l'**espace d'états**. Résoudre le labyrinthe, ce n'es
 alors rien d'autre que **trouver un chemin** dans cette arborescence, depuis
 l'état de départ jusqu'à l'état-but (la sortie).
 
+{{< image src="/images/module1/espace-etats.svg" alt="À gauche, un labyrinthe dessiné comme un arbre de couloirs dont les états sont étiquetés S, A, B, C, D, E, G ; à droite, exactement le même arbre dessiné avec des nœuds et des arêtes portant les mêmes étiquettes. Le chemin S→A→D→G vers le but est surligné à l'identique des deux côtés ; C et E sont des impasses." title="Un labyrinthe est un arbre d'états : résoudre, c'est trouver un chemin de S (départ) à G (but)." loading="lazy" >}}
+
 Ce qui rend l'idée si féconde, c'est qu'une multitude de problèmes en apparence
 sans rapport prennent soudain la *même forme*. Le casse-tête du taquin (ces
 petites tuiles numérotées qu'on fait glisser), une partie d'échecs, la
@@ -77,7 +79,11 @@ que d'explorer aveuglément dans toutes les directions, un algorithme célèbre
 nommé **A\*** (prononcé « A étoile ») se laisse guider par une heuristique : à
 chaque embranchement, il privilégie la direction qui *semble* se rapprocher le
 plus du but (par exemple, la distance à vol d'oiseau jusqu'à la destination). Le
-GPS qui vous calcule une route emprunte, au fond, ce genre de stratégie. La leçon
+GPS qui vous calcule une route emprunte, au fond, ce genre de stratégie — tout
+comme, très classiquement, l'**IA des jeux vidéo** : les personnages non joueurs
+qui trouvent leur route sur la carte, les ennemis qui vous traquent ou vous
+contournent s'appuient le plus souvent sur ces mêmes algorithmes de recherche de
+chemin, A\* en tête. La leçon
 profonde de tout l'âge d'or est là : être intelligent, ce n'est pas tout explorer
 — c'est explorer **au bon endroit**. Tout l'art réside dans la qualité des
 heuristiques.
