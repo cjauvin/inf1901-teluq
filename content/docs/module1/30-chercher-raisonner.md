@@ -171,6 +171,21 @@ du tout. C'est une mise en garde dont nous mesurerons toute la portée à l'ère
 agents conversationnels (module 4) et dans le débat, jamais clos, sur ce que
 « comprendre » veut dire pour une machine (module 5).
 
+Une dernière précision, cruciale pour la suite. On serait tenté de voir en ELIZA
+l'ancêtre direct de ChatGPT — « le même tour de passe-passe, en plus gros ».
+C'est presque l'inverse. ELIZA n'est qu'une poignée de règles écrites à la main —
+repérer un mot, réciter un gabarit —, sans le moindre apprentissage ni aucun
+savoir sur le monde : du GOFAI pur, taillé au clavier par son auteur. Les grands
+**modèles de langage** (les *LLM*) derrière ChatGPT relèvent, eux, du **pari
+adverse** — celui du perceptron et des réseaux de neurones : personne ne leur a
+dicté de règles ; ils ont *appris*, à partir de quantités colossales de textes, un
+modèle statistique du langage riche de milliards de paramètres, et *fabriquent*
+des réponses inédites sur presque tout. La ressemblance est de pure surface : sous
+le capot, ELIZA et ChatGPT incarnent les **deux paris rivaux** de ce module, dos à
+dos. Ce qui ne règle en rien la question de fond — un LLM *comprend*-il, ou n'est-il
+qu'un imitateur infiniment plus habile ? —, celle-là même que l'effet ELIZA nous
+invite à ne pas trancher trop vite.
+
 **Un mot sur l'outil.** ELIZA, comme la quasi-totalité des programmes de l'âge
 d'or, était écrite en **Lisp**, un langage inventé par John McCarthy en 1958 —
 l'année même du perceptron. C'est l'un des plus anciens langages de programmation
