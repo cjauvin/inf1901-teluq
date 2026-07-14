@@ -142,17 +142,38 @@ Pas de pages « préparatoires » abstraites : chaque concept **naît quand un o
 
 **Page 80 « Trois façons d'apprendre » — telle que rédigée** : §1 intro (le **signal** ; 3 familles) + opener SVG `trois-paradigmes` (3 panneaux) ; §2 le supervisé (récap) + **aparté info « l'étiquetage, une industrie »** (Mechanical Turk/Scale AI → M4/RLHF, M5 éthique) ; §3 le non-supervisé (k-means, applet `kmeans.html`, fléchages autoencodeurs M3 / plongements M4) ; §4 le renforcement (**nouvelle applet `reinforcement.html`** — gridworld Q-learning, testée : politique optimale en 10 pas ; rappel M1/AlphaGo ; deep RL → M3, RLHF → M4) ; §5 « Un même squelette, d'un bout à l'autre » (clôture du module, pont M3/M4).
 
-**M2 COMPLET** ✅ — toutes les pages de contenu (10→80), l'`_index` et le TN2 sont en place et rendus en 200.
+**M2 — premier jet complet** ✅ — toutes les pages de contenu (10→80), l'`_index` et le TN2 sont en place et rendus en 200. ⚠️ **Mais le M2 est ré-ouvert** : décision du 2026-07-10 d'en faire le **socle théorique complet du cours** (voir la sous-section « Extension » en fin de §6). Le premier jet reste valide ; on l'**étend**, on ne le refait pas.
 - **TN2** : conservé tel quel (exercice Sheets, Bayes multinomial) ; liens page 60 + question 3 (→ page 70) corrigés. **Décision : PAS de renommage** — les 5 travaux notés du cours partagent la convention accentuée `99-travail-noté-N.md` (cohérence de série > convention sans-accent des pages de contenu).
 
 **`_index.md` du M2 — refondu, avec 3 visuels maison** :
 1. `regles-vs-exemples.svg` — le **renversement** programmation classique / AA : à gauche `règles`+`données` → *programme (algorithme)* → `réponses` ; à droite `données`+`réponses` → *apprentissage (algorithme)* → `règles (le modèle)`. Codage couleur (règles brun / réponses teal permutent) ; `données` en haut des deux panneaux (invariant ancré). Précédé d'un § qui explicite l'inversion.
 2. `fil-conducteur.svg` — **l'épine dorsale** : `données`(nuage) → `modèle`(boîte-fonction *f* + 2 sliders) → `erreur`(cible manquée) → `généraliser`(point neuf « ? »), avec **boucle d'entraînement** teal (erreur→modèle, « régler les paramètres pour minimiser — et répéter »). Placé sous la phrase-pipeline.
-3. `carte-ia.svg` (chemin **générique** `/images/carte-ia.svg`) — **carte du cours** en régions imbriquées (Euler) : IA classique=M1, méthodes d'AA=M2, réseaux/deep=M3, génératif/ChatGPT=M4, note M5 transversale. **Remplace l'ancienne `ai-venn.png`**.
-
-⚠️ **FIL OUVERT (à reprendre après compaction)** : Christian a dit « tu n'as pas compris ce que je veux » à propos de la **carte-IA** — il va **réexpliquer sa demande**. La version actuelle (`/images/carte-ia.svg`, dans l'`_index` du M2) est donc **à revoir selon son explication**. Générable via le script `scratchpad/gen_carte_ia.py`. Ne pas considérer la carte comme finalisée.
+3. **Carte du cours (Venn imbriqué)** — après itérations, la piste `carte-ia.svg` (Euler générique) a été **abandonnée** au profit du diagramme fait main **`ai-venn.svg`** (maître, avec sigles « IA » / « AA » et labels aérés), décliné en **versions par module** ne gardant que le repère du module concerné : `module1/ai-venn.svg` (→ IA classique) dans l'`_index` M1, `module2/ai-venn.svg` (→ apprentissage automatique + méthodes d'AA diverses) dans l'`_index` M2 ; la page de présentation générale (`10-présentation`) pointe vers le maître `ai-venn.svg`. ✅ **FIL carte-IA : résolu.**
 
 - **Reste, hors M2** : côté Christian, réétiqueter `nf_house.png` (`x1 prix` → `x1 superficie`). Prochaine grande étape du cours : **Module 3** (réseaux de neurones).
+
+### Extension : le M2 comme **socle théorique complet du cours** (décidé 2026-07-10)
+
+**Mandat (Christian)** : le M2 n'est pas qu'une galerie de modèles — c'est **la base théorique de tout le reste du cours**. Il doit exposer *tous* les concepts classiques du ML : capacité, généralisation, surapprentissage, **fuite de données**, etc.
+
+**Audit de couverture** (grep sur tout le M2, 2026-07-10) :
+- **Absents** : fuite de données (*data leakage*), régularisation, validation croisée, métriques (précision / rappel / matrice de confusion), normalisation / mise à l'échelle, arbres de décision ; le terme *non-linéaire* n'est **jamais** employé.
+- **Présents mais implicites (à nommer/cadrer)** : capacité/expressivité (linéaire vs non-linéaire), hyperparamètre (vs paramètre), malédiction de la dimension.
+- **Solidement couvert** : baseline, kNN, régression linéaire, régression logistique, Bayes naïf, k-means ; fonction d'erreur + descente de gradient ; train/test + ensemble de validation, biais-variance, sur-/sous-apprentissage ; supervisé/non-supervisé/renforcement.
+
+**Cadre unificateur retenu** : une seule question — *quelle forme de frontière un modèle peut-il seulement dessiner ?* — à **deux facettes sœurs** : **expressivité** (peut-il se courber ? plafond = XOR, **indépendant** du bruit et de la quantité de données) et **réglage** (combien le laisser se courber ? biais-variance + régularisation).
+
+**Décision de structure (option B — la méthodologie devient un bloc à part entière)** — refonte de la fin du M2 :
+- **`70` « Généraliser »** regroupe désormais **le triptyque de la capacité** : (a) **capacité / expressivité — linéaire vs non-linéaire** (*nouveau* ; emblème = **XOR** ; nuance-clé : ≠ affaire de bruit, c'est un plafond d'expressivité) ; (b) biais-variance (déjà rédigé) ; (c) **régularisation** (*nouveau* — le **levier** qui déplace le modèle le long du U ; nuance-clé : garder le modèle riche mais **pénaliser** sa complexité, ≠ choisir un modèle plus simple ; ridge/lasso nommés en passant ; prépare *weight decay* / *dropout* / *early stopping* au M3, et l'énigme de la sur-paramétrisation déjà teasée p. 70).
+- **Nouvelle page « Bien évaluer un modèle »** (méthodologie) : **fuite de données**, **validation croisée** (k-fold), **métriques** (précision / rappel / matrice de confusion — motivé par le **spam du TN2** : un faux positif ≫ un faux négatif). Distincte de « Généraliser ».
+- **À placer/trancher** : normalisation / mise à l'échelle (p. 30 ou 40 ; importe pour la distance de kNN et la descente de gradient), **arbres de décision** (sous-section ? optionnel ; seul grand modèle classique manquant, et non-linéaire limpide), **hyperparamètre** (à nommer explicitement, lié à l'ensemble de validation).
+
+**Arc XOR sur trois modules** (le « suivi approprié » du XOR évoqué au M1) :
+1. **M1** (`60-hivers`) — le XOR tue le perceptron simple (1969) ; dette **explicitement ouverte** vers le M3 (empiler les couches + rétropropagation, 1986).
+2. **M2** (p. 70, section capacité) — le XOR **nomme** la limite : *aucune droite ne sépare l'un-ou-l'autre-mais-pas-les-deux*, **même avec un jeu parfait et infini**. Échappatoire classique = kNN (frontière locale non-linéaire). Posé comme « pendant ce temps, du côté de l'AA classique… » — **pas** le dénouement.
+3. **M3** — un réseau à **couche cachée** *apprend* la frontière non-linéaire et **solde la dette** (1969 → 1986). ← à honorer lors de la refonte du M3.
+
+**Méthode de rédaction** : section par section, validée par Christian. **Prochaine étape** : rédiger la section « capacité » de la p. 70 + un **visuel XOR** parchemin (4 points en diagonale, une droite qui tente — et échoue — de les séparer).
 
 ## 7. Module 3 — Réseaux de neurones et apprentissage profond
 
