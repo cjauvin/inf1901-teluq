@@ -31,6 +31,24 @@ au-dessus des maisons bon marché, en dessous des plus chères.
 
 {{< image src="/images/module2/maisons-baseline.svg" alt="Le nuage de maisons traversé par une droite horizontale à 500 000 $ : un modèle qui prédit toujours le prix moyen, sans tenir compte de la superficie." title="Le modèle le plus bête : une droite plate à 500 000 $, qui ignore complètement la superficie." loading="lazy" >}}
 
+## La même bêtise, pour l'autre question
+
+Et si l'on nous posait plutôt la **seconde question** du chapitre précédent —
+*cette maison partira-t-elle vite ?* Le prédicteur le plus bête existe là aussi,
+et il obéit à la même logique : ignorer superbement la maison qu'on lui présente,
+et répondre toujours la même chose.
+
+Mais répondre quoi ? Pas la moyenne, cette fois : on ne peut pas faire la moyenne
+de « oui » et de « non ». La bêtise équivalente consiste à donner **la réponse la
+plus fréquente**, celle qui revient le plus souvent dans nos registres. Si, parmi
+les maisons déjà vendues, 60 % ont trouvé preneur en moins de trente jours, notre
+prédicteur bête répondra « oui » — toujours, pour un studio comme pour un manoir.
+
+Deux questions de nature très différente, et pourtant la **même ossature** : une
+entrée qu'on ignore, une sortie constante, et une réponse tirée des seules
+données. C'est la première fois que nous voyons cette parenté ; ce ne sera pas la
+dernière.
+
 ## Qu'est-ce qu'un modèle, au juste ?
 
 Nous venons d'appeler ce prédicteur un « modèle ». Profitons-en pour fixer le
@@ -48,7 +66,9 @@ Remarquez de quoi ce modèle est fait : **un seul nombre**, le prix moyen
 (500 000 \\$). Ce nombre, c'est ce que le modèle a « retenu » des données ; on
 l'appelle son **paramètre**. Et le calculer — faire la moyenne des prix observés
 — c'est déjà une forme rudimentaire d'*apprentissage* : le modèle a tiré son
-unique connaissance des exemples qu'on lui a montrés.
+unique connaissance des exemples qu'on lui a montrés. Son jumeau ne fonctionne
+pas autrement : son unique paramètre, à lui, est la réponse majoritaire (« oui »),
+obtenue en comptant plutôt qu'en moyennant.
 
 Tout le reste du module ne fera qu'enrichir cette image. Les modèles que nous
 construirons auront davantage de paramètres — un, puis deux, puis des milliers,
@@ -84,6 +104,22 @@ performance ne signifie rien tout seul : la première question à poser devant u
 modèle est toujours *« fait-il vraiment mieux que de prédire bêtement la
 moyenne ? »*. Étonnamment souvent, la réponse est non — et c'est précisément
 l'étalon qui le révèle.
+
+Pour la question en oui/non, le principe est identique ; seule la façon de
+compter change. Plutôt qu'un écart en dollars, on regarde tout simplement **quelle
+proportion des réponses le modèle obtient justes**. Notre prédicteur jumeau, qui
+répond « oui » à tout, aura donc raison dans 60 % des cas : voilà l'étalon à
+battre.
+
+{{% hint warning %}}
+Cet étalon-là réserve une surprise, et elle est instructive. Imaginez une question
+bien plus déséquilibrée : *ce courriel est-il un pourriel ?*, dans une boîte où
+99 % des messages sont légitimes. Le prédicteur le plus bête — « ce n'est jamais
+un pourriel » — obtient d'emblée **99 % de bonnes réponses**… tout en étant
+parfaitement inutile, puisqu'il ne détecte aucun pourriel. Un chiffre flatteur
+peut donc masquer un modèle sans la moindre valeur. Nous y reviendrons : *bien*
+mesurer la qualité d'un modèle est autrement plus subtil qu'il n'y paraît.
+{{% /hint %}}
 
 ## Son défaut, et ce qu'il révèle
 

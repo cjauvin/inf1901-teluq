@@ -94,10 +94,15 @@ Reste à savoir comment, concrètement. Et pour le comprendre sans se perdre, ri
 ne vaut un exemple modeste — qu'on pourra suivre d'un bout à l'autre, et triturer
 dans tous les sens.
 
-## Notre fil rouge : prédire le prix d'une maison
+## Notre fil rouge : des maisons à vendre
+
+{{< image src="/images/module2/maison-a-vendre.jpg" alt="Une pancarte « FOR SALE » plantée sur la pelouse d'une maison résidentielle, devant un jardin fleuri et l'entrée du garage." title="Combien vaut cette maison ? Et partira-t-elle vite ? Deux questions que ce module va apprendre à une machine." loading="lazy" >}}
+
+<p class="image-credit">Photo : Kindel Media, <a href="https://www.pexels.com/photo/for-sale-sign-on-green-grass-lawn-7578849/">Pexels</a>.</p>
 
 Tout au long de ce module, nous suivrons un seul et même exemple — volontairement
-banal, pour que rien ne nous échappe : **estimer le prix d'une maison**.
+banal, pour que rien ne nous échappe : **un registre de ventes immobilières**. Un
+même jeu de données, donc, auquel nous poserons plus d'une question.
 
 Imaginez qu'on vous remette une liste de maisons récemment vendues, chacune
 accompagnée de quelques renseignements — sa superficie, son année de
@@ -111,9 +116,10 @@ construction, son nombre de chambres — et, surtout, de son **prix de vente** :
 | 130 | 1972 | 3 | 310 000 \\$ |
 | … | … | … | … |
 
-La question est simple à énoncer : **une nouvelle maison se présente, dont on
-connaît la superficie, l'année et le nombre de chambres — mais pas le prix. Que
-faut-il prédire ?**
+La première question est la plus naturelle qui soit — **combien vaut une
+maison ?** — et elle est simple à énoncer : *une nouvelle maison se présente,
+dont on connaît la superficie, l'année et le nombre de chambres, mais pas le
+prix. Que faut-il prédire ?*
 
 Chacun sent bien qu'il y a là une régularité à exploiter : une grande maison
 récente vaut généralement plus cher qu'une petite et ancienne. Mais
@@ -174,11 +180,14 @@ superficie, le prix, et la réponse. Les deux premiers occupent les axes ; pour 
 troisième, il ne reste plus de place, alors on l'encode autrement. Ce n'est là
 qu'une commodité de dessin, et nous verrons bientôt qu'on peut faire mieux.
 
-Nous suivrons le prix comme fil rouge — il se prête mieux aux dessins et aux
-premières explications. Mais gardez cette seconde question en tête : elle
-reviendra, et l'on verra que presque tout ce qu'on aura appris sur l'une vaut
-aussi pour l'autre. C'est d'ailleurs à cette seconde famille qu'appartiennent les
-exemples du début de ce chapitre — reconnaître un chat, repérer un pourriel :
+Dans les **prochains chapitres**, c'est surtout la première question que nous
+suivrons — le prix se prête mieux aux dessins et aux premières explications. Mais
+la seconde n'attendra pas longtemps : elle finira par occuper le devant de la
+scène, avec un chapitre pour elle seule — et c'est même une question de ce type,
+*ce courriel est-il un pourriel ?*, qui vous occupera au travail noté. Nous
+verrons alors que presque tout ce qu'on aura appris sur l'une vaut aussi pour
+l'autre. C'est d'ailleurs à cette seconde famille qu'appartiennent **plusieurs**
+des exemples du début de ce chapitre — reconnaître un chat, repérer un pourriel :
 autant de questions dont la réponse n'est pas un nombre, mais **une catégorie**.
 
 Par où commencer ? Avant de bâtir quoi que ce soit de sophistiqué, posons-nous
