@@ -61,13 +61,83 @@ test, lui, reste vierge pour l'ultime verdict.
 
 {{% /hint %}}
 
+## Linéaire ou non-linéaire : ce qu'un modèle peut dessiner
+
+Revenons un instant sur ce que nous avons construit. La droite de régression du
+chapitre 50 : une droite. La frontière de la régression logistique : une droite.
+Celle de Bayes naïf : une droite, encore — nous l'avions noté avec surprise. Et
+même notre filtre anti-pourriel, sous ses montagnes de mots, prenait *lui aussi*
+une décision linéaire. Un air de famille se dessine.
+
+Ces modèles ont tous en commun de tirer leur décision d'une **somme pondérée** des
+caractéristiques : chaque attribut pousse d'un côté ou de l'autre,
+proportionnellement à son poids, et l'on tranche selon le total. Géométriquement,
+cela donne toujours la même chose — une droite (un plan en trois dimensions ; un
+*hyperplan* au-delà). On les appelle des **modèles linéaires**.
+
+Est-ce grave ? Autrement dit : y a-t-il des choses qu'**aucune droite** ne peut
+apprendre ?
+
+La réponse est oui — et vous connaissez déjà la victime la plus célèbre de cette
+limite. Souvenez-vous du **perceptron**, au Module 1 : c'est exactement là-dessus
+qu'il s'est brisé, en 1969. L'exemple fatal s'appelle le **XOR** — *l'un ou
+l'autre, mais pas les deux* —, la règle du va-et-vient qui commande une lampe au
+bout d'un couloir. Placez ses quatre cas dans le plan : les deux « éteint »
+tombent sur une diagonale, les deux « allumé » sur l'autre.
+
+{{< image src="/images/module2/xor.svg" alt="Deux panneaux illustrant le XOR. Dans chacun, quatre points aux coins d'un carré : deux bleus sur une diagonale (bas-gauche et haut-droit), deux rouges sur l'autre (haut-gauche et bas-droit). Chaque panneau montre une droite différente traversant le plan pour tenter de séparer les couleurs ; dans les deux cas, un point bleu reste du côté des rouges, cerclé de rouge et marqué d'une croix. Aucune droite ne réussit." title="Le XOR : quelle que soit la droite tracée, un point reste toujours du mauvais côté — la limite même d'un modèle linéaire." loading="lazy" >}}
+
+Essayez. Prenez n'importe quelle droite, inclinez-la comme vous voulez : il
+restera toujours un point du mauvais côté. Ce n'est pas un manque d'astuce — c'est
+une impossibilité.
+
+Et voici le point crucial, à bien distinguer de tout ce qui précède : **cet échec
+n'a rien à voir avec le bruit, ni avec le manque de données**. Donnez à votre
+modèle linéaire un million d'exemples parfaits, sans la moindre erreur de mesure :
+il échouera exactement pareil. Ce n'est pas un modèle mal réglé, ni un modèle qui
+manque d'entraînement. C'est un modèle dont le **répertoire de formes** ne
+contient tout simplement pas la réponse. On appelle cela sa **capacité** (ou son
+*expressivité*) : l'ensemble des frontières qu'il est seulement capable de
+dessiner. Un modèle linéaire n'en connaît qu'une famille — les droites.
+
+À l'inverse, souvenez-vous de kNN. Sa frontière, elle, se contorsionne à volonté,
+épouse des îlots, contourne des amas : aucune contrainte de forme ne pèse sur
+elle. Le XOR ? Il le règle sans même s'en apercevoir — chaque point regarde ses
+voisins, et les voisins d'un coin bleu sont bleus. kNN est un modèle
+**non-linéaire**, et c'était donc, sans qu'on le dise, notre premier.
+
+Deux familles, donc, et une question à se poser avant toute autre devant un
+problème : *la vérité que je cherche a-t-elle une chance de tenir dans le
+répertoire de mon modèle ?* Si elle n'y est pas, aucun réglage, aucune donnée
+supplémentaire ne l'y mettra.
+
+Comment franchir le mur, alors ? L'apprentissage automatique classique offre deux
+échappatoires. La première, nous venons de la voir : prendre un modèle
+non-linéaire, comme kNN. La seconde est plus rusée — **fabriquer soi-même la bonne
+caractéristique** : ajoutez aux deux entrées leur produit $x_1 \cdot x_2$, et le
+XOR devient, comme par magie, séparable par une droite dans ce nouvel espace. Mais
+remarquez le prix : c'est *vous*, l'humain, qui avez dû trouver l'astuce. Et si
+personne ne sait quelle caractéristique inventer ?
+
+C'est précisément la question que le Module 3 viendra trancher : les réseaux de
+neurones apprendront à **fabriquer eux-mêmes** les caractéristiques qui rendent le
+problème séparable, en empilant des couches. Le mur dressé en 1969 tombera en
+1986 — c'est la dette que le Module 1 avait laissée ouverte, et c'est là qu'elle
+sera payée.
+
+Mais attention : pouvoir se courber n'est pas un bien en soi. Un modèle capable
+d'épouser n'importe quelle forme peut aussi épouser… n'importe quoi. C'est tout le
+sujet de la section suivante.
+
 ## Trop coller, ou trop lisser : le compromis biais-variance
 
-Maintenant que nous savons *mesurer* la généralisation, regardons-la varier. Le
-meilleur terrain d'observation est notre vieille connaissance, kNN — car son
-unique réglage, le nombre de voisins $k$, agit précisément comme un curseur de
-souplesse. Reprenez l'applet ; cette fois, faites lentement glisser $k$ d'un bout
-à l'autre, et observez la frontière.
+Nous venons de voir qu'un modèle doit être assez *expressif* pour que la vérité
+tienne dans son répertoire. Mais l'excès inverse guette aussitôt : un modèle trop
+souple finit par épouser le hasard autant que le signal. Pour voir ce compromis à
+l'œuvre — et le *mesurer*, maintenant que nous savons le faire —, revenons à notre
+vieille connaissance, kNN, dont l'unique réglage, le nombre de voisins $k$, agit
+précisément comme un curseur de souplesse. Reprenez l'applet ; cette fois, faites
+lentement glisser $k$ d'un bout à l'autre, et observez la frontière.
 
 {{< applet src="/html/applets/knn.html" >}}
 
