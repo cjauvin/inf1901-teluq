@@ -173,7 +173,30 @@ Pas de pages « préparatoires » abstraites : chaque concept **naît quand un o
 2. **M2** (p. 70, section capacité) — le XOR **nomme** la limite : *aucune droite ne sépare l'un-ou-l'autre-mais-pas-les-deux*, **même avec un jeu parfait et infini**. Échappatoire classique = kNN (frontière locale non-linéaire). Posé comme « pendant ce temps, du côté de l'AA classique… » — **pas** le dénouement.
 3. **M3** — un réseau à **couche cachée** *apprend* la frontière non-linéaire et **solde la dette** (1969 → 1986). ← à honorer lors de la refonte du M3.
 
-**Méthode de rédaction** : section par section, validée par Christian. **Prochaine étape** : rédiger la section « capacité » de la p. 70 + un **visuel XOR** parchemin (4 points en diagonale, une droite qui tente — et échoue — de les séparer).
+**Méthode de rédaction** : section par section, validée par Christian.
+
+#### Avancement de l'extension
+
+- ✅ **p. 70 § « Linéaire ou non-linéaire : ce qu'un modèle peut dessiner »** — rédigée (commit `1ad0d87`), insérée **entre** le jeu de test et le biais-variance (l'expressivité avant le réglage), avec le visuel `xor.svg` (deux droites qui traversent le plan et échouent). Contient les deux échappatoires classiques (modèle non-linéaire ; caractéristique fabriquée $x_1\cdot x_2$) et le renvoi au M3. L'ouverture du biais-variance a été raccordée à la capacité.
+- ⏭️ **Reste sur la p. 70** : la **régularisation** (3ᵉ volet du triptyque), à souder juste après le biais-variance.
+- ⏭️ **Puis** : la nouvelle page « Bien évaluer un modèle ».
+
+### Chantier parallèle : adoucir le passage régression → classification (2026-07-27)
+
+**Problème signalé par Christian** (en relisant le M2 d'un trait) : la classification surgissait **trop brusquement** p. 40. Diagnostic sur pièces : la p. 10 ouvre pourtant sur des exemples qui sont *tous* de la classification (chat, pourriel), puis les catégories **disparaissent** des p. 20 et 30 (zéro occurrence), avant de resurgir p. 40 comme si elles allaient de soi. Le lecteur avait été formaté « prédire = un nombre » pendant deux pages.
+
+**Solution retenue** (commit `b46c760`) — faire naître la dualité **avec le fil rouge**, et n'amener le vocabulaire que là où il sert :
+
+1. **p. 10 — l'intuition, sans aucun mot technique.** Nouvelle section `##` « Une seconde question, d'une tout autre nature », placée **après** le nuage de la régression. Même table, une colonne de plus : **« Vendue en moins de 30 jours ? »**. Points-clés : mêmes maisons, mêmes renseignements, réponses de nature différente (« on ne peut pas faire la moyenne de *oui* et de *non* ») ; et **le prix devient une entrée** pour la seconde question — *ce qui était la réponse devient une description*. Visuel `maisons-vendues.svg` (mêmes axes que le nuage de régression, points bleu/rouge) : « ce n'est plus la hauteur du point qu'on cherche, mais sa couleur ». La couleur est présentée comme un simple **expédient d'encombrement**, avec une amorce (« on verra bientôt qu'on peut faire mieux »).
+2. **p. 30 — le vocabulaire, à sa place.** Nouvelle sous-section `###` « Et quand la cible est une catégorie ? », juste après la définition de la **cible**. Encodage **oui = 1 / non = 0** (avec son arbitraire), puis visuel `troisieme-dimension.svg` (perspective : superficie × prix au sol, la cible sur un troisième axe **à deux barreaux** ; *vu d'en haut, on retrouve le nuage colorié de la p. 10 — la couleur en était l'ombre portée*). **Garde-fou de vocabulaire** : « quand nous parlerons des *dimensions* d'un objet, il s'agira toujours des caractéristiques ». Enfin, **nomination des deux tâches : régression et classification**.
+3. **p. 40 — pure reprise.** Le passage n'introduit plus rien (ni la dualité, ni les mots) : « Nous venons de faire une régression… Et pour une classification ? Il suffit de changer la toute dernière étape. »
+
+**Décisions de conception à retenir** :
+- **Choix de la cible catégorielle** : « vendue en moins de 30 jours » l'emporte sur « abordable/chère » (un prix mis en cases, donc une fausse catégorie), sur « maison/condo » (aucune motivation à la prédire) et sur « rénovations majeures » (signal porté par la seule année). Son apparent défaut — dépendre du prix — est **son atout** : le prix étant dans la table, il devient une *entrée*, ce qui illustre gratuitement la notion de variable cible.
+- **Où nommer** : les noms *régression/classification* appartiennent à la **nature de la cible** (p. 30, page du vocabulaire), **pas** à un algorithme (p. 40) — les y placer ferait croire à « les deux modes de kNN », et alourdirait justement la page dont on voulait adoucir l'entrée.
+- **Cohérence** : « abordable/chère » a été **éliminé de tout le module** ; le visuel `knn-regression-vs-classification.svg` affiche désormais « vendue vite ».
+
+**Note d'outillage** : `rsvg-convert` n'est plus installé sur la machine (`brew install librsvg` pour le retrouver). Repli utilisé : `qlmanage -t -s 900 -o <dossier> fichier.svg` (natif macOS), qui produit `fichier.svg.png`. ⚠️ **Piège rencontré** : `python3 gen.py > cible.svg` **tronque la cible à 0 octet** avant même d'échouer si le script est absent — restaurer alors par `git checkout HEAD -- <fichier>`.
 
 ## 7. Module 3 — Réseaux de neurones et apprentissage profond
 
