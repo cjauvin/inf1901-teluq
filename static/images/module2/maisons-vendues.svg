@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 660 500" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">
+<title>Les mêmes maisons, mais la réponse est maintenant une catégorie</title>
+<desc>Le même nuage de points : chaque maison est placée selon sa superficie (axe horizontal) et son prix (axe vertical). Cette fois, ce n'est plus la hauteur du point qu'on cherche à prédire, mais sa couleur : en bleu les maisons vendues en moins de 30 jours, en rouge celles qui ont traîné. Les maisons peu chères pour leur superficie (sous la tendance générale) partent vite ; les plus chères pour ce qu'elles offrent traînent — avec quelques exceptions.</desc>
+<rect x="0" y="0" width="660" height="500" rx="14" fill="#efe7d3" stroke="#d9cbac"/>
+<g stroke="#e0d4b8" stroke-width="1">
+<line x1="80" y1="351.7" x2="630" y2="351.7"/>
+<line x1="80" y1="238.3" x2="630" y2="238.3"/>
+<line x1="80" y1="125" x2="630" y2="125"/>
+</g>
+<g stroke="#b8a888" stroke-width="1.6">
+<line x1="80" y1="40" x2="80" y2="380"/>
+<line x1="80" y1="380" x2="630" y2="380"/>
+</g>
+<g stroke="#b8a888" stroke-width="1.4">
+<line x1="80" y1="380" x2="80" y2="386"/>
+<line x1="224.7" y1="380" x2="224.7" y2="386"/>
+<line x1="369.5" y1="380" x2="369.5" y2="386"/>
+<line x1="514.2" y1="380" x2="514.2" y2="386"/>
+</g>
+<g font-size="13" fill="#5b5249" text-anchor="middle">
+<text x="80" y="402">100</text>
+<text x="224.7" y="402">150</text>
+<text x="369.5" y="402">200</text>
+<text x="514.2" y="402">250</text>
+<text x="355" y="430" font-size="15" fill="#3a3531">superficie (m²)</text>
+</g>
+<g stroke="#b8a888" stroke-width="1.4">
+<line x1="74" y1="351.7" x2="80" y2="351.7"/>
+<line x1="74" y1="238.3" x2="80" y2="238.3"/>
+<line x1="74" y1="125" x2="80" y2="125"/>
+</g>
+<g font-size="13" fill="#5b5249" text-anchor="end">
+<text x="68" y="356">300 k$</text>
+<text x="68" y="242.8">500 k$</text>
+<text x="68" y="129.5">700 k$</text>
+</g>
+<text x="18" y="210" font-size="15" fill="#3a3531" text-anchor="middle" transform="rotate(-90 18 210)">prix de vente</text>
+<g stroke="#efe7d3" stroke-width="1.5">
+<circle cx="120.5" cy="356.8" r="7" fill="#3a6ea5"/>
+<circle cx="137.9" cy="272.3" r="7" fill="#c4564a"/>
+<circle cx="158.1" cy="319.1" r="7" fill="#3a6ea5"/>
+<circle cx="175.5" cy="240.3" r="7" fill="#c4564a"/>
+<circle cx="195.8" cy="321.6" r="7" fill="#3a6ea5"/>
+<circle cx="216.0" cy="242.0" r="7" fill="#c4564a"/>
+<circle cx="259.4" cy="209.9" r="7" fill="#c4564a"/>
+<circle cx="282.6" cy="289.3" r="7" fill="#3a6ea5"/>
+<circle cx="305.7" cy="220.2" r="7" fill="#c4564a"/>
+<circle cx="328.9" cy="291.6" r="7" fill="#3a6ea5"/>
+<circle cx="352.0" cy="195.2" r="7" fill="#c4564a"/>
+<circle cx="375.2" cy="259.3" r="7" fill="#3a6ea5"/>
+<circle cx="421.5" cy="258.7" r="7" fill="#3a6ea5"/>
+<circle cx="444.6" cy="158.9" r="7" fill="#c4564a"/>
+<circle cx="467.8" cy="224.7" r="7" fill="#3a6ea5"/>
+<circle cx="490.9" cy="158.9" r="7" fill="#c4564a"/>
+<circle cx="514.1" cy="224.7" r="7" fill="#3a6ea5"/>
+<circle cx="537.3" cy="126.6" r="7" fill="#c4564a"/>
+<circle cx="560.4" cy="224.7" r="7" fill="#3a6ea5"/>
+<circle cx="239.2" cy="303.8" r="7" fill="#c4564a"/>
+<circle cx="398.3" cy="178.2" r="7" fill="#3a6ea5"/>
+</g>
+<circle cx="176" cy="458" r="7" fill="#3a6ea5" stroke="#efe7d3" stroke-width="1.5"/>
+<text x="192" y="462" font-size="14" fill="#3a3531" text-anchor="start">vendue en moins de 30 jours</text>
+<circle cx="412" cy="458" r="7" fill="#c4564a" stroke="#efe7d3" stroke-width="1.5"/>
+<text x="428" y="462" font-size="14" fill="#3a3531" text-anchor="start">a traîné</text>
+</svg>

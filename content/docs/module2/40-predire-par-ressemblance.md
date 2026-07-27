@@ -71,29 +71,19 @@ accidents.
 Ce nombre de voisins consultés, on le note **k** — d'où le nom de l'algorithme :
 les **k plus proches voisins** (*k-nearest neighbors*, ou kNN).
 
-Jusqu'ici, nous avons prédit un **nombre** — un prix — en *moyennant* nos
-voisins. Mais la même recette sait tout aussi bien prédire une **catégorie** : il
-suffit de remplacer, à la toute dernière étape, la moyenne par un **vote
-majoritaire**. Pour deviner si une maison est « abordable » ou « chère », on
-regarde la gamme de prix de ses plus proches voisins et on retient la plus
-fréquente.
+Nous venons de faire une **régression** : la cible était un prix, un nombre, et
+nous l'avons obtenu en *moyennant* nos voisins. Et pour une **classification** ?
+Il suffit de changer la toute dernière étape : au lieu de moyenner les réponses
+des voisins, on retient la plus fréquente — un **vote majoritaire**. Pour deviner
+si une maison partira vite, on regarde ce qu'il en a été de ses plus proches
+voisines, et on suit la majorité.
 
-Ce simple basculement — *moyenne* ou *majorité* — recouvre la grande partition
-des tâches de prédiction : la **régression** (prédire un nombre, comme un prix)
-et la **classification** (prédire une catégorie — trier des courriels en
-« pourriel » ou non, des photos en « chat » ou « chien »). kNN a ceci de
-remarquable qu'il fait *les deux* sans rien changer d'essentiel : seule sa toute
-dernière étape diffère. La plupart des algorithmes que nous verrons ensuite, eux,
-se spécialiseront dans l'un ou l'autre.
+C'est là ce que kNN a de remarquable : il fait *les deux* sans rien changer
+d'essentiel. Même distance, mêmes voisins — seule diffère la façon de combiner
+leurs réponses. La plupart des algorithmes que nous verrons ensuite, eux, se
+spécialiseront dans l'une ou l'autre tâche.
 
-Notre exemple « abordable ou chère » est un peu particulier : la gamme de prix
-n'est jamais qu'un nombre rangé en cases. La classification devient franchement
-indispensable quand la catégorie n'a **aucun nombre sous-jacent** à moyenner :
-« pourriel » ou « courriel », « chat » ou « chien » ne sont pas des tranches
-d'une grandeur — ce sont des natures distinctes. Le vote des voisins, lui, reste
-exactement le même geste.
-
-{{< image src="/images/module2/knn-regression-vs-classification.svg" alt="La recette kNN, illustrée comme un tronc commun qui se sépare en deux à la fin. Tronc commun : une nouvelle maison, puis les distances à tous les exemples connus, puis les k plus proches voisins — ces étapes sont communes aux deux tâches. Puis une seule bifurcation, à l'étape d'agrégation : en haut, la moyenne des prix des voisins donne un nombre (250 000 $) — c'est la régression ; en bas, le vote majoritaire de la gamme de prix des voisins donne une catégorie (« abordable ») — c'est la classification." title="Un seul tronc, une seule fourche : kNN suit exactement les mêmes étapes pour la régression et la classification ; seule la toute dernière — moyenne ou majorité — les distingue." loading="lazy" >}}
+{{< image src="/images/module2/knn-regression-vs-classification.svg" alt="La recette kNN, illustrée comme un tronc commun qui se sépare en deux à la fin. Tronc commun : une nouvelle maison, puis les distances à tous les exemples connus, puis les k plus proches voisins — ces étapes sont communes aux deux tâches. Puis une seule bifurcation, à l'étape d'agrégation : en haut, la moyenne des prix des voisins donne un nombre (250 000 $) — c'est la régression ; en bas, le vote majoritaire des réponses des voisins donne une catégorie (« vendue vite ») — c'est la classification." title="Un seul tronc, une seule fourche : kNN suit exactement les mêmes étapes pour la régression et la classification ; seule la toute dernière — moyenne ou majorité — les distingue." loading="lazy" >}}
 
 {{% hint info %}}
 **La recette des _k_ plus proches voisins** — pour prédire à propos d'une nouvelle maison :

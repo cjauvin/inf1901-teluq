@@ -127,6 +127,60 @@ cette tendance à l'œil nu : les points montent vers la droite, sans pour autan
 s'aligner parfaitement. C'est précisément ce genre de savoir flou que nous
 voulons faire *émerger des exemples*.
 
+## Une seconde question, d'une tout autre nature
+
+Avant d'aller plus loin, remarquons quelque chose. Un agent immobilier ne se pose
+pas *une* question sur une maison, mais au moins deux. La première, on vient de
+la voir : **combien vaut-elle ?** La seconde est tout aussi pratique :
+**va-t-elle partir vite ?** Nos registres de ventes le savent, eux aussi — il
+suffit d'y regarder une colonne de plus :
+
+| Superficie (m²) | Année | Chambres | Prix | Vendue en moins de 30 jours ? |
+|---|---|---|---|---|
+| 180 | 1995 | 4 | 420 000 \\$ | oui |
+| 150 | 1980 | 3 | 350 000 \\$ | non |
+| 220 | 2010 | 5 | 580 000 \\$ | oui |
+| 130 | 1972 | 3 | 310 000 \\$ | non |
+| … | … | … | … | … |
+
+Les deux questions portent sur les **mêmes maisons**, décrites par les **mêmes
+renseignements**. Et pourtant les réponses attendues n'ont rien à voir : d'un
+côté un **nombre** — 420 000 \\$, 385 200 \\$, n'importe quelle valeur sur une
+échelle continue ; de l'autre un **choix entre deux réponses possibles**, oui ou
+non. On ne peut pas faire la « moyenne » de *oui* et de *non*.
+
+Remarquez au passage un détail qui a son importance : pour cette seconde
+question, le **prix devient un renseignement comme un autre** — une maison trop
+chère pour ce qu'elle offre risque de traîner. Ce qui était la *réponse* à
+trouver dans le premier cas devient une *donnée de départ* dans le second. La
+table, elle, n'a pas bougé : c'est la **question qu'on lui pose** qui change.
+
+On peut d'ailleurs *voir* ce changement. Reprenons exactement le même dessin — la
+superficie en abscisse, le prix en ordonnée — mais colorons cette fois chaque
+maison selon la réponse à notre nouvelle question :
+
+{{< image src="/images/module2/maisons-vendues.svg" alt="Le même nuage de points, superficie en abscisse et prix en ordonnée, mais chaque maison est maintenant colorée selon qu'elle s'est vendue en moins de 30 jours (en bleu) ou qu'elle a traîné (en rouge). Les points bleus forment une bande inférieure, les rouges une bande supérieure : à superficie égale, les maisons les moins chères partent vite. Deux points font exception, chacun dans la bande de l'autre couleur." title="Les mêmes maisons, une autre question. Ce n'est plus la hauteur du point qu'on cherche à deviner, mais sa couleur." loading="lazy" >}}
+
+Le contraste avec le dessin précédent saute aux yeux. Là, ce qu'on cherchait à
+deviner était la **hauteur** du point — sa position sur une échelle continue.
+Ici, la hauteur est *donnée* : ce qu'on cherche, c'est la **couleur**. Et un
+motif se laisse déjà entrevoir : à superficie comparable, les maisons les moins
+chères partent vite, les plus chères traînent — avec, là encore, des exceptions
+qui refusent d'entrer dans le rang.
+
+Un mot sur cette couleur, justement. Elle règle un problème d'encombrement : nous
+avons désormais **trois** renseignements à faire tenir sur une page plate — la
+superficie, le prix, et la réponse. Les deux premiers occupent les axes ; pour le
+troisième, il ne reste plus de place, alors on l'encode autrement. Ce n'est là
+qu'une commodité de dessin, et nous verrons bientôt qu'on peut faire mieux.
+
+Nous suivrons le prix comme fil rouge — il se prête mieux aux dessins et aux
+premières explications. Mais gardez cette seconde question en tête : elle
+reviendra, et l'on verra que presque tout ce qu'on aura appris sur l'une vaut
+aussi pour l'autre. C'est d'ailleurs à cette seconde famille qu'appartiennent les
+exemples du début de ce chapitre — reconnaître un chat, repérer un pourriel :
+autant de questions dont la réponse n'est pas un nombre, mais **une catégorie**.
+
 Par où commencer ? Avant de bâtir quoi que ce soit de sophistiqué, posons-nous
 une question presque naïve : quelle est la prédiction la plus *bête* qu'on
 puisse imaginer — celle en dessous de laquelle il serait absurde de descendre ?

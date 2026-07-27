@@ -46,6 +46,52 @@ fait pas partie de cette description — c'est justement la valeur qu'on cherche
 
 {{< image src="/images/module2/modele-entree-sortie.svg" alt="Schéma : à gauche les caractéristiques d'une maison (superficie, année, chambres, salles de bain) ; une flèche vers une boîte « modèle » ; une flèche en sortie vers le prix (420 000 $)." title="Un modèle : les caractéristiques entrent, le prix sort." loading="lazy" >}}
 
+### Et quand la cible est une catégorie ?
+
+Le prix est un nombre : il se prête sans difficulté à cette mise en forme. Mais
+souvenez-vous de notre seconde question — *cette maison va-t-elle partir vite ?*
+Sa réponse, elle, est un **oui** ou un **non**. Or nous venons de le dire : une
+machine ne manipule que des nombres. Comment lui faire avaler un « oui » ?
+
+De la façon la plus simple qui soit : en décidant que **oui vaut 1 et non vaut
+0**. Le choix est arbitraire — on aurait pu prendre l'inverse, ou n'importe quel
+autre couple de valeurs — mais il a l'immense avantage de faire de la cible une
+grandeur comme une autre. Une fois cette convention posée, une catégorie n'est
+plus qu'un nombre, et tout ce qui suit s'applique sans changement.
+
+Cela permet aussi d'éclairer, rétrospectivement, un détail du premier chapitre.
+Nous y avions dessiné les mêmes maisons en coloriant chaque point selon qu'elle
+s'était vendue vite ou non — faute de place pour un troisième axe. Maintenant que
+nous savons que la cible est un nombre, nous pouvons lui **donner cet axe** :
+
+{{< image src="/images/module2/troisieme-dimension.svg" alt="Vue en perspective des mêmes maisons. Le plan horizontal porte deux caractéristiques, la superficie et le prix. La cible occupe un troisième axe, vertical, qui ne comporte que deux niveaux : 0 (non) en bas et 1 (oui) en haut. Chaque maison se pose donc sur l'un ou l'autre de deux plans superposés — les maisons vendues vite sur le plan du haut, celles qui ont traîné sur celui du bas." title="La cible a bel et bien son propre axe : simplement, quand elle est une catégorie, cet axe ne compte que deux barreaux, 0 et 1." loading="lazy" >}}
+
+Les maisons ne flottent plus à n'importe quelle hauteur : elles se posent sur
+l'un ou l'autre de **deux plans**. Et l'on passe d'un dessin à l'autre sans rien
+perdre — regardez ce relief *d'en haut*, à la verticale, et vous retrouverez
+trait pour trait le nuage colorié du premier chapitre. Cette couleur, c'était
+l'ombre portée de ce troisième axe.
+
+Attention toutefois à ne pas confondre : cet axe-là n'est pas de même nature que
+les autres. La superficie et le prix sont des **caractéristiques**, elles
+*décrivent* la maison et forment l'espace où elle vit ; la cible, elle, est ce
+qu'on **cherche**. Dans tout ce qui suit, quand nous parlerons des *dimensions*
+d'un objet, il s'agira toujours des caractéristiques.
+
+Nous tenons maintenant de quoi nommer ces deux familles de problèmes, car chacune
+porte un nom que vous rencontrerez partout :
+
+- prédire un **nombre** — un prix, une température, une durée — s'appelle une
+  **régression** ;
+- prédire une **catégorie** — vendue vite ou non, pourriel ou courriel, chat ou
+  chien — s'appelle une **classification**.
+
+Rien de plus : la seule chose qui les distingue est la **nature de la cible**.
+C'est pourtant l'une des partitions les plus utiles du domaine, car presque tout
+problème d'apprentissage à partir d'exemples étiquetés tombe dans l'une ou dans
+l'autre. Nous les retrouverons constamment — et nous verrons que certains
+algorithmes savent faire les deux, quand d'autres se spécialisent.
+
 ## Un vecteur, c'est un point dans un espace
 
 Représenter une maison par un vecteur de nombres ne fait pas que ranger ses
