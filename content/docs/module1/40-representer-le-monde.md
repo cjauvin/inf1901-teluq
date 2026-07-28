@@ -25,9 +25,10 @@ qu'à table, quelqu'un vous dise : **« Pouvez-vous me passer le sel ? »**
   *capacité* à passer le sel. Pour y accéder, il faut savoir ce que veulent dire
   « sel », « passer », « pouvoir ».
 - La **pragmatique**, c'est l'*intention réelle en contexte* : tout le monde
-  comprend qu'il ne s'agit pas d'une question sur vos aptitudes, mais d'une
-  **demande** polie — « passez-moi le sel ». Saisir cela exige du contexte et une
-  montagne de sous-entendus que nous partageons tous.
+  comprend qu'il ne s'agit pas d'une question sur vos aptitudes (« oui, je peux
+  passer le sel! »), mais d'une **demande** polie — « passez-moi le sel ». Saisir
+  cela exige du contexte et une montagne de sous-entendus que nous partageons
+  tous.
 
 Voilà le drame de l'IA symbolique résumé en une phrase : elle excellait au niveau
 de la **syntaxe**, peinait à atteindre la **sémantique**, et se fracassait sur la
