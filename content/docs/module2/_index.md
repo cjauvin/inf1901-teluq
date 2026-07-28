@@ -51,17 +51,19 @@ en main, l'apprentissage automatique cesse d'être une boîte noire.
 
 ## Le but ultime : généraliser
 
-La notion la plus profonde de l'AA est cette capacité à **généraliser**. Si
-j'entraîne un modèle à distinguer chien et chat avec 1000 images, sa performance
-sur ces 1000 images-là ne m'intéresse guère : par construction, il devrait les
+La notion la plus profonde de l'AA, celle qui fait en sorte de l'associer au
+domaine de l'intelligence, est cette capacité à **généraliser**. Si j'entraîne
+un modèle à distinguer chien et chat avec 1000 images, sa performance sur ces
+1000 images-là ne m'intéresse guère : par construction, il devrait les
 reconnaître. Après tout, *mémoriser* ces 1000 images est **trivial** pour un
 ordinateur — ranger des données et les ressortir à l'identique, c'est exactement
 ce qu'une machine fait sans le moindre effort, et il n'y a là aucune trace
-d'intelligence. Ce qui compte, c'est la **1001ᵉ** image — inédite pour lui. Un modèle
-qui a vraiment *appris*, plutôt que *mémorisé*, saura la classer correctement (et
-la question devient passionnante si on lui montre… une vache !). Bien généraliser
-est le véritable objectif de l'AA — et l'un des sens les plus concrets qu'on
-puisse donner au mot « apprendre ».
+d'intelligence. Ce qui compte, c'est la **1001ᵉ** image — inédite pour lui. Un
+modèle qui a vraiment *appris*, plutôt que *mémorisé*, saura la classer
+correctement (et la question devient passionnante si on lui montre, au lieu d'un
+chat ou d'un chien… une vache !). Bien généraliser est le véritable objectif de
+l'AA — et l'un des sens les plus concrets qu'on puisse donner au mot
+« apprendre ».
 
 ## Le parcours du module
 
