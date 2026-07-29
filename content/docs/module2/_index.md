@@ -20,7 +20,13 @@ traditionnel encode une série de **règles** écrites par un humain. Un modèle
 lui, **dérive son fonctionnement à partir d'exemples** : on ne lui dicte pas la
 règle, on la lui fait découvrir dans les données. C'est ce déplacement — des
 règles vers les exemples — qui rapproche l'AA de ce qu'on appelle l'intelligence,
-et le rattache à des courants comme le connexionnisme.
+et le rattache au **connexionnisme**, croisé au [module
+1](docs/module1/20-deux-paris) : le pari — rival de l'approche symbolique — que
+l'intelligence ne s'écrit pas en règles explicites, mais **émerge d'un réseau de
+connexions qui s'ajustent à l'expérience**. L'apprentissage automatique en hérite
+l'idée maîtresse, sans nécessairement en garder les neurones : ce qui s'ajuste
+ici s'appelle des **paramètres**, et c'est en les réglant sur des exemples que le
+modèle finit par « savoir » quelque chose.
 
 Vu autrement, les deux démarches **échangent leurs entrées et leurs sorties**. En
 programmation classique, un humain écrit les *règles* ; l'ordinateur les applique
@@ -39,11 +45,12 @@ brun) et les « réponses » (en teal) passer d'un côté à l'autre.
 Plutôt qu'un catalogue d'algorithmes, ce module construit **un modèle mental
 unique et transférable**, qui revient de page en page :
 
-> partir de **données** → choisir un **modèle** (une fonction réglable par des
-> paramètres) → mesurer son **erreur** → régler les paramètres pour la
-> **minimiser** → vérifier qu'il **généralise** à des cas nouveaux.
+> partir de **données** → choisir un **modèle** (une fonction de prédiction,
+> réglable par des paramètres) → mesurer son **erreur** de prédiction → régler
+> les paramètres du modèle pour la **minimiser** → vérifier qu'il **généralise**
+> à des cas nouveaux.
 
-{{< image src="/images/module2/fil-conducteur.svg" alt="Le fil conducteur du module en quatre stations : « données » (un nuage de points), « modèle » (une boîte-fonction « f », avec une flèche d'entrée et de sortie, surmontée de deux sliders figurant des paramètres réglables), « erreur » (une cible dont le tir a manqué le centre, l'écart marqué en rouge), et « généraliser » (un point neuf marqué d'un « ? » face à une frontière). Une boucle de retour relie « erreur » à « modèle », étiquetée : régler les paramètres pour minimiser — et répéter." title="L'épine dorsale du module : données → modèle → erreur → généraliser, avec au cœur la boucle d'entraînement (régler les paramètres pour minimiser l'erreur, encore et encore)." loading="lazy" >}}
+{{< image src="/images/module2/fil-conducteur.svg" alt="Le fil conducteur du module en quatre stations, chacune glosée sous son nom. « Données » — les exemples dont on dispose — figurées par un nuage de points. « Modèle » — une fonction de prédiction, réglable par des paramètres — figuré par une boîte-fonction « f », avec une flèche d'entrée et de sortie, surmontée de deux sliders. « Erreur » — à quel point le modèle est bon pour prédire les exemples — figurée par une cible dont le tir a manqué le centre, l'écart marqué en rouge. « Généraliser » — bien prédire des exemples jamais vus — figuré par un point neuf marqué d'un « ? » face à une frontière. Une boucle de retour relie « erreur » à « modèle », étiquetée : régler les paramètres du modèle pour minimiser l'erreur de prédiction — et répéter." title="L'épine dorsale du module : données → modèle → erreur → généraliser, avec au cœur la boucle d'entraînement (régler les paramètres du modèle pour minimiser l'erreur de prédiction, encore et encore)." loading="lazy" >}}
 
 Chaque algorithme classique que nous rencontrerons — du plus bête au plus
 astucieux — n'est qu'une **variation** sur cette même trame. Une fois cette trame
@@ -64,6 +71,8 @@ correctement (et la question devient passionnante si on lui montre, au lieu d'un
 chat ou d'un chien… une vache !). Bien généraliser est le véritable objectif de
 l'AA — et l'un des sens les plus concrets qu'on puisse donner au mot
 « apprendre ».
+
+{{< image src="/images/module2/memoriser-vs-apprendre.svg" alt="Une image marquée d'un point d'interrogation se présente, et une question la trie : « fait-elle partie des 1000 images déjà vues ? ». À gauche, la branche « oui — elle est dans le lot » : une grille de vignettes dont l'une, en ambre, est justement celle qu'on cherchait ; « elle est là, il suffit de la retrouver ». Verdict : facile, et sans intérêt — une machine range et retrouve sans effort. À droite, la branche « non — elle est inédite » : la même grille, mais l'image se tient à l'écart, séparée par un trait pointillé ; « elle n'est nulle part dans le lot ». Verdict : difficile, et c'est tout l'enjeu — trancher sans l'avoir jamais vue, c'est-à-dire généraliser. En bas : un modèle ne vaut que par ce qu'il fait du second cas." title="Les deux sorts possibles d'une image qui se présente. Si elle figure parmi les 1000 déjà vues, la retrouver est trivial ; si elle est inédite, il faut trancher sans précédent — et c'est là, et seulement là, qu'un modèle se juge." loading="lazy" >}}
 
 ## Le parcours du module
 

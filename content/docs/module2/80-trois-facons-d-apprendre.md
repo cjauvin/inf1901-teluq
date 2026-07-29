@@ -204,9 +204,10 @@ partagent la même charpente : celle, précisément, qui a couru tout au long de
 module.
 
 Rappelez-vous le chemin. On part de **données**, qu'on décrit par des nombres —
-des points dans un espace. On choisit un **modèle** : une fonction réglée par des
-paramètres. On mesure son **erreur**. On règle alors les paramètres pour la
-**minimiser** — le plus souvent en dévalant la pente par descente de gradient. Et
+des points dans un espace. On choisit un **modèle** : une fonction de prédiction,
+réglée par des paramètres. On mesure son **erreur** de prédiction. On règle alors
+les paramètres du modèle pour la **minimiser** — le plus souvent en dévalant la
+pente par descente de gradient. Et
 l'on vérifie qu'il **généralise** au-delà des exemples appris. Tout ce que nous
 avons croisé n'est qu'une variation sur cette grammaire : le modèle bête et son
 unique nombre, kNN et ses zéro paramètre, la droite et ses deux, la régression
