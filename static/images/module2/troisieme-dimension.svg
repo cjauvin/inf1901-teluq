@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg viewBox="0 0 700 470" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">
 <title>La réponse comme troisième dimension, à deux valeurs</title>
-<desc>Une vue en perspective. Le plan horizontal porte les deux mêmes axes qu'auparavant : la superficie et l'année de construction. La réponse à la question « vendue en moins de 30 jours ? » occupe un troisième axe, vertical — mais un axe qui ne comporte que deux niveaux : 0 pour non, en bas, et 1 pour oui, en haut. Chaque maison se pose donc sur l'un ou l'autre de deux plans superposés. Vu d'en haut, ce dessin redonne exactement le nuage où la réponse était codée par une couleur.</desc>
+<desc>Une vue en perspective. Le plan horizontal porte les deux mêmes axes qu'auparavant : la distance au centre et l'année de construction. La réponse à la question « vendue en moins de 30 jours ? » occupe un troisième axe, vertical — mais un axe qui ne comporte que deux niveaux : 0 pour non, en bas, et 1 pour oui, en haut. Chaque maison se pose donc sur l'un ou l'autre de deux plans superposés. Vu d'en haut, ce dessin redonne exactement le nuage où la réponse était codée par une couleur.</desc>
 <rect x="0" y="0" width="700" height="470" rx="14" fill="#efe7d3" stroke="#d9cbac"/>
 <polygon points="150.0,348.0 400.0,400.0 504.0,316.0 254.0,264.0" fill="rgba(196,86,74,0.07)" stroke="#cbbd9c" stroke-width="1.5"/>
 <g fill="#c4564a" stroke="#efe7d3" stroke-width="1.4">
-<circle cx="206.2" cy="342.7" r="6.5"/>
-<circle cx="246.0" cy="337.3" r="6.5"/>
-<circle cx="263.0" cy="347.6" r="6.5"/>
-<circle cx="278.5" cy="364.5" r="6.5"/>
-<circle cx="374.3" cy="311.2" r="6.5"/>
-<circle cx="358.9" cy="355.7" r="6.5"/>
-<circle cx="363.4" cy="378.8" r="6.5"/>
-<circle cx="407.0" cy="381.0" r="6.5"/>
+<circle cx="312.5" cy="367.2" r="6.5"/>
+<circle cx="373.1" cy="365.3" r="6.5"/>
+<circle cx="301.1" cy="357.6" r="6.5"/>
+<circle cx="370.1" cy="386.5" r="6.5"/>
+<circle cx="280.6" cy="289.6" r="6.5"/>
+<circle cx="350.7" cy="355.1" r="6.5"/>
+<circle cx="281.1" cy="364.3" r="6.5"/>
+<circle cx="390.2" cy="379.7" r="6.5"/>
 </g>
 <line x1="150.0" y1="348.0" x2="150.0" y2="154.0" stroke="#8a7d6e" stroke-width="1.8"/>
 <line x1="143.0" y1="348.0" x2="150.0" y2="348.0" stroke="#8a7d6e" stroke-width="1.6"/>
@@ -25,20 +25,20 @@
 <text x="76.0" y="153.0" font-size="11.5" fill="#7a6f63" text-anchor="middle" font-style="italic">deux niveaux seulement</text>
 <polygon points="150.0,180.0 400.0,232.0 504.0,148.0 254.0,96.0" fill="rgba(58,110,165,0.07)" stroke="#cbbd9c" stroke-width="1.5"/>
 <g fill="#3a6ea5" stroke="#efe7d3" stroke-width="1.4">
-<circle cx="224.5" cy="135.9" r="6.5"/>
-<circle cx="261.9" cy="116.4" r="6.5"/>
-<circle cx="275.7" cy="134.6" r="6.5"/>
-<circle cx="241.4" cy="183.7" r="6.5"/>
-<circle cx="340.6" cy="127.6" r="6.5"/>
-<circle cx="310.6" cy="157.2" r="6.5"/>
-<circle cx="356.1" cy="144.5" r="6.5"/>
-<circle cx="368.1" cy="158.9" r="6.5"/>
-<circle cx="388.4" cy="147.8" r="6.5"/>
-<circle cx="432.5" cy="141.6" r="6.5"/>
-<circle cx="425.2" cy="174.2" r="6.5"/>
-<circle cx="450.1" cy="167.5" r="6.5"/>
+<circle cx="246.2" cy="139.9" r="6.5"/>
+<circle cx="302.7" cy="122.5" r="6.5"/>
+<circle cx="249.5" cy="127.8" r="6.5"/>
+<circle cx="338.5" cy="206.5" r="6.5"/>
+<circle cx="298.8" cy="116.2" r="6.5"/>
+<circle cx="279.7" cy="150.5" r="6.5"/>
+<circle cx="275.2" cy="125.9" r="6.5"/>
+<circle cx="244.1" cy="132.2" r="6.5"/>
+<circle cx="315.8" cy="130.7" r="6.5"/>
+<circle cx="304.2" cy="111.9" r="6.5"/>
+<circle cx="249.8" cy="137.0" r="6.5"/>
+<circle cx="290.1" cy="132.7" r="6.5"/>
 </g>
-<text x="266.0" y="408.0" font-size="13.5" fill="#3a3531" text-anchor="middle" transform="rotate(11.7 266.0 408.0)">superficie</text>
+<text x="266.0" y="408.0" font-size="13.5" fill="#3a3531" text-anchor="middle" transform="rotate(11.7 266.0 408.0)">distance</text>
 <text x="195.2" y="288.8" font-size="13.5" fill="#3a3531" text-anchor="middle" transform="rotate(-38.9 195.2 288.8)">année</text>
 <text x="350" y="446" font-size="13" fill="#5b5249" text-anchor="middle">La réponse a bel et bien son propre axe — mais un axe qui ne compte que deux barreaux.</text>
 </svg>

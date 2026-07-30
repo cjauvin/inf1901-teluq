@@ -3,9 +3,9 @@
 # Usage  : uv run scripts/gen_troisieme_dim.py
 #
 # Les maisons viennent de gen_maisons.py — source de vérité unique du fil rouge.
-# Le plan du sol reprend les deux axes du nuage colorié de la p. 10 (superficie
-# et année de construction), pour que la p. 30 puisse dire, sans mentir, que ce
-# relief vu d'en haut redonne ce nuage-là.
+# Le plan du sol reprend les deux axes du nuage colorié de la p. 10 (distance au
+# centre et année de construction), pour que la p. 30 puisse dire, sans mentir,
+# que ce relief vu d'en haut redonne ce nuage-là.
 #
 # Prévisualiser : qlmanage -t -s 900 -o /tmp <fichier>.svg
 
@@ -17,19 +17,19 @@ from gen_maisons import MAISONS
 
 BLUE, RED = "#3a6ea5", "#c4564a"
 
-M2_MIN, M2_MAX = 100, 290
-AN_MIN, AN_MAX = 1962, 2024
+KM_MIN, KM_MAX = 0, 27
+AN_MIN, AN_MAX = 1964, 2022
 
 DATA = [
-    ((m2 - M2_MIN) / (M2_MAX - M2_MIN),
+    ((km - KM_MIN) / (KM_MAX - KM_MIN),
      (annee - AN_MIN) / (AN_MAX - AN_MIN),
      "oui" if vite else "non")
-    for m2, annee, _prix, vite in MAISONS
+    for _m2, annee, km, _prix, vite in MAISONS
 ]
 
 W, H = 700, 470
 OX, OY = 150, 348
-AXx, AXy = 250.0, 52.0     # axe superficie : vers la droite, un peu vers le bas
+AXx, AXy = 250.0, 52.0     # axe distance : vers la droite, un peu vers le bas
 AYx, AYy = 104.0, -84.0    # axe année : vers la droite, vers le haut (profondeur)
 ZH = 168.0                 # hauteur entre le barreau 0 et le barreau 1
 
@@ -40,7 +40,7 @@ L = []
 L.append('<?xml version="1.0" encoding="UTF-8"?>')
 L.append(f'<svg viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">')
 L.append("<title>La réponse comme troisième dimension, à deux valeurs</title>")
-L.append("<desc>Une vue en perspective. Le plan horizontal porte les deux mêmes axes qu'auparavant : la superficie et l'année de construction. La réponse à la question « vendue en moins de 30 jours ? » occupe un troisième axe, vertical — mais un axe qui ne comporte que deux niveaux : 0 pour non, en bas, et 1 pour oui, en haut. Chaque maison se pose donc sur l'un ou l'autre de deux plans superposés. Vu d'en haut, ce dessin redonne exactement le nuage où la réponse était codée par une couleur.</desc>")
+L.append("<desc>Une vue en perspective. Le plan horizontal porte les deux mêmes axes qu'auparavant : la distance au centre et l'année de construction. La réponse à la question « vendue en moins de 30 jours ? » occupe un troisième axe, vertical — mais un axe qui ne comporte que deux niveaux : 0 pour non, en bas, et 1 pour oui, en haut. Chaque maison se pose donc sur l'un ou l'autre de deux plans superposés. Vu d'en haut, ce dessin redonne exactement le nuage où la réponse était codée par une couleur.</desc>")
 L.append(f'<rect x="0" y="0" width="{W}" height="{H}" rx="14" fill="#efe7d3" stroke="#d9cbac"/>')
 
 def sheet(z, fill, stroke):
@@ -80,7 +80,7 @@ dots(1, "oui", BLUE)
 import math
 ax, ay = P(0.5, 0, 0)
 angA = math.degrees(math.atan2(AXy, AXx))
-L.append(f'<text x="{ax-9:.1f}" y="{ay+34:.1f}" font-size="13.5" fill="#3a3531" text-anchor="middle" transform="rotate({angA:.1f} {ax-9:.1f} {ay+34:.1f})">superficie</text>')
+L.append(f'<text x="{ax-9:.1f}" y="{ay+34:.1f}" font-size="13.5" fill="#3a3531" text-anchor="middle" transform="rotate({angA:.1f} {ax-9:.1f} {ay+34:.1f})">distance</text>')
 bx, by = P(0, 0.55, 0)
 angB = math.degrees(math.atan2(AYy, AYx))
 L.append(f'<text x="{bx-12:.1f}" y="{by-13:.1f}" font-size="13.5" fill="#3a3531" text-anchor="middle" transform="rotate({angB:.1f} {bx-12:.1f} {by-13:.1f})">année</text>')

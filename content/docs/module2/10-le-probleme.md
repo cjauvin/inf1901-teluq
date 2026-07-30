@@ -139,15 +139,17 @@ Avant d'aller plus loin, remarquons quelque chose. Un agent immobilier ne se pos
 pas *une* question sur une maison, mais au moins deux. La première, on vient de
 la voir : **combien vaut-elle ?** La seconde est tout aussi pratique :
 **va-t-elle partir vite ?** Nos registres de ventes le savent, eux aussi — il
-suffit d'y regarder une colonne de plus :
+suffit d'y regarder deux colonnes de plus. La réponse, bien sûr ; mais aussi un
+renseignement qui ne nous avait servi à rien jusqu'ici, et qui va se révéler
+décisif : à quelle **distance du centre-ville** se trouve la maison.
 
-| Superficie (m²) | Année | Chambres | Prix | Vendue en moins de 30 jours ? |
-|---|---|---|---|---|
-| 180 | 1995 | 4 | 420 000 \\$ | oui |
-| 150 | 1980 | 3 | 350 000 \\$ | non |
-| 220 | 2010 | 5 | 580 000 \\$ | oui |
-| 130 | 1972 | 3 | 310 000 \\$ | non |
-| … | … | … | … | … |
+| Superficie (m²) | Année | Chambres | Distance du centre (km) | Prix | Vendue en moins de 30 jours ? |
+|---|---|---|---|---|---|
+| 180 | 1995 | 4 | 8 | 420 000 \\$ | oui |
+| 150 | 1980 | 3 | 21 | 350 000 \\$ | non |
+| 220 | 2010 | 5 | 9 | 580 000 \\$ | oui |
+| 130 | 1972 | 3 | 16 | 310 000 \\$ | non |
+| … | … | … | … | … | … |
 
 Les deux questions portent sur les **mêmes maisons**, décrites par les **mêmes
 renseignements**. Et pourtant les réponses attendues n'ont rien à voir : d'un
@@ -167,35 +169,36 @@ jusqu'à la forme du modèle.
 
 Remarquez au passage un détail qui a son importance : pour cette seconde
 question, le **prix devient un renseignement comme un autre** — une colonne parmi
-les autres, au même titre que l'année de construction ou le nombre de chambres.
+les autres, au même titre que l'année de construction ou la distance du centre.
 Ce qui était la *réponse* à trouver dans le premier cas devient une *donnée de
 départ* dans le second. La table, elle, n'a pas bougé : c'est la **question qu'on
 lui pose** qui change.
 
 On peut d'ailleurs *voir* ce changement — à condition de regarder au bon endroit.
-Gardons la superficie en abscisse, mais portons cette fois en ordonnée l'**année
-de construction**, et colorons chaque maison selon la réponse à notre nouvelle
-question :
+Laissons de côté la superficie et le prix, et dessinons nos maisons dans un tout
+autre plan : la **distance du centre** en abscisse, l'**année de construction**
+en ordonnée. Puis colorons chacune selon la réponse à notre nouvelle question :
 
-{{< image src="/images/module2/maisons-vendues.svg" alt="Les mêmes maisons, dans un autre plan : la superficie reste en abscisse, mais l'ordonnée porte cette fois l'année de construction. Chaque point est coloré selon qu'il s'est vendu en moins de 30 jours (en bleu) ou qu'il a traîné (en rouge). Les deux couleurs forment deux amas nettement détachés, séparés par une bande vide au milieu du dessin : les maisons récentes en haut, en bleu ; les anciennes en bas, en rouge. Deux points traversent ce vide — une vieille maison partie vite, une récente qui a traîné." title="Les mêmes maisons, une autre question — et un autre plan. Ce n'est plus la hauteur du point qu'on cherche à deviner, mais sa couleur." loading="lazy" >}}
+{{< image src="/images/module2/maisons-vendues.svg" alt="Les mêmes maisons, dans un tout autre plan : la distance du centre-ville en abscisse, l'année de construction en ordonnée. Chaque point est coloré selon qu'il s'est vendu en moins de 30 jours (en bleu) ou qu'il a traîné (en rouge). Les points forment deux amas compacts, logés dans des coins opposés du dessin et séparés par un large vide : en haut à gauche, en bleu, les maisons proches du centre et récentes ; en bas à droite, en rouge, les maisons éloignées et anciennes. Deux points traversent ce vide — une vieille maison éloignée partie vite, une récente et proche qui a traîné." title="Les mêmes maisons, une autre question — et un autre plan. Ce n'est plus la hauteur du point qu'on cherche à deviner, mais sa couleur." loading="lazy" >}}
 
 Le contraste avec le premier dessin saute aux yeux. Là, ce qu'on cherchait à
 deviner était la **hauteur** du point — sa position sur une échelle continue.
-Ici, la hauteur est *donnée* : ce qu'on cherche, c'est la **couleur**. Et le
-motif saute aux yeux : les points se rassemblent en **deux amas**, séparés par
-une bande vide — les maisons récentes partent vite, les plus anciennes
-traînent. Deux exceptions seulement traversent ce vide.
+Ici, les deux coordonnées sont *données* : ce qu'on cherche, c'est la
+**couleur**. Et le motif saute aux yeux — les points se rassemblent en **deux
+amas** logés dans des coins opposés, avec un large vide entre eux. Proche du
+centre et récente : la maison part vite. Éloignée et ancienne : elle traîne.
+Deux exceptions seulement traversent ce vide.
 
-Pourquoi avoir changé d'axe, au fait ? Parce que dans le dessin précédent — la
+Pourquoi avoir changé de plan, au fait ? Parce que dans le dessin précédent — la
 superficie et le prix — les deux couleurs se seraient mêlées sans rien laisser
-voir. Le motif était bien là, mais pas dans ces renseignements-là. Retenez ce
-détail : il annonce une leçon qui reviendra tout au long du module. La difficulté
-d'un problème tient souvent moins à la machinerie qu'on lui oppose qu'au choix de
-**ce qu'on décide de regarder**.
+voir. Le motif était bien là, dans le registre, mais pas dans ces
+renseignements-là. Retenez ce détail : il annonce une leçon qui reviendra tout au
+long du module. La difficulté d'un problème tient souvent moins à la machinerie
+qu'on lui oppose qu'au choix de **ce qu'on décide de regarder**.
 
 Un mot sur cette couleur, justement. Elle règle un problème d'encombrement : nous
 avons désormais **trois** renseignements à faire tenir sur une page plate — la
-superficie, l'année, et la réponse. Les deux premiers occupent les axes ; pour le
+distance, l'année, et la réponse. Les deux premiers occupent les axes ; pour le
 troisième, il ne reste plus de place, alors on l'encode autrement. Ce n'est là
 qu'une commodité de dessin, et nous verrons bientôt qu'on peut faire mieux.
 

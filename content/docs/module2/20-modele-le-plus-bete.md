@@ -111,14 +111,15 @@ proportion des réponses le modèle obtient justes**. Notre prédicteur jumeau, 
 répond « oui » à tout, aura donc raison dans 60 % des cas : voilà l'étalon à
 battre.
 
-{{< image src="/images/module2/maisons-erreurs-oui-non.svg" alt="Exactement le nuage coloré de la page précédente — les mêmes maisons, aux mêmes places, la superficie en abscisse et l'année de construction en ordonnée. Mais toutes sont maintenant bleues : le modèle répond « oui » — vendue en moins de 30 jours — pour chacune, sans jamais les regarder. Un ✗ rouge barre celles qui avaient en réalité traîné, c'est-à-dire précisément celles qui étaient rouges sur la figure d'origine : ce sont ses erreurs, et elles se concentrent dans l'amas du bas, celui des maisons anciennes." title="Le prédicteur jumeau à l'œuvre. Il peint toutes les maisons en « oui » ; les ✗ marquent celles où il se trompe. On ne mesure plus un écart en dollars — on compte les réponses justes." loading="lazy" >}}
+{{< image src="/images/module2/maisons-erreurs-oui-non.svg" alt="Exactement le nuage coloré de la page précédente — les mêmes maisons, aux mêmes places, la distance du centre-ville en abscisse et l'année de construction en ordonnée. Mais toutes sont maintenant bleues : le modèle répond « oui » — vendue en moins de 30 jours — pour chacune, sans jamais les regarder. Un ✗ rouge barre celles qui avaient en réalité traîné, c'est-à-dire précisément celles qui étaient rouges sur la figure d'origine : ce sont ses erreurs, et elles remplissent presque tout l'amas du bas à droite, celui des maisons éloignées et anciennes." title="Le prédicteur jumeau à l'œuvre. Il peint toutes les maisons en « oui » ; les ✗ marquent celles où il se trompe. On ne mesure plus un écart en dollars — on compte les réponses justes." loading="lazy" >}}
 
 C'est le nuage coloré de la page précédente, à l'identique : les **mêmes
 maisons**, aux mêmes places. Seule leur couleur a changé — le modèle répondant
 « oui » partout, il les peint toutes en bleu, et les ✗ signalent celles qui
-étaient rouges. Remarquez que les ✗ se groupent en bas du dessin, du côté des
-maisons anciennes : c'est là que le prédicteur bête se trompe, et c'est bien
-normal, puisqu'il répond « oui » sans jamais regarder l'année.
+étaient rouges. Remarquez où ils tombent : presque tous dans l'amas du bas à
+droite, celui des maisons éloignées et anciennes. Le prédicteur bête s'y trompe
+en bloc — et c'est bien normal, puisqu'il répond « oui » sans jamais regarder ni
+la distance ni l'année.
 
 Comparez maintenant avec le graphique des écarts de prix, quelques lignes plus
 haut. Les axes ne sont pas les mêmes — ils ne peuvent pas l'être, les deux
