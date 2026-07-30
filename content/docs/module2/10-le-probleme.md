@@ -175,7 +175,7 @@ On peut d'ailleurs *voir* ce changement. Reprenons exactement le même dessin �
 superficie en abscisse, le prix en ordonnée — mais colorons cette fois chaque
 maison selon la réponse à notre nouvelle question :
 
-{{< image src="/images/module2/maisons-vendues.svg" alt="Le même nuage de points, superficie en abscisse et prix en ordonnée, mais chaque maison est maintenant colorée selon qu'elle s'est vendue en moins de 30 jours (en bleu) ou qu'elle a traîné (en rouge). Les points bleus forment une bande inférieure, les rouges une bande supérieure : à superficie égale, les maisons les moins chères partent vite. Deux points font exception, chacun dans la bande de l'autre couleur." title="Les mêmes maisons, une autre question. Ce n'est plus la hauteur du point qu'on cherche à deviner, mais sa couleur." loading="lazy" >}}
+{{< image src="/images/module2/maisons-vendues.svg" alt="Le même nuage de points, superficie en abscisse et prix en ordonnée, mais chaque maison est maintenant colorée selon qu'elle s'est vendue en moins de 30 jours (en bleu) ou qu'elle a traîné (en rouge). Les points bleus forment une bande inférieure, les rouges une bande supérieure : à superficie égale, les maisons les moins chères partent vite. Trois points refusent d'entrer dans le rang : deux maisons bon marché pour leur superficie qui ont pourtant traîné, et une maison chère partie vite." title="Les mêmes maisons, une autre question. Ce n'est plus la hauteur du point qu'on cherche à deviner, mais sa couleur." loading="lazy" >}}
 
 Le contraste avec le dessin précédent saute aux yeux. Là, ce qu'on cherchait à
 deviner était la **hauteur** du point — sa position sur une échelle continue.

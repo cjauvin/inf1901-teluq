@@ -5,23 +5,19 @@
 <defs>
 <marker id="arrErr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#c4564a" stroke-width="1.7"/></marker>
 </defs>
-
 <rect x="0" y="0" width="660" height="460" rx="14" fill="#efe7d3" stroke="#d9cbac"/>
 
-<!-- lignes de repère horizontales -->
 <g stroke="#e0d4b8" stroke-width="1">
 <line x1="80" y1="351.7" x2="630" y2="351.7"/>
 <line x1="80" y1="238.3" x2="630" y2="238.3"/>
 <line x1="80" y1="125" x2="630" y2="125"/>
 </g>
 
-<!-- axes -->
 <g stroke="#b8a888" stroke-width="1.6">
 <line x1="80" y1="40" x2="80" y2="380"/>
 <line x1="80" y1="380" x2="630" y2="380"/>
 </g>
 
-<!-- graduations + étiquettes axe X (superficie) -->
 <g stroke="#b8a888" stroke-width="1.4">
 <line x1="80" y1="380" x2="80" y2="386"/>
 <line x1="224.7" y1="380" x2="224.7" y2="386"/>
@@ -36,7 +32,6 @@
 <text x="355" y="430" font-size="15" fill="#3a3531">superficie (m²)</text>
 </g>
 
-<!-- graduations + étiquettes axe Y (prix) -->
 <g stroke="#b8a888" stroke-width="1.4">
 <line x1="74" y1="351.7" x2="80" y2="351.7"/>
 <line x1="74" y1="238.3" x2="80" y2="238.3"/>
@@ -48,43 +43,55 @@
 <text x="68" y="129.5">700 k$</text>
 </g>
 <text x="18" y="210" font-size="15" fill="#3a3531" text-anchor="middle" transform="rotate(-90 18 210)">prix de vente</text>
-
-<!-- baseline : prédiction constante = prix moyen -->
 <line x1="80" y1="238.3" x2="630" y2="238.3" stroke="#9a5b33" stroke-width="2.6" stroke-dasharray="7 4"/>
-<text x="624" y="255" font-size="13" fill="#9a5b33" text-anchor="end" font-weight="600">toujours 500 k$</text>
-
-<!-- erreurs : segments verticaux du point à la prédiction -->
+<text x="624" y="230.3" font-size="13" fill="#9a5b33" text-anchor="end" font-weight="600">toujours 500 k$</text>
 <g stroke="#c4564a" stroke-width="1.8" opacity="0.85">
-<line x1="123" y1="357" x2="123" y2="238.3"/>
-<line x1="167" y1="346" x2="167" y2="238.3"/>
-<line x1="225" y1="323" x2="225" y2="238.3"/>
-<line x1="268" y1="318" x2="268" y2="238.3"/>
-<line x1="312" y1="284" x2="312" y2="238.3"/>
-<line x1="355" y1="233" x2="355" y2="238.3"/>
-<line x1="427" y1="193" x2="427" y2="238.3"/>
-<line x1="471" y1="182" x2="471" y2="238.3"/>
-<line x1="529" y1="108" x2="529" y2="238.3"/>
-<line x1="587" y1="57" x2="587" y2="238.3"/>
+<line x1="114.7" y1="365.9" x2="114.7" y2="238.3"/>
+<line x1="137.9" y1="351.7" x2="137.9" y2="238.3"/>
+<line x1="155.2" y1="272.3" x2="155.2" y2="238.3"/>
+<line x1="166.8" y1="346.0" x2="166.8" y2="238.3"/>
+<line x1="195.8" y1="326.2" x2="195.8" y2="238.3"/>
+<line x1="224.7" y1="323.3" x2="224.7" y2="238.3"/>
+<line x1="242.1" y1="227.0" x2="242.1" y2="238.3"/>
+<line x1="253.6" y1="297.8" x2="253.6" y2="238.3"/>
+<line x1="282.6" y1="280.8" x2="282.6" y2="238.3"/>
+<line x1="299.9" y1="198.6" x2="299.9" y2="238.3"/>
+<line x1="311.5" y1="283.7" x2="311.5" y2="238.3"/>
+<line x1="334.7" y1="161.8" x2="334.7" y2="238.3"/>
+<line x1="357.8" y1="187.3" x2="357.8" y2="238.3"/>
+<line x1="392.6" y1="229.8" x2="392.6" y2="238.3"/>
+<line x1="427.3" y1="192.9" x2="427.3" y2="238.3"/>
+<line x1="444.6" y1="122.1" x2="444.6" y2="238.3"/>
+<line x1="462.0" y1="194.1" x2="462.0" y2="238.3"/>
+<line x1="508.3" y1="172.0" x2="508.3" y2="238.3"/>
+<line x1="531.5" y1="72.7" x2="531.5" y2="238.3"/>
+<line x1="554.6" y1="160.1" x2="554.6" y2="238.3"/>
 </g>
-
-<!-- nuage de points -->
 <g fill="#2f6f6a" stroke="#efe7d3" stroke-width="1.5">
-<circle cx="123" cy="357" r="6.5"/>
-<circle cx="167" cy="346" r="6.5"/>
-<circle cx="225" cy="323" r="6.5"/>
-<circle cx="268" cy="318" r="6.5"/>
-<circle cx="312" cy="284" r="6.5"/>
-<circle cx="355" cy="233" r="6.5"/>
-<circle cx="427" cy="193" r="6.5"/>
-<circle cx="471" cy="182" r="6.5"/>
-<circle cx="529" cy="108" r="6.5"/>
-<circle cx="587" cy="57" r="6.5"/>
+<circle cx="114.7" cy="365.9" r="6.5"/>
+<circle cx="137.9" cy="351.7" r="6.5"/>
+<circle cx="155.2" cy="272.3" r="6.5"/>
+<circle cx="166.8" cy="346.0" r="6.5"/>
+<circle cx="195.8" cy="326.2" r="6.5"/>
+<circle cx="224.7" cy="323.3" r="6.5"/>
+<circle cx="242.1" cy="227.0" r="6.5"/>
+<circle cx="253.6" cy="297.8" r="6.5"/>
+<circle cx="282.6" cy="280.8" r="6.5"/>
+<circle cx="299.9" cy="198.6" r="6.5"/>
+<circle cx="311.5" cy="283.7" r="6.5"/>
+<circle cx="334.7" cy="161.8" r="6.5"/>
+<circle cx="357.8" cy="187.3" r="6.5"/>
+<circle cx="392.6" cy="229.8" r="6.5"/>
+<circle cx="427.3" cy="192.9" r="6.5"/>
+<circle cx="444.6" cy="122.1" r="6.5"/>
+<circle cx="462.0" cy="194.1" r="6.5"/>
+<circle cx="508.3" cy="172.0" r="6.5"/>
+<circle cx="531.5" cy="72.7" r="6.5"/>
+<circle cx="554.6" cy="160.1" r="6.5"/>
 </g>
-
-<!-- étiquette « erreur » en haut + flèches vers deux segments (un au-dessus, un en dessous) -->
-<text x="330" y="50" font-size="15" fill="#c4564a" text-anchor="middle" font-weight="700">erreur du modèle</text>
+<text x="250" y="62" font-size="15" fill="#c4564a" text-anchor="middle" font-weight="700">erreur du modèle</text>
 <g stroke="#c4564a" stroke-width="1.6" fill="none" stroke-dasharray="5 3">
-<line x1="352" y1="58" x2="465" y2="208" marker-end="url(#arrErr)"/>
-<line x1="312" y1="58" x2="274" y2="272" marker-end="url(#arrErr)"/>
+<line x1="215" y1="74" x2="117.5" y2="292" marker-end="url(#arrErr)"/>
+<line x1="300" y1="74" x2="427.3" y2="218" marker-end="url(#arrErr)"/>
 </g>
 </svg>
