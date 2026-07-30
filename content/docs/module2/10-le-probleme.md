@@ -177,13 +177,14 @@ Gardons la superficie en abscisse, mais portons cette fois en ordonnée l'**ann�
 de construction**, et colorons chaque maison selon la réponse à notre nouvelle
 question :
 
-{{< image src="/images/module2/maisons-vendues.svg" alt="Les mêmes maisons, dans un autre plan : la superficie reste en abscisse, mais l'ordonnée porte cette fois l'année de construction. Chaque point est coloré selon qu'il s'est vendu en moins de 30 jours (en bleu) ou qu'il a traîné (en rouge). Les deux couleurs se séparent nettement de part et d'autre des années 1990 : les maisons récentes en haut, en bleu ; les anciennes en bas, en rouge. Deux points refusent d'entrer dans le rang — une vieille maison partie vite, une récente qui a traîné." title="Les mêmes maisons, une autre question — et un autre plan. Ce n'est plus la hauteur du point qu'on cherche à deviner, mais sa couleur." loading="lazy" >}}
+{{< image src="/images/module2/maisons-vendues.svg" alt="Les mêmes maisons, dans un autre plan : la superficie reste en abscisse, mais l'ordonnée porte cette fois l'année de construction. Chaque point est coloré selon qu'il s'est vendu en moins de 30 jours (en bleu) ou qu'il a traîné (en rouge). Les deux couleurs forment deux amas nettement détachés, séparés par une bande vide au milieu du dessin : les maisons récentes en haut, en bleu ; les anciennes en bas, en rouge. Deux points traversent ce vide — une vieille maison partie vite, une récente qui a traîné." title="Les mêmes maisons, une autre question — et un autre plan. Ce n'est plus la hauteur du point qu'on cherche à deviner, mais sa couleur." loading="lazy" >}}
 
 Le contraste avec le premier dessin saute aux yeux. Là, ce qu'on cherchait à
 deviner était la **hauteur** du point — sa position sur une échelle continue.
-Ici, la hauteur est *donnée* : ce qu'on cherche, c'est la **couleur**. Et un
-motif se laisse déjà entrevoir : les maisons récentes partent vite, les plus
-anciennes traînent — avec deux exceptions qui refusent d'entrer dans le rang.
+Ici, la hauteur est *donnée* : ce qu'on cherche, c'est la **couleur**. Et le
+motif saute aux yeux : les points se rassemblent en **deux amas**, séparés par
+une bande vide — les maisons récentes partent vite, les plus anciennes
+traînent. Deux exceptions seulement traversent ce vide.
 
 Pourquoi avoir changé d'axe, au fait ? Parce que dans le dessin précédent — la
 superficie et le prix — les deux couleurs se seraient mêlées sans rien laisser

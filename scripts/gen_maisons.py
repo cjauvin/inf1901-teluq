@@ -42,28 +42,40 @@ OUT = Path(__file__).resolve().parent.parent / "static" / "images" / "module2"
 # parfaitement les oui des non.
 #
 # Le prix suit la tendance ~3 k$ par m², avec un bruit de quelques dizaines de
-# milliers. La catégorie, elle, bascule autour de 1990 — avec deux rebelles.
+# milliers : dans ce plan-là, le nuage doit se lire comme une droite.
+#
+# Deux exigences gouvernent les années, et elles comptent autant l'une que
+# l'autre :
+#
+#   1. un **vide franc** entre 1984 et 1994. Sans lui, les deux couleurs
+#      forment des bandes accolées, pas deux amas ; le vide joue pour la
+#      classification le rôle que la droite joue pour la régression ;
+#   2. les deux classes se **répartissent pareillement sur la superficie**.
+#      Sinon la catégorie transparaîtrait dans le plan superficie × prix, et la
+#      p. 10 ne pourrait plus dire qu'on ne l'y voit pas.
+#
+# Deux rebelles traversent le vide, une dans chaque sens.
 MAISONS = [
-    (112, 1974, 271, True),    # exception : ancienne, et pourtant partie vite
-    (120, 1978, 272, False),
+    (112, 1997, 271, True),
+    (120, 2013, 272, True),
     (130, 1972, 310, False),   # table
-    (142, 2012, 361, True),
+    (142, 2004, 361, True),
     (150, 1980, 350, False),   # table
-    (158, 1969, 364, False),
-    (168, 1998, 437, True),
-    (176, 1986, 445, False),
+    (158, 1971, 364, True),    # exception : ancienne, et pourtant partie vite
+    (168, 1976, 437, False),
+    (176, 2016, 445, True),
     (180, 1995, 420, True),    # table
-    (190, 2016, 457, True),
-    (198, 1975, 519, False),
-    (208, 1992, 561, True),
-    (216, 1999, 545, True),
+    (190, 1968, 457, False),
+    (198, 2008, 519, True),
+    (208, 2011, 561, False),   # exception : récente, et pourtant a traîné
+    (216, 2001, 545, True),
     (220, 2010, 580, True),    # table
-    (232, 2003, 607, False),   # exception : récente, et pourtant a traîné
-    (242, 2001, 637, True),
-    (252, 1966, 674, False),
-    (262, 2019, 701, True),
-    (272, 1996, 729, True),
-    (280, 2014, 760, True),
+    (232, 1983, 607, False),
+    (242, 2019, 637, True),
+    (252, 1970, 674, False),
+    (262, 1999, 701, True),
+    (272, 2006, 729, True),
+    (280, 1974, 760, False),
 ]
 
 # Le nombre de chambres de la table suit la superficie ; il ne sert à aucune
@@ -80,7 +92,7 @@ TEAL, BRUN, ROUGE, BLEU = "#2f6f6a", "#9a5b33", "#c4564a", "#3a6ea5"
 # ── Repères ───────────────────────────────────────────────────────────────────
 # Abscisse commune : superficie, 100 m² → x=80 puis 2,894 px par m².
 # Ordonnée « prix »  : 300 k$ → y=351,7 ; 500 k$ → 238,3 ; 700 k$ → 125.
-# Ordonnée « année » : 1970  → y=351,7 ; 1995  → 238,3 ; 2020  → 125.
+# Ordonnée « année » : 1970  → y=351,7 ; 1990  → 238,3 ; 2010  → 125.
 def px(m2):
     return 80 + (m2 - 100) * 2.894
 
@@ -90,7 +102,7 @@ def py(prix_k):
 
 
 def pa(annee):
-    return 351.7 - (annee - 1970) * 4.536
+    return 351.7 - (annee - 1970) * 5.67
 
 
 def cadre(hauteur, ordonnee="prix"):
@@ -99,7 +111,7 @@ def cadre(hauteur, ordonnee="prix"):
         crans = [("300 k$", 351.7), ("500 k$", 238.3), ("700 k$", 125)]
         titre_y = "prix de vente"
     else:
-        crans = [("1970", 351.7), ("1995", 238.3), ("2020", 125)]
+        crans = [("1970", 351.7), ("1990", 238.3), ("2010", 125)]
         titre_y = "année de construction"
 
     grille = "\n".join(f'<line x1="80" y1="{y}" x2="630" y2="{y}"/>' for _, y in crans)
@@ -225,8 +237,9 @@ FIGURES["maisons-vendues"] = entete(
     "Les mêmes maisons, dans un autre plan : la superficie reste en abscisse, mais l'ordonnée "
     "porte cette fois l'année de construction. Chaque point est colorié selon la réponse à la "
     "seconde question : en bleu les maisons vendues en moins de 30 jours, en rouge celles qui ont "
-    "traîné. Les deux couleurs se séparent nettement de part et d'autre des années 1990 — les "
-    "maisons récentes partent vite, les anciennes traînent — avec deux exceptions.",
+    "traîné. Les deux couleurs forment deux amas nettement détachés, séparés par une bande vide : "
+    "les maisons récentes en haut, en bleu ; les anciennes en bas, en rouge — avec deux "
+    "exceptions, une de chaque côté.",
     ordonnee="annee",
 ) + points(BLEU, 7, "annee", seulement=True) + "\n" + points(ROUGE, 7, "annee", seulement=False) + f"""
 <circle cx="176" cy="458" r="7" fill="{BLEU}" stroke="{FOND}" stroke-width="1.5"/>

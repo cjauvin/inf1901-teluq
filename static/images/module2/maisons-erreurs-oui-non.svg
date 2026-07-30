@@ -37,43 +37,43 @@
 </g>
 <g font-size="13" fill="#5b5249" text-anchor="end">
 <text x="68" y="356.2">1970</text>
-<text x="68" y="242.8">1995</text>
-<text x="68" y="129.5">2020</text>
+<text x="68" y="242.8">1990</text>
+<text x="68" y="129.5">2010</text>
 </g>
 <text x="18" y="210" font-size="15" fill="#3a3531" text-anchor="middle" transform="rotate(-90 18 210)">année de construction</text>
 
 <text x="96" y="64" font-size="15" fill="#3a6ea5" text-anchor="start" font-weight="700">le modèle a répondu « oui » pour toutes les maisons</text>
 <g fill="#3a6ea5" stroke="#efe7d3" stroke-width="1.5">
-<circle cx="114.7" cy="333.6" r="7"/>
-<circle cx="137.9" cy="315.4" r="7"/>
-<circle cx="166.8" cy="342.6" r="7"/>
-<circle cx="201.5" cy="161.2" r="7"/>
-<circle cx="224.7" cy="306.3" r="7"/>
-<circle cx="247.9" cy="356.2" r="7"/>
-<circle cx="276.8" cy="224.7" r="7"/>
-<circle cx="299.9" cy="279.1" r="7"/>
-<circle cx="311.5" cy="238.3" r="7"/>
-<circle cx="340.5" cy="143.0" r="7"/>
-<circle cx="363.6" cy="329.0" r="7"/>
-<circle cx="392.6" cy="251.9" r="7"/>
-<circle cx="415.7" cy="220.2" r="7"/>
-<circle cx="427.3" cy="170.3" r="7"/>
-<circle cx="462.0" cy="202.0" r="7"/>
-<circle cx="490.9" cy="211.1" r="7"/>
-<circle cx="519.9" cy="369.8" r="7"/>
-<circle cx="548.8" cy="129.4" r="7"/>
-<circle cx="577.8" cy="233.8" r="7"/>
-<circle cx="600.9" cy="152.1" r="7"/>
+<circle cx="114.7" cy="198.6" r="7"/>
+<circle cx="137.9" cy="107.9" r="7"/>
+<circle cx="166.8" cy="340.4" r="7"/>
+<circle cx="201.5" cy="158.9" r="7"/>
+<circle cx="224.7" cy="295.0" r="7"/>
+<circle cx="247.9" cy="346.0" r="7"/>
+<circle cx="276.8" cy="317.7" r="7"/>
+<circle cx="299.9" cy="90.9" r="7"/>
+<circle cx="311.5" cy="209.9" r="7"/>
+<circle cx="340.5" cy="363.0" r="7"/>
+<circle cx="363.6" cy="136.2" r="7"/>
+<circle cx="392.6" cy="119.2" r="7"/>
+<circle cx="415.7" cy="175.9" r="7"/>
+<circle cx="427.3" cy="124.9" r="7"/>
+<circle cx="462.0" cy="278.0" r="7"/>
+<circle cx="490.9" cy="73.9" r="7"/>
+<circle cx="519.9" cy="351.7" r="7"/>
+<circle cx="548.8" cy="187.3" r="7"/>
+<circle cx="577.8" cy="147.6" r="7"/>
+<circle cx="600.9" cy="329.0" r="7"/>
 </g>
 <g stroke="#c4564a" stroke-width="1.8" fill="none" stroke-linecap="round">
-<path d="M127.9 305.4 L147.9 325.4 M127.9 325.4 L147.9 305.4"/>
-<path d="M156.8 332.6 L176.8 352.6 M156.8 352.6 L176.8 332.6"/>
-<path d="M214.7 296.3 L234.7 316.3 M214.7 316.3 L234.7 296.3"/>
-<path d="M237.9 346.2 L257.9 366.2 M237.9 366.2 L257.9 346.2"/>
-<path d="M289.9 269.1 L309.9 289.1 M289.9 289.1 L309.9 269.1"/>
-<path d="M353.6 319.0 L373.6 339.0 M353.6 339.0 L373.6 319.0"/>
-<path d="M452.0 192.0 L472.0 212.0 M452.0 212.0 L472.0 192.0"/>
-<path d="M509.9 359.8 L529.9 379.8 M509.9 379.8 L529.9 359.8"/>
+<path d="M156.8 330.4 L176.8 350.4 M156.8 350.4 L176.8 330.4"/>
+<path d="M214.7 285.0 L234.7 305.0 M214.7 305.0 L234.7 285.0"/>
+<path d="M266.8 307.7 L286.8 327.7 M266.8 327.7 L286.8 307.7"/>
+<path d="M330.5 353.0 L350.5 373.0 M330.5 373.0 L350.5 353.0"/>
+<path d="M382.6 109.2 L402.6 129.2 M382.6 129.2 L402.6 109.2"/>
+<path d="M452.0 268.0 L472.0 288.0 M452.0 288.0 L472.0 268.0"/>
+<path d="M509.9 341.7 L529.9 361.7 M509.9 361.7 L529.9 341.7"/>
+<path d="M590.9 319.0 L610.9 339.0 M590.9 339.0 L610.9 319.0"/>
 </g>
 <circle cx="147" cy="452" r="7" fill="#3a6ea5" stroke="#efe7d3" stroke-width="1.5"/>
 <text x="163" y="456" font-size="14" fill="#3a3531" text-anchor="start">prédiction du modèle : « oui », vendue en moins de 30 jours</text>
