@@ -84,7 +84,8 @@ porte un nom que vous rencontrerez partout :
 - prédire un **nombre** — un prix, une température, une durée — s'appelle une
   **régression** ;
 - prédire une **catégorie** — vendue vite ou non, pourriel ou courriel, chat ou
-  chien — s'appelle une **classification**.
+  chien, ou encore lequel des dix chiffres est écrit sur une enveloppe —
+  s'appelle une **classification**.
 
 Rien de plus : la seule chose qui les distingue est la **nature de la cible**.
 C'est pourtant l'une des partitions les plus utiles du domaine, car presque tout

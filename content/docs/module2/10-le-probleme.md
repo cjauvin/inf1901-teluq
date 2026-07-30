@@ -155,6 +155,16 @@ côté un **nombre** — 420 000 \\$, 385 200 \\$, n'importe quelle valeur sur u
 échelle continue ; de l'autre un **choix entre deux réponses possibles**, oui ou
 non. On ne peut pas faire la « moyenne » de *oui* et de *non*.
 
+Cette différence n'est pas cosmétique : elle change jusqu'au sens du mot **se
+tromper**. Prédire 405 000 \\$ pour une maison vendue 420 000 \\$, c'est se
+tromper — mais de peu, et on sait exactement de combien : 15 000 \\$. Répondre
+*oui* pour une maison qui a traîné, en revanche, c'est se tromper, point. Il n'y
+a pas de « presque oui », pas de demi-erreur, aucune distance entre les deux
+réponses possibles. D'un côté un écart qu'on peut mesurer ; de l'autre, une
+réponse juste ou fausse. Nous verrons que cette asymétrie se propage à tout le
+reste : à la manière de deviner bêtement, à la manière de mesurer l'erreur, et
+jusqu'à la forme du modèle.
+
 Remarquez au passage un détail qui a son importance : pour cette seconde
 question, le **prix devient un renseignement comme un autre** — une maison trop
 chère pour ce qu'elle offre risque de traîner. Ce qui était la *réponse* à
@@ -189,6 +199,15 @@ verrons alors que presque tout ce qu'on aura appris sur l'une vaut aussi pour
 l'autre. C'est d'ailleurs à cette seconde famille qu'appartiennent **plusieurs**
 des exemples du début de ce chapitre — reconnaître un chat, repérer un pourriel :
 autant de questions dont la réponse n'est pas un nombre, mais **une catégorie**.
+
+Et rien n'oblige une catégorie à n'avoir que deux valeurs. *Quel animal est sur
+cette photo — un chat, un chien, un cheval ?* *Quel chiffre est écrit sur cette
+enveloppe ?* — dix réponses possibles. *Dans quelle langue ce message est-il
+rédigé ?* Ce qui compte n'est pas le *nombre* de réponses, mais leur **nature** :
+une liste de possibilités distinctes, qu'on ne peut ni moyenner ni ranger sur une
+échelle. Entre *chat* et *chien*, il n'y a rien — pas plus qu'entre *oui* et
+*non*. La question que posent nos registres, avec ses deux réponses, n'est que le
+cas le plus simple de cette famille.
 
 Par où commencer ? Avant de bâtir quoi que ce soit de sophistiqué, posons-nous
 une question presque naïve : quelle est la prédiction la plus *bête* qu'on
