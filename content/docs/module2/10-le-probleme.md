@@ -166,27 +166,35 @@ reste : à la manière de deviner bêtement, à la manière de mesurer l'erreur,
 jusqu'à la forme du modèle.
 
 Remarquez au passage un détail qui a son importance : pour cette seconde
-question, le **prix devient un renseignement comme un autre** — une maison trop
-chère pour ce qu'elle offre risque de traîner. Ce qui était la *réponse* à
-trouver dans le premier cas devient une *donnée de départ* dans le second. La
-table, elle, n'a pas bougé : c'est la **question qu'on lui pose** qui change.
+question, le **prix devient un renseignement comme un autre** — une colonne parmi
+les autres, au même titre que l'année de construction ou le nombre de chambres.
+Ce qui était la *réponse* à trouver dans le premier cas devient une *donnée de
+départ* dans le second. La table, elle, n'a pas bougé : c'est la **question qu'on
+lui pose** qui change.
 
-On peut d'ailleurs *voir* ce changement. Reprenons exactement le même dessin — la
-superficie en abscisse, le prix en ordonnée — mais colorons cette fois chaque
-maison selon la réponse à notre nouvelle question :
+On peut d'ailleurs *voir* ce changement — à condition de regarder au bon endroit.
+Gardons la superficie en abscisse, mais portons cette fois en ordonnée l'**année
+de construction**, et colorons chaque maison selon la réponse à notre nouvelle
+question :
 
-{{< image src="/images/module2/maisons-vendues.svg" alt="Le même nuage de points, superficie en abscisse et prix en ordonnée, mais chaque maison est maintenant colorée selon qu'elle s'est vendue en moins de 30 jours (en bleu) ou qu'elle a traîné (en rouge). Les points bleus forment une bande inférieure, les rouges une bande supérieure : à superficie égale, les maisons les moins chères partent vite. Trois points refusent d'entrer dans le rang : deux maisons bon marché pour leur superficie qui ont pourtant traîné, et une maison chère partie vite." title="Les mêmes maisons, une autre question. Ce n'est plus la hauteur du point qu'on cherche à deviner, mais sa couleur." loading="lazy" >}}
+{{< image src="/images/module2/maisons-vendues.svg" alt="Les mêmes maisons, dans un autre plan : la superficie reste en abscisse, mais l'ordonnée porte cette fois l'année de construction. Chaque point est coloré selon qu'il s'est vendu en moins de 30 jours (en bleu) ou qu'il a traîné (en rouge). Les deux couleurs se séparent nettement de part et d'autre des années 1990 : les maisons récentes en haut, en bleu ; les anciennes en bas, en rouge. Deux points refusent d'entrer dans le rang — une vieille maison partie vite, une récente qui a traîné." title="Les mêmes maisons, une autre question — et un autre plan. Ce n'est plus la hauteur du point qu'on cherche à deviner, mais sa couleur." loading="lazy" >}}
 
-Le contraste avec le dessin précédent saute aux yeux. Là, ce qu'on cherchait à
+Le contraste avec le premier dessin saute aux yeux. Là, ce qu'on cherchait à
 deviner était la **hauteur** du point — sa position sur une échelle continue.
 Ici, la hauteur est *donnée* : ce qu'on cherche, c'est la **couleur**. Et un
-motif se laisse déjà entrevoir : à superficie comparable, les maisons les moins
-chères partent vite, les plus chères traînent — avec, là encore, des exceptions
-qui refusent d'entrer dans le rang.
+motif se laisse déjà entrevoir : les maisons récentes partent vite, les plus
+anciennes traînent — avec deux exceptions qui refusent d'entrer dans le rang.
+
+Pourquoi avoir changé d'axe, au fait ? Parce que dans le dessin précédent — la
+superficie et le prix — les deux couleurs se seraient mêlées sans rien laisser
+voir. Le motif était bien là, mais pas dans ces renseignements-là. Retenez ce
+détail : il annonce une leçon qui reviendra tout au long du module. La difficulté
+d'un problème tient souvent moins à la machinerie qu'on lui oppose qu'au choix de
+**ce qu'on décide de regarder**.
 
 Un mot sur cette couleur, justement. Elle règle un problème d'encombrement : nous
 avons désormais **trois** renseignements à faire tenir sur une page plate — la
-superficie, le prix, et la réponse. Les deux premiers occupent les axes ; pour le
+superficie, l'année, et la réponse. Les deux premiers occupent les axes ; pour le
 troisième, il ne reste plus de place, alors on l'encode autrement. Ce n'est là
 qu'une commodité de dessin, et nous verrons bientôt qu'on peut faire mieux.
 

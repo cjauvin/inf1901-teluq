@@ -111,13 +111,19 @@ proportion des réponses le modèle obtient justes**. Notre prédicteur jumeau, 
 répond « oui » à tout, aura donc raison dans 60 % des cas : voilà l'étalon à
 battre.
 
-{{< image src="/images/module2/maisons-erreurs-oui-non.svg" alt="Exactement le nuage coloré de la page précédente — les mêmes maisons, aux mêmes places, la superficie en abscisse et le prix en ordonnée. Mais toutes sont maintenant bleues : le modèle répond « oui » — vendue en moins de 30 jours — pour chacune, sans jamais les regarder. Un ✗ rouge barre celles qui avaient en réalité traîné, c'est-à-dire précisément celles qui étaient rouges sur la figure d'origine : ce sont ses erreurs." title="Le prédicteur jumeau à l'œuvre. Il peint toutes les maisons en « oui » ; les ✗ marquent celles où il se trompe. On ne mesure plus un écart en dollars — on compte les réponses justes." loading="lazy" >}}
+{{< image src="/images/module2/maisons-erreurs-oui-non.svg" alt="Exactement le nuage coloré de la page précédente — les mêmes maisons, aux mêmes places, la superficie en abscisse et l'année de construction en ordonnée. Mais toutes sont maintenant bleues : le modèle répond « oui » — vendue en moins de 30 jours — pour chacune, sans jamais les regarder. Un ✗ rouge barre celles qui avaient en réalité traîné, c'est-à-dire précisément celles qui étaient rouges sur la figure d'origine : ce sont ses erreurs." title="Le prédicteur jumeau à l'œuvre. Il peint toutes les maisons en « oui » ; les ✗ marquent celles où il se trompe. On ne mesure plus un écart en dollars — on compte les réponses justes." loading="lazy" >}}
 
 C'est le nuage coloré de la page précédente, à l'identique : les **mêmes
 maisons**, aux mêmes places. Seule leur couleur a changé — le modèle répondant
 « oui » partout, il les peint toutes en bleu, et les ✗ signalent celles qui
-étaient rouges. Comparez maintenant avec le graphique des écarts de prix, un peu
-plus haut. Là, chaque maison portait un segment plus ou moins long, et l'erreur
+étaient rouges. Remarquez que les ✗ se groupent en bas du dessin, du côté des
+maisons anciennes : c'est là que le prédicteur bête se trompe, et c'est bien
+normal, puisqu'il répond « oui » sans jamais regarder l'année.
+
+Comparez maintenant avec le graphique des écarts de prix, quelques lignes plus
+haut. Les axes ne sont pas les mêmes — ils ne peuvent pas l'être, les deux
+questions ne se lisant pas dans le même plan —, mais ce n'est pas là qu'est le
+contraste. Là, chaque maison portait un segment plus ou moins long, et l'erreur
 se **mesurait** ; ici, chaque maison est simplement juste ou fausse, et l'erreur
 se **compte**.
 

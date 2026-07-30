@@ -64,7 +64,7 @@ Nous y avions dessiné les mêmes maisons en coloriant chaque point selon qu'ell
 s'était vendue vite ou non — faute de place pour un troisième axe. Maintenant que
 nous savons que la cible est un nombre, nous pouvons lui **donner cet axe** :
 
-{{< image src="/images/module2/troisieme-dimension.svg" alt="Vue en perspective des mêmes maisons. Le plan horizontal porte deux caractéristiques, la superficie et le prix. La cible occupe un troisième axe, vertical, qui ne comporte que deux niveaux : 0 (non) en bas et 1 (oui) en haut. Chaque maison se pose donc sur l'un ou l'autre de deux plans superposés — les maisons vendues vite sur le plan du haut, celles qui ont traîné sur celui du bas." title="La cible a bel et bien son propre axe : simplement, quand elle est une catégorie, cet axe ne compte que deux barreaux, 0 et 1." loading="lazy" >}}
+{{< image src="/images/module2/troisieme-dimension.svg" alt="Vue en perspective des mêmes maisons. Le plan horizontal porte deux caractéristiques, la superficie et l'année de construction. La cible occupe un troisième axe, vertical, qui ne comporte que deux niveaux : 0 (non) en bas et 1 (oui) en haut. Chaque maison se pose donc sur l'un ou l'autre de deux plans superposés — les maisons vendues vite sur le plan du haut, celles qui ont traîné sur celui du bas." title="La cible a bel et bien son propre axe : simplement, quand elle est une catégorie, cet axe ne compte que deux barreaux, 0 et 1." loading="lazy" >}}
 
 Les maisons ne flottent plus à n'importe quelle hauteur : elles se posent sur
 l'un ou l'autre de **deux plans**. Et l'on passe d'un dessin à l'autre sans rien
@@ -73,7 +73,7 @@ trait pour trait le nuage colorié du premier chapitre. Cette couleur, c'était
 l'ombre portée de ce troisième axe.
 
 Attention toutefois à ne pas confondre : cet axe-là n'est pas de même nature que
-les autres. La superficie et le prix sont des **caractéristiques**, elles
+les autres. La superficie et l'année sont des **caractéristiques**, elles
 *décrivent* la maison et forment l'espace où elle vit ; la cible, elle, est ce
 qu'on **cherche**. Dans tout ce qui suit, quand nous parlerons des *dimensions*
 d'un objet, il s'agira toujours des caractéristiques.

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg viewBox="0 0 660 500" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">
 <title>Les mêmes maisons, mais la réponse est maintenant une catégorie</title>
-<desc>Le même nuage de points : chaque maison est placée selon sa superficie (axe horizontal) et son prix (axe vertical). Cette fois, ce n'est plus la hauteur du point qu'on cherche à prédire, mais sa couleur : en bleu les maisons vendues en moins de 30 jours, en rouge celles qui ont traîné. Les maisons peu chères pour leur superficie (sous la tendance générale) partent vite ; les plus chères pour ce qu'elles offrent traînent — avec trois exceptions.</desc>
+<desc>Les mêmes maisons, dans un autre plan : la superficie reste en abscisse, mais l'ordonnée porte cette fois l'année de construction. Chaque point est colorié selon la réponse à la seconde question : en bleu les maisons vendues en moins de 30 jours, en rouge celles qui ont traîné. Les deux couleurs se séparent nettement de part et d'autre des années 1990 — les maisons récentes partent vite, les anciennes traînent — avec deux exceptions.</desc>
 
 <rect x="0" y="0" width="660" height="500" rx="14" fill="#efe7d3" stroke="#d9cbac"/>
 
@@ -36,34 +36,34 @@
 <line x1="74" y1="125" x2="80" y2="125"/>
 </g>
 <g font-size="13" fill="#5b5249" text-anchor="end">
-<text x="68" y="356">300 k$</text>
-<text x="68" y="242.8">500 k$</text>
-<text x="68" y="129.5">700 k$</text>
+<text x="68" y="356.2">1970</text>
+<text x="68" y="242.8">1995</text>
+<text x="68" y="129.5">2020</text>
 </g>
-<text x="18" y="210" font-size="15" fill="#3a3531" text-anchor="middle" transform="rotate(-90 18 210)">prix de vente</text>
+<text x="18" y="210" font-size="15" fill="#3a3531" text-anchor="middle" transform="rotate(-90 18 210)">année de construction</text>
 <g fill="#3a6ea5" stroke="#efe7d3" stroke-width="1.5">
-<circle cx="114.7" cy="365.9" r="7"/>
-<circle cx="137.9" cy="351.7" r="7"/>
-<circle cx="195.8" cy="326.2" r="7"/>
-<circle cx="253.6" cy="297.8" r="7"/>
-<circle cx="282.6" cy="280.8" r="7"/>
-<circle cx="311.5" cy="283.7" r="7"/>
-<circle cx="357.8" cy="187.3" r="7"/>
-<circle cx="392.6" cy="229.8" r="7"/>
-<circle cx="427.3" cy="192.9" r="7"/>
-<circle cx="462.0" cy="194.1" r="7"/>
-<circle cx="508.3" cy="172.0" r="7"/>
-<circle cx="554.6" cy="160.1" r="7"/>
+<circle cx="114.7" cy="333.6" r="7"/>
+<circle cx="201.5" cy="161.2" r="7"/>
+<circle cx="276.8" cy="224.7" r="7"/>
+<circle cx="311.5" cy="238.3" r="7"/>
+<circle cx="340.5" cy="143.0" r="7"/>
+<circle cx="392.6" cy="251.9" r="7"/>
+<circle cx="415.7" cy="220.2" r="7"/>
+<circle cx="427.3" cy="170.3" r="7"/>
+<circle cx="490.9" cy="211.1" r="7"/>
+<circle cx="548.8" cy="129.4" r="7"/>
+<circle cx="577.8" cy="233.8" r="7"/>
+<circle cx="600.9" cy="152.1" r="7"/>
 </g>
 <g fill="#c4564a" stroke="#efe7d3" stroke-width="1.5">
-<circle cx="155.2" cy="272.3" r="7"/>
-<circle cx="166.8" cy="346.0" r="7"/>
-<circle cx="224.7" cy="323.3" r="7"/>
-<circle cx="242.1" cy="227.0" r="7"/>
-<circle cx="299.9" cy="198.6" r="7"/>
-<circle cx="334.7" cy="161.8" r="7"/>
-<circle cx="444.6" cy="122.1" r="7"/>
-<circle cx="531.5" cy="72.7" r="7"/>
+<circle cx="137.9" cy="315.4" r="7"/>
+<circle cx="166.8" cy="342.6" r="7"/>
+<circle cx="224.7" cy="306.3" r="7"/>
+<circle cx="247.9" cy="356.2" r="7"/>
+<circle cx="299.9" cy="279.1" r="7"/>
+<circle cx="363.6" cy="329.0" r="7"/>
+<circle cx="462.0" cy="202.0" r="7"/>
+<circle cx="519.9" cy="369.8" r="7"/>
 </g>
 <circle cx="176" cy="458" r="7" fill="#3a6ea5" stroke="#efe7d3" stroke-width="1.5"/>
 <text x="192" y="462" font-size="14" fill="#3a3531" text-anchor="start">vendue en moins de 30 jours</text>
