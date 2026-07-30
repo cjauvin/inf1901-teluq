@@ -111,6 +111,16 @@ proportion des réponses le modèle obtient justes**. Notre prédicteur jumeau, 
 répond « oui » à tout, aura donc raison dans 60 % des cas : voilà l'étalon à
 battre.
 
+{{< image src="/images/module2/maisons-erreurs-oui-non.svg" alt="Exactement le nuage coloré de la page précédente — les mêmes maisons, aux mêmes places, la superficie en abscisse et le prix en ordonnée. Mais toutes sont maintenant bleues : le modèle répond « oui » — vendue en moins de 30 jours — pour chacune, sans jamais les regarder. Un ✗ rouge barre celles qui avaient en réalité traîné, c'est-à-dire précisément celles qui étaient rouges sur la figure d'origine : ce sont ses erreurs." title="Le prédicteur jumeau à l'œuvre. Il peint toutes les maisons en « oui » ; les ✗ marquent celles où il se trompe. On ne mesure plus un écart en dollars — on compte les réponses justes." loading="lazy" >}}
+
+C'est le nuage coloré de la page précédente, à l'identique : les **mêmes
+maisons**, aux mêmes places. Seule leur couleur a changé — le modèle répondant
+« oui » partout, il les peint toutes en bleu, et les ✗ signalent celles qui
+étaient rouges. Comparez maintenant avec le graphique des écarts de prix, un peu
+plus haut. Là, chaque maison portait un segment plus ou moins long, et l'erreur
+se **mesurait** ; ici, chaque maison est simplement juste ou fausse, et l'erreur
+se **compte**.
+
 {{% hint warning %}}
 Cet étalon-là réserve une surprise, et elle est instructive. Imaginez une question
 bien plus déséquilibrée : *ce courriel est-il un pourriel ?*, dans une boîte où
