@@ -138,19 +138,32 @@ peut donc masquer un modèle sans la moindre valeur. Nous y reviendrons : *bien*
 mesurer la qualité d'un modèle est autrement plus subtil qu'il n'y paraît.
 {{% /hint %}}
 
-## Son défaut, et ce qu'il révèle
+## Leur défaut, et ce qu'il révèle
 
-Le défaut de notre modèle saute aux yeux : il accorde le **même** prix à un
-studio et à un manoir. Il n'a, à aucun moment, *regardé* la maison qu'on lui
-présente. Toute l'information utile — la superficie, l'âge, le nombre de chambres
-— est là, sous ses yeux, et il la jette.
+Nos deux modèles ont le **même** défaut, et il saute aux yeux. Le premier accorde
+le même prix à un studio et à un manoir. Le second promet une vente rapide aussi
+bien à une maison neuve près du centre qu'à une vieille bicoque à vingt-cinq
+kilomètres de là. Ni l'un ni l'autre n'a, à aucun moment, *regardé* la maison
+qu'on lui présente. Toute l'information utile — la superficie, l'âge, la distance
+— est là, sous leurs yeux, et ils la jettent.
 
-C'est précisément là que se loge la marge de progression. Si le prix moyen est
-notre meilleur point de départ *tant qu'on ignore tout* d'une maison, alors la
-seule façon de faire mieux est de **cesser de l'ignorer** : tenir compte de ses
-caractéristiques. Une grande maison devrait tirer la prédiction vers le haut ;
-une vieille bicoque, vers le bas. Un bon modèle, ce sera un modèle qui *écoute*
-l'entrée.
+Les deux dernières figures le montrent d'ailleurs de façon frappante, et il vaut
+la peine de s'y arrêter : **les erreurs ne sont pas dispersées au hasard**. Les
+segments les plus longs se trouvaient tous aux extrémités du nuage, du côté des
+maisons très bon marché ou très chères ; et les ✗ se massaient dans un seul coin
+du dessin, celui des maisons éloignées et anciennes. Or une erreur qui se
+concentre quelque part est une erreur qu'on peut **prévoir** — donc corriger.
+Si nos modèles se trompaient de façon parfaitement imprévisible, il n'y aurait
+rien à en tirer ; c'est justement parce que leurs ratés dessinent un motif qu'il
+reste du travail à faire.
+
+C'est précisément là que se loge la marge de progression. Si la moyenne — ou la
+réponse majoritaire — est notre meilleur point de départ *tant qu'on ignore tout*
+d'une maison, alors la seule façon de faire mieux est de **cesser de l'ignorer** :
+tenir compte de ses caractéristiques. Une grande maison devrait tirer la
+prédiction de prix vers le haut ; une vieille bicoque, vers le bas. Et une maison
+éloignée du centre devrait faire pencher la réponse du second modèle vers le
+« non ». Un bon modèle, ce sera un modèle qui *écoute* l'entrée.
 
 Mais avant de pouvoir s'en servir, encore faut-il savoir ce qu'« écouter
 l'entrée » signifie concrètement. Qu'est-ce, au juste, qu'une « donnée » pour une
