@@ -42,7 +42,8 @@ Mais répondre quoi ? Pas la moyenne, cette fois : on ne peut pas faire la moyen
 de « oui » et de « non ». La bêtise équivalente consiste à donner **la réponse la
 plus fréquente**, celle qui revient le plus souvent dans nos registres. Si, parmi
 les maisons déjà vendues, 60 % ont trouvé preneur en moins de trente jours, notre
-prédicteur bête répondra « oui » — toujours, pour un studio comme pour un manoir.
+prédicteur bête répondra « oui » — toujours, pour une maison neuve à deux pas du
+centre comme pour une bicoque des années 1970 perdue en banlieue.
 
 Deux questions de nature très différente, et pourtant la **même ossature** : une
 entrée qu'on ignore, une sortie constante, et une réponse tirée des seules
@@ -91,8 +92,8 @@ littéralement, rien appris d'utile.
 
 On peut rendre cette comparaison concrète sans la moindre formule : il suffit de
 mesurer **de combien un modèle se trompe, en moyenne**. Pour le prédicteur bête,
-l'écart entre le prix annoncé (toujours 500 000 \\$) et le vrai prix peut atteindre
-des centaines de milliers de dollars aux extrêmes. C'est exactement cette
+l'écart entre le prix annoncé (toujours 500 000 \\$) et le vrai prix dépasse
+250 000 \\$ aux extrêmes. C'est exactement cette
 « distance à la vérité » qu'un meilleur modèle cherchera à réduire. Nous lui
 donnerons plus loin un nom et une définition précise — la *fonction d'erreur* —,
 mais l'intuition suffit ici : un bon modèle, c'est un modèle qui se trompe moins.
@@ -142,16 +143,16 @@ mesurer la qualité d'un modèle est autrement plus subtil qu'il n'y paraît.
 
 Nos deux modèles ont le **même** défaut, et il saute aux yeux. Le premier accorde
 le même prix à un studio et à un manoir. Le second promet une vente rapide aussi
-bien à une maison neuve près du centre qu'à une vieille bicoque à vingt-cinq
+bien à une maison neuve près du centre qu'à une vieille bicoque à vingt
 kilomètres de là. Ni l'un ni l'autre n'a, à aucun moment, *regardé* la maison
 qu'on lui présente. Toute l'information utile — la superficie, l'âge, la distance
 — est là, sous leurs yeux, et ils la jettent.
 
 Les deux dernières figures le montrent d'ailleurs de façon frappante, et il vaut
 la peine de s'y arrêter : **les erreurs ne sont pas dispersées au hasard**. Les
-segments les plus longs se trouvaient tous aux extrémités du nuage, du côté des
-maisons très bon marché ou très chères ; et les ✗ se massaient dans un seul coin
-du dessin, celui des maisons éloignées et anciennes. Or une erreur qui se
+segments les plus longs se trouvent tous aux extrémités du nuage, du côté des
+maisons très bon marché ou très chères ; et les ✗ se massent dans un seul coin du
+dessin, celui des maisons éloignées et anciennes. Or une erreur qui se
 concentre quelque part est une erreur qu'on peut **prévoir** — donc corriger.
 Si nos modèles se trompaient de façon parfaitement imprévisible, il n'y aurait
 rien à en tirer ; c'est justement parce que leurs ratés dessinent un motif qu'il

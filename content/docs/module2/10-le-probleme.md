@@ -151,8 +151,8 @@ décisif : à quelle **distance du centre-ville** se trouve la maison.
 | 130 | 1972 | 3 | 16 | 310 000 \\$ | non |
 | … | … | … | … | … | … |
 
-Les deux questions portent sur les **mêmes maisons**, décrites par les **mêmes
-renseignements**. Et pourtant les réponses attendues n'ont rien à voir : d'un
+Les deux questions portent sur les **mêmes maisons**, tirées du **même
+registre**. Et pourtant les réponses attendues n'ont rien à voir : d'un
 côté un **nombre** — 420 000 \\$, 385 200 \\$, n'importe quelle valeur sur une
 échelle continue ; de l'autre un **choix entre deux réponses possibles**, oui ou
 non. On ne peut pas faire la « moyenne » de *oui* et de *non*.
