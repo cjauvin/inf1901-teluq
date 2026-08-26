@@ -53,7 +53,7 @@ de manière interactive et intuitive le fonctionnement des réseaux de neurones.
    nous avons vu dans le deuxième module avec la [régression logistique](docs/module2/60-apprentissage-supervisé/#la-régression-logistique)?
 
 4. Ajustez maintenant la valeur de "bruit" à 25, et appuyez sur le bouton
-   "régénérez" à quelques reprises. Est-ce que ceci rend la tâche de
+   "régénérer" à quelques reprises. Est-ce que ceci rend la tâche de
    classification plus facile ou plus difficile pour un algorithme
    d'apprentissage? Expliquez pourquoi.
 
