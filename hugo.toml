@@ -8,13 +8,11 @@ theme = 'hugo-book'
 
 # --- Paramètres du thème hugo-book ---
 [params]
-BookMenuBundle = "book"
 BookTheme = "auto"
 BookToC = true
 BookSearch = false
 BookPortableLinks = "warning"
 BookLogo = "images/paperclip-logo.png"
-BookFavicon = "images/paperclip-logo.png"
 
 [markup]
   [markup.goldmark]

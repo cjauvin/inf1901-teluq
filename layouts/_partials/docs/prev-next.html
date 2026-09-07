@@ -1,18 +1,15 @@
-{{/* Ceci est un override que j'ai ajouté pour faire en sorte que la page d'accueil ait un lien "next page", et qu'il soit à droite, même s'il y a aucun lien "prev" */}}
+{{/*
+  Surcharge du partial du thème (voir themes/hugo-book/layouts/_partials/docs/prev-next.html).
+  Différence : la page d'accueil est insérée en tête de la liste, pour qu'elle
+  ait un lien « suivant » — et ce lien est calé à droite même sans « précédent ».
+*/}}
+{{- with (partialCached "docs/menu-section" .Site) -}}
+  {{- $pages := partialCached "docs/menu-section-pages" . -}}
+  {{- $allPages := slice $.Site.Home | append $pages -}}
+  {{- $prev := $allPages.Next $ -}}
+  {{- $next := $allPages.Prev $ -}}
 
-{{ $bookSection := default "docs" .Site.Params.BookSection  }}
-{{ if eq $bookSection "*" }}
-  {{ $bookSection = "/" }}{{/* Backward compatibility */}}
-{{ end }}
-
-{{ with .Site.GetPage $bookSection }}
-  {{ $pages := partialCached "docs/prev-next-cache" .Pages }}
-  {{ $homepage := .Site.Home }}
-  {{ $allPages := slice $homepage | append $pages }}
-  {{ $prev := $allPages.Next $ }}
-  {{ $next := $allPages.Prev $ }}
-
-  {{- if or $prev $next }}
+  {{- if or $prev $next -}}
   <div class="flex flex-wrap justify-between">
     <span>
     {{ with $prev }}
@@ -31,5 +28,5 @@
     {{ end }}
     </span>
   </div>
-  {{ end -}}
-{{ end }}
+  {{- end -}}
+{{- end -}}

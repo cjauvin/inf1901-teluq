@@ -1,0 +1,45 @@
+p {
+  text-align: justify;
+}
+
+/* Ceci est une modif que j'ai faite avec claude code */
+/* Ensure consistent content width whether TOC is present or not */
+/* When there's no TOC, add a flex spacer to maintain consistent layout */
+/* Only apply this on non-mobile screens to avoid unwanted space in responsive mode */
+@media screen and (min-width: 56rem) {
+  .container.flex:not(:has(.book-toc))::after {
+    content: "";
+    flex: 0 0 var(--toc-width);
+  }
+}
+
+/* Ensure zoomed images appear above applets */
+.book-image input:checked + img {
+  z-index: 100 !important;
+}
+
+/* Centrer les images {{< image >}} et leur légende/crédit */
+.book-image {
+  display: block;
+  text-align: center;
+  margin: 1.25rem auto 0.4rem;
+}
+
+.image-credit {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.85em;
+  opacity: 0.7;
+  margin-top: 0;
+}
+
+/* Centrer les tableaux. Le thème les met en `display: block`, ce qui leur */
+/* donne toute la largeur ; `width: fit-content` les ramène à la largeur de */
+/* leur contenu, puis les marges auto les centrent. `max-width: 100%` garde le */
+/* défilement horizontal du thème pour un tableau plus large que la page. */
+.markdown table {
+  width: fit-content;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
