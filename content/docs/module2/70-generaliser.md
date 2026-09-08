@@ -139,7 +139,7 @@ vieille connaissance, kNN, dont l'unique réglage, le nombre de voisins $k$, agi
 précisément comme un curseur de souplesse. Reprenez l'applet ; cette fois, faites
 lentement glisser $k$ d'un bout à l'autre, et observez la frontière.
 
-{{< applet src="/html/applets/knn.html" >}}
+{{< applet src="/html/applets/knn.html" height="692" >}}
 
 À **$k = 1$**, chaque point ne consulte que son unique plus proche voisin : la
 frontière se contorsionne pour entourer le moindre exemple, forme des îlots

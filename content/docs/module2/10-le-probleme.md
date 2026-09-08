@@ -52,7 +52,7 @@ largement inconsciente. Nous ne savons pas *comment* nous faisons ; comment, dè
 lors, l'écrire ?
 
 <p style="text-align: center;">
-    <a href="https://xkcd.com/1425/"><img src="/images/xkcd1425.png" alt="XKCD 1425" style="width: 50%;"></a>
+    <a href="https://xkcd.com/1425/"><img src="/images/xkcd1425.png" alt="XKCD 1425" style="width: 50%; height: auto;" width="265" height="447"></a>
 </p>
 
 {{% hint info %}}

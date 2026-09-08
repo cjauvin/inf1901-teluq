@@ -9,6 +9,16 @@
 {{- $log     := .Get "log" | default "" -}}
 {{- $scale   := .Get "scale" | default "1.0" -}}
 
+{{/* Renseigner height avec la hauteur naturelle de l'applet, mesurée dans le
+     navigateur à la largeur de l'article (856 px à 1400 px de fenêtre) une
+     fois iframe-resizer stabilisé. Sans lui, l'iframe fait 150 px tant qu'il
+     n'est pas chargé, puis s'étire d'un coup : tout ce qui suit descend
+     d'autant, et une ancre visée depuis la table des matières se retrouve
+     décalée. Le chargement différé aggrave la chose, l'étirement survenant au
+     moment même où le lecteur passe devant. Même piège que pour les images,
+     voir docs/dimensions-image. L'applet doit aussi embarquer le script enfant
+     iframeResizer.contentWindow, sinon il reste à 150 px pour de bon. */}}
+
 {{/* Flag the page so we load the library once */}}
 {{- .Page.Scratch.Add "needs_iresizer" 1 -}}
 

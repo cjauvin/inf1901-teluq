@@ -58,7 +58,7 @@ ses deux paramètres à la main — exactement comme vous déplaciez la droite d
 régression au chapitre précédent. Vous pouvez aussi ajouter, retirer ou déplacer
 des points.
 
-{{< applet src="/html/applets/logistic-regression.html" >}}
+{{< applet src="/html/applets/logistic-regression.html" height="627" >}}
 
 Et l'erreur ? C'est le second changement. On ne peut plus mesurer une « distance
 verticale au point », puisqu'on ne prédit plus une valeur. Ce qu'on compte

@@ -45,7 +45,7 @@ le nuage.
 Essayez vous-même. Dans l'applet ci-dessous, déplacez la droite — vous ajustez
 ainsi m et b à la main — et cherchez la position qui colle le mieux aux points.
 
-{{< applet src="/html/applets/linear-regression.html" >}}
+{{< applet src="/html/applets/linear-regression.html" height="627" >}}
 
 ## Mesurer l'erreur
 
@@ -74,7 +74,7 @@ proche, à peine. La meilleure droite est celle où tous ces ressorts, tirant
 chacun de leur côté, s'équilibrent — la position de moindre tension. C'est
 *exactement* la droite de plus petite erreur. Jouez avec :
 
-{{< applet src="/html/applets/linear-regression-with-springs.html" >}}
+{{< applet src="/html/applets/linear-regression-with-springs.html" height="510" >}}
 
 Trouver cette droite idéale à la main, comme dans l'applet, reste faisable en
 deux dimensions. Mais comment une machine y parvient-elle *seule* — et même quand

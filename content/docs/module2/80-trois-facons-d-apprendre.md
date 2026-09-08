@@ -101,7 +101,7 @@ soit au plus près de la sienne. k-means fait exactement cela, par tâtonnements
 Essayez : dans l'applet, choisissez le nombre de groupes et regardez les centres
 migrer, pas à pas, vers le cœur des amas.
 
-{{< applet src="/html/applets/kmeans.html" >}}
+{{< applet src="/html/applets/kmeans.html" height="596" >}}
 
 Un point mérite qu'on s'y arrête. À première vue, ce résultat ressemble à de la
 classification — des points répartis en groupes de couleurs. Mais la différence
@@ -169,7 +169,7 @@ succès — d'où le nom. Voyez-le à l'œuvre : dans l'applet ci-dessous, un ag
 (le point jaune) cherche la sortie (**+1**) d'une petite grille en évitant un
 piège (**−1**), sans rien savoir au départ. Lancez l'entraînement.
 
-{{< applet src="/html/applets/reinforcement.html" >}}
+{{< applet src="/html/applets/reinforcement.html" height="728" >}}
 
 Au début, l'agent erre au hasard. Puis, épisode après épisode, une **carte de
 valeur** se dessine (les cases se teintent selon leur promesse) et une

@@ -105,7 +105,7 @@ connu ; le fond coloré, lui, montre la prédiction de kNN pour *tout* nouveau
 point qui s'y trouverait. Ajoutez des points, déplacez-les, faites varier **k**,
 et observez la frontière entre territoire rouge et territoire bleu se redessiner.
 
-{{< applet src="/html/applets/knn.html" >}}
+{{< applet src="/html/applets/knn.html" height="692" >}}
 
 ## Le choix de k
 

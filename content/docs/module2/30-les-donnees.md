@@ -220,7 +220,7 @@ touchent !
 Vous pouvez exécuter vous-même, pas à pas, une version interactive de ce
 mini-programme :
 
-{{< applet src="/html/applets/cpu-simulator.html" >}}
+{{< applet src="/html/applets/cpu-simulator.html" height="297" >}}
 
 **Niveau des langages de programmation**
 

@@ -139,3 +139,23 @@ p {
   opacity: 1;
   visibility: visible;
 }
+
+/* Hauteur maximale des images (repris d'INF1410).
+
+   Le thème ne contraint que la largeur (max-width: 100%) : une image en
+   format portrait s'étale sur toute la colonne et dépasse la hauteur d'un
+   écran. Le plafond porte sur la largeur et non sur la hauteur, à cause du
+   chargement différé : width et height posés par le shortcode sont des
+   indications de présentation qu'une déclaration width: auto écraserait, et
+   l'image non chargée occuperait alors zéro pixel — d'où les ancres qui se
+   dérobent. Plafonner la largeur échappe au problème, la hauteur suivant par
+   le rapport de forme. --largeur-plafond est calculée image par image par
+   docs/dimensions-image : la largeur à laquelle l'image atteint 700 px.
+
+   L'état agrandi au clic (input:checked) est exclu : le thème le passe en
+   position fixe plein écran. Limité à l'écran pour ne pas gêner l'impression. */
+@media screen {
+  .book-image input:not(:checked) + img {
+    max-width: min(100%, var(--largeur-plafond, 100%));
+  }
+}

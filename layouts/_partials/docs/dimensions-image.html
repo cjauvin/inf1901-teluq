@@ -1,0 +1,45 @@
+{{/* Dimensions intrinsèques d'une image servie depuis static/.
+
+     Sans width et height sur <img>, le navigateur ne réserve aucune place pour
+     une image en chargement différé : la page s'allonge au fil des chargements
+     et une ancre visée depuis la table des matières se dérobe pendant le
+     défilement. Ce partial renvoie de quoi poser ces deux attributs — et une
+     largeur plafond, voir assets/styles/custom.css.
+
+     Reçoit le chemin tel qu'écrit dans le contenu (« /images/… »). Renvoie un
+     dict {width, height, plafond}, vide si l'image est externe, introuvable ou
+     illisible. Les rasters passent par imageConfig ; les SVG, dont Hugo
+     n'expose pas les dimensions, par leur attribut viewBox — toutes les
+     figures du cours en ont un. */}}
+{{- $src := . -}}
+{{- $HAUTEUR_MAX := 700.0 -}}
+{{- $res := dict -}}
+{{- $url := urls.Parse $src -}}
+{{- if and (not $url.IsAbs) (hasPrefix $url.Path "/") -}}
+  {{- $path := printf "static%s" $url.Path -}}
+  {{- if fileExists $path -}}
+    {{- $w := 0.0 -}}
+    {{- $h := 0.0 -}}
+    {{- if strings.HasSuffix $path ".svg" -}}
+      {{- $vb := "" -}}
+      {{- with findRE `viewBox="[^"]+"` (os.ReadFile $path) 1 -}}{{- $vb = index . 0 -}}{{- end -}}
+      {{- $nums := findRE `-?[0-9.]+` $vb -}}
+      {{- if eq (len $nums) 4 -}}
+        {{- $w = float (index $nums 2) -}}
+        {{- $h = float (index $nums 3) -}}
+      {{- end -}}
+    {{- else -}}
+      {{- with try (imageConfig $path) -}}
+        {{- if not .Err -}}
+          {{- $w = float .Value.Width -}}
+          {{- $h = float .Value.Height -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if and (gt $w 0) (gt $h 0) -}}
+      {{- $plafond := math.Min $w (math.Round (mul $HAUTEUR_MAX (div $w $h))) -}}
+      {{- $res = dict "width" (int (math.Round $w)) "height" (int (math.Round $h)) "plafond" (int $plafond) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $res -}}

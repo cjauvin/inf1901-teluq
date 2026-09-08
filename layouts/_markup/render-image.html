@@ -1,0 +1,14 @@
+{{/* Surcharge du hook du thème (themes/hugo-book/layouts/_markup/render-image.html)
+     pour les images Markdown ![](…) : mêmes attributs width et height que le
+     shortcode image, pour la même raison — réserver la place avant chargement,
+     sinon les ancres de la table des matières dérivent. */}}
+{{- $destination := .Destination -}}
+{{- if .Page.Site.Params.BookPortableLinks -}}
+  {{- $destination = partial "docs/links/portable-image" . -}}
+{{- end -}}
+{{- $dimensions := "" -}}
+{{- with partial "docs/dimensions-image" .Destination -}}
+  {{- $dimensions = printf ` width="%d" height="%d"` .width .height -}}
+{{- end -}}
+<img src="{{ $destination | safeURL }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}" {{ end }}{{ $dimensions | safeHTMLAttr }}/>
+{{- /**/ -}}
