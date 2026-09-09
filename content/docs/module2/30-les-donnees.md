@@ -7,12 +7,12 @@ slug: les-donnees
 # Regarder les données
 
 La page précédente s'est close sur une exigence : pour faire mieux que la
-moyenne, un modèle doit *tenir compte* des caractéristiques d'une maison — sa
+moyenne, un modèle doit *tenir compte* des caractéristiques d'une maison : sa
 superficie, son âge, son nombre de chambres. Encore faut-il les lui présenter
 sous une forme qu'il puisse manipuler.
 
 Car une machine ne « voit » ni une maison, ni une photo, ni un courriel : elle
-ne manipule que des **nombres**. Toute la question — étonnamment profonde — est
+ne manipule que des **nombres**. Toute la question, étonnamment profonde, est
 donc celle-ci : comment transformer un objet du monde réel en nombres, sans en
 perdre l'essentiel ? C'est l'affaire de cette page, et un préalable à *tout* ce
 qui suivra.
@@ -20,7 +20,7 @@ qui suivra.
 ## Une maison, c'est une liste de nombres
 
 Reprenons notre table de maisons. Chaque ligne décrit une maison par quelques
-**caractéristiques** (en anglais *features*) — des grandeurs mesurables :
+**caractéristiques** (en anglais *features*), des grandeurs mesurables :
 
 | Superficie (m²) | Année | Chambres | Salles de bain | Prix |
 |---|---|---|---|---|
@@ -35,7 +35,7 @@ caractéristiques :
 $$\text{maison} \rightarrow (180,\ 1995,\ 4,\ 2)$$
 
 Cette liste ordonnée de nombres porte un nom : un **vecteur**. Peu importe
-l'objet — une maison, un client, un patient, un courriel — du moment qu'on sait
+l'objet (une maison, un client, un patient, un courriel), du moment qu'on sait
 le décrire par une poignée de grandeurs, il devient un vecteur de nombres, et
 c'est *cela* qu'un modèle reçoit en entrée.
 
@@ -49,26 +49,26 @@ fait pas partie de cette description — c'est justement la valeur qu'on cherche
 ### Et quand la cible est une catégorie ?
 
 Le prix est un nombre : il se prête sans difficulté à cette mise en forme. Mais
-souvenez-vous de notre seconde question — *cette maison va-t-elle partir vite ?*
+souvenez-vous de notre seconde question : *cette maison va-t-elle partir vite ?*
 Sa réponse, elle, est un **oui** ou un **non**. Or nous venons de le dire : une
 machine ne manipule que des nombres. Comment lui faire avaler un « oui » ?
 
 De la façon la plus simple qui soit : en décidant que **oui vaut 1 et non vaut
-0**. Le choix est arbitraire — on aurait pu prendre l'inverse, ou n'importe quel
-autre couple de valeurs — mais il a l'immense avantage de faire de la cible une
+0**. Le choix est arbitraire (on aurait pu prendre l'inverse, ou n'importe quel
+autre couple de valeurs), mais il a l'immense avantage de faire de la cible une
 grandeur comme une autre. Une fois cette convention posée, une catégorie n'est
 plus qu'un nombre, et tout ce qui suit s'applique sans changement.
 
 Cela permet aussi d'éclairer, rétrospectivement, un détail du premier chapitre.
 Nous y avions dessiné les mêmes maisons en coloriant chaque point selon qu'elle
-s'était vendue vite ou non — faute de place pour un troisième axe. Maintenant que
+s'était vendue vite ou non, faute de place pour un troisième axe. Maintenant que
 nous savons que la cible est un nombre, nous pouvons lui **donner cet axe** :
 
-{{< image src="/images/module2/troisieme-dimension.svg" alt="Vue en perspective des mêmes maisons. Le plan horizontal porte deux caractéristiques, la distance du centre et l'année de construction. La cible occupe un troisième axe, vertical, qui ne comporte que deux niveaux : 0 (non) en bas et 1 (oui) en haut. Chaque maison se pose donc sur l'un ou l'autre de deux plans superposés — les maisons vendues vite sur le plan du haut, celles qui ont traîné sur celui du bas." title="La cible a bel et bien son propre axe : simplement, quand elle est une catégorie, cet axe ne compte que deux barreaux, 0 et 1." loading="lazy" >}}
+{{< image src="/images/module2/troisieme-dimension.svg" alt="Vue en perspective des mêmes maisons. Le plan horizontal porte deux caractéristiques, la distance du centre et l'année de construction. La cible occupe un troisième axe, vertical, qui ne comporte que deux niveaux : 0 (non) en bas et 1 (oui) en haut. Chaque maison se pose donc sur l'un ou l'autre de deux plans superposés : les maisons vendues vite sur le plan du haut, celles qui ont traîné sur celui du bas." title="La cible a bel et bien son propre axe : simplement, quand elle est une catégorie, cet axe ne compte que deux barreaux, 0 et 1." loading="lazy" >}}
 
 Les maisons ne flottent plus à n'importe quelle hauteur : elles se posent sur
 l'un ou l'autre de **deux plans**. Et l'on passe d'un dessin à l'autre sans rien
-perdre — regardez ce relief *d'en haut*, à la verticale, et vous retrouverez
+perdre : regardez ce relief *d'en haut*, à la verticale, et vous retrouverez
 trait pour trait le nuage colorié du premier chapitre. Cette couleur, c'était
 l'ombre portée de ce troisième axe.
 
@@ -81,16 +81,16 @@ d'un objet, il s'agira toujours des caractéristiques.
 Nous tenons maintenant de quoi nommer ces deux familles de problèmes, car chacune
 porte un nom que vous rencontrerez partout :
 
-- prédire un **nombre** — un prix, une température, une durée — s'appelle une
+- prédire un **nombre** (un prix, une température, une durée) s'appelle une
   **régression** ;
-- prédire une **catégorie** — vendue vite ou non, pourriel ou courriel, chat ou
-  chien, ou encore lequel des dix chiffres est écrit sur une enveloppe —
+- prédire une **catégorie** (vendue vite ou non, pourriel ou courriel, chat ou
+  chien, ou encore lequel des dix chiffres est écrit sur une enveloppe)
   s'appelle une **classification**.
 
 Rien de plus : la seule chose qui les distingue est la **nature de la cible**.
 C'est pourtant l'une des partitions les plus utiles du domaine, car presque tout
 problème d'apprentissage à partir d'exemples étiquetés tombe dans l'une ou dans
-l'autre. Nous les retrouverons constamment — et nous verrons que certains
+l'autre. Nous les retrouverons constamment, et nous verrons que certains
 algorithmes savent faire les deux, quand d'autres se spécialisent.
 
 ## Un vecteur, c'est un point dans un espace
@@ -101,7 +101,7 @@ caractéristiques : ça lui donne une **place dans l'espace**.
 Prenons deux caractéristiques, la superficie et le nombre de chambres. On peut
 alors placer chaque maison comme un **point** sur un graphe : la superficie en
 horizontale, le nombre de chambres en verticale. Une maison se résume à un
-endroit du plan — exactement comme, sur le nuage des pages précédentes, chaque
+endroit du plan : exactement comme, sur le nuage des pages précédentes, chaque
 maison était déjà devenue un point. Un vecteur à deux composantes, c'est donc une
 position dans un plan.
 
@@ -111,7 +111,7 @@ immobile quelque part dans une pièce. Une quatrième caractéristique ? Un poin
 dans un espace à quatre dimensions. La règle ne change jamais : **autant de
 nombres pour décrire un objet, autant de dimensions dans l'espace où il vit.**
 
-{{< image src="/images/module2/nf_house.png" alt="Diagramme à plusieurs axes, un par caractéristique : superficie, année de construction, nombre de chambres, … nombre de salles de bain. Deux maisons y sont placées comme des points, chacune accompagnée de son vecteur : {180, 1995, 4, … 2} en bleu et {220, 2010, 5, … 3} en rouge — deux maisons de la table, dans le même espace à n dimensions." title="Chaque caractéristique devient un axe : une maison est un point dans un espace à autant de dimensions qu'elle a de caractéristiques." loading="lazy" >}}
+{{< image src="/images/module2/nf_house.png" alt="Diagramme à plusieurs axes, un par caractéristique : superficie, année de construction, nombre de chambres, … nombre de salles de bain. Deux maisons y sont placées comme des points, chacune accompagnée de son vecteur : {180, 1995, 4, … 2} en bleu et {220, 2010, 5, … 3} en rouge : deux maisons de la table, dans le même espace à n dimensions." title="Chaque caractéristique devient un axe : une maison est un point dans un espace à autant de dimensions qu'elle a de caractéristiques." loading="lazy" >}}
 
 Cette image géométrique est étonnamment puissante. Deux maisons aux
 caractéristiques semblables seront deux points *proches* ; deux maisons très
@@ -120,7 +120,7 @@ différentes, deux points *éloignés*. La ressemblance entre objets devient une
 
 ## Quand il y a trop de dimensions pour les voir
 
-Nos maisons se contentaient de trois ou quatre caractéristiques — on pouvait
+Nos maisons se contentaient de trois ou quatre caractéristiques : on pouvait
 presque les imaginer comme des points dans une pièce. Mais beaucoup d'objets du
 monde réel se décrivent par *bien* plus de nombres.
 
@@ -130,7 +130,7 @@ bleu).
 
 {{< image src="/images/module2/2d_house.png" alt="Une photo de maison posée sur des axes x et y : pour une machine, une image est une grille de pixels." title="Une image, pour une machine : une grille de pixels, chacun un nombre." loading="lazy" >}}
 
-On pourrait, bien sûr, la représenter autrement — par exemple, s'il s'agissait
+On pourrait, bien sûr, la représenter autrement : par exemple, s'il s'agissait
 d'une maison de jeu vidéo, par un modèle en trois dimensions, avec ses axes x, y
 et z :
 
@@ -240,13 +240,13 @@ représentations bien plus riches :
 - etc.
 
 C'est à ce niveau que sont écrits, justement, les algorithmes d'apprentissage
-automatique — et que vivent les *vecteurs* dont parle cette page.
+automatique, et que vivent les *vecteurs* dont parle cette page.
 
 **Retour vers les symboles**
 
 On comprend mieux, maintenant, la distinction souvent évoquée entre l'IA
 classique, qui manipule des **symboles**, et l'apprentissage automatique, qui
-manipule des **valeurs numériques** — et dont on dit parfois qu'il est
+manipule des **valeurs numériques**, et dont on dit parfois qu'il est
 *sub-symbolique*. Au fond, les deux manipulent des données qui sont *ultimement*
 des valeurs numériques (et même des bits physiques) ; mais il reste un sens clair
 à distinguer les deux types de mathématiques sur lesquels ils se fondent.
