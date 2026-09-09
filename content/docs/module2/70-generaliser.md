@@ -202,13 +202,13 @@ réglages, ou les **garde-t-il** auprès de lui ?
 Repensez à kNN et à son angle mort (page 40) : il n'a, à proprement parler, rien
 à apprendre. Pas de paramètres à régler ; pour prédire, il consulte directement
 les exemples mémorisés. *Les données sont le modèle.* Conséquence : sa taille
-grossit avec le jeu de données : mille exemples, mille exemples à trimballer ;
+grossit avec le jeu de données. Mille exemples, mille exemples à trimballer ;
 un million, un million. On dit d'un tel modèle qu'il est **non-paramétrique** :
 il ne résume pas les données dans un nombre fixe de réglages, il s'appuie sur
 elles, telles quelles, jusqu'au bout.
 
 À l'opposé, notre droite de régression : une fois trouvés sa pente et son
-ordonnée, on peut **jeter les données** : il ne reste que deux nombres, $m$ et
+ordonnée, on peut **jeter les données**, et il ne reste que deux nombres, $m$ et
 $b$, et ils suffisent à prédire. Pareil pour la régression logistique (un poids
 par caractéristique) ou pour Bayes naïf (une moyenne et une dispersion par
 classe, ou une probabilité par mot). Ces modèles sont **paramétriques** : ils
