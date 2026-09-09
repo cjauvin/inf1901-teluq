@@ -8,15 +8,15 @@ slug: classer
 
 Le chapitre précédent nous a donné un vrai modèle qui apprend : une droite, deux
 paramètres, une erreur à minimiser, une descente vers le creux. Mais il répond
-toujours par un **nombre** — un prix. Or quantité de questions n'attendent pas un
+toujours par un **nombre** : un prix. Or quantité de questions n'attendent pas un
 nombre, plutôt une **catégorie** : ce courriel est-il un pourriel ? cette tumeur
 est-elle bénigne ou maligne ? cette photo montre-t-elle un chat ou un chien ?
-C'est la tâche de **classification**, déjà croisée au chapitre kNN — mais cette
+C'est la tâche de **classification**, déjà croisée au chapitre kNN, mais cette
 fois, nous voulons un modèle qui *s'entraîne*.
 
 Bonne nouvelle, annoncée en fin de chapitre : presque toute la machinerie va
 resservir. Des paramètres réglables, une fonction d'erreur, une descente de
-gradient pour la minimiser — ce trio est si général qu'il s'adapte aussi bien à
+gradient pour la minimiser : ce trio est si général qu'il s'adapte aussi bien à
 la classification qu'à la régression. Deux choses seulement changent : la
 **forme** du modèle et la **façon de compter l'erreur**.
 
@@ -32,29 +32,29 @@ Pour fixer les idées, abandonnons un instant les maisons et imaginons le cas le
 plus simple : des points de deux couleurs, `bleus` et `rouges`, dispersés dans
 le plan (deux caractéristiques, $x_1$ et $x_2$). Apprendre à classer, ce sera
 trouver la droite qui range le mieux les bleus d'un côté et les rouges de
-l'autre. Et il y a, pour y arriver, deux grandes façons de penser — deux
+l'autre. Et il y a, pour y arriver, deux grandes façons de penser, deux
 philosophies que nous allons explorer tour à tour.
 
 ## Tracer une frontière : la régression logistique
 
 La première façon de penser est la plus directe : si je veux séparer les bleus
 des rouges, je n'ai qu'à **tracer la frontière** entre eux. Pas besoin de
-comprendre ce qui distingue un bleu d'un rouge dans le fond — il me suffit de
+comprendre ce qui distingue un bleu d'un rouge dans le fond : il me suffit de
 trouver *où passe la ligne*. C'est l'approche dite **discriminative** : le modèle
 apprend à discriminer les classes, sans chercher à les décrire.
 
-Cette frontière, dans notre plan, c'est une droite — et nous savons déjà qu'une
+Cette frontière, dans notre plan, c'est une droite, et nous savons déjà qu'une
 droite tient en deux paramètres, une pente et une hauteur. Mais son rôle a
 changé. En régression, on lisait la droite *verticalement* : à telle superficie,
 tel prix. Ici, on la lit *latéralement* : de quel **côté** de la ligne tombe le
 point ? D'un côté, on répond `bleu` ; de l'autre, `rouge`. La même équation,
 $m x_1 + b$, ne sert plus à calculer une valeur mais à partager le plan en deux.
 
-Cet algorithme porte un nom — la **régression logistique** — et, malgré ce nom
+Cet algorithme s'appelle la **régression logistique** et, malgré ce nom
 trompeur (il contient « régression » alors qu'il *classe*), c'est l'un des
 classificateurs les plus utilisés au monde. Essayez-le : dans l'applet, déplacez
 la ligne de décision pour séparer au mieux les deux groupes. Vous ajustez ainsi
-ses deux paramètres à la main — exactement comme vous déplaciez la droite de
+ses deux paramètres à la main, exactement comme vous déplaciez la droite de
 régression au chapitre précédent. Vous pouvez aussi ajouter, retirer ou déplacer
 des points.
 
@@ -64,13 +64,13 @@ Et l'erreur ? C'est le second changement. On ne peut plus mesurer une « distanc
 verticale au point », puisqu'on ne prédit plus une valeur. Ce qu'on compte
 désormais, c'est à quel point le modèle se **trompe de côté** : un point bien
 rangé ne coûte rien, un point du mauvais côté coûte cher. La barre à droite de
-l'applet affiche cette erreur. Cherchez à la rendre la plus petite possible —
+l'applet affiche cette erreur. Cherchez à la rendre la plus petite possible,
 idéalement zéro, quand la ligne sépare parfaitement les deux couleurs.
 
 Vous remarquerez deux choses en jouant. D'abord, ce n'est **pas toujours
 possible** d'atteindre zéro : si les couleurs se chevauchent, aucune droite ne
 les sépare proprement. Ensuite, l'erreur ne dépasse jamais **50 %** : même la
-pire ligne classe correctement la moitié des points par accident — et s'il fait
+pire ligne classe correctement la moitié des points par accident, et s'il fait
 pire, le modèle n'a qu'à inverser sa convention (« ce côté-ci est rouge, pas
 bleu ») pour repasser sous la barre.
 
@@ -88,7 +88,7 @@ ligne, sans qu'on la déplace à la souris ? La réponse ne vous surprendra pas 
 c'est, mot pour mot, celle du chapitre précédent. L'erreur est une fonction des
 deux paramètres ; cela dessine un paysage ; et la **descente de gradient** dévale
 ce paysage jusqu'à son creux. Le même moteur, réutilisé tel quel. Seule la forme
-de la fonction d'erreur diffère — pour ceux que les détails intéressent, les
+de la fonction d'erreur diffère. Pour ceux que les détails intéressent, les
 voici.
 
 {{% details "Les mathématiques de la régression logistique (optionnel)" %}}
@@ -97,11 +97,11 @@ Bien que nous en ayons parlé en termes purement géométriques, la régression
 logistique est en réalité une méthode *probabiliste* : plutôt que de trancher
 sèchement `bleu` ou `rouge`, elle estime la **probabilité** qu'un point soit
 bleu. Un point loin de la frontière, du côté bleu, sera bleu « à 99 % » ; un
-point juste sur la ligne, bleu « à 50 % » — l'hésitation maximale.
+point juste sur la ligne, bleu « à 50 % », l'hésitation maximale.
 
 Pour transformer la position d'un point (une valeur quelconque) en une
 probabilité (un nombre forcément entre 0 et 1), on emploie la **fonction
-sigmoïde**, ou logistique — c'est elle qui donne son nom à l'algorithme. Sa
+sigmoïde**, ou logistique : c'est elle qui donne son nom à l'algorithme. Sa
 courbe en S écrase n'importe quelle valeur dans l'intervalle $[0, 1]$ :
 
 ![](/images/module2/Logistic-curve-02.png)
@@ -109,8 +109,8 @@ courbe en S écrase n'importe quelle valeur dans l'intervalle $[0, 1]$ :
 Adoptons la notation classique de l'apprentissage automatique. Un point est un
 vecteur $\mathbf{x} = [x_1, x_2]$ ; sa vraie classe est $y \in \{0, 1\}$ (0 pour
 rouge, 1 pour bleu, arbitrairement) ; les paramètres forment un vecteur
-$\mathbf{w} = [w_1, w_2]$ accompagné de $b$. On calcule d'abord un **score** —
-combien, et de quel côté, le point s'écarte de la frontière :
+$\mathbf{w} = [w_1, w_2]$ accompagné de $b$. On calcule d'abord un **score**
+(combien, et de quel côté, le point s'écarte de la frontière) :
 
 $$z = w_1 x_1 + w_2 x_2 + b$$
 
@@ -149,7 +149,7 @@ $\alpha$ :
 $$\mathbf{w} \leftarrow \mathbf{w} - \alpha\,\frac{\partial J}{\partial \mathbf{w}}, \qquad b \leftarrow b - \alpha\,\frac{\partial J}{\partial b}$$
 
 On répète jusqu'à ce que l'erreur ne diminue plus. C'est, trait pour trait, la
-mécanique du chapitre précédent — seule la fonction d'erreur a changé de visage.
+mécanique du chapitre précédent : seule la fonction d'erreur a changé de visage.
 
 {{% /details %}}
 
@@ -167,9 +167,9 @@ C'est l'approche dite **générative**, et le mot mérite qu'on s'y arrête. Dé
 une classe assez finement pour reconnaître ses membres, c'est aussi savoir, en
 principe, en *fabriquer* de nouveaux : un modèle qui connaît le portrait-robot du
 « bleu typique » pourrait inventer des bleus plausibles qu'il n'a jamais vus.
-D'où *génératif* — il pourrait générer des données, pas seulement les trancher.
+D'où *génératif* : il pourrait générer des données, pas seulement les trancher.
 Retenez cette idée : elle paraît modeste ici, mais c'est elle qui, poussée à
-l'extrême, donnera plus tard l'IA *générative* — celle qui produit textes et
+l'extrême, donnera plus tard l'IA *générative*, celle qui produit textes et
 images (Module 4).
 
 Comment dresse-t-on le portrait d'une classe ? En décrivant **comment ses points
@@ -178,7 +178,7 @@ concentrent-elles autour de telle valeur de $x_1$ ? Les rouges, plus haut ? Cett
 répartition se résume par une courbe familière, la fameuse **courbe en cloche**
 (ou *gaussienne*) : un sommet là où les points sont denses, des bords qui
 s'amincissent là où ils se raréfient. Un portrait de classe, c'est une poignée de
-ces cloches — une par caractéristique.
+ces cloches, une par caractéristique.
 
 Pour garder le calcul simple, on fait une hypothèse délibérément grossière : on
 traite **chaque caractéristique séparément**, comme si elles étaient
@@ -188,11 +188,11 @@ pièces, par exemple, vont de pair), et c'est précisément ce que veut dire le 
 pratique.
 
 Reste alors un dernier tour de passe-passe. Nos portraits répondent à la
-question : « *si* ce point est bleu, à quel point est-il typique ? » — autrement
+question : « *si* ce point est bleu, à quel point est-il typique ? », autrement
 dit, la probabilité du point *sachant* la classe. Mais ce qu'on veut, c'est
 l'inverse : « ce point étant donné, quelle est la probabilité qu'il soit bleu ? »
-Renverser ainsi le conditionnement — passer de *probabilité du point sachant la
-classe* à *probabilité de la classe sachant le point* — est exactement ce que
+Renverser ainsi le conditionnement, passer de *probabilité du point sachant la
+classe* à *probabilité de la classe sachant le point*, est exactement ce que
 permet un résultat fondamental des probabilités, le **théorème de Bayes**. C'est
 lui qui donne son nom à la méthode, la **classification bayésienne naïve**.
 
@@ -206,7 +206,7 @@ Voilà donc deux routes vers le même but :
 | Bonus | — | pourrait *générer* de nouveaux exemples |
 
 Fait remarquable : sur nos données en deux dimensions, ces deux chemins si
-différents aboutissent à la **même forme de frontière** — une droite. Mais la
+différents aboutissent à la **même forme de frontière** : une droite. Mais la
 distinction entre apprendre à *séparer* et apprendre à *décrire* est l'une des
 plus profondes de tout le domaine. Nous la retrouverons, en grand, au Module 4 :
 les modèles qui *classent* d'un côté, ceux qui *engendrent* du contenu de
@@ -215,7 +215,7 @@ l'autre.
 {{% details "Les mathématiques de la classification bayésienne naïve (optionnel)" %}}
 
 Chaque couple **caractéristique + classe** est modélisé par une gaussienne à une
-dimension — soit, sur nos deux caractéristiques et nos deux classes, quatre
+dimension, soit, sur nos deux caractéristiques et nos deux classes, quatre
 cloches en tout. La gaussienne (ou loi normale) décrit comment la « masse de
 probabilité » se répartit autour d'une valeur centrale, la moyenne :
 
@@ -244,8 +244,8 @@ et on recommence sur l'axe $x_2$ :
 
 On dispose alors de quatre modèles $p(x_j \mid \text{classe})$. La moyenne $\mu$
 et l'écart-type $\sigma$ de chaque cloche s'obtiennent **directement** par un
-simple calcul de moyenne et de dispersion sur les points concernés — pas besoin,
-ici, de descente de gradient itérative :
+simple calcul de moyenne et de dispersion sur les points concernés (pas besoin,
+ici, de descente de gradient itérative) :
 
 $$\hat\mu_{j,c} = \frac{1}{N_c}\sum_{i \in c} x_{ij}, \qquad \hat\sigma^2_{j,c} = \frac{1}{N_c}\sum_{i \in c} \big(x_{ij} - \hat\mu_{j,c}\big)^2$$
 
@@ -268,21 +268,21 @@ on peut l'ignorer pour décider :
 $$\text{classe}(\mathbf{x}) = \begin{cases} \mathtt{rouge} & \text{si } P(\mathbf{x}\mid\text{rouge})\,P(\text{rouge}) \ge P(\mathbf{x}\mid\text{bleu})\,P(\text{bleu}) \\ \mathtt{bleu} & \text{sinon} \end{cases}$$
 
 On compare donc, pour le point observé, lequel des deux portraits le rend le plus
-**vraisemblable** — et c'est le portrait gagnant qui donne la classe.
+**vraisemblable**, et c'est le portrait gagnant qui donne la classe.
 
 {{% /details %}}
 
 ## Le cas des pourriels
 
 Quittons maintenant les points colorés et leur plan abstrait pour un problème
-bien réel — celui-là même qui vous attend au [travail noté
+bien réel, celui-là même qui vous attend au [travail noté
 2](99-travail-noté-2) : reconnaître automatiquement les **pourriels** (les
 courriels indésirables, le *spam*). C'est un cas d'école de classification :
 deux classes, `pourriel` ou `courriel` légitime, et une décision à prendre pour
 chaque message qui arrive.
 
 Mais un premier obstacle se dresse. Nos deux classificateurs attendent un
-**point** — une petite liste de nombres. Un courriel, lui, est un *texte*.
+**point**, une petite liste de nombres. Un courriel, lui, est un *texte*.
 Comment transformer « *Félicitations ! Vous avez gagné un prix…* » en
 coordonnées ?
 
@@ -306,17 +306,17 @@ pourriels et les courriels légitimes y forment deux nuages distincts :
 {{< image src="/images/module2/spam_vector_space.png" alt="Un système d'axes où chaque axe représente un mot du vocabulaire. Les courriels sont des points dans cet espace de très haute dimension ; les pourriels se regroupent dans une région, les courriels légitimes dans une autre." title="Chaque mot du vocabulaire est un axe ; un courriel devient un point dans cet espace. Pourriels et courriels légitimes y forment deux nuages." loading="lazy" >}}
 
 Deux nuages dans un espace : nous savons faire. Toute la machinerie de la section
-précédente s'applique telle quelle. On dresse le **portrait** de chaque classe —
-à quoi ressemblent les mots d'un pourriel typique ? d'un courriel honnête ? —
+précédente s'applique telle quelle. On dresse le **portrait** de chaque classe
+(à quoi ressemblent les mots d'un pourriel typique ? d'un courriel honnête ?),
 puis on classe un nouveau message en demandant lequel des deux portraits rend ses
 mots les plus vraisemblables. C'est, encore une fois, l'approche **générative** de
 Bayes naïf ; et l'hypothèse « naïve » revient à supposer que les mots sont tirés
-**indépendamment** les uns des autres — faux (« carte » appelle « bancaire »),
+**indépendamment** les uns des autres : faux (« carte » appelle « bancaire »),
 mais commode et étonnamment efficace.
 
 Un seul détail technique change par rapport à la section précédente. Là, nos
 caractéristiques étaient des valeurs *continues*, qu'on décrivait par une courbe
-en cloche. Ici, ce sont des *comptes* — des nombres entiers : zéro, une, deux
+en cloche. Ici, ce sont des *comptes*, des nombres entiers : zéro, une, deux
 occurrences. La cloche cède donc la place à une loi taillée pour les comptes, la
 **loi multinomiale** ; mais l'esprit est identique. Le portrait d'une classe, ce
 n'est plus une moyenne et une dispersion, c'est la liste des mots qu'elle emploie
@@ -325,7 +325,7 @@ pourriel, beaucoup moins côté courriel ordinaire.
 
 {{% hint info %}}
 
-C'est précisément ce classificateur — Bayes naïf multinomial sur un sac de mots —
+C'est précisément ce classificateur (Bayes naïf multinomial sur un sac de mots)
 que vous mettrez en œuvre au **travail noté 2** pour bâtir votre propre filtre
 anti-pourriel.
 
@@ -344,7 +344,7 @@ où $N = \sum_i n_i$ est le nombre total de mots du courriel, et $p_i$ la
 probabilité, dans un pourriel, que le mot tiré soit le mot $i$ (plus élevée pour
 « prix » que pour « parent », disons). On définit de même un modèle pour la
 classe `courriel`. Ces $p_i$ s'estiment directement, en comptant la fréquence de
-chaque mot dans les courriels d'entraînement de la classe — exactement comme on
+chaque mot dans les courriels d'entraînement de la classe, exactement comme on
 estimait la moyenne d'une gaussienne.
 
 La décision se prend ensuite par le théorème de Bayes, comme à la section
@@ -353,7 +353,7 @@ classes) :
 
 $$\text{classe}(\mathbf{x}) = \begin{cases} \mathtt{pourriel} & \text{si } P(\mathbf{x}\mid\text{pourriel})\,P(\text{pourriel}) \ge P(\mathbf{x}\mid\text{courriel})\,P(\text{courriel}) \\ \mathtt{courriel} & \text{sinon} \end{cases}$$
 
-On retrouve, sous le calcul, une décision **linéaire** dans l'espace des mots —
+On retrouve, sous le calcul, une décision **linéaire** dans l'espace des mots :
 le même genre de frontière que celle de la régression logistique. Les deux
 familles, discriminative et générative, se rejoignent une fois de plus.
 
@@ -363,18 +363,18 @@ familles, discriminative et générative, se rejoignent une fois de plus.
 
 Faisons le point. Nous avons maintenant tout un arsenal : une droite qui prédit
 un nombre, deux classificateurs qui prédisent une catégorie, et un moteur commun
-— minimiser une fonction d'erreur — pour les entraîner. Chacun apprend en rendant
+(minimiser une fonction d'erreur) pour les entraîner. Chacun apprend en rendant
 son erreur la plus petite possible **sur les exemples qu'on lui a montrés**.
 
 Mais relisons cette dernière phrase. *Sur les exemples qu'on lui a montrés.* Or
 ce n'est pas du tout ce qui nous intéresse ! Un filtre anti-pourriel qui classe
-parfaitement les courriels d'hier — ceux qui ont servi à l'entraîner — ne vaut
+parfaitement les courriels d'hier (ceux qui ont servi à l'entraîner) ne vaut
 rien s'il se trompe sur ceux qui arriveront demain. Depuis la première page de ce
 module, le but n'a jamais été de *mémoriser* des exemples, mais d'en tirer de
 quoi traiter des cas **encore jamais vus**.
 
 Et là se cache un piège. Un modèle peut très bien réussir un sans-faute sur ses
-données d'entraînement *et* s'effondrer sur des données neuves — un peu comme un
+données d'entraînement *et* s'effondrer sur des données neuves, un peu comme un
 étudiant qui aurait appris les réponses du corrigé par cœur sans rien comprendre
 au sujet. Nous avons même déjà croisé l'ombre de ce problème, à propos de kNN et
 de son réglage de $k$ : trop coller aux exemples peut être une *faiblesse*, pas
