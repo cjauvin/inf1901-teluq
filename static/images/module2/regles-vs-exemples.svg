@@ -4,7 +4,7 @@
 <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#5b5249" stroke-width="1.7"/></marker></defs>
 <rect x="0" y="0" width="700" height="270" rx="14" fill="#efe7d3" stroke="#d9cbac"/>
 <line x1="350" y1="44" x2="350" y2="232" stroke="#e0d4b8" stroke-width="1.4"/>
-<text x="178" y="38" font-size="15" fill="#3a3531" text-anchor="middle" font-weight="700">programmation classique</text>
+<text x="178" y="38" font-size="15" fill="#3a3531" text-anchor="middle" font-weight="700">Programmation classique</text>
 <rect x="30" y="80" width="88" height="40" rx="9" fill="rgba(138,125,110,0.14)" stroke="#8a7d6e" stroke-width="1.8"/>
 <text x="74" y="100" font-size="14" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">données</text>
 <rect x="30" y="156" width="88" height="40" rx="9" fill="rgba(154,91,51,0.16)" stroke="#9a5b33" stroke-width="1.8"/>
@@ -17,7 +17,7 @@
 <line x1="118" y1="104" x2="134" y2="126" stroke="#5b5249" stroke-width="1.7" marker-end="url(#a)"/>
 <line x1="118" y1="172" x2="134" y2="150" stroke="#5b5249" stroke-width="1.7" marker-end="url(#a)"/>
 <line x1="234" y1="138" x2="248" y2="138" stroke="#5b5249" stroke-width="1.7" marker-end="url(#a)"/>
-<text x="522" y="38" font-size="15" fill="#3a3531" text-anchor="middle" font-weight="700">apprentissage automatique</text>
+<text x="522" y="38" font-size="15" fill="#3a3531" text-anchor="middle" font-weight="700">Apprentissage automatique</text>
 <rect x="374" y="80" width="88" height="40" rx="9" fill="rgba(138,125,110,0.14)" stroke="#8a7d6e" stroke-width="1.8"/>
 <text x="418" y="100" font-size="14" fill="#3a3531" text-anchor="middle" font-weight="600" dominant-baseline="middle">données</text>
 <rect x="374" y="156" width="88" height="40" rx="9" fill="rgba(47,111,106,0.16)" stroke="#2f6f6a" stroke-width="1.8"/>
@@ -31,5 +31,5 @@
 <line x1="462" y1="104" x2="478" y2="126" stroke="#5b5249" stroke-width="1.7" marker-end="url(#a)"/>
 <line x1="462" y1="172" x2="478" y2="150" stroke="#5b5249" stroke-width="1.7" marker-end="url(#a)"/>
 <line x1="578" y1="138" x2="592" y2="138" stroke="#5b5249" stroke-width="1.7" marker-end="url(#a)"/>
-<text x="350" y="252" font-size="12" fill="#7a6f63" text-anchor="middle">les règles (brun) et les réponses (teal) changent de côté</text>
+<text x="350" y="252" font-size="12" fill="#7a6f63" text-anchor="middle">Les règles (brun) et les réponses (teal) changent de côté</text>
 </svg>
