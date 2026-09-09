@@ -74,7 +74,7 @@ les **k plus proches voisins** (*k-nearest neighbors*, ou kNN).
 Nous venons de faire une **régression** : la cible était un prix, un nombre, et
 nous l'avons obtenu en *moyennant* nos voisins. Et pour une **classification** ?
 Il suffit de changer la toute dernière étape : au lieu de moyenner les réponses
-des voisins, on retient la plus fréquente : un **vote majoritaire**. Pour deviner
+des voisins, on retient la plus fréquente, un **vote majoritaire**. Pour deviner
 si une maison partira vite, on regarde ce qu'il en a été de ses plus proches
 voisines, et on suit la majorité.
 
@@ -83,7 +83,7 @@ d'essentiel. Même distance, mêmes voisins — seule diffère la façon de comb
 leurs réponses. La plupart des algorithmes que nous verrons ensuite, eux, se
 spécialiseront dans l'une ou l'autre tâche.
 
-{{< image src="/images/module2/knn-regression-vs-classification.svg" alt="La recette kNN, illustrée comme un tronc commun qui se sépare en deux à la fin. Tronc commun : une nouvelle maison, puis les distances à tous les exemples connus, puis les k plus proches voisins — ces étapes sont communes aux deux tâches. Puis une seule bifurcation, à l'étape d'agrégation : en haut, la moyenne des prix des voisins donne un nombre (250 000 $) — c'est la régression ; en bas, le vote majoritaire des réponses des voisins donne une catégorie (« vendue vite ») — c'est la classification." title="Un seul tronc, une seule fourche : kNN suit exactement les mêmes étapes pour la régression et la classification ; seule la toute dernière — moyenne ou majorité — les distingue." loading="lazy" >}}
+{{< image src="/images/module2/knn-regression-vs-classification.svg" alt="La recette kNN, illustrée comme un tronc commun qui se sépare en deux à la fin. Tronc commun : une nouvelle maison, puis les distances à tous les exemples connus, puis les k plus proches voisins. Ces étapes sont communes aux deux tâches. Puis une seule bifurcation, à l'étape d'agrégation : en haut, la moyenne des prix des voisins donne un nombre (250 000 $), la régression ; en bas, le vote majoritaire des réponses des voisins donne une catégorie (« vendue vite »), la classification." title="Un seul tronc, une seule fourche : kNN suit exactement les mêmes étapes pour la régression et la classification ; seule la toute dernière (moyenne ou majorité) les distingue." loading="lazy" >}}
 
 {{% hint info %}}
 **La recette des _k_ plus proches voisins**, pour prédire à propos d'une nouvelle maison :
@@ -124,7 +124,7 @@ pourtant bien réelles.
 Entre les deux se cache une « bonne » valeur — ni trop petite, ni trop grande.
 Mais comment la trouver ? La question semble anodine ; elle est en réalité l'une
 des plus profondes de tout l'apprentissage automatique. Car elle n'a rien de
-propre à kNN : *tout* modèle affronte le même dilemme : être assez souple pour
+propre à kNN : *tout* modèle affronte le même dilemme, être assez souple pour
 saisir les vraies régularités, sans l'être au point d'épouser le moindre hasard
 des données.
 

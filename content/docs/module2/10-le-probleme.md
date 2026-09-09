@@ -197,8 +197,8 @@ long du module. La difficulté d'un problème tient souvent moins à la machiner
 qu'on lui oppose qu'au choix de **ce qu'on décide de regarder**.
 
 Un mot sur cette couleur, justement. Elle règle un problème d'encombrement : nous
-avons désormais **trois** renseignements à faire tenir sur une page plate : la
-distance, l'année et la réponse. Les deux premiers occupent les axes ; pour le
+avons désormais **trois** renseignements à faire tenir sur une page plate (la
+distance, l'année et la réponse). Les deux premiers occupent les axes ; pour le
 troisième, il ne reste plus de place, alors on l'encode autrement. Ce n'est là
 qu'une commodité de dessin, et nous verrons bientôt qu'on peut faire mieux.
 
