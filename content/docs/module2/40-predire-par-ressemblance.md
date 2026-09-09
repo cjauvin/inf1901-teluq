@@ -8,12 +8,12 @@ slug: predire-par-ressemblance
 
 La page précédente s'est achevée sur une promesse : si décrire des objets par des
 nombres transforme leur ressemblance en une *distance*, alors il doit exister une
-façon très simple de prédire. La voici — sans doute l'idée la plus intuitive de
+façon très simple de prédire. La voici, sans doute l'idée la plus intuitive de
 tout l'apprentissage automatique : **pour deviner la réponse sur un nouveau cas,
 regardons les cas connus qui lui ressemblent le plus, et copions la leur.**
 
 Pour estimer le prix d'une maison qu'on n'a jamais vue, on cherche les maisons
-déjà vendues qui lui ressemblent le plus — même quartier, même taille, même âge —
+déjà vendues qui lui ressemblent le plus (même quartier, même taille, même âge),
 et on s'attend à un prix comparable. C'est, au fond, ce que fait un agent
 immobilier quand il sort ses « comparables ». Reste à transformer cette intuition
 en une procédure précise. Et tout repose sur un seul mot : *ressembler*.
@@ -34,7 +34,7 @@ celle de tous les jours.)
 
 Cette mesure se calcule de la même façon dès qu'il y a plusieurs
 caractéristiques : deux (un plan), six (notre tableau de maisons)… on compare les
-objets coordonnée par coordonnée et on en tire un seul nombre — petit s'ils se
+objets coordonnée par coordonnée et on en tire un seul nombre : petit s'ils se
 ressemblent, grand s'ils diffèrent. Et, comme on l'a vu au chapitre précédent,
 rien n'oblige à s'arrêter là : la même formule vaut jusqu'à une image, dont les
 millions de pixels forment autant de coordonnées.
@@ -49,13 +49,13 @@ des pixels bruts, beaucoup moins : deux photos du *même* chat, dans deux poses,
 peuvent être très éloignées pixel à pixel ; une photo et sa version simplement
 assombrie, quasi identiques pour notre œil, le seront tout autant. Faire en sorte
 que la distance reflète la ressemblance *réelle* d'objets complexes est un
-problème à part entière — celui des **bonnes représentations** —, que nous
+problème à part entière, celui des **bonnes représentations**, que nous
 retrouverons avec les réseaux de neurones (Module&nbsp;3) et les plongements
 (Module&nbsp;4). Pour des données tabulaires comme nos maisons, en revanche, la
 distance brute fait déjà très bien l'affaire.
 {{% /hint %}}
 
-Nous tenons donc notre mesure de ressemblance — fiable pour des données
+Nous tenons donc notre mesure de ressemblance, fiable pour des données
 tabulaires comme nos maisons. Il ne reste plus qu'à nous en servir pour prédire.
 
 ## Les k plus proches voisins
@@ -64,17 +64,17 @@ Nous y voilà. Pour prédire le prix d'une maison inconnue, la recette est d'un
 naturel désarmant : on calcule sa distance à toutes les maisons connues, on
 retient celles qui lui ressemblent le plus, et on prédit la moyenne de leurs
 prix. Pourquoi plusieurs voisins plutôt qu'un seul ? Parce que s'appuyer sur un
-unique voisin serait fragile — il pourrait être un cas exceptionnel, une aubaine
+unique voisin serait fragile : il pourrait être un cas exceptionnel, une aubaine
 ou une arnaque. En consultant plusieurs voisins et en les moyennant, on lisse ces
 accidents.
 
-Ce nombre de voisins consultés, on le note **k** — d'où le nom de l'algorithme :
+Ce nombre de voisins consultés, on le note **k**, d'où le nom de l'algorithme :
 les **k plus proches voisins** (*k-nearest neighbors*, ou kNN).
 
 Nous venons de faire une **régression** : la cible était un prix, un nombre, et
 nous l'avons obtenu en *moyennant* nos voisins. Et pour une **classification** ?
 Il suffit de changer la toute dernière étape : au lieu de moyenner les réponses
-des voisins, on retient la plus fréquente — un **vote majoritaire**. Pour deviner
+des voisins, on retient la plus fréquente : un **vote majoritaire**. Pour deviner
 si une maison partira vite, on regarde ce qu'il en a été de ses plus proches
 voisines, et on suit la majorité.
 
@@ -86,10 +86,10 @@ spécialiseront dans l'une ou l'autre tâche.
 {{< image src="/images/module2/knn-regression-vs-classification.svg" alt="La recette kNN, illustrée comme un tronc commun qui se sépare en deux à la fin. Tronc commun : une nouvelle maison, puis les distances à tous les exemples connus, puis les k plus proches voisins — ces étapes sont communes aux deux tâches. Puis une seule bifurcation, à l'étape d'agrégation : en haut, la moyenne des prix des voisins donne un nombre (250 000 $) — c'est la régression ; en bas, le vote majoritaire des réponses des voisins donne une catégorie (« vendue vite ») — c'est la classification." title="Un seul tronc, une seule fourche : kNN suit exactement les mêmes étapes pour la régression et la classification ; seule la toute dernière — moyenne ou majorité — les distingue." loading="lazy" >}}
 
 {{% hint info %}}
-**La recette des _k_ plus proches voisins** — pour prédire à propos d'une nouvelle maison :
+**La recette des _k_ plus proches voisins**, pour prédire à propos d'une nouvelle maison :
 
 1. Calculer la **distance** entre cette maison et *chacune* des maisons déjà connues (à partir de leurs caractéristiques).
-2. Garder les **k** maisons les plus proches — ses « voisins ».
+2. Garder les **k** maisons les plus proches, ses « voisins ».
 3. Combiner les réponses de ces voisins :
    - pour un **nombre** (régression) → prendre leur **moyenne** ;
    - pour une **catégorie** (classification) → prendre leur **majorité**.
@@ -97,10 +97,10 @@ spécialiseront dans l'une ou l'autre tâche.
 Seule cette dernière étape distingue les deux tâches ; tout le reste est identique.
 {{% /hint %}}
 
-L'applet ci-dessous donne à voir la **classification** — plus parlante à l'œil,
+L'applet ci-dessous donne à voir la **classification**, plus parlante à l'œil,
 car une frontière entre deux catégories se *voit* d'un seul coup en deux
 dimensions. Le kNN à l'œuvre, lui, reste exactement le même. Deux catégories,
-donc — des points rouges et des points bleus. Chaque point coloré est un exemple
+donc : des points rouges et des points bleus. Chaque point coloré est un exemple
 connu ; le fond coloré, lui, montre la prédiction de kNN pour *tout* nouveau
 point qui s'y trouverait. Ajoutez des points, déplacez-les, faites varier **k**,
 et observez la frontière entre territoire rouge et territoire bleu se redessiner.
@@ -115,7 +115,7 @@ En jouant avec l'applet, une question s'impose vite : quelle valeur donner à
 Les deux extrêmes sont instructifs. Avec **k = 1**, chaque prédiction ne s'appuie
 que sur l'unique voisin le plus proche : la frontière épouse alors le moindre
 détail, contourne chaque point individuel et se tortille à l'excès. Le modèle
-colle si bien aux exemples connus qu'il en devient esclave — réagissant au
+colle si bien aux exemples connus qu'il en devient esclave, réagissant au
 moindre point un peu aberrant. À l'autre bout, avec un **k très grand**, chaque
 prédiction moyenne tant de voisins que les particularités locales s'effacent : la
 frontière devient lisse, paisible… parfois au point d'ignorer des structures
@@ -124,19 +124,19 @@ pourtant bien réelles.
 Entre les deux se cache une « bonne » valeur — ni trop petite, ni trop grande.
 Mais comment la trouver ? La question semble anodine ; elle est en réalité l'une
 des plus profondes de tout l'apprentissage automatique. Car elle n'a rien de
-propre à kNN : *tout* modèle affronte le même dilemme — être assez souple pour
+propre à kNN : *tout* modèle affronte le même dilemme : être assez souple pour
 saisir les vraies régularités, sans l'être au point d'épouser le moindre hasard
 des données.
 
-Cette question est si centrale que nous lui consacrerons une page entière —
-« Généraliser » — une fois que nous aurons en main quelques modèles de plus pour
+Cette question est si centrale que nous lui consacrerons une page entière,
+« Généraliser », une fois que nous aurons en main quelques modèles de plus pour
 l'éclairer. Pour l'instant, retenez seulement l'intuition : **k règle un curseur
 entre « coller aux exemples » et « lisser à l'excès ».**
 
 ## L'angle mort de kNN
 
 kNN a un charme particulier : il n'a, à proprement parler, **rien à apprendre**.
-Pas d'entraînement, pas de paramètres à régler — il lui suffit de garder en
+Pas d'entraînement, pas de paramètres à régler : il lui suffit de garder en
 mémoire tous les exemples connus et de les consulter au moment de prédire. Les
 données *sont* le modèle.
 
@@ -151,13 +151,13 @@ repousse tout le travail au dernier moment, là où il coûte le plus cher.
 
 Ensuite, plus profondément : kNN **ne dégage aucune compréhension**. Aucune
 règle, aucune tendance, aucune *forme* générale tirée des données. Il ne « sait »
-pas que les grandes maisons coûtent plus cher — il se contente de retrouver des
+pas que les grandes maisons coûtent plus cher : il se contente de retrouver des
 voisins. Rappelez-vous le modèle de la page 20 : il avait, lui, distillé toute sa
 connaissance en **un seul nombre**, le prix moyen. kNN fait l'inverse : il ne
 distille rien, il garde tout.
 
 Or c'est justement cette *distillation* qui nous intéresse. D'un vrai modèle, on
-aimerait qu'il **apprenne** quelque chose des données — qu'il en extraie une
+aimerait qu'il **apprenne** quelque chose des données : qu'il en extraie une
 poignée de paramètres capturant la tendance générale, quitte à oublier ensuite
 les exemples eux-mêmes. Léger à l'usage, et porteur d'une forme de compréhension.
 

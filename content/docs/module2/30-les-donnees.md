@@ -7,8 +7,8 @@ slug: les-donnees
 # Regarder les données
 
 La page précédente s'est close sur une exigence : pour faire mieux que la
-moyenne, un modèle doit *tenir compte* des caractéristiques d'une maison : sa
-superficie, son âge, son nombre de chambres. Encore faut-il les lui présenter
+moyenne, un modèle doit *tenir compte* des caractéristiques d'une maison (sa
+superficie, son âge, son nombre de chambres). Encore faut-il les lui présenter
 sous une forme qu'il puisse manipuler.
 
 Car une machine ne « voit » ni une maison, ni une photo, ni un courriel : elle
@@ -111,7 +111,7 @@ immobile quelque part dans une pièce. Une quatrième caractéristique ? Un poin
 dans un espace à quatre dimensions. La règle ne change jamais : **autant de
 nombres pour décrire un objet, autant de dimensions dans l'espace où il vit.**
 
-{{< image src="/images/module2/nf_house.png" alt="Diagramme à plusieurs axes, un par caractéristique : superficie, année de construction, nombre de chambres, … nombre de salles de bain. Deux maisons y sont placées comme des points, chacune accompagnée de son vecteur : {180, 1995, 4, … 2} en bleu et {220, 2010, 5, … 3} en rouge : deux maisons de la table, dans le même espace à n dimensions." title="Chaque caractéristique devient un axe : une maison est un point dans un espace à autant de dimensions qu'elle a de caractéristiques." loading="lazy" >}}
+{{< image src="/images/module2/nf_house.png" alt="Diagramme à plusieurs axes, un par caractéristique : superficie, année de construction, nombre de chambres, … nombre de salles de bain. Deux maisons y sont placées comme des points, chacune accompagnée de son vecteur : {180, 1995, 4, … 2} en bleu et {220, 2010, 5, … 3} en rouge, deux maisons de la table, dans le même espace à n dimensions." title="Chaque caractéristique devient un axe : une maison est un point dans un espace à autant de dimensions qu'elle a de caractéristiques." loading="lazy" >}}
 
 Cette image géométrique est étonnamment puissante. Deux maisons aux
 caractéristiques semblables seront deux points *proches* ; deux maisons très
