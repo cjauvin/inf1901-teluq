@@ -30,7 +30,9 @@ AN_MIN, AN_MAX = 1964, 2022
 DATA = [
     ((km - KM_MIN) / (KM_MAX - KM_MIN),
      (annee - AN_MIN) / (AN_MAX - AN_MIN),
-     "oui" if vite else "non")
+     "oui" if vite else "non",
+     # exception : ancienne mais partie vite, ou récente mais traînée
+     (annee < 1990) == vite)
     for _m2, annee, km, _prix, vite in MAISONS
 ]
 
@@ -61,7 +63,7 @@ def rendre(nom, barreaux, desc, legende):
 
     def dots(z, lab, col):
         L.append(f'<g fill="{col}" stroke="#efe7d3" stroke-width="1.4">')
-        for nx, ny, l in DATA:
+        for nx, ny, l, _exc in DATA:
             if l == lab:
                 x, y = P(nx, ny, z)
                 L.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6.5"/>')
@@ -88,6 +90,21 @@ def rendre(nom, barreaux, desc, legende):
     sheet(1, "rgba(58,110,165,0.07)", "#cbbd9c")
     dots(1, "oui", BLUE)
 
+    # les exceptions : leur ombre sur l'autre plan. Dans le nuage plat, une
+    # exception se voit parce qu'elle est un point d'une couleur au milieu de
+    # l'autre ; ici chaque couleur a son plan, et rien ne la distingue plus.
+    # Le pointillé vertical et le point creux montrent où elle retombe, vue
+    # d'en haut : au milieu de l'autre couleur.
+    for nx, ny, l, exc in DATA:
+        if not exc:
+            continue
+        col = BLUE if l == "oui" else RED
+        z_own, z_other = (1, 0) if l == "oui" else (0, 1)
+        xa, ya = P(nx, ny, z_own)
+        xb, yb = P(nx, ny, z_other)
+        L.append(f'<line x1="{xa:.1f}" y1="{ya:.1f}" x2="{xb:.1f}" y2="{yb:.1f}" stroke="{col}" stroke-width="1.4" stroke-dasharray="3 4" opacity="0.8"/>')
+        L.append(f'<circle cx="{xb:.1f}" cy="{yb:.1f}" r="6.5" fill="none" stroke="{col}" stroke-width="1.8" stroke-dasharray="2.5 2.5"/>')
+
     # étiquettes des deux axes du plan
     ax, ay = P(0.5, 0, 0)
     angA = math.degrees(math.atan2(AXy, AXx))
@@ -96,7 +113,10 @@ def rendre(nom, barreaux, desc, legende):
     angB = math.degrees(math.atan2(AYy, AYx))
     L.append(f'<text x="{bx-12:.1f}" y="{by-13:.1f}" font-size="13.5" fill="#3a3531" text-anchor="middle" transform="rotate({angB:.1f} {bx-12:.1f} {by-13:.1f})">année</text>')
 
-    L.append(f'<text x="{W/2:.0f}" y="{H-24}" font-size="13" fill="#5b5249" text-anchor="middle">{legende}</text>')
+    lignes = legende if isinstance(legende, tuple) else (legende,)
+    for i, lg in enumerate(lignes):
+        y = H - 24 - 17 * (len(lignes) - 1 - i)
+        L.append(f'<text x="{W/2:.0f}" y="{y}" font-size="13" fill="#5b5249" text-anchor="middle">{lg}</text>')
     L.append('</svg>')
     (OUT / f"{nom}.svg").write_text("\n".join(L) + "\n")
     print(f"{len(DATA)} maisons — écrit {nom}.svg")
@@ -110,7 +130,8 @@ rendre(
     "un troisième axe, vertical, qui ne comporte que deux niveaux : « non » en bas et « oui » en haut. "
     "Chaque maison se pose donc sur l'un ou l'autre de deux plans superposés. Vu d'en haut, ce dessin "
     "redonne exactement le nuage où la réponse était codée par une couleur.",
-    "La couleur du nuage plat était l'ombre portée de ce troisième axe.",
+    ("La couleur du nuage plat était l'ombre portée de ce troisième axe.",
+     "Les deux exceptions, vues d'en haut, retombent au milieu de l'autre couleur (points creux)."),
 )
 rendre(
     "troisieme-dimension",
