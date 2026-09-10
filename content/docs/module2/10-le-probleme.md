@@ -200,7 +200,17 @@ Un mot sur cette couleur, justement. Elle règle un problème d'encombrement : n
 avons désormais **trois** renseignements à faire tenir sur une page plate (la
 distance, l'année et la réponse). Les deux premiers occupent les axes ; pour le
 troisième, il ne reste plus de place, alors on l'encode autrement. Ce n'est là
-qu'une commodité de dessin, et nous verrons bientôt qu'on peut faire mieux.
+qu'une commodité de dessin. Pour s'en convaincre, donnons à la réponse l'axe qui
+lui manque, en relevant le dessin en perspective :
+
+{{< image src="/images/module2/troisieme-dimension-oui-non.svg" alt="Vue en perspective des mêmes maisons. Le plan horizontal porte la distance du centre et l'année de construction. La réponse occupe un troisième axe, vertical, qui ne comporte que deux niveaux : « non » en bas et « oui » en haut. Chaque maison se pose donc sur l'un ou l'autre de deux plans superposés : les maisons vendues vite sur le plan du haut, celles qui ont traîné sur celui du bas." title="La réponse a bel et bien son propre axe. Simplement, cet axe ne compte que deux barreaux, non et oui : les maisons se posent sur l'un ou l'autre de deux plans." loading="lazy" >}}
+
+Les maisons ne flottent plus à n'importe quelle hauteur : elles se posent sur
+l'un ou l'autre de **deux plans**. Et l'on passe d'un dessin à l'autre sans rien
+perdre. Regardez ce relief *d'en haut*, à la verticale : vous retrouverez trait
+pour trait le nuage colorié. Cette couleur, c'était l'ombre portée du troisième
+axe. Retenez l'image, nous la reprendrons quand nous saurons quoi écrire sur ces
+deux barreaux.
 
 Dans les **prochains chapitres**, c'est surtout la première question que nous
 suivrons, le prix se prêtant mieux aux dessins et aux premières explications. Mais

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg viewBox="0 0 700 470" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">
 <title>La réponse comme troisième dimension, à deux valeurs</title>
-<desc>La même vue en perspective qu'au premier chapitre : distance au centre et année de construction au sol, la réponse sur un troisième axe vertical à deux niveaux. Cette fois, les deux barreaux portent une valeur : 0 pour non, en bas, et 1 pour oui, en haut. La cible est devenue un nombre comme les autres.</desc>
+<desc>Une vue en perspective. Le plan horizontal porte les deux mêmes axes qu'auparavant : la distance au centre et l'année de construction. La réponse à la question « vendue en moins de 30 jours ? » occupe un troisième axe, vertical, qui ne comporte que deux niveaux : « non » en bas et « oui » en haut. Chaque maison se pose donc sur l'un ou l'autre de deux plans superposés. Vu d'en haut, ce dessin redonne exactement le nuage où la réponse était codée par une couleur.</desc>
 <rect x="0" y="0" width="700" height="470" rx="14" fill="#efe7d3" stroke="#d9cbac"/>
 <polygon points="150.0,348.0 400.0,400.0 504.0,316.0 254.0,264.0" fill="rgba(196,86,74,0.07)" stroke="#cbbd9c" stroke-width="1.5"/>
 <g fill="#c4564a" stroke="#efe7d3" stroke-width="1.4">
@@ -16,11 +16,9 @@
 </g>
 <line x1="150.0" y1="348.0" x2="150.0" y2="154.0" stroke="#8a7d6e" stroke-width="1.8"/>
 <line x1="143.0" y1="348.0" x2="150.0" y2="348.0" stroke="#8a7d6e" stroke-width="1.6"/>
-<text x="136.0" y="353.0" font-size="15" fill="#3a3531" text-anchor="end" font-weight="700">0</text>
-<text x="136.0" y="370.0" font-size="11.5" fill="#7a6f63" text-anchor="end">(non)</text>
+<text x="136.0" y="353.0" font-size="15" fill="#3a3531" text-anchor="end" font-weight="700">non</text>
 <line x1="143.0" y1="180.0" x2="150.0" y2="180.0" stroke="#8a7d6e" stroke-width="1.6"/>
-<text x="136.0" y="185.0" font-size="15" fill="#3a3531" text-anchor="end" font-weight="700">1</text>
-<text x="136.0" y="202.0" font-size="11.5" fill="#7a6f63" text-anchor="end">(oui)</text>
+<text x="136.0" y="185.0" font-size="15" fill="#3a3531" text-anchor="end" font-weight="700">oui</text>
 <text x="76.0" y="136.0" font-size="13.5" fill="#3a3531" text-anchor="middle" font-weight="600">vendue vite ?</text>
 <text x="76.0" y="153.0" font-size="11.5" fill="#7a6f63" text-anchor="middle" font-style="italic">deux niveaux seulement</text>
 <polygon points="150.0,180.0 400.0,232.0 504.0,148.0 254.0,96.0" fill="rgba(58,110,165,0.07)" stroke="#cbbd9c" stroke-width="1.5"/>
@@ -40,5 +38,5 @@
 </g>
 <text x="266.0" y="408.0" font-size="13.5" fill="#3a3531" text-anchor="middle" transform="rotate(11.7 266.0 408.0)">distance</text>
 <text x="195.2" y="288.8" font-size="13.5" fill="#3a3531" text-anchor="middle" transform="rotate(-38.9 195.2 288.8)">année</text>
-<text x="350" y="446" font-size="13" fill="#5b5249" text-anchor="middle">La réponse a bel et bien son propre axe, et ses deux barreaux ont maintenant une valeur : 0 et 1.</text>
+<text x="350" y="446" font-size="13" fill="#5b5249" text-anchor="middle">La couleur du nuage plat était l'ombre portée de ce troisième axe.</text>
 </svg>

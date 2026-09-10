@@ -59,18 +59,16 @@ autre couple de valeurs), mais il a l'immense avantage de faire de la cible une
 grandeur comme une autre. Une fois cette convention posée, une catégorie n'est
 plus qu'un nombre, et tout ce qui suit s'applique sans changement.
 
-Cela permet aussi d'éclairer, rétrospectivement, un détail du premier chapitre.
-Nous y avions dessiné les mêmes maisons en coloriant chaque point selon qu'elle
-s'était vendue vite ou non, faute de place pour un troisième axe. Maintenant que
-nous savons que la cible est un nombre, nous pouvons lui **donner cet axe** :
+Cela permet aussi de compléter un dessin du premier chapitre. Nous y avions
+relevé le nuage en perspective, en donnant à la réponse son propre axe, à deux
+barreaux, *non* et *oui*. Maintenant que la cible est un nombre, ces deux
+barreaux ont une valeur :
 
-{{< image src="/images/module2/troisieme-dimension.svg" alt="Vue en perspective des mêmes maisons. Le plan horizontal porte deux caractéristiques, la distance du centre et l'année de construction. La cible occupe un troisième axe, vertical, qui ne comporte que deux niveaux : 0 (non) en bas et 1 (oui) en haut. Chaque maison se pose donc sur l'un ou l'autre de deux plans superposés : les maisons vendues vite sur le plan du haut, celles qui ont traîné sur celui du bas." title="La cible a bel et bien son propre axe : simplement, quand elle est une catégorie, cet axe ne compte que deux barreaux, 0 et 1." loading="lazy" >}}
+{{< image src="/images/module2/troisieme-dimension.svg" alt="La même vue en perspective qu'au premier chapitre : la distance du centre et l'année de construction au sol, la réponse sur un troisième axe vertical à deux niveaux. Cette fois, les deux barreaux portent une valeur : 0 (non) en bas et 1 (oui) en haut. Les maisons vendues vite sont sur le plan du haut, celles qui ont traîné sur celui du bas." title="Le même relief, une fois la cible devenue un nombre : les deux barreaux s'appellent maintenant 0 et 1." loading="lazy" >}}
 
-Les maisons ne flottent plus à n'importe quelle hauteur : elles se posent sur
-l'un ou l'autre de **deux plans**. Et l'on passe d'un dessin à l'autre sans rien
-perdre : regardez ce relief *d'en haut*, à la verticale, et vous retrouverez
-trait pour trait le nuage colorié du premier chapitre. Cette couleur, c'était
-l'ombre portée de ce troisième axe.
+Rien n'a bougé, sinon deux étiquettes. Mais ces deux étiquettes changent tout :
+la réponse est désormais une **grandeur** comme les autres, qu'un modèle peut
+calculer, comparer, et sur laquelle il peut se tromper d'une quantité mesurable.
 
 Attention toutefois à ne pas confondre : cet axe-là n'est pas de même nature que
 les autres. La distance et l'année sont des **caractéristiques**, elles
