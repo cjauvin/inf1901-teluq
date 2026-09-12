@@ -44,7 +44,7 @@
 </g>
 <text x="18" y="210" font-size="15" fill="#3a3531" text-anchor="middle" transform="rotate(-90 18 210)">prix de vente</text>
 <line x1="80" y1="238.3" x2="630" y2="238.3" stroke="#9a5b33" stroke-width="2.6" stroke-dasharray="7 4"/>
-<text x="624" y="230.3" font-size="13" fill="#9a5b33" text-anchor="end" font-weight="600">toujours 500 k$</text>
+<text x="624" y="255.3" font-size="13" fill="#9a5b33" text-anchor="end" font-weight="600">toujours 500 k$</text>
 <g stroke="#c4564a" stroke-width="1.8" opacity="0.85">
 <line x1="114.7" y1="368.1" x2="114.7" y2="238.3"/>
 <line x1="137.9" y1="367.6" x2="137.9" y2="238.3"/>

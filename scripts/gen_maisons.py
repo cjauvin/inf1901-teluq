@@ -204,7 +204,7 @@ def ajuste(m2):
 
 
 BASELINE = f"""<line x1="80" y1="{py(MOYENNE):.1f}" x2="630" y2="{py(MOYENNE):.1f}" stroke="{BRUN}" stroke-width="2.6" stroke-dasharray="7 4"/>
-<text x="624" y="{py(MOYENNE) - 8:.1f}" font-size="13" fill="{BRUN}" text-anchor="end" font-weight="600">toujours {MOYENNE:.0f} k$</text>"""
+<text x="624" y="{py(MOYENNE) + 17:.1f}" font-size="13" fill="{BRUN}" text-anchor="end" font-weight="600">toujours {MOYENNE:.0f} k$</text>"""
 
 DROITE = (
     f'<line x1="{px(105):.1f}" y1="{py(ajuste(105)):.1f}" '
