@@ -67,9 +67,18 @@ Remarquez de quoi ce modèle est fait : **un seul nombre**, le prix moyen
 (500 000 \\$). Ce nombre, c'est ce que le modèle a « retenu » des données ; on
 l'appelle son **paramètre**. Et le calculer (faire la moyenne des prix observés),
 c'est déjà une forme rudimentaire d'*apprentissage* : le modèle a tiré son
-unique connaissance des exemples qu'on lui a montrés. Son jumeau ne fonctionne
-pas autrement : son unique paramètre, à lui, est la réponse majoritaire (« oui »),
-obtenue en comptant plutôt qu'en moyennant.
+unique connaissance des exemples qu'on lui a montrés.
+
+Ce nombre n'a donc rien d'arbitraire. On aurait pu annoncer 12 \\$, ou un
+milliard : ç'aurait été tout aussi bête, puisque tout aussi aveugle à la maison
+qu'on présente, mais bien plus faux. Le prix moyen, lui, a été **calculé** à
+partir des ventes passées, et il fait sens : de tous les nombres qu'on pourrait
+annoncer à toutes les maisons à la fois, c'est celui qui se trompe le moins, en
+moyenne. La bêtise du modèle tient à ce qu'il ignore, pas à ce qu'il retient.
+Son jumeau ne fonctionne pas autrement : son unique paramètre, à lui, est la
+réponse majoritaire (« oui »), obtenue en comptant plutôt qu'en moyennant, et
+tout aussi sensée, puisque c'est la réponse qui a le plus de chances d'être la
+bonne quand on ne sait rien d'autre.
 
 Tout le reste du module ne fera qu'enrichir cette image. Les modèles que nous
 construirons auront davantage de paramètres : un, puis deux, puis des milliers,
