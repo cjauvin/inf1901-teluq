@@ -46,7 +46,7 @@
 </g>
 <text x="18" y="210" font-size="15" fill="#3a3531" text-anchor="middle" transform="rotate(-90 18 210)">année de construction</text>
 
-<text x="96" y="64" font-size="15" fill="#3a6ea5" text-anchor="start" font-weight="700">le modèle a répondu « oui » pour toutes les maisons</text>
+<text x="624" y="58" font-size="15" fill="#3a6ea5" text-anchor="end" font-weight="700">le modèle a répondu « oui » pour toutes les maisons</text>
 <g fill="#3a6ea5" stroke="#efe7d3" stroke-width="1.5">
 <circle cx="168.0" cy="185.5" r="7"/>
 <circle cx="234.0" cy="98.2" r="7"/>

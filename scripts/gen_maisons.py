@@ -308,7 +308,7 @@ FIGURES["maisons-erreurs-oui-non"] = entete(
     "erreurs, et ce sont précisément les maisons qui étaient rouges sur la figure d'origine.",
     plan="categorie",
 ) + f"""
-<text x="96" y="64" font-size="15" fill="{BLEU}" text-anchor="start" font-weight="700">le modèle a répondu « oui » pour toutes les maisons</text>
+<text x="624" y="58" font-size="15" fill="{BLEU}" text-anchor="end" font-weight="700">le modèle a répondu « oui » pour toutes les maisons</text>
 """ + points(BLEU, 7, "categorie") + "\n" + croix() + f"""
 <circle cx="147" cy="452" r="7" fill="{BLEU}" stroke="{FOND}" stroke-width="1.5"/>
 <text x="163" y="456" font-size="14" fill="{ENCRE}" text-anchor="start">prédiction du modèle : « oui », vendue en moins de 30 jours</text>
