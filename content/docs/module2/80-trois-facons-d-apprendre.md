@@ -51,23 +51,18 @@ et son talon d'Achille. Car ces étiquettes, il faut bien que *quelqu'un* les
 fournisse, souvent à la main, un exemple à la fois.
 
 {{% hint info %}}
-**Étiqueter les données : une industrie à part entière**
+**Le socle humain du supervisé**
 
-Derrière chaque modèle supervisé se cache une montagne de travail humain.
-Quelqu'un a dû regarder des centaines de milliers d'images pour dire « ceci est
-un chat », transcrire des heures d'audio, ou trancher « ce message est haineux,
-celui-là non ». Cette tâche, l'**étiquetage** (ou *annotation*) des données,
-est devenue un véritable secteur économique mondial : des plateformes comme
-Amazon Mechanical Turk, ou des entreprises spécialisées telles Scale AI,
-emploient des centaines de milliers de personnes, souvent dans des pays à bas
-salaires, pour produire ces étiquettes une par une.
-
-Ce travail est le plus souvent invisible, peu rémunéré, et parfois éprouvant :
-pensez à la modération de contenus violents. Même les assistants les plus récents
-en dépendent : une part de l'entraînement de ChatGPT repose sur des humains qui
-notent et corrigent ses réponses (nous y reviendrons au [Module 4](docs/module4)). L'« intelligence »
-de ces systèmes s'appuie ainsi sur un socle très humain, et soulève des questions
-que nous retrouverons au [Module 5](docs/module5).
+Nous avons vu, dans [*Généraliser*](docs/module2/70-generaliser/#tout-cela-portait-un-nom-lapprentissage-supervisé),
+que l'étiquetage des données est devenu une industrie à part entière. Elle a
+une face sombre : trancher « ce message est haineux, celui-là non », des
+milliers de fois par jour, c'est aussi s'exposer aux contenus les plus violents
+du Web, et la modération de contenus est l'un des métiers les plus éprouvants
+de cette chaîne. Même les assistants les plus récents en dépendent : une part
+de l'entraînement de ChatGPT repose sur des humains qui notent et corrigent ses
+réponses (nous y reviendrons au [Module 4](docs/module4)). L'« intelligence »
+de ces systèmes s'appuie ainsi sur un socle très humain, et soulève des
+questions que nous retrouverons au [Module 5](docs/module5).
 {{% /hint %}}
 
 Que faire, alors, quand personne n'a fourni ces réponses ?
