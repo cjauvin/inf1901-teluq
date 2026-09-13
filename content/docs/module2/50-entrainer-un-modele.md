@@ -35,7 +35,7 @@ $$\text{prix} = m \times \text{superficie} + b$$
   l'axe vertical.
 
 Ces deux nombres, m et b, sont les **paramètres** du modèle — et, cette fois, ils
-veulent dire quelque chose. Là où le modèle bête de la page 20 distillait tout en
+veulent dire quelque chose. Là où [le modèle le plus bête](docs/module2/20-modele-le-plus-bete) distillait tout en
 un seul nombre (la moyenne), et où kNN n'en avait aucun, notre droite en a deux :
 juste assez pour capturer une *tendance* : une direction et une hauteur. Changez
 m et b, et vous obtenez une autre droite, donc un autre modèle. Tout le jeu va
@@ -51,15 +51,15 @@ ainsi m et b à la main) et cherchez la position qui colle le mieux aux points.
 
 En déplaçant la droite, vous avez forcément cherché à « bien » la placer. Mais
 qu'est-ce que « bien », au juste ? Il nous faut une mesure, et nous l'avons déjà
-croisée, page 20, sans lui donner encore de définition précise : l'**erreur**.
+croisée, avec le modèle le plus bête, sans lui donner encore de définition précise : l'**erreur**.
 
 Pour une droite donnée, l'erreur sur une maison, c'est l'écart entre le prix que
 la droite *prédit* (le point de la droite à la verticale de cette maison) et son
-prix *réel*. C'est, exactement comme à la page 20, un segment vertical, sauf
+prix *réel*. C'est, exactement comme pour le modèle le plus bête, un segment vertical, sauf
 qu'ici la droite est *inclinée*, et qu'elle peut donc serrer les points de bien
 plus près qu'une droite plate.
 
-{{< image src="/images/module2/maisons-erreurs-droite.svg" alt="Le nuage de maisons et la droite de régression inclinée, avec un court segment rouge reliant chaque maison à la droite : l'erreur, bien plus courte qu'avec la droite plate de la page 20." title="Les mêmes erreurs qu'à la page 20, mais contre une droite inclinée : bien plus courtes." loading="lazy" >}}
+{{< image src="/images/module2/maisons-erreurs-droite.svg" alt="Le nuage de maisons et la droite de régression inclinée, avec un court segment rouge reliant chaque maison à la droite : l'erreur, bien plus courte qu'avec la droite plate du modèle le plus bête." title="Les mêmes erreurs qu'avec le modèle le plus bête, mais contre une droite inclinée : bien plus courtes." loading="lazy" >}}
 
 L'erreur totale du modèle combine tous ces écarts. On les met au carré (pour que
 les écarts au-dessus et en dessous ne s'annulent pas, et pour pénaliser

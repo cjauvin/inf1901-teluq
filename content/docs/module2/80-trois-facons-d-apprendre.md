@@ -84,7 +84,8 @@ dresser une.
 
 La tâche la plus courante est le **regroupement** (ou *clustering*) : rassembler
 les exemples qui se ressemblent. Et « se ressembler », nous savons déjà ce que ça
-veut dire : c'est être **proches** dans l'espace des caractéristiques (page 40).
+veut dire : c'est être **proches** dans l'espace des caractéristiques, comme l'a posé
+[*Prédire par ressemblance*](docs/module2/40-predire-par-ressemblance).
 Regrouper, c'est donc repérer les amas naturels de points : les zones denses,
 séparées par du vide.
 

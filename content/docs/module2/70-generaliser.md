@@ -53,8 +53,8 @@ indirectement, sur ses propres données d'examen, le test ne veut plus rien dire
 
 {{% hint info %}}
 
-Et lorsqu'il faut *régler* quelque chose (la valeur de $k$ pour kNN, ou un autre
-hyper-paramètre rencontré à la page 50), on ne peut pas non plus se servir du
+Et lorsqu'il faut *régler* quelque chose (la valeur de $k$ pour kNN, ou le taux
+d'apprentissage rencontré dans [*Un modèle qui s'entraîne*](docs/module2/50-entrainer-un-modele)), on ne peut pas non plus se servir du
 jeu de test pour choisir, sous peine de le « griller ». On réserve alors un
 troisième paquet, l'**ensemble de validation**, dédié à ces réglages ; le jeu de
 test, lui, reste vierge pour l'ultime verdict.
@@ -63,8 +63,8 @@ test, lui, reste vierge pour l'ultime verdict.
 
 ## Linéaire ou non-linéaire : ce qu'un modèle peut dessiner
 
-Revenons un instant sur ce que nous avons construit. La droite de régression du
-chapitre 50 : une droite. La frontière de la régression logistique : une droite.
+Revenons un instant sur ce que nous avons construit. La régression linéaire d'*Un
+modèle qui s'entraîne* : une droite. La frontière de la régression logistique : une droite.
 Celle de Bayes naïf : une droite, encore (nous l'avions noté avec surprise). Et
 même notre filtre anti-pourriel, sous ses montagnes de mots, prenait *lui aussi*
 une décision linéaire. Un air de famille se dessine.
@@ -199,7 +199,7 @@ souplesse, mais selon ce qu'il en reste une fois l'entraînement terminé. La
 question est simple : le modèle a-t-il **distillé** les données en une poignée de
 réglages, ou les **garde-t-il** auprès de lui ?
 
-Repensez à kNN et à son angle mort (page 40) : il n'a, à proprement parler, rien
+Repensez à kNN et à son [angle mort](docs/module2/40-predire-par-ressemblance/#langle-mort-de-knn) : il n'a, à proprement parler, rien
 à apprendre. Pas de paramètres à régler ; pour prédire, il consulte directement
 les exemples mémorisés. *Les données sont le modèle.* Conséquence : sa taille
 grossit avec le jeu de données. Mille exemples, mille exemples à trimballer ;
@@ -214,7 +214,7 @@ par caractéristique) ou pour Bayes naïf (une moyenne et une dispersion par
 classe, ou une probabilité par mot). Ces modèles sont **paramétriques** : ils
 compressent toute leur connaissance dans un jeu de paramètres de taille *fixée
 d'avance*, que l'on ait appris sur cent exemples ou sur cent millions. Vous
-reconnaissez là le fil de la page 50 : le modèle bête distillait tout en *un*
+reconnaissez là un fil tendu depuis *Un modèle qui s'entraîne* : le modèle bête distillait tout en *un*
 nombre, la droite en *deux*, kNN en *aucun*. C'était déjà, sans le dire, l'axe
 paramétrique / non-paramétrique.
 

@@ -201,7 +201,7 @@ repousse tout le travail au dernier moment, là où il coûte le plus cher.
 Ensuite, plus profondément : kNN **ne dégage aucune compréhension**. Aucune
 règle, aucune tendance, aucune *forme* générale tirée des données. Il ne « sait »
 pas que les grandes maisons coûtent plus cher : il se contente de retrouver des
-voisins. Rappelez-vous le modèle de la page 20 : il avait, lui, distillé toute sa
+voisins. Rappelez-vous [le modèle le plus bête](docs/module2/20-modele-le-plus-bete) : il avait, lui, distillé toute sa
 connaissance en **un seul nombre**, le prix moyen. kNN fait l'inverse : il ne
 distille rien, il garde tout.
 
