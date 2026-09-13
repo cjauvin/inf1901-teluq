@@ -61,8 +61,8 @@ Le fait que ceci soit possible devrait vous rendre perplexe et aussi légèremen
 inquiet. Cette perplexité est avant tout de nature scientifique et
 philosophique&nbsp;: comment se fait-il qu'une intelligence, même artificielle,
 puisse être trompée aussi facilement, par une simple différence de quelques
-pixels ? Du point de vue du jugement humain, cela paraît déconcertant. Ceci
-semble presque carrément contredire la notion même d'intelligence : si
+pixels ? Du point de vue du jugement humain, cela paraît déconcertant. Ceci
+semble presque carrément contredire la notion même d'intelligence : si
 l'algorithme a réellement _compris_ ce qu'est, de manière générale, un panda, ne
 devrait-il pas se montrer plus robuste, et ne pas se laisser berner aussi
 aisément? Pourtant, si on y réfléchit, l'esprit humain est lui aussi facilement
@@ -70,7 +70,7 @@ abusé par de simples illusions d'optique&nbsp;:
 
 ![](/images/module3/duck-rabbit.png)
 
-Et finalement, pourquoi devrait-on être inquiet ? Eh bien, parce qu'il est
+Et finalement, pourquoi devrait-on être inquiet ? Eh bien, parce qu'il est
 possible d'utiliser des attaques adverses de ce genre sur des applications
 réelles d'IA, pour créer des effets néfastes. Il est par exemple possible de
 modifier légèrement un panneau routier, afin de tromper l'IA qui pilote un

@@ -7,10 +7,10 @@ slug: travail-noté-4
 # Un mini ChatGPT dans Google Sheets (travail noté 4)
 
 Un modèle de langage est un outil mathématique qui permet de modéliser la
-distribution statistique des mots : en présence (ou dans le contexte) de
+distribution statistique des mots : en présence (ou dans le contexte) de
 certains mots, quel mot a tendance à suivre, et dans quelle proportion des cas
 (c'est-à-dire avec quelle probabilité). Un modèle de langage n'est pas un objet
-abstrait qui décrit une réalité théorique : il s'agit d'un modèle statistique
+abstrait qui décrit une réalité théorique : il s'agit d'un modèle statistique
 entraîné sur des données particulières. De la même manière qu'un modèle de
 prédiction de la température pour la ville de Montréal est différent d'un modèle
 pour la ville de Québec, un modèle de langage créé par exemple à partir des
@@ -22,7 +22,7 @@ Le modèle du [travail noté du module 2](../module2/99-travail-noté-2) était 
 le capot") était en fait un modèle génératif, "inversé" comme nous l'avons vu à
 l'aide du théorème de Bayes. Le modèle que nous allons construire ici sera
 explicitement génératif. Notre modèle sera un modèle *bigramme*, qui calcule la
-probabilité d'un mot *étant donné* le mot qui le précède  :
+probabilité d'un mot *étant donné* le mot qui le précède :
 
 $$P(\mathtt{mot\ à\ prédire} \mid \mathtt{mot\ qui\ précède})$$
 
@@ -35,7 +35,7 @@ ou "dans le contexte de", ce qui, mathématiquement, correspond à une
 {{% /hint %}}
 
 La tâche de notre modèle de classification pour les courriels était de
-discriminer (répondre oui ou non à la question : est-ce un pourriel?) tandis que
+discriminer (répondre oui ou non à la question : est-ce un pourriel?) tandis que
 la tâche de notre modèle bigramme sera ici de générer du nouveau texte, une fois
 le modèle entraîné, en faisant de l'échantillonnage. La génération se fera un
 mot à la fois, en choisissant à chaque fois le mot suivant, de manière
@@ -44,7 +44,7 @@ précédent (pour faire une analogie, c'est comme si nous utilisions à chaque f
 un dé spécialisé, avec autant de faces qu'il y a de mots dans le vocabulaire, et
 chacune biaisée de manière spécifique en fonction du mot précédent, ce qui est
 représenté dans le diagramme qui suit avec les petites enclumes, pour dénoter
-les différents poids) :
+les différents poids) :
 
 ![](/images/module4/tn4/word_dice.png)
 
@@ -72,7 +72,7 @@ votre version est correctement configurée.
 
 Copiez tout d'abord les mots de ce texte dans la colonne `A` d'une nouvelle
 "feuille" Google Sheets, un mot par rangée (assurez-vous d'utiliser correctement
-la [fonction "copier-coller"](docs/50-google-sheets/#fonction-copier-coller), si vous le faites) :
+la [fonction "copier-coller"](docs/50-google-sheets/#fonction-copier-coller), si vous le faites) :
 
 ```
 le
@@ -118,11 +118,11 @@ court
 Notez tout d'abord que la colonne `A` (son contenu) est très souvent nommée le
 "corpus d'entraînement". Il s'agit du texte brut à partir duquel nous allons
 calculer (ou entraîner) les paramètres du modèle. Pour les vrais modèles de
-langage, ce texte peut être [extrêmement volumineux](https://commoncrawl.org) !
+langage, ce texte peut être [extrêmement volumineux](https://commoncrawl.org) !
 (Il peut comprendre des millions de livres, par exemple).
 
 Dans la première cellule de la colonne `B` (donc `B1`), entrez maintenant cette
-formule :
+formule :
 
 ```
 =A2
@@ -133,14 +133,14 @@ sur le petit "+" qui apparaît quand votre curseur est placé au-dessus du coin
 inférieur droit de la cellule `B1` (il est possible que Google Sheets offre de
 le faire pour vous, automatiquement).
 
-Dans la cellule `C1`, entrez maintenant cette formule :
+Dans la cellule `C1`, entrez maintenant cette formule :
 
 ```
 =A1 & " " & B1
 ```
 
 Encore une fois, la colonne `C` doit s'étendre jusqu'à la cellule `C37`. À ce stade,
-votre feuille devrait ressembler à ceci :
+votre feuille devrait ressembler à ceci :
 
 ![](/images/module4/tn4/sheets_3_first_cols.png)
 
@@ -152,7 +152,7 @@ facilement).
 Nous allons maintenant compter, dans la colonne `D`, le nombre de fois où un
 bigramme particulier apparaît dans le corpus d'entraînement de la colonne `A`
 (la colonne `D` doit être étendue pour avoir le même nombre d'éléments que la
-colonne `C`) :
+colonne `C`) :
 
 ```
 =COUNTIF(C:C, C1)
@@ -183,7 +183,7 @@ $$
 
 Pour ce faire, entrez dans la cellule `E1` (la formule est un peu complexifiée par
 le fait qu'on veut considérer tous les mots de la colonne A sauf le dernier, car
-sa présence fausserait légèrement les probabilités) :
+sa présence fausserait légèrement les probabilités) :
 
 ```
 =D1 / COUNTIF(A$1:INDEX(A:A, COUNTA(A:A)-1), A1)
@@ -199,21 +199,21 @@ nécessairement être contenue entre 0 et 1. Le colonne `E` doit s'étendre jusq
 
 Dans la colonne `F` nous allons filtrer la colonne `C` (tous les bigrammes, qui
 comprennent donc des bigrammes répétés) pour ne retenir que les bigrammes
-uniques (cette colonne devrait avoir 26 éléments) :
+uniques (cette colonne devrait avoir 26 éléments) :
 
 ```
 =SORT(UNIQUE(C:C))
 ```
 
 Nous devons ensuite séparer les mots des bigrammes uniques, les premiers mots
-dans la colonne `G` :
+dans la colonne `G` :
 
 ```
 =INDEX(SPLIT(F1, " "), 1)
 ```
 
 suivis des deuxièmes mots (des bigrammes uniques de la colonne `F`) dans la
-colonne `H` :
+colonne `H` :
 
 ```
 =INDEX(SPLIT(F1, " "), 2)
@@ -231,7 +231,7 @@ certitude, soit une probabilité de 1) le mot `la`, tandis que le mot `le` peut
 être suivi des mots `chat`, `chien` et `fromage` avec des probabilités de 0.5,
 0.4 et 0.1, respectivement.
 
-À ce stade, votre feuille devrait ressembler à ceci :
+À ce stade, votre feuille devrait ressembler à ceci :
 
 ![](/images/module4/tn4/sheets_model_complete.png)
 
@@ -307,7 +307,7 @@ en glissant la cellule `J2` vers le bas.
    de générer des séquences sémantiquement plus étranges? Lesquels en
    particulier?
 
-9. De quel type d'apprentissage s'agit-il ici : supervisé, non-supervisé ou
+9. De quel type d'apprentissage s'agit-il ici : supervisé, non-supervisé ou
    semi-supervisé? Expliquez en quoi ça l'est.
 
 10. Si on utilisait un modèle trigramme au lieu d'un bigramme, qu'est-ce qui

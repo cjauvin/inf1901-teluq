@@ -6,7 +6,7 @@ slug: présentation
 
 {{% hint info %}}
 
-*« Toute technologie suffisamment avancée est indiscernable de la magie. »*
+*« Toute technologie suffisamment avancée est indiscernable de la magie. »*
 
 Arthur C. Clarke
 
@@ -43,7 +43,7 @@ intelligence artificielle (IA) dans les entreprises et, éventuellement, des
 études ou des projets plus avancés dans le domaine de l'IA ou dans des secteurs
 influencés par cette technologie.
 
-Plus spécifiquement, le cours habilitera l’étudiante ou l’étudiants à :
+Plus spécifiquement, le cours habilitera l’étudiante ou l’étudiants à :
 
 * Expliquer les bases et l'évolution historique de l'IA.
 
@@ -59,7 +59,7 @@ Dans l’introduction de chaque module du cours, vous trouverez les objectifs sp
 
 Le contenu du cours se découpe en cinq modules.
 
-1. Le premier module remonte **aux origines** de l'IA et raconte l'aventure de l'**intelligence artificielle symbolique** (le *GOFAI*, pour *Good Old-Fashioned AI*) : pendant près de quarante ans, le pari de faire « penser » une machine en lui faisant manipuler des **symboles** et des **règles** logiques. Dans une perspective historique, du test de Turing (1950) aux systèmes experts et aux « hivers » de l'IA, ce module présente les grandes idées algorithmiques de cette première école (recherche dans un espace d'états, représentation des connaissances, raisonnement à base de règles) et explique *pourquoi* elle a fini par buter sur ses limites — ouvrant la voie à l'apprentissage automatique étudié dans les modules suivants.
+1. Le premier module remonte **aux origines** de l'IA et raconte l'aventure de l'**intelligence artificielle symbolique** (le *GOFAI*, pour *Good Old-Fashioned AI*) : pendant près de quarante ans, le pari de faire « penser » une machine en lui faisant manipuler des **symboles** et des **règles** logiques. Dans une perspective historique, du test de Turing (1950) aux systèmes experts et aux « hivers » de l'IA, ce module présente les grandes idées algorithmiques de cette première école (recherche dans un espace d'états, représentation des connaissances, raisonnement à base de règles) et explique *pourquoi* elle a fini par buter sur ses limites — ouvrant la voie à l'apprentissage automatique étudié dans les modules suivants.
 
 2. Le deuxième module introduit les principes et techniques fondamentaux de l'apprentissage automatique (machine learning) en explorant les différents types d'apprentissage (supervisé, non supervisé, par renforcement) et leurs applications. Ce module vise à décrire comment les algorithmes apprennent à partir des données pour faire des prédictions, identifier des modèles et automatiser des tâches complexes.
 
@@ -69,4 +69,4 @@ Le contenu du cours se découpe en cinq modules.
 
 5. Le cinquième module propose une vision plus vaste du sujet, avec l'exploration de perspectives autour de l'IA, à la fois philosophiques, scientifiques et sociales.
 
-{{< image src="/images/ai-venn.svg" alt="Carte en régions imbriquées de l'intelligence artificielle, chaque région portant le module qui l'explore. À l'intérieur de « Intelligence artificielle (IA) » : d'un côté « IA classique », le sujet du Module 1 ; de l'autre « Apprentissage automatique (AA) » (machine learning), vers lequel pointe le Module 2, tout comme vers les « Méthodes d'AA diverses » qu'il contient. Cet ensemble contient aussi les « Réseaux de neurones » puis l'« Apprentissage profond » (Module 3), lesquels contiennent à leur tour l'« IA générative » et « ChatGPT » (Module 4). Un dernier repère, « Module 5 », pointe vers l'ensemble du paysage plutôt que vers une région particulière." title="La carte du cours : chaque module explore une région de l'intelligence artificielle, des plus anciennes aux plus récentes — et le Module 5 les traverse toutes." loading="lazy" >}}
+{{< image src="/images/ai-venn.svg" alt="Carte en régions imbriquées de l'intelligence artificielle, chaque région portant le module qui l'explore. À l'intérieur de « Intelligence artificielle (IA) » : d'un côté « IA classique », le sujet du Module 1 ; de l'autre « Apprentissage automatique (AA) » (machine learning), vers lequel pointe le Module 2, tout comme vers les « Méthodes d'AA diverses » qu'il contient. Cet ensemble contient aussi les « Réseaux de neurones » puis l'« Apprentissage profond » (Module 3), lesquels contiennent à leur tour l'« IA générative » et « ChatGPT » (Module 4). Un dernier repère, « Module 5 », pointe vers l'ensemble du paysage plutôt que vers une région particulière." title="La carte du cours : chaque module explore une région de l'intelligence artificielle, des plus anciennes aux plus récentes — et le Module 5 les traverse toutes." loading="lazy" >}}

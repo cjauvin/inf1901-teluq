@@ -14,13 +14,13 @@ choix plus courant Excel, car Google Sheets est plus accessible, et le langage
 de ses formules est plus facile à gérer (celui d'Excel dépend de la langue et
 des paramètres régionaux de votre système d'exploitation). Pour éviter la
 confusion dans le contexte des travaux notés, nous devons tout d'abord nous
-assurer que la langue des fonctions et des paramètres régionaux est l'anglais :
+assurer que la langue des fonctions et des paramètres régionaux est l'anglais :
 
 ![](/images/sheets_params_menu.png)
 
 ![](/images/sheets_params_langue.png)
 
-Assurez-vous ensuite que la "barre de formules" soit visible :
+Assurez-vous ensuite que la "barre de formules" soit visible :
 
 ![](/images/sheets_visu_barre_formule.png)
 
@@ -49,6 +49,6 @@ Il est possible de partager de manière anonyme un fichier Google Sheets (qui ne
 sera donc pas associé à votre compte Google d'aucune manière) en produisant un
 hyperlien, en utilisant la fonction "partage" et en cliquant sur le bouton
 "copier le lien", après s'être assuré que l'accès est en mode "tous les
-utilisateurs disposant du lien" :
+utilisateurs disposant du lien" :
 
 ![](/images/sheets_sharing.png)

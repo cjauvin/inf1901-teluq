@@ -21,7 +21,7 @@ vocale, la traduction automatique ou la recherche d’information.
 Les approches classiques utilisaient surtout des modèles statistiques appelés
 *n-grammes*. Dans un modèle n-gramme, la probabilité d’un mot dépend des (n-1)
 mots précédents. Par exemple, un trigramme (n=3) prend en compte les deux mots
-qui précèdent chaque mot à prédire. Ces modèles avaient deux limites majeures :
+qui précèdent chaque mot à prédire. Ces modèles avaient deux limites majeures :
 - Ils nécessitaient des corpus très volumineux pour estimer les probabilités.
 - Ils ne représentaient pas les liens de sens entre les mots (par exemple,
   « chien » et « chiens » étaient traités comme totalement distincts).
@@ -38,7 +38,7 @@ des mots*, connues sous le nom de *word embeddings*. Le modèle Word2Vec, propos
 par Mikolov et ses collègues en 2013, a permis d’apprendre un vecteur dense (par
 exemple, de 300 dimensions) pour chaque mot. Ces vecteurs capturent les
 relations sémantiques et contextuelles. On pouvait ainsi observer des analogies
-célèbres :
+célèbres :
 
 ```
   roi - homme + femme ≈ reine
@@ -54,7 +54,7 @@ Pour dépasser la rigidité des n-grammes, les *réseaux neuronaux récurrents*
 une mémoire interne qui encode le contexte précédent. Cela permet, en théorie,
 de prendre en compte des dépendances longues.
 
-Cependant, les RNN simples présentaient des difficultés :
+Cependant, les RNN simples présentaient des difficultés :
 - Les gradients disparaissaient au fil des étapes (*problème du gradient qui s’annule*), rendant difficile l’apprentissage des relations à long terme.
 - L’entraînement était lent, car les séquences devaient être traitées une étape après l’autre.
 
@@ -77,8 +77,8 @@ d’*auto-attention*.
 ### Le principe de l’auto-attention
 
 L’auto-attention permet à chaque mot de la séquence de tenir compte de tous les
-autres mots en parallèle. Concrètement :
-- Chaque mot est transformé en trois vecteurs : *requête* (Query), *clé* (Key) et *valeur* (Value).
+autres mots en parallèle. Concrètement :
+- Chaque mot est transformé en trois vecteurs : *requête* (Query), *clé* (Key) et *valeur* (Value).
 - Pour un mot donné, on compare sa requête avec toutes les clés des autres mots, ce qui produit des scores d’attention.
 - Ces scores sont normalisés avec une fonction softmax, puis servent à pondérer la combinaison des valeurs.
 
@@ -87,7 +87,7 @@ avoir besoin de parcourir la séquence dans l’ordre.
 
 ### Les principaux composants d’un Transformer
 
-Un bloc Transformer comprend plusieurs éléments :
+Un bloc Transformer comprend plusieurs éléments :
 - Un mécanisme d’*auto-attention multi-têtes* (chaque tête apprend à repérer différents types de relations).
 - Un réseau de neurones *feedforward* appliqué indépendamment à chaque position.
 - Des normalisations de couche (*Layer Normalization*) et des connexions résiduelles qui stabilisent et accélèrent l’apprentissage.
@@ -125,7 +125,7 @@ humains. Ce processus permet d’orienter le comportement du modèle vers des
 réponses plus pertinentes et utiles.
 
 ### L’apprentissage par renforcement avec retour humain (RLHF)
-Le *Reinforcement Learning from Human Feedback* (apprentissage par renforcement avec retour humain) se déroule en plusieurs étapes :
+Le *Reinforcement Learning from Human Feedback* (apprentissage par renforcement avec retour humain) se déroule en plusieurs étapes :
 1. Le modèle produit différentes réponses à une même question.
 2. Des évaluateurs humains les classent de la meilleure à la moins bonne.
 3. Ces classements servent à entraîner un *modèle de récompense* qui estime la qualité des réponses.

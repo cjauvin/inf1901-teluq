@@ -6,7 +6,7 @@ slug: philosophie
 
 {{% hint info %}}
 
-*« Le vrai problème de l’humanité est le suivant : nous avons des émotions paléolithiques, des institutions médiévales, et une technologie digne des dieux. »*
+*« Le vrai problème de l’humanité est le suivant : nous avons des émotions paléolithiques, des institutions médiévales, et une technologie digne des dieux. »*
 
 E.O. Wilson
 
@@ -15,7 +15,7 @@ E.O. Wilson
 # Approche pédagogique du cours
 
 L'apprentissage automatique (AA) est un sujet complexe et fortement dynamique,
-au confluent de plusieurs disciplines : mathématiques, informatique, sciences
+au confluent de plusieurs disciplines : mathématiques, informatique, sciences
 cognitives. Les fondements de la discipline sont résolument mathématiques,
 principalement avec l'algèbre linéaire et les probabilités (qui entretiennent
 elles-mêmes des liens très étroits).

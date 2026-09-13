@@ -9,19 +9,19 @@ slug: réseaux-de-neurones
 ## Une généralisation de la régression logistique
 
 Sans le réaliser, au module 2, nous avons déjà vu un réseau de neurones (RDN)
-simple, mais qui portait alors un autre nom : la [régression logistique](docs/module2/60-classer/#tracer-une-frontière--la-régression-logistique)
+simple, mais qui portait alors un autre nom : la [régression logistique](docs/module2/60-classer/#tracer-une-frontière--la-régression-logistique)
 (RL).
 
 Une manière visuelle de représenter la régression logistique est la suivante
 (sous la forme d'un
 [graphe](https://fr.wikipedia.org/wiki/Graphe_(math%C3%A9matiques_discr%C3%A8tes)),
-avec des noeuds (ou sommets) et des arêtes) :
+avec des noeuds (ou sommets) et des arêtes) :
 
 ![](/images/module3/rl1.png)
 
 La couche d'entrée (la rangée de cercles à gauche) n'est pas vraiment une
 couche, elle représente simplement les données que l'on va fournir en entrée
-(input) à la RL, comme cette extension du même diagramme le démontre :
+(input) à la RL, comme cette extension du même diagramme le démontre :
 
 ![](/images/module3/rl1_with_data.png)
 
@@ -49,11 +49,11 @@ principe elles sont là.
 ![](/images/module3/nn.png)
 
 La première chose qu'on peut remarquer, c'est le changement de langage, qui nous
-transporte maintenant dans un domaine qui évoque plus l'intelligence : les
-neurones ! Il faut donc tout d'abord clarifier ce qu'on entend par *neurone* :
+transporte maintenant dans un domaine qui évoque plus l'intelligence : les
+neurones ! Il faut donc tout d'abord clarifier ce qu'on entend par *neurone* :
 il s'agit en fait d'un usage métaphorique, basé de manière très simpliste sur
 l'anatomie du cerveau. Voici un schéma qui aide à faire la correspondance entre
-les deux mondes (intelligence biologique ou artificielle) :
+les deux mondes (intelligence biologique ou artificielle) :
 
 ![](/images/module3/neurone.png)
 
@@ -64,7 +64,7 @@ dendrites, les intègre dans le corps cellulaire, puis transmet un signal
 manière relativement analogue, notre notion de neurone artificiel (les cercles,
 ou noeuds dans les diagrammes) correspond donc à une "unité de calcul" qui
 "intègre" ses valeurs entrantes avec deux opérations mathématiques successives
-et simples :
+et simples :
 
 1. La somme (addition) des poids (synapses) qui lui sont connectés (les valeurs
    entrantes du neurone)
@@ -79,14 +79,14 @@ de sortie). L'autre composante qui fait en sorte qu'il s'agit d'un réseau sont
 les synapses (pour le cerveau biologique) ou les poids (pour un réseau de
 neurones artificiels). Dans le cerveau, la transmission des signaux se fait
 selon un mécanisme très complexe, mais dans un RDN, les poids sont simplement
-des valeurs numériques, habituellement rassemblées dans une matrice : si une
+des valeurs numériques, habituellement rassemblées dans une matrice : si une
 couche de $N$ neurones est reliée à une autre couche de $M$ neurones, il y aura
 donc une matrice de $N \times M$ poids pour établir la connexion.
 
 Si cette description en mots vous apparaît un peu laborieuse, voici un exemple
 interactif qui pourrait vous aider à clarifier les idées. Changez les valeurs
 d'entrées, ainsi que celle des poids (paramètres) et convainquez-vous que vous
-avez une compréhension claire de ce mécanisme relativement simple :
+avez une compréhension claire de ce mécanisme relativement simple :
 
 {{< applet src="/html/applets/neuron.html" height="420" >}}
 
@@ -111,8 +111,8 @@ cachée, et avec un seul neurone de sortie.
 {{% hint info %}}
 
 Ce fonctionnement en cascade rappelle la structure et le fonctionnement du
-cerveau humain : des «entrées » qui véhiculent l’information, des « noeuds »
-qui effectuent un calcul ou une transformation, et des « sorties » transmises à
+cerveau humain : des «entrées » qui véhiculent l’information, des « noeuds »
+qui effectuent un calcul ou une transformation, et des « sorties » transmises à
 d’autres unités. De la même manière que l’intelligence du cerveau émerge de la
 combinaison massive et parallèle de ses cellules, l’apprentissage automatique
 exploite l’interconnexion d’un grand nombre de neurones artificiels pour
@@ -153,7 +153,7 @@ La première phase consiste en la propagation des données à travers le réseau
 passant (de gauche à droite) par toutes les couches successives, pour finir par
 le calcul des valeurs de sortie. Concrètement, la phase de propagation vers
 l'avant correspond au calcul de tous les éléments qui constituent le réseau,
-dans un sens procédural : les données, en tant que vecteurs, sont tout d'abord
+dans un sens procédural : les données, en tant que vecteurs, sont tout d'abord
 multipliées à la première couche de poids (une matrice de nombres réels), et
 ensuite chaque neurone est responsable de faire la somme de ses entrées, et
 d'appliquer sa fonction d'activation non-linéaire sur le résultat (par exemple
@@ -187,7 +187,7 @@ Avant de pouvoir être utilisé, un réseau de neurones doit tout d'abord être
 entraîné (cette phase est en général coûteuse et complexe, et demande énormément
 d'ingénierie). L'algorithme de l’entraînement d'un RDN (ou de tout autre
 algorithme d'AA en fait) peut donc être résumé schématiquement de la manière
-suivante, en pseudo-code :
+suivante, en pseudo-code :
 
 ```
 Tant que l'erreur (sur les données d’entraînement) est suffisamment élevée :
@@ -219,7 +219,7 @@ totalement élucidé par la neuroscience moderne.
 
 La question de l'apprentissage profond (en anglais *deep learning*) commence par
 la différence fondamentale qu'on a observée entre la régression logistique et le
-réseau de neurones : la couche cachée. À quoi sert-elle? En un mot, à faire en
+réseau de neurones : la couche cachée. À quoi sert-elle? En un mot, à faire en
 sorte qu'il soit possible d'apprendre des fonctions non-linéaires. Les
 algorithmes que nous avons vus au module 2&nbsp;: la régression logistique, la
 classification naive bayésienne, la régression linéaire, etc. ne permettaient de
@@ -317,8 +317,8 @@ d’apprentissage automatique reposaient sur des caractéristiques (en anglais
 *features*) construites "à la main", souvent de manière ad hoc. En pratique,
 cela signifiait que les experts du domaine devaient analyser les données brutes
 (images, textes, sons, etc.) et en extraire eux-mêmes les éléments jugés
-pertinents : par exemple, dans une image, on pouvait calculer des contours, des
-textures ou des histogrammes de couleur ; dans du texte, on pouvait compter les
+pertinents : par exemple, dans une image, on pouvait calculer des contours, des
+textures ou des histogrammes de couleur ; dans du texte, on pouvait compter les
 fréquences de mots ou utiliser des règles grammaticales prédéfinies.
 L’efficacité du modèle d'apprentissage dépendait donc en grande partie de la
 qualité de ce travail manuel de conception des features.
@@ -332,7 +332,7 @@ d’abord à détecter des bords, puis des formes, puis des objets entiers, sans
 l’humain ait besoin de coder explicitement ces étapes.
 
 Ce passage des features manuelles à des représentations apprises est ce qui a
-permis aux réseaux de neurones modernes d’atteindre une telle puissance : le
+permis aux réseaux de neurones modernes d’atteindre une telle puissance : le
 modèle n’est plus limité par l’intuition ou les connaissances préalables des
 humains, mais peut découvrir, dans les données elles-mêmes, les structures les
 plus utiles pour accomplir une tâche donnée.

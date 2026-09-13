@@ -90,7 +90,7 @@ Après votre visionnement, essayez de répondre aux dix questions suivantes.
 
 6. L'alignement de l'IA avec les valeurs humaines est-il réalisable sans régulation stricte, et en quoi cela contredit-il la vision accélérationniste qui défend une croissance technologique illimitée&nbsp;?
 
-7. Les influences culturelles, comme les films de science-fiction (2001 : l'odyssée de l'espace ou Terminator), façonnent-elles nos peurs existentielles, et cela amplifie-t-il la vision défaitiste des doomers&nbsp;?
+7. Les influences culturelles, comme les films de science-fiction (2001 : l'odyssée de l'espace ou Terminator), façonnent-elles nos peurs existentielles, et cela amplifie-t-il la vision défaitiste des doomers&nbsp;?
 
 8. La philosophie de l'esprit, avec des concepts comme les qualia, suggère-t-elle que l'IA ne pourra jamais égaler l'expérience humaine, et cela remet-il en cause la vision transhumaniste du dépassement biologique&nbsp;?
 9. Les rationalistes, comme Eliezer Yudkowsky, prônent-ils une approche trop alarmiste pour éviter les risques, et cela s'harmonise-t-il avec la vision libérale qui équilibre innovation et contrôle démocratique&nbsp;?
@@ -109,7 +109,7 @@ Q: Pourquoi l'IA semble être un sujet distinct de l'informatique, une disciplin
 
 {{% details "Réponse de ChatGPT" %}}
 
-L'intelligence artificielle (IA) est née comme un sous-domaine de l’informatique, mais elle s’est distinguée parce qu’elle mobilise des approches, des objectifs et des difficultés bien spécifiques. Alors que l’informatique générale vise à automatiser le traitement de l’information, l’IA vise à reproduire ou simuler des comportements que l’on associe à l’intelligence humaine : perception, raisonnement, apprentissage, planification. La complexité de ces objectifs, leur ancrage dans la cognition, la philosophie et les neurosciences, a poussé à en faire un domaine interdisciplinaire à part entière.
+L'intelligence artificielle (IA) est née comme un sous-domaine de l’informatique, mais elle s’est distinguée parce qu’elle mobilise des approches, des objectifs et des difficultés bien spécifiques. Alors que l’informatique générale vise à automatiser le traitement de l’information, l’IA vise à reproduire ou simuler des comportements que l’on associe à l’intelligence humaine : perception, raisonnement, apprentissage, planification. La complexité de ces objectifs, leur ancrage dans la cognition, la philosophie et les neurosciences, a poussé à en faire un domaine interdisciplinaire à part entière.
 
 {{% /details %}}
 
@@ -143,7 +143,7 @@ Q: Quels sont les liens entre la philosophie analytique (mathématiques, langage
 
 {{% details "Réponse de ChatGPT" %}}
 
-La philosophie analytique a fourni des bases conceptuelles à l’IA : la logique formelle (Frege, Russell), les théories du langage (Wittgenstein, Carnap), et la philosophie de l’esprit (fonctionnalisme, behaviorisme). L’IA s’est construite sur l’idée que l’intelligence peut être décrite comme une suite de transformations symboliques, inspirée de la logique et des mathématiques.
+La philosophie analytique a fourni des bases conceptuelles à l’IA : la logique formelle (Frege, Russell), les théories du langage (Wittgenstein, Carnap), et la philosophie de l’esprit (fonctionnalisme, behaviorisme). L’IA s’est construite sur l’idée que l’intelligence peut être décrite comme une suite de transformations symboliques, inspirée de la logique et des mathématiques.
 
 {{% /details %}}
 
@@ -159,7 +159,7 @@ Q: Quelle est l'idée fondamentale de Turing?
 
 {{% details "Réponse de ChatGPT" %}}
 
-Turing a proposé que l’intelligence puisse être définie de manière comportementale : si une machine peut tenir une conversation de manière indiscernable d’un humain (test de Turing), on doit lui attribuer une forme d’intelligence. Il a aussi montré que toute fonction calculable peut être simulée par une machine universelle.
+Turing a proposé que l’intelligence puisse être définie de manière comportementale : si une machine peut tenir une conversation de manière indiscernable d’un humain (test de Turing), on doit lui attribuer une forme d’intelligence. Il a aussi montré que toute fonction calculable peut être simulée par une machine universelle.
 
 {{% /details %}}
 
@@ -191,7 +191,7 @@ Q: Qu'est-ce qu'un zombie philosophique, et est-ce que une IA en serait un? Est-
 
 {{% details "Réponse de ChatGPT" %}}
 
-Un zombie philosophique est un être identique à un humain en tous points, sauf qu’il n’a pas de conscience subjective (pas de qualia). Certains pensent que les IA sont comme ça : elles agissent intelligemment sans expérience vécue. Le débat sur les qualia divise la philosophie de l’esprit depuis longtemps.
+Un zombie philosophique est un être identique à un humain en tous points, sauf qu’il n’a pas de conscience subjective (pas de qualia). Certains pensent que les IA sont comme ça : elles agissent intelligemment sans expérience vécue. Le débat sur les qualia divise la philosophie de l’esprit depuis longtemps.
 
 {{% /details %}}
 
@@ -201,7 +201,7 @@ Q: Quels sont les liens entre l'IA et la science-fiction?
 
 {{% details "Réponse de ChatGPT" %}}
 
-La science-fiction explore les conséquences sociales, morales et existentielles de la création d’IA. Elle a souvent anticipé ou influencé les recherches, en posant des questions que les sciences n’osent pas toujours aborder frontalement : la conscience, la révolte des machines, l’humanité artificielle.
+La science-fiction explore les conséquences sociales, morales et existentielles de la création d’IA. Elle a souvent anticipé ou influencé les recherches, en posant des questions que les sciences n’osent pas toujours aborder frontalement : la conscience, la révolte des machines, l’humanité artificielle.
 
 {{% /details %}}
 
@@ -209,7 +209,7 @@ Q: Quelles sont les œuvres importantes et pourquoi? (2001, Blade Runner, Her, T
 
 {{% details "Réponse de ChatGPT" %}}
 
-Ces œuvres interrogent des aspects fondamentaux de l’IA :
+Ces œuvres interrogent des aspects fondamentaux de l’IA :
 - *2001: A Space Odyssey* — HAL 9000 symbolise une IA contrôlant la vie humaine.
 - *Blade Runner* — les réplicants remettent en cause la frontière entre humain et machine.
 - *Her* — questionne l’amour, l’intimité et l’identité avec une IA vocale.
@@ -222,7 +222,7 @@ Q: Qu'est-ce que l'idée de la singularité (FOOM)? Est-elle plausible?
 
 {{% details "Réponse de ChatGPT" %}}
 
-La singularité, ou FOOM, est l’idée qu’une IA assez intelligente pourra s’améliorer elle-même, entraînant une explosion de capacités cognitives exponentielles. Elle est défendue par des penseurs comme Yudkowsky. Sa plausibilité est débattue : certains la voient comme inévitable, d’autres comme spéculative voire fantasmatique.
+La singularité, ou FOOM, est l’idée qu’une IA assez intelligente pourra s’améliorer elle-même, entraînant une explosion de capacités cognitives exponentielles. Elle est défendue par des penseurs comme Yudkowsky. Sa plausibilité est débattue : certains la voient comme inévitable, d’autres comme spéculative voire fantasmatique.
 
 {{% /details %}}
 
@@ -248,7 +248,7 @@ Q: Les parallèles qu'on peut faire avec l'empirisme et le rationalisme
 
 {{% details "Réponse de ChatGPT" %}}
 
-La GOFAI est liée au rationalisme : connaissance fondée sur des règles et principes. Le machine learning est lié à l’empirisme : la connaissance émerge de l’expérience (données). Ce parallèle éclaire deux visions opposées de l’intelligence.
+La GOFAI est liée au rationalisme : connaissance fondée sur des règles et principes. Le machine learning est lié à l’empirisme : la connaissance émerge de l’expérience (données). Ce parallèle éclaire deux visions opposées de l’intelligence.
 
 {{% /details %}}
 
@@ -298,7 +298,7 @@ Q: Qui sont les personnages intéressants de cette communauté?
 
 {{% details "Réponse de ChatGPT" %}}
 
-Outre Yudkowsky, on y retrouve :
+Outre Yudkowsky, on y retrouve :
 - Nick Bostrom (philosophe de l’Université d’Oxford)
 - Scott Alexander (psychiatre, auteur du blog *Astral Codex Ten*)
 - Nate Soares (MIRI)
@@ -312,11 +312,11 @@ Q: Quels sont leurs idéaux, et est-ce que cette communauté aurait pu voir le j
 
 {{% details "Réponse de ChatGPT" %}}
 
-Leurs idéaux incluent :
+Leurs idéaux incluent :
 - Maximiser le bien que l’on peut faire (utilitarisme effectif)
 - Améliorer la rationalité humaine
 - Anticiper les risques existentiels
-Cette communauté est née de forums et de blogs ; elle est intrinsèquement liée à l’internet, qui a permis des discussions intensives, longues, et interconnectées sur des années.
+Cette communauté est née de forums et de blogs ; elle est intrinsèquement liée à l’internet, qui a permis des discussions intensives, longues, et interconnectées sur des années.
 
 {{% /details %}}
 
@@ -454,7 +454,7 @@ Q: Les LLMs et le raisonnement, et le parallèle avec la dualité système 1 vs 
 
 {{% details "Réponse de ChatGPT" %}}
 
-Les LLMs sont souvent vus comme des systèmes "1" : rapides, intuitifs, basés sur des associations. Mais certains travaux cherchent à leur faire simuler le système "2" : raisonnement lent, logique, planification. Cela reste un défi.
+Les LLMs sont souvent vus comme des systèmes "1" : rapides, intuitifs, basés sur des associations. Mais certains travaux cherchent à leur faire simuler le système "2" : raisonnement lent, logique, planification. Cela reste un défi.
 
 {{% /details %}}
 
@@ -470,7 +470,7 @@ Q: Pourquoi les progrès seront difficiles (données d'entraînement nécessaire
 
 {{% details "Réponse de ChatGPT" %}}
 
-Les modèles nécessitent des quantités massives de données et d’énergie. Il devient difficile de maintenir ce rythme. De plus, on s’approche du plafond de la qualité des corpus disponibles. Des solutions : l’apprentissage plus efficace, le recyclage des connaissances, ou des architectures plus sobres.
+Les modèles nécessitent des quantités massives de données et d’énergie. Il devient difficile de maintenir ce rythme. De plus, on s’approche du plafond de la qualité des corpus disponibles. Des solutions : l’apprentissage plus efficace, le recyclage des connaissances, ou des architectures plus sobres.
 
 {{% /details %}}
 
@@ -480,7 +480,7 @@ Q: De quoi peut-on avoir peur exactement, avec l'IA?
 
 {{% details "Réponse de ChatGPT" %}}
 
-De plusieurs choses : la perte d’emplois, les biais automatiques, les manipulations de masse, les armes autonomes, ou la création d’une AGI non alignée. Ces peurs vont du probable au spéculatif, mais elles sont prises de plus en plus au sérieux.
+De plusieurs choses : la perte d’emplois, les biais automatiques, les manipulations de masse, les armes autonomes, ou la création d’une AGI non alignée. Ces peurs vont du probable au spéculatif, mais elles sont prises de plus en plus au sérieux.
 
 {{% /details %}}
 
@@ -496,7 +496,7 @@ Q: Qu'est-ce que le Paperclip Maximizer?
 
 {{% details "Réponse de ChatGPT" %}}
 
-C’est une expérience de pensée : une AGI chargée de produire des trombones maximise cet objectif au point de transformer toute la Terre (et plus) en matière première. Cela illustre comment un objectif mal spécifié peut avoir des conséquences catastrophiques.
+C’est une expérience de pensée : une AGI chargée de produire des trombones maximise cet objectif au point de transformer toute la Terre (et plus) en matière première. Cela illustre comment un objectif mal spécifié peut avoir des conséquences catastrophiques.
 
 {{% /details %}}
 
@@ -530,7 +530,7 @@ Q: Quels problèmes l'IA pourrait-elle permettre de résoudre éventuellement?
 
 {{% details "Réponse de ChatGPT" %}}
 
-L’IA pourrait aider dans : la médecine personnalisée, la recherche scientifique automatisée, l’adaptation au changement climatique, l’éducation sur mesure, la réduction de la pauvreté, l’exploration spatiale, etc. Elle est vue par certains comme un amplificateur de l’intelligence humaine.
+L’IA pourrait aider dans : la médecine personnalisée, la recherche scientifique automatisée, l’adaptation au changement climatique, l’éducation sur mesure, la réduction de la pauvreté, l’exploration spatiale, etc. Elle est vue par certains comme un amplificateur de l’intelligence humaine.
 
 {{% /details %}}
 

@@ -9,7 +9,7 @@ slug: architectures-avancées
 
 Une fois que les principes de base des réseaux de neurones sont bien compris, et
 que les idées de l'apprentissage profond sont plus claires, les choses
-deviennent foisonnantes et très intéressantes avec ce sujet !
+deviennent foisonnantes et très intéressantes avec ce sujet !
 
 Un peu comme on l'a fait avec l'ajout de couches cachées supplémentaires pour un
 réseau de neurones, si on prend un moment pour considérer son architecture, il
@@ -18,7 +18,7 @@ pour ses éléments d'être connectés en un graphe).
 
 L'essor de l'apprentissage profond est venu avec une explosion de créativité à
 ce niveau, comme le démontre le fameux [Zoo des réseaux de
-neurones](https://www.asimovinstitute.org/neural-network-zoo/) :
+neurones](https://www.asimovinstitute.org/neural-network-zoo/) :
 
 ![](/images/module3/nn_zoo.png)
 
@@ -56,7 +56,7 @@ que l'on ne décide pas d'avance de ce qu'on l'on voudra détecter, le réseau
 décidera par lui-même, et cela dépendra évidemment de la nature des images
 d’entraînement.
 
-Les CNNs ont des architectures complexes, avec de nombreux détails :
+Les CNNs ont des architectures complexes, avec de nombreux détails :
 
 ![](/images/module3/cnn.png)
 
@@ -70,7 +70,7 @@ Ce défi consistait à classer plus d’un million d’images en 1000 catégorie
 différentes. Cette année-là, l’architecture AlexNet, un CNN profond entraîné sur
 GPU, a pulvérisé les performances de toutes les méthodes classiques (SVM, random
 forests, etc.), réduisant l’erreur de près de moitié. Ce succès a marqué le
-début de la révolution de l'apprentissage profond en vision par ordinateur : les
+début de la révolution de l'apprentissage profond en vision par ordinateur : les
 CNN sont rapidement devenus la méthode dominante pour la reconnaissance
 d’images, puis pour de nombreuses autres tâches (détection d’objets,
 segmentation, analyse vidéo, etc.). Depuis, des architectures toujours plus
@@ -84,14 +84,14 @@ partagent les poids (réduisant le nombre de paramètres) et exploitent
 l'invariance à la translation (un motif détecté, comme un oeil, n'importe où
 dans l'image est reconnu).
 
-Applications courantes : reconnaissance d'objets (ex. : ResNet pour la
+Applications courantes : reconnaissance d'objets (ex. : ResNet pour la
 classification d'images), détection faciale, ou même dans les voitures autonomes
 pour analyser les flux vidéo en temps réel.
 
 ## Les réseaux de neurones récurrents (RNNs)
 
 Tous les types de données d'entrée pour les réseaux de neurones que nous avons
-vus jusqu'à présent étaient statiques, fixés dans le temps : une image, un point
+vus jusqu'à présent étaient statiques, fixés dans le temps : une image, un point
 dans l'espace, les attributs d'une maison (son prix, ses dimensions, etc).
 Est-ce qu'il serait possible de prendre en considération des données
 séquentielles, qui s'articulent dans le temps, comme la musique, les mots
@@ -126,7 +126,7 @@ sorte d'introduire de l'instabilité numérique au niveau du calcul de gradient
 deviennent de plus en plus difficiles, pour un ordinateur digital). Une des
 méthodes pour remédier à ce problème est de rendre l'architecture encore plus
 complexe, comme c'est le cas par exemple avec un réseau LSTM (Long Short-Term
-Memory) :
+Memory) :
 
 ![](/images/module3/lstm.png)
 
@@ -145,20 +145,20 @@ ChatGPT, par exemple), mais comme nous allons le voir plus loin, il existe
 maintenant un type de réseau de neurones encore plus puissant (les
 transformers) qui permettent de faire cela encore plus efficacement.
 
-Applications : prévision de séries temporelles (ex. : bourse), traduction
-automatique (ex. : Seq2Seq), ou reconnaissance vocale (ex. : dans les assistants
+Applications : prévision de séries temporelles (ex. : bourse), traduction
+automatique (ex. : Seq2Seq), ou reconnaissance vocale (ex. : dans les assistants
 comme Siri).
 
 ## Les autoencodeurs
 
-Un autoencodeur est une idée simple mais intrigante : supposons que nous
+Un autoencodeur est une idée simple mais intrigante : supposons que nous
 connections ensemble deux réseaux de neurones, le deuxième inversé par rapport au
 premier, que pourrions nous en tirer?
 
 ![](/images/module3/autoencoder.png)
 
 Il faut tout d'abord distinguer les deux parties de ce réseau de neurones particulier,
-soit l'encodeur, à gauche, et le décodeur, à droite :
+soit l'encodeur, à gauche, et le décodeur, à droite :
 
 ![](/images/module3/enc_dec.png)
 
@@ -181,7 +181,7 @@ Cet espace latent est intéressant pour plusieurs raisons. Il constitue
 premièrement une représentation compressée des données d'entrée, et en
 considérant le diagramme et le fonctionnement de l'autoencodeur (la tâche de
 reconstruction qu'il accomplit), la raison devrait apparaître intuitivement
-assez claire : étant donné que le nombre de neurones de la couche latente est,
+assez claire : étant donné que le nombre de neurones de la couche latente est,
 par design, plus petit que celui des couches d'entrée et de sortie, c'est comme
 si on forçait les données dans un goulot d'étranglement (l'encodage), pour les
 rendre plus "compactes". Mais étant donné que, de cette représentation réduite,
@@ -203,11 +203,11 @@ y a une dégradation de la qualité qui peut être perceptible à des degrés va
 La compression effectuée par un autoencodeur est pourtant de nature très
 différente. Étant donné qu'il s'agit d'un algorithme d'apprentissage, qui
 traite de manière statistique une série d'exemples (par exemple des images de
-chien), le résultat de la compression est de nature sémantique : la
+chien), le résultat de la compression est de nature sémantique : la
 représentation compressée obtenue sera interprétable. Par exemple, bien que ça
 ne soit pas garanti, il est très possible que les dimensions de l'espace réduit
 (latent) correspondent à des caractéristiques concrètes pouvant servir à
-l'interprétation d'une image de chien : une dimension correspondant à sa
+l'interprétation d'une image de chien : une dimension correspondant à sa
 couleur, une autre à la position de sa tête, etc. Il est important de comprendre
 que l'espace original de l'image non-compressée, celui des pixels, ne comportent
 _pas_ cette dimension sémantique. Il en est de même de la compression JPEG, qui
@@ -239,18 +239,18 @@ usage. Nous avons déjà brièvement touché ce sujet dans la section sur les
 ## Les réseaux de neurones pour les graphes (GNNs)
 
 Nous avons vu différents exemples de données que peuvent traiter les réseaux de
-neurones : des images, des séquences de mots ou de notes (un roman, ou une pièce
+neurones : des images, des séquences de mots ou de notes (un roman, ou une pièce
 musicale), des données tabulaires dans un tableur (Excel), etc. Mais les
 possibilités ne s'arrêtent pas là. Il est également possible de représenter des
 types de données plus abstraits, comme des graphes mathématiques, une structure
-de données très couramment utilisée en informatique. Un graphe est composé de deux types d'éléments :
+de données très couramment utilisée en informatique. Un graphe est composé de deux types d'éléments :
 
 * Des sommets
 * Des arêtes qui relient les sommets (et qui peuvent avoir ou non une direction)
 
 ![](/images/module3/graph.png)
 
-Notons tout d'abord qu'un réseau de neurones est, en soi, _déjà un graphe ! Les
+Notons tout d'abord qu'un réseau de neurones est, en soi, _déjà un graphe ! Les
 sommets sont les neurones, et les poids (paramètres) sont les arêtes. Mais le problème auquel on fait face est ici comment
 _représenter_ un graphe (la structure de données) par un mécanisme
 (le réseau de neurones) qui est lui-même un graphe. Il s'agit donc, en quelque
@@ -271,7 +271,7 @@ d'abord comment représenter les sommets. Supposons que nous ayons un graphe
 simple avec trois sommets (`A`, `B` et `C`) et deux arêtes non-dirigées (`A--B`
 et `A--C`). Chaque sommet est tout d'abord représenté par une liste de valeurs
 de taille fixe. Il est important de comprendre la nature de ces valeurs numériques, qui sont au coeur du mécanisme de représentation. On peut
-considérer que toutes ces définitions sont équivalentes :
+considérer que toutes ces définitions sont équivalentes :
 
 * Une liste de $N$ nombres
 * Un vecteur de dimension $N$
@@ -279,11 +279,11 @@ considérer que toutes ces définitions sont équivalentes :
 * En anglais, les termes "features" et "embeddings" (la traduction technique de "plongement", un terme très rare en français)
 
 Dans notre exemple, considérons des plongements de dimension $N=2$, choisis pour représenter
-chaque sommet. Au départ, ces valeurs sont arbitraires et aléatoires : elles ne veulent rien dire, en soi.
+chaque sommet. Au départ, ces valeurs sont arbitraires et aléatoires : elles ne veulent rien dire, en soi.
 
 ![](/images/module3/nodes.png)
 
-Nous avons donc là notre première couche de neurones, qui représente les sommets de notre graphe grâce aux plongements :
+Nous avons donc là notre première couche de neurones, qui représente les sommets de notre graphe grâce aux plongements :
 
 ![](/images/module3/node_embeddings.png)
 
@@ -297,7 +297,7 @@ représentation, en prenant en considération celle de ses sommets voisins. La c
 
 ![](/images/module3/messages.png)
 
-Un _message_ est une opération mathématique simple entre les valeurs concernées : un
+Un _message_ est une opération mathématique simple entre les valeurs concernées : un
 message entre `A` et `C` par exemple pourrait être simplement la somme (ou
 encore, la moyenne) des valeurs (plongements) de `A` et des valeurs de `C`. Une fois cette
 transformation effectuée (tous les messages passés et traités), on fait intervenir une couche de paramètres (une matrice $W$),
@@ -309,13 +309,13 @@ par la structure du graphe, donc ses arêtes).
 ![](/images/module3/gnn_h.png)
 
 La reste de notre construction du GNN ressemble plus à un réseau de neurones
-traditionnel : la couche d'entrée transformée par les messages ($T$, de
+traditionnel : la couche d'entrée transformée par les messages ($T$, de
 dimension 6) est ensuite multipliée par une matrice de paramètres ($W$, de
 dimension 6 x 8, qui seront "appris" par l’entraînement du modèle) pour résulter
 en une couche cachée $H$ (de dimension 8).
 
 Étudions maintenant un vrai problème, qui peut être traité par un GNN. Le jeu de données Cora
-comprend :
+comprend :
 
 * Une série de 2708 articles scientifiques (les sommets)
 * Un vocabulaire de 1433 mots pour décrire chaque article
@@ -325,7 +325,7 @@ comprend :
 ![](/images/module3/cora.png)
 
 La seule différence entre le modèle proposé dans un [article séminal](https://arxiv.org/abs/1609.02907) et celui que nous
-avons étudié ci-haut, se trouve au niveau de la représentation des sommets : dans l'article, les sommets sont représentés
+avons étudié ci-haut, se trouve au niveau de la représentation des sommets : dans l'article, les sommets sont représentés
 par des vecteurs de 1433 éléments qui ne sont pas des plongements, mais bien des vecteurs "creux" (ou parcimonieux, "sparse" en anglais)
 qui représentent de manière littérale la présence ou l'absence d'un mot. Nous avons tout d'abord rencontré cette idée dans la
 section précédente sur les [sacs de mots](docs/module2/30-les-donnees/##lespace-lexical-vectoriel). Un sac de mots, est "creux" dans le sens
@@ -333,7 +333,7 @@ où, pour un article ou document donné, la plupart des mots du vocabulaire ne s
 valeur sera autre que zéro). En contraste, un plongement est "dense" car les dimensions ne représentent pas des notions concrètes et discrètes. Chaque dimension d'un plongement
 correspond donc à une valeur non-zéro.
 
-La tâche du réseau de neurones, dans ce cas particulier, est très classique : il s'agit de classifier chaque article en l'une de sept grandes classes (ou thèmes), connues d'avance.
+La tâche du réseau de neurones, dans ce cas particulier, est très classique : il s'agit de classifier chaque article en l'une de sept grandes classes (ou thèmes), connues d'avance.
 Le modèle particulier décrit dans l'article parvient à le faire avec une précision de 81%. Il est important de comprendre que ce résultat est bien supérieur à ce qui aurait
 été obtenu grâce à un modèle plus classique, qui utiliserait seulement les mots pour décrire les articles, au lieu de considérer les mots et les liens entre les articles. Le
 fait de considérer les liens, la structure entre les objets que l'on tente de modéliser, apporte une dimension beaucoup plus riche, qui permet de résoudre des problèmes de manière
@@ -348,16 +348,16 @@ réseau de neurones de traiter des structures de données plus abstraites, comme
 des séquences ou mêmes des graphes. Il est même possible de traiter des
 structures encore plus générales. Une [machine de
 Turing](https://fr.wikipedia.org/wiki/Machine_de_Turing) est une idée
-fondamentale en informatique et en mathématiques : la nature fondamentale d'un
+fondamentale en informatique et en mathématiques : la nature fondamentale d'un
 algorithme, c'est-à-dire quelque chose que l'on peut calculer, est d'être une
 sorte de mécanisme très simple, une "machine". Cette machine est en fait un
 modèle théorique, et n'est donc pas une machine dans un sens conventionnel et
 concret. Une bonne manière de se représenter l'essence de cette machine
-théorique particulière est d'imaginer ses composantes fondamentales :
+théorique particulière est d'imaginer ses composantes fondamentales :
 
-* Un ruban : une longue feuille quadrillée, infinie dans les deux directions. Chaque case contient soit un symbole (par exemple 0 ou 1), soit rien.
-* Une tête de lecture : un petit curseur qui regarde une case du ruban, et qui peut lire, effacer, écrire un symbole.
-* Une table de règles : une feuille avec des consignes du type : “Si tu vois un 0 et que tu es dans l’état A : écris un 1, déplace-toi la tête à droite, passe en état B.”
+* Un ruban : une longue feuille quadrillée, infinie dans les deux directions. Chaque case contient soit un symbole (par exemple 0 ou 1), soit rien.
+* Une tête de lecture : un petit curseur qui regarde une case du ruban, et qui peut lire, effacer, écrire un symbole.
+* Une table de règles : une feuille avec des consignes du type : “Si tu vois un 0 et que tu es dans l’état A : écris un 1, déplace-toi la tête à droite, passe en état B.”
 
 Ce modèle en apparence simple est extrêmement important et profond en
 informatique, car il permet de comprendre ce qu'est la nature fondamentale d'un
@@ -388,7 +388,7 @@ de base n'a pas de "mémoire" au sens computationnel usuel du terme, celui d'un
 programme classique (qui a accès à la mémoire de l'ordinateur, avec des
 variables, etc). Pourtant, avec un NTM, le réseau de neurones acquiert une
 version particulière d'une mémoire, qui fonctionne d'une manière similaire à
-celle d'un ordinateur : il peut y sauvegarder de l'information de manière
+celle d'un ordinateur : il peut y sauvegarder de l'information de manière
 temporaire, qu'il va pouvoir relire plus tard. Il s'agit là d'un croisement
 particulièrement impressionnant entre le modèle computationnel classique et
 l'apprentissage automatique. Il s'agit donc, quelque sorte, d'une version

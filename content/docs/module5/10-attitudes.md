@@ -50,10 +50,10 @@ droit.
 
 L'attitude défaitiste considère l'IA comme une menace existentielle. L'article de
 Martin Lapouille, (25 juin 2025) [Servir l'IA jusqu'à faire disparaître
-l'humanité : la religion secrète des patrons de la
+l'humanité : la religion secrète des patrons de la
 tech](https://usbeketrica.com/fr/article/servir-l-ia-jusqu-a-disparaitre-la-religion-secrete-des-milliardaires-de-la-tech-qui-menace-notre-humanite),
 dans Usbek &Rica discute la problématique de l'extinction de l'espèce humaine
-comme une opportunité pour engendrer un descendant plus sophistiqué :
+comme une opportunité pour engendrer un descendant plus sophistiqué :
 l'intelligence artificielle.
 
 ## L'attitude optimiste (ou accélérationniste)
@@ -68,16 +68,16 @@ superintelligence contrôlée et alignée, plus vite nous pourrons accroître no
 connaissances, améliorer nos conditions de vie et dépasser les limites
 biologiques de l'espèce humaine. Citons [Ray
 Kurzweil](https://fr.wikipedia.org/wiki/Raymond_Kurzweil), auteur du livre
-L'Humanité 2.0 : La bible du changement (2005) (en anglais The Singularity is
+L'Humanité 2.0 : La bible du changement (2005) (en anglais The Singularity is
 Near) où il décrit sa vision de la [singularité
 technologique](https://fr.wikipedia.org/wiki/Singularit%C3%A9_technologique), à
-travers la combinaison de trois sciences principales : la génétique, les
+travers la combinaison de trois sciences principales : la génétique, les
 nanotechnologies, et la robotique, dont l'intelligence artificielle.
 
 La vision optimiste ou accélérationniste voit l'IA comme un moteur
 d'accélération de la transformation humaine et sociétale. Le billet de Stéphane
-Le Calme (18 octobre 2023), intitulé [« C'est une secte » : le mouvement pro-IA
-baptisé « accélérationnisme efficace » gagne du terrain à la Silicon
+Le Calme (18 octobre 2023), intitulé [« C'est une secte » : le mouvement pro-IA
+baptisé « accélérationnisme efficace » gagne du terrain à la Silicon
 Valley](https://intelligence-artificielle.developpez.com/actu/349680/-C-est-une-secte-le-mouvement-pro-IA-baptise-accelerationnisme-efficace-gagne-du-terrain-a-la-Silicon-Valley-Ses-adeptes-pronent-une-croissance-technologique-sans-limites/)
 introduit bien ce mouvement qui prône une croissance technologique sans limites,
 même au prix d'un bouleversement radical de l'ordre social actuel.
@@ -96,10 +96,10 @@ un ingénieur chez Google, et l'affaire LaMDA (Language Model for Dialogue
 Application, soit d'un robot conversationnel (chatbot) de Google qui présentait
 des signes de sentience , c'est-à-dire une capacité, à l'instar d'un être
 humain, de ressentir des émotions, de la douleur, du bien-être, et de percevoir
-subjectivement son environnement et ses expériences de vie » (Google). basée sur
+subjectivement son environnement et ses expériences de vie » (Google). basée sur
 la question de la conscience non biologique, Blake Lemoine établit ainsi un lien
 avec le transhumanisme bien qu'il ne l'exprime pas ainsi. Nous vous proposons
-l'écoute du balado LaMDA de Google : [Quand l'intelligence artificielle devient
+l'écoute du balado LaMDA de Google : [Quand l'intelligence artificielle devient
 consciente](https://ici.radio-canada.ca/ohdio/premiere/emissions/moteur-de-recherche/segments/chronique/413723/science-fiction-blake-lemoine-ai),
 produit par Radio-Canada Ohdio (6 septembre 2022) qui résume bien ce cas ou la
 lecture d'un article d'Aïda Elamrani, (10 septembre 2022). [Blake Lemoine,
@@ -121,5 +121,5 @@ transhumaniste](https://shs.cairn.info/article/VING_138_0143?tab=texte-integral)
 | **Idée centrale** | L’IA est un outil puissant au service de l’humain, à encadrer par des lois, normes et valeurs démocratiques. | L’IA est un levier de progrès exponentiel pour l’humanité. Elle accélère le développement humain vers de nouvelles capacités. | L’IA est une menace potentielle, voire existentielle, si elle échappe à notre contrôle.        | L’IA est un vecteur pour dépasser les limites biologiques de l’humain, vers une coévolution humain-machine.   |
 | **Valeurs associées** | Régulation, responsabilité, gouvernance éthique, contrôle démocratique.                               | Innovation, progrès, croissance technologique illimitée, confiance dans la science.                         | Précaution, prudence, alerte sur les dérives, contrôle strict ou limitation.                   | Dépassement de l’humain, augmentation, immortalité numérique, fusion bio-techno.                               |
 | **Risques perçus** | Contrôle insuffisant, biais algorithmiques, inégalités si la régulation est faible.                      | Déshumanisation, fracture sociale si l’accélération n’est pas partagée.                                     | Perte de contrôle, extinction de l’espèce humaine par une IA superintelligente.                 | Perte d’identité humaine, éthique floue sur l’augmentation ou la modification du vivant.                        |
-| **Figures ou exemples** | UE : Charte éthique IA, L. Floridi, documentaire *IA Décodée*.                                        | Ray Kurzweil, Elon Musk (phase techno-optimiste), Singularité.                                              | Nick Bostrom, Yudkowsky, mouvements « extinction risk ».                                      | More & Vita-More, *Homo Digitalis* (ARTE), débats sur l’« homme augmenté ».                                     |
+| **Figures ou exemples** | UE : Charte éthique IA, L. Floridi, documentaire *IA Décodée*.                                        | Ray Kurzweil, Elon Musk (phase techno-optimiste), Singularité.                                              | Nick Bostrom, Yudkowsky, mouvements « extinction risk ».                                      | More & Vita-More, *Homo Digitalis* (ARTE), débats sur l’« homme augmenté ».                                     |
 | **Questions clés** | Comment encadrer l’IA pour protéger l’intérêt commun&nbsp;?                                                   | Comment exploiter l’IA pour accélérer le progrès humain&nbsp;?                                                   | Comment prévenir un risque existentiel lié à une IA autonome&nbsp;?                                 | Jusqu’où voulons-nous aller dans le dépassement des limites humaines&nbsp;?                                          |

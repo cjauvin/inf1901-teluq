@@ -8,7 +8,7 @@ slug: travail-noté-2
 
 La classification naïve bayésienne est un algorithme d'apprentissage supervisé
 qui fonctionne avec les probabilités. Nous avons vu deux variantes de cet
-algorithme :
+algorithme :
 
 1. [La classification de simples points en 2d avec un modèle gaussien](docs/module2/60-classer/#renverser-le-problème--la-classification-bayésienne)
 2. [La classification de vecteurs en haute dimension avec un modèle multinomial](docs/module2/60-classer/#le-cas-des-pourriels)
@@ -23,12 +23,12 @@ Comme nous l'avons vu, la classification naive bayésienne est un algorithme
 d'apprentissage *génératif*, ce qui veut donc dire qu'on considère tout d'abord
 deux modèles (un pour chaque classe, `pourriel` ou `courriel`) qui sont en
 charge de *générer* les données qu'on observe (plutôt que de directement les
-*classifier*) :
+*classifier*) :
 
 $$P(\text{les mots générés} \mid \text{il s'agit d'un pourriel})$$
 $$P(\text{les mots générés} \mid \text{il s'agit d'un courriel})$$
 
-ou encore, de manière plus compacte :
+ou encore, de manière plus compacte :
 
 $$P(\mathbf{x} \mid \mathtt{pourriel})$$
 $$P(\mathbf{x} \mid \mathtt{courriel})$$
@@ -67,7 +67,7 @@ correctement configuré.
 
 Copiez tout d'abord ces 10 mini-courriels dans la colonne A d'une nouvelle
 "feuille" Google Sheets, un courriel par rangée (assurez-vous d'utiliser
-correctement la [fonction "copier-coller"](docs/50-google-sheets/#fonction-copier-coller), si vous le faites) :
+correctement la [fonction "copier-coller"](docs/50-google-sheets/#fonction-copier-coller), si vous le faites) :
 
 ```
 voici le colis est arrivé
@@ -89,7 +89,7 @@ utilisant la valeur `oui` si vous considérez qu'il s'agit d'un pourriel, ou
 `non` (ce n'est pas un pourriel) sinon.
 
 Si vous n'avez pas envie de vous soumettre à cet exercice à ce stade,
-vous pouvez toujours copier ces valeurs (dans la colonne `B`) :
+vous pouvez toujours copier ces valeurs (dans la colonne `B`) :
 
 ```
 non
@@ -104,13 +104,13 @@ oui
 non
 ```
 
-À ce stade, votre feuille devrait ressembler à ceci :
+À ce stade, votre feuille devrait ressembler à ceci :
 
 ![](/images/module2/tn2/sheets_cols_a_et_b.png)
 
 Calculons tout d'abord dans la colonne `C` la probabilité à priori qu'un
 courriel quelconque soit un pourriel ou non (sans prendre en
-considérations les mots donc, pour le moment) :
+considérations les mots donc, pour le moment) :
 
 ```
 =MAP(UNIQUE(B1:B10), LAMBDA(x, COUNTIF(B1:B10, x) / COUNTA(B1:B10)))
@@ -124,29 +124,29 @@ les paramètres linguistiques de votre Google Sheets ne soient pas [correctement
 {{% /hint %}}
 
 Ces probabilités à priori nous serviront plus loin. Définissez ensuite
-la colonne `D` avec cette formule :
+la colonne `D` avec cette formule :
 
 ```
 =UNIQUE(TRANSPOSE(SPLIT(TEXTJOIN(" ", TRUE, A:A), " ")))
 ```
 
-La colonne `D` devrait maintenant contenir le vocabulaire des courriels :
+La colonne `D` devrait maintenant contenir le vocabulaire des courriels :
 
 ![](/images/module2/tn2/sheets_col_d_voc.png)
 
 La colonne `E` devrait ensuite correspondre au nombre de fois où les
 mots de la colonne `D` apparaissent dans les courriels valides (qui donc
-`non`, ne sont pas des pourriels) :
+`non`, ne sont pas des pourriels) :
 
 ```
-=SUMPRODUCT((B$1:B$10=`non`) * ISNUMBER(SEARCH(D1, A$1:A$10)))
+=SUMPRODUCT((B$1:B$10="non") * ISNUMBER(SEARCH(D1, A$1:A$10)))
 ```
 
 et de manière similaire pour la colonne `F` et la fréquence des mots qui
-apparaissent dans les courriels qui `oui`, sont des pourriels :
+apparaissent dans les courriels qui `oui`, sont des pourriels :
 
 ```
-=SUMPRODUCT((B$1:B$10=`oui`) * ISNUMBER(SEARCH(D1, A$1:A$10)))
+=SUMPRODUCT((B$1:B$10="oui") * ISNUMBER(SEARCH(D1, A$1:A$10)))
 ```
 
 {{% hint warning %}}
@@ -169,14 +169,14 @@ droite de la première cellule).
 chaque mot du vocabulaire, étant donné le fait qu'un courriel soit
 `oui` ou `non` un pourriel. Donc la colonne `G` correspond à la
 probabilité des mots étant donné que `non` il ne s'agit pas d'un
-pourriel :
+pourriel :
 
 ```
 =(E1 + 1) / (SUM(E:E) + COUNTA(D:D))
 ```
 
 et de manière similaire la colonne `H` est la probabilité des mots quand
-on sait que `oui` il s'agit d'un pourriel :
+on sait que `oui` il s'agit d'un pourriel :
 
 ```
 =(F1 + 1) / (SUM(F:F) + COUNTA(D:D))
@@ -197,13 +197,13 @@ pour son utilisation!
 
 Nous allons maintenant utiliser le modèle pour déterminer si un
 nouveau courriel (qui n'a pas servi à l'entraînement) est un pourriel
-ou non. Dans la colonne `I` entrez un courriel à tester :
+ou non. Dans la colonne `I` entrez un courriel à tester :
 
 ```
 voici votre carte spéciale
 ```
 
-Faites l'extraction des mots du courriel dans la colonne `J` :
+Faites l'extraction des mots du courriel dans la colonne `J` :
 
 ```
 =TRANSPOSE(SPLIT(I1, " "))
@@ -211,14 +211,14 @@ Faites l'extraction des mots du courriel dans la colonne `J` :
 
 Nous avons maintenant besoin, dans la colonne `K`, de la probabilité des
 mots de ce courriel de test dans l'hypothèse où `non`, ça ne serait
-pas un pourriel :
+pas un pourriel :
 
 ```
 =IFERROR(XLOOKUP(J1, D:D, G:G), 1E-5)
 ```
 
 et de manière similaire pour la colonne `L`, avec la probabilité des
-mots du courriel dans l'hypothèse où `oui` il s'agit d'un pourriel :
+mots du courriel dans l'hypothèse où `oui` il s'agit d'un pourriel :
 
 ```
 =IFERROR(XLOOKUP(J1, D:D, H:H), 1E-5)
@@ -227,20 +227,20 @@ mots du courriel dans l'hypothèse où `oui` il s'agit d'un pourriel :
 Les colonnes `K` et `L` doivent avoir la même taille que la colonne `J`,
 donc assurez-vous d'utiliser le remplissage automatique. Calculons
 dans la colonne `M` la probabilité que `non` le courriel n'est pas un
-pourriel :
+pourriel :
 
 ```
 =PRODUCT(K:K) * C1
 ```
 
 Et dans la colonne `N` la probabilité que `oui` le courriel est un
-pourriel :
+pourriel :
 
 ```
 =PRODUCT(L:L) * C2
 ```
 
-Notre classification finale sera dans la colonne `O` :
+Notre classification finale sera dans la colonne `O` :
 
 ```
 =IF(M1 > N1; "non"; "oui")

@@ -6,7 +6,7 @@ slug: professeurs
 
 {{% hint info %}}
 
-*« Le futur est déjà là, il n'est juste pas très équitablement réparti. »*
+*« Le futur est déjà là, il n'est juste pas très équitablement réparti. »*
 
 William Gibson
 
@@ -20,7 +20,7 @@ Ce cours a été co-créé par trois professeurs de l'Université TÉLUQ.
 
 {{< image src="/images/profs/rhotte.jpg" alt="Photo de Richard Hotte." title="Richard Hotte" loading="lazy" >}}
 
-<p class="image-credit">Richard Hotte. Photo : Université TÉLUQ.</p>
+<p class="image-credit">Richard Hotte. Photo : Université TÉLUQ.</p>
 
 [Richard Hotte](https://www.teluq.ca/siteweb/univ/rhotte.html?p_nue=true) a été
 titulaire de la chaire UNESCO en système intelligent d'apprentissage repensé
@@ -40,7 +40,7 @@ Amérique du Nord, en Europe, en Afrique et dans d'autres régions du monde.
 
 {{< image src="/images/profs/cjauvin.jpg" alt="Photo de Christian Jauvin." title="Christian Jauvin" loading="lazy" >}}
 
-<p class="image-credit">Christian Jauvin. Photo : Université TÉLUQ.</p>
+<p class="image-credit">Christian Jauvin. Photo : Université TÉLUQ.</p>
 
 [Christian Jauvin](https://www.teluq.ca/siteweb/univ/cjauvin.html) s’intéresse à
 la programmation, à la modélisation et la science des données, à l’architecture
@@ -68,7 +68,7 @@ mesure pour des besoins spécifiques.
 
 {{< image src="/images/profs/dlemire.jpg" alt="Photo de Daniel Lemire." title="Daniel Lemire" loading="lazy" >}}
 
-<p class="image-credit">Daniel Lemire. Photo : Université TÉLUQ.</p>
+<p class="image-credit">Daniel Lemire. Photo : Université TÉLUQ.</p>
 
 [Daniel Lemire](https://www.teluq.ca/siteweb/univ/dlemire.html) est professeur
 titulaire en informatique. Il s'intéresse particulièrement à la performance du
@@ -77,7 +77,7 @@ regard critique sur l'utilisation des technologies.
 
 Daniel Lemire est parmi les 2&nbsp;% de scientifiques les plus cités au monde
 (classement de l'Université Stanford, 2024). Il fait partie des 0,0006 % de
-programmeurs les plus suivis au monde sur GitHub ; GitHub compte plus de 100
+programmeurs les plus suivis au monde sur GitHub ; GitHub compte plus de 100
 millions de développeurs.
 
 - Lemire, D., & Maclachlan, A. (2005, April). Slope one predictors for online rating-based collaborative filtering. In Proceedings of the 2005 SIAM International Conference on Data Mining (pp. 471-475). Society for Industrial and Applied Mathematics.

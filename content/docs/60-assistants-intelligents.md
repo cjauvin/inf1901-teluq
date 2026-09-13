@@ -8,7 +8,7 @@ slug: assistants-intelligents
 
 Étant donné qu'il s'agit d'un cours sur l'intelligence artificielle, l'usage
 d'assistants intelligents (ChatGPT, Claude, Gemini, etc) est évidemment
-encouragé ! Ceci s'applique autant aux travaux notés qu'au reste du contenu du
+encouragé ! Ceci s'applique autant aux travaux notés qu'au reste du contenu du
 cours.
 
 Par contre si vous utilisez un tel outil, nous vous conseillons de vous assurer
@@ -18,14 +18,14 @@ du problème qui pourraient rester obscurs pour vous. N'oubliez pas que le but d
 ce cours est la construction de bons modèles mentaux pour penser à
 l'intelligence artificielle, et comprendre son fonctionnement, au-delà de sa
 surface applicative. L'agent possède déjà ces modèles mentaux, si vous avez
-développé les vôtres à la fin de ce cours, le but aura clairement été atteint !
+développé les vôtres à la fin de ce cours, le but aura clairement été atteint !
 
-Voici un exemple d'interaction : supposons que j'ai de la difficulté à
+Voici un exemple d'interaction : supposons que j'ai de la difficulté à
 comprendre un aspect des [mathématiques de la régression
 logistique](module2/60-classer/#tracer-une-frontière--la-régression-logistique), je peux
 faire une capture d'écran du texte et la donner à ChatGPT, et poser ma question
 ("je ne comprends pas pourquoi les deux dernières équations sont
 équivalentes").. ChatGPT (ou un autre outil) se fera un plaisir de vous
-expliquer avec une patience infinie :
+expliquer avec une patience infinie :
 
 {{< image src="/images/exemple-chatgpt.png" alt="ChatGPT" title="ChatGPT" loading="lazy" >}}

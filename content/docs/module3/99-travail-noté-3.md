@@ -57,7 +57,7 @@ de manière interactive et intuitive le fonctionnement des réseaux de neurones.
    classification plus facile ou plus difficile pour un algorithme
    d'apprentissage? Expliquez pourquoi.
 
-5. Remettez le "bruit" à 0, et choisissez maintenant ce jeu de données :
+5. Remettez le "bruit" à 0, et choisissez maintenant ce jeu de données :
 
    <p style="text-align: center;">
      <img src="/images/module3/tn3/prob2.png" alt="My image" style="width: 50%; height: auto;" width="616" height="620">
@@ -69,7 +69,7 @@ de manière interactive et intuitive le fonctionnement des réseaux de neurones.
 
 6. Ajoutez maintenant une couche cachée avec trois neurones, quel est l'effet
    sur l’entraînement? N'oubliez pas que la fonction d’entraînement est démarrée
-   en appuyant sur ce bouton :
+   en appuyant sur ce bouton :
 
    <p style="text-align: center;">
      <img src="/images/module3/tn3/train_button.png" alt="My image" style="width: 50%; height: auto;" width="590" height="358">
@@ -94,7 +94,7 @@ de manière interactive et intuitive le fonctionnement des réseaux de neurones.
     caractéristique $X_1X_2$. En entraînant le modèle à plusieurs reprises avec
     cette configuration, qu'observez-vous, et comment l'expliquez-vous?
 
-11. Considérez maintenant ce troisième jeu de données :
+11. Considérez maintenant ce troisième jeu de données :
 
     <p style="text-align: center;">
       <img src="/images/module3/tn3/prob3.png" alt="My image" style="width: 50%; height: auto;" width="624" height="618">
@@ -105,7 +105,7 @@ de manière interactive et intuitive le fonctionnement des réseaux de neurones.
 
 12. Est-ce que la situation change en remplaçant les caractéristiques $X_1$ et
     $X_2$ par les caractéristiques $X_1^2$ et $X_2^2$? Comment peut-on expliquer
-    cela? Indice : considérez l'équation du [cercle](https://fr.wikipedia.org/wiki/Cercle).
+    cela? Indice : considérez l'équation du [cercle](https://fr.wikipedia.org/wiki/Cercle).
 
 13. En remettant seulement les caractéristiques $X_1$ et $X_2$, est-ce qu'il est
     possible de réduire l'erreur à l'aide de couches cachées?

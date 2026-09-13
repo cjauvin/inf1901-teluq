@@ -17,8 +17,8 @@ artificielle, presque _générale_, et non un système d'IA étroit, qui peut
 seulement accomplir une fonction particulière et limitée. Comme nous l'avons
 soulevé à quelques reprises dans le cours, une réaction normale, quand on
 apprend le fonctionnement d'une régression linéaire ou logistique, peut être de
-se poser la question : en quoi est-ce que ceci constitue de l'IA au juste?
-Pourtant avec ChatGPT, ceci devenait clair : il est désormais non seulement
+se poser la question : en quoi est-ce que ceci constitue de l'IA au juste?
+Pourtant avec ChatGPT, ceci devenait clair : il est désormais non seulement
 possible de converser avec un ordinateur, mais il est également possible de lui
 faire produire (générer) des poèmes, des textes, des images, etc. Bien que cela
 soit discutable, on peut penser que ChatGPT constitue la première application
@@ -26,7 +26,7 @@ d'IA capable de passer le fameux [test de
 Turing](https://fr.wikipedia.org/wiki/Test_de_Turing).
 
 En parallèle de cette introduction fracassante, on a commencé entendre parler de
-plus en plus d'un autre concept, étroitement associé : l'IA générative. Et on
+plus en plus d'un autre concept, étroitement associé : l'IA générative. Et on
 comprend que ChatGPT est un exemple d'IA générative en fait, mais que cette
 dernière ne se limite pas à ce type d'application (les grands modèles de langage
 comme ChatGPT). Il s'agit d'un domaine plus vaste et complexe, qui regroupe de
@@ -36,7 +36,7 @@ nombreuses idées, que nous allons explorer dans ce module.
 
 Le but de ce module est de vous amener à avoir une vue d'ensemble et une
 compréhension de haut niveau raisonnable de ce qu'on entend par "IA générative",
-et plus spécifiquement :
+et plus spécifiquement :
 
 * Explorer et comprendre les grandes lignes de certains modèles d'IAG comme les
 réseaux de neurones adversériaux (GANs), les modèles de diffusion (qui

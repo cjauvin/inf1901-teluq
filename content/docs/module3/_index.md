@@ -20,10 +20,10 @@ représentations hiérarchiques des images, a été entraîné sur des cartes
 graphiques (GPU), alors principalement utilisées pour les jeux vidéo. Cette
 innovation matérielle, combinée à des idées nouvelles comme la fonction
 d’activation ReLU et la technique de dropout (pour éviter le surapprentissage),
-a permis à AlexNet d’accomplir un exploit spectaculaire : réduire de moitié le
+a permis à AlexNet d’accomplir un exploit spectaculaire : réduire de moitié le
 taux d’erreur lors du concours international ImageNet, qui consistait à
 reconnaître et classifier plus d’un million d’images en mille catégories. Ce
-résultat, jusque-là inimaginable, a marqué un véritable point de bascule : en
+résultat, jusque-là inimaginable, a marqué un véritable point de bascule : en
 quelques mois, toute la communauté scientifique a compris qu’il était possible
 d’atteindre des performances inégalées grâce aux réseaux de neurones profonds,
 déclenchant une explosion de recherches, d’applications commerciales et de
@@ -35,11 +35,11 @@ ce tournant historique et des concepts fondamentaux qui l’ont rendu possible.
 
 ## But et objectifs
 
-Ce module vise à :
+Ce module vise à :
 - Comprendre le fonctionnement des réseaux de neurones artificiels et leur rôle dans l’apprentissage profond.
-- Explorer les concepts fondamentaux : neurones, couches, fonctions d’activation, propagation avant et rétropropagation.
+- Explorer les concepts fondamentaux : neurones, couches, fonctions d’activation, propagation avant et rétropropagation.
 - Découvrir l’impact historique d’AlexNet et des avancées récentes en vision par ordinateur et traitement du langage.
-- S’initier à l’interprétation visuelle et intuitive des réseaux de neurones grâce à des ressources pédagogiques (ex. : vidéo 3Blue1Brown).
+- S’initier à l’interprétation visuelle et intuitive des réseaux de neurones grâce à des ressources pédagogiques (ex. : vidéo 3Blue1Brown).
 - Expérimenter concrètement avec des outils interactifs pour mieux saisir les mécanismes d’apprentissage.
 
 ![](/images/module3/ai-venn.png)

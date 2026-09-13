@@ -6,7 +6,7 @@ slug: travaux-notés
 
 {{% hint info %}}
 
-*« Bien sûr. Je suis une machine, et vous êtes une machine, et nous pensons tous les deux, n’est-ce pas ? »*
+*« Bien sûr. Je suis une machine, et vous êtes une machine, et nous pensons tous les deux, n’est-ce pas ? »*
 
 Claude Shannon (en réponse à la question "est-ce qu'une machine peut penser?")
 
@@ -18,26 +18,26 @@ Le cours sera évalué avec cinq travaux pratiques, un par module.
 
 ## Module 1
 
-[Système expert à incarner](/docs/module1/99-travail-noté-1) : vous jouez
+[Système expert à incarner](/docs/module1/99-travail-noté-1) : vous jouez
 vous-même le rôle du moteur d'inférence d'un système à base de règles
-`si… alors…`, que vous faites tourner, mettez en échec, puis corrigez. *Pondération :
+`si… alors…`, que vous faites tourner, mettez en échec, puis corrigez. *Pondération :
 15% de la note finale.*
 
 ## Module 2
 
-[Construction guidée](/docs/module2/99-travail-noté-2) d’un algorithme de classification des courriels. *Pondération : 20% de la note finale.*
+[Construction guidée](/docs/module2/99-travail-noté-2) d’un algorithme de classification des courriels. *Pondération : 20% de la note finale.*
 
 ## Module 3
 
 [Exercices interactifs](/docs/module3/99-travail-noté-3) suivis de questions interprétatives sur l’apprentissage
-profond. *Pondération : 20% de la note finale.*
+profond. *Pondération : 20% de la note finale.*
 
 ## Module 4
 
-[Construction guidée](/docs/module4/99-travail-noté-4) d'un modèle de langage bigramme. *Pondération : 20% de la
+[Construction guidée](/docs/module4/99-travail-noté-4) d'un modèle de langage bigramme. *Pondération : 20% de la
 note finale.*
 
 ## Module 5
 
 [Rapport critique](/docs/module5/99-travail-noté-5) sur une question philosophique ou éthique reliée à l’IA.
-*Pondération : 25% de la note finale.*
+*Pondération : 25% de la note finale.*

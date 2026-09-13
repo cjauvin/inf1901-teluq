@@ -6,7 +6,7 @@ slug: feuille-de-route
 
 {{% hint info %}}
 
-*« Nous avons tendance à surestimer les effets d'une technologie à court terme et à les sous-estimer à long terme. »*
+*« Nous avons tendance à surestimer les effets d'une technologie à court terme et à les sous-estimer à long terme. »*
 
 Roy Amara (cette idée est appelée la "Loi d'Amara")
 
@@ -23,7 +23,7 @@ de prévoir une semaine de travail pour la réalisation de chacun d’eux et de 
 remettre selon l’ordre de présentation du cours. Bien que chaque personne
 inscrite à ce cours ne progressera pas au même rythme dans son apprentissage.
 Cependant, nous vous suggérons de remettre vos travaux notés lors de la semaine
-indiquée par le tableau suivant :
+indiquée par le tableau suivant :
 
 | Semaines | Activités                          | Remises TN |
 |----------|------------------------------------|------------|

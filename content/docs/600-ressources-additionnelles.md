@@ -11,7 +11,7 @@ slug: ressources-additionnelles
 Le podcast [Machine Learning Street
 Talk](https://www.youtube.com/@MachineLearningStreetTalk) (en anglais seulement)
 est un excellent mélange de discussions philosophiques, scientifiques et
-techniques à propos de ce qui se passe en IA :
+techniques à propos de ce qui se passe en IA :
 
 {{< youtube-playlist id="UUMLtBahI5DMrt0NPvDSoIRQ" >}}
 
@@ -27,7 +27,7 @@ profonds entre les mathématiques, la philosophie et l'intelligence artificielle
 {{% /details %}}
 
 En gros, on y présente 4 paradigmes mathématiques et leur correspondance dans le monde
-de l'intelligence artificielle :
+de l'intelligence artificielle :
 
 1. L'algèbre booléenne et l'intelligence "classique" (GOFAI)
 
