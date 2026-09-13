@@ -169,6 +169,13 @@ courriels qui emploient les mêmes mots sont deux points voisins, et un pourriel
 ressemble à un pourriel. C'est exactement la représentation dont nous nous
 servirons, au chapitre sur la classification, pour en construire un filtre.
 
+On aurait d'ailleurs pu décrire les courriels plus grossièrement encore : ne pas
+compter, mais seulement noter si le mot est là ou non, 1 ou 0. Un tel axe n'a
+que deux barreaux, comme le relief *non*/*oui* du premier chapitre ; dans notre
+plan, tous les courriels se rabattraient sur les quatre coins d'un carré. Compte
+ou simple présence, nombre entier ou 0/1 : c'est un choix de représentation, et
+il en existe bien d'autres. Nous garderons les comptes, plus fins.
+
 C'est là toute la force de l'idée. Maison, image, courriel : du moment qu'on sait
 décrire un objet par des nombres, il devient un point dans un espace, et leur
 ressemblance se mesure par leur proximité. C'est précisément ce dont le prochain
