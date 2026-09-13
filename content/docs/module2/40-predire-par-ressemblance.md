@@ -32,12 +32,30 @@ celle de tous les jours.)
 
 {{< image src="/images/module2/distance_2d.png" alt="Deux points dans un plan reliés par un segment droit : la distance euclidienne entre eux." title="La distance entre deux points : la longueur du trait droit qui les relie." loading="lazy" >}}
 
-Cette mesure se calcule de la même façon dès qu'il y a plusieurs
-caractéristiques : deux (un plan), six (notre tableau de maisons)… on compare les
-objets coordonnée par coordonnée et on en tire un seul nombre : petit s'ils se
+Cette longueur, on sait la calculer depuis l'école : c'est le théorème de
+Pythagore. Pour deux points d'un plan, on prend l'écart entre eux sur le premier
+axe, l'écart sur le second, on élève chacun au carré, on additionne, et on prend
+la racine carrée du tout :
+
+$$\text{distance} = \sqrt{(\text{écart sur l'axe 1})^2 + (\text{écart sur l'axe 2})^2}$$
+
+Le point remarquable, c'est que rien dans cette recette ne dépend du nombre
+d'axes. Six caractéristiques pour nos maisons ? Six écarts au lieu de deux,
+chacun au carré, additionnés, et la racine carrée du tout. On compare les objets
+coordonnée par coordonnée, et on en tire un seul nombre : petit s'ils se
 ressemblent, grand s'ils diffèrent. Et, comme on l'a vu au chapitre précédent,
 rien n'oblige à s'arrêter là : la même formule vaut jusqu'à une image, dont les
-millions de pixels forment autant de coordonnées.
+millions de pixels forment autant de coordonnées. Pour deux photos, l'écart sur
+un axe, c'est simplement la différence entre le *même* pixel de l'une et de
+l'autre. En notant $A_1$ la valeur du premier pixel de la photo $A$, $B_1$ celle
+du premier pixel de la photo $B$, et ainsi de suite jusqu'au $n$-ième :
+
+$$\text{distance}(A, B) = \sqrt{(A_1 - B_1)^2 + (A_2 - B_2)^2 + \cdots + (A_n - B_n)^2}$$
+
+Deux photos identiques donnent zéro : chaque écart est nul. Deux photos qui ne
+diffèrent que par un pixel donnent un nombre minuscule. Et plus les pixels
+diffèrent, nombreux ou fortement, plus le nombre grandit. Une seule formule, du
+plan à la photo, et *n* peut valoir deux comme des millions.
 
 {{< image src="/images/module2/distance_high_dim.png" alt="La même idée de distance, transposée à un espace de haute dimension." title="La même distance se calcule, quel que soit le nombre de dimensions." loading="lazy" >}}
 

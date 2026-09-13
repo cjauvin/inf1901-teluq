@@ -159,3 +159,11 @@ p {
     max-width: min(100%, var(--largeur-plafond, 100%));
   }
 }
+
+/* Formules MathJax affichées ($$…$$) : sur écran étroit, défiler dans leur cadre
+   plutôt que faire déborder la page. */
+mjx-container[display="true"] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
