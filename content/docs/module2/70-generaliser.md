@@ -88,8 +88,8 @@ modèle qui a lu une bonne partie de ce que l'humanité a écrit.
 
 ## Linéaire ou non-linéaire : ce qu'un modèle peut dessiner
 
-Revenons un instant sur ce que nous avons construit. La régression linéaire d'*Un
-modèle qui s'entraîne* : une droite. La frontière de la régression logistique : une droite.
+Revenons un instant sur ce que nous avons construit. La régression linéaire d'[*Un
+modèle qui s'entraîne*](docs/module2/50-entrainer-un-modele) : une droite. La frontière de la régression logistique : une droite.
 Celle de Bayes naïf : une droite, encore (nous l'avions noté avec surprise). Et
 même notre filtre anti-pourriel, sous ses montagnes de mots, prenait *lui aussi*
 une décision linéaire. Un air de famille se dessine.
