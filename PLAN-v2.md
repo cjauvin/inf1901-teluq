@@ -224,7 +224,14 @@ Pas de pages « préparatoires » abstraites : chaque concept **naît quand un o
 
 **Aussi dans la même période** (`_index` du M2, 29 juillet) : le connexionnisme explicité avec renvoi au M1 ; nouveau visuel `memoriser-vs-apprendre.svg` (une image se présente → est-elle parmi les 1000 ? oui = trivial, non = tout l'enjeu ; une première version « classeur vs curseurs » a été écartée comme exigeant des métaphores absentes du texte) ; `fil-conducteur.svg` glosé aux quatre stations, recentré sur la *prédiction* ; l'énoncé de l'épine dorsale aligné à ses deux occurrences (`_index` et p. 80).
 
-**État au 2026-09-07** (reprise après un mois) : arbre de travail **propre**, tout commité et poussé sur `v2`. **Prochaine action inchangée** : la **régularisation** en p. 70 (3ᵉ volet du triptyque), puis la page « Bien évaluer un modèle ».
+**Relecture complète du M2 par Christian (en cours depuis le 2026-09-09)**, page par page, avec corrections au fil de l'eau :
+- **Style** : passe sur les **tirets cadratins** sur tout le M2 (314 → 41, ≈ 2 / 1 000 mots ; règle en mémoire). Le M1 (250 tirets) attend la même passe, à faire quand Christian le relira.
+- **p. 10** : « se tromper » n'a pas le même sens en régression et en classification ; une catégorie n'a pas forcément deux valeurs ; la vue en perspective (`troisieme-dimension-oui-non.svg`) arrive dès la p. 10, avec l'ombre des deux exceptions sur l'autre plan.
+- **p. 20** : figure des ratés du prédicteur majoritaire (`maisons-erreurs-oui-non.svg`) ; le paramètre du modèle bête n'est pas arbitraire, il est calculé et il fait sens ; section de clôture au pluriel (les deux modèles, et « les erreurs ne sont pas dispersées au hasard »).
+- **p. 30** : schéma entrée → modèle → sortie **version classification** (`modele-entree-sortie-categorie.svg`, le prix passé côté entrée) ; la reprise du relief avec 0 / 1 a été **retirée** ; nouveau passage « et un texte ? » avec le plan de deux mots du vocabulaire (`courriels-deux-mots.svg`), intuition préparant le sac de mots de la p. 60.
+- **Outillage** : thème hugo-book passé à `main` (sélecteur de thème, ancres qui ne dérivent plus grâce aux dimensions d'images et aux hauteurs d'applets, superviseur du serveur). Voir la mémoire.
+
+**État au 2026-09-13** : arbre de travail **propre**, tout commité et poussé sur `v2`. Christian relit la p. 30 ; restent les p. 40 à 80. **Ensuite, prochaine action inchangée** : la **régularisation** en p. 70 (3ᵉ volet du triptyque), puis la page « Bien évaluer un modèle ».
 
 **Note d'outillage** : `rsvg-convert` n'est plus installé sur la machine (`brew install librsvg` pour le retrouver). Repli utilisé : `qlmanage -t -s 900 -o <dossier> fichier.svg` (natif macOS), qui produit `fichier.svg.png`. ⚠️ **Piège rencontré** : `python3 gen.py > cible.svg` **tronque la cible à 0 octet** avant même d'échouer si le script est absent — restaurer alors par `git checkout HEAD -- <fichier>`.
 
