@@ -104,7 +104,7 @@ Est-ce grave ? Autrement dit : y a-t-il des choses qu'**aucune droite** ne pe
 apprendre ?
 
 La réponse est oui — et vous connaissez déjà la victime la plus célèbre de cette
-limite. Souvenez-vous du **perceptron**, au Module 1 : c'est exactement là-dessus
+limite. Souvenez-vous du **perceptron**, au [Module 1](docs/module1/60-hivers/#le-premier-hiver-la-mort-du-perceptron-1969) : c'est exactement là-dessus
 qu'il s'est brisé, en 1969. L'exemple fatal s'appelle le **XOR**, *l'un ou
 l'autre, mais pas les deux*, la règle du va-et-vient qui commande une lampe au
 bout d'un couloir. Placez ses quatre cas dans le plan : les deux « éteint »
