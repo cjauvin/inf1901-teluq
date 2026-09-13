@@ -159,12 +159,15 @@ trouve. Chaque mot devient alors un axe. Prenons-en deux, *gratuit* et
 
 Un courriel est donc un point, dans un espace qui compte autant de dimensions
 que le vocabulaire a de mots : des dizaines de milliers, dont ce dessin n'en
-montre que deux. Ces axes-là ne mesurent rien de physique, ni une taille ni une
-couleur, juste un compte ; et l'ordre des mots, lui, est perdu en route. Mais
-l'idée résiste : deux courriels qui emploient les mêmes mots sont deux points
-voisins, et un pourriel ressemble à un pourriel. C'est exactement la
-représentation dont nous nous servirons, au chapitre sur la classification, pour
-en construire un filtre.
+montre que deux. Le même geste, en somme, que pour l'image et ses pixels :
+
+{{< image src="/images/module2/courriels-vocabulaire.svg" alt="Le même dessin que pour l'image faite de pixels, transposé aux mots. D'une origine partent en éventail des axes, un par mot du vocabulaire : « gratuit », « réunion », « bonjour », puis des points de suspension pour les dizaines de milliers d'autres mots, et enfin « zèbre », le dernier. Au milieu, un petit nuage de points : chaque courriel est un point de cet espace, rouge s'il s'agit d'un pourriel, bleu s'il est légitime." title="Un axe par mot du vocabulaire, des dizaines de milliers d'axes : chaque courriel devient un point de cet espace, comme l'image en devenait un dans celui de ses pixels." loading="lazy" >}}
+
+Ces axes-là ne mesurent rien de physique, ni une taille ni une couleur, juste un
+compte ; et l'ordre des mots, lui, est perdu en route. Mais l'idée résiste : deux
+courriels qui emploient les mêmes mots sont deux points voisins, et un pourriel
+ressemble à un pourriel. C'est exactement la représentation dont nous nous
+servirons, au chapitre sur la classification, pour en construire un filtre.
 
 C'est là toute la force de l'idée. Maison, image, courriel : du moment qu'on sait
 décrire un objet par des nombres, il devient un point dans un espace, et leur

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 660 480" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">
+<title>L'espace du vocabulaire : un axe par mot, un courriel par point</title>
+<desc>Le même dessin que pour l'image faite de pixels, transposé aux mots. D'une origine partent en éventail des axes, un par mot du vocabulaire : « gratuit », « réunion », « bonjour », puis des points de suspension pour les dizaines de milliers d'autres mots, et enfin « zèbre », le dernier. Au milieu, un petit nuage de points : chaque courriel est un point de cet espace, rouge s'il s'agit d'un pourriel, bleu s'il est légitime. L'un d'eux est désigné : « un courriel ».</desc>
+<rect x="0" y="0" width="660" height="480" rx="14" fill="#efe7d3" stroke="#d9cbac"/>
+<defs><marker id="fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#b8a888"/></marker></defs>
+<g stroke="#b8a888" stroke-width="1.6" marker-end="url(#fl)">
+<line x1="80" y1="390" x2="80.0" y2="90.0"/>
+<line x1="80" y1="390" x2="220.8" y2="125.1"/>
+<line x1="80" y1="390" x2="316.4" y2="205.3"/>
+<line x1="80" y1="390" x2="380.0" y2="390.0"/>
+</g>
+<g font-size="15" fill="#3a3531">
+<text x="80" y="74" text-anchor="middle">« gratuit »</text>
+<text x="233" y="121" text-anchor="start">« réunion »</text>
+<text x="328" y="207" text-anchor="start">« bonjour »</text>
+<text x="392" y="395" text-anchor="start">« zèbre »</text>
+</g>
+<g fill="#8c8175">
+<circle cx="359.5" cy="265.5" r="2.6"/>
+<circle cx="372.6" cy="300.5" r="2.6"/>
+<circle cx="381.4" cy="336.9" r="2.6"/>
+</g>
+<g font-size="13" fill="#5b5249" font-style="italic" text-anchor="start">
+<text x="418" y="292">et des dizaines de milliers</text>
+<text x="418" y="310">d'autres mots du vocabulaire</text>
+</g>
+<text x="258" y="166" font-size="13" fill="#3a3531" font-style="italic" text-anchor="start">un courriel</text>
+<line x1="262" y1="172" x2="248" y2="205" stroke="#8c8175" stroke-width="1.2" stroke-dasharray="3 3"/>
+<g fill="#c4564a" stroke="#efe7d3" stroke-width="1.5">
+<circle cx="222" cy="196" r="7"/>
+<circle cx="248" cy="208" r="7"/>
+<circle cx="232" cy="232" r="7"/>
+<circle cx="254" cy="224" r="7"/>
+</g><g fill="#3a6ea5" stroke="#efe7d3" stroke-width="1.5">
+<circle cx="204" cy="236" r="7"/>
+<circle cx="188" cy="262" r="7"/>
+<circle cx="208" cy="262" r="7"/>
+</g>
+<circle cx="170" cy="430" r="7" fill="#c4564a" stroke="#efe7d3" stroke-width="1.5"/>
+<text x="186" y="434" font-size="14" fill="#3a3531" text-anchor="start">pourriel</text>
+<circle cx="300" cy="430" r="7" fill="#3a6ea5" stroke="#efe7d3" stroke-width="1.5"/>
+<text x="316" y="434" font-size="14" fill="#3a3531" text-anchor="start">courriel légitime</text>
+<text x="330" y="462" font-size="13" fill="#5b5249" text-anchor="middle">Un axe par mot du vocabulaire : chaque courriel est un point de cet espace.</text>
+</svg>
