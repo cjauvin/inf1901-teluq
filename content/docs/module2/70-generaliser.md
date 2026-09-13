@@ -61,6 +61,31 @@ test, lui, reste vierge pour l'ultime verdict.
 
 {{% /hint %}}
 
+{{% hint warning %}}
+**La règle d'or, à l'échelle d'aujourd'hui : les grands modèles de langage.**
+Toute cette section suppose qu'on sache ce que le modèle a vu pendant
+l'entraînement. Pour un LLM, ce n'est plus vraiment possible : ses données
+d'entraînement, des milliers de milliards de mots aspirés sur le Web, sont si
+vastes que personne n'en connaît le contenu précis, pas même ceux qui l'ont
+entraîné. Or l'examen qu'on croit lui faire passer, un problème de
+mathématiques, une question d'un test standardisé, un exercice de
+programmation, a fort probablement circulé sur le Web, avec son corrigé. Le
+modèle a-t-il *raisonné*, ou *retrouvé* ? On ne peut plus le savoir avec
+certitude. C'est le cas interdit par la règle d'or, un modèle qui a vu, même
+indirectement, ses données d'examen, mais porté à une échelle où plus personne
+ne peut le contrôler. D'où une saine méfiance devant les scores impressionnants
+qu'on annonce.
+
+Le problème dépasse la mesure. Rappelez-vous la 1001ᵉ image du début du
+module : tout reposait sur le fait de savoir si elle faisait partie des 1000.
+Pour un LLM, on ne peut plus répondre. Distinguer ce qu'un modèle *sait déjà*
+(parce que c'était dans ses données) de ce qu'il *apporte de nouveau* (parce
+qu'il généralise) est devenu, pour ces systèmes, une question ouverte, et au
+fond philosophique : où finit la mémoire, où commence la compréhension ? Ce
+chapitre l'a posée sur vingt maisons ; le Module 4 la retrouvera devant un
+modèle qui a lu une bonne partie de ce que l'humanité a écrit.
+{{% /hint %}}
+
 ## Linéaire ou non-linéaire : ce qu'un modèle peut dessiner
 
 Revenons un instant sur ce que nous avons construit. La régression linéaire d'*Un
