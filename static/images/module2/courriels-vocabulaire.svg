@@ -25,17 +25,18 @@
 <text x="418" y="292">et des dizaines de milliers</text>
 <text x="418" y="310">d'autres mots du vocabulaire</text>
 </g>
-<text x="258" y="166" font-size="13" fill="#3a3531" font-style="italic" text-anchor="start">un courriel</text>
-<line x1="262" y1="172" x2="248" y2="205" stroke="#8c8175" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="292" y="140" font-size="13" fill="#3a3531" font-style="italic" text-anchor="start">un courriel</text>
+<line x1="309" y1="146" x2="302" y2="162" stroke="#8c8175" stroke-width="1.2" stroke-dasharray="3 3"/>
 <g fill="#c4564a" stroke="#efe7d3" stroke-width="1.5">
+<circle cx="150" cy="120" r="7"/>
+<circle cx="125" cy="180" r="7"/>
 <circle cx="222" cy="196" r="7"/>
-<circle cx="248" cy="208" r="7"/>
-<circle cx="232" cy="232" r="7"/>
-<circle cx="254" cy="224" r="7"/>
+<circle cx="300" cy="170" r="7"/>
 </g><g fill="#3a6ea5" stroke="#efe7d3" stroke-width="1.5">
 <circle cx="204" cy="236" r="7"/>
-<circle cx="188" cy="262" r="7"/>
-<circle cx="208" cy="262" r="7"/>
+<circle cx="215" cy="325" r="7"/>
+<circle cx="250" cy="340" r="7"/>
+<circle cx="330" cy="330" r="7"/>
 </g>
 <circle cx="170" cy="430" r="7" fill="#c4564a" stroke="#efe7d3" stroke-width="1.5"/>
 <text x="186" y="434" font-size="14" fill="#3a3531" text-anchor="start">pourriel</text>

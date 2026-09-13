@@ -11,8 +11,8 @@ def dist_to_axis(px, py, a):
     t = max(0, min(L, t))
     cx, cy = OX+t*ux, OY+t*uy
     return math.hypot(px-cx, py-cy)
-pts_red = [(222, 196), (248, 208), (232, 232), (254, 224)]
-pts_blue = [(204, 236), (188, 262), (208, 262)]
+pts_red = [(150, 120), (125, 180), (222, 196), (300, 170)]
+pts_blue = [(204, 236), (215, 325), (250, 340), (330, 330)]
 for p in pts_red+pts_blue:
     print(p, [round(dist_to_axis(*p, a)) for _, a in axes])
 out = []
@@ -45,8 +45,8 @@ out.append('<text x="418" y="292">et des dizaines de milliers</text>')
 out.append('<text x="418" y="310">d\'autres mots du vocabulaire</text>')
 out.append('</g>')
 # leader + label
-out.append('<text x="258" y="166" font-size="13" fill="#3a3531" font-style="italic" text-anchor="start">un courriel</text>')
-out.append('<line x1="262" y1="172" x2="248" y2="205" stroke="#8c8175" stroke-width="1.2" stroke-dasharray="3 3"/>')
+out.append('<text x="292" y="140" font-size="13" fill="#3a3531" font-style="italic" text-anchor="start">un courriel</text>')
+out.append('<line x1="309" y1="146" x2="302" y2="162" stroke="#8c8175" stroke-width="1.2" stroke-dasharray="3 3"/>')
 out.append('<g fill="#c4564a" stroke="#efe7d3" stroke-width="1.5">')
 for x, y in pts_red: out.append(f'<circle cx="{x}" cy="{y}" r="7"/>')
 out.append('</g><g fill="#3a6ea5" stroke="#efe7d3" stroke-width="1.5">')
