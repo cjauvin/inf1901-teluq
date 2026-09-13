@@ -66,7 +66,11 @@ les écarts au-dessus et en dessous ne s'annulent pas, et pour pénaliser
 davantage les grosses bourdes), puis on en fait la moyenne. Ce nombre unique, la
 moyenne des carrés des écarts, porte un nom un peu technique, l'*erreur
 quadratique moyenne*, mais l'idée est simple : **plus il est petit, mieux la
-droite épouse le nuage.**
+droite épouse le nuage.** (Prenez le temps de visualiser le cas limite : si la
+droite passait exactement par tous les points, chaque écart serait nul, chaque
+carré aussi, et l'erreur vaudrait zéro. C'est le plancher. Avec un nuage comme
+le nôtre, aucune droite ne l'atteint, et tout l'enjeu est de s'en approcher le
+plus possible.)
 
 Une jolie façon de *sentir* cette erreur : imaginez que chaque point est relié à
 la droite par un petit ressort vertical. Un point éloigné tire fort ; un point
