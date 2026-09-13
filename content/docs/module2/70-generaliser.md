@@ -202,11 +202,76 @@ biais et variance.
 {{< image src="/images/module2/bias-vs-variance-with-errors.png" alt="Deux courbes en fonction de k. L'erreur d'entraînement (rouge) croît régulièrement de k=1 à k=21. L'erreur de test (bleu) a une forme en U : elle décroît, atteint un minimum, puis remonte. Deux droites diagonales figurent la variance (décroissante) et le biais (croissant) ; leur croisement marque le minimum de l'erreur de test." title="L'erreur de test (en bleu) suit une courbe en U : trop de variance à gauche, trop de biais à droite. Le meilleur modèle est au creux." loading="lazy" >}}
 
 Le point crucial : **rien de tout cela n'est propre à kNN.** Chaque modèle possède
-son curseur de souplesse : le degré d'un polynôme en régression, la profondeur
-d'un arbre de décision, le nombre de paramètres d'un réseau de neurones. Et
+son curseur de souplesse : le nombre de termes d'une courbe plus souple qu'une
+droite (nous allons le voir à l'instant), le nombre de paramètres d'un réseau de
+neurones. Et
 chacun affronte le même U, le même arbitrage entre coller et lisser. C'est le
 **compromis biais-variance**, et savoir le régler est l'un des vrais savoir-faire
 de l'apprentissage automatique.
+
+
+## Garder un modèle riche, mais le tenir en laisse : la régularisation
+
+Le compromis biais-variance semble nous laisser un seul levier : tourner le
+curseur de souplesse vers le bas, comme nous l'avons fait avec kNN en
+augmentant $k$. C'est une solution, mais elle est brutale : elle bride le modèle
+*avant* même de l'avoir laissé regarder les données, et le curseur est
+grossier, un cran à la fois. Or il arrive qu'on veuille un modèle riche, capable
+de dessiner des formes compliquées si les données l'exigent, sans pour autant
+lui permettre d'épouser le moindre hasard.
+
+Il existe une troisième voie, plus fine, et elle tient en une phrase : **au lieu
+de limiter la souplesse du modèle, on la fait payer.** Souvenez-vous de la
+fonction d'erreur d'[*Un modèle qui s'entraîne*](docs/module2/50-entrainer-un-modele) :
+elle mesure de combien le modèle se trompe sur les exemples, et l'entraînement
+consiste à la faire descendre. On y ajoute un second terme, une **pénalité** qui
+grandit avec la *complexité* du modèle :
+
+$$\text{erreur totale} = \text{erreur sur les données} + \lambda \times \text{complexité}$$
+
+Le modèle doit désormais négocier : coller aux points fait baisser le premier
+terme, mais coûte du second. Il ne se contorsionnera que si le gain en vaut la
+peine. La bille de la descente de gradient roule toujours vers le creux, mais
+dans un paysage remodelé, où les régions « trop compliquées » ont été
+surélevées.
+
+Pour voir la pénalité à l'œuvre, il nous faut un modèle assez souple pour
+surapprendre. Prenons la droite d'*Un modèle qui s'entraîne* et donnons-lui du
+jeu : au lieu de $\text{prix} = m \times \text{superficie} + b$, autorisons
+aussi des termes en superficie², superficie³, et ainsi de suite, jusqu'à la
+puissance 12. Une telle courbe s'appelle un *polynôme*, et chaque terme ajouté
+apporte un paramètre de plus : de deux, nous passons à treize. Le curseur de
+souplesse, ici, c'est ce nombre de termes, le *degré*. Et treize paramètres pour
+vingt maisons, c'est largement de quoi zigzaguer entre les points.
+
+Reste à dire ce qu'est, concrètement, la complexité. La réponse la plus courante
+est d'une simplicité désarmante : **la taille des paramètres.** Regardez ce que
+fait un polynôme qui zigzague entre les points : pour monter et descendre si
+vite, il lui faut des coefficients énormes, qui se compensent presque pour ne
+laisser dépasser que de petites bosses. Forcer les coefficients à rester petits,
+c'est donc forcer la courbe à rester calme. La pénalité s'écrit alors simplement
+comme la somme des carrés des paramètres, et tout le reste est inchangé : même
+modèle, même degré, même descente.
+
+{{< image src="/images/module2/regularisation.svg" alt="Deux panneaux montrant le même nuage de maisons (superficie en abscisse, prix en ordonnée) et le même polynôme de degré 12 ajusté aux données. À gauche, sans pénalité : la courbe ondule pour passer au plus près de chaque point, avec des bosses et des creux entre eux, et s'envole aux bords. À droite, avec une pénalité sur la taille des coefficients : le même polynôme se calme et suit la tendance générale, presque une droite." title="Même modèle, même degré ; seule la pénalité change. À gauche, le polynôme libre épouse le bruit ; à droite, tenu en laisse, il retrouve la tendance." loading="lazy" >}}
+
+Le nombre $\lambda$ règle la sévérité de la pénalité. À zéro, on retrouve le
+modèle libre ; trop grand, tout est écrasé et l'on retombe dans le
+sous-apprentissage (une droite plate, pour finir). C'est un hyper-paramètre de
+plus, et on le choisit comme les autres : sur l'ensemble de validation, jamais
+sur le jeu de test.
+
+Cette idée porte, selon les modèles, des noms différents : pour la droite et ses
+cousines, *régression ridge* (pénalité sur les carrés) ou *lasso* (sur les
+valeurs absolues, qui a la propriété remarquable de mettre certains paramètres
+exactement à zéro, donc d'*éliminer* des caractéristiques) ; pour les réseaux
+de neurones, *weight decay*, le même terme sous un autre nom. Elle a aussi des
+cousines qui ne passent pas par la fonction d'erreur, mais visent le même but,
+empêcher le modèle d'épouser le bruit : arrêter l'entraînement avant qu'il ne
+colle trop (l'*arrêt précoce*), ou éteindre au hasard une partie des neurones à
+chaque pas (le *dropout*). Le [Module 3](docs/module3) les retrouvera. Sous
+leurs noms divers, toutes disent la même chose : la souplesse est une
+ressource, et un bon modèle est un modèle riche qu'on tient en laisse.
 
 {{% hint info %}}
 
