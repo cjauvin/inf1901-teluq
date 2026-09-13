@@ -63,26 +63,26 @@ OUT = Path(__file__).resolve().parent.parent / "static" / "images" / "module2"
 # Deux rebelles traversent le vide, une dans chaque sens.
 MAISONS = [
     # superficie, année, distance (km), prix k$, vendue vite
-    (112, 1997,  4, 271, True),
-    (120, 2013,  7, 272, True),
+    (112, 1997,  4, 287, True),
+    (120, 2013,  7, 301, True),
     (130, 1972, 16, 310, False),   # table
-    (142, 2004,  3, 361, True),
+    (142, 2004,  3, 291, True),
     (150, 1980, 21, 350, False),   # table
-    (158, 1971, 19, 364, True),    # exception : ancienne et loin, et pourtant partie vite
-    (168, 1976, 14, 437, False),
-    (176, 2016,  6, 445, True),
+    (158, 1971, 19, 434, True),    # exception : ancienne et loin, et pourtant partie vite
+    (168, 1976, 14, 374, False),
+    (176, 2016,  6, 492, True),
     (180, 1995,  8, 420, True),    # table
-    (190, 1968, 23, 457, False),
-    (198, 2008,  5, 519, True),
-    (208, 2011,  5, 561, False),   # exception : récente et proche, et pourtant a traîné
-    (216, 2001,  3, 545, True),
+    (190, 1968, 23, 429, False),
+    (198, 2008,  5, 563, True),
+    (208, 2011,  5, 478, False),   # exception : récente et proche, et pourtant a traîné
+    (216, 2001,  3, 608, True),
     (220, 2010,  9, 580, True),    # table
-    (232, 1983, 18, 607, False),
-    (242, 2019,  6, 637, True),
-    (252, 1970, 13, 674, False),
-    (262, 1999,  4, 701, True),
-    (272, 2006,  7, 729, True),
-    (280, 1974, 24, 760, False),
+    (232, 1983, 18, 555, False),
+    (242, 2019,  6, 690, True),
+    (252, 1970, 13, 610, False),
+    (262, 1999,  4, 740, True),
+    (272, 2006,  7, 685, True),
+    (280, 1974, 24, 803, False),
 ]
 
 # Le nombre de chambres de la table suit la superficie ; il ne sert à aucune
