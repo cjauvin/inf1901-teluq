@@ -82,7 +82,7 @@ Pour un LLM, on ne peut plus répondre. Distinguer ce qu'un modèle *sait déjà
 (parce que c'était dans ses données) de ce qu'il *apporte de nouveau* (parce
 qu'il généralise) est devenu, pour ces systèmes, une question ouverte, et au
 fond philosophique : où finit la mémoire, où commence la compréhension ? Ce
-chapitre l'a posée sur vingt maisons ; le Module 4 la retrouvera devant un
+chapitre l'a posée sur vingt maisons ; le [Module 4](docs/module4) la retrouvera devant un
 modèle qui a lu une bonne partie de ce que l'humanité a écrit.
 {{% /hint %}}
 
@@ -144,10 +144,10 @@ XOR devient, comme par magie, séparable par une droite dans ce nouvel espace. M
 remarquez le prix : c'est *vous*, l'humain, qui avez dû trouver l'astuce. Et si
 personne ne sait quelle caractéristique inventer ?
 
-C'est précisément la question que le Module 3 viendra trancher : les réseaux de
+C'est précisément la question que le [Module 3](docs/module3) viendra trancher : les réseaux de
 neurones apprendront à **fabriquer eux-mêmes** les caractéristiques qui rendent le
 problème séparable, en empilant des couches. Le mur dressé en 1969 tombera en
-1986 : c'est la dette que le Module 1 avait laissée ouverte, et c'est là qu'elle
+1986 : c'est la dette que le [Module 1](docs/module1/60-hivers/#le-premier-hiver-la-mort-du-perceptron-1969) avait laissée ouverte, et c'est là qu'elle
 sera payée.
 
 Mais attention : pouvoir se courber n'est pas un bien en soi. Un modèle capable
@@ -213,7 +213,7 @@ de l'apprentissage automatique.
 Une énigme pour plus tard : si trop de souplesse nuit, comment les réseaux de
 neurones géants d'aujourd'hui (des centaines de *milliards* de paramètres,
 soit une souplesse vertigineuse) parviennent-ils malgré tout à généraliser ?
-La réponse, surprenante, bousculera cette jolie courbe en U… au Module 3.
+La réponse, surprenante, bousculera cette jolie courbe en U… au [Module 3](docs/module3).
 
 {{% /hint %}}
 

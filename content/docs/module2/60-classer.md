@@ -79,7 +79,7 @@ bleu ») pour repasser sous la barre.
 Matière à réflexion : pourquoi n'est-il pas toujours possible de séparer
 parfaitement les deux groupes par une droite ? Dans quelles conditions y
 arrive-t-on ? Et qu'est-ce qui pourrait rendre la chose possible quand elle ne
-l'est pas ? *(Nous y reviendrons : c'est l'une des grandes affaires du Module 3.)*
+l'est pas ? *(Nous y reviendrons : c'est l'une des grandes affaires du [Module 3](docs/module3).)*
 
 {{% /hint %}}
 
@@ -173,7 +173,7 @@ l'extrême, donnera l'IA *générative* d'aujourd'hui. Un **grand modèle de
 langage** (un LLM, comme celui derrière ChatGPT) n'est, au fond, rien d'autre
 qu'un portrait immensément détaillé de la classe « texte écrit par des
 humains », assez fin pour en fabriquer du neuf, mot après mot ; les générateurs
-d'images font de même avec les photos. Le Module 4 leur est consacré.
+d'images font de même avec les photos. Le [Module 4](docs/module4) leur est consacré.
 
 Comment dresse-t-on le portrait d'une classe ? En décrivant **comment ses points
 se répartissent** le long de chaque caractéristique. Les maisons bleues se
@@ -211,7 +211,7 @@ Voilà donc deux routes vers le même but :
 Fait remarquable : sur nos données en deux dimensions, ces deux chemins si
 différents aboutissent à la **même forme de frontière** : une droite. Mais la
 distinction entre apprendre à *séparer* et apprendre à *décrire* est l'une des
-plus profondes de tout le domaine. Nous la retrouverons, en grand, au Module 4 :
+plus profondes de tout le domaine. Nous la retrouverons, en grand, au [Module 4](docs/module4) :
 les modèles qui *classent* d'un côté, ceux qui *engendrent* du contenu de
 l'autre.
 

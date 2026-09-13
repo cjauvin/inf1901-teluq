@@ -117,7 +117,7 @@ et de zigzaguer sans fin ; trop petits, la descente dure une éternité. Ce r�
 le *taux d'apprentissage*, n'est pas un paramètre du modèle, mais un réglage
 de la *procédure* : on l'appelle un **hyper-paramètre**.
 
-Reconnaissez-vous quelque chose ? À la toute fin du Module 1, nous annoncions
+Reconnaissez-vous quelque chose ? À la toute fin du [Module 1](docs/module1/60-hivers/#la-bascule), nous annoncions
 qu'*« apprendre, c'est encore chercher, mais dans un autre espace »* : non plus
 fouiller les coups d'une partie d'échecs, mais l'immensité des réglages possibles
 d'un modèle. Nous y sommes : la descente de gradient *est* cette recherche. Là où

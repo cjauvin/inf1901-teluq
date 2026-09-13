@@ -65,9 +65,9 @@ salaires, pour produire ces étiquettes une par une.
 Ce travail est le plus souvent invisible, peu rémunéré, et parfois éprouvant :
 pensez à la modération de contenus violents. Même les assistants les plus récents
 en dépendent : une part de l'entraînement de ChatGPT repose sur des humains qui
-notent et corrigent ses réponses (nous y reviendrons au Module 4). L'« intelligence »
+notent et corrigent ses réponses (nous y reviendrons au [Module 4](docs/module4)). L'« intelligence »
 de ces systèmes s'appuie ainsi sur un socle très humain, et soulève des questions
-que nous retrouverons au Module 5.
+que nous retrouverons au [Module 5](docs/module5).
 {{% /hint %}}
 
 Que faire, alors, quand personne n'a fourni ces réponses ?
@@ -122,7 +122,7 @@ perdre) et, plus profond encore, l'**apprentissage de représentations** :
 découvrir *tout seul*, sans étiquettes, de bonnes caractéristiques pour décrire
 les données. Cette idée, laisser la machine forger ses propres descripteurs, est
 l'un des grands moteurs de l'IA moderne ; nous la retrouverons avec les
-**autoencodeurs** (Module 3) et les **plongements** de mots (Module 4).
+**autoencodeurs** ([Module 3](docs/module3)) et les **plongements** de mots ([Module 4](docs/module4)).
 
 {{% details "Les mathématiques de k-means (optionnel)" %}}
 
@@ -182,7 +182,7 @@ médiocre ; un peu de hasard le pousse à *explorer* d'autres routes, et parfo
 en trouver de meilleures. Cet arbitrage entre **explorer et exploiter** est au
 cœur du renforcement.
 
-Reconnaissez-vous un air de famille ? Au Module 1, nous parlions des machines qui
+Reconnaissez-vous un air de famille ? Au [Module 1](docs/module1/30-chercher-raisonner/#lapogée-deep-blue-bat-kasparov-1997), nous parlions des machines qui
 jouent aux échecs en *cherchant* dans l'arbre des coups possibles. Le
 renforcement, c'est cette quête, mais où la machine *apprend* elle-même à évaluer
 les positions plutôt que de tout calculer. C'est précisément ce mariage (la
@@ -190,11 +190,11 @@ recherche du GOFAI et l'apprentissage) qui a permis à **AlphaGo** de battre les
 meilleurs joueurs de go humains, là où la seule force brute échouait.
 
 Le renforcement est aussi la famille la plus gourmande en calcul, et c'est en le
-mariant aux **réseaux de neurones** (le *deep reinforcement learning*, Module 3)
+mariant aux **réseaux de neurones** (le *deep reinforcement learning*, [Module 3](docs/module3))
 qu'il a pris son essor. Vous le recroiserez même au cœur des assistants modernes :
 c'est en partie par renforcement, à partir des préférences d'évaluateurs humains
 (le fameux **RLHF**), qu'on façonne le comportement de ChatGPT. Nous y viendrons
-au Module 4.
+au [Module 4](docs/module4).
 
 ## Un même squelette, d'un bout à l'autre
 
@@ -221,8 +221,8 @@ une erreur sur des exemples**. La question que nous posions dès la première pa
 *en quoi est-ce de l'intelligence ?* — reste ouverte, et c'est très bien ainsi ;
 mais vous savez désormais, concrètement, ce qui se passe sous le capot.
 
-Il ne reste plus qu'à changer d'échelle. Au **Module 3**, nous empilerons ces
+Il ne reste plus qu'à changer d'échelle. Au [**Module 3**](docs/module3), nous empilerons ces
 fonctions réglables en **réseaux de neurones** profonds, et verrons pourquoi
-c'est là que l'image et le langage prennent enfin leur envol. Au **Module 4**,
+c'est là que l'image et le langage prennent enfin leur envol. Au [**Module 4**](docs/module4),
 ces mêmes réseaux deviendront **génératifs**, capables de produire textes et
 images : les grands modèles de langage. Le squelette ne changera pas. Il grandira.

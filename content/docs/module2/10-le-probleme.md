@@ -86,7 +86,7 @@ C'est tout le pari de l'**apprentissage automatique** (*machine learning*) :
 fournir à un programme un grand nombre d'exemples, et le munir d'une procédure
 qui lui permet d'ajuster son comportement jusqu'à reproduire les bonnes réponses,
 puis, on l'espère, de bien répondre sur des cas qu'il n'a jamais vus. C'est
-précisément le renversement annoncé à la fin du Module 1 : non plus *chercher*
+précisément le renversement annoncé à la fin du [Module 1](docs/module1/60-hivers/#la-bascule) : non plus *chercher*
 une solution dans un labyrinthe de règles posées d'avance, mais *apprendre* à en
 fabriquer une à partir des données.
 
