@@ -139,14 +139,14 @@ mots de la colonne `D` apparaissent dans les courriels valides (qui donc
 `non`, ne sont pas des pourriels) :
 
 ```
-=SUMPRODUCT((B$1:B$10=`non`) * ISNUMBER(SEARCH(D1, A$1:A$10)))
+=SUMPRODUCT((B$1:B$10="non") * ISNUMBER(SEARCH(D1, A$1:A$10)))
 ```
 
 et de manière similaire pour la colonne `F` et la fréquence des mots qui
 apparaissent dans les courriels qui `oui`, sont des pourriels :
 
 ```
-=SUMPRODUCT((B$1:B$10=`oui`) * ISNUMBER(SEARCH(D1, A$1:A$10)))
+=SUMPRODUCT((B$1:B$10="oui") * ISNUMBER(SEARCH(D1, A$1:A$10)))
 ```
 
 {{% hint warning %}}
