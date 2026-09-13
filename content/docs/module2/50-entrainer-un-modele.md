@@ -95,9 +95,11 @@ Repartons de l'erreur. Pour chaque choix de paramètres (m, b), le modèle comme
 une certaine erreur totale : l'erreur est donc elle-même une *fonction* des
 paramètres. Imaginons alors un **paysage** : les deux paramètres sont les
 coordonnées sur une carte (est-ouest pour m, nord-sud pour b), et l'erreur est
-l'**altitude** en chaque point. Les hauteurs sont les mauvais modèles (grande
-erreur) ; les vallées, les bons. Trouver le meilleur modèle, c'est trouver le
-**point le plus bas** de ce paysage.
+l'**altitude** en chaque point. Le paysage a donc **trois dimensions** : deux
+pour les paramètres, *m* et *b*, et une troisième, verticale, pour l'erreur.
+Les hauteurs sont les mauvais modèles (grande erreur) ; les vallées, les bons.
+Trouver le meilleur modèle, c'est trouver le **point le plus bas** de ce
+paysage.
 
 {{< image src="/images/module2/descente-gradient.svg" alt="Une cuvette en trois dimensions (paraboloïde) représentant l'erreur du modèle au-dessus du plan des réglages (m, b). Une bille lâchée au hasard sur le bord dévale la pente jusqu'au creux, où l'erreur est minimale : le meilleur modèle." title="La descente de gradient : l'erreur forme une cuvette au-dessus des réglages (m, b) ; la bille roule jusqu'au creux — le meilleur modèle." loading="lazy" >}}
 

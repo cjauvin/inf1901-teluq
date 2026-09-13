@@ -36,4 +36,5 @@
 <text x="466" y="360" font-size="13" fill="#3a3531" text-anchor="middle" font-weight="600">meilleur modèle</text>
 <text x="466" y="377" font-size="12" fill="#7a6f63" text-anchor="middle">(erreur basse)</text>
 <line x1="445" y1="350" x2="356.0" y2="289.0" stroke="#5b5249" stroke-width="1.3" marker-end="url(#arr)"/>
+<text x="330" y="424" font-size="13" fill="#5b5249" text-anchor="middle">trois dimensions : <tspan font-style="italic">m</tspan> et <tspan font-style="italic">b</tspan> (les paramètres du modèle), et l'erreur</text>
 </svg>
