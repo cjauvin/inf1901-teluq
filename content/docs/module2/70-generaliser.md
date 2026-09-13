@@ -278,7 +278,17 @@ apprend à partir d'exemples **étiquetés**.
 
 Mais cette réponse toute prête, d'où vient-elle ? Quelqu'un a dû, quelque part,
 étiqueter ces milliers d'exemples un à un, travail souvent long, coûteux,
-parfois impossible. Et le monde déborde de données *sans* étiquette : des
+parfois impossible. Il est si central qu'il est devenu une **industrie à part
+entière**, celle de l'*étiquetage de données*. Des entreprises comme Scale AI
+(dans laquelle Meta a investi une quinzaine de milliards de dollars en 2025),
+Appen, Sama ou Labelbox, ou des plateformes comme le Mechanical Turk d'Amazon,
+emploient ou mobilisent des centaines de milliers de personnes pour tracer des
+contours sur des images, transcrire des enregistrements, classer des textes, et,
+depuis les grands modèles de langage, comparer et noter des réponses générées.
+Ce travail, souvent invisible et mal payé, réalisé en bonne partie au Kenya, aux
+Philippines ou au Venezuela, est l'envers discret de l'apprentissage
+supervisé : derrière chaque « bonne réponse » fournie au modèle, il y a eu un
+humain. Et le monde déborde de données *sans* étiquette : des
 millions de photos que personne n'a triées, des historiques d'achats sans
 catégories, des textes en vrac. Peut-on apprendre quelque chose de données
 brutes, livrées sans la moindre bonne réponse ? Et à l'inverse, quand un robot
