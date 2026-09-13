@@ -50,8 +50,14 @@ fait pas partie de cette description — c'est justement la valeur qu'on cherche
 
 Le prix est un nombre : il se prête sans difficulté à cette mise en forme. Mais
 souvenez-vous de notre seconde question : *cette maison va-t-elle partir vite ?*
-Sa réponse, elle, est un **oui** ou un **non**. Or nous venons de le dire : une
-machine ne manipule que des nombres. Comment lui faire avaler un « oui » ?
+Le schéma est le même, à deux différences près. La sortie n'est plus un nombre
+mais un **oui** ou un **non** ; et le prix, qui était la sortie, est passé du
+côté de l'entrée, comme une caractéristique parmi les autres :
+
+{{< image src="/images/module2/modele-entree-sortie-categorie.svg" alt="Le même schéma que pour le prix. À gauche, les caractéristiques d'une maison (superficie, année, distance du centre, et cette fois le prix, qui a changé de côté) ; une flèche vers une boîte « modèle » ; une flèche en sortie vers la réponse : « oui », vendue en moins de 30 jours." title="Le modèle de classification : les caractéristiques entrent, le prix compris ; une catégorie sort." loading="lazy" >}}
+
+Or nous venons de le dire : une machine ne manipule que des nombres. Comment
+lui faire avaler un « oui » ?
 
 De la façon la plus simple qui soit : en décidant que **oui vaut 1 et non vaut
 0**. Le choix est arbitraire (on aurait pu prendre l'inverse, ou n'importe quel
