@@ -151,18 +151,16 @@ comme pour nos maisons.
 Et un texte ? Un courriel n'a ni superficie ni pixels : rien, à première vue,
 qui se mesure. On le décrit pourtant par des nombres, d'une façon qui paraît
 d'abord bien fruste. On dresse la liste de tous les mots susceptibles d'y
-figurer (le *vocabulaire*), et pour chacun, on note s'il s'y trouve, ou combien
-de fois :
+figurer (le *vocabulaire*), et pour chacun, on compte combien de fois il s'y
+trouve. Chaque mot devient alors un axe. Prenons-en deux, *gratuit* et
+*réunion*, et plaçons quelques courriels dans leur plan :
 
-| | gratuit | cliquez | réunion | rapport | … |
-|---|---|---|---|---|---|
-| « Cliquez ici, c'est gratuit ! » | 1 | 1 | 0 | 0 | … |
-| « Le rapport pour la réunion de lundi » | 0 | 0 | 1 | 1 | … |
+{{< image src="/images/module2/courriels-deux-mots.svg" alt="Un plan dont les deux axes sont deux mots du vocabulaire : en abscisse, le nombre de fois où « gratuit » apparaît dans le courriel ; en ordonnée, le nombre de fois où « réunion » y apparaît. Chaque courriel est un point à coordonnées entières. Les pourriels, en rouge, se massent le long de l'axe « gratuit » ; les courriels légitimes, en bleu, le long de l'axe « réunion ». Deux courriels sont nommés : « Cliquez ici, c'est gratuit ! », en (1, 0), et « Le rapport pour la réunion de lundi », en (0, 1)." title="Deux mots du vocabulaire, deux axes : chaque courriel devient un point, et les pourriels se rangent d'un côté, les courriels légitimes de l'autre." loading="lazy" >}}
 
-Chaque mot du vocabulaire devient un axe, et un courriel, un point dans un
-espace qui compte autant de dimensions que de mots : des dizaines de milliers.
-Ces axes-là ne mesurent rien de physique, ni une taille ni une couleur, juste
-une présence ou un compte ; et l'ordre des mots, lui, est perdu en route. Mais
+Un courriel est donc un point, dans un espace qui compte autant de dimensions
+que le vocabulaire a de mots : des dizaines de milliers, dont ce dessin n'en
+montre que deux. Ces axes-là ne mesurent rien de physique, ni une taille ni une
+couleur, juste un compte ; et l'ordre des mots, lui, est perdu en route. Mais
 l'idée résiste : deux courriels qui emploient les mêmes mots sont deux points
 voisins, et un pourriel ressemble à un pourriel. C'est exactement la
 représentation dont nous nous servirons, au chapitre sur la classification, pour
