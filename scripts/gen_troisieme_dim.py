@@ -1,7 +1,8 @@
 # gen_troisieme_dim.py
-# Génère deux variantes de la même vue en perspective :
-#   static/images/module2/troisieme-dimension-oui-non.svg  (p. 10 : barreaux « non » / « oui »)
-#   static/images/module2/troisieme-dimension.svg          (p. 30 : barreaux 0 / 1)
+# Génère : static/images/module2/troisieme-dimension-oui-non.svg (p. 10)
+# La variante 0 / 1 pour la p. 30 a existé (2026-09-10 → 09-12) puis a été
+# retirée : à cet endroit de l'exposé, elle ne changeait que deux étiquettes
+# et le texte le dit en une phrase. rendre() garde le paramètre des barreaux.
 # Usage  : uv run scripts/gen_troisieme_dim.py
 #
 # Les maisons viennent de gen_maisons.py — source de vérité unique du fil rouge.
@@ -9,8 +10,7 @@
 # centre et année de construction), pour que le texte puisse dire, sans mentir,
 # que ce relief vu d'en haut redonne ce nuage-là. La p. 10 montre l'intuition
 # (la couleur est l'ombre d'un troisième axe) sans emprunter à la p. 30 son
-# encodage 0/1 ; la p. 30 reprend la même figure une fois la cible devenue un
-# nombre.
+# encodage 0/1.
 #
 # Prévisualiser : qlmanage -t -s 900 -o /tmp <fichier>.svg
 
@@ -132,13 +132,4 @@ rendre(
     "redonne exactement le nuage où la réponse était codée par une couleur.",
     ("La couleur du nuage plat était l'ombre portée de ce troisième axe.",
      "Les deux exceptions, vues d'en haut, retombent au milieu de l'autre couleur (points creux)."),
-)
-rendre(
-    "troisieme-dimension",
-    ((0, "0", "non"), (1, "1", "oui")),
-    "La même vue en perspective qu'au premier chapitre : distance au centre et année de construction au "
-    "sol, la réponse sur un troisième axe vertical à deux niveaux. Cette fois, les deux barreaux portent "
-    "une valeur : 0 pour non, en bas, et 1 pour oui, en haut. La cible est devenue un nombre comme les "
-    "autres.",
-    "La réponse a bel et bien son propre axe, et ses deux barreaux ont maintenant une valeur : 0 et 1.",
 )

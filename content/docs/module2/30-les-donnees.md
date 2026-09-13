@@ -65,16 +65,11 @@ autre couple de valeurs), mais il a l'immense avantage de faire de la cible une
 grandeur comme une autre. Une fois cette convention posée, une catégorie n'est
 plus qu'un nombre, et tout ce qui suit s'applique sans changement.
 
-Cela permet aussi de compléter un dessin du premier chapitre. Nous y avions
-relevé le nuage en perspective, en donnant à la réponse son propre axe, à deux
-barreaux, *non* et *oui*. Maintenant que la cible est un nombre, ces deux
-barreaux ont une valeur :
-
-{{< image src="/images/module2/troisieme-dimension.svg" alt="La même vue en perspective qu'au premier chapitre : la distance du centre et l'année de construction au sol, la réponse sur un troisième axe vertical à deux niveaux. Cette fois, les deux barreaux portent une valeur : 0 (non) en bas et 1 (oui) en haut. Les maisons vendues vite sont sur le plan du haut, celles qui ont traîné sur celui du bas." title="Le même relief, une fois la cible devenue un nombre : les deux barreaux s'appellent maintenant 0 et 1." loading="lazy" >}}
-
-Rien n'a bougé, sinon deux étiquettes. Mais ces deux étiquettes changent tout :
-la réponse est désormais une **grandeur** comme les autres, qu'un modèle peut
-calculer, comparer, et sur laquelle il peut se tromper d'une quantité mesurable.
+Rien n'a bougé dans le relief du premier chapitre, sinon deux étiquettes : ses
+deux barreaux, *non* et *oui*, s'appellent désormais 0 et 1. Mais ces deux
+étiquettes changent tout : la réponse est devenue une **grandeur** comme les
+autres, qu'un modèle peut calculer, comparer, et sur laquelle il peut se tromper
+d'une quantité mesurable.
 
 Attention toutefois à ne pas confondre : cet axe-là n'est pas de même nature que
 les autres. La distance et l'année sont des **caractéristiques**, elles
