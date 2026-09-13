@@ -188,8 +188,12 @@ Le renforcement est aussi la famille la plus gourmande en calcul, et c'est en le
 mariant aux **réseaux de neurones** (le *deep reinforcement learning*, [Module 3](docs/module3))
 qu'il a pris son essor. Vous le recroiserez même au cœur des assistants modernes :
 c'est en partie par renforcement, à partir des préférences d'évaluateurs humains
-(le fameux **RLHF**), qu'on façonne le comportement de ChatGPT. Nous y viendrons
-au [Module 4](docs/module4).
+(le fameux **RLHF**), qu'on façonne le comportement de ChatGPT. Et c'est par
+renforcement encore, mais avec des récompenses *vérifiables* cette fois (un
+problème de mathématiques a une bonne réponse, un programme passe ou non ses
+tests : le **RLVR**), qu'on a appris aux modèles les plus récents à
+« raisonner » longuement avant de répondre. Nous y viendrons au
+[Module 4](docs/module4).
 
 ## Un même squelette, d'un bout à l'autre
 
