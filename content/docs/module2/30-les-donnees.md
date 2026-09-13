@@ -148,6 +148,26 @@ continue d'avoir un sens.** Deux photos presque identiques sont deux points
 *voisins* ; deux images sans rapport, deux points très *éloignés*. Exactement
 comme pour nos maisons.
 
+Et un texte ? Un courriel n'a ni superficie ni pixels : rien, à première vue,
+qui se mesure. On le décrit pourtant par des nombres, d'une façon qui paraît
+d'abord bien fruste. On dresse la liste de tous les mots susceptibles d'y
+figurer (le *vocabulaire*), et pour chacun, on note s'il s'y trouve, ou combien
+de fois :
+
+| | gratuit | cliquez | réunion | rapport | … |
+|---|---|---|---|---|---|
+| « Cliquez ici, c'est gratuit ! » | 1 | 1 | 0 | 0 | … |
+| « Le rapport pour la réunion de lundi » | 0 | 0 | 1 | 1 | … |
+
+Chaque mot du vocabulaire devient un axe, et un courriel, un point dans un
+espace qui compte autant de dimensions que de mots : des dizaines de milliers.
+Ces axes-là ne mesurent rien de physique, ni une taille ni une couleur, juste
+une présence ou un compte ; et l'ordre des mots, lui, est perdu en route. Mais
+l'idée résiste : deux courriels qui emploient les mêmes mots sont deux points
+voisins, et un pourriel ressemble à un pourriel. C'est exactement la
+représentation dont nous nous servirons, au chapitre sur la classification, pour
+en construire un filtre.
+
 C'est là toute la force de l'idée. Maison, image, courriel : du moment qu'on sait
 décrire un objet par des nombres, il devient un point dans un espace, et leur
 ressemblance se mesure par leur proximité. C'est précisément ce dont le prochain
