@@ -115,13 +115,38 @@ spécialiseront dans l'une ou l'autre tâche.
 Seule cette dernière étape distingue les deux tâches ; tout le reste est identique.
 {{% /hint %}}
 
-L'applet ci-dessous donne à voir la **classification**, plus parlante à l'œil,
-car une frontière entre deux catégories se *voit* d'un seul coup en deux
-dimensions. Le kNN à l'œuvre, lui, reste exactement le même. Deux catégories,
-donc : des points rouges et des points bleus. Chaque point coloré est un exemple
-connu ; le fond coloré, lui, montre la prédiction de kNN pour *tout* nouveau
-point qui s'y trouverait. Ajoutez des points, déplacez-les, faites varier **k**,
-et observez la frontière entre territoire rouge et territoire bleu se redessiner.
+Revenons à nos maisons, dans le plan de la seconde question (distance du
+centre, année de construction). Que répond kNN à une maison *nouvelle*, placée
+n'importe où dans ce plan ? On peut le lui demander pour chaque point du plan,
+un par un, et teinter ce point de la réponse obtenue : bleu pâle si ses *k*
+voisins votent « vendue vite », rouge pâle s'ils votent « a traîné ». Voici le
+résultat pour *k* = 3 :
+
+{{< image src="/images/module2/maisons-frontiere-k3.svg" alt="Le nuage coloré des maisons, dans le plan distance du centre × année de construction, avec le fond teinté : bleu pâle là où kNN (k = 3) répondrait « vendue vite » à une maison qui s'y trouverait, rouge pâle là où il répondrait « a traîné ». La ligne où la teinte bascule serpente dans la bande vide entre les deux amas : c'est la frontière de décision. Les deux exceptions sont absorbées par leur territoire adverse." title="La frontière de décision de kNN (k = 3) sur nos maisons : le fond donne la réponse du modèle en chaque point du plan, et la ligne où la couleur bascule est la frontière." loading="lazy" >}}
+
+Le plan se trouve découpé en deux **territoires**. La ligne où la teinte
+bascule, celle qui serpente dans la bande vide entre les deux amas, porte un
+nom : c'est la **frontière de décision**. Personne ne l'a tracée ; elle est la
+conséquence de la règle, appliquée partout. Et elle est tout ce qui compte pour
+prédire : une maison qui tombe d'un côté sera classée « vendue vite », de
+l'autre « a traîné », sans autre nuance. Regardez aussi ce qu'il advient des deux
+exceptions du premier chapitre : à *k* = 3, chacune est absorbée par le
+territoire adverse, puisque ses trois voisins les plus proches votent contre
+elle.
+
+Retenez cette image, car elle vaut pour tout classificateur, et pas seulement
+pour kNN : **classer, c'est découper l'espace en territoires, et un modèle de
+classification se résume à la frontière qu'il trace.** C'est d'ailleurs pourquoi
+la classification est plus parlante à l'œil que la régression : une frontière se
+*voit* d'un seul coup en deux dimensions. Nous rencontrerons au chapitre
+« Classer » des modèles dont la frontière est une simple droite ; celle de kNN,
+elle, peut prendre n'importe quelle forme.
+
+L'applet ci-dessous permet de jouer avec cette frontière. Deux catégories, des
+points rouges et des points bleus : chaque point coloré est un exemple connu, et
+le fond montre, comme ci-dessus, la prédiction de kNN pour tout nouveau point.
+Ajoutez des points, déplacez-les, faites varier *k*, et observez la frontière de
+décision se redessiner.
 
 {{< applet src="/html/applets/knn.html" height="692" >}}
 
@@ -134,7 +159,13 @@ Les deux extrêmes sont instructifs. Avec **k = 1**, chaque prédiction ne s'app
 que sur l'unique voisin le plus proche : la frontière épouse alors le moindre
 détail, contourne chaque point individuel et se tortille à l'excès. Le modèle
 colle si bien aux exemples connus qu'il en devient esclave, réagissant au
-moindre point un peu aberrant. À l'autre bout, avec un **k très grand**, chaque
+moindre point un peu aberrant. Nos maisons le montrent : à *k* = 1, chacune des
+deux exceptions se taille un îlot de sa couleur en plein territoire adverse, et
+la frontière se découpe en cellules anguleuses.
+
+{{< image src="/images/module2/maisons-frontiere-k1.svg" alt="Même plan, même fond teinté, mais avec k = 1 : chaque maison impose sa couleur à tout ce qui l'entoure. Les deux exceptions creusent chacune un îlot de leur couleur en plein territoire adverse, et la frontière se découpe en cellules anguleuses." title="La même frontière avec k = 1 : chaque exception se taille un îlot, et la frontière épouse le moindre point." loading="lazy" >}}
+
+À l'autre bout, avec un **k très grand**, chaque
 prédiction moyenne tant de voisins que les particularités locales s'effacent : la
 frontière devient lisse, paisible… parfois au point d'ignorer des structures
 pourtant bien réelles.
