@@ -169,8 +169,11 @@ principe, en *fabriquer* de nouveaux : un modèle qui connaît le portrait-robo
 « bleu typique » pourrait inventer des bleus plausibles qu'il n'a jamais vus.
 D'où *génératif* : il pourrait générer des données, pas seulement les trancher.
 Retenez cette idée : elle paraît modeste ici, mais c'est elle qui, poussée à
-l'extrême, donnera plus tard l'IA *générative*, celle qui produit textes et
-images (Module 4).
+l'extrême, donnera l'IA *générative* d'aujourd'hui. Un **grand modèle de
+langage** (un LLM, comme celui derrière ChatGPT) n'est, au fond, rien d'autre
+qu'un portrait immensément détaillé de la classe « texte écrit par des
+humains », assez fin pour en fabriquer du neuf, mot après mot ; les générateurs
+d'images font de même avec les photos. Le Module 4 leur est consacré.
 
 Comment dresse-t-on le portrait d'une classe ? En décrivant **comment ses points
 se répartissent** le long de chaque caractéristique. Les maisons bleues se
