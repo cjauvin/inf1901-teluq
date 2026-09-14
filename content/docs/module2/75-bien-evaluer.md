@@ -131,12 +131,12 @@ ici « signalé par le filtre », et n'a rien d'une bonne nouvelle.
 
 Ces deux façons de se tromper n'ont d'ailleurs rien de propre à l'intelligence
 artificielle. La statistique les a nommées bien avant, en 1933, sous la plume
-de Jerzy Neyman et Egon Pearson : l'**erreur de première espèce**, voir un
+de Jerzy Neyman et Egon Pearson : l'**erreur de première espèce**, voir un
 effet là où il n'y en a pas (notre faux positif), et l'**erreur de seconde
 espèce**, manquer un effet bien réel (notre faux négatif), en anglais [*type I
 and type II errors*](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors).
 C'est la grammaire de tout test, de l'essai clinique au contrôle de qualité en
-usine ; un tribunal qui condamne un innocent ou acquitte un coupable commet
+usine ; un tribunal qui condamne un innocent ou acquitte un coupable commet
 exactement ces deux erreurs-là. L'apprentissage automatique n'a fait qu'en
 hériter, avec son vocabulaire à lui.
 
@@ -155,12 +155,12 @@ Ces deux mots ne viennent pas non plus de l'IA, mais de la **recherche
 d'information**, la discipline des catalogues de bibliothèque puis des moteurs
 de recherche. Devant une requête, un bon système ramène des documents
 *pertinents*, sans les noyer dans du bruit (la précision), et n'en oublie pas
-en route (le rappel) ; c'est pour départager les systèmes de recherche
+en route (le rappel) ; c'est pour départager les systèmes de recherche
 documentaire, dès les années 1960, qu'on a fait de ce couple la mesure de
-référence, et il l'est resté : [précision et
+référence, et il l'est resté : [précision et
 rappel](https://fr.wikipedia.org/wiki/Précision_et_rappel) sont aujourd'hui le
 vocabulaire commun de tout ce qui *trie*. Un filtre anti-pourriel n'est
-d'ailleurs qu'une recherche déguisée : retrouver les pourriels parmi les
+d'ailleurs qu'une recherche déguisée : retrouver les pourriels parmi les
 courriels.
 
 Car ils tirent en sens contraires. Souvenez-vous de la régression logistique de
