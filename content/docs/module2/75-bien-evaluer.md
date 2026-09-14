@@ -151,6 +151,8 @@ les vrais pourriels, quelle part le filtre a-t-il attrapée ? Ici 40 sur 50,
 soit 80 % ; le reste est passé au travers. Deux nombres au lieu d'un, et ils
 tirent en sens contraires.
 
+{{< image src="/images/module2/precision-rappel.svg" alt="À gauche, des courriels figurés par des points, rouges pour les pourriels, bleus pour les légitimes, et un lasso pointillé autour de ce que le filtre a jeté : 40 rouges et 20 bleus à l'intérieur, 10 rouges restés dehors. À droite, deux barres. La barre de la précision représente les 60 courriels jetés, dont 40 rouges : 67 %. La barre du rappel représente les 50 vrais pourriels, dont 40 attrapés : 80 %." title="Précision et rappel, avec les nombres de la matrice : deux questions, deux dénominateurs. La précision se lit à l'intérieur du lasso ; le rappel, parmi les points rouges." loading="lazy" >}}
+
 Ces deux mots ne viennent pas non plus de l'IA, mais de la **recherche
 d'information**, la discipline des catalogues de bibliothèque puis des moteurs
 de recherche. Devant une requête, un bon système ramène des documents

@@ -26,15 +26,17 @@ interieur, exterieur = [], []
 for gx in range(46, 320, 15):
     for gy in range(96, 340, 15):
         x, y = gx + rng.uniform(-3, 3), gy + rng.uniform(-3, 3)
+        if CX - 100 <= x <= CX + 100 and CY - RY - 30 <= y <= CY - RY - 2:
+            continue  # zone réservée au label du lasso
         if dans_lasso(x, y, 11):
             interieur.append((x, y))
         elif not dans_lasso(x, y, -11):
             exterieur.append((x, y))
 rng.shuffle(interieur)
 rng.shuffle(exterieur)
-assert len(interieur) >= VP + FP and len(exterieur) >= FN + 40
+assert len(interieur) >= VP + FP and len(exterieur) >= FN + 48
 rouges = interieur[:VP] + exterieur[:FN]
-bleus = interieur[VP:VP + FP] + exterieur[FN:FN + 60]
+bleus = interieur[VP:VP + FP] + exterieur[FN:FN + 48]
 
 o = ['<?xml version="1.0" encoding="UTF-8"?>',
      '<svg viewBox="0 0 660 440" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">',
@@ -57,7 +59,7 @@ o.append(f'<text x="{CX}" y="{CY - RY - 12}" font-size="13" fill="{BRUN}" text-a
 BX, BW, BH = 362, 270, 30
 
 
-def barre(y, titre, parts, formule, glose):
+def barre(y, titre, parts, formule, glose1, glose2):
     o.append(f'<text x="{BX}" y="{y - 12}" font-size="14" fill="{ENCRE}" font-weight="600">{titre}</text>')
     total = sum(n for n, _ in parts)
     x = BX
@@ -67,13 +69,14 @@ def barre(y, titre, parts, formule, glose):
         o.append(f'<text x="{x + w / 2:.1f}" y="{y + BH / 2 + 5}" font-size="13" fill="{PANNEAU}" text-anchor="middle" font-weight="700">{n}</text>')
         x += w
     o.append(f'<text x="{BX}" y="{y + BH + 22}" font-size="13" fill="{ENCRE}">{formule}</text>')
-    o.append(f'<text x="{BX}" y="{y + BH + 40}" font-size="12" fill="{GRIS}">{glose}</text>')
+    o.append(f'<text x="{BX}" y="{y + BH + 40}" font-size="12" fill="{GRIS}">{glose1}</text>')
+    o.append(f'<text x="{BX}" y="{y + BH + 56}" font-size="12" fill="{GRIS}">{glose2}</text>')
 
 
 barre(118, "précision", [(VP, ROUGE), (FP, BLEU)],
-      f"= 40 / 60 = 67{NB}%", "parmi ce que le filtre a jeté, la part de vrais pourriels")
-barre(250, "rappel", [(VP, ROUGE), (FN, "#e0a89f")],
-      f"= 40 / 50 = 80{NB}%", "parmi les vrais pourriels, la part que le filtre a attrapée")
+      f"= 40 / 60 = 67{NB}%", "parmi ce que le filtre a jeté,", "la part de vrais pourriels")
+barre(262, "rappel", [(VP, ROUGE), (FN, "#e0a89f")],
+      f"= 40 / 50 = 80{NB}%", "parmi les vrais pourriels,", "la part que le filtre a attrapée")
 # légende
 ly = 402
 o.append(f'<circle cx="150" cy="{ly}" r="5" fill="{ROUGE}"/><text x="160" y="{ly + 4}" font-size="12.5" fill="{ENCRE}">pourriel</text>')
