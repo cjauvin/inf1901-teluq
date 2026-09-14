@@ -83,7 +83,7 @@ L.append(f'<text x="{(RX0+RX1)/2:.0f}" y="{BOT+40}" font-size="13" fill="#3a3531
 L.append(f'<text x="440" y="{(TOP+BOT)/2:.0f}" font-size="13" fill="#3a3531" text-anchor="middle" transform="rotate(-90 440 {(TOP+BOT)/2:.0f})">vendue vite ?</text>')
 
 # ---------------- légende ----------------
-L.append(f'<text x="{W/2:.0f}" y="332" font-size="13" fill="#5b5249" text-anchor="middle">Même geste des deux côtés : deviner la hauteur d\'un point à partir de sa position horizontale.</text>')
+L.append(f'<text x="{W/2:.0f}" y="332" font-size="13" fill="#5b5249" text-anchor="middle">Même opération des deux côtés : deviner la hauteur d\'un point à partir de sa position horizontale.</text>')
 
 L.append('</svg>')
 sys.stdout.write('\n'.join(L))

@@ -108,7 +108,7 @@ les côtoyez sans doute chaque jour.
 **[La recherche dans un arbre](docs/module1/30-chercher-raisonner)**. Les algorithmes d'exploration — minimax,
 A\* — qui faisaient gagner les machines aux échecs sont aujourd'hui partout : ce sont
 eux qui calculent votre itinéraire **GPS** en une fraction de seconde, qui animent les
-personnages des jeux vidéo, qui optimisent les tournées d'un transporteur ou les gestes
+personnages des jeux vidéo, qui optimisent les tournées d'un transporteur ou les mouvements
 d'un robot. Personne, en suivant la flèche bleue sur son téléphone, ne songe qu'il fait
 tourner de l'« intelligence artificielle » des années 1960.
 

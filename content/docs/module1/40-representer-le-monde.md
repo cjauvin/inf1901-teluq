@@ -128,7 +128,7 @@ monde** (*world model*) : une représentation interne de sa petite scène — q
 repose sur quel autre, lequel est rouge, lequel est libre, ce que le bras tient à
 l'instant. À chaque action, il **met ce modèle à jour** ; à chaque question, il le
 **consulte**. C'est cette maquette intérieure qui lui permet de résoudre « le », de
-se rappeler son geste passé, de justifier ce qu'il a fait. SHRDLU ne fait pas que
+se rappeler son action passée, de justifier ce qu'il a fait. SHRDLU ne fait pas que
 *parler* des blocs : il en tient, au-dedans de lui, une carte fidèle. Retenez bien
 cette idée — **un modèle du monde est une représentation interne de la réalité, sur
 laquelle on peut raisonner** ; nous la retrouverons, beaucoup plus loin dans le

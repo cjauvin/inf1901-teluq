@@ -313,5 +313,5 @@ Le M5 n'a **pas de mécanisme** → le « quelque chose » est **une vraie IA de
 ## 11. Démarrage de la rédaction (prochaines séances)
 
 - **Approche** : contexte neuf à chaque séance, ce plan comme entrée. Rédiger **module par module**, en commençant par le **M1**.
-- **Premiers gestes concrets pour le M1** : (1) supprimer `30-livres.md` et l'ancien `module1/10-activités.md` ; (2) trier le catalogue de phares (§5) dans les 6 épisodes ; (3) rédiger épisode par épisode selon le gabarit (§4) ; (4) concevoir le gabarit Sheets du TN1.
+- **Premières actions concrètes pour le M1** : (1) supprimer `30-livres.md` et l'ancien `module1/10-activités.md` ; (2) trier le catalogue de phares (§5) dans les 6 épisodes ; (3) rédiger épisode par épisode selon le gabarit (§4) ; (4) concevoir le gabarit Sheets du TN1.
 - **Points laissés ouverts volontairement** : tri fin du catalogue M1 ; élagage de l'exotique au M3 (GNN/NTM) ; choix précis des applets/expériences manipulables à créer (M1, M4).
