@@ -19,12 +19,12 @@ o = ['<?xml version="1.0" encoding="UTF-8"?>',
 for t in range(K):
     y = Y0 + t * LIGNE
     a, b = t * (N // K), (t + 1) * (N // K)
-    o.append(f'<text x="{X0 - 22}" y="{y + 5}" font-size="13" fill="{ENCRE_PALE}" text-anchor="end">tour {t + 1}</text>')
+    o.append(f'<text x="{X0 - 22}" y="{y + 5}" font-size="13" fill="{ENCRE_PALE}" text-anchor="end">Tour {t + 1}</text>')
     o.append(f'<rect x="{X0 + a * PAS - 12}" y="{y - 15}" width="{(b - a) * PAS}" height="30" rx="8" fill="{BRUN}" fill-opacity="0.10" stroke="{BRUN}" stroke-width="1.3" stroke-dasharray="5 4"/>')
     for i in range(N):
         c = BRUN if a <= i < b else TEAL
         o.append(f'<circle cx="{X0 + i * PAS}" cy="{y}" r="{R}" fill="{c}" stroke="{FOND}" stroke-width="1.3"/>')
-    o.append(f'<text x="{X0 + N * PAS + 4}" y="{y + 5}" font-size="13" fill="{ENCRE_PALE}" text-anchor="start">score {t + 1}</text>')
+    o.append(f'<text x="{X0 + N * PAS + 4}" y="{y + 5}" font-size="13" fill="{ENCRE_PALE}" text-anchor="start">Score {t + 1}</text>')
 yl = Y0 + K * LIGNE + 8
 o.append(f'<circle cx="{X0 + 10}" cy="{yl + 4}" r="{R}" fill="{TEAL}" stroke="{FOND}" stroke-width="1.3"/>')
 o.append(f'<text x="{X0 + 24}" y="{yl + 8}" font-size="13" fill="{ENCRE}">entraînement</text>')

@@ -26,7 +26,7 @@ justes = sum(1 for x, y in EX if predire(T, x) == y) / len(EX)
 
 
 def question(n):
-    return {0: f"une femme{FINE}?", 1: f"plus de {int(n.seuil)} ans{FINE}?", 2: f"en troisième classe{FINE}?"}[n.j]
+    return {0: f"Une femme{FINE}?", 1: f"Plus de {int(n.seuil)} ans{FINE}?", 2: f"En troisième classe{FINE}?"}[n.j]
 
 
 def nb_feuilles(n):
@@ -83,8 +83,8 @@ o = ['<?xml version="1.0" encoding="UTF-8"?>',
      f"<desc>Un arbre à deux niveaux appris sur les 1309 passagers du Titanic. Première question{NB}: une femme{FINE}? Pour les hommes, la question suivante est « plus de 9 ans{FINE}? »{NB}: les garçons (43) ont survécu à 58{NB}%, les hommes adultes (800) à 17{NB}%. Pour les femmes, « en troisième classe{FINE}? »{NB}: celles de première ou deuxième classe (250) ont survécu à 93{NB}%, celles de troisième (216) à 49{NB}%. Trois questions, {100 * justes:.0f}{NB}% de bonnes réponses.</desc>",
      f'<rect x="0" y="0" width="660" height="345" rx="14" fill="{FOND}" stroke="{BORD}"/>']
 dessiner(T, 330 - nb_feuilles(T) * 150 / 2, 36, o, {})
-o.append(f'<circle cx="200" cy="316" r="7" fill="{BLEU}"/><text x="212" y="320" font-size="12.5" fill="{ENCRE}">la majorité a survécu</text>')
-o.append(f'<circle cx="380" cy="316" r="7" fill="{ROUGE}"/><text x="392" y="320" font-size="12.5" fill="{ENCRE}">la majorité a péri</text>')
+o.append(f'<circle cx="200" cy="316" r="7" fill="{BLEU}"/><text x="212" y="320" font-size="12.5" fill="{ENCRE}">La majorité a survécu</text>')
+o.append(f'<circle cx="380" cy="316" r="7" fill="{ROUGE}"/><text x="392" y="320" font-size="12.5" fill="{ENCRE}">La majorité a péri</text>')
 o.append('</svg>')
 (OUT / "arbre-titanic.svg").write_text("\n".join(o) + "\n")
 print(f"arbre-titanic.svg écrit ; {100 * justes:.1f} % de bonnes réponses sur {len(EX)} passagers")

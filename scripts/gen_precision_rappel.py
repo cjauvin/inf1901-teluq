@@ -46,7 +46,7 @@ o = ['<?xml version="1.0" encoding="UTF-8"?>',
      f'<text x="330" y="40" font-size="16" fill="{ENCRE}" text-anchor="middle" font-weight="600">Deux questions, deux dénominateurs</text>']
 # panneau de gauche
 o.append(f'<rect x="32" y="82" width="300" height="270" rx="10" fill="{TEAL}" fill-opacity="0.05" stroke="{AXE}" stroke-width="1.2"/>')
-o.append(f'<text x="182" y="372" font-size="12.5" fill="{GRIS}" text-anchor="middle">les courriels (une partie des 950 légitimes est montrée)</text>')
+o.append(f'<text x="182" y="372" font-size="12.5" fill="{GRIS}" text-anchor="middle">Les courriels (une partie des 950 légitimes est montrée)</text>')
 o.append(f'<ellipse cx="{CX}" cy="{CY}" rx="{RX}" ry="{RY}" fill="{BRUN}" fill-opacity="0.10" stroke="{BRUN}" stroke-width="1.6" stroke-dasharray="6 5"/>')
 o.append(f'<g fill="{BLEU}" stroke="{FOND}" stroke-width="1">')
 o += [f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4.6"/>' for x, y in bleus]
@@ -54,7 +54,7 @@ o.append('</g>')
 o.append(f'<g fill="{ROUGE}" stroke="{FOND}" stroke-width="1">')
 o += [f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4.6"/>' for x, y in rouges]
 o.append('</g>')
-o.append(f'<text x="{CX}" y="{CY - RY - 12}" font-size="13" fill="{BRUN}" text-anchor="middle" font-weight="600">ce que le filtre a jeté</text>')
+o.append(f'<text x="{CX}" y="{CY - RY - 12}" font-size="13" fill="{BRUN}" text-anchor="middle" font-weight="600">Ce que le filtre a jeté</text>')
 # barres à droite
 BX, BW, BH = 362, 270, 30
 
@@ -73,10 +73,10 @@ def barre(y, titre, parts, formule, glose1, glose2):
     o.append(f'<text x="{BX}" y="{y + BH + 56}" font-size="12" fill="{GRIS}">{glose2}</text>')
 
 
-barre(118, "précision", [(VP, ROUGE), (FP, BLEU)],
-      f"= 40 / 60 = 67{NB}%", "parmi ce que le filtre a jeté,", "la part de vrais pourriels")
-barre(262, "rappel", [(VP, ROUGE), (FN, "#e0a89f")],
-      f"= 40 / 50 = 80{NB}%", "parmi les vrais pourriels,", "la part que le filtre a attrapée")
+barre(118, "Précision", [(VP, ROUGE), (FP, BLEU)],
+      f"= 40 / 60 = 67{NB}%", "Parmi ce que le filtre a jeté,", "la part de vrais pourriels")
+barre(262, "Rappel", [(VP, ROUGE), (FN, "#e0a89f")],
+      f"= 40 / 50 = 80{NB}%", "Parmi les vrais pourriels,", "la part que le filtre a attrapée")
 # légende
 ly = 402
 o.append(f'<circle cx="150" cy="{ly}" r="5" fill="{ROUGE}"/><text x="160" y="{ly + 4}" font-size="12.5" fill="{ENCRE}">pourriel</text>')

@@ -76,7 +76,7 @@ for i, (f, c) in enumerate(lignes):
 o.append('</g>')
 
 # panneau
-o.append('<text x="535" y="88" font-size="13" fill="#5b5249" font-style="italic" text-anchor="middle">le même courriel, de près</text>')
+o.append('<text x="535" y="88" font-size="13" fill="#5b5249" font-style="italic" text-anchor="middle">Le même courriel, de près</text>')
 o.append(f'<rect x="{PX}" y="{PY}" width="{PW}" height="{PH}" rx="4" fill="#fbf7ee" stroke="#c4564a" stroke-width="1.6"/>')
 o.append(f'<text x="{PX+12}" y="{PY+24}" font-size="11" fill="#3a3531" font-weight="700">Objet : Cliquez ici, c\'est gratuit !</text>')
 o.append(f'<line x1="{PX+12}" y1="{PY+34}" x2="{PX+PW-12}" y2="{PY+34}" stroke="#d9cbac" stroke-width="1"/>')

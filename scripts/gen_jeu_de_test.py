@@ -46,8 +46,8 @@ def figure(fuite):
         o.append('</g>')
     cx = TX + TW / 2
     o.append(f'<text x="{cx:.0f}" y="93" font-size="12.5" fill="{ENCRE_PALE}" text-anchor="middle">≈ 4 cinquièmes</text>')
-    o.append(f'<text x="{cx:.0f}" y="{TY + TH + 24}" font-size="15" fill="{TEAL}" text-anchor="middle" font-weight="600">ensemble d\'entraînement</text>')
-    o.append(f'<text x="{cx:.0f}" y="{TY + TH + 44}" font-size="12.5" fill="{GRIS}" text-anchor="middle">le modèle apprend ici</text>')
+    o.append(f'<text x="{cx:.0f}" y="{TY + TH + 24}" font-size="15" fill="{TEAL}" text-anchor="middle" font-weight="600">Ensemble d\'entraînement</text>')
+    o.append(f'<text x="{cx:.0f}" y="{TY + TH + 44}" font-size="12.5" fill="{GRIS}" text-anchor="middle">Le modèle apprend ici</text>')
     o.append(f'<rect x="{SX}" y="{SY}" width="{SW}" height="{SH}" rx="11" fill="{BRUN}" fill-opacity="0.08" stroke="{BRUN}" stroke-width="1.5" stroke-dasharray="6 5" opacity="0.95"/>')
     o.append(f'<g fill="{BRUN}" stroke="{FOND}" stroke-width="1.3">')
     for y in ROWS:
@@ -56,8 +56,8 @@ def figure(fuite):
     o.append('</g>')
     sx = SX + SW / 2
     o.append(f'<text x="{sx:.0f}" y="93" font-size="12.5" fill="{ENCRE_PALE}" text-anchor="middle">≈ 1 cinquième</text>')
-    o.append(f'<text x="{sx:.0f}" y="{SY + SH + 24}" font-size="15" fill="{BRUN}" text-anchor="middle" font-weight="600">ensemble de test</text>')
-    o.append(f'<text x="{sx:.0f}" y="{SY + SH + 44}" font-size="12.5" fill="{GRIS}" text-anchor="middle">{"censé être neuf" if fuite else "gardé sous scellés"}</text>')
+    o.append(f'<text x="{sx:.0f}" y="{SY + SH + 24}" font-size="15" fill="{BRUN}" text-anchor="middle" font-weight="600">Ensemble de test</text>')
+    o.append(f'<text x="{sx:.0f}" y="{SY + SH + 44}" font-size="12.5" fill="{GRIS}" text-anchor="middle">{"Censé être neuf" if fuite else "Gardé sous scellés"}</text>')
     if fuite:
         o.append(f'<text x="330" y="{h - 26}" font-size="13" fill="{ENCRE_PALE}" text-anchor="middle">Le modèle reconnaît ces deux-là au lieu de généraliser : le score du test le récompense pour sa mémoire.</text>')
     o.append('</svg>')

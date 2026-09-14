@@ -28,7 +28,7 @@ o = ['<?xml version="1.0" encoding="UTF-8"?>',
      f'<rect x="0" y="0" width="660" height="470" rx="14" fill="{FOND}" stroke="{BORD}"/>']
 # zone couverte
 o.append(f'<rect x="{sx(105):.1f}" y="46" width="{sx(290) - sx(105):.1f}" height="334" fill="{TEAL}" fill-opacity="0.07"/>')
-o.append(f'<text x="{(sx(105) + sx(290)) / 2:.0f}" y="66" font-size="12.5" fill="{TEAL}" text-anchor="middle">la zone que les données couvrent</text>')
+o.append(f'<text x="{(sx(105) + sx(290)) / 2:.0f}" y="66" font-size="12.5" fill="{TEAL}" text-anchor="middle">La zone que les données couvrent</text>')
 # grille et axes
 for p in (500, 1000, 1500):
     o.append(f'<line x1="{X0}" y1="{sy(p):.1f}" x2="{X1}" y2="{sy(p):.1f}" stroke="{GRILLE}" stroke-width="1"/>')
@@ -50,7 +50,7 @@ o.append('</g>')
 mx, my = sx(MANOIR), sy(ajuste(MANOIR))
 o.append(f'<circle cx="{mx:.1f}" cy="{my:.1f}" r="7" fill="none" stroke="{ROUGE}" stroke-width="2"/>')
 o.append(f'<text x="{mx + 13:.0f}" y="{my - 6:.0f}" font-size="22" fill="{ROUGE}" text-anchor="start" font-weight="700">?</text>')
-o.append(f'<text x="470" y="112" font-size="13" fill="{ENCRE}" text-anchor="end">un manoir de {MANOIR} m²{NB}: la droite annonce {ajuste(MANOIR):.0f} k$,</text>')
+o.append(f'<text x="470" y="112" font-size="13" fill="{ENCRE}" text-anchor="end">Un manoir de {MANOIR} m²{NB}: la droite annonce {ajuste(MANOIR):.0f} k$,</text>')
 o.append(f'<text x="470" y="130" font-size="12" fill="{GRIS}" text-anchor="end">avec le même aplomb, mais plus rien ne la garantit</text>')
 o.append(f'<text x="330" y="458" font-size="13" fill="{ENCRE_PALE}" text-anchor="middle">Dans la zone couverte, le score du test veut dire quelque chose{FINE}; au-delà, il ne dit plus rien.</text>')
 o.append('</svg>')

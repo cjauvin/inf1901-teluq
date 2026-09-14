@@ -78,5 +78,5 @@
 <text x="166" y="462" font-size="14" fill="#3a3531" text-anchor="start">vendue en moins de 30 jours</text>
 <circle cx="386" cy="458" r="7" fill="#c4564a" stroke="#efe7d3" stroke-width="1.5"/>
 <text x="402" y="462" font-size="14" fill="#3a3531" text-anchor="start">a traîné</text>
-<text x="355" y="490" font-size="13" fill="#5b5249" text-anchor="middle">fond : la réponse de l'arbre à une question ; la coupe pointillée est sa frontière</text>
+<text x="355" y="490" font-size="13" fill="#5b5249" text-anchor="middle">Fond : la réponse de l'arbre à une question ; la coupe pointillée est sa frontière</text>
 </svg>

@@ -46,7 +46,7 @@ def figure(k, nom, titre, desc):
 <text x="166" y="462" font-size="14" fill="{ENCRE}" text-anchor="start">vendue en moins de 30 jours</text>
 <circle cx="386" cy="458" r="7" fill="{ROUGE}" stroke="{FOND}" stroke-width="1.5"/>
 <text x="402" y="462" font-size="14" fill="{ENCRE}" text-anchor="start">a traîné</text>
-<text x="355" y="490" font-size="13" fill="{ENCRE_PALE}" text-anchor="middle">fond : la réponse de kNN (k = {k}) pour une maison qui se trouverait là</text>
+<text x="355" y="490" font-size="13" fill="{ENCRE_PALE}" text-anchor="middle">Fond : la réponse de kNN (k = {k}) pour une maison qui se trouverait là</text>
 </svg>
 """
 

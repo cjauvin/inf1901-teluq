@@ -92,8 +92,8 @@ svg = f"""<?xml version="1.0" encoding="UTF-8"?>
 <title>Même polynôme, sans ou avec pénalité : la régularisation</title>
 <desc>Deux panneaux montrant le même nuage de maisons (superficie en abscisse, prix en ordonnée) et le même polynôme de degré {DEGRE} ajusté aux données. À gauche, sans pénalité : la courbe ondule pour passer au plus près de chaque point, avec des bosses et des creux entre eux. À droite, avec une pénalité sur la taille des coefficients : le même polynôme se calme et suit la tendance générale, presque une droite.</desc>
 <rect x="0" y="0" width="660" height="400" rx="14" fill="{FOND}" stroke="{BORD}"/>
-{panneau(55, w_libre, "sans pénalité")}
-{panneau(375, w_ridge, "avec pénalité")}
+{panneau(55, w_libre, "Sans pénalité")}
+{panneau(375, w_ridge, "Avec pénalité")}
 <text x="330" y="372" font-size="13" fill="{ENCRE_PALE}" text-anchor="middle">Le même polynôme de degré {DEGRE}, ajusté aux mêmes maisons ; seule la pénalité change.</text>
 </svg>
 """

@@ -4,7 +4,7 @@
 <desc>Le nuage des vingt maisons (de 112 à 280 m²) et sa droite, avec la zone couverte par les données ombrée. Loin à droite, un manoir de 600 m² pour lequel la droite, prolongée en pointillé, annonce un prix d'environ 1696 000 dollars, accompagné d'un point d'interrogation : le modèle répond avec le même aplomb, mais aucune donnée ne le soutient plus.</desc>
 <rect x="0" y="0" width="660" height="470" rx="14" fill="#efe7d3" stroke="#d9cbac"/>
 <rect x="85.1" y="46" width="188.4" height="334" fill="#2f6f6a" fill-opacity="0.07"/>
-<text x="179" y="66" font-size="12.5" fill="#2f6f6a" text-anchor="middle">la zone que les données couvrent</text>
+<text x="179" y="66" font-size="12.5" fill="#2f6f6a" text-anchor="middle">La zone que les données couvrent</text>
 <line x1="80" y1="321.8" x2="630" y2="321.8" stroke="#e0d4b8" stroke-width="1"/>
 <text x="70" y="326.3" font-size="13" fill="#5b5249" text-anchor="end">500 k$</text>
 <line x1="80" y1="224.7" x2="630" y2="224.7" stroke="#e0d4b8" stroke-width="1"/>
@@ -52,7 +52,7 @@
 </g>
 <circle cx="589.3" cy="89.5" r="7" fill="none" stroke="#c4564a" stroke-width="2"/>
 <text x="602" y="84" font-size="22" fill="#c4564a" text-anchor="start" font-weight="700">?</text>
-<text x="470" y="112" font-size="13" fill="#3a3531" text-anchor="end">un manoir de 600 m² : la droite annonce 1696 k$,</text>
+<text x="470" y="112" font-size="13" fill="#3a3531" text-anchor="end">Un manoir de 600 m² : la droite annonce 1696 k$,</text>
 <text x="470" y="130" font-size="12" fill="#7a6f63" text-anchor="end">avec le même aplomb, mais plus rien ne la garantit</text>
 <text x="330" y="458" font-size="13" fill="#5b5249" text-anchor="middle">Dans la zone couverte, le score du test veut dire quelque chose ; au-delà, il ne dit plus rien.</text>
 </svg>

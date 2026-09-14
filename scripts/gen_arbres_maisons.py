@@ -30,8 +30,8 @@ def fr(x):
 
 def question(n, racine=False):
     if n.j == 0:
-        return f"à plus de {fr(n.seuil)} km du centre{FINE}?" if racine else f"à plus de {fr(n.seuil)} km{FINE}?"
-    return f"construite après {int(n.seuil)}{FINE}?"
+        return f"À plus de {fr(n.seuil)} km du centre{FINE}?" if racine else f"À plus de {fr(n.seuil)} km{FINE}?"
+    return f"Construite après {int(n.seuil)}{FINE}?"
 
 
 def nb_feuilles(n):
@@ -75,7 +75,7 @@ o = ['<?xml version="1.0" encoding="UTF-8"?>',
      f"<desc>Un arbre à une seule question, « à plus de 11 km du centre{FINE}? »{NB}: la branche « non » mène à une feuille bleue, 11 maisons sur 12 vendues vite{FINE}; la branche « oui » à une feuille rouge, 1 sur 8. Deux erreurs sur vingt, les deux exceptions.</desc>",
      f'<rect x="0" y="0" width="660" height="230" rx="14" fill="{FOND}" stroke="{BORD}"/>']
 dessiner_arbre(t1, 330 - 140, 40, o, largeur_feuille=140)
-o.append(f'<text x="330" y="208" font-size="13" fill="{ENCRE_PALE}" text-anchor="middle">une question, deux feuilles{NB}: 2 erreurs sur 20, les deux exceptions</text>')
+o.append(f'<text x="330" y="208" font-size="13" fill="{ENCRE_PALE}" text-anchor="middle">Une question, deux feuilles{NB}: 2 erreurs sur 20, les deux exceptions</text>')
 o.append('</svg>')
 (OUT / "arbre-maisons.svg").write_text("\n".join(o) + "\n")
 
@@ -86,7 +86,7 @@ o = ['<?xml version="1.0" encoding="UTF-8"?>',
      f'<rect x="0" y="0" width="660" height="360" rx="14" fill="{FOND}" stroke="{BORD}"/>']
 lf = 96
 dessiner_arbre(t3, 330 - nb_feuilles(t3) * lf / 2, 36, o, pas_y=78, largeur_feuille=lf, glose=False)
-o.append(f'<text x="330" y="338" font-size="13" fill="{ENCRE_PALE}" text-anchor="middle">chaque feuille{NB}: maisons vendues vite sur maisons de la feuille{NB}; 0 erreur sur 20, mais six feuilles</text>')
+o.append(f'<text x="330" y="338" font-size="13" fill="{ENCRE_PALE}" text-anchor="middle">Chaque feuille{NB}: maisons vendues vite sur maisons de la feuille{NB}; 0 erreur sur 20, mais six feuilles</text>')
 o.append('</svg>')
 (OUT / "arbre-maisons-profond.svg").write_text("\n".join(o) + "\n")
 
@@ -141,11 +141,11 @@ def frontiere(t, nom, titre, desc, legende):
 frontiere(t1, "arbre-maisons-frontiere",
           "La frontière de l'arbre à une question",
           f"Le plan distance × année des vingt maisons, coupé par une seule ligne verticale pointillée à 11 km{NB}: à gauche, le fond est teinté en bleu (vendue vite), à droite en rouge (a traîné). Les deux exceptions se retrouvent chacune du mauvais côté.",
-          "fond : la réponse de l'arbre à une question ; la coupe pointillée est sa frontière")
+          "Fond : la réponse de l'arbre à une question ; la coupe pointillée est sa frontière")
 frontiere(t3, "arbre-maisons-frontiere-profond",
           "La frontière de l'arbre à trois niveaux",
           f"Le même plan, découpé par plusieurs coupes verticales et horizontales en rectangles teintés{NB}: l'arbre a isolé chacune des deux exceptions dans un petit rectangle de sa couleur, au prix d'une frontière en escalier.",
-          "fond : la réponse de l'arbre à trois niveaux ; il a taillé un rectangle autour de chaque exception")
+          "Fond : la réponse de l'arbre à trois niveaux ; il a taillé un rectangle autour de chaque exception")
 
 # ── arbre-prix-escalier.svg : régression ──────────────────────────────────────
 tr = apprendre([((m[0],), m[3]) for m in MAISONS], 2, regression=True)
@@ -162,7 +162,7 @@ svg = entete(460, "L'arbre de régression : le prix par paliers",
              f"Le nuage des maisons (superficie, prix) avec, en pointillé pâle, la droite ajustée, et en trait plein brun un escalier à quatre marches{NB}: l'arbre de régression à deux niveaux de questions coupe la superficie à 194 m², puis à 154 et à 237, et prédit dans chaque intervalle le prix moyen des maisons qui s'y trouvent.") + \
     f'<line x1="{px(100):.1f}" y1="{py(ajuste(100)):.1f}" x2="{px(290):.1f}" y2="{py(ajuste(290)):.1f}" stroke="{BRUN}" stroke-width="1.6" stroke-dasharray="5 5" opacity="0.5"/>\n' + \
     f'<path d="{chemin}" fill="none" stroke="{BRUN}" stroke-width="3" stroke-linejoin="round"/>\n' + points() + \
-    f'\n<text x="355" y="450" font-size="13" fill="{ENCRE_PALE}" text-anchor="middle">en pointillé, la droite d\'*Un modèle qui s\'entraîne*{NB}; en plein, l\'arbre à deux niveaux (quatre paliers)</text>\n</svg>\n'
+    f'\n<text x="355" y="450" font-size="13" fill="{ENCRE_PALE}" text-anchor="middle">En pointillé, la droite d\'*Un modèle qui s\'entraîne*{NB}; en plein, l\'arbre à deux niveaux (quatre paliers)</text>\n</svg>\n'
 svg = svg.replace("d'*Un modèle qui s'entraîne*", "d'Un modèle qui s'entraîne")
 (OUT / "arbre-prix-escalier.svg").write_text(svg)
 print("5 figures écrites ; paliers :", [(x0, x1, round(p)) for x0, x1, p in marches])

@@ -37,8 +37,8 @@ for col, row, n, nom, glose, erreur in cases:
     o.append(f'<text x="{x + W / 2}" y="{y + 80}" font-size="11.5" fill="{GRIS}" text-anchor="middle">{glose}</text>')
 yb = Y0 + 2 * H + 40
 o.append(f'<g font-size="13" fill="{ENCRE}" text-anchor="middle">')
-o.append(f'<text x="330" y="{yb}">taux de bonnes réponses{NB}: ({VP} + {VN}) / 1000 = {(VP + VN) / 10:.0f}{NB}%, à peine mieux que « jamais un pourriel » (95{NB}%)</text>')
-o.append(f'<text x="330" y="{yb + 24}">précision{NB}: {VP} / ({VP} + {FP}) = {100 * VP / (VP + FP):.0f}{NB}%  ·  rappel{NB}: {VP} / ({VP} + {FN}) = {100 * VP / (VP + FN):.0f}{NB}%</text>')
+o.append(f'<text x="330" y="{yb}">Taux de bonnes réponses{NB}: ({VP} + {VN}) / 1000 = {(VP + VN) / 10:.0f}{NB}%, à peine mieux que « jamais un pourriel » (95{NB}%)</text>')
+o.append(f'<text x="330" y="{yb + 24}">Précision{NB}: {VP} / ({VP} + {FP}) = {100 * VP / (VP + FP):.0f}{NB}%  ·  Rappel{NB}: {VP} / ({VP} + {FN}) = {100 * VP / (VP + FN):.0f}{NB}%</text>')
 o.append('</g>')
 o.append('</svg>')
 (OUT / "matrice-confusion.svg").write_text("\n".join(o) + "\n")
