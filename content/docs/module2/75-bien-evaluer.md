@@ -70,6 +70,44 @@ s'applique : les moyennes et les écarts servant à la mise à l'échelle se
 calculent sur l'entraînement, puis s'appliquent tels quels au test.
 {{% /hint %}}
 
+## Quand les données sont rares : la validation croisée
+
+Deuxième question : le score est-il *fiable* ? Revenons à nos vingt maisons.
+Suivre la règle d'or, c'est en mettre quatre sous scellés et n'apprendre que sur
+seize. Deux ennuis, aussitôt. Seize maisons, c'est peu pour apprendre, et l'on
+aimerait bien se servir des vingt. Surtout, le score dépend beaucoup
+*desquelles* quatre on a écartées : tombez sur les deux exceptions du nuage
+coloré, et le modèle paraîtra mauvais ; tombez sur quatre maisons bien typiques,
+et il paraîtra excellent. Le hasard d'une seule coupe pèse trop lourd.
+
+La parade est élégante : plutôt que de couper une fois, on **tourne**. On
+partage les vingt maisons en cinq paquets de quatre. Au premier tour, le premier
+paquet sert de test et les seize autres maisons servent à apprendre ; au
+deuxième tour, c'est le deuxième paquet qui est mis à l'épreuve, et ainsi de
+suite. Cinq tours, cinq scores, et l'on prend leur moyenne. Chaque maison a
+servi de test exactement une fois, et toutes ont servi à l'entraînement quatre
+fois sur cinq. C'est la **validation croisée**, et le nombre de paquets se règle
+à volonté : cinq ou dix le plus souvent, jusqu'à *n* paquets d'un seul exemple
+quand les données sont vraiment rares.
+
+{{< image src="/images/module2/validation-croisee.svg" alt="Cinq rangées de vingt points, une par tour. Dans chaque rangée, seize points en vert-bleu forment l'ensemble d'entraînement et quatre points en brun, encadrés, l'ensemble de test ; le bloc de test se déplace de quatre places d'une rangée à l'autre, si bien que chaque maison sert de test exactement une fois. À droite de chaque rangée, un score ; en bas, leur moyenne." title="La validation croisée sur nos vingt maisons : cinq tours, chaque maison testée une fois, et le score final est la moyenne des cinq." loading="lazy" >}}
+
+La validation croisée coûte cinq entraînements au lieu d'un, ce qui n'est rien
+pour une droite et beaucoup pour un réseau de neurones géant ; c'est pourquoi
+on la voit partout sur de petits jeux de données et presque jamais sur les très
+grands, où un seul jeu de test suffit, parce qu'il est lui-même énorme.
+
+C'est aussi le cadre naturel pour un geste que nous avons fait plusieurs fois
+sans le nommer tout à fait : régler ce qui ne s'apprend pas. Le nombre de
+voisins *k*, la sévérité λ de la pénalité, le taux d'apprentissage de la
+descente : aucun de ces nombres n'est un paramètre du modèle, aucun ne descend
+la pente avec les autres. Ce sont des **hyperparamètres**, des réglages *de la
+procédure*, fixés avant l'entraînement. On les choisit en essayant plusieurs
+valeurs et en gardant celle qui donne le meilleur score de validation croisée ;
+puis, et seulement alors, on ouvre les scellés du jeu de test pour le verdict
+final. C'est exactement le rôle de l'ensemble de validation de la page
+précédente, en version tournante.
+
 ## Tout cela portait un nom : l'apprentissage supervisé
 
 Prenons un peu de recul. Depuis la première page de ce module, une chose n'a
