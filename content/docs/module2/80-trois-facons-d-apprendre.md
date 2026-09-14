@@ -212,7 +212,7 @@ l'on vérifie qu'il **généralise** au-delà des exemples appris. Tout ce que n
 avons croisé n'est qu'une variation sur cette grammaire : le modèle bête et son
 unique nombre, kNN et ses zéro paramètre, la droite et ses deux, la régression
 logistique et Bayes qui classent, k-means qui regroupe sans étiquettes, l'agent
-qui apprend d'une récompense. Mêmes gestes, décors différents.
+qui apprend d'une récompense. Même démarche, décors différents.
 
 C'est là, au fond, toute la démystification que visait ce module. « Apprendre »,
 pour une machine, n'a rien de magique : c'est **ajuster des réglages pour réduire

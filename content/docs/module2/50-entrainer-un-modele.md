@@ -11,7 +11,7 @@ pas de mémoriser les exemples, mais qui en *extrait* quelque chose : une tenda
 générale, résumée en quelques paramètres, qu'on pourra ensuite appliquer sans
 traîner toutes les données derrière soi.
 
-Construisons-le. Et puisque nous cherchons le plus simple, faisons le geste le
+Construisons-le. Et puisque nous cherchons le plus simple, faisons la chose la
 plus élémentaire qu'on puisse imaginer devant un nuage de points : **y faire
 passer une droite.**
 

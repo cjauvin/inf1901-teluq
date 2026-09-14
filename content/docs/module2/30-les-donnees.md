@@ -159,7 +159,7 @@ trouve. Chaque mot devient alors un axe. Prenons-en deux, *gratuit* et
 
 Un courriel est donc un point, dans un espace qui compte autant de dimensions
 que le vocabulaire a de mots : des dizaines de milliers, dont ce dessin n'en
-montre que deux. Le même geste, en somme, que pour l'image et ses pixels :
+montre que deux. La même opération, en somme, que pour l'image et ses pixels :
 
 {{< image src="/images/module2/courriels-vocabulaire.svg" alt="Le même dessin que pour l'image faite de pixels, transposé aux mots. D'une origine partent en éventail des axes, un par mot du vocabulaire : « gratuit », « réunion », « bonjour », trois points pour les dizaines de milliers d'autres mots, puis « zèbre », le dernier. Dans cet espace est posée une vignette minuscule, un courriel vu de loin, reliée par des pointillés à un panneau agrandi où on le lit : « Objet : Cliquez ici, c'est gratuit ! », suivi d'un boniment publicitaire ; la vignette et le panneau sont bordés de rouge, c'est un pourriel. À côté de la vignette, d'autres courriels : des points rouges (pourriels) et bleus (courriels légitimes)." title="Un axe par mot du vocabulaire, des dizaines de milliers d'axes : le courriel entier devient un seul point de cet espace, comme l'image en devenait un dans celui de ses pixels." loading="lazy" >}}
 

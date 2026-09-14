@@ -289,8 +289,8 @@ Mais un premier obstacle se dresse. Nos deux classificateurs attendent un
 Comment transformer « *Félicitations ! Vous avez gagné un prix…* » en
 coordonnées ?
 
-La réponse reprend exactement le geste de la [page sur les
-données](30-les-donnees) : une chose se décrit par une **liste de nombres**, et
+La réponse reprend exactement la démarche de [*Regarder les
+données*](docs/module2/30-les-donnees) : une chose se décrit par une **liste de nombres**, et
 devient ainsi un point dans un espace. Pour un texte, le procédé le plus simple
 s'appelle le **sac de mots** : on dresse la liste de tous les mots possibles (le
 *vocabulaire*), et on décrit un courriel en comptant combien de fois chacun y

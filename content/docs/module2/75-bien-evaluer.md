@@ -101,8 +101,8 @@ pour une droite et beaucoup pour un réseau de neurones géant ; c'est pourquo
 on la voit partout sur de petits jeux de données et presque jamais sur les très
 grands, où un seul jeu de test suffit, parce qu'il est lui-même énorme.
 
-C'est aussi le cadre naturel pour un geste que nous avons fait plusieurs fois
-sans le nommer tout à fait : régler ce qui ne s'apprend pas. Le nombre de
+C'est aussi le cadre naturel pour une opération que nous avons faite plusieurs
+fois sans la nommer tout à fait : régler ce qui ne s'apprend pas. Le nombre de
 voisins *k*, la sévérité λ de la pénalité, le taux d'apprentissage de la
 descente : aucun de ces nombres n'est un paramètre du modèle, aucun ne descend
 la pente avec les autres. Ce sont des **hyperparamètres**, des réglages *de la
