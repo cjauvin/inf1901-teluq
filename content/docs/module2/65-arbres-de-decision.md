@@ -169,3 +169,55 @@ l'une ni l'autre n'a de garantie là-bas.
 Un arbre de régression, donc : les mêmes questions, les mêmes feuilles, et
 une moyenne à la place d'un vote. Exactement la bifurcation que kNN nous avait
 montrée, à sa toute dernière étape.
+
+## Jusqu'où laisser pousser l'arbre ?
+
+Revenons à la classification et laissons l'arbre poser d'autres questions.
+Après « à plus de 11 km du centre ? », il en cherche une dans chaque
+feuille, puis dans chaque nouvelle feuille, jusqu'à ce que plus aucune ne
+mélange les couleurs. Voici ce qu'il devient sur trois niveaux :
+
+{{< image src="/images/module2/arbre-maisons-profond.svg" alt="L'arbre laissé pousser sur trois niveaux : après « à plus de 11 km du centre ? », il pose des questions sur l'année puis sur la distance jusqu'à isoler chacune des deux exceptions dans une feuille à elle. Six feuilles, chacune annotée du nombre de maisons vendues vite sur le nombre de maisons de la feuille : plus aucune erreur sur les vingt maisons." title="Le même arbre, laissé pousser sur trois niveaux : six feuilles, zéro erreur, et une feuille sur mesure pour chaque exception." loading="lazy" >}}
+
+Six feuilles, et plus une seule erreur. L'arbre a trouvé le moyen de rattraper
+les deux exceptions : une question sur l'année, puis une sur la distance, et
+voilà la vieille maison partie vite isolée dans une feuille à elle ; deux
+questions de plus, et la maison récente qui a traîné a la sienne. Dans le
+plan, chaque question ajoute une coupe, et la frontière devient un assemblage
+de rectangles :
+
+{{< image src="/images/module2/arbre-maisons-frontiere-profond.svg" alt="Le même plan distance × année, découpé par plusieurs coupes verticales et horizontales en rectangles teintés : l'arbre a isolé chacune des deux exceptions dans un petit rectangle de sa couleur, au prix d'une frontière en escalier." title="La frontière de l'arbre à trois niveaux : des rectangles, dont deux taillés sur mesure autour des exceptions." loading="lazy" >}}
+
+Regardez ces deux petits rectangles taillés sur mesure autour des exceptions.
+Vous les avez déjà vus, sous une autre forme : ce sont les îlots que kNN
+dessinait avec *k* = 1, dans [*Prédire par
+ressemblance*](docs/module2/40-predire-par-ressemblance/#le-choix-de-k). Le
+même phénomène, dans un autre modèle. Un arbre laissé libre pousse jusqu'à ce
+que chaque feuille soit pure, au besoin en donnant une feuille à chaque
+maison : il *colle* aux vingt maisons jusqu'au dernier détail, et prend pour
+argent comptant les deux qui n'obéissent pas à la règle. Une maison nouvelle,
+vieille et loin du centre, qui tomberait dans le rectangle de l'exception,
+serait déclarée « vendue vite » sur la foi d'un seul précédent.
+
+Il y a donc, chez l'arbre comme chez kNN, un curseur à régler : la
+**profondeur**, le nombre de questions qu'on l'autorise à poser à la suite.
+Trop peu, et l'arbre est grossier ; sur des données où les deux amas
+n'auraient pas été si nets, une seule coupe verticale ne suffirait pas. Trop,
+et il apprend par cœur. Entre les deux, la bonne profondeur est celle qui
+capte les vraies régularités sans épouser les accidents ; et rien, dans les
+vingt maisons, ne la désigne. Nous avons rencontré ce dilemme avec *k*, nous le
+retrouverons pour tout modèle dans [*Généraliser*](docs/module2/70-generaliser),
+où l'arbre servira d'emblème. Retenez pour l'instant les deux façons de tenir
+un arbre en laisse : lui interdire de dépasser une profondeur, ou le laisser
+pousser puis **l'élaguer**, en coupant après coup les branches qui n'apportent
+que du détail.
+
+L'applet ci-dessous vous laisse faire l'expérience. Des points rouges et
+bleus, un arbre appris en direct, et son fond dans le plan ; à droite, l'arbre
+lui-même, qui se redessine à chaque changement. Faites glisser la profondeur
+maximale de 1 à 8 et regardez les rectangles se multiplier autour des points
+isolés ; ajoutez un point d'une couleur au milieu de l'autre, et observez ce
+que l'arbre invente pour l'accommoder. Survolez une zone du plan : son chemin
+s'allume dans l'arbre.
+
+{{< applet src="/html/applets/decision-tree.html" height="605" >}}
