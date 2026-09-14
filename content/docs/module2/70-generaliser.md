@@ -325,43 +325,7 @@ de la discipline que de les faire avec discernement.
 
 {{< image src="/images/module2/parametrique-vs-non.svg" alt="À gauche, un nuage de points est résumé par une droite réduite à deux réglages m et b : le modèle paramétrique distille les données et peut ensuite les jeter. À droite, les mêmes points sont conservés tels quels : le modèle non-paramétrique garde toutes les données et s'appuie dessus pour prédire." title="Paramétrique : distiller les données en quelques réglages, puis les jeter. Non-paramétrique : garder toutes les données et s'appuyer dessus." loading="lazy" >}}
 
-## Tout cela portait un nom : l'apprentissage supervisé
-
-Prenons un peu de recul. Depuis la première page de ce module, une chose n'a
-jamais changé, si discrète qu'on l'a à peine remarquée : **la bonne réponse était
-toujours là.** Chaque maison venait avec son prix ; chaque courriel, avec son
-étiquette pourriel ou non ; chaque point, avec sa couleur. Le modèle n'avait qu'à
-apprendre le chemin de la question vers une réponse *qu'on lui fournissait
-d'avance*.
-
-Cette situation porte un nom, que nous pouvons enfin prononcer, maintenant que
-nous l'avons vécue de bout en bout : l'**apprentissage supervisé**. « Supervisé »,
-comme un élève qu'un professeur corrige, parce qu'il connaît, lui, la réponse
-attendue. Régression ou classification, droite ou Bayes, paramétrique ou non :
-tout ce que nous avons construit relève de cette grande famille, celle où l'on
-apprend à partir d'exemples **étiquetés**.
-
-Mais cette réponse toute prête, d'où vient-elle ? Quelqu'un a dû, quelque part,
-étiqueter ces milliers d'exemples un à un, travail souvent long, coûteux,
-parfois impossible. Il est si central qu'il est devenu une **industrie à part
-entière**, celle de l'*étiquetage de données*. Des entreprises comme Scale AI
-(dans laquelle Meta a investi une quinzaine de milliards de dollars en 2025),
-Appen, Sama ou Labelbox, ou des plateformes comme le Mechanical Turk d'Amazon,
-emploient ou mobilisent des centaines de milliers de personnes pour tracer des
-contours sur des images, transcrire des enregistrements, classer des textes, et,
-depuis les grands modèles de langage, comparer et noter des réponses générées.
-Ce travail, souvent invisible et mal payé, réalisé en bonne partie au Kenya, aux
-Philippines ou au Venezuela, est l'envers discret de l'apprentissage
-supervisé : derrière chaque « bonne réponse » fournie au modèle, il y a eu un
-humain. Et le monde déborde de données *sans* étiquette : des
-millions de photos que personne n'a triées, des historiques d'achats sans
-catégories, des textes en vrac. Peut-on apprendre quelque chose de données
-brutes, livrées sans la moindre bonne réponse ? Et à l'inverse, quand un robot
-apprend à marcher, nul ne lui souffle le « bon » mouvement à chaque instant : il
-ne reçoit qu'un encouragement ou une chute, bien plus tard. Est-ce encore de
-l'apprentissage ?
-
-Oui — mais d'une autre sorte. Ce qui distingue ces situations, c'est la nature du
-**signal** dont le modèle apprend : une réponse donnée, une structure à découvrir
-sans guide, ou une récompense différée. C'est cette typologie, et les nouveaux
-mondes qu'elle ouvre, que nous explorons au chapitre suivant.
+Nous savons maintenant ce qu'un modèle peut dessiner, jusqu'où le laisser se
+courber, et comment le tenir en laisse. Il reste à savoir *mesurer* tout cela
+sans se raconter d'histoires : un score, nous allons le voir, peut mentir de
+bien des façons. C'est l'objet de la page suivante.

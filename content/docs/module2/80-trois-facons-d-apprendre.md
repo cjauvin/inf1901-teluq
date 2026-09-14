@@ -53,7 +53,7 @@ fournisse, souvent à la main, un exemple à la fois.
 {{% hint info %}}
 **Le socle humain du supervisé**
 
-Nous avons vu, dans [*Généraliser*](docs/module2/70-generaliser/#tout-cela-portait-un-nom-lapprentissage-supervisé),
+Nous avons vu, dans [*Bien évaluer un modèle*](docs/module2/75-bien-evaluer/#tout-cela-portait-un-nom-lapprentissage-supervisé),
 que l'étiquetage des données est devenu une industrie à part entière. Elle a
 une face sombre : trancher « ce message est haineux, celui-là non », des
 milliers de fois par jour, c'est aussi s'exposer aux contenus les plus violents
