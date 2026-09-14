@@ -108,6 +108,60 @@ puis, et seulement alors, on ouvre les scellés du jeu de test pour le verdict
 final. C'est exactement le rôle de l'ensemble de validation de la page
 précédente, en version tournante.
 
+## Compter juste : les métriques
+
+Troisième question : le score mesure-t-il ce qui coûte vraiment ? Jusqu'ici,
+pour une catégorie, nous avons compté le **taux de bonnes réponses**, et il a un
+défaut que nous connaissons déjà : dans [*Le modèle le plus
+bête*](docs/module2/20-modele-le-plus-bete), un filtre qui ne signalait
+*jamais* de pourriel obtenait 99 % de bonnes réponses, parce que les pourriels
+étaient rares. Un seul nombre ne peut pas dire à la fois combien de pourriels on
+attrape et combien de vrais courriels on jette. Il faut compter *séparément*.
+
+Prenons 1000 courriels, dont 50 pourriels, et un filtre qui en jette une
+partie. Quatre choses peuvent arriver à chaque courriel, et on les range dans un
+tableau, la **matrice de confusion** : un pourriel jeté (**vrai positif**), un
+pourriel passé au travers (**faux négatif**), un vrai courriel jeté (**faux
+positif**), un vrai courriel gardé (**vrai négatif**). « Positif » veut dire
+ici « signalé par le filtre », et n'a rien d'une bonne nouvelle.
+
+{{< image src="/images/module2/matrice-confusion.svg" alt="Un tableau à quatre cases croisant la réalité (pourriel ou courriel légitime, en lignes) et la décision du filtre (jeté ou gardé, en colonnes), pour 1000 courriels dont 50 pourriels. Vrais positifs : 40 pourriels jetés. Faux négatifs : 10 pourriels gardés. Faux positifs : 20 courriels légitimes jetés. Vrais négatifs : 930 courriels légitimes gardés. Les deux cases d'erreur sont teintées en rouge ; sous le tableau, le taux de bonnes réponses (97 %), la précision (67 %) et le rappel (80 %)." title="La matrice de confusion : quatre cases au lieu d'un seul score. Les deux cases rouges sont les deux façons de se tromper, et elles ne coûtent pas la même chose." loading="lazy" >}}
+
+Ce filtre affiche 97 % de bonnes réponses ; « jamais un pourriel » en aurait eu
+95. Le taux global cache presque tout. Deux questions plus précises se lisent
+dans le tableau, et chacune a son nom. La **précision** : parmi ce que le
+filtre a jeté, quelle part était vraiment du pourriel ? Ici 40 sur 60, soit
+67 % ; le reste, ce sont des courriels légitimes perdus. Le **rappel** : parmi
+les vrais pourriels, quelle part le filtre a-t-il attrapée ? Ici 40 sur 50,
+soit 80 % ; le reste est passé au travers. Deux nombres au lieu d'un, et ils
+tirent en sens contraires.
+
+Car ils tirent en sens contraires. Souvenez-vous de la régression logistique de
+[*Classer*](docs/module2/60-classer) : elle donne une probabilité, et nous
+avons tranché à 0,5. Rien n'y oblige. Placez le seuil à 0,9, et le filtre ne
+jette plus que ce dont il est presque sûr : la précision monte, le rappel
+s'effondre. Placez-le à 0,1, et il jette au moindre doute : le rappel monte, la
+précision s'effondre. Le même modèle, sans rien réentraîner, peut être strict
+ou indulgent, et le choix n'appartient pas aux mathématiques mais au problème.
+Pour un filtre anti-pourriel, un vrai courriel jeté coûte plus cher qu'un
+pourriel qui passe : on privilégie la précision. Pour un test de dépistage, un
+malade manqué coûte plus cher qu'une fausse alerte qu'un second examen
+dissipera : on privilégie le rappel. C'est cette question, *quelle erreur coûte
+le plus ?*, que le [travail noté](docs/module2/99-travail-noté-2) vous posera
+sur un vrai filtre.
+
+Pour un nombre, la question se pose aussi, plus simplement. L'erreur
+quadratique moyenne d'[*Un modèle qui s'entraîne*](docs/module2/50-entrainer-un-modele)
+est faite pour être *minimisée* : ses carrés sont commodes pour la descente,
+mais illisibles pour un humain (des dollars au carré). Pour *rendre compte*, on
+préfère l'**erreur absolue moyenne** : sur nos vingt maisons, la droite se
+trompe de 41 000 \\$ en moyenne, et de 59 000 \\$ au pire. Voilà qui se comprend,
+et qui permet de juger si le modèle est bon *pour l'usage qu'on en fera* :
+excellent pour un aperçu, insuffisant pour fixer un prix de vente.
+
+Une métrique, en somme, est un choix : elle dit ce qu'on décide de compter
+comme réussite. Avant de lire un score, demandez toujours lequel.
+
 ## Tout cela portait un nom : l'apprentissage supervisé
 
 Prenons un peu de recul. Depuis la première page de ce module, une chose n'a
