@@ -34,16 +34,20 @@ langage évoqué dans [l'encart de la page précédente](docs/module2/70-general
 quand les données d'entraînement sont tout le Web, on ne sait plus ce qui a
 fui.
 
-La seconde forme est plus subtile : **une caractéristique qui contient la
-réponse**, ou qu'on ne possédera pas au moment de prédire. Reprenons nos
-maisons. Pour prédire si une maison partira vite, quelqu'un ajoute au registre
-le « nombre de visites reçues » : le modèle devient excellent, forcément, une
-maison très visitée est une maison qui se vend. Mais ce nombre, on ne le
-connaît qu'*après* la mise en vente, précisément quand la prédiction ne sert
-plus à rien. Pour prédire le prix, la « taxe foncière » ferait des merveilles :
-elle est calculée à partir de la valeur de la maison. Dans les deux cas, le
-modèle n'a rien appris de l'avenir ; il a lu la réponse, à peine maquillée, dans
-la question.
+La seconde forme est plus subtile : **une caractéristique qui contient la
+réponse**, ou qu'on ne possédera pas au moment de prédire. L'exemple le plus
+célèbre vient du naufrage du *Titanic*, dont la liste des passagers est un
+classique des cours d'apprentissage automatique : on y prédit qui a survécu à
+partir de la classe, du sexe, de l'âge, du tarif payé. La [version complète de
+cette liste](https://hbiostat.org/data/repo/titanic.html), compilée à partir de
+l'*Encyclopedia Titanica* et hébergée par l'Université Vanderbilt, comporte
+deux colonnes de plus : le numéro du canot de sauvetage et le numéro
+d'identification du corps repêché. Donnez-les au modèle, et il devient parfait,
+et pour cause : avoir un numéro de canot, *c'est* avoir survécu ; avoir un
+numéro de corps, *c'est* être mort. Le modèle n'a rien deviné, il a lu la
+réponse, à peine maquillée, dans la question. Nos maisons ont leur version du
+même piège : pour prédire le prix, la « taxe foncière » ferait des merveilles,
+puisqu'elle est calculée à partir de la valeur de la maison.
 
 {{< image src="/images/module2/fuite-de-donnees.svg" alt="Le même découpage entraînement / test que dans la page précédente, mais deux exemples du bloc de test ont un jumeau dans le bloc d'entraînement, reliés par un trait pointillé rouge : les mêmes exemples, sous un déguisement. Le modèle les reconnaît au lieu de généraliser, et le score du test ment." title="Une fuite par contamination : deux exemples du test ont un jumeau dans l'entraînement. Le modèle les reconnaît, et le score le récompense pour sa mémoire." loading="lazy" >}}
 
