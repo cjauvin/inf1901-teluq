@@ -61,6 +61,23 @@ choix des caractéristiques, réglages ; le jeu de test ne sert qu'une fois, �
 toute fin, comme un examen qu'on ne corrige pas en cours de route.
 
 {{% hint info %}}
+**Le jeu de test sous clé : Kaggle.** Cette discipline a une version
+institutionnelle. Sur [Kaggle](https://www.kaggle.com/), la plateforme de
+compétitions d'apprentissage automatique, on reçoit les données d'entraînement
+avec leurs réponses, et les données de test *sans* : les vraies réponses du
+test restent **privées**, entre les mains des organisateurs, qui calculent
+eux-mêmes le score de chaque soumission. Personne ne peut donc, même par
+inadvertance, entraîner son modèle sur l'examen. Et la plateforme va plus
+loin : pendant la compétition, le classement public n'est calculé que sur une
+*partie* du jeu de test ; le classement final, sur l'autre partie, gardée
+secrète jusqu'au bout. C'est la parade à une fuite plus subtile encore, celle
+où l'on ajuste son modèle, soumission après soumission, au score affiché,
+jusqu'à coller au jeu de test sans jamais l'avoir vu. Le bouleversement du
+classement final, quand les deux moitiés diffèrent, est un spectacle bien connu
+des participants.
+{{% /hint %}}
+
+{{% hint info %}}
 **Une unité n'est pas l'autre : mettre à l'échelle.** Cette règle a un cas
 d'application très concret, que nous avons contourné sans le dire. Dans le plan
 des maisons, kNN mesure une distance entre une différence de kilomètres et une
