@@ -149,7 +149,7 @@ d'étiquettes ; mais cette fois, pas non plus un simple tas de données à
 structurer. Ici, le modèle, qu'on appelle un **agent**, doit *agir*, et il
 apprend des **conséquences** de ses actes. Pensez à un enfant qui apprend à faire
 du vélo, à un robot qui apprend à marcher, ou à un joueur qui découvre un jeu :
-personne ne leur dicte le bon mouvement à chaque instant ; ils essaient, tombent,
+personne ne leur dicte le bon geste à chaque instant ; ils essaient, tombent,
 recommencent, et retiennent ce qui marche.
 
 Le signal, ici, c'est une **récompense** : un point gagné, une partie remportée,
