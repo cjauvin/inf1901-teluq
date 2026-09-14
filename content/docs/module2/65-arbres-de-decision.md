@@ -125,3 +125,47 @@ côtés, pondérée par leur taille. Sur nos maisons, l'indice de départ vaut
 l'*entropie*, venue de la théorie de l'information, donne presque toujours le
 même arbre.
 {{% /hint %}}
+
+## Un arbre qui prédit un nombre
+
+Rien, dans ce qui précède, ne tient à ce que la réponse soit une catégorie.
+Reprenons la première question du module, le prix, et une seule
+caractéristique, la superficie. Un arbre peut la traiter de la même façon :
+des questions sur la superficie, et dans chaque feuille, au lieu d'une couleur
+majoritaire, le **prix moyen** des maisons qui s'y trouvent. Seule la mesure du
+mélange change : plutôt que des couleurs mélangées, on regarde à quel point
+les prix d'une feuille sont dispersés autour de leur moyenne, et la bonne
+question est celle qui resserre le plus les prix de chaque côté.
+
+Voici l'arbre à deux niveaux appris sur nos vingt maisons. Première
+question : « plus de 194 m² ? ». Puis, chez les petites, « plus de
+154 m² ? », et chez les grandes, « plus de 237 m² ? ». Quatre feuilles,
+quatre prix : 308 000, 430 000, 557 000 et 706 000 \\$.
+
+{{< image src="/images/module2/arbre-prix-escalier.svg" alt="Le nuage des maisons (superficie, prix) avec, en pointillé pâle, la droite ajustée, et en trait plein brun un escalier à quatre marches : l'arbre de régression à deux niveaux de questions coupe la superficie à 194 m², puis à 154 et à 237, et prédit dans chaque intervalle le prix moyen des maisons qui s'y trouvent." title="L'arbre de régression, dessiné sur le nuage : un escalier à quatre paliers, un par feuille. En pointillé, la droite, pour comparer." loading="lazy" >}}
+
+Dessiné sur le nuage, l'arbre est un **escalier** : quatre paliers
+horizontaux, un par feuille, avec une marche à chaque seuil. C'est une drôle de
+courbe. Elle ne monte pas, elle saute ; entre 154 et 194 m², toutes les
+maisons valent 430 000 \\$, qu'elles fassent 155 ou 193 m². Et pourtant, avec
+ses quatre paliers, elle colle déjà mieux au nuage que la droite d'[*Un modèle
+qui s'entraîne*](docs/module2/50-entrainer-un-modele) : elle se trompe de
+32 000 \\$ en moyenne, contre 41 000 pour la droite. Un niveau de plus, huit
+paliers, et l'erreur tombe à 23 000 \\$.
+
+Cette comparaison en dit long sur les deux modèles. La droite *parie* sur une
+forme, la ligne droite, et ne peut rien faire d'autre ; si les prix suivaient
+une courbe, elle la manquerait. L'escalier ne parie sur rien : avec assez de
+marches, il épouse n'importe quelle forme. C'est sa force. Mais chaque palier
+est calculé sur une poignée de maisons seulement, cinq ici, et c'est aussi sa
+faiblesse : la droite lisse ses vingt maisons en deux nombres, l'escalier les
+découpe en petits groupes qui ne se parlent plus. Et surtout, l'escalier ne
+sait pas *extrapoler* : au-delà de 280 m², il répond 706 000 \\$ pour
+toujours, quand la droite, elle, continue de monter. Laquelle a raison hors du
+nuage ? Nous verrons, dans [*Bien évaluer un
+modèle*](docs/module2/75-bien-evaluer), que la question est mal posée : ni
+l'une ni l'autre n'a de garantie là-bas.
+
+Un arbre de régression, donc : les mêmes questions, les mêmes feuilles, et
+une moyenne à la place d'un vote. Exactement la bifurcation que kNN nous avait
+montrée, à sa toute dernière étape.
