@@ -68,3 +68,60 @@ anciennes traînent. C'est que, sur ces vingt maisons, la distance sépare déj�
 presque tout, et l'année n'y ajouterait rien, sauf pour rattraper les deux
 exceptions. Laisser l'arbre poser d'autres questions, c'est précisément ce que
 nous allons faire ; mais d'abord, comment a-t-il choisi celle-ci ?
+
+## Comment l'arbre choisit ses questions
+
+Il n'y a pas de magie dans le choix de la question, seulement du **comptage**.
+Pour chaque caractéristique et chaque seuil possible, l'arbre fait comme si :
+il coupe les vingt maisons en deux et regarde, de chaque côté, à quel point les
+couleurs sont **mélangées**. Une feuille où toutes les maisons sont de la même
+couleur est *pure* ; une feuille où elles sont moitié-moitié est le pire des
+cas, puisqu'elle ne renseigne sur rien. La bonne question est celle dont les
+deux côtés sont, ensemble, les plus purs possible.
+
+Les seuils candidats ne sont pas infinis : entre deux maisons voisines sur une
+caractéristique, toutes les coupes se valent, et il suffit d'essayer celle du
+milieu. Vingt maisons, deux caractéristiques, cela fait une quarantaine de
+questions à essayer ; un ordinateur les évalue toutes en un clin d'œil, et
+garde la meilleure. Sur nos maisons, « à plus de 11 km du centre ? » donne
+d'un côté 11 bleues sur 12, de l'autre 7 rouges sur 8 : deux feuilles presque
+pures. « Construite après 1995 ? » aurait laissé 2 rouges parmi 11 d'un côté
+et 2 bleues parmi 9 de l'autre : plus de mélange, question écartée.
+
+Une surprise, tout de même : « construite après 1989 ? » aurait fait
+*exactement* aussi bien que la distance, 11 sur 12 et 1 sur 8, avec les mêmes
+deux exceptions. Les deux questions étaient à égalité parfaite, et l'arbre a
+pris la première venue. Retenez-le : quand deux caractéristiques disent la
+même chose, l'arbre en choisit une et ignore l'autre, sans que cela signifie
+que l'autre ne compte pas. Un arbre n'est pas une explication du monde ; c'est
+un chemin qui marche.
+
+Une fois la première question posée, on recommence, séparément, dans chacune
+des deux feuilles : la meilleure question pour les maisons proches du centre,
+la meilleure pour les maisons éloignées, et ainsi de suite, jusqu'à ce que les
+feuilles soient pures ou qu'on décide d'arrêter. Chaque question est choisie
+sans se soucier des suivantes, ce que les informaticiens appellent une
+stratégie *gloutonne* : on prend le meilleur pas immédiat, sans regarder plus
+loin. Ce n'est pas garanti optimal ; c'est rapide, et en pratique
+remarquablement bon.
+
+Remarquez ce que cet apprentissage n'est *pas*. Le modèle bête moyennait ; la
+droite et ses cousines descendaient la pente d'une fonction d'erreur, pas à
+pas ; l'arbre, lui, **cherche** : il énumère des questions, les essaie, garde
+la meilleure. Pas de paramètres qu'on ajuste en continu, pas de gradient : une
+exploration parmi des choix discrets, un peu comme la recherche dans un arbre
+de coups du [Module 1](docs/module1/30-chercher-raisonner), ramenée à
+l'apprentissage. C'est la troisième façon d'apprendre que rencontre ce module,
+et elle a la même ossature que les deux autres : des données, une mesure de ce
+qui est bon (la pureté), et une procédure qui la maximise.
+
+{{% hint info %}}
+**Sous le capot : mesurer le mélange.** La mesure la plus courante est l'*indice
+de Gini* : dans une feuille où une proportion $p$ des maisons est bleue, il
+vaut $2p(1-p)$, soit 0 pour une feuille pure et 0,5 pour une feuille
+moitié-moitié. Le score d'une question est la moyenne des indices de ses deux
+côtés, pondérée par leur taille. Sur nos maisons, l'indice de départ vaut
+0,48 ; après la question sur la distance, il tombe à 0,18. Une autre mesure,
+l'*entropie*, venue de la théorie de l'information, donne presque toujours le
+même arbre.
+{{% /hint %}}
