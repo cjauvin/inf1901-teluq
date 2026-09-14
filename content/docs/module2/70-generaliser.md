@@ -131,6 +131,12 @@ elle. Le XOR ? Il le règle sans même s'en apercevoir : chaque point regarde
 voisins, et les voisins d'un coin bleu sont bleus. kNN est un modèle
 **non-linéaire**, et c'était donc, sans qu'on le dise, notre premier.
 
+Et l'arbre de décision de la page précédente, lui, règle le XOR en deux
+questions, « à droite ? » puis « en haut ? » : quatre rectangles, un
+par coin, la frontière que le perceptron ne pouvait pas tracer. Ses coupes
+parallèles aux axes sont une autre façon, très différente de celle de kNN,
+d'être non-linéaire.
+
 Deux familles, donc, et une question à se poser avant toute autre devant un
 problème : *la vérité que je cherche a-t-elle une chance de tenir dans le
 répertoire de mon modèle ?* Si elle n'y est pas, aucun réglage, aucune donnée
@@ -203,8 +209,8 @@ biais et variance.
 
 Le point crucial : **rien de tout cela n'est propre à kNN.** Chaque modèle possède
 son curseur de souplesse : le nombre de termes d'une courbe plus souple qu'une
-droite (nous allons le voir à l'instant), le nombre de paramètres d'un réseau de
-neurones. Et
+droite (nous allons le voir à l'instant), la profondeur d'un arbre de décision,
+le nombre de paramètres d'un réseau de neurones. Et
 chacun affronte le même U, le même arbitrage entre coller et lisser. C'est le
 **compromis biais-variance**, et savoir le régler est l'un des vrais savoir-faire
 de l'apprentissage automatique.
@@ -214,7 +220,7 @@ de l'apprentissage automatique.
 
 Le compromis biais-variance semble nous laisser un seul levier : tourner le
 curseur de souplesse vers le bas, comme nous l'avons fait avec kNN en
-augmentant $k$. C'est une solution, mais elle est brutale : elle bride le modèle
+augmentant $k$, ou avec l'arbre en limitant sa profondeur. C'est une solution, mais elle est brutale : elle bride le modèle
 *avant* même de l'avoir laissé regarder les données, et le curseur est
 grossier, un cran à la fois. Or il arrive qu'on veuille un modèle riche, capable
 de dessiner des formes compliquées si les données l'exigent, sans pour autant
@@ -269,7 +275,9 @@ de neurones, *weight decay*, le même terme sous un autre nom. Elle a aussi des
 cousines qui ne passent pas par la fonction d'erreur, mais visent le même but,
 empêcher le modèle d'épouser le bruit : arrêter l'entraînement avant qu'il ne
 colle trop (l'*arrêt précoce*), ou éteindre au hasard une partie des neurones à
-chaque pas (le *dropout*). Le [Module 3](docs/module3) les retrouvera. Sous
+chaque pas (le *dropout*) ; et pour l'arbre, l'**élagage**, qui le laisse
+pousser puis coupe les branches qui n'apportent que du détail. Le
+[Module 3](docs/module3) les retrouvera. Sous
 leurs noms divers, toutes disent la même chose : la souplesse est une
 ressource, et un bon modèle est un modèle riche qu'on tient en laisse.
 

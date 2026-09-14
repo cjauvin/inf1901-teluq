@@ -299,15 +299,32 @@ fort, et elles remportent la plupart des compétitions Kaggle dont [*Bien
 évaluer un modèle*](docs/module2/75-bien-evaluer) parle. Au prix, il est vrai,
 de la lisibilité : cent arbres ne se racontent plus.
 
-## Un arbre peut tout dessiner ; jusqu'où le laisser faire ?
+## Et sur des données neuves ?
 
-Faisons le compte. L'arbre pose des questions, une caractéristique à la
-fois ; il les choisit en comptant, par recherche plutôt que par descente ; il
-prédit une catégorie ou un nombre ; il découpe le plan en rectangles, aussi
-fins qu'on le laisse faire. Cette dernière propriété est à double tranchant.
-Assez profond, un arbre dessine *n'importe quelle* frontière, et c'est ce qui
-le rend si souple ; mais assez profond, il dessine aussi une feuille par
-exemple, et ne généralise plus rien. Toute la question est de savoir jusqu'où
-le laisser pousser, et elle n'a rien de propre aux arbres : *k* pour kNN, le
-degré d'une courbe, la taille d'un réseau de neurones posent exactement la
-même. C'est le sujet de [*Généraliser*](docs/module2/70-generaliser).
+Faisons le point. Nous avons maintenant tout un arsenal : une droite qui
+prédit un nombre, deux classificateurs qui prédisent une catégorie, un arbre
+qui fait les deux en posant des questions, et deux moteurs pour les
+entraîner : minimiser une fonction d'erreur, ou chercher la question la plus
+pure. Chacun apprend en collant le mieux possible **aux exemples qu'on lui a
+montrés**.
+
+Mais relisons cette dernière phrase. *Aux exemples qu'on lui a montrés.* Or ce
+n'est pas du tout ce qui nous intéresse ! Un filtre anti-pourriel qui classe
+parfaitement les courriels d'hier (ceux qui ont servi à l'entraîner) ne vaut
+rien s'il se trompe sur ceux qui arriveront demain. Depuis la première page de
+ce module, le but n'a jamais été de *mémoriser* des exemples, mais d'en tirer
+de quoi traiter des cas **encore jamais vus**.
+
+Et là se cache un piège. Un modèle peut très bien réussir un sans-faute sur ses
+données d'entraînement *et* s'effondrer sur des données neuves, un peu comme un
+étudiant qui aurait appris les réponses du corrigé par cœur sans rien
+comprendre au sujet. Nous venons d'en voir l'image la plus nette : l'arbre
+laissé pousser jusqu'à isoler chaque exception, qui ne se trompe plus jamais
+sur les vingt maisons, et qui n'a rien appris d'elles qu'il ne puisse réciter.
+Nous avions déjà croisé l'ombre de ce problème à propos de kNN et de son
+réglage de $k$ : trop coller aux exemples peut être une *faiblesse*, pas une
+force.
+
+Comment, alors, mesurer si un modèle a vraiment *appris* plutôt que
+*retenu* ? Comment déjouer le piège ? C'est toute la question de la
+**généralisation**, et le sujet de la page suivante.
