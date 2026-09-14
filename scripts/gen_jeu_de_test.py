@@ -6,16 +6,16 @@ FOND, BORD, ENCRE, ENCRE_PALE, GRIS, TEAL, BRUN, ROUGE, AXE = (
     "#efe7d3", "#d9cbac", "#3a3531", "#5b5249", "#7a6f63", "#2f6f6a", "#9a5b33", "#c4564a", "#b8a888")
 
 # blocs
-TX, TY, TW, TH = 40, 70, 395, 160          # entraînement
-SX, SY, SW, SH = 475, 70, 145, 160         # test
-ROWS = [117, 149, 181, 213]                # centrées sous l'étiquette « ≈ … cinquièmes »
+TX, TY, TW, TH = 40, 70, 395, 176          # entraînement
+SX, SY, SW, SH = 475, 70, 145, 176         # test
+ROWS = [115, 147, 179, 211]                # centrées sous l'étiquette « ≈ … cinquièmes »
 COLS_T = [TX + (TW - 7 * 46) / 2 + i * 46 for i in range(8)]
 COLS_S = [SX + SW / 2 - 37.5, SX + SW / 2 + 37.5]
 JUMEAUX = [(COLS_T[6], ROWS[1], COLS_S[0], ROWS[1]), (COLS_T[7], ROWS[3], COLS_S[1], ROWS[3])]
 
 
 def figure(fuite):
-    h = 340 if fuite else 310
+    h = 356 if fuite else 326
     titre = ("Une fuite : deux exemples du test ont un jumeau dans l'entraînement" if fuite
              else "On scinde les données avant d'entraîner")
     o = ['<svg viewBox="0 0 660 %d" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">' % h]
