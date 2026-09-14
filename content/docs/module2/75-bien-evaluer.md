@@ -10,8 +10,9 @@ La page précédente a posé la règle d'or : on juge un modèle sur des exempl
 qu'il n'a jamais vus. C'est nécessaire, mais ce n'est pas suffisant. Un score
 sur le jeu de test n'a de valeur que s'il est **honnête** (le modèle n'a-t-il
 vraiment rien vu du test ?), **fiable** (tient-il au hasard de la coupe entre
-entraînement et test ?) et **pertinent** (mesure-t-il ce qui coûte vraiment
-quand on se trompe ?). Trois questions, trois sections. Aucune ne demande de
+entraînement et test ?), **pertinent** (mesure-t-il ce qui coûte vraiment
+quand on se trompe ?) et **valable** (vaut-il pour les données qu'on
+rencontrera vraiment ?). Quatre questions, quatre sections. Aucune ne demande de
 nouveau modèle ; toutes demandent de la méthode, et c'est là, bien plus que dans
 le choix d'un algorithme, que se joue la différence entre un modèle qui marche
 et un modèle qui a l'air de marcher.
@@ -190,6 +191,69 @@ excellent pour un aperçu, insuffisant pour fixer un prix de vente.
 
 Une métrique, en somme, est un choix : elle dit ce qu'on décide de compter
 comme réussite. Avant de lire un score, demandez toujours lequel.
+
+## Jamais vu, mais du même monde : la question de la distribution
+
+Dernière question, et la plus facile à oublier : le score vaut-il pour les
+données qu'on rencontrera *vraiment* ? Pour la comprendre, faisons un détour
+par les sondages. Interroger mille personnes pour connaître l'opinion de
+millions d'autres, c'est un pari : on suppose que l'échantillon **ressemble**
+à la population, qu'il en est un petit modèle réduit. Quand ce n'est pas le
+cas, le sondage se trompe avec une assurance parfaite. L'exemple le plus
+célèbre date de 1936 : un grand magazine américain, le [*Literary Digest*](https://en.wikipedia.org/wiki/The_Literary_Digest),
+avait recueilli plus de deux millions de réponses et prédisait une large
+défaite de Roosevelt ; il fut réélu triomphalement. Les réponses venaient de
+listes d'abonnés au téléphone et de propriétaires d'automobiles, en pleine
+crise économique : un échantillon immense, mais tiré d'un autre monde que
+celui des électeurs. Ce n'est pas la quantité qui garantit un sondage, c'est la
+**représentativité**.
+
+Un jeu de données est un sondage. Nos vingt maisons ne sont pas *les*
+maisons ; ce sont vingt tirages dans un réservoir bien plus vaste, celui de
+toutes les maisons qu'un tel modèle pourrait rencontrer, et les statisticiens
+appellent ce réservoir une **distribution**. Le jeu d'entraînement en est un
+échantillon, le jeu de test un autre, et toute la méthode de ce chapitre repose
+sur une hypothèse muette : les deux viennent du même réservoir, et les
+données de demain aussi. On dit alors que le test est **en distribution**.
+Généraliser, c'est toujours généraliser *à ce réservoir-là*, jamais au monde
+entier.
+
+Que se passe-t-il quand l'hypothèse tombe, quand une donnée est **hors
+distribution** ? Trois visages du même problème.
+
+- **L'extrapolation.** Nos maisons vont de 112 à 280 m². Demandez à la droite
+  le prix d'un manoir de 600 m² : elle répond, 1 696 000 \\$, avec le même
+  aplomb que pour une maison de 180 m². Mais aucune donnée ne soutient plus
+  cette réponse ; la droite se prolonge dans le vide, et rien ne dit que les
+  manoirs obéissent à la même règle que les bungalows.
+- **Le changement de lieu ou de population.** Un modèle entraîné sur les ventes
+  de Montréal, appliqué à Vancouver ; un test de dépistage mis au point sur des
+  adultes, appliqué à des enfants. Les mêmes caractéristiques, mais un autre
+  réservoir : le score obtenu là-bas ne dit rien d'ici.
+- **La dérive dans le temps.** Un filtre anti-pourriel entraîné sur les
+  pourriels de 2010, face à ceux de 2025 : les mots ont changé, les ruses
+  aussi. La distribution a glissé sous le modèle, sans qu'il s'en aperçoive, et
+  son score d'hier ne dit plus rien d'aujourd'hui.
+
+{{< image src="/images/module2/hors-distribution.svg" alt="Le nuage des vingt maisons (de 112 à 280 m²) et sa droite, avec la zone couverte par les données ombrée. Loin à droite, un manoir de 600 m² pour lequel la droite, prolongée en pointillé, annonce environ 1 696 000 dollars, accompagné d'un point d'interrogation : le modèle répond avec le même aplomb, mais aucune donnée ne le soutient plus." title="Hors distribution : dans la zone que les données couvrent, le score du test veut dire quelque chose ; au-delà, la droite répond encore, mais plus rien ne la garantit." loading="lazy" >}}
+
+C'est le *Literary Digest* à chaque fois : un échantillon, parfois énorme, mais
+tiré d'un autre monde que celui où l'on prédit. La leçon pratique tient en deux
+règles. Le jeu de test doit ressembler au **déploiement**, pas seulement à
+l'entraînement : si le modèle servira à Vancouver, il faut des maisons de
+Vancouver dans le test, et l'on aura vite fait de découvrir qu'il en faut aussi
+dans l'entraînement. Et un modèle mis en service doit être **surveillé**, parce
+que le monde bouge et que rien, dans le modèle, ne l'avertira que la
+distribution a changé.
+
+Rappelez-vous la 1001ᵉ image du début du module : la question était de savoir
+si elle faisait partie des 1000. Il y avait une question cachée derrière :
+vient-elle seulement *du même monde* que les 1000 ? Une photo prise de nuit,
+quand toutes les autres l'ont été de jour, est neuve d'une façon que le modèle
+ne sait pas traiter. Et pour les grands modèles de langage de l'encart de
+[*Généraliser*](docs/module2/70-generaliser/#un-modèle-se-juge-sur-ce-quil-na-jamais-vu),
+la question devient vertigineuse : quand l'entraînement est tout le Web, où
+finit « en distribution » ?
 
 ## Tout cela portait un nom : l'apprentissage supervisé
 
