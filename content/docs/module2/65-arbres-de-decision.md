@@ -221,3 +221,41 @@ que l'arbre invente pour l'accommoder. Survolez une zone du plan : son chemin
 s'allume dans l'arbre.
 
 {{< applet src="/html/applets/decision-tree.html" height="605" >}}
+
+## L'arbre du *Titanic*
+
+Quittons nos maisons pour de vraies données, celles que nous croiserons à
+propos des fuites dans [*Bien évaluer un modèle*](docs/module2/75-bien-evaluer) :
+la liste des 1309 passagers du *Titanic*, avec pour chacun la classe, le sexe,
+l'âge, et s'il a survécu. Trente-huit pour cent ont survécu. Le modèle le plus
+bête, « tout le monde meurt », obtient donc 62 % de bonnes réponses ;
+c'est l'étalon. Laissons un arbre apprendre sur ces passagers, avec deux
+niveaux de questions :
+
+{{< image src="/images/module2/arbre-titanic.svg" alt="Un arbre à deux niveaux appris sur les 1309 passagers du Titanic. Première question : une femme ? Pour les hommes, la question suivante est « plus de 9 ans ? » : les garçons (43) ont survécu à 58 %, les hommes adultes (800) à 17 %. Pour les femmes, « en troisième classe ? » : celles de première ou deuxième classe (250) ont survécu à 93 %, celles de troisième (216) à 49 %." title="L'arbre du Titanic, appris sur les vraies données : trois questions, 79 % de bonnes réponses, et une histoire qu'on peut lire." loading="lazy" >}}
+
+La première question que l'arbre trouve, à lui seul, sans qu'on lui souffle
+rien : « une femme ? ». Elle vaut, seule, 78 % de bonnes réponses, seize
+points de mieux que l'étalon. Puis les deux branches posent des questions
+différentes. Chez les hommes : « plus de 9 ans ? » ; les 43 garçons ont
+survécu à 58 %, les 800 hommes adultes à 17 %. Chez les femmes : « en
+troisième classe ? » ; celles de première et deuxième classe ont survécu à
+93 %, celles de troisième à 49 %. Trois questions, et 79 % de bonnes
+réponses.
+
+Ce que cet arbre a appris, chacun peut le lire : « les femmes et les enfants
+d'abord », la consigne donnée cette nuit-là, avec un correctif que l'histoire
+confirme : les femmes de troisième classe, logées dans les entreponts, loin
+des canots, ont eu une chance sur deux. L'arbre n'a pas lu de livre
+d'histoire ; il a compté, et il retrouve en trois questions ce que les
+historiens racontent en chapitres. C'est aussi l'occasion de voir le comptage à
+l'œuvre sur un cas ambigu : la feuille des femmes de troisième classe, à
+49 %, est presque moitié-moitié, et l'arbre y répond « a péri » à une voix
+près. Une profondeur de plus la découperait selon l'âge, sans grand gain :
+passé trois questions, le taux de bonnes réponses ne bouge presque plus. Sur
+ces données, l'essentiel tient en trois questions, et le reste est du détail.
+
+Un dernier point, sur lequel [*Bien évaluer un
+modèle*](docs/module2/75-bien-evaluer) reviendra : ce 79 % a été mesuré sur
+les passagers mêmes qui ont servi à apprendre. Sur un jeu de test, il serait
+un peu plus bas ; avec un arbre plus profond, l'écart se creuserait.
