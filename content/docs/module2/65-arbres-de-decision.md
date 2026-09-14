@@ -262,34 +262,34 @@ un peu plus bas ; avec un arbre plus profond, l'écart se creuserait.
 
 ## Ce qu'un arbre dit, et ce qu'il tait
 
-La grande force de l'arbre, vous l'avez vue sur le *Titanic* : il
+La grande force de l'arbre, vous l'avez vue sur le *Titanic* : il
 **s'explique**. Pour toute prédiction, le chemin de la racine à la feuille est
-la justification, lisible en clair : « une femme, en troisième classe, donc
-une chance sur deux ». Aucun autre modèle de ce module n'offre cela. La droite
+la justification, lisible en clair : « une femme, en troisième classe, donc
+une chance sur deux ». Aucun autre modèle de ce module n'offre cela. La droite
 donne une pente, la régression logistique des poids, kNN une liste de
-voisins ; rien qu'on puisse raconter à un client, à un patient, à un juge. Dans
+voisins ; rien qu'on puisse raconter à un client, à un patient, à un juge. Dans
 les domaines où une décision doit pouvoir être contestée (un prêt refusé, un
 diagnostic, un dossier trié), cette lisibilité vaut souvent plus que quelques
 points de performance, et c'est l'une des raisons pour lesquelles les arbres,
 nés dans les années 1960 et 1980, n'ont jamais quitté la boîte à outils.
 
 Ses faiblesses sont l'envers de sa méthode. D'abord, un arbre est
-**instable** : rappelez-vous l'égalité entre la distance et l'année ; retirez
+**instable** : rappelez-vous l'égalité entre la distance et l'année ; retirez
 deux maisons, et la première question change, et avec elle tout l'arbre. Deux
 jeux de données presque identiques peuvent donner deux arbres sans rapport,
 qui prédisent pourtant à peu près la même chose. Ensuite, ses coupes sont
-toujours parallèles aux axes : une question ne regarde qu'une
+toujours parallèles aux axes : une question ne regarde qu'une
 caractéristique. Devant deux amas séparés par une **diagonale**, l'arbre
 s'épuise en escalier là où une simple droite, comme celle de la régression
 logistique, passerait d'un trait. Un modèle non linéaire, donc, mais d'une
 non-linéarité particulière, faite de marches.
 
 La parade à l'instabilité est l'une des idées les plus fécondes de la
-discipline, et elle tient en une phrase : si un arbre est fragile, prenez-en
+discipline, et elle tient en une phrase : si un arbre est fragile, prenez-en
 **cent**. On entraîne des centaines d'arbres, chacun sur une variante des
 données (un tirage au sort des maisons, un sous-ensemble des
 caractéristiques), et l'on fait voter l'ensemble, ou l'on moyenne ses
-réponses. Les erreurs de chaque arbre, différentes, se compensent ; la réponse
+réponses. Les erreurs de chaque arbre, différentes, se compensent ; la réponse
 collective est plus stable et plus juste que celle de n'importe quel arbre
 seul. C'est la **forêt aléatoire**, et sa cousine plus ambitieuse, le
 *gradient boosting*, qui fait pousser chaque arbre pour corriger les erreurs
@@ -297,17 +297,17 @@ des précédents. Sur des données en tableau, comme nos maisons ou les passager
 du *Titanic*, ces forêts restent, encore aujourd'hui, ce qu'il y a de plus
 fort, et elles remportent la plupart des compétitions Kaggle dont [*Bien
 évaluer un modèle*](docs/module2/75-bien-evaluer) parle. Au prix, il est vrai,
-de la lisibilité : cent arbres ne se racontent plus.
+de la lisibilité : cent arbres ne se racontent plus.
 
-## Un arbre peut tout dessiner ; jusqu'où le laisser faire ?
+## Un arbre peut tout dessiner ; jusqu'où le laisser faire ?
 
 Faisons le compte. L'arbre pose des questions, une caractéristique à la
-fois ; il les choisit en comptant, par recherche plutôt que par descente ; il
-prédit une catégorie ou un nombre ; il découpe le plan en rectangles, aussi
+fois ; il les choisit en comptant, par recherche plutôt que par descente ; il
+prédit une catégorie ou un nombre ; il découpe le plan en rectangles, aussi
 fins qu'on le laisse faire. Cette dernière propriété est à double tranchant.
 Assez profond, un arbre dessine *n'importe quelle* frontière, et c'est ce qui
-le rend si souple ; mais assez profond, il dessine aussi une feuille par
+le rend si souple ; mais assez profond, il dessine aussi une feuille par
 exemple, et ne généralise plus rien. Toute la question est de savoir jusqu'où
-le laisser pousser, et elle n'a rien de propre aux arbres : *k* pour kNN, le
+le laisser pousser, et elle n'a rien de propre aux arbres : *k* pour kNN, le
 degré d'une courbe, la taille d'un réseau de neurones posent exactement la
 même. C'est le sujet de [*Généraliser*](docs/module2/70-generaliser).
