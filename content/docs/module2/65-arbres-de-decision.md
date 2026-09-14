@@ -11,9 +11,13 @@ distances ; la droite multiplie et additionne ; la régression logistique et
 Bayes calculent des probabilités. C'est puissant, mais ce n'est pas ainsi que
 *nous* décidons, la plupart du temps. Un médecin devant un patient ne calcule
 pas : il pose des questions, l'une après l'autre, et chaque réponse oriente la
-suivante. Le jeu des vingt questions fonctionne pareil, et le guide de dépannage
-à la fin d'un manuel aussi : « l'appareil s'allume-t-il ? si non, est-il
-branché ? ». Une suite de questions à réponse oui ou non, qui se ramifie, et
+suivante. Le [jeu des vingt questions](https://en.wikipedia.org/wiki/Twenty_questions)
+fonctionne pareil : l'un pense à un objet, l'autre doit le deviner en posant
+au plus vingt questions auxquelles on ne répond que par oui ou par non,
+« est-ce un animal ? », « est-il plus gros qu'un chat ? », chaque réponse
+rétrécissant le champ des possibles. Le guide de dépannage à la fin d'un
+manuel, de même : « l'appareil s'allume-t-il ? si non, est-il
+branché ? ». Une suite de questions à réponse oui ou non, qui se ramifie, et
 qui aboutit à une conclusion.
 
 Cette façon de décider a son modèle, et c'est l'un des plus anciens et des plus
