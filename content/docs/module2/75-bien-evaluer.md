@@ -205,7 +205,14 @@ fois par an, et c'est voulu. Sa tolérance aux faux positifs n'est pas un
 défaut de conception, c'est le prix, accepté d'avance, d'un rappel proche de
 100 %. Le filtre anti-pourriel fait le raisonnement inverse, parce que chez
 lui c'est le faux positif qui coûte cher. Même modèle, même curseur, réglages
-opposés : tout dépend de l'erreur qu'on ne peut pas se permettre.
+opposés : tout dépend de l'erreur qu'on ne peut pas se permettre. Le réglage
+n'en reste pas moins délicat, car il a deux bornes absurdes. Une alarme qui
+sonnerait *sans arrêt* ne raterait aucun incendie, et un filtre qui ne
+jetterait *rien* ne perdrait aucun courriel ; l'un et l'autre auraient un
+rappel ou une précision parfaits, et seraient parfaitement inutiles, puisqu'ils
+ne trient plus rien. Tolérer l'erreur bénigne ne veut pas dire la multiplier
+sans limite : le seuil se pousse du côté sûr, jusqu'au point où l'alerte
+cesserait de vouloir dire quelque chose, et pas au-delà.
 
 {{< image src="/images/module2/erreurs-asymetriques.svg" alt="Deux panneaux. À gauche, le détecteur de fumée : le faux positif (une alarme pour un toast brûlé) coûte un agacement, le faux négatif (un incendie sans alarme) coûte la maison ; le curseur du seuil d'alerte est placé du côté indulgent, pour ne rater aucun incendie. À droite, le filtre anti-pourriel : le faux positif (un vrai courriel jeté) coûte un message perdu, le faux négatif (un pourriel dans la boîte) coûte une seconde d'agacement ; le curseur est placé du côté strict, pour ne jeter que ce dont on est sûr." title="Le seuil se règle sur l'erreur la plus grave : l'alarme tolère les fausses alertes pour ne rien rater ; le filtre tolère ce qui passe pour ne rien jeter à tort." loading="lazy" >}}
 
