@@ -40,7 +40,9 @@ est une estimation honnête de ce qu'il fera face à du vrai neuf.
 
 L'analogie de l'examen tombe juste. Un enseignant qui noterait ses étudiants
 uniquement sur les questions distribuées d'avance pour réviser ne mesurerait pas
-grand-chose : rien n'empêche d'apprendre ces réponses par cœur sans comprendre.
+grand-chose : rien n'empêche d'apprendre ces réponses par cœur sans
+comprendre ; c'est le sur-apprentissage (*overfitting*) de l'étudiant, et le
+jeu de test est ce qui permet de le détecter.
 Pour évaluer la *compréhension*, il faut des questions nouvelles, jamais vues.
 C'est exactement ce qu'on fait à un modèle.
 
@@ -178,14 +180,14 @@ autour des points isolés, épouse jusqu'au dernier détail. L'erreur
 d'entraînement tombe à *zéro* : forcément, chaque exemple est son propre voisin
 le plus proche. Mais cette frontière torturée a pris pour argent comptant le
 moindre hasard des données : un point un peu aberrant, du bruit, et elle se plie
-quand même pour l'accommoder. C'est le **surapprentissage** : notre étudiant qui
+quand même pour l'accommoder. C'est le **sur-apprentissage** (*overfitting*) : notre étudiant qui
 a appris le corrigé par cœur, jusqu'aux coquilles, sans rien comprendre. Sur des
 données neuves, il trébuche.
 
 À l'autre extrême, **$k$ très grand**, chaque prédiction moyenne tant de voisins
 que la frontière se lisse en une courbe placide, presque droite. Si placide,
 parfois, qu'elle gomme des structures pourtant bien réelles. C'est le travers
-inverse, le **sous-apprentissage** : le modèle est trop rigide pour épouser la
+inverse, le **sous-apprentissage** (*underfitting*) : le modèle est trop rigide pour épouser la
 vraie forme des données.
 
 Deux façons d'échouer, donc, et elles portent chacune un nom :
@@ -263,7 +265,7 @@ modèle, même degré, même descente.
 
 Le nombre $\lambda$ règle la sévérité de la pénalité. À zéro, on retrouve le
 modèle libre ; trop grand, tout est écrasé et l'on retombe dans le
-sous-apprentissage (une droite plate, pour finir). C'est un hyper-paramètre de
+sous-apprentissage (*underfitting*) : une droite plate, pour finir. C'est un hyper-paramètre de
 plus, et on le choisit comme les autres : sur l'ensemble de validation, jamais
 sur le jeu de test.
 

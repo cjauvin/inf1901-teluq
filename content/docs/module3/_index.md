@@ -19,7 +19,7 @@ Ce réseau de neurones profond, composé de huit couches apprenant des
 représentations hiérarchiques des images, a été entraîné sur des cartes
 graphiques (GPU), alors principalement utilisées pour les jeux vidéo. Cette
 innovation matérielle, combinée à des idées nouvelles comme la fonction
-d’activation ReLU et la technique de dropout (pour éviter le surapprentissage),
+d’activation ReLU et la technique de dropout (pour éviter le sur-apprentissage, *overfitting*),
 a permis à AlexNet d’accomplir un exploit spectaculaire : réduire de moitié le
 taux d’erreur lors du concours international ImageNet, qui consistait à
 reconnaître et classifier plus d’un million d’images en mille catégories. Ce

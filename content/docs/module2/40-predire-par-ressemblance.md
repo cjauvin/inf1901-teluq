@@ -159,7 +159,10 @@ Les deux extrêmes sont instructifs. Avec **k = 1**, chaque prédiction ne s'app
 que sur l'unique voisin le plus proche : la frontière épouse alors le moindre
 détail, contourne chaque point individuel et se tortille à l'excès. Le modèle
 colle si bien aux exemples connus qu'il en devient esclave, réagissant au
-moindre point un peu aberrant. Nos maisons le montrent : à *k* = 1, chacune des
+moindre point un peu aberrant. Ce travers a un nom, et il est central dans
+tout ce qui suit : le **sur-apprentissage** (*overfitting*), apprendre les
+exemples au lieu d'apprendre d'eux. Nous y reviendrons longuement dans
+[*Généraliser*](docs/module2/70-generaliser). Nos maisons le montrent : à *k* = 1, chacune des
 deux exceptions se taille un îlot de sa couleur en plein territoire adverse, et
 la frontière se découpe en cellules anguleuses.
 
@@ -178,7 +181,7 @@ saisir les vraies régularités, sans l'être au point d'épouser le moindre has
 des données.
 
 Cette question est si centrale que nous lui consacrerons une page entière,
-« Généraliser », une fois que nous aurons en main quelques modèles de plus pour
+[*Généraliser*](docs/module2/70-generaliser), une fois que nous aurons en main quelques modèles de plus pour
 l'éclairer. Pour l'instant, retenez seulement l'intuition : **k règle un curseur
 entre « coller aux exemples » et « lisser à l'excès ».**
 

@@ -210,7 +210,9 @@ Il y a donc, chez l'arbre comme chez kNN, un curseur à régler : la
 **profondeur**, le nombre de questions qu'on l'autorise à poser à la suite.
 Trop peu, et l'arbre est grossier ; sur des données où les deux amas
 n'auraient pas été si nets, une seule coupe verticale ne suffirait pas. Trop,
-et il apprend par cœur. Entre les deux, la bonne profondeur est celle qui
+et il apprend par cœur : c'est le sur-apprentissage (*overfitting*) de kNN,
+sous une autre forme, et [*Généraliser*](docs/module2/70-generaliser) en fera
+le cœur du sujet. Entre les deux, la bonne profondeur est celle qui
 capte les vraies régularités sans épouser les accidents ; et rien, dans les
 vingt maisons, ne la désigne. Nous avons rencontré ce dilemme avec *k*, nous le
 retrouverons pour tout modèle dans [*Généraliser*](docs/module2/70-generaliser),
@@ -325,7 +327,9 @@ de quoi traiter des cas **encore jamais vus**.
 Et là se cache un piège. Un modèle peut très bien réussir un sans-faute sur ses
 données d'entraînement *et* s'effondrer sur des données neuves, un peu comme un
 étudiant qui aurait appris les réponses du corrigé par cœur sans rien
-comprendre au sujet. Nous venons d'en voir l'image la plus nette : l'arbre
+comprendre au sujet. C'est le sur-apprentissage (*overfitting*), déjà croisé
+deux fois, et que la page suivante va enfin prendre de front. Nous venons d'en
+voir l'image la plus nette : l'arbre
 laissé pousser jusqu'à isoler chaque exception, qui ne se trompe plus jamais
 sur les vingt maisons, et qui n'a rien appris d'elles qu'il ne puisse réciter.
 Nous avions déjà croisé l'ombre de ce problème à propos de kNN et de son
