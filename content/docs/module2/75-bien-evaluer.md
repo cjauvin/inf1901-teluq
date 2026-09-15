@@ -193,8 +193,24 @@ ou indulgent, et le choix n'appartient pas aux mathématiques mais au problème.
 Pour un filtre anti-pourriel, un vrai courriel jeté coûte plus cher qu'un
 pourriel qui passe : on privilégie la précision. Pour un test de dépistage, un
 malade manqué coûte plus cher qu'une fausse alerte qu'un second examen
-dissipera : on privilégie le rappel. C'est cette question, *quelle erreur coûte
-le plus ?*, que le [travail noté](docs/module2/99-travail-noté-2) vous posera
+dissipera : on privilégie le rappel.
+
+Le cas le plus parlant est celui d'un mécanisme d'**alerte**. Un détecteur de
+fumée commet deux erreurs possibles : sonner pour un toast brûlé, ou se taire
+pendant un incendie. La première coûte un agacement ; la seconde coûte la
+maison, et parfois des vies. Devant une telle **asymétrie**, on règle
+l'appareil de façon à ne *jamais* commettre la seconde, quitte à commettre
+souvent la première : un détecteur de fumée se déclenche pour rien plusieurs
+fois par an, et c'est voulu. Sa tolérance aux faux positifs n'est pas un
+défaut de conception, c'est le prix, accepté d'avance, d'un rappel proche de
+100 %. Le filtre anti-pourriel fait le raisonnement inverse, parce que chez
+lui c'est le faux positif qui coûte cher. Même modèle, même curseur, réglages
+opposés : tout dépend de l'erreur qu'on ne peut pas se permettre.
+
+{{< image src="/images/module2/erreurs-asymetriques.svg" alt="Deux panneaux. À gauche, le détecteur de fumée : le faux positif (une alarme pour un toast brûlé) coûte un agacement, le faux négatif (un incendie sans alarme) coûte la maison ; le curseur du seuil d'alerte est placé du côté indulgent, pour ne rater aucun incendie. À droite, le filtre anti-pourriel : le faux positif (un vrai courriel jeté) coûte un message perdu, le faux négatif (un pourriel dans la boîte) coûte une seconde d'agacement ; le curseur est placé du côté strict, pour ne jeter que ce dont on est sûr." title="Le seuil se règle sur l'erreur la plus grave : l'alarme tolère les fausses alertes pour ne rien rater ; le filtre tolère ce qui passe pour ne rien jeter à tort." loading="lazy" >}}
+
+C'est cette question, *quelle erreur coûte
+le plus ?*, que le [travail noté](docs/module2/99-travail-noté-2) vous posera
 sur un vrai filtre.
 
 Pour un nombre, la question se pose aussi, plus simplement. L'erreur
