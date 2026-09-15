@@ -271,16 +271,36 @@ un peu plus bas ; avec un arbre plus profond, l'écart se creuserait.
 
 ## Ce qu'un arbre dit, et ce qu'il tait
 
-La grande force de l'arbre, vous l'avez vue sur le *Titanic* : il
+La grande force de l'arbre, vous l'avez vue sur le *Titanic* : il
 **s'explique**. Pour toute prédiction, le chemin de la racine à la feuille est
-la justification, lisible en clair : « une femme, en troisième classe, donc
-une chance sur deux ». Aucun autre modèle de ce module n'offre cela. La droite
-donne une pente, la régression logistique des poids, kNN une liste de
-voisins ; rien qu'on puisse raconter à un client, à un patient, à un juge. Dans
-les domaines où une décision doit pouvoir être contestée (un prêt refusé, un
-diagnostic, un dossier trié), cette lisibilité vaut souvent plus que quelques
-points de performance, et c'est l'une des raisons pour lesquelles les arbres,
-nés dans les années 1960 et 1980, n'ont jamais quitté la boîte à outils.
+la justification, lisible en clair : « une femme, en troisième classe, donc
+une chance sur deux ». Cette propriété a un nom, l'**explicabilité** (ou
+*interprétabilité* ; en anglais *explainability*, *interpretability*) : la
+capacité d'un modèle à rendre compte de ses décisions dans des termes qu'un
+humain peut comprendre, vérifier, et contester. L'arbre est le modèle le plus
+explicable qui soit, parce que le modèle *est* son explication : le lire,
+c'est déjà savoir pourquoi il répond ce qu'il répond.
+
+Aucun autre modèle de ce module n'offre cela au même degré. La droite donne
+une pente, ce qui se comprend encore ; la régression logistique, des poids sur
+chaque caractéristique, qu'il faut déjà interpréter ; kNN, une liste de
+voisins, qui décrit sans justifier. Et les grands réseaux de neurones du
+[Module 3](docs/module3) n'offriront plus rien de tel : des milliards de
+paramètres dont aucun ne veut rien dire pris isolément. C'est ce qu'on appelle
+une **boîte noire** : le modèle répond, souvent très bien, mais nul ne peut
+dire *pourquoi*. Toute une discipline, l'*IA explicable* (*XAI*, pour
+*explainable AI*), s'efforce aujourd'hui de rouvrir ces boîtes après coup, en
+cherchant quelles caractéristiques ont pesé dans une décision ; l'arbre, lui,
+n'a jamais eu besoin qu'on le rouvre.
+
+L'enjeu n'est pas seulement intellectuel. Dans les domaines où une décision
+doit pouvoir être contestée (un prêt refusé, un diagnostic, un dossier trié,
+une peine évaluée), un modèle qui ne peut pas s'expliquer est difficilement
+acceptable. Cette lisibilité vaut alors plus que quelques points de
+performance, et c'est l'une des raisons pour lesquelles les arbres, nés dans
+les années 1960 et 1980, n'ont jamais quitté la boîte à outils. Nous
+retrouverons cette tension entre performance et explicabilité, en grand, avec
+les grands modèles de langage du [Module 4](docs/module4).
 
 Ses faiblesses sont l'envers de sa méthode. D'abord, un arbre est
 **instable** : rappelez-vous l'égalité entre la distance et l'année ; retirez
