@@ -166,3 +166,47 @@ svg = entete(460, "L'arbre de régression : le prix par paliers",
 svg = svg.replace("d'*Un modèle qui s'entraîne*", "d'Un modèle qui s'entraîne")
 (OUT / "arbre-prix-escalier.svg").write_text(svg)
 print("5 figures écrites ; paliers :", [(x0, x1, round(p)) for x0, x1, p in marches])
+
+
+# ── arbre-maisons-deux-coupes.svg : la coupe sur la distance et celle sur l'année, côte à côte ──
+def panneau(ox, oy, coupe, o):
+    """Un petit plan distance × année (largeur 270, hauteur 210), axes en (ox, oy) = coin bas-gauche."""
+    L, H = 255, 200
+    sx = lambda km: ox + km / 25 * L
+    sy = lambda an: oy - (an - 1965) / 62 * H
+    axe, seuil = coupe
+    if axe == "km":
+        xs = sx(seuil)
+        o.append(f'<rect x="{ox}" y="{oy - H}" width="{xs - ox:.1f}" height="{H}" fill="{BLEU}" fill-opacity="0.16"/>')
+        o.append(f'<rect x="{xs:.1f}" y="{oy - H}" width="{ox + L - xs:.1f}" height="{H}" fill="{ROUGE}" fill-opacity="0.16"/>')
+        o.append(f'<line x1="{xs:.1f}" y1="{oy - H}" x2="{xs:.1f}" y2="{oy}" stroke="{BRUN}" stroke-width="2" stroke-dasharray="7 5"/>')
+    else:
+        ys = sy(seuil)
+        o.append(f'<rect x="{ox}" y="{oy - H}" width="{L}" height="{ys - (oy - H):.1f}" fill="{BLEU}" fill-opacity="0.16"/>')
+        o.append(f'<rect x="{ox}" y="{ys:.1f}" width="{L}" height="{oy - ys:.1f}" fill="{ROUGE}" fill-opacity="0.16"/>')
+        o.append(f'<line x1="{ox}" y1="{ys:.1f}" x2="{ox + L}" y2="{ys:.1f}" stroke="{BRUN}" stroke-width="2" stroke-dasharray="7 5"/>')
+    o.append(f'<g stroke="{AXE}" stroke-width="1.4"><line x1="{ox}" y1="{oy - H}" x2="{ox}" y2="{oy}"/><line x1="{ox}" y1="{oy}" x2="{ox + L}" y2="{oy}"/></g>')
+    for km in (0, 10, 20):
+        o.append(f'<text x="{sx(km):.1f}" y="{oy + 16}" font-size="11" fill="{ENCRE_PALE}" text-anchor="middle">{km}</text>')
+    for an in (1970, 1990, 2010):
+        o.append(f'<text x="{ox - 6}" y="{sy(an) + 4:.1f}" font-size="11" fill="{ENCRE_PALE}" text-anchor="end">{an}</text>')
+    o.append(f'<text x="{ox + L / 2:.0f}" y="{oy + 32}" font-size="12" fill="{ENCRE}" text-anchor="middle">distance du centre (km)</text>')
+    for m in MAISONS:
+        o.append(f'<circle cx="{sx(m[2]):.1f}" cy="{sy(m[1]):.1f}" r="5.5" fill="{BLEU if m[4] else ROUGE}" stroke="{FOND}" stroke-width="1.3"/>')
+
+
+o = ['<?xml version="1.0" encoding="UTF-8"?>',
+     '<svg viewBox="0 0 660 340" xmlns="http://www.w3.org/2000/svg" role="img" font-family="system-ui, -apple-system, sans-serif">',
+     "<title>Deux questions à égalité : la distance ou l'année</title>",
+     f"<desc>Deux fois le même petit plan distance × année avec les vingt maisons. À gauche, la coupe verticale de la question «{FINE}À plus de 11 km du centre{FINE}?{FINE}»{NB}: bleu à gauche, rouge à droite. À droite, la coupe horizontale de la question «{FINE}Construite après 1989{FINE}?{FINE}»{NB}: bleu en haut, rouge en bas. Dans les deux cas, les mêmes deux exceptions sont du mauvais côté{NB}: deux erreurs sur vingt, à égalité.</desc>",
+     f'<rect x="0" y="0" width="660" height="340" rx="14" fill="{FOND}" stroke="{BORD}"/>',
+     f'<text x="177" y="34" font-size="14" fill="{ENCRE}" text-anchor="middle" font-weight="600">À plus de 11 km du centre{FINE}?</text>',
+     f'<text x="499" y="34" font-size="14" fill="{ENCRE}" text-anchor="middle" font-weight="600">Construite après 1989{FINE}?</text>',
+     f'<text x="14" y="150" font-size="12" fill="{ENCRE}" text-anchor="middle" transform="rotate(-90 14 150)">année de construction</text>']
+panneau(50, 250, ("km", 11), o)
+panneau(372, 250, ("an", 1989), o)
+o.append(f'<text x="330" y="304" font-size="13" fill="{ENCRE_PALE}" text-anchor="middle">Deux coupes différentes, le même résultat{NB}: 18 maisons sur 20 bien classées,</text>')
+o.append(f'<text x="330" y="322" font-size="13" fill="{ENCRE_PALE}" text-anchor="middle">et les deux mêmes exceptions du mauvais côté.</text>')
+o.append('</svg>')
+(OUT / "arbre-maisons-deux-coupes.svg").write_text("\n".join(o) + "\n")
+print("arbre-maisons-deux-coupes.svg écrit")

@@ -51,27 +51,31 @@ prédire, on part de la racine avec une maison nouvelle, on répond aux
 questions, et l'on descend jusqu'à une feuille : sa couleur majoritaire est la
 prédiction.
 
-Que dessine cet arbre dans le plan ? Une question sur la distance, c'est une
-**coupe verticale** à 11 km : tout ce qui est à gauche est bleu, tout ce qui
-est à droite est rouge. Voici sa frontière de décision, avec le même fond
-teinté que pour kNN :
+Que dessine cet arbre dans le plan ? Une question sur la distance, c'est une
+**coupe verticale** à 11 km : tout ce qui est à gauche est bleu, tout ce qui
+est à droite est rouge. C'est le panneau de gauche de la figure ci-dessous,
+avec le même fond teinté que pour kNN. Comparez cette frontière à [celle de
+kNN](docs/module2/40-predire-par-ressemblance) sur les mêmes maisons : là,
+une ligne qui serpentait entre les amas ; ici, un trait droit, parfaitement
+vertical, parce qu'une question ne regarde qu'*une* caractéristique à la fois.
 
-{{< image src="/images/module2/arbre-maisons-frontiere.svg" alt="Le plan distance × année des vingt maisons, coupé par une seule ligne verticale pointillée à 11 km : à gauche, le fond est teinté en bleu (vendue vite), à droite en rouge (a traîné). Les deux exceptions se retrouvent chacune du mauvais côté." title="La frontière de l'arbre à une question : une coupe verticale à 11 km, et rien d'autre." loading="lazy" >}}
-
-Comparez-la à [celle de kNN](docs/module2/40-predire-par-ressemblance) sur les
-mêmes maisons. Là, une ligne qui serpentait entre les amas ; ici, un trait
-droit, parfaitement vertical, parce qu'une question ne regarde qu'*une*
-caractéristique à la fois. Et l'arbre, contrairement à kNN, ne garde rien des
-vingt maisons : une fois la question trouvée, il peut les oublier. Il est du
-côté des modèles qui *distillent*, comme la droite, avec pour tout paramètre un
-seuil et deux réponses.
-
-Une chose devrait vous intriguer : l'arbre n'a rien demandé sur l'année de
+Une chose devrait vous intriguer : l'arbre n'a rien demandé sur l'année de
 construction, alors que le nuage coloré semblait dire que les maisons
-anciennes traînent. C'est que, sur ces vingt maisons, la distance sépare déjà
-presque tout, et l'année n'y ajouterait rien, sauf pour rattraper les deux
-exceptions. Laisser l'arbre poser d'autres questions, c'est précisément ce que
-nous allons faire ; mais d'abord, comment a-t-il choisi celle-ci ?
+anciennes traînent. Aurait-elle fait l'affaire ? Oui, et tout aussi bien :
+c'est le panneau de droite. « Construite après 1989 ? » est une **coupe
+horizontale**, et elle sépare les mêmes 11 sur 12 d'un côté et 1 sur 8 de
+l'autre, avec les mêmes deux exceptions.
+
+{{< image src="/images/module2/arbre-maisons-deux-coupes.svg" alt="Deux fois le même petit plan distance × année avec les vingt maisons. À gauche, la coupe verticale de la question « À plus de 11 km du centre ? » : bleu à gauche, rouge à droite. À droite, la coupe horizontale de la question « Construite après 1989 ? » : bleu en haut, rouge en bas. Dans les deux cas, les mêmes deux exceptions sont du mauvais côté : deux erreurs sur vingt, à égalité." title="Deux questions à égalité : la coupe sur la distance et la coupe sur l'année classent les mêmes dix-huit maisons, et ratent les deux mêmes." loading="lazy" >}}
+
+L'arbre avait donc deux questions équivalentes sous la main. Il en a pris une,
+et une seule, parce qu'une fois la première posée, l'autre n'ajoute plus rien,
+sinon pour rattraper les deux exceptions. Et il ne garde rien des vingt
+maisons : une fois la question trouvée, il peut les oublier. Il est du côté
+des modèles qui *distillent*, comme la droite, avec pour tout paramètre un
+seuil et deux réponses. Comment a-t-il tranché entre les deux questions, et
+plus généralement comment choisit-il ses questions ? C'est l'objet de la
+section suivante.
 
 ## Comment l'arbre choisit ses questions
 
@@ -92,10 +96,9 @@ d'un côté 11 bleues sur 12, de l'autre 7 rouges sur 8 : deux feuilles presque
 pures. « Construite après 1995 ? » aurait laissé 2 rouges parmi 11 d'un côté
 et 2 bleues parmi 9 de l'autre : plus de mélange, question écartée.
 
-Une surprise, tout de même : « construite après 1989 ? » aurait fait
-*exactement* aussi bien que la distance, 11 sur 12 et 1 sur 8, avec les mêmes
-deux exceptions. Les deux questions étaient à égalité parfaite, et l'arbre a
-pris la première venue. Retenez-le : quand deux caractéristiques disent la
+Voilà qui règle l'intrigue de tout à l'heure : « construite après 1989 ? »
+et « à plus de 11 km du centre ? » obtenaient exactement le même score, 11
+sur 12 et 1 sur 8. À égalité parfaite, l'arbre a pris la première venue. Retenez-le : quand deux caractéristiques disent la
 même chose, l'arbre en choisit une et ignore l'autre, sans que cela signifie
 que l'autre ne compte pas. Un arbre n'est pas une explication du monde ; c'est
 un chemin qui marche.
