@@ -320,13 +320,21 @@ données (un tirage au sort des maisons, un sous-ensemble des
 caractéristiques), et l'on fait voter l'ensemble, ou l'on moyenne ses
 réponses. Les erreurs de chaque arbre, différentes, se compensent ; la réponse
 collective est plus stable et plus juste que celle de n'importe quel arbre
-seul. C'est la **forêt aléatoire**, et sa cousine plus ambitieuse, le
+seul. C'est la **forêt aléatoire** (*random forest*), et sa cousine plus ambitieuse, le
 *gradient boosting*, qui fait pousser chaque arbre pour corriger les erreurs
 des précédents. Sur des données en tableau, comme nos maisons ou les passagers
 du *Titanic*, ces forêts restent, encore aujourd'hui, ce qu'il y a de plus
 fort, et elles remportent la plupart des compétitions Kaggle dont [*Bien
 évaluer un modèle*](docs/module2/75-bien-evaluer) parle. Au prix, il est vrai,
 de la lisibilité : cent arbres ne se racontent plus.
+
+Voici l'idée sur nos maisons. Trois arbres, dont chacun n'a vu qu'une partie
+des vingt maisons, tirée au sort, et qu'on a laissé pousser librement,
+dessinent trois frontières sans rapport : des bandes, des îlots, chacun ses
+caprices. Faites-en voter cinquante, et les caprices s'annulent ; ne survit
+que ce sur quoi les arbres s'accordent.
+
+{{< image src="/images/module2/foret-aleatoire.svg" alt="En haut, trois petits plans distance × année : trois arbres, chacun appris sur une partie seulement des vingt maisons, tirée au sort (les maisons laissées de côté sont dessinées en creux, et un compte indique combien l'arbre en a vues), et laissé pousser librement, avec des frontières en rectangles toutes différentes et des îlots à des endroits différents. En bas, un plan plus grand : la frontière obtenue en faisant voter cinquante arbres de ce genre, plus régulière, où les bandes et les îlots des arbres isolés se sont fondus, ne laissant que deux petits îlots autour des exceptions." title="La forêt aléatoire : chaque arbre ne voit qu'une partie des maisons et se trompe à sa façon ; le vote de cinquante arbres garde ce sur quoi ils s'accordent." loading="lazy" >}}
 
 ## Et sur des données neuves ?
 
