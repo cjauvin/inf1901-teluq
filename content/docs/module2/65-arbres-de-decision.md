@@ -108,7 +108,7 @@ des deux feuilles : la meilleure question pour les maisons proches du centre,
 la meilleure pour les maisons éloignées, et ainsi de suite, jusqu'à ce que les
 feuilles soient pures ou qu'on décide d'arrêter. Chaque question est choisie
 sans se soucier des suivantes, ce que les informaticiens appellent une
-stratégie *gloutonne* : on prend le meilleur pas immédiat, sans regarder plus
+stratégie *gloutonne* (*greedy*, en anglais, le mot qu'on entend le plus souvent) : on prend le meilleur pas immédiat, sans regarder plus
 loin. Ce n'est pas garanti optimal ; c'est rapide, et en pratique
 remarquablement bon.
 
