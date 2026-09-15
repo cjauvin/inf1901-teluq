@@ -330,11 +330,11 @@ de la lisibilité : cent arbres ne se racontent plus.
 
 Voici l'idée sur nos maisons. Trois arbres, dont chacun n'a vu qu'une partie
 des vingt maisons, tirée au sort, et qu'on a laissé pousser librement,
-dessinent trois frontières sans rapport : des bandes, des îlots, chacun ses
-caprices. Faites-en voter cinquante, et les caprices s'annulent ; ne survit
+dessinent trois frontières sans rapport : des bandes, des îlots, chacun ses
+caprices. Faites-en voter cinquante, et les caprices s'annulent ; ne survit
 que ce sur quoi les arbres s'accordent.
 
-{{< image src="/images/module2/foret-aleatoire.svg" alt="En haut, trois petits plans distance × année : trois arbres, chacun appris sur une partie seulement des vingt maisons, tirée au sort (les maisons laissées de côté sont dessinées en creux, et un compte indique combien l'arbre en a vues), et laissé pousser librement, avec des frontières en rectangles toutes différentes et des îlots à des endroits différents. En bas, un plan plus grand : la frontière obtenue en faisant voter cinquante arbres de ce genre, plus régulière, où les bandes et les îlots des arbres isolés se sont fondus, ne laissant que deux petits îlots autour des exceptions." title="La forêt aléatoire : chaque arbre ne voit qu'une partie des maisons et se trompe à sa façon ; le vote de cinquante arbres garde ce sur quoi ils s'accordent." loading="lazy" >}}
+{{< image src="/images/module2/foret-aleatoire.svg" alt="En haut, trois petits plans distance × année : trois arbres, chacun appris sur une partie seulement des vingt maisons, tirée au sort (les maisons laissées de côté sont dessinées en creux, et un compte indique combien l'arbre en a vues), et laissé pousser librement, avec des frontières en rectangles toutes différentes et des îlots à des endroits différents. En bas, un plan plus grand : la frontière obtenue en faisant voter cinquante arbres de ce genre, plus régulière, où les bandes et les îlots des arbres isolés se sont fondus, ne laissant que deux petits îlots autour des exceptions." title="La forêt aléatoire : chaque arbre ne voit qu'une partie des maisons et se trompe à sa façon ; le vote de cinquante arbres garde ce sur quoi ils s'accordent." loading="lazy" >}}
 
 ## Et sur des données neuves ?
 
