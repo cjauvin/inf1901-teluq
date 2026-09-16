@@ -77,10 +77,29 @@ l'AA, et l'un des sens les plus concrets qu'on puisse donner au mot
 ## Le parcours du module
 
 Nous partirons du **modèle le plus simple imaginable**, puis le perfectionnerons
-en butant, chaque fois, sur un obstacle qui appelle l'idée suivante : prédire par
-ressemblance, puis un modèle qui *s'entraîne* vraiment (la descente de gradient),
-puis classer, puis mesurer la généralisation, pour finir par un panorama des
-**trois grandes façons d'apprendre** (supervisé, non supervisé, par renforcement).
+en butant, chaque fois, sur un obstacle qui appelle l'idée suivante.
+
+1. [*Le problème*](docs/module2/10-le-probleme) : prédire un prix, prédire une
+   catégorie, et pourquoi c'est difficile.
+2. [*Le modèle le plus bête*](docs/module2/20-modele-le-plus-bete) : toujours
+   répondre la moyenne, et ce que cet étalon nous apprend.
+3. [*Regarder les données*](docs/module2/30-les-donnees) : une maison, une
+   image, un courriel sont des listes de nombres, donc des points dans un
+   espace.
+4. [*Prédire par ressemblance*](docs/module2/40-predire-par-ressemblance) : les
+   plus proches voisins, la distance, et la première frontière de décision.
+5. [*Un modèle qui s'entraîne*](docs/module2/50-entrainer-un-modele) : la
+   droite, la fonction d'erreur, la descente de gradient.
+6. [*Classer*](docs/module2/60-classer) : la régression logistique, Bayes, et
+   le filtre anti-pourriel.
+7. [*Poser des questions : les arbres de décision*](docs/module2/65-arbres-de-decision) :
+   un modèle qui cherche plutôt qu'il ne descend, et qui s'explique.
+8. [*Généraliser*](docs/module2/70-generaliser) : le jeu de test, ce qu'un
+   modèle peut dessiner, le compromis biais-variance, la régularisation.
+9. [*Bien évaluer un modèle*](docs/module2/75-bien-evaluer) : les fuites, la
+   validation croisée, les métriques, la distribution.
+10. [*Trois façons d'apprendre*](docs/module2/80-trois-facons-d-apprendre) :
+    supervisé, non supervisé, par renforcement.
 
 Et pour situer ce module dans l'ensemble : l'apprentissage automatique n'est
 qu'une région d'un paysage plus vaste, celui de l'intelligence artificielle, que
@@ -90,15 +109,32 @@ le cours parcourt module par module.
 
 ## Objectifs
 
-* Distinguer clairement programmation traditionnelle et apprentissage automatique ;
-* Maîtriser le fil conducteur *données → modèle → erreur → généralisation* ;
-* Comprendre, de l'intérieur, quelques algorithmes classiques (baseline, kNN,
-  régression, classification, k-means) et l'idée de descente de gradient ;
-* Saisir ce que veut dire *généraliser*, et pourquoi c'est le cœur du sujet.
+Au terme de ce module, vous devriez être en mesure de :
+
+* distinguer clairement la programmation traditionnelle de l'apprentissage
+  automatique, et situer celui-ci dans le paysage de l'IA ;
+* expliquer le fil conducteur *données → modèle → erreur → minimisation →
+  généralisation*, et le reconnaître dans n'importe quel algorithme ;
+* décrire de l'intérieur les modèles classiques rencontrés (le modèle bête, les
+  plus proches voisins, la régression linéaire et logistique, Bayes naïf,
+  l'arbre de décision et la forêt aléatoire, k-means) et dire ce qui les
+  distingue ;
+* expliquer comment un modèle s'entraîne (fonction d'erreur, descente de
+  gradient) et ce qu'est un hyperparamètre ;
+* définir le sur-apprentissage (*overfitting*) et le sous-apprentissage, et les
+  relier au compromis biais-variance, à la capacité d'un modèle (linéaire ou
+  non) et à la régularisation ;
+* juger honnêtement un modèle : jeu de test, fuites de données, validation
+  croisée, matrice de confusion, précision et rappel, et la question de la
+  distribution ;
+* distinguer les trois grandes façons d'apprendre (supervisé, non supervisé,
+  par renforcement) par la nature du signal dont le modèle apprend ;
+* expliquer pourquoi l'explicabilité d'un modèle compte, et quels modèles
+  l'offrent.
 
 ## Durée
 
-Trois semaines, soit environ 27 heures.
+Quatre semaines, soit environ 36 heures.
 
 ## Évaluation
 
