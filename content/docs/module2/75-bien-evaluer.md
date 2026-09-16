@@ -295,6 +295,19 @@ ne sait pas traiter. Et pour les grands modèles de langage de l'encart de
 la question devient vertigineuse : quand l'entraînement est tout le Web, où
 finit « en distribution » ?
 
+Une dernière conséquence, et elle dépasse la technique. Un modèle apprend *ce
+qu'il y a* dans ses données, pas ce qui devrait y être. Si les vingt maisons
+du registre viennent toutes des mêmes quartiers, le modèle héritera de leurs
+particularités ; et si des décisions humaines passées ont laissé leur trace
+dans les exemples (des prêts refusés plus souvent à certains groupes, des
+dossiers triés selon des habitudes que nul n'a jamais écrites), le modèle
+apprendra ces habitudes avec le reste, sans le savoir et sans le dire, et les
+appliquera avec l'assurance d'une machine. C'est le **biais des données** : il
+ne se mesure sur aucun jeu de test, puisque le test vient des mêmes données. Un
+score honnête, fiable, pertinent et valable peut donc coiffer un modèle
+injuste ; c'est une raison de plus de regarder d'où viennent les données, et
+non seulement combien il y en a. Le [Module 5](docs/module5) y reviendra.
+
 ## Tout cela portait un nom : l'apprentissage supervisé
 
 Prenons un peu de recul. Depuis la première page de ce module, une chose n'a

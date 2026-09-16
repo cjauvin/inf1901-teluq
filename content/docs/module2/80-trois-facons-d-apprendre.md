@@ -142,6 +142,29 @@ solution.
 
 {{% /details %}}
 
+### Fabriquer soi-même ses réponses : l'auto-supervision
+
+Entre le supervisé, qui exige des étiquettes, et le non-supervisé, qui s'en
+passe, il existe une ruse qui a changé le visage du domaine : **fabriquer les
+étiquettes à partir des données elles-mêmes**. Prenez un texte, cachez-en un
+mot, et demandez au modèle de le deviner : la « bonne réponse » est là, dans
+le texte, sans qu'aucun humain n'ait rien étiqueté. Prenez une photo, cachez-en
+un morceau, et demandez de le reconstituer. Tournez une image, et demandez de
+combien. À chaque fois, le problème a la forme du supervisé, une entrée et une
+réponse attendue, mais la réponse a été *découpée dans la donnée brute*. C'est
+l'apprentissage **auto-supervisé** (*self-supervised learning*).
+
+La ruse paraît modeste ; elle est immense, parce qu'elle lève la barrière de
+l'étiquetage. Le Web contient des milliers de milliards de mots, tous
+disponibles, sans qu'il en coûte une seule heure de travail humain : chaque
+phrase est un exercice avec son corrigé. C'est ainsi, en apprenant à prédire
+le mot suivant, que les grands modèles de langage du [Module 4](docs/module4)
+sont entraînés, et c'est pour cela qu'ils ont pu lire une bonne partie de ce
+que l'humanité a écrit. Le supervisé leur fournit ensuite, en bien plus petites
+quantités, les réponses notées par des humains dont l'encart plus haut
+parlait ; mais le gros de leur savoir vient de ce jeu de devinettes avec
+eux-mêmes.
+
 ## Apprendre par l'expérience : le renforcement
 
 Reste une troisième situation, très différente des deux premières. Pas

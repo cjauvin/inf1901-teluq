@@ -73,6 +73,22 @@ retrouverons avec les réseaux de neurones (Module&nbsp;3) et les plongements
 distance brute fait déjà très bien l'affaire.
 {{% /hint %}}
 
+{{% hint warning %}}
+**La malédiction de la dimension.** Il y a une autre raison, plus mathématique,
+pour laquelle la distance perd de son sens quand les dimensions se
+multiplient. Dans un plan, vingt maisons suffisent à peupler l'espace : chacune
+a des voisines proches. Dans un espace à un million de dimensions, celui des
+pixels, vingt exemples, ou vingt millions, sont perdus dans une immensité vide,
+et *tout* est loin de *tout* : les distances entre les points se ressemblent
+toutes, et « le plus proche voisin » ne l'est plus guère. C'est la
+**malédiction de la dimension** (*curse of dimensionality*) : chaque
+caractéristique ajoutée agrandit l'espace d'un facteur, et le nombre d'exemples
+nécessaire pour le remplir explose. Elle frappe kNN de plein fouet, et c'est
+l'une des raisons pour lesquelles, sur des images ou du texte, on cherche
+d'abord à *réduire* le nombre de dimensions à quelques-unes qui comptent, une
+idée que les [Modules 3](docs/module3) et [4](docs/module4) développeront.
+{{% /hint %}}
+
 Nous tenons donc notre mesure de ressemblance, fiable pour des données
 tabulaires comme nos maisons. Il ne reste plus qu'à nous en servir pour prédire.
 
