@@ -21,7 +21,11 @@ Reprenons notre nuage de maisons (la superficie en horizontale, le prix en
 verticale). Faire passer une droite à travers ce nuage, c'est parier qu'il existe
 une relation simple et régulière entre la taille d'une maison et son prix :
 « chaque mètre carré supplémentaire ajoute, en gros, tant de dollars ». Cette
-droite, c'est notre modèle.
+droite, c'est notre modèle. C'est aussi le plus vieux modèle de ce module : Legendre
+et Gauss ajustaient déjà des droites aux moindres carrés vers 1805, pour
+prédire la trajectoire des comètes, et c'est Francis Galton qui, en 1886, lui a
+donné le nom de *régression*, en étudiant la taille des enfants par rapport à
+celle de leurs parents.
 
 {{< image src="/images/module2/maisons-droite.svg" alt="Le nuage de maisons traversé par une droite inclinée qui en épouse la tendance : le modèle de régression linéaire." title="La droite qui épouse le nuage : voilà notre modèle." loading="lazy" >}}
 

@@ -56,6 +56,30 @@ Chaque algorithme classique que nous rencontrerons, du plus bête au plus
 astucieux, n'est qu'une **variation** sur cette même trame. Une fois cette trame
 en main, l'apprentissage automatique cesse d'être une boîte noire.
 
+## Une vieille parenté : la statistique
+
+Une chose doit être dite d'emblée, parce que le vocabulaire à la mode la
+cache : l'apprentissage automatique n'est pas né avec les ordinateurs, encore
+moins avec les années 2010. Presque tout ce que vous verrez dans ce module est
+de la **statistique**, parfois vieille de deux siècles. La droite ajustée aux
+moindres carrés date de Legendre et de Gauss, vers 1805 ; le théorème de
+Bayes, de 1763 ; le mot *régression* lui-même, de Galton, en 1886. Les plus
+proches voisins, les arbres de décision, les forêts sont l'œuvre de
+statisticiens, et les mots que nous emploierons, échantillon, distribution,
+biais, variance, test, sont les leurs.
+
+Où passe alors la frontière ? Moins dans les outils que dans la **question
+posée**. La statistique classique cherche à *expliquer* : quel est l'effet de
+la superficie sur le prix, et avec quelle certitude ? L'apprentissage
+automatique cherche à *prédire* : quel sera le prix de *cette* maison ? Et
+pour bien prédire, il accepte des modèles si complexes qu'on ne sait plus les
+lire, pourvu qu'ils marchent sur des données neuves. Un statisticien devenu
+pionnier de l'apprentissage automatique, Leo Breiman, a décrit cette divergence
+dans un texte célèbre, [« Statistical Modeling: The Two
+Cultures »](https://projecteuclid.org/journals/statistical-science/volume-16/issue-3/Statistical-Modeling--The-Two-Cultures-with-comments-and-a/10.1214/ss/1009213726.full)
+(2001) : deux cultures, un même socle. Nous signalerons cette parenté au
+passage, chaque fois qu'un modèle nous viendra tout droit des statistiques.
+
 ## Le but ultime : généraliser
 
 La notion la plus profonde de l'AA, celle qui fait en sorte de l'associer au

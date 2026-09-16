@@ -104,6 +104,9 @@ accidents.
 
 Ce nombre de voisins consultés, on le note **k**, d'où le nom de l'algorithme :
 les **k plus proches voisins** (*k-nearest neighbors*, ou kNN).
+L'idée a été formalisée en 1951 par deux statisticiens, Evelyn Fix et Joseph
+Hodges, dans un rapport rédigé pour l'armée de l'air américaine : c'est de la
+statistique avant d'être de l'informatique.
 
 Nous venons de faire une **régression** : la cible était un prix, un nombre, et
 nous l'avons obtenu en *moyennant* nos voisins. Et pour une **classification** ?

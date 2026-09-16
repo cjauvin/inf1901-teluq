@@ -243,6 +243,16 @@ une erreur sur des exemples**. La question que nous posions dès la première pa
 *en quoi est-ce de l'intelligence ?* — reste ouverte, et c'est très bien ainsi ;
 mais vous savez désormais, concrètement, ce qui se passe sous le capot.
 
+Un dernier mot, pour boucler la parenté annoncée à l'ouverture du module. Tout
+ce que nous avons fait ici, un statisticien l'aurait reconnu : ajuster une
+droite, estimer une probabilité, tirer un échantillon, se méfier d'un score. Ce
+qui a changé, ce n'est pas le socle, c'est l'accent et l'échelle. L'accent :
+prédire d'abord, expliquer ensuite, et parfois jamais. L'échelle : des millions
+d'exemples, des milliards de paramètres, et des modèles que plus personne ne
+lit. C'est à cette échelle que la statistique a pris le nom d'apprentissage
+automatique, et c'est là qu'elle a produit quelque chose que ses fondateurs
+n'auraient pas prévu.
+
 Il ne reste plus qu'à changer d'échelle. Au [**Module 3**](docs/module3), nous empilerons ces
 fonctions réglables en **réseaux de neurones** profonds, et verrons pourquoi
 c'est là que l'image et le langage prennent enfin leur envol. Au [**Module 4**](docs/module4),

@@ -298,7 +298,8 @@ doit pouvoir être contestée (un prêt refusé, un diagnostic, un dossier trié
 une peine évaluée), un modèle qui ne peut pas s'expliquer est difficilement
 acceptable. Cette lisibilité vaut alors plus que quelques points de
 performance, et c'est l'une des raisons pour lesquelles les arbres, nés dans
-les années 1960 et 1980, n'ont jamais quitté la boîte à outils. Nous
+les années 1960 et mis au point en 1984 par quatre statisticiens (c'est la
+méthode CART, que nous avons suivie ici), n'ont jamais quitté la boîte à outils. Nous
 retrouverons cette tension entre performance et explicabilité, en grand, avec
 les grands modèles de langage du [Module 4](docs/module4).
 
@@ -320,7 +321,8 @@ données (un tirage au sort des maisons, un sous-ensemble des
 caractéristiques), et l'on fait voter l'ensemble, ou l'on moyenne ses
 réponses. Les erreurs de chaque arbre, différentes, se compensent ; la réponse
 collective est plus stable et plus juste que celle de n'importe quel arbre
-seul. C'est la **forêt aléatoire** (*random forest*), et sa cousine plus ambitieuse, le
+seul. C'est la **forêt aléatoire** (*random forest*), proposée par Leo Breiman en
+2001, et sa cousine plus ambitieuse, le
 *gradient boosting*, qui fait pousser chaque arbre pour corriger les erreurs
 des précédents. Sur des données en tableau, comme nos maisons ou les passagers
 du *Titanic*, ces forêts restent, encore aujourd'hui, ce qu'il y a de plus

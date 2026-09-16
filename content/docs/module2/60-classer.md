@@ -50,9 +50,10 @@ tel prix. Ici, on la lit *latéralement* : de quel **côté** de la ligne tombe
 point ? D'un côté, on répond `bleu` ; de l'autre, `rouge`. La même équation,
 $m x_1 + b$, ne sert plus à calculer une valeur mais à partager le plan en deux.
 
-Cet algorithme s'appelle la **régression logistique** et, malgré ce nom
-trompeur (il contient « régression » alors qu'il *classe*), c'est l'un des
-classificateurs les plus utilisés au monde. Essayez-le : dans l'applet, déplacez
+Cet algorithme s'appelle la **régression logistique** ; mis au point par des
+statisticiens dans les années 1950, il est, malgré ce nom trompeur (il
+contient « régression » alors qu'il *classe*), l'un des classificateurs les
+plus utilisés au monde. Essayez-le : dans l'applet, déplacez
 la ligne de décision pour séparer au mieux les deux groupes. Vous ajustez ainsi
 ses deux paramètres à la main, exactement comme vous déplaciez la droite de
 régression au chapitre précédent. Vous pouvez aussi ajouter, retirer ou déplacer
@@ -196,8 +197,8 @@ dit, la probabilité du point *sachant* la classe. Mais ce qu'on veut, c'est
 l'inverse : « ce point étant donné, quelle est la probabilité qu'il soit bleu ? »
 Renverser ainsi le conditionnement, passer de *probabilité du point sachant la
 classe* à *probabilité de la classe sachant le point*, est exactement ce que
-permet un résultat fondamental des probabilités, le **théorème de Bayes**. C'est
-lui qui donne son nom à la méthode, la **classification bayésienne naïve**.
+permet un résultat fondamental des probabilités, le **théorème de Bayes**, publié en 1763.
+C'est lui qui donne son nom à la méthode, la **classification bayésienne naïve**.
 
 Voilà donc deux routes vers le même but :
 
