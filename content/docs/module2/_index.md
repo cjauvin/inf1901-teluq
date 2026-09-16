@@ -66,7 +66,10 @@ moindres carrés date de Legendre et de Gauss, vers 1805 ; le théorème de
 Bayes, de 1763 ; le mot *régression* lui-même, de Galton, en 1886. Les plus
 proches voisins, les arbres de décision, les forêts sont l'œuvre de
 statisticiens, et les mots que nous emploierons, échantillon, distribution,
-biais, variance, test, sont les leurs.
+biais, variance, test, sont les leurs. L'autre parent est la **théorie des
+probabilités** : sous chaque modèle de ce module, on trouvera une
+probabilité, une vraisemblance ou une croyance que l'on révise, et le théorème
+de Bayes y jouera un rôle central.
 
 Où passe alors la frontière ? Moins dans les outils que dans la **question
 posée**. La statistique classique cherche à *expliquer* : quel est l'effet de

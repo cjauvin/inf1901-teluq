@@ -199,6 +199,19 @@ Deux façons d'échouer, donc, et elles portent chacune un nom :
   *systématique* à capturer la vraie forme, quels que soient les points qu'on lui
   montre.
 
+{{% hint info %}}
+**Qu'est-ce que le bruit ?** Nous allons dire qu'un modèle trop souple
+« épouse le bruit ». Il faut entendre par là que des données ne sont jamais le
+signal pur. Le prix d'une maison, c'est une tendance (plus c'est grand, plus
+c'est cher) *plus* un aléa : l'humeur du vendeur, la saison, une négociation,
+mille choses que le registre n'a pas notées. Nos vingt maisons ne sont pas
+*sur* la droite, elles sont *autour* : l'écart de chacune est ce bruit. Un bon
+modèle apprend la tendance et laisse le bruit ; un modèle trop souple apprend
+les deux, et le bruit qu'il a appris ne se reproduira pas dans la maison
+suivante, puisque c'est du hasard. Toute la courbe en U découle de là : il y
+a, dans toute donnée, une part qu'il ne faut *pas* apprendre.
+{{% /hint %}}
+
 Et voici le nœud — l'une des idées les plus profondes du domaine. Quand on rend
 un modèle plus souple (ici, en diminuant $k$), son erreur d'entraînement ne fait
 que baisser : un modèle flexible colle toujours mieux à ce qu'il a déjà vu. Mais

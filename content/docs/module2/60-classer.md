@@ -363,6 +363,54 @@ familles, discriminative et générative, se rejoignent une fois de plus.
 
 {{% /details %}}
 
+## Sous les modèles, des probabilités
+
+Prenons un peu de hauteur avant de quitter la classification, car un fil
+discret a couru sous toute cette page, et il mérite d'être tiré : celui des
+**probabilités**. La régression logistique ne répond pas « bleu » ou
+« rouge » ; elle répond « bleu à 80 % ». Bayes non plus : il compare deux
+probabilités. Ce n'est pas un détail d'implantation. Un modèle qui donne une
+probabilité exprime une **croyance**, avec son degré de certitude, et cette
+croyance vaut souvent plus que le verdict : un filtre qui jette un courriel à
+51 % et un autre à 99,9 % n'a pas la même chose à dire, et le seuil que nous
+déplacerons dans [*Bien évaluer un modèle*](docs/module2/75-bien-evaluer)
+n'existe que parce que le modèle sait douter. Encore faut-il que ces
+probabilités soient *honnêtes* : parmi les courriels qu'un bon modèle jette
+« à 90 % », neuf sur dix doivent réellement être des pourriels. C'est ce
+qu'on appelle la **calibration**, et elle se vérifie.
+
+Le fil remonte plus loin qu'on ne croit. Rappelez-vous la fonction d'erreur de
+la droite, la moyenne des carrés des écarts, et celle de la régression
+logistique, qui punit d'autant plus fort que le modèle se trompe avec aplomb.
+Elles semblent sans rapport ; elles sont deux visages d'un même principe, le
+plus important de toute la statistique : le **maximum de vraisemblance**. Au
+lieu de demander « quels paramètres réduisent l'erreur ? », on demande
+« sous quels paramètres les données que j'ai observées étaient-elles les plus
+*probables* ? ». Supposez que les prix des maisons s'écartent de la droite
+selon une courbe en cloche : chercher la droite qui rend les vingt prix les
+plus probables, c'est *exactement* minimiser les carrés des écarts. Supposez
+que chaque étiquette est tirée avec la probabilité que le modèle annonce :
+chercher les paramètres qui rendent les étiquettes observées les plus
+probables, c'est exactement la fonction d'erreur de la régression logistique.
+Minimiser une erreur et maximiser une vraisemblance, c'est la même descente,
+vue de deux côtés.
+
+Reste le théorème de Bayes, que nous avons employé comme une formule. Il
+décrit en réalité une manière d'**apprendre**, et peut-être la plus profonde.
+On part d'une croyance *a priori* : avant d'avoir lu quoi que ce soit, ce
+courriel a, disons, une chance sur dix d'être un pourriel, parce que c'est la
+proportion habituelle. Puis on observe une évidence, les mots du courriel, et
+le théorème dit comment **réviser** la croyance : la probabilité *a
+posteriori* est la croyance de départ, corrigée par ce que l'évidence rend plus
+ou moins probable. Chaque mot lu déplace un peu le curseur ; « gratuit » le
+pousse vers le pourriel, « réunion » vers le courriel légitime ; et l'a
+posteriori d'aujourd'hui devient l'a priori de demain. Apprendre, dans cette
+vision, c'est *mettre à jour ses croyances à mesure que l'évidence arrive*, et
+le théorème de Bayes est la règle exacte de cette mise à jour. La vision
+bayésienne irrigue tout le domaine, jusqu'à la façon dont on tente,
+aujourd'hui, de faire dire aux grands modèles à quel point ils sont sûrs de ce
+qu'ils affirment.
+
 Trois modèles qui s'entraînent, donc, et tous par le même moteur : une
 fonction d'erreur qu'on fait descendre. Avant de nous demander ce que valent
 leurs prédictions sur des données neuves, un dernier modèle, d'une tout autre
