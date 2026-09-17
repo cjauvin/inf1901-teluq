@@ -22,7 +22,7 @@ allait hanter tout un domaine pour les décennies à venir :
 Turing n'est pas un inconnu. Pendant la guerre, il a joué un rôle décisif dans le
 décryptage des communications de la machine **Enigma** des armées allemandes, en
 concevant des dispositifs électromécaniques capables d'explorer mécaniquement des
-millions de combinaisons — un effort longtemps resté secret, dont les historiens
+millions de combinaisons, un effort longtemps resté secret, dont les historiens
 estiment qu'il a pu écourter le conflit de plusieurs années. Turing sait donc,
 mieux que quiconque à son époque, qu'une machine peut accomplir des tâches qu'on
 croyait réservées à l'esprit humain. Mais une machine qui *déchiffre* est-elle
@@ -45,11 +45,11 @@ Plutôt que de s'enliser dans ce débat, il fait un coup de génie : il **rempl
 la question par une autre**, qu'on peut réellement trancher.
 
 À la place de « une machine peut-elle penser ? », il propose une épreuve
-concrète, le **jeu de l'imitation** — ce qu'on appelle aujourd'hui le **test de
+concrète, le **jeu de l'imitation**, ce qu'on appelle aujourd'hui le **test de
 Turing**. Imaginez un juge humain qui dialogue par écrit avec deux interlocuteurs
 cachés : un être humain et une machine. Les messages passent par clavier, pour
 qu'aucune voix ni aucun visage ne trahisse qui est qui. Le juge peut poser
-n'importe quelle question — sur la météo, la poésie, l'arithmétique, ses
+n'importe quelle question : sur la météo, la poésie, l'arithmétique, ses
 souvenirs d'enfance. Sa tâche : deviner lequel des deux est la machine. Si, au
 fil de nombreuses parties, la machine parvient à se faire passer pour un humain
 aussi souvent qu'un humain lui-même y parvient, alors, dit Turing, il n'y aura
@@ -66,24 +66,24 @@ question de fond, que les philosophes débattent encore aujourd'hui :
 {{% details "Au fond, qu'est-ce qui ferait qu'une machine « pense » vraiment ?" %}}
 La proposition de Turing s'inscrit dans l'air du temps de 1950, dominé par le
 **behaviorisme** : ce courant de la psychologie soutenait qu'on ne fait pas de
-science avec ce qui se passe « dans la tête » — invisible et invérifiable — mais
+science avec ce qui se passe « dans la tête » (invisible et invérifiable), mais
 seulement avec le **comportement observable**. Juger la machine sur ses réponses
 plutôt que sur sa vie intérieure, c'est tout à fait dans cet esprit. Mais une
 thèse plus précise allait bientôt donner au rêve de l'IA sa véritable assise
 philosophique : le **fonctionnalisme**. Son idée : un état mental n'est pas
-défini par la *matière* qui le produit, mais par le *rôle* qu'il joue — ses
+défini par la *matière* qui le produit, mais par le *rôle* qu'il joue : ses
 causes et ses effets. La douleur, par exemple, c'est « ce qui est causé par une
 blessure et qui cause le retrait et la plainte », peu importe que ce soit réalisé
 par des neurones humains, le système nerveux d'un poulpe... ou les circuits d'un
 ordinateur. Vu sous cet angle, la frontière entre l'esprit et la machine devient
 poreuse dans les deux sens : non seulement un ordinateur pourrait penser, mais
-**notre propre cerveau peut être vu comme une sorte d'« ordinateur biologique »**
-— un support de chair qui réalise, lui aussi, une certaine organisation. Si
+**notre propre cerveau peut être vu comme une sorte d'« ordinateur biologique »**,
+un support de chair qui réalise, lui aussi, une certaine organisation. Si
 l'esprit est une *organisation* et non une *substance*, alors rien n'interdit
 qu'il tourne sur du silicium comme il tourne sur des neurones : c'est exactement
-le permis qui autorise à prendre l'IA au sérieux. Nous retrouverons cette idée —
+le permis qui autorise à prendre l'IA au sérieux. Nous retrouverons cette idée,
 et sa contestation la plus célèbre, la *Chambre chinoise* du philosophe John
-Searle — au Module 5.
+Searle, au [Module 5](docs/module5).
 {{% /details %}}
 
 {{% hint warning %}}
@@ -111,7 +111,7 @@ Son résultat est stupéfiant : ce mécanisme élémentaire peut, en principe,
 définition précise à une notion qu'on emploie tous les jours sans jamais la
 définir : celle d'**algorithme**. Un algorithme, c'est une recette finie d'étapes
 sans ambiguïté ; et l'on admet que tout ce qu'un algorithme peut accomplir, une
-machine de Turing peut l'accomplir aussi — et réciproquement. « Algorithme »,
+machine de Turing peut l'accomplir aussi, et réciproquement. « Algorithme »,
 « machine de Turing » et « ce qui est calculable » désignent ainsi, au fond, une
 seule et même chose. Mieux encore : il existe une *machine universelle*, capable
 d'imiter n'importe quelle autre machine, simplement en recevant sa description en
@@ -158,10 +158,10 @@ formelles assez puissant pour faire de l'arithmétique contient des énoncés qu
 sont **vrais**, mais que le système est **incapable de prouver**. La *vérité*
 déborde toujours la *démonstration* : aucun jeu de règles, si complet soit-il, ne
 pourra jamais tout capturer. Et le ressort de la preuve est une idée qui va
-devenir centrale pour nous — l'**auto-référence**. Gödel construit, à l'intérieur
+devenir centrale pour nous : l'**auto-référence**. Gödel construit, à l'intérieur
 du système, un énoncé qui parle de lui-même et affirme en substance : *« Cet
 énoncé n'est pas démontrable. »* Si le système le démontrait, il prouverait
-quelque chose de faux ; il ne peut donc pas le démontrer — et c'est justement ce
+quelque chose de faux ; il ne peut donc pas le démontrer, et c'est justement ce
 qui le rend vrai. Une boucle qui se mord la queue, et dont le système ne peut pas
 sortir.
 
@@ -172,9 +172,9 @@ programme donné finira par s'arrêter ou tournera à l'infini). Le père de l'i
 « penser = calculer » a donc, du même coup, tracé les **frontières** du calcul.
 Le pari de l'IA naît ainsi avec, inscrite en lui, la trace de ses propres limites.
 
-{{< image src="/images/module1/probleme-arret.svg" alt="Schéma : un programme P, montré comme une fenêtre de code, est donné en entrée à un autre programme H, un « détecteur d'arrêt » censé dire en sortie si P s'arrête ou tourne à l'infini. La légende conclut qu'un tel programme H ne peut pas exister." title="Le problème de l'arrêt : un programme qui prendrait un autre programme en entrée pour prédire s'il s'arrête — et pourquoi il ne peut pas exister." loading="lazy" >}}
+{{< image src="/images/module1/probleme-arret.svg" alt="Schéma : un programme P, montré comme une fenêtre de code, est donné en entrée à un autre programme H, un « détecteur d'arrêt » censé dire en sortie si P s'arrête ou tourne à l'infini. La légende conclut qu'un tel programme H ne peut pas exister." title="Le problème de l'arrêt : un programme qui prendrait un autre programme en entrée pour prédire s'il s'arrête, et pourquoi il ne peut pas exister." loading="lazy" >}}
 
-Que conclure, pour notre question — une machine peut-elle penser ? Étonnamment, on
+Que conclure, pour notre question, une machine peut-elle penser ? Étonnamment, on
 a tiré de Gödel **deux leçons radicalement opposées**, et toutes deux nous
 accompagneront jusqu'au bout du cours.
 
@@ -182,15 +182,15 @@ accompagneront jusqu'au bout du cours.
 tiré l'argument anti-IA le plus célèbre : *nous*, humains, sommes capables de
 *voir* qu'un tel énoncé est vrai, là où la machine reste bloquée. Si notre esprit
 saisit une vérité qu'aucun système formel ne peut prouver, c'est donc qu'il ne se
-réduit **pas** à un système formel — que penser ne se ramène pas à du calcul. Nous
-reviendrons longuement sur cette thèse au **Module 5**, aux côtés d'un autre
+réduit **pas** à un système formel, autrement dit que penser ne se ramène pas à du calcul. Nous
+reviendrons longuement sur cette thèse au [**Module 5**](docs/module5), aux côtés d'un autre
 adversaire célèbre de l'IA, le philosophe John Searle.
 
 **Seconde lecture : le théorème est un moteur.** Pour le penseur américain
-**Douglas Hofstadter** — auteur du livre culte *Gödel, Escher, Bach* (1979),
-où il développe précisément cette idée —, la boucle auto-référentielle de Gödel
+**Douglas Hofstadter** (auteur du livre culte *Gödel, Escher, Bach* (1979),
+où il développe précisément cette idée), la boucle auto-référentielle de Gödel
 n'est pas une infirmité, mais le secret même de l'esprit. Un système assez riche pour se
-**représenter lui-même** engendre une « **boucle étrange** » — et c'est de ce
+**représenter lui-même** engendre une « **boucle étrange** », et c'est de ce
 repli sur soi qu'émergeraient, selon lui, le sentiment d'un « je », le sens, la
 conscience. Loin d'interdire la pensée à la machine, l'auto-référence en serait la
 **source**. Nous recroiserons Hofstadter et ses idées à plusieurs reprises dans ce
@@ -201,29 +201,29 @@ Un même théorème, donc, et deux conclusions inverses : l'auto-référence co
 toujours pas tranché. Retenez surtout l'essentiel : dès sa naissance, le rêve
 d'une pensée mécanique avance avec une ombre attachée à ses pas.
 
-{{% details "Pour aller plus loin : ce que dit — et ne dit pas — le théorème de Gödel" %}}
+{{% details "Pour aller plus loin : ce que dit, et ne dit pas, le théorème de Gödel" %}}
 Le théorème vaut pour tout système formel **cohérent** (sans contradiction) et
 assez riche pour exprimer l'arithmétique. Gödel établit en fait deux résultats : un
 tel système ne peut pas prouver tous les énoncés arithmétiques vrais (**premier
 théorème**), et il ne peut pas non plus prouver sa **propre cohérence** (**second
 théorème**). Le tour de force technique est le *codage de Gödel* : numéroter chaque
-énoncé pour que le système puisse, en parlant de nombres, **parler de lui-même** —
+énoncé pour que le système puisse, en parlant de nombres, **parler de lui-même**,
 et fabriquer ainsi la phrase « je ne suis pas démontrable ».
 
 Cette phrase est une variante subtile du **paradoxe du menteur** (« cette phrase
 est fausse »), dont Gödel s'est explicitement inspiré. Mais là où le menteur
 s'effondre en pure contradiction, Gödel remplace « faux » par « indémontrable » :
-sa phrase ne se contredit pas — elle est simplement **vraie sans être
+sa phrase ne se contredit pas : elle est simplement **vraie sans être
 démontrable**. Tout son génie tient dans ce glissement, qui change un paradoxe
 stérile en théorème.
 
-{{< image src="/images/module1/paradoxe-menteur.svg" alt="Un personnage déclare « Je mens toujours. » ; un symbole de boucle sans fin illustre que l'affirmation ne peut être ni vraie ni fausse — s'il dit vrai, alors il ment, et s'il ment, alors il dit vrai." title="Le paradoxe du menteur : une phrase qui se mord la queue." loading="lazy" >}}
+{{< image src="/images/module1/paradoxe-menteur.svg" alt="Un personnage déclare « Je mens toujours. » ; un symbole de boucle sans fin illustre que l'affirmation ne peut être ni vraie ni fausse : s'il dit vrai, alors il ment, et s'il ment, alors il dit vrai." title="Le paradoxe du menteur : une phrase qui se mord la queue." loading="lazy" >}}
 
 Attention aux contresens : le théorème ne dit **pas** que « les mathématiques sont
 fausses », ni que la vérité serait une affaire d'opinion. C'est une limite
 **précise** sur ce qu'une démonstration *formelle, à l'intérieur d'un système
 donné*, peut atteindre. On peut toujours prouver l'énoncé récalcitrant dans un
-système **plus puissant** — qui aura alors, à son tour, son propre angle mort.
+système **plus puissant**, qui aura alors, à son tour, son propre angle mort.
 Quant à l'argument de Penrose, il reste **contesté** : ses critiques objectent que
 rien ne garantit qu'un humain puisse réellement « voir » la vérité en question sans
 déjà supposer, gratuitement, la cohérence du système.
@@ -233,7 +233,7 @@ déjà supposer, gratuitement, la cohérence du système.
 
 L'histoire personnelle de Turing, elle, se termine mal. En 1952, il est poursuivi
 par la justice britannique en raison de son homosexualité, alors illégale, et
-condamné à subir un traitement hormonal — une castration chimique. Mis au ban,
+condamné à subir un traitement hormonal, une castration chimique. Mis au ban,
 privé de son habilitation de sécurité, il meurt en 1954, à seulement 41 ans, par
 empoisonnement au cyanure, dans des circonstances que l'on a longtemps tenues
 pour un suicide. Il ne verra jamais les machines pensantes qu'il avait
