@@ -350,7 +350,10 @@ qu'un modèle lisible peut décrire, et juge le modèle à sa fidélité suppos�
 ce mécanisme. La seconde, celle de l'apprentissage automatique, traite le
 mécanisme comme inconnu, et ne juge un modèle qu'à une chose : la qualité de
 ses prédictions sur des données neuves. L'arbre seul appartient à la première
-culture ; la forêt, à la seconde. Et Breiman relevait une conséquence
+culture ; la forêt, à la seconde. Breiman y voit un **dilemme d'Occam** : le
+rasoir d'Occam recommande le modèle le plus simple, mais sur des données
+réelles le modèle le plus précis est rarement le plus simple, et il faut
+choisir entre comprendre et prédire, là où l'on aurait aimé avoir les deux. Et Breiman relevait une conséquence
 troublante, qu'il appelait l'**effet Rashomon**, du nom du film où quatre
 témoins racontent quatre versions du même crime : sur les mêmes données, des
 modèles très différents sont souvent *également* bons. Vous l'avez vu de vos

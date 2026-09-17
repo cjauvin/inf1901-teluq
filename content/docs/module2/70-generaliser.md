@@ -256,6 +256,15 @@ peine. La bille de la descente de gradient roule toujours vers le creux, mais
 dans un paysage remodelé, où les régions « trop compliquées » ont été
 surélevées.
 
+Ce principe a un nom vieux de sept siècles, le **rasoir d'Occam** : entre deux
+explications qui rendent compte des mêmes faits, préférer la plus simple. La
+pénalité en est la traduction chiffrée. Elle ne dit pas que le monde *est*
+simple ; elle dit que, tant que les données ne l'exigent pas, un modèle n'a
+pas le droit d'être compliqué, et que chaque complication doit se payer par un
+gain visible. La courbe en U de la section précédente est, en somme, la preuve
+expérimentale du rasoir : passé un point, la complexité n'achète plus que du
+bruit.
+
 Pour voir la pénalité à l'œuvre, il nous faut un modèle assez souple pour
 surapprendre. Prenons la droite d'*Un modèle qui s'entraîne* et donnons-lui du
 jeu : au lieu de $\text{prix} = m \times \text{superficie} + b$, autorisons
