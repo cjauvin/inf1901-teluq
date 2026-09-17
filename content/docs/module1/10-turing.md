@@ -49,7 +49,7 @@ concrète, le **jeu de l'imitation**, ce qu'on appelle aujourd'hui le **test de
 Turing**. Imaginez un juge humain qui dialogue par écrit avec deux interlocuteurs
 cachés : un être humain et une machine. Les messages passent par clavier, pour
 qu'aucune voix ni aucun visage ne trahisse qui est qui. Le juge peut poser
-n'importe quelle question : sur la météo, la poésie, l'arithmétique, ses
+n'importe quelle question : sur la météo, la poésie, l'arithmétique, ses
 souvenirs d'enfance. Sa tâche : deviner lequel des deux est la machine. Si, au
 fil de nombreuses parties, la machine parvient à se faire passer pour un humain
 aussi souvent qu'un humain lui-même y parvient, alors, dit Turing, il n'y aura
@@ -71,7 +71,7 @@ seulement avec le **comportement observable**. Juger la machine sur ses réponse
 plutôt que sur sa vie intérieure, c'est tout à fait dans cet esprit. Mais une
 thèse plus précise allait bientôt donner au rêve de l'IA sa véritable assise
 philosophique : le **fonctionnalisme**. Son idée : un état mental n'est pas
-défini par la *matière* qui le produit, mais par le *rôle* qu'il joue : ses
+défini par la *matière* qui le produit, mais par le *rôle* qu'il joue : ses
 causes et ses effets. La douleur, par exemple, c'est « ce qui est causé par une
 blessure et qui cause le retrait et la plainte », peu importe que ce soit réalisé
 par des neurones humains, le système nerveux d'un poulpe... ou les circuits d'un
@@ -158,7 +158,7 @@ formelles assez puissant pour faire de l'arithmétique contient des énoncés qu
 sont **vrais**, mais que le système est **incapable de prouver**. La *vérité*
 déborde toujours la *démonstration* : aucun jeu de règles, si complet soit-il, ne
 pourra jamais tout capturer. Et le ressort de la preuve est une idée qui va
-devenir centrale pour nous : l'**auto-référence**. Gödel construit, à l'intérieur
+devenir centrale pour nous : l'**auto-référence**. Gödel construit, à l'intérieur
 du système, un énoncé qui parle de lui-même et affirme en substance : *« Cet
 énoncé n'est pas démontrable. »* Si le système le démontrait, il prouverait
 quelque chose de faux ; il ne peut donc pas le démontrer, et c'est justement ce
@@ -213,11 +213,11 @@ et fabriquer ainsi la phrase « je ne suis pas démontrable ».
 Cette phrase est une variante subtile du **paradoxe du menteur** (« cette phrase
 est fausse »), dont Gödel s'est explicitement inspiré. Mais là où le menteur
 s'effondre en pure contradiction, Gödel remplace « faux » par « indémontrable » :
-sa phrase ne se contredit pas : elle est simplement **vraie sans être
+sa phrase ne se contredit pas : elle est simplement **vraie sans être
 démontrable**. Tout son génie tient dans ce glissement, qui change un paradoxe
 stérile en théorème.
 
-{{< image src="/images/module1/paradoxe-menteur.svg" alt="Un personnage déclare « Je mens toujours. » ; un symbole de boucle sans fin illustre que l'affirmation ne peut être ni vraie ni fausse : s'il dit vrai, alors il ment, et s'il ment, alors il dit vrai." title="Le paradoxe du menteur : une phrase qui se mord la queue." loading="lazy" >}}
+{{< image src="/images/module1/paradoxe-menteur.svg" alt="Un personnage déclare « Je mens toujours. » ; un symbole de boucle sans fin illustre que l'affirmation ne peut être ni vraie ni fausse : s'il dit vrai, alors il ment, et s'il ment, alors il dit vrai." title="Le paradoxe du menteur : une phrase qui se mord la queue." loading="lazy" >}}
 
 Attention aux contresens : le théorème ne dit **pas** que « les mathématiques sont
 fausses », ni que la vérité serait une affaire d'opinion. C'est une limite
