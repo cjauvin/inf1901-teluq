@@ -338,6 +338,30 @@ que ce sur quoi les arbres s'accordent.
 
 {{< image src="/images/module2/foret-aleatoire.svg" alt="En haut, trois petits plans distance × année : trois arbres, chacun appris sur une partie seulement des vingt maisons, tirée au sort (les maisons laissées de côté sont dessinées en creux, et un compte indique combien l'arbre en a vues), et laissé pousser librement, avec des frontières en rectangles toutes différentes et des îlots à des endroits différents. En bas, un plan plus grand : la frontière obtenue en faisant voter cinquante arbres de ce genre, plus régulière, où les bandes et les îlots des arbres isolés se sont fondus, ne laissant que deux petits îlots autour des exceptions." title="La forêt aléatoire : chaque arbre ne voit qu'une partie des maisons et se trompe à sa façon ; le vote de cinquante arbres garde ce sur quoi ils s'accordent." loading="lazy" >}}
 
+{{% hint info %}}
+**Deux cultures.** L'homme qui a inventé la forêt aléatoire, Leo Breiman, était
+un statisticien passé du côté de l'apprentissage automatique, et il a tiré de
+ce passage un texte devenu classique, [« Statistical Modeling: The Two
+Cultures »](https://projecteuclid.org/journals/statistical-science/volume-16/issue-3/Statistical-Modeling--The-Two-Cultures-with-comments-and-a/10.1214/ss/1009213726.full)
+(2001), que l'accueil de ce module annonçait. Sa thèse : deux cultures se
+partagent l'analyse des données. La première, celle de la statistique
+classique, suppose que les données ont été produites par un mécanisme simple
+qu'un modèle lisible peut décrire, et juge le modèle à sa fidélité supposée à
+ce mécanisme. La seconde, celle de l'apprentissage automatique, traite le
+mécanisme comme inconnu, et ne juge un modèle qu'à une chose : la qualité de
+ses prédictions sur des données neuves. L'arbre seul appartient à la première
+culture ; la forêt, à la seconde. Et Breiman relevait une conséquence
+troublante, qu'il appelait l'**effet Rashomon**, du nom du film où quatre
+témoins racontent quatre versions du même crime : sur les mêmes données, des
+modèles très différents sont souvent *également* bons. Vous l'avez vu de vos
+yeux : la distance et l'année séparaient nos maisons tout aussi bien. Il n'y a
+donc pas *le* bon modèle, et l'explication qu'en tire un arbre est une
+explication parmi d'autres possibles. De quoi tempérer la confiance qu'on met
+dans un modèle qui s'explique : il dit *un* chemin qui marche, pas *le*
+mécanisme du monde. Nous y reviendrons au [Module 5](docs/module5), quand il
+s'agira de se demander ce qu'expliquer veut dire.
+{{% /hint %}}
+
 ## Et sur des données neuves ?
 
 Faisons le point. Nous avons maintenant tout un arsenal : une droite qui

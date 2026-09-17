@@ -253,8 +253,17 @@ lit. C'est à cette échelle que la statistique a pris le nom d'apprentissage
 automatique, et c'est là qu'elle a produit quelque chose que ses fondateurs
 n'auraient pas prévu.
 
-Il ne reste plus qu'à changer d'échelle. Au [**Module 3**](docs/module3), nous empilerons ces
-fonctions réglables en **réseaux de neurones** profonds, et verrons pourquoi
-c'est là que l'image et le langage prennent enfin leur envol. Au [**Module 4**](docs/module4),
+Il ne reste plus qu'à changer d'échelle. Un chercheur qui a passé sa vie sur
+l'apprentissage par renforcement, Richard Sutton, a tiré de soixante-dix ans
+d'histoire de l'IA une leçon qu'il dit amère, [« The Bitter
+Lesson »](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
+(2019) : à long terme, les méthodes générales qui exploitent la puissance de
+calcul finissent toujours par battre celles où l'on avait inscrit à la main le
+savoir des humains, et il n'y en a que deux qui passent vraiment à
+l'échelle : la **recherche**, celle du Module 1, et l'**apprentissage**, celui
+de ce module. Ce que cette leçon signifie, et ce qu'elle coûte, sera le point
+de départ du [**Module 3**](docs/module3), où nous empilerons ces fonctions
+réglables en **réseaux de neurones** profonds, et verrons pourquoi c'est là que
+l'image et le langage prennent enfin leur envol. Au [**Module 4**](docs/module4),
 ces mêmes réseaux deviendront **génératifs**, capables de produire textes et
 images : les grands modèles de langage. Le squelette ne changera pas. Il grandira.
