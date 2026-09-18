@@ -21,7 +21,7 @@
 <line x1="150" y1="174" x2="348" y2="174" stroke="#c2a878" stroke-width="2"/>
 <polygon points="358,174 348,169 348,179" fill="#c2a878"/>
 
-<text x="253" y="196" font-size="10.5" fill="#a89878" text-anchor="middle" font-style="italic">par écrit — ni voix, ni visage</text>
+<text x="253" y="196" font-size="10.5" fill="#a89878" text-anchor="middle" font-style="italic">par écrit : ni voix, ni visage</text>
 
 <line x1="356" y1="210" x2="156" y2="210" stroke="#c2a878" stroke-width="2"/>
 <polygon points="146,210 156,205 156,215" fill="#c2a878"/>
