@@ -60,7 +60,7 @@ aussi souvent qu'un humain lui-même y parvient, alors, dit Turing, il n'y aura
 plus de raison sérieuse de lui refuser le qualificatif de « pensante ».
 
 Dans l'article, le jeu est d'abord présenté avec un homme et une femme, que
-l'interrogateur doit départager ; Turing demande ensuite ce qui arriverait si
+l'interrogateur doit départager ; Turing demande ensuite ce qui arriverait si
 une machine prenait la place de l'un des deux. C'est cette seconde version qui
 est passée à la postérité, et la page de *Mind* reproduite plus haut vous
 permet de le vérifier vous-même.
