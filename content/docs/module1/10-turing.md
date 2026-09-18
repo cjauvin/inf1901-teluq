@@ -19,6 +19,10 @@ allait hanter tout un domaine pour les décennies à venir :
 
 > *« Les machines peuvent-elles penser ? »*
 
+{{< image src="/images/module1/turing-mind-1950.svg" alt="Fac-similé recomposé de la première page de l'article d'Alan Turing dans la revue Mind, volume LIX, numéro 236, octobre 1950 : l'en-tête de la revue, le titre « Computing Machinery and Intelligence », « By A. M. Turing », le sous-titre « 1. The Imitation Game », puis les premières lignes, qui s'ouvrent sur « I propose to consider the question, ‘Can machines think?’ »." title="La première page de l'article, dans la revue Mind, en octobre 1950 : tout commence par « Can machines think? »." loading="lazy" >}}
+
+<p class="image-credit">La première page de «&nbsp;Computing Machinery and Intelligence&nbsp;», <em>Mind</em>, vol.&nbsp;LIX, n<sup>o</sup>&nbsp;236, octobre 1950. Fac-similé recomposé pour le cours.</p>
+
 Turing n'est pas un inconnu. Pendant la guerre, il a joué un rôle décisif dans le
 décryptage des communications de la machine **Enigma** des armées allemandes, en
 concevant des dispositifs électromécaniques capables d'explorer mécaniquement des
