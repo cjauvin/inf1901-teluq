@@ -146,7 +146,27 @@ j'écris un `1`, je me déplace d'une case vers la droite et je passe à l'état
 C'est tout. Aucune mémoire géante, aucune intelligence cachée : juste des
 symboles, des règles et un état courant. Ce qui est vertigineux, c'est que ce
 mécanisme minimaliste suffit à exprimer n'importe quel calcul réalisable par
-n'importe quel ordinateur, aussi puissant soit-il. La machine de Turing ne sert
+n'importe quel ordinateur, aussi puissant soit-il. Voyons-en une en entier. La machine ci-dessous calcule une fonction précise,
+**ajouter 1 à un nombre écrit en binaire**, et elle tient en trois états et six
+règles. Dans l'état *droite*, elle avance sans rien changer jusqu'à dépasser le
+dernier chiffre. Elle rebrousse alors chemin dans l'état *retenue*, et fait
+exactement ce que vous faites en posant une addition : tant qu'elle lit un 1,
+elle écrit 0 et reporte la retenue à gauche ; dès qu'elle lit un 0 (ou une case
+vide, si le nombre n'était fait que de 1), elle écrit 1 et s'arrête. Suivez
+l'exécution ligne par ligne : onze, 1011, devient douze, 1100, en huit pas.
+
+{{< image src="/images/module1/machine-turing-increment.svg" alt="Une machine de Turing à trois états qui calcule la fonction n ↦ n + 1 sur un nombre écrit en binaire. En haut à gauche, le diagramme de ses états : « droite » (aller au bout du nombre), « retenue » (propager la retenue vers la gauche) et « arrêt ». En haut à droite, sa table de six règles. En bas, l'exécution complète sur le ruban : en neuf instantanés, la tête parcourt 1011 (onze) vers la droite, atteint la case vide, revient en transformant les 1 en 0, puis change le premier 0 rencontré en 1 et s'arrête : le ruban porte 1100 (douze)." title="Une machine de Turing complète : trois états, six règles, et la fonction n ↦ n + 1 exécutée pas à pas sur le ruban." loading="lazy" >}}
+
+Remarquez ce que la machine ne sait *pas* : elle ignore qu'il s'agit de
+nombres, elle ne connaît ni « onze » ni « douze ». Elle lit un symbole,
+consulte sa table, écrit, se déplace, change d'état. Le sens est pour nous ;
+pour elle, il n'y a que la règle. Des machines à peine plus grosses
+additionnent, multiplient, trient, et l'on peut en construire une, dite
+*universelle*, qui lit sur son ruban la table de n'importe quelle autre machine
+et l'exécute : c'est, trait pour trait, l'idée d'un ordinateur et de son
+programme.
+
+La machine de Turing ne sert
 pas à calculer *vite* ; elle sert à définir, une fois pour toutes, *ce que
 « calculer » veut dire*. L'idée que tout procédé de calcul imaginable se ramène à
 une machine de Turing porte d'ailleurs un nom : la **thèse de Church-Turing**.
@@ -177,12 +197,13 @@ sortir.
 
 Turing, du reste, n'a pas échappé à cette ombre : il l'a lui-même prolongée. Sa
 machine de 1936 servait aussi à établir qu'il existe des questions qu'**aucun
-algorithme ne pourra jamais trancher** (la plus célèbre étant de savoir si un
-programme donné finira par s'arrêter ou tournera à l'infini). Le père de l'idée
+algorithme ne pourra jamais trancher**. La plus célèbre porte un nom, le
+**problème de l'arrêt** (*halting problem*) : savoir, pour un programme donné,
+s'il finira par s'arrêter ou s'il tournera à l'infini. Le père de l'idée
 « penser = calculer » a donc, du même coup, tracé les **frontières** du calcul.
 Le pari de l'IA naît ainsi avec, inscrite en lui, la trace de ses propres limites.
 
-{{< image src="/images/module1/probleme-arret.svg" alt="Schéma : un programme P, montré comme une fenêtre de code, est donné en entrée à un autre programme H, un « détecteur d'arrêt » censé dire en sortie si P s'arrête ou tourne à l'infini. La légende conclut qu'un tel programme H ne peut pas exister." title="Le problème de l'arrêt : un programme qui prendrait un autre programme en entrée pour prédire s'il s'arrête, et pourquoi il ne peut pas exister." loading="lazy" >}}
+{{< image src="/images/module1/probleme-arret.svg" alt="Schéma : un programme P, montré comme une fenêtre de code, est donné en entrée à un autre programme H, un « détecteur d'arrêt » censé dire en sortie si P s'arrête ou tourne à l'infini. La légende conclut qu'un tel programme H ne peut pas exister." title="Le problème de l'arrêt (halting problem) : un programme qui prendrait un autre programme en entrée pour prédire s'il s'arrête, et pourquoi il ne peut pas exister." loading="lazy" >}}
 
 Que conclure, pour notre question, une machine peut-elle penser ? Étonnamment, on
 a tiré de Gödel **deux leçons radicalement opposées**, et toutes deux nous

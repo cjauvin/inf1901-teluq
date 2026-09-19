@@ -25,9 +25,9 @@ de l'apprentissage, ou de toute autre caractéristique de l'intelligence, peut e
 principe être décrit avec une telle précision qu'une machine peut être construite
 pour le simuler »* (en version originale : *« every aspect of learning or any
 other feature of intelligence can in principle be so precisely described that a
-machine can be made to simulate it »*). Les organisateurs — McCarthy, mais aussi
+machine can be made to simulate it »*). Les organisateurs (McCarthy, mais aussi
 **Marvin Minsky**, **Claude Shannon** (le père de la théorie de l'information) et
-**Nathaniel Rochester** (d'IBM) — pensent sincèrement qu'un groupe d'une dizaine
+**Nathaniel Rochester**, d'IBM) pensent sincèrement qu'un groupe d'une dizaine
 de personnes peut faire des progrès significatifs sur ce programme... en un seul
 été.
 
@@ -59,7 +59,7 @@ qui *raisonne*, du moins en apparence.
 
 L'enthousiasme est à son comble. Newell et Simon iront jusqu'à formuler une
 hypothèse audacieuse : un système qui manipule des symboles de la bonne manière
-posséderait *tout ce qu'il faut* pour être intelligent — ni plus, ni moins.
+posséderait *tout ce qu'il faut* pour être intelligent, ni plus, ni moins.
 Pendant les décennies suivantes, c'est cette voie, **symbolique**, qui dominera
 la recherche et récoltera les financements. Ce sera le cœur des chapitres suivants :
 la [recherche](docs/module1/30-chercher-raisonner), la [représentation des
@@ -86,7 +86,7 @@ logiques. C'est le premier pont jeté entre la matière du cerveau et le calcul.
 Restait à expliquer comment un tel réseau pourrait *apprendre*. En 1949, le
 psychologue **Donald Hebb** avance une idée appelée à devenir célèbre : lorsque
 deux neurones s'activent ensemble de façon répétée, le lien qui les unit se
-renforce — « *neurons that fire together, wire together* ». L'apprentissage, dans
+renforce : « *neurons that fire together, wire together* ». L'apprentissage, dans
 cette optique, ne consiste pas à réécrire des règles, mais à **ajuster la force
 des connexions**. C'est précisément ce levier que Rosenblatt va donner à sa
 machine.
@@ -95,10 +95,10 @@ machine.
 
 En 1958, le psychologue **Frank Rosenblatt** transforme cette idée en une machine
 bien réelle : le **perceptron**. Le principe est d'une élégance frappante. Au
-lieu de lui dicter une règle, on *montre* au perceptron des exemples — par exemple
+lieu de lui dicter une règle, on *montre* au perceptron des exemples, par exemple
 des images étiquetées « cercle » ou « carré ». À chaque essai, s'il se trompe, il
 **ajuste légèrement ses réglages internes** pour se rapprocher de la bonne
-réponse. Petit à petit, exemple après exemple, il s'améliore — sans que personne
+réponse. Petit à petit, exemple après exemple, il s'améliore, sans que personne
 ne lui ait jamais formulé *ce qui distingue* un cercle d'un carré. Il a *appris*.
 C'est l'approche **ascendante** (*bottom-up*) : on n'écrit pas le savoir, on le
 laisse émerger des données.
@@ -114,12 +114,12 @@ nous étudierons aux modules 2, 3 et 4.
 En un sens très concret, le perceptron est l'**ancêtre direct des réseaux de
 neurones** d'aujourd'hui : l'apprentissage profond qui fait la une n'est, pour
 l'essentiel, qu'un empilement de perceptrons perfectionnés, par millions et sur
-de nombreuses couches. La ligne de descendance est directe — nous la remonterons
+de nombreuses couches. La ligne de descendance est directe ; nous la remonterons
 au **module 3**.
 
 ## Deux univers parallèles
 
-On serait tenté de croire que ces deux paris se sont succédé — d'abord l'un, puis
+On serait tenté de croire que ces deux paris se sont succédé, d'abord l'un, puis
 l'autre. C'est faux, et c'est l'un des fils rouges les plus importants de ce
 cours : ils sont nés **presque en même temps**, et ils ont **coexisté en
 rivaux** pendant plus d'un demi-siècle, chacun dans son camp, avec ses
@@ -136,13 +136,13 @@ Ces deux univers ne vont pas avancer côte à côte dans une paisible indiffére
 ils vont **s'éclipser à tour de rôle**. Dès la fin des années 1960, comme nous le
 verrons dans « [Les hivers et la bascule](docs/module1/60-hivers) », le camp
 symbolique portera au perceptron un coup si rude
-qu'il manquera de le tuer — et l'approche symbolique régnera presque sans partage
+qu'il manquera de le tuer, et l'approche symbolique régnera presque sans partage
 sur les vingt années suivantes. Il faudra attendre les années 2010, et le module
 3 de ce cours, pour assister au spectaculaire retour de la tradition
 connexionniste, sous le nom d'*apprentissage profond*.
 
 {{% hint info %}}
-La métaphore du cerveau est puissante — et c'est justement pour cela qu'il faut
+La métaphore du cerveau est puissante, et c'est justement pour cela qu'il faut
 s'en méfier. Le « neurone » de McCulloch, Pitts et Rosenblatt est une caricature
 extrême du vrai neurone biologique. Nous y reviendrons en détail au module 3, au
 moment où la tentation de confondre les deux sera la plus forte.
@@ -150,5 +150,5 @@ moment où la tentation de confondre les deux sera la plus forte.
 
 Pour l'instant, laissons le perceptron à sa promesse, et suivons le camp qui va
 prendre les devants. Car c'est la voie symbolique qui, la première, va connaître
-son âge d'or — celui des machines qui *cherchent* et qui *raisonnent*. C'est
+son âge d'or, celui des machines qui *cherchent* et qui *raisonnent*. C'est
 l'objet de « [Chercher et raisonner](docs/module1/30-chercher-raisonner) ».
