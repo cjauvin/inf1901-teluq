@@ -166,6 +166,28 @@ additionnent, multiplient, trient, et l'on peut en construire une, dite
 et l'exécute : c'est, trait pour trait, l'idée d'un ordinateur et de son
 programme.
 
+Une fois qu'on sait ce qu'est une machine à trois états, une question
+d'apparence enfantine se pose : parmi *toutes* les machines à *n* états qui
+finissent par s'arrêter, laquelle travaille le plus longtemps avant de le
+faire ? On appelle cette championne le [**castor
+affairé**](https://fr.wikipedia.org/wiki/Castor_affair%C3%A9) (*busy beaver*),
+et le nombre de pas qu'elle accomplit, une fonction de *n*. Les premières
+valeurs sont modestes : 6 pas pour deux états, 21 pour trois, 107 pour quatre.
+Pour cinq états, la réponse, 47 176 870 pas, n'a été établie qu'en 2024, par
+une collaboration internationale de passionnés, le [*Busy Beaver
+Challenge*](https://bbchallenge.org/), qui a dû examiner une à une des dizaines
+de millions de machines et faire vérifier sa preuve par ordinateur. Pour six
+états, on sait seulement que le nombre dépasse tout ce qu'on peut écrire
+raisonnablement. Et au-delà, il y a pire qu'une difficulté : cette fonction
+est **non calculable**. Aucun algorithme ne peut la donner pour tout *n*, car
+la connaître reviendrait à savoir, pour n'importe quelle machine, si elle
+s'arrêtera un jour : on laisserait tourner la machine le nombre de pas du
+castor, et si elle tourne encore, c'est qu'elle ne s'arrêtera jamais. C'est le
+problème de l'arrêt, dont il est question plus bas, sous un déguisement. Voilà
+donc une suite de nombres parfaitement définis, dont les premiers se comptent
+sur les doigts, et que l'esprit humain ne connaîtra jamais au-delà des tout
+premiers : une frontière du calcul qu'on peut presque toucher.
+
 La machine de Turing ne sert
 pas à calculer *vite* ; elle sert à définir, une fois pour toutes, *ce que
 « calculer » veut dire*. L'idée que tout procédé de calcul imaginable se ramène à
