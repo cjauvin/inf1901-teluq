@@ -1,4 +1,10 @@
 {{- $src := .Get "src" -}}
+{{/* Identifiant unique de la case à cocher qui agrandit l'image. .Ordinal ne
+     convient pas : il repart de zéro à l'intérieur d'un shortcode parent
+     (details, hint), si bien que deux images de la page portaient le même
+     identifiant et que le clic agrandissait la mauvaise. La position du
+     shortcode dans le fichier, elle, est unique. */}}
+{{- $uid := printf "%s|%s" $src .Position | md5 | truncate 12 "" -}}
 {{- $destination := partial "docs/links/portable-image" (dict "Page" .Page "Destination" $src) -}}
 
 {{/* width, height et largeur plafond : voir docs/dimensions-image. Les deux
@@ -15,13 +21,13 @@
   "attributes" (cond .IsNamedParams .Params dict)
   "keep" (slice "id" "class" "tabindex" "alt" "title" "loading")
 ) -}}
-<label class="book-image" for="book-image-toggle-{{ .Ordinal }}">
-  <input class="hidden toggle" type="checkbox" id="book-image-toggle-{{ .Ordinal }}" />
+<label class="book-image" for="book-image-toggle-{{ $uid }}">
+  <input class="hidden toggle" type="checkbox" id="book-image-toggle-{{ $uid }}" />
   <img src="{{ $destination | safeURL }}" {{ partial "docs/html-attrs" $attributes | safeHTMLAttr }}{{ $dimensions | safeHTMLAttr }} />
 </label>
 <script>
 (function() {
-  const checkbox = document.getElementById('book-image-toggle-{{ .Ordinal }}');
+  const checkbox = document.getElementById('book-image-toggle-{{ $uid }}');
   const escapeHandler = function(e) {
     if (e.key === 'Escape' && checkbox.checked) {
       checkbox.checked = false;
