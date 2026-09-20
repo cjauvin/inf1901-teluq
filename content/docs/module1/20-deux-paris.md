@@ -61,6 +61,29 @@ occupera des générations entières, et n'est toujours pas achevé. Mais
 l'enthousiasme de Dartmouth lance véritablement le domaine. Et très vite, deux
 familles d'idées sur *comment* fabriquer cette intelligence vont s'y dessiner.
 
+{{% hint warning %}}
+**Un mot qui a changé de sens.** Si vous êtes venu à ce cours en pensant à
+ChatGPT, une mise en garde s'impose : ce que McCarthy et ses collègues
+appelaient « intelligence artificielle » en 1956 n'a presque rien à voir avec
+ce que ce mot désigne aujourd'hui dans la conversation courante. Pour eux, l'IA
+était l'art de faire **raisonner** une machine : manipuler des symboles,
+appliquer des règles de logique, explorer méthodiquement des possibilités,
+comme on le fait pour démontrer un théorème ou jouer aux échecs. Rien, dans ce
+programme, n'apprenait à partir de montagnes de données. Aujourd'hui, quand on
+dit « l'IA », on pense presque toujours aux **grands modèles de langage** et à
+leurs cousins générateurs d'images : d'immenses réseaux de neurones, entraînés
+sur une bonne partie de ce que l'humanité a écrit, et qui ne contiennent pas
+une seule règle écrite à la main.
+
+L'ironie est complète, et ce module va la raconter : l'expression a été forgée
+par les tenants du premier pari, celui de la logique, et elle est aujourd'hui
+portée par les héritiers du second, celui du cerveau et de l'apprentissage, que
+les premiers ont longtemps tenu pour une impasse. Entre les deux, soixante-dix
+ans, deux « hivers », et un renversement que rien ne laissait prévoir. Gardez
+donc les deux sens à l'esprit : dans les pages qui viennent, « IA » voudra
+d'abord dire ce qu'elle voulait dire à Dartmouth.
+{{% /hint %}}
+
 ## Le premier pari : l'esprit comme logique
 
 La première famille d'idées prolonge directement l'intuition de Turing. Si
