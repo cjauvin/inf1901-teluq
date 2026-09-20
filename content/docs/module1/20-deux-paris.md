@@ -41,6 +41,10 @@ centres de données, d'où son logo en forme de barre de navire. Les deux n'ont
 en commun que l'étymologie.*
 {{% /hint %}}
 
+{{< image src="/images/module1/dartmouth-1956-participants.jpg" alt="Photo en noir et blanc de sept hommes souriants, assis sur la pelouse devant un bâtiment blanc aux volets sombres, Dartmouth Hall, à l'été 1956 : les organisateurs de l'atelier et quelques participants." title="Devant Dartmouth Hall, à l'été 1956 : les organisateurs de l'atelier et quelques participants." loading="lazy" >}}
+
+<p class="image-credit">Devant Dartmouth Hall, été 1956. À l'arrière, de gauche à droite&nbsp;: Oliver Selfridge, Nathaniel Rochester, Marvin Minsky et John McCarthy&nbsp;; à l'avant&nbsp;: Ray Solomonoff, Peter Milner et Claude Shannon. Photo&nbsp;: famille Minsky.</p>
+
 L'ambition affichée donne le vertige. La proposition postule que *« tout aspect
 de l'apprentissage, ou de toute autre caractéristique de l'intelligence, peut en
 principe être décrit avec une telle précision qu'une machine peut être construite
