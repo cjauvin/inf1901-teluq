@@ -14,11 +14,32 @@ restera comme l'**acte de naissance** de la discipline. C'est dans la propositio
 de financement de cet atelier, rédigée l'année précédente par le jeune
 mathématicien **John McCarthy**, qu'apparaît pour la première fois l'expression
 **« intelligence artificielle »**. Le mot est choisi en partie pour marquer une
-rupture, et se démarquer des étiquettes existantes comme la cybernétique.
+rupture, et se démarquer d'une étiquette alors dominante, la **cybernétique**.
 
 {{< image src="/images/module1/dartmouth-hall.jpg" alt="Dartmouth Hall, un grand bâtiment géorgien en briques peintes en blanc, orné d'un fronton portant la date « 1784 » et surmonté d'un clocheton, sur le campus du Dartmouth College." title="Dartmouth Hall, sur le campus du Dartmouth College où se tint l'atelier de 1956." loading="lazy" >}}
 
 <p class="image-credit">Dartmouth Hall (Dartmouth College). Photo : Kenneth C. Zirkel, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, via Wikimedia Commons.</p>
+
+{{% hint info %}}
+**La cybernétique.** Fondée en 1948 par le mathématicien Norbert Wiener (le mot
+vient du grec *kubernêtês*, le pilote d'un navire), la cybernétique étudiait ce
+que les machines et les êtres vivants ont en commun dès lors qu'ils se
+**règlent eux-mêmes** : un thermostat qui maintient une température, un
+organisme qui maintient la sienne, un missile qui corrige sa trajectoire
+obéissent au même principe, la **rétroaction** (*feedback*), où l'effet d'une
+action est mesuré et renvoyé à celui qui agit, pour qu'il se corrige. Beaucoup
+de ce qui suivra dans ce cours y prend racine, à commencer par l'idée d'une
+machine qui s'ajuste d'après ses erreurs. Mais la cybernétique pensait en
+signaux continus, en boucles et en organismes, à la frontière de la biologie et
+de l'ingénierie ; McCarthy voulait une science du raisonnement et des symboles,
+et, dit-on, ne tenait pas à devoir composer avec l'autorité de Wiener. Un nom
+neuf s'imposait.
+
+*Une curiosité : le même mot grec a donné son nom, en 2014, au logiciel
+[Kubernetes](https://kubernetes.io/fr/), qui « pilote » des conteneurs dans les
+centres de données, d'où son logo en forme de barre de navire. Les deux n'ont
+en commun que l'étymologie.*
+{{% /hint %}}
 
 L'ambition affichée donne le vertige. La proposition postule que *« tout aspect
 de l'apprentissage, ou de toute autre caractéristique de l'intelligence, peut en
