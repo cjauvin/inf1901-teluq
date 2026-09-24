@@ -79,7 +79,7 @@ L'ironie est complète, et ce module va la raconter : l'expression a été forg
 par les tenants du premier pari, celui de la logique, et elle est aujourd'hui
 portée par les héritiers du second, celui du cerveau et de l'apprentissage, que
 les premiers ont longtemps tenu pour une impasse. Entre les deux, soixante-dix
-ans, deux [« hivers »](docs/module1/60-hivers), et un renversement que rien ne laissait prévoir. Gardez
+ans, deux [« hivers »](docs/module1/60-hivers), et un renversement que rien ne laissait prévoir. Gardez
 donc les deux sens à l'esprit : dans les pages qui viennent, « IA » voudra
 d'abord dire ce qu'elle voulait dire à Dartmouth.
 {{% /hint %}}
