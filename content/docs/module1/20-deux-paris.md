@@ -79,7 +79,7 @@ L'ironie est complète, et ce module va la raconter : l'expression a été forg
 par les tenants du premier pari, celui de la logique, et elle est aujourd'hui
 portée par les héritiers du second, celui du cerveau et de l'apprentissage, que
 les premiers ont longtemps tenu pour une impasse. Entre les deux, soixante-dix
-ans, deux « hivers », et un renversement que rien ne laissait prévoir. Gardez
+ans, deux [« hivers »](docs/module1/60-hivers), et un renversement que rien ne laissait prévoir. Gardez
 donc les deux sens à l'esprit : dans les pages qui viennent, « IA » voudra
 d'abord dire ce qu'elle voulait dire à Dartmouth.
 {{% /hint %}}
@@ -177,7 +177,7 @@ En un sens très concret, le perceptron est l'**ancêtre direct des réseaux de
 neurones** d'aujourd'hui : l'apprentissage profond qui fait la une n'est, pour
 l'essentiel, qu'un empilement de perceptrons perfectionnés, par millions et sur
 de nombreuses couches. La ligne de descendance est directe ; nous la remonterons
-au **module 3**.
+au [**Module 3**](docs/module3).
 
 ## Deux univers parallèles
 
@@ -206,7 +206,7 @@ connexionniste, sous le nom d'*apprentissage profond*.
 {{% hint info %}}
 La métaphore du cerveau est puissante, et c'est justement pour cela qu'il faut
 s'en méfier. Le « neurone » de McCulloch, Pitts et Rosenblatt est une caricature
-extrême du vrai neurone biologique. Nous y reviendrons en détail au module 3, au
+extrême du vrai neurone biologique. Nous y reviendrons en détail au [Module 3](docs/module3), au
 moment où la tentation de confondre les deux sera la plus forte.
 {{% /hint %}}
 
