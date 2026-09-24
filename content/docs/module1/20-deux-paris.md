@@ -103,8 +103,10 @@ ouvrage de référence, les *Principia Mathematica* de Russell et Whitehead. Pou
 l'une de ces démonstrations, il trouve même une solution plus élégante que celle
 des auteurs humains. C'est souvent considéré comme le **tout premier programme
 d'intelligence artificielle** : une machine qui ne calcule pas des nombres, mais
-qui *raisonne*, du moins en apparence. Soixante-dix ans plus tard, la
-boucle est bouclée d'une manière que Newell et Simon n'auraient pas imaginée.
+qui *raisonne*, du moins en apparence.
+
+{{% hint info %}}
+**Soixante-dix ans plus tard.** La boucle est bouclée d'une manière que Newell et Simon n'auraient pas imaginée.
 En 2025, des grands modèles de langage entraînés par renforcement ont atteint
 le niveau d'une médaille d'or aux Olympiades internationales de mathématiques.
 En septembre 2026, l'un d'eux a traduit en preuve vérifiable par machine toute
@@ -115,6 +117,7 @@ résolu une version de l'un des sept problèmes du millénaire, celui des
 train de vérifier. Ces machines raisonnent, elles aussi, mais elles y sont
 arrivées par l'autre pari, celui de l'apprentissage, sans une seule règle de
 logique écrite à la main : nous y reviendrons au [Module 4](docs/module4).
+{{% /hint %}}
 
 L'enthousiasme est à son comble. Newell et Simon iront jusqu'à formuler une
 hypothèse audacieuse : un système qui manipule des symboles de la bonne manière
