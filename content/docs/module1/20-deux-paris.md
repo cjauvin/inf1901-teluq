@@ -171,7 +171,7 @@ l'embryon d'une machine électronique qui « sera capable de marcher, parler, 
 écrire, se reproduire et avoir conscience de son existence ». On est évidemment
 très loin du compte. Mais l'idée maîtresse — *une machine qui apprend de ses
 erreurs* — est, elle, promise à un avenir immense. C'est la graine de tout ce que
-nous étudierons aux modules 2, 3 et 4.
+nous étudierons aux [modules 2](docs/module2), [3](docs/module3) et [4](docs/module4).
 
 En un sens très concret, le perceptron est l'**ancêtre direct des réseaux de
 neurones** d'aujourd'hui : l'apprentissage profond qui fait la une n'est, pour
