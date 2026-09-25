@@ -76,6 +76,8 @@ empirique** (une « heuristique ») : compter les pièces, évaluer le cont
 centre, etc. D'autres astuces, comme l'**élagage** (ignorer d'emblée les branches
 qui ne peuvent pas changer la décision), évitent d'explorer inutilement.
 
+{{< image src="/images/module1/minimax-elagage.svg" alt="Un arbre de jeu à trois niveaux. À la racine, c'est à la machine (MAX) de jouer ; au niveau suivant, trois coups de l'adversaire (MIN) ; en bas, neuf positions estimées par une heuristique. Chaque nœud MIN prend le minimum de ses feuilles : 3, au plus 2, et 2. La racine prend le maximum : 3, et une flèche épaisse montre le coup choisi. Au deuxième nœud MIN, dès que la feuille 2 est vue, les deux autres feuilles sont barrées : c'est l'élagage, car ce coup ne peut plus battre le 3 déjà garanti." title="Minimax sur un petit arbre : les estimations remontent, en alternant le plus petit (l'adversaire) et le plus grand (la machine) ; au milieu, l'élagage évite d'examiner deux positions inutiles." loading="lazy" >}}
+
 La même ruse vaut hors des jeux, lorsqu'il s'agit de **trouver un chemin**, par
 exemple notre labyrinthe du début, ou le calcul d'un itinéraire routier. Plutôt
 que d'explorer aveuglément dans toutes les directions, un algorithme célèbre
@@ -91,12 +93,21 @@ profonde de tout l'âge d'or est là : être intelligent, ce n'est pas tout exp
 — c'est explorer **au bon endroit**. Tout l'art réside dans la qualité des
 heuristiques.
 
+L'applet ci-dessous met les deux stratégies face à face, sur le même labyrinthe.
+À gauche, une recherche aveugle, qui s'étend dans toutes les directions comme
+une tache d'huile ; à droite, A*, guidé par la distance qui le sépare du but.
+Lancez les deux recherches, puis comparez le nombre de cases explorées : elles
+trouvent le même chemin, mais pas au même prix. Ajoutez ou retirez des murs en
+cliquant sur la grille, et voyez dans quels cas l'heuristique aide beaucoup, et
+dans quels cas elle se laisse piéger.
+
+{{< applet src="/html/applets/astar.html" height="525" >}}
+
 Nous retrouverons ce mur, sous un autre nom, quand il s'agira d'apprendre à
 partir de données décrites par des milliers de caractéristiques : ce sera la
 [malédiction de la dimension](docs/module2/40-predire-par-ressemblance), au
 [Module 2](docs/module2).
 
-<!-- APPLET À CRÉER (M1, ép. 3) : arbre de jeu minimax interactif, ou A* sur une grille. Repère laissé volontairement ; voir PLAN-v2.md §5 (interactivité M1). -->
 
 ## L'apogée : Deep Blue bat Kasparov (1997)
 
