@@ -14,7 +14,7 @@ d'une grande puissance, parce qu'elle s'applique à une foule de problèmes trè
 différents. L'idée : presque tout problème peut se reformuler comme
 l'**exploration d'un espace de possibilités**.
 
-Prenons un labyrinthe. À chaque instant, vous êtes dans une certaine position —
+Prenons un labyrinthe. À chaque instant, vous êtes dans une certaine position :
 appelons ça un **état**. À partir de cet état, quelques actions s'offrent à vous
 (avancer, tourner à gauche, à droite), et chacune vous mène à un nouvel état. De
 proche en proche, l'ensemble de tous les états atteignables forme une sorte
@@ -29,7 +29,7 @@ sans rapport prennent soudain la *même forme*. Le casse-tête du taquin (ces
 petites tuiles numérotées qu'on fait glisser), une partie d'échecs, la
 planification d'un itinéraire, la démonstration d'un théorème : dans chaque cas,
 on a un état de départ, des actions qui font passer d'un état à un autre, un but
-à atteindre — et résoudre revient à **chercher un chemin** vers ce but. Newell et
+à atteindre ; résoudre revient alors à **chercher un chemin** vers ce but. Newell et
 Simon, les auteurs du Logic Theorist, pousseront l'idée jusqu'à bâtir un
 programme au nom révélateur, le *General Problem Solver* (« solutionneur général
 de problèmes »), censé attaquer n'importe quel problème exprimé sous cette forme.
@@ -65,7 +65,7 @@ Pour les jeux à deux adversaires, les chercheurs mettent au point une stratégi
 élégante, le **minimax**. L'idée : la machine explore l'arbre des coups en
 supposant que son adversaire jouera toujours du mieux possible. À chaque étape,
 elle cherche à *maximiser* son avantage, tout en tenant pour acquis que
-l'adversaire cherchera, lui, à le *minimiser* — d'où le nom. En remontant les
+l'adversaire cherchera, lui, à le *minimiser*, d'où le nom. En remontant les
 conséquences de chaque coup, elle choisit celui qui lui garantit le meilleur sort
 dans le pire des cas.
 
@@ -76,13 +76,13 @@ empirique** (une « heuristique ») : compter les pièces, évaluer le cont
 centre, etc. D'autres astuces, comme l'**élagage** (ignorer d'emblée les branches
 qui ne peuvent pas changer la décision), évitent d'explorer inutilement.
 
-La même ruse vaut hors des jeux, lorsqu'il s'agit de **trouver un chemin** — par
+La même ruse vaut hors des jeux, lorsqu'il s'agit de **trouver un chemin**, par
 exemple notre labyrinthe du début, ou le calcul d'un itinéraire routier. Plutôt
 que d'explorer aveuglément dans toutes les directions, un algorithme célèbre
 nommé **A\*** (prononcé « A étoile ») se laisse guider par une heuristique : à
 chaque embranchement, il privilégie la direction qui *semble* se rapprocher le
 plus du but (par exemple, la distance à vol d'oiseau jusqu'à la destination). Le
-GPS qui vous calcule une route emprunte, au fond, ce genre de stratégie — tout
+GPS qui vous calcule une route emprunte, au fond, ce genre de stratégie, tout
 comme, très classiquement, l'**IA des jeux vidéo** : les personnages non joueurs
 qui trouvent leur route sur la carte, les ennemis qui vous traquent ou vous
 contournent s'appuient le plus souvent sur ces mêmes algorithmes de recherche de
@@ -105,13 +105,13 @@ le jour où la machine a « dépassé » l'humain.
 
 Deep Blue est l'aboutissement direct de tout ce que nous venons de décrire. Aucun
 réseau de neurones, aucun apprentissage : seulement de la **recherche par force
-brute** — la machine évalue jusqu'à 200 millions de positions par seconde —
+brute** (la machine évalue jusqu'à 200 millions de positions par seconde),
 guidée par des **heuristiques** affinées avec l'aide de grands maîtres, et
 appuyée sur d'immenses bibliothèques d'ouvertures et de fins de partie. C'est du
 GOFAI à l'état pur, porté à son sommet par la puissance de calcul.
 
 Le match lui-même fut tendu et théâtral. Déstabilisé par un coup étrangement
-subtil de la machine en début de rencontre — trop « humain » à son goût —,
+subtil de la machine en début de rencontre, trop « humain » à son goût,
 Kasparov en vint à soupçonner une intervention humaine et accusa IBM de
 tricherie. Il réclama une revanche que l'entreprise lui refusa, démontant Deep
 Blue dans la foulée. L'ironie est savoureuse : ce coup déroutant aurait en réalité
@@ -135,14 +135,14 @@ une scène, exercer son bon sens — a longtemps résisté. Nous touchons là au
 {{% /hint %}}
 
 Cette résistance dessine déjà les limites de l'âge d'or, sur lesquelles nous
-reviendrons. Mais la même époque nous réserve une tout autre histoire — non plus
+reviendrons. Mais la même époque nous réserve une tout autre histoire : non plus
 une machine qui *calcule* pour gagner, mais une qui semble *parler* et écouter.
 Et elle est, à sa façon, encore plus déroutante.
 
 ## L'autre visage : ELIZA, ou l'illusion de comprendre
 
 L'âge d'or symbolique ne fut pas que recherche et calcul. Un de ses moments les
-plus marquants — et les plus troublants — concerne une machine qui semblait, non
+plus marquants, et les plus troublants, concerne une machine qui semblait, non
 pas *jouer*, mais *parler*. En 1966, au MIT, l'informaticien **Joseph
 Weizenbaum** écrit **ELIZA**, un programme qui imite un psychothérapeute. La
 conversation paraît étonnamment naturelle : vous tapez « je me sens seul ces
@@ -173,12 +173,12 @@ agents conversationnels (module 4) et dans le débat, jamais clos, sur ce que
 « comprendre » veut dire pour une machine (module 5).
 
 Une dernière précision, cruciale pour la suite. On serait tenté de voir en ELIZA
-l'ancêtre direct de ChatGPT — « le même tour de passe-passe, en plus gros ».
-C'est presque l'inverse. ELIZA n'est qu'une poignée de règles écrites à la main —
-repérer un mot, réciter un gabarit —, sans le moindre apprentissage ni aucun
+l'ancêtre direct de ChatGPT : « le même tour de passe-passe, en plus gros ».
+C'est presque l'inverse. ELIZA n'est qu'une poignée de règles écrites à la main
+(repérer un mot, réciter un gabarit), sans le moindre apprentissage ni aucun
 savoir sur le monde : du GOFAI pur, taillé au clavier par son auteur. Les grands
 **modèles de langage** (les *LLM*) derrière ChatGPT relèvent, eux, du **pari
-adverse** — celui du perceptron et des réseaux de neurones : personne ne leur a
+adverse**, celui du perceptron et des réseaux de neurones : personne ne leur a
 dicté de règles ; ils ont *appris*, à partir de quantités colossales de textes, un
 modèle statistique du langage riche de milliards de paramètres, et *fabriquent*
 des réponses inédites sur presque tout. La ressemblance est de pure surface : sous
@@ -188,14 +188,14 @@ qu'un imitateur infiniment plus habile ? —, celle-là même que l'effet ELIZ
 invite à ne pas trancher trop vite.
 
 **Un mot sur l'outil.** ELIZA, comme la quasi-totalité des programmes de l'âge
-d'or, était écrite en **Lisp**, un langage inventé par John McCarthy en 1958 —
+d'or, était écrite en **Lisp**, un langage inventé par John McCarthy en 1958,
 l'année même du perceptron. C'est l'un des plus anciens langages de programmation
 encore vivants aujourd'hui, et il a profondément marqué l'informatique (la
 récursion, le ramasse-miettes de mémoire, l'invite interactive… nombre d'idées
 qu'on tient pour acquises y sont nées). Son nom dit déjà beaucoup : *Lisp* pour
 *LISt Processing*, le « traitement de listes ». Là où la plupart des langages
 sont d'abord pensés pour calculer des nombres, Lisp est taillé pour **manipuler
-des symboles** — des mots, des concepts, des relations —, ce qui en faisait
+des symboles** (des mots, des concepts, des relations), ce qui en faisait
 l'outil rêvé du pari symbolique.
 
 {{% details "Pour aller plus loin : à quoi ressemble du Lisp ?" %}}
@@ -235,9 +235,9 @@ faire tourner au mieux. Nous recroiserons leur effondrement, vers 1987, dans
 « [Les hivers et la bascule](docs/module1/60-hivers) » : il y marquera l'un des
 hivers de l'IA.
 
-Deep Blue *cherchait*, ELIZA *bricolait du langage* — mais ni l'un ni l'autre ne
+Deep Blue *cherchait*, ELIZA *bricolait du langage*, mais ni l'un ni l'autre ne
 *connaissait* véritablement le monde. Pour aller plus loin, il fallait doter la
 machine de quelque chose qui lui manquait cruellement : une façon de
-**représenter ce qu'elle sait**. C'est le grand chantier — et la grande
-déconvenue — de « [Représenter le monde](docs/module1/40-representer-le-monde) ».
+**représenter ce qu'elle sait**. C'est le grand chantier, et la grande
+déconvenue, de « [Représenter le monde](docs/module1/40-representer-le-monde) ».
 
