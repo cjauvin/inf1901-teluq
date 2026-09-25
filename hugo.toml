@@ -1,4 +1,4 @@
-baseURL = 'https://cjauvin.github.io/inf1901-teluq/'
+baseURL = 'https://cjauvin.github.io/inf1901-teluq-v2/'
 languageCode = 'fr'
 defaultContentLanguage = 'fr'
 canonifyURLs = true
@@ -27,3 +27,15 @@ BookLogo = "images/paperclip-logo.png"
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 4
+# --- Modules pas encore refaits pour la v2 ---
+# En production seulement (le site publié), les modules 3 à 5 ne sont ni
+# générés ni listés dans le menu ; le serveur local les montre toujours.
+# Les liens qui y mènent deviennent du texte simple (layouts/_markup/render-link.html).
+# Pour publier un module : retirer son chemin de la liste ci-dessous.
+[[cascade]]
+  [cascade.build]
+    render = 'never'
+    list = 'never'
+  [cascade.target]
+    path = '{/docs/module3,/docs/module3/**,/docs/module4,/docs/module4/**,/docs/module5,/docs/module5/**}'
+    environment = 'production'
