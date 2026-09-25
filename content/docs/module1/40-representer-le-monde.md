@@ -127,6 +127,8 @@ pyramide ? »), il **résout un pronom** (à quoi renvoie « le » ?),
 le monde et il **se souvient** de ce qu'il vient de faire. Mieux : on peut lui
 demander *« Pourquoi as-tu fait ça ? »* et il **explique** son raisonnement.
 
+{{< image src="/images/module1/micromonde-shrdlu.svg" alt="Le micro-monde de SHRDLU : un cube rouge, une pile de blocs, une pyramide et une boîte posés sur une table, avec un bras robotique." title="Le « micro-monde » de SHRDLU : un univers de poche, entièrement décrit à la main." loading="lazy" >}}
+
 Voici SHRDLU à l'œuvre, dans un film de démonstration d'époque (en anglais) :
 les ordres tapés au clavier, les réponses du programme, et le bras virtuel qui
 déplace les blocs.
@@ -159,8 +161,6 @@ le sort commun de toutes les approches de ce chapitre : elles brillent tant qu'
 reste dans un domaine assez petit pour être entièrement décrit, et s'effondrent dès
 qu'affleure l'immensité de ce que nous, humains, tenons pour évident. Cette immensité
 a un nom, et c'est le mur sur lequel le GOFAI tout entier va se briser.
-
-{{< image src="/images/module1/micromonde-shrdlu.svg" alt="Le micro-monde de SHRDLU : un cube rouge, une pile de blocs, une pyramide et une boîte posés sur une table, avec un bras robotique." title="Le « micro-monde » de SHRDLU : un univers de poche, entièrement décrit à la main." loading="lazy" >}}
 
 ## Le mur du sens commun
 
