@@ -133,6 +133,12 @@ tricherie. Il réclama une revanche que l'entreprise lui refusa, démontant Deep
 Blue dans la foulée. L'ironie est savoureuse : ce coup déroutant aurait en réalité
 résulté d'un simple bogue dans le programme.
 
+La réaction de Kasparov, au moment d'abandonner la sixième et dernière partie,
+le 11 mai 1997, dit mieux qu'un long commentaire ce que représentait cette
+défaite :
+
+{{< youtube id="EsMk1Nbcs-s" >}}
+
 Mais au-delà de l'anecdote, la victoire laisse un goût étrange, et relance
 aussitôt *la* question. Car Deep Blue ne « comprend » pas les échecs comme
 Kasparov les comprend. Il ne sait même pas qu'il joue aux échecs ; il ne ressent
