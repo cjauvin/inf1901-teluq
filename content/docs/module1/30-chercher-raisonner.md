@@ -91,6 +91,11 @@ profonde de tout l'âge d'or est là : être intelligent, ce n'est pas tout exp
 — c'est explorer **au bon endroit**. Tout l'art réside dans la qualité des
 heuristiques.
 
+Nous retrouverons ce mur, sous un autre nom, quand il s'agira d'apprendre à
+partir de données décrites par des milliers de caractéristiques : ce sera la
+[malédiction de la dimension](docs/module2/40-predire-par-ressemblance), au
+[Module 2](docs/module2).
+
 <!-- APPLET À CRÉER (M1, ép. 3) : arbre de jeu minimax interactif, ou A* sur une grille. Repère laissé volontairement ; voir PLAN-v2.md §5 (interactivité M1). -->
 
 ## L'apogée : Deep Blue bat Kasparov (1997)

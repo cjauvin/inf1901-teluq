@@ -87,6 +87,12 @@ nécessaire pour le remplir explose. Elle frappe kNN de plein fouet, et c'est
 l'une des raisons pour lesquelles, sur des images ou du texte, on cherche
 d'abord à *réduire* le nombre de dimensions à quelques-unes qui comptent, une
 idée que les [Modules 3](docs/module3) et [4](docs/module4) développeront.
+Vous avez déjà croisé cette fatalité sous un autre nom : l'[explosion
+combinatoire](docs/module1/30-chercher-raisonner/#lexplosion-combinatoire) du
+Module 1. Là, chaque coup de plus multipliait les parties à explorer ; ici,
+chaque caractéristique de plus multiplie l'espace à remplir. C'est la même
+croissance exponentielle, qui résiste à la force brute et qu'on ne dompte
+qu'avec une astuce.
 {{% /hint %}}
 
 Nous tenons donc notre mesure de ressemblance, fiable pour des données
