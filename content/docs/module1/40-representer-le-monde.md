@@ -127,8 +127,14 @@ pyramide ? »), il **résout un pronom** (à quoi renvoie « le » ?),
 le monde et il **se souvient** de ce qu'il vient de faire. Mieux : on peut lui
 demander *« Pourquoi as-tu fait ça ? »* et il **explique** son raisonnement.
 
+Voici SHRDLU à l'œuvre, dans un film de démonstration d'époque (en anglais) :
+les ordres tapés au clavier, les réponses du programme, et le bras virtuel qui
+déplace les blocs.
+
+{{< youtube id="bo4RvYJYOzI" >}}
+
 Comment fait-il ? Parce que, derrière le dialogue, SHRDLU entretient un **modèle du
-monde** (*world model*) : une représentation interne de sa petite scène : quel bloc
+monde** (*world model*), une représentation interne de sa petite scène : quel bloc
 repose sur quel autre, lequel est rouge, lequel est libre, ce que le bras tient à
 l'instant. À chaque action, il **met ce modèle à jour** ; à chaque question, il le
 **consulte**. C'est cette maquette intérieure qui lui permet de résoudre « le », de
