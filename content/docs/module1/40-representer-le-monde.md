@@ -152,7 +152,15 @@ blocs, une table, une boîte, quelques formes et couleurs. Dans cet univers de p
 on *peut* tout dire à la machine : la liste complète des objets, des propriétés, des
 actions possibles. Le « monde » de SHRDLU tient tout entier dans une représentation
 **codée à la main**. Winograd l'avait d'ailleurs baptisé un **micro-monde** (*blocks
-world*), et le mot *micro* dit tout.
+world*), et le mot *micro* dit tout. Le micro-monde a une vertu précise : il rend le
+problème **traitable** (*tractable*, en anglais). En informatique, un problème
+est traitable quand une machine peut le résoudre en un temps raisonnable, sans
+se perdre dans l'[explosion
+combinatoire](docs/module1/30-chercher-raisonner/#lexplosion-combinatoire) des
+possibilités. Avec une poignée de blocs, tout peut être représenté et chaque
+question trouve sa réponse en un instant. C'est tout le secret de SHRDLU, et
+toute sa limite : le monde réel, lui, n'a rien de traitable en ce sens, comme
+la section suivante va le montrer.
 
 Que se passe-t-il si l'on sort de la table à blocs ? Rien. Le modèle du monde de
 SHRDLU ne sait rien de la pluie, d'un mensonge ou d'un escalier ; il ne peut pas
