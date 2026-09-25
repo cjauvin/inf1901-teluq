@@ -97,7 +97,8 @@ avec lui une fragilité redoutable.
 {{% hint info %}}
 Ces façons de structurer le savoir (réseaux de concepts, cases à remplir,
 hiérarchies *est-un*) pourraient sembler s'être éteintes avec le GOFAI. Il n'en est
-rien : elles ont essaimé. Les **ontologies** et les **knowledge graphs** qui font
+rien : elles ont essaimé. Le **web sémantique**, les **ontologies** et les
+**knowledge graphs** qui font
 tourner la recherche de Google ou Wikidata en descendent en droite ligne, et les
 *cases héritées* des frames ne sont pas sans rappeler les **objets** de la
 programmation moderne. Nous y reviendrons dans « [Les hivers et la

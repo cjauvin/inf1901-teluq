@@ -139,7 +139,21 @@ sémantiques et des frames : on les avait dits promis à une descendance vivant
 voici. Les **ontologies** et les **knowledge graphs** qui structurent le savoir du web
 en sont les héritiers directs : quand Google affiche une fiche toute prête à côté de vos
 résultats, quand on interroge Wikidata, c'est cette vieille idée — relier des concepts
-par des liens *est-un*, *possède* — qui œuvre sous le capot. Quant aux frames, avec
+par des liens *est-un*, *possède* — qui œuvre sous le capot. Entre les deux, il y eut une tentative grandiose, qui mérite d'être
+nommée : le [**web sémantique**](https://fr.wikipedia.org/wiki/Web_s%C3%A9mantique).
+En 2001, Tim Berners-Lee, l'inventeur du Web, propose de le transformer en une
+immense base de connaissances que les machines pourraient lire : chaque page
+déclarerait non seulement du texte pour les humains, mais aussi des faits
+structurés pour les programmes (*cette personne est née en telle année*, *ce
+produit coûte tant*), reliés par des vocabulaires communs, des ontologies. Des
+normes sont écrites pour cela (RDF, OWL). Le rêve, dans sa forme complète, ne
+s'est pas réalisé, et pour une raison que vous connaissez maintenant : il
+supposait que des millions d'auteurs décrivent patiemment et proprement le sens
+de ce qu'ils publient, la même inscription à la main qui avait fait buter CYC,
+mais à l'échelle de la planète. Ses pièces, en revanche, ont survécu : les
+balises que les sites ajoutent aujourd'hui pour que les moteurs de recherche
+comprennent une recette ou un horaire, et Wikidata lui-même, en sont les
+héritiers directs. Quant aux frames, avec
 leurs cases à valeurs par défaut et leurs hiérarchies d'héritage, ce sont les
 **cousins**, du côté de l'IA, de l'**objet** de la programmation moderne : non pas son
 ancêtre — l'orienté-objet doit plus à la simulation qu'à l'IA —, mais un jumeau né de
