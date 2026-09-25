@@ -34,14 +34,15 @@ Simon, les auteurs du Logic Theorist, pousseront l'idée jusqu'à bâtir un
 programme au nom révélateur, le *General Problem Solver* (« solutionneur général
 de problèmes »), censé attaquer n'importe quel problème exprimé sous cette forme.
 
-Retenez ce verbe — **chercher** —, car il est bien plus qu'une technique parmi
-d'autres : c'est la *signature* de toute l'IA symbolique. Démontrer un théorème,
-planifier un trajet, diagnostiquer une panne, lever l'ambiguïté d'une phrase :
-sous le capot, le GOFAI ramène presque tout à une seule et même opération —
-*explorer un espace de possibilités jusqu'à y trouver une solution*. Nous le
-reverrons à l'œuvre dans les chapitres suivants. Et, tout à la fin du module,
-c'est précisément ce verbe qui tracera la ligne de partage avec la tradition
-rivale : là où le symbolique *cherche*, l'autre, un jour, *apprendra*.
+La recherche n'est pas une technique parmi d'autres : c'est le mécanisme
+central de l'IA symbolique. Démontrer un théorème, planifier un trajet,
+diagnostiquer une panne, lever l'ambiguïté d'une phrase : dans chaque cas, le
+GOFAI ramène le problème à l'exploration d'un espace de possibilités, jusqu'à
+ce qu'il y trouve une solution. Nous la retrouverons dans les pages suivantes.
+À la fin du module, dans [*Les hivers et la
+bascule*](docs/module1/60-hivers/#la-bascule), c'est aussi elle qui marquera la
+différence avec l'autre tradition : l'IA symbolique cherche une solution,
+l'apprentissage automatique apprend à partir d'exemples.
 
 ## L'explosion combinatoire
 
