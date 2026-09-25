@@ -195,6 +195,8 @@ saisir patiemment des millions d'assertions : « un café chaud refroidit si 
 laisse », « on ne peut pas être à deux endroits à la fois »… Le projet le plus
 héroïque, et le plus fou, de toute l'histoire du GOFAI.
 
+{{< image src="/images/module1/cyc-assertions.svg" alt="Cinq entrées de la base de CYC, écrites dans son langage, CycL, avec leur traduction en français : Bill Clinton fait partie des présidents des États-Unis ; tous les arbres sont des plantes ; Paris est la capitale de la France ; tout animal à colonne vertébrale a une mère biologique ; et une règle générale : si un objet appartient à une catégorie, il appartient aussi à toutes celles qui la contiennent." title="Le sens commun, écrit à la main : quelques entrées de CYC dans sa langue, CycL, et ce qu'elles veulent dire." loading="lazy" >}}
+
 Et il n'a jamais atteint son but. Non par manque d'argent ou de talent, mais parce
 que la tâche est **sans fond** : pour chaque évidence saisie, dix autres surgissent,
 et chacune en présuppose cent. On ne *remplit* pas le sens commun à la cuillère ; il
