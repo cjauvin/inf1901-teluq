@@ -147,6 +147,12 @@ faire d'autre, pas même expliquer pourquoi il a joué tel coup. Est-ce alors de
 l'*intelligence*, ou une prodigieuse machine à calculer déguisée en joueur
 d'échecs ?
 
+IBM récidivera quatorze ans plus tard, sur un terrain autrement plus glissant :
+le langage. En 2011, son système Watson battra les meilleurs champions du jeu
+télévisé *Jeopardy!*, en mariant le savoir structuré de l'IA symbolique et
+l'apprentissage statistique. Nous le retrouverons à la fin du module, dans
+[*Les hivers et la bascule*](docs/module1/60-hivers/#un-éclair-hybride-watson-2011).
+
 {{% hint info %}}
 Le cas Deep Blue illustre une ironie qui traverse toute l'histoire de l'IA : les
 tâches que nous jugeons les plus « intellectuelles » (jouer aux échecs, démontrer
