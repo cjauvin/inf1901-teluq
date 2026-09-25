@@ -8,9 +8,11 @@ slug: representer-le-monde
 
 ## Le sens, angle mort de la machine
 
-Faisons le bilan des [chapitres
-précédents](docs/module1/30-chercher-raisonner). Le Logic Theorist démontrait des
-théorèmes, Deep Blue gagnait aux échecs, ELIZA tenait la conversation, mais
+Faisons le bilan des chapitres précédents. Le [Logic
+Theorist](docs/module1/20-deux-paris) démontrait des théorèmes, [Deep
+Blue](docs/module1/30-chercher-raisonner/#lapogée-deep-blue-bat-kasparov-1997)
+gagnait aux échecs, [ELIZA](docs/module1/30-chercher-raisonner/#lautre-visage-eliza-ou-lillusion-de-comprendre)
+tenait la conversation, mais
 tous, au fond, faisaient *la même chose* : **manipuler des symboles d'après leur
 forme**, selon des règles. ELIZA repérait le mot « mère » sans avoir la moindre
 idée de ce qu'est une mère. C'est ce qu'on appelle le niveau de la **syntaxe** :
