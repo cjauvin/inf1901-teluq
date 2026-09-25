@@ -101,7 +101,7 @@ trouvent le même chemin, mais pas au même prix. Ajoutez ou retirez des murs en
 cliquant sur la grille, et voyez dans quels cas l'heuristique aide beaucoup, et
 dans quels cas elle se laisse piéger.
 
-{{< applet src="/html/applets/astar.html" height="525" >}}
+{{< applet src="/html/applets/astar.html" height="557" >}}
 
 Nous retrouverons ce mur, sous un autre nom, quand il s'agira d'apprendre à
 partir de données décrites par des milliers de caractéristiques : ce sera la

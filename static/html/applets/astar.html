@@ -26,7 +26,6 @@
                 <canvas id="cBlind" class="rounded-md border border-slate-300"></canvas>
                 <div class="flex gap-3 mt-2 text-sm">
                     <div class="bg-slate-100 border border-slate-200 rounded px-3 py-1">cases explorées : <b id="nBlind">0</b></div>
-                    <div class="bg-slate-100 border border-slate-200 rounded px-3 py-1">chemin : <b id="lBlind">–</b></div>
                 </div>
             </div>
             <div class="md:w-1/2 flex flex-col items-center">
@@ -35,10 +34,11 @@
                 <canvas id="cAstar" class="rounded-md border border-slate-300"></canvas>
                 <div class="flex gap-3 mt-2 text-sm">
                     <div class="bg-slate-100 border border-slate-200 rounded px-3 py-1">cases explorées : <b id="nAstar">0</b></div>
-                    <div class="bg-slate-100 border border-slate-200 rounded px-3 py-1">chemin : <b id="lAstar">–</b></div>
                 </div>
             </div>
         </div>
+
+        <div class="text-center text-sm text-slate-700 mt-3">Chemin trouvé par les deux : <b id="chemin">–</b></div>
 
         <div class="mt-4 p-3 bg-slate-100 rounded-lg flex flex-wrap items-center justify-center gap-2">
             <button onclick="lancer()" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 font-medium text-sm shadow-sm">Lancer les deux recherches</button>
@@ -108,7 +108,8 @@ function nouvelleRecherche(type) {
 }
 function reinitialiserRecherches() {
     etats = { blind: null, astar: null };
-    for (const k of ['Blind', 'Astar']) { document.getElementById('n' + k).textContent = '0'; document.getElementById('l' + k).textContent = '–'; }
+    for (const k of ['Blind', 'Astar']) document.getElementById('n' + k).textContent = '0';
+    document.getElementById('chemin').textContent = '–';
 }
 
 function pas(e) {
@@ -161,10 +162,17 @@ function dessinerUn(nom) {
     const suffixe = nom === 'blind' ? 'Blind' : 'Astar';
     if (e) {
         document.getElementById('n' + suffixe).textContent = e.exploree.size;
-        document.getElementById('l' + suffixe).textContent = e.chemin ? (e.chemin.length - 1) + ' pas' : (e.fini ? 'aucun' : '…');
+
     }
 }
-function dessiner() { dessinerUn('blind'); dessinerUn('astar'); }
+function dessiner() {
+    dessinerUn('blind'); dessinerUn('astar');
+    const a = etats.blind, b = etats.astar, el = document.getElementById('chemin');
+    if (!a || !b) return;
+    if (a.fini && b.fini) {
+        el.textContent = a.chemin ? (a.chemin.length - 1) + ' pas (le plus court possible)' : 'aucun chemin possible';
+    } else el.textContent = '…';
+}
 
 function arreter() { if (minuterie) { clearInterval(minuterie); minuterie = null; } }
 function lancer() {
